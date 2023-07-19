@@ -9,14 +9,12 @@ const Community = () => {
     <section className="community-container">
       <h2 className="community-heading">Empowering Health and Wellness</h2>
       <p className="community-description">
-        Empower yourself with the information you need to make informed decisions and lead a healthier, happier life.
-        Choose your area of interest and embark on a journey towards improved well-being.
+        Empower yourself with the information you need to make informed
+        decisions and lead a healthier, happier life. Choose your area of
+        interest and embark on a journey towards improved well-being.
       </p>
-      
-      
-      <div className="community-teams">
 
-        
+      <div className="community-teams">
         <button
           onClick={() => {
             setTeam("NF TEAM");
