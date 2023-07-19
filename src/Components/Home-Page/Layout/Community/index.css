@@ -1,3 +1,4 @@
+/* mobile view */
 .community-container {
   background: #07235b;
   display: flex;
@@ -24,7 +25,7 @@
   padding-bottom: 2rem;
   font-size: 1rem;
   font-weight: 400;
-  line-height: 120%;
+  line-height: 143%;
 }
 
 .community-teams {
@@ -56,7 +57,7 @@
   background-color: #07235b;
   color: #ffffff;
 }
-
+/* tablet view */
 @media only screen and (min-width: 480px) and (max-width: 1023px) {
   .community-heading {
     font-size: 2.25rem;
@@ -64,16 +65,28 @@
     line-height: 120%;
   }
   .community-description {
-    font-size: 1rem;
-    font-weight: 700;
-    line-height: 120%;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 143%;
   }
 
   .community-teams {
     max-width: 390px;
   }
-}
 
+  .community-team-btn {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 143%;
+  }
+
+  .coming-soon-p {
+    font-size: 1rem;
+    line-height: 120%;
+    font-weight: 400;
+  }
+}
+/* desktop view */
 @media only screen and (min-width: 1024px) {
   .community-container {
     padding: 5rem 0;
@@ -83,6 +96,22 @@
     font-size: 3rem;
     font-weight: 700;
     line-height: 120%;
+  }
+  .community-teams-text h2 {
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 43px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .community-teams-text h4 {
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 43px;
+    letter-spacing: 0em;
+    text-align: left;
   }
 
   /* update line-height to 143px */

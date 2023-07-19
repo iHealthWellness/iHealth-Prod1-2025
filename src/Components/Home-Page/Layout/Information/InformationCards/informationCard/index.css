@@ -1,7 +1,6 @@
 .information-card {
   display: grid;
   grid-template-rows: 1fr 1.5fr 0.5fr;
-  background-color: #ffffff;
 }
 
 .information-card-heading-block {

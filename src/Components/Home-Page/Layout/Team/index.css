@@ -1,3 +1,4 @@
+/* mobile view */
 .team-container {
   background: #f0f7fd;
   display: flex;
@@ -6,23 +7,17 @@
   padding-top: 2rem;
 }
 
-.team-heading-h2,
-.team-heading-h3 {
+.team-heading-h2 {
   width: 95%;
   padding-bottom: 1rem;
   color: #07235b;
-}
-
-.team-heading-h2 {
   font-size: 1.5rem;
   font-weight: 600;
   line-height: 110%;
 }
 
-.team-heading-h3 {
-  font-size: 1.25rem;
-  font-weight: 400;
-  line-height: 100%;
+.team-heading-h3.desktop {
+  display: none;
 }
 
 .team-bottom-block {
@@ -34,11 +29,22 @@
   display: block;
 }
 
+.team-join-description {
+  font-size: 1rem;
+  line-height: 143%;
+  max-width: 313px;
+  text-align: center;
+}
+
 .team-join-card {
   width: 100%;
   background: #07235b;
   color: #ffffff;
   padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
 }
 
 .team-join-card-inner {
@@ -69,8 +75,9 @@
   padding: 1rem 1.5rem;
   border: 1px solid #ffffff;
   border-radius: 1rem;
+  cursor: pointer;
 }
-
+/*tablet view */
 @media only screen and (min-width: 480px) and (max-width: 1023px) {
   .team-join-card {
     display: flex;
@@ -94,12 +101,40 @@
     font-weight: 700;
     line-height: 120%;
   }
+  .team-heading-h2 span {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 143%;
+  }
+  .team-heading-h2 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 120%;
+  }
+
+  .team-join-slogan {
+    font-weight: 400;
+    line-height: 143%;
+    font-size: 1.5rem;
+  }
 
   .team-join-btn {
-    padding: 1rem 5rem;
+    padding: 0.5rem 5rem;
+    font-weight: 400;
+    line-height: 143%;
+    font-size: 1.5rem;
+  }
+
+  .team-join-description {
+    width: 80%;
+    max-width: 697px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 143%;
+    padding-bottom: 3rem;
   }
 }
-
+/* desktop view*/
 @media only screen and (min-width: 1024px) {
   .team-container {
     padding: 5rem 0;
@@ -121,8 +156,13 @@
   .team-heading-h3 {
     font-size: 1.5rem;
     font-weight: 400;
-    line-height: 100%;
+    line-height: 143%;
     padding-bottom: 3rem;
+  }
+
+  .team-heading-h3.desktop {
+    display: block;
+    color: #07235b;
   }
 
   .team-bottom-block {
@@ -148,6 +188,9 @@
     top: 50%;
     transform: translateY(-50%);
   }
+  .team-join-description {
+    display: none;
+  }
 
   .team-join-card-inner {
     border-radius: 2px;
@@ -171,6 +214,7 @@
   }
 
   .team-join-btn {
+    font-size: 1.5rem;
     padding: 0.5rem 2rem;
     border-radius: 0.5rem;
   }

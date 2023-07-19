@@ -7,12 +7,13 @@ const Community = () => {
 
   return (
     <section className="community-container">
-      <h2 className="community-heading">Join Your Community</h2>
+      <h2 className="community-heading">Empowering Health and Wellness</h2>
       <p className="community-description">
-        As a community member, you'll come together with others living with your
-        condition to support each other, learn from each other, inspire each
-        other, to feel a sense of fellowship, safety and belonging together.
+        Empower yourself with the information you need to make informed
+        decisions and lead a healthier, happier life. Choose your area of
+        interest and embark on a journey towards improved well-being.
       </p>
+
       <div className="community-teams">
         <button
           onClick={() => {
