@@ -256,6 +256,12 @@
 
 
 
+
+
+
+/* =================== Css rules for Read more Functionality =================== */
+
+
 .LearnMoreSpan
 {
     font-weight: 600;
@@ -292,3 +298,59 @@ i:has(~ input[type="checkbox"]:checked)
 {
     display: inline !important;
 }
+
+
+/* =================== Css rules for Read more Functionality =================== */
+
+
+
+
+
+
+
+
+/* ======================================== Responsive Css rules ========================================  */
+
+
+
+
+@media only screen and (max-width: 1300px) 
+{
+    /* Set Css rules for Main Content Container */
+    #TermPolicyOnlyViewContent-Content-Container
+    {
+        padding: 3rem 5rem;
+    }
+
+}
+
+
+
+
+
+@media only screen and (max-width: 1100px) 
+{
+
+    #TermsofService-main-doublesided
+    {
+        flex-direction: column;
+    }
+}
+
+
+@media only screen and (max-width: 770px) 
+{
+    /* Set Css rules for Main Content Container */
+    #TermPolicyOnlyViewContent-Content-Container
+    {
+        padding: 3rem 2rem;
+    }
+
+    /* Set Css rules for Main Content Div for TermPolicyOnlyViewContent component */
+    #TermPolicyOnlyViewContent-MainContent-container
+    {
+        margin: 45px 1rem;
+    }
+}
+
+/* ======================================== Responsive Css rules ========================================  */
