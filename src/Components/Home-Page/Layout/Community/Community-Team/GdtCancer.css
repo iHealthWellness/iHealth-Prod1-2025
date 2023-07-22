@@ -1,0 +1,668 @@
+/* Font family style */
+.modal {
+  font-family: 'Work Sans';
+  font-style: normal;
+}
+
+/* css styling for the close modal icon */
+
+.close {
+  display: flex;
+  flex-direction: row;
+  color: #A3AAC2;
+  margin-left: 96%;
+  padding-top: 5px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+/* logo styling */
+.community__logo {
+  text-align: center;
+}
+
+.community__logo img {
+  height: 50px;
+}
+
+/* Modal popup styling */
+
+.mod1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 580px;
+  border-radius: 20px;
+  margin: 1.2% 25% 0.5% 25%;
+  justify-content: center;
+  z-index: 1;
+  background-color: #F8FAFC;
+}
+
+/* The bottom ellipse styling */
+
+.modal {
+  height: 380px;
+  width: 100%;
+  background-color: #F8FAFC;
+  clip-path: circle(123% at 50% -90%);
+  border: none;
+}
+
+.Login_down {
+  background-color: #07235B;
+  height: 200px;
+  width: 100%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-top: -200px;
+}
+
+
+/* css styling for the form header */
+
+.gdt-head p,
+h1 {
+  text-align: center;
+}
+
+.gdt-head p,
+h1 {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.gdt-head h1 {
+  color: #07235B;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.pxp1 {
+  text-align: center;
+  color: #0D99FF;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  padding: 0 17%;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.progressbar {
+  text-align: center;
+}
+
+/* FORM STYLING */
+
+.form__content {
+  width: 80%;
+  margin: 0 10%;
+}
+
+.input {
+  position: relative;
+  margin-bottom: 13px;
+}
+
+.input__field {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #E0E3EB;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+
+.input__label {
+  position: absolute;
+  margin-top: 10px;
+  left: 10px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #A3AAC2;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+
+.opt__gdt::after {
+  content: "*";
+  color: red;
+}
+
+.input__field1 {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #E0E3EB;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+
+.input__label1 {
+  position: absolute;
+  margin-top: 10px;
+  left: 10px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #A3AAC2;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.input__label::after {
+  content: "*";
+  color: rgba(237, 101, 101, 1);
+}
+
+.textarea__field {
+  width: 100%;
+  height: 80px;
+  padding: 10px;
+  border: none;
+  border-radius: 0px;
+  background-color: #ffffff;
+  resize: none;
+}
+
+.textarea__label {
+  position: absolute;
+  margin-top: 5px;
+  left: 73px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #A3AAC2;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+
+
+.input__label1::after {
+  content: "*";
+  color: rgba(237, 101, 101, 1);
+}
+
+.textarea__field1 {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  border: none;
+  border-radius: 0px;
+  background-color: #ffffff;
+  resize: none;
+}
+
+.textarea__label1 {
+  position: absolute;
+  margin-top: 5px;
+  left: 92px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #A3AAC2;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.pxp2 {
+  color: #667299;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.pxp2::before {
+  content: "* ";
+  color: rgba(237, 101, 101, 1);
+}
+
+.btnx {
+  text-align: center;
+}
+
+.btnx button {
+  font-size: 20px;
+  font-weight: 200;
+  margin-top: 135px;
+  padding: 10px 14px;
+  width: 252.84px;
+  background: #0D99FF;
+  border-radius: 20px;
+  color: #ffffff;
+  border: 1px solid #F8FAFC;
+  z-index: 1;
+}
+
+.btnx button:hover {
+  background-color: #062758;
+}
+
+/* ON INPUT FIELD PLACEHOLDER IS SET TO DISPLAY OF NONE */
+
+.input__field:focus~.input__label,
+.input__field:not(:placeholder-shown)~.input__label {
+  z-index: -1;
+}
+
+.input__field1:focus~.input__label1,
+.input__field1:not(:placeholder-shown)~.input__label1 {
+  z-index: -1;
+}
+
+.textarea__field:focus~.textarea__label,
+.textarea__field:not(:placeholder-shown)~.textarea__label {
+  z-index: -1;
+}
+
+.textarea__field1:focus~.textarea__label1,
+.textarea__field1:not(:placeholder-shown)~.textarea__label1 {
+  z-index: -1;
+}
+
+/* input validation message styling */
+.error-msg {
+  position: fixed;
+  margin-top: -12px;
+  left: 31%;
+  color: red;
+  font-size: 12px;
+  transform: translate(-10%, -10%);
+}
+
+/* preloader displayed on form submission */
+
+.loader {
+  position: absolute;
+  top: 45%;
+  left: 42%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  /* background: conic-gradient(from 180deg at 50% 50.00%, #062758 0deg, rgba(13, 153, 255, 0.00) 360deg); */
+  border: 10px solid #062758;
+  border-top: 10px solid #f1f1f1;
+  border-radius: 50%;
+  /* Animation for the spinning element */
+  animation: spin 1s linear infinite;
+  z-index: 1;
+}
+
+
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+@media only screen and (max-width: 280px) {
+
+  .mod1 {
+    /* width: 100%; */
+    height: 600px;
+    margin: 0;
+    border-radius: 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .close {
+    margin-left: 92%;
+  }
+
+  .textarea__label {
+    left: 35px;
+  }
+
+  .modal {
+    clip-path: circle(160% at 50% -70%);
+    border: none;
+  }
+
+  .Login_down {
+    background-color: #07235B;
+    /* height: 20%; */
+    height: 130px;
+    width: 100%;
+    margin-top: -130px;
+  }
+
+  .btnx button {
+    font-size: 14px;
+    width: 222.84px;
+    margin-top: 50px;
+  }
+}
+
+
+@media only screen and (min-width: 290px) and (max-width: 360px) {
+  .mod1 {
+    /* height: 600px; */
+    margin: 0;
+    border-radius: 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .modal {
+    /* height: 50%; */
+    background-color: #F8FAFC;
+    clip-path: circle(137% at 50% -55%);
+    border: none;
+  }
+
+  .Login_down {
+    background-color: #07235B;
+    height: 230px;
+    width: 100%;
+  }
+
+}
+
+@media only screen and (min-width: 370px) and (max-width: 380px) {
+  .mod1 {
+    margin: 0;
+    border-radius: 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .modal {
+    background-color: #F8FAFC;
+    clip-path: circle(137% at 50% -57%);
+    border: none;
+  }
+
+  .Login_down {
+    background-color: #07235B;
+    height: 230px;
+    width: 100%;
+  }
+
+}
+
+@media only screen and (min-width: 381px) and (max-width: 395px) {
+  .mod1 {
+    margin: 0;
+    border-radius: 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .modal {
+    background-color: #F8FAFC;
+    clip-path: circle(135% at 50% -60%);
+    border: none;
+  }
+
+  .Login_down {
+    background-color: #07235B;
+    height: 230px;
+    width: 100%;
+  }
+
+}
+
+@media only screen and (min-width: 395px) and (max-width: 414px) {
+  .mod1 {
+    margin: 0;
+    border-radius: 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .modal {
+    background-color: #F8FAFC;
+    clip-path: circle(137% at 50% -67%);
+    border: none;
+  }
+
+  .Login_down {
+    background-color: #07235B;
+    height: 230px;
+    width: 100%;
+  }
+
+}
+
+
+/* SURFACE PRO STYLING */
+
+@media only screen and (min-width: 415px) and (max-width: 540px) {
+
+  .mod1 {
+    margin: 0 0%;
+  }
+
+
+  .close {
+    margin-left: 92%;
+    font-size: 30px;
+  }
+
+  .modal {
+    /* height: 50%; */
+    clip-path: circle(107% at 50% -52%);
+    border: none;
+  }
+
+  .textarea__label {
+    left: 48px;
+  }
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 530px) {
+  .textarea__label {
+    left: 50px;
+  }
+}
+
+@media only screen and (width: 768px) {
+  .textarea__label {
+    left: 40px;
+  }
+}
+
+/* Mobile styling */
+
+/* Adjustments for smaller screens */
+@media (max-width: 767px) {
+  .mod1 {
+    width: 100vw;
+    /* height: 100vh; */
+    margin: 5% 0;
+    border-radius: 20px;
+    /* height: fit-content; */
+  }
+
+  .close {
+    margin-left: 92%;
+  }
+
+  .gdt-head h1 {
+    font-size: 20px;
+  }
+
+  .pxp1 {
+    font-size: 12px;
+    padding: 0 10%;
+  }
+
+  .input__field,
+  .input__field1,
+  .textarea__field,
+  .textarea__field1 {
+    width: 100%;
+    padding: 8px;
+  }
+
+  .pxp2 {
+    font-size: 12px;
+  }
+
+  .btnx button {
+    font-weight: 200;
+    width: 200.84px;
+  }
+
+  .error-msg {
+    left: 5%;
+  }
+}
+
+/* MINI TABLET STYLING */
+
+@media only screen and (min-width: 768px) and (max-width: 810px) {
+
+  .mod1 {
+    margin: 0 18.5%;
+    border-radius: 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .modal {
+    background-color: #F8FAFC;
+    clip-path: circle(122% at 50% -52%);
+    border: none;
+  }
+
+  .Login_down {
+    background-color: #07235B;
+    height: 230px;
+    width: 100%;
+  }
+
+  .textarea__label {
+    left: 52px;
+  }
+}
+
+/* IPAD STYLING */
+
+/* @media only screen and (min-width: 810px) and (max-width: 830px) {
+
+  .close {
+    margin-left: 92%;
+    font-size: 30px;
+  }
+
+  .modal {
+    clip-path: circle(115% at 50% -55%);
+    border: none;
+  }
+
+  .Login_down {
+    height: 200px;
+  }
+
+
+  .textarea__label {
+    left: 53px;
+  }
+} */
+
+/* SURFACE PRO STYLING */
+
+@media only screen and (min-width: 820px) and (max-width: 912px) {
+
+  .mod1 {
+    margin: 0 20%;
+  }
+
+
+  .close {
+    margin-left: 92%;
+    font-size: 30px;
+  }
+
+  .modal {
+    background-color: #F8FAFC;
+    clip-path: circle(110% at 50% -52%);
+    border: none;
+  }
+
+  .textarea__label {
+    left: 58px;
+  }
+}
+
+/* NEST HUB SCREEN STYLING */
+
+/* @media only screen and (min-width: 1020px) and (max-width: 1024px) {
+
+  .mod1 {
+    margin: 0 9%;
+  }
+
+  .modal {
+    height: 700px;
+    clip-path: circle(98% at 50% -55%);
+    border: none;
+  }
+
+  .Login_down {
+    background-color: #07235B;
+    height: 220px;
+    margin-top: -500px;
+  }
+
+  .textarea__label {
+    left: 145px;
+  }
+
+  .pxp2 {
+    margin-top: 30px;
+  }
+} */
+
+/* NEST HUB PRO SCREEN STYLING */
+
+/* @media only screen and (min-width: 1030px) and (max-width: 1280px) {
+
+  .mod1 {
+    margin: 0 14%;
+  }
+
+  .modal {
+    height: 700px;
+    clip-path: circle(95% at 50% -55%);
+    border: none;
+  }
+
+  .Login_down {
+    background-color: #07235B;
+    height: 220px;
+    margin-top: -500px;
+  }
+
+  .textarea__label {
+    left: 180px;
+  }
+
+  .pxp2 {
+    margin-top: 40px;
+  }
+} */
+
+/* MINI DESKTOP SCREEN STYLING */
+
+@media only screen and (min-width: 1028px) and (max-width: 1035px) {
+
+  .modal {
+    clip-path: circle(110% at 50% -52%);
+
+    border: none;
+  }
+
+  .textarea__label {
+    left: 60px;
+  }
+}

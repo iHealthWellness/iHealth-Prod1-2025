@@ -1,9 +1,31 @@
 import { useState } from "react";
 
 import "./index.css";
+import Geriatric from "./Community-Team/Geriatric";
+import Cancer from "./Community-Team/Cancer";
 
 const Community = () => {
   const [team, setTeam] = useState("NF TEAM");
+
+  // Geriatric disesea team modal popup js
+
+  const toggleModal = () => {
+    setIsOpen(!isOpen);
+  };
+  const [isOpen, setIsOpen] = useState(false);
+
+
+  // Cancer team modal popup js
+
+  const toggleModal1 = () => {
+    setIsOpens(!isOpens);
+  };
+  const [isOpens, setIsOpens] = useState(false);
+
+  const closeModal = () => {
+    setIsOpen(false);
+    setIsOpens(false);
+  };
 
   return (
     <section className="community-container">
@@ -31,12 +53,14 @@ const Community = () => {
         >
           NF TEAM
         </button>
+
         <button
-          onClick={() => {
-            setTeam("Geriatric Disease Team");
-            document.querySelector("#UnderConst-wrapper").style.display =
-              "flex";
-          }}
+        onClick={toggleModal}
+          // onClick={() => {
+          //   setTeam("Geriatric Disease Team");
+          //   document.querySelector("#UnderConst-wrapper").style.display =
+          //     "flex";
+          // }}
           className={
             team === "Geriatric Disease Team"
               ? "community-team-btn focus"
@@ -45,12 +69,14 @@ const Community = () => {
         >
           Geriatric Disease Team <p className="coming-soon-p">(Coming soon)</p>
         </button>
+
         <button
-          onClick={() => {
-            setTeam("Cancer Team");
-            document.querySelector("#UnderConst-wrapper").style.display =
-              "flex";
-          }}
+        onClick={toggleModal1}
+          // onClick={() => {
+          //   setTeam("Cancer Team");
+          //   document.querySelector("#UnderConst-wrapper").style.display =
+          //     "flex";
+          // }}
           className={
             team === "Cancer Team"
               ? "community-team-btn focus"
@@ -59,6 +85,22 @@ const Community = () => {
         >
           Cancer Team <p className="coming-soon-p">(Coming soon)</p>
         </button>
+      </div>
+
+          {/* MODAL POPUP FOR GERIATRIC TEAM*/}
+
+          <div>
+        {isOpen && (
+          <Geriatric closeModal={closeModal} />
+        )}
+      </div>
+
+      {/* MODAL POPUP FOR CANCER TEAM */}
+
+      <div>
+        {isOpens && (
+          <Cancer closeModal={closeModal} />
+        )}
       </div>
     </section>
   );
