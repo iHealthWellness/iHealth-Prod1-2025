@@ -44,6 +44,21 @@
   border-right: 2px solid rgba(7, 35, 91, 0.24);
 }
 
+/* update hover style */
+.information-card:hover .information-card-list {
+  background-color: rgba(6, 39, 88, 1);
+  color: #ffffff;
+}
+
+.information-card:hover .information-card-link-block {
+  background-color: rgba(6, 39, 88, 1);
+}
+
+.information-card:hover .information-card-link,
+.information-card:hover .information-card-listitem-span {
+  color: #fff;
+}
+
 .information-card-listitem {
   padding-bottom: 1rem;
   font-size: 1rem;
