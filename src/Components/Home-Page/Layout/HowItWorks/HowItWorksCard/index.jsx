@@ -22,6 +22,7 @@ const HowItWorksCard = ({ icon, title, content, idx, isVisible }) => {
         <p className={`how-it-works-content`}>{content}</p>
       </div>
     </div>
+    // </div>
   );
 };
 

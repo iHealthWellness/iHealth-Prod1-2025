@@ -77,11 +77,10 @@
     max-width: 1216px;
   }
 
-  /* update font-size to 25px */
   .provider-heading {
     width: 90%;
     flex-direction: row;
-    font-size: 25px;
+    font-size: 1rem;
     font-weight: 700;
     line-height: 120%;
   }
