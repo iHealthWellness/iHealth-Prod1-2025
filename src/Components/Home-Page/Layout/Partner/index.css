@@ -1,4 +1,3 @@
-/* mobile view */
 .partnership-img {
   display: none;
 }
@@ -25,16 +24,13 @@
   width: 100%;
   display: block;
 }
-/* Tablet view */
+
 @media only screen and (min-width: 480px) and (max-width: 1023px) {
   .partner-container {
     padding-top: 5rem;
   }
 
   .partner-heading {
-    font-size:2.25rem;
-    line-height:120%;
-    font-weight:700;
     background-color: #062758;
     color: #fff;
     padding: 5rem;
@@ -55,7 +51,7 @@
     object-fit: cover;
   }
 }
-/* Desktop view */
+
 @media only screen and (min-width: 1024px) {
   .partner-container {
     padding-top: 5rem;
@@ -91,9 +87,6 @@
   }
 
   .partner-heading {
-    font-size:1.5rem;
-    line-height:143%;
-    font-weight:400;
     background-color: #062758;
     color: #fff;
     width: 436px;
