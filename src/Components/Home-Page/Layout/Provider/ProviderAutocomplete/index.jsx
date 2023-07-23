@@ -1,9 +1,10 @@
 import { Autocomplete, TextField } from "@mui/material";
 import ArrowDropDownCircleRoundedIcon from "@mui/icons-material/ArrowDropDownCircleRounded";
-
+import "./index.css";
 const ProviderAutocomplete = ({ options, label, value, onInputChange }) => {
   return (
     <Autocomplete
+      className={`provider-autocomplete ${label}`}
       value={value}
       onChange={(event, newValue) => {
         onInputChange(newValue);

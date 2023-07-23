@@ -12,6 +12,7 @@ import Benefit from "src/Components/Home-Page/Layout/Benefit";
 import PartnerWithUs from "../../Components/Home-Page/Layout/Partner";
 import Information from "src/Components/Home-Page/Layout/Information";
 import UnderConstruction from "src/Components/Under-Construction/UnderConstruction";
+import ToTopBtn from "src/Components/Home-Page/Layout/ToTopBtn";
 
 import "./index.css";
 
@@ -28,6 +29,7 @@ const index = () => {
       <PartnerWithUs />
       <Information />
       <UnderConstruction />
+      <ToTopBtn />
     </div>
   );
 };

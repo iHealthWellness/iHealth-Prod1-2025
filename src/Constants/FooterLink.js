@@ -7,7 +7,7 @@ const FooterLink = [
         path: "#",
       },
       {
-        title: "Board of Direction",
+        title: "Board of Directors",
         path: "#",
       },
       {
@@ -54,7 +54,7 @@ const FooterLink = [
     category: "Policies",
     links: [
       {
-        title: "Private Policy",
+        title: "Privacy Policy",
         path: "#",
       },
       {

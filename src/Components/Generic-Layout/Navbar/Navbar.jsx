@@ -8,8 +8,6 @@ import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import "./Navbar.css";
 
 const Navbar = () => {
-
-
   return (
     <nav className="nav-container">
       <div className="nav-inner-container">
@@ -47,23 +45,17 @@ const Navbar = () => {
                   Services
                 </NavLink>
               </li>
-              <li className="nav-links-listitem nav-dropdown">
+              <li className="nav-links-listitem">
                 <NavLink
-                  to="/about-us"
+                  onClick={() => {
+                    document.querySelector(
+                      "#UnderConst-wrapper"
+                    ).style.display = "flex";
+                  }}
                   className="nav-links nav-about-us"
                 >
                   About Us
                 </NavLink>
-                <div className="nav-dropdown-content">
-                  <a href="#Statement">Corporate Info </a>
-                  <a href="">Our Team </a>
-                  <a href="#Finance">Financial Transparency </a>
-                  <a href="#Terms">Terms Of Use</a>
-                  <a href="">List Of Openings</a>
-
-
-
-                </div>
               </li>
               <li className="nav-links-listitem">
                 <NavLink
