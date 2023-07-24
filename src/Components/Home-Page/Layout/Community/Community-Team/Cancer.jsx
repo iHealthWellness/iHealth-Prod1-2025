@@ -14,7 +14,6 @@ const Cancer = ({ closeModal }) => {
         name: '',
         email: '',
         condition: '',
-        phone: '',
         message: ''
     });
 
@@ -34,10 +33,6 @@ const Cancer = ({ closeModal }) => {
             newErrors2.condition = 'This field is required';
         }
 
-        if (!formData2.message.trim()) {
-            newErrors2.message = 'This field is required';
-        }
-
         setErrors2(newErrors2);
         return Object.keys(newErrors2).length === 0;
     };
@@ -47,9 +42,9 @@ const Cancer = ({ closeModal }) => {
 
     // const [buttonText, setButtonText] = useState('submit');
     const [headText2, setheadText2] = useState('Cancer Team');
-    const [headText02, setheadText02] = useState('(Coming Soon)');
+    const [headText02, setheadText02] = useState(<p className="gdt__p">(Coming Soon)</p>);
     const [headText002, setheadText002] = useState(' Do not see the condition you are looking for? Let us know. We will be adding new social networks based on community feedback.');
-    const [headText0002, setheadText0002] = useState(<img src={progressbar1} />);
+    const [headText0002, setheadText0002] = useState(<img className="progressbar__img" src={progressbar1} />);
 
     // success form submission Preloader function
     const [isLoading2, setIsLoading2] = useState(false);
@@ -61,7 +56,7 @@ const Cancer = ({ closeModal }) => {
 
         // POST CANCER TEAM FORM IF THE VALIDATION AND MAIL IS CORRECT
         const buttonText = document.getElementById("modal__button1");
-        if (buttonText.innerHTML === "OK") {
+        if (buttonText.innerHTML === "Close") {
             setIsLoading2(false);
             return;
         }
@@ -83,10 +78,10 @@ const Cancer = ({ closeModal }) => {
 
                         // text shown after successful form submission
                         setheadText2('Thank you');
-                        setheadText02('(Coming soon)');
+                        setheadText02(<p className="gdt__p1"></p>);
                         setheadText002('Thank you for sharing the information with us. Your contribution is greatly appreciated.');
-                        setheadText0002(<img src={progressbar2} />);
-                        buttonText.innerHTML = "OK";
+                        setheadText0002(<img className="progressbar__img1" src={progressbar2} />);
+                        buttonText.innerHTML = "Close";
 
                         // Set loading state back to false
                         setIsLoading2(false);
@@ -176,7 +171,6 @@ const Cancer = ({ closeModal }) => {
 
                             <div class="input">
                                 <input
-                                    // value={condition}
                                     type="text"
                                     id="condition"
                                     class="input__field"
@@ -185,32 +179,28 @@ const Cancer = ({ closeModal }) => {
                                     value={formData2.condition}
                                     onChange={handleChange2}
                                 />
-
-                                {/* <select value={selectedOption} onChange={handleChange1}>
-                                    <option value="">-- Select --</option>
-                                    <option value="option1">Option 1</option>
-                                    <option value="option2">Option 2</option>
-                                    <option value="option3">Option 3</option>
-                                </select> */}
-                                {/* </select> */}
                                 <label for="condition" class="input__label">
                                     Condition
                                 </label>
                                 {errors2.condition && <span className="error-msg">{errors2.condition}</span>}
                             </div>
 
+                            <div className="input__textarea">
+
                             <textarea class="textarea__field"
                                 placeholder=" "
                                 id="message"
                                 name="message"
                                 value={formData2.message}
-                                onChange={handleChange2}
-                            ></textarea>
+                                onChange={handleChange2}>
 
-                            <label for="message" class="textarea__label">
+                                </textarea>
+
+                                <label for="message" class="textarea__label">
                                 Message
-                            </label>
-                            {errors2.message && <span className="error-msg">{errors2.message}</span>}
+                                </label>
+
+                            </div>
 
                             <p className="pxp2">indicates a required field</p>
 
