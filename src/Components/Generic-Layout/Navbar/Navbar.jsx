@@ -57,17 +57,17 @@ const Navbar = () => {
                   About Us
                 </NavLink>
               </li>
-              <li className="nav-links-listitem">
+              <li className="nav-links-listitem dropdown">
                 <NavLink
-                  onClick={() => {
-                    document.querySelector(
-                      "#UnderConst-wrapper"
-                    ).style.display = "flex";
-                  }}
-                  className="nav-links nav-research"
-                >
+                  to="/research"
+                  className="nav-links nav-dropdown">
                   Research
                 </NavLink>
+                <div className="nav-dropdown-content">
+                    <a href="">Research Tools & Resources</a>
+                    <a href="">Clinical Drug Therapies</a>
+                    <a href="">Participate in Research</a>
+                </div>
               </li>
             </ul>
             <ul className="nav-links-list">

@@ -74,20 +74,16 @@ const NavDropdownButton = () => {
               About Us &gt;
             </NavLink>
           </li>
-          <li
-            className={`nav-dropdown-links-listitem ${
-              currentPage === "/research" ? "active" : ""
-            }`}
-          >
+          <li className= "nav-dropdown-links-listitem-navdropdown">
             <NavLink
-              onClick={() => {
-                document.querySelector("#UnderConst-wrapper").style.display =
-                  "flex";
-              }}
+              to= "/research"
               className="nav-dropdown-links nav-research"
             >
-              Research &gt;
+
+              Research;
             </NavLink>
+           
+
           </li>
         </ul>
       )}

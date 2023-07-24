@@ -58,6 +58,29 @@
   text-decoration: none;
   color: white;
 }
+.nav-links .nav-dropdown{
+  position: relative;
+}
+.nav-dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: #07235b;
+  min-width: 160px;
+  z-index: 1;
+  color: #fff;
+}
+
+.nav-links .nav-dropdown:hover{
+  display: block;
+}
+.nav-dropdown-content a{
+  color:#FFFF;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  white-space: nowrap;
+}
+
 
 .nav-donate {
   padding: 0.5rem 1rem;
