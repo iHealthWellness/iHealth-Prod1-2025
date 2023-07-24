@@ -11,7 +11,7 @@ const ToTopBtn = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  
+  // show the button when the user has scrolled down
   const handleScroll = () => {
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     setIsVisible(scrollTop > 0);
