@@ -1,0 +1,165 @@
+/* desktop view */
+
+
+.terms-condition-tab{
+    
+   background-image:linear-gradient(to bottom,rgba(160,226,252,0.7),rgba(160,226,252,0.7)),url("/src/Assets/Images/still-life-with-scales-justice.png");
+   background-repeat: no-repeat;
+   background-size:cover;
+   background-position: center;
+   /* margin: 20px 0px; */
+   
+
+
+}
+.page-text{
+    width: 90%;
+    padding:40px;
+    max-width: 1216px;
+    margin:auto;
+    margin-top: 80px;
+}
+.page-text-header{
+width: 1202px;
+margin-top: 35px;
+padding: 20px;
+font-family: Roboto;
+font-size: 36px;
+font-weight: 600;
+line-height: 40px;
+letter-spacing: 0em;
+text-align: center;
+
+    
+}
+.page-text-header h2{
+    margin-top:20px;
+}
+.page-text-subheader{
+font-family: Roboto;
+font-size: 48px;
+font-weight: 600;
+/* line-height: 58px; */
+letter-spacing: 0em;
+color:black;
+text-align: center;
+margin-top: 10px;
+}
+
+.terms-textlayout{
+width: 1202px;
+
+font-family: Roboto;
+font-size: 24px;
+font-weight: 400;
+line-height: 26px;
+letter-spacing: 0em;
+text-align: justified;
+color:black;
+}
+.terms-textlayout p{
+width: 1202px;
+text-align: justify;
+
+}
+.list-outline li{
+    width: 1002px;  
+    margin: auto;
+}
+.terms-flex{
+    display: flex;
+    gap:15px;
+    width:1202px;
+   
+   gap: 44px;
+
+}
+
+.text-header-tab{
+    width:579px;
+/* height:2610px; */
+gap: 40px;
+
+
+}
+
+.text-header-text{
+    width:578px;
+}
+.text-header-text p {
+    font-size: 24px;
+    text-align: justify;
+}
+.text-header-tab p {
+    font-size: 24px;
+    text-align: justify;
+}
+
+.text-header h2{
+    
+    font-family: Roboto;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 33px;
+    letter-spacing: 0em;
+    text-align: left;
+    
+}
+.Binding-tab p{
+ font-size: 24px;
+ text-align: justify;
+    
+}
+.Binding-tab h3{
+    font-size: 24px;
+       
+   }
+.visible{
+    display: block;
+}
+.hidden{
+    display:none;
+}
+.changeBtn{
+ position: relative;
+ z-index: 50;
+ color:#FFFF;
+}
+
+   
+   /* Respnsiveness mobile view */
+@media only screen and (max-width:820px){
+    .terms-condition-tab{
+      width:100%;
+    }
+    .terms-flex{
+        display: flex;
+        flex-direction: column;
+        width:100%;
+    
+    }
+ .page-text-header{
+   width:100%;
+   }
+ .terms-textlayout{
+   width:100%;
+  }
+.terms-textlayout p{
+ width:100%;
+ }
+ .list-outline li{
+  width: 100%;  
+}
+.page-text{
+    width:100%;
+}
+.text-header-tab{
+    width:100%;
+}
+.text-header-tab p{
+    width: 100%;
+}
+.text-header-text{
+    width:100%;
+}
+}
