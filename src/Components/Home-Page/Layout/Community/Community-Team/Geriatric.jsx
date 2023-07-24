@@ -13,7 +13,6 @@ const Geriatric = ({ closeModal }) => {
         name: '',
         email: '',
         condition: '',
-        phone: '',
         message: ''
     });
 
@@ -32,30 +31,26 @@ const Geriatric = ({ closeModal }) => {
             errors.condition = 'This field is required';
         }
 
-        if (!formData1.message.trim()) {
-            errors.message = 'This field is required';
-        }
-
         setErrors(errors);
         return Object.keys(errors).length === 0;
     };
 
     // text shown before submission of form
-    const [headText1, setheadText1] = useState('Geriatric Team');
-    const [headText01, setheadText01] = useState('(Coming Soon)');
+    const [headText1, setheadText1] = useState('Geriatric Team Disease');
+    const [headText01, setheadText01] = useState(<p className="gdt__p">(Coming Soon)</p>);
     const [headText001, setheadText001] = useState(' Do not see the condition you are looking for? Let us know. We will be adding new social networks based on community feedback.');
-    const [headText0001, setheadText0001] = useState(<img src={progressbar1} alt="progress-bar" />);
+    const [headText0001, setheadText0001] = useState(<img className="progressbar__img" src={progressbar1} alt="progress-bar" />);
     // success form submission Preloader function
     const [isLoading1, setIsLoading1] = useState(false);
 
     const handleSubmit1 = (event) => {
 
         event.preventDefault();
-        // console.log(formData1)
+        console.log(formData1)
 
         // POST CANCER TEAM FORM IF THE VALIDATION AND MAIL IS CORRECT
         const buttonText = document.getElementById("modal__button1");
-        if (buttonText.innerHTML === "OK") {
+        if (buttonText.innerHTML === "Close") {
             setIsLoading1(false);
             return;
         }
@@ -77,10 +72,10 @@ const Geriatric = ({ closeModal }) => {
 
                         // text shown after successful form submission
                         setheadText1('Thank you');
-                        setheadText01('(Coming soon)');
+                        setheadText01(<p className="gdt__p1"></p>);
                         setheadText001('Thank you for sharing the information with us. Your contribution is greatly appreciated.');
-                        setheadText0001(<img src={progressbar2} alt="progress-bar-success" />);
-                        buttonText.innerHTML = "OK"
+                        setheadText0001(<img className="progressbar__img1" src={progressbar2} alt="progress-bar-success" />);
+                        buttonText.innerHTML = "Close"
 
                         // Set loading state back to false
                         setIsLoading1(false);
@@ -106,8 +101,6 @@ const Geriatric = ({ closeModal }) => {
         setErrors((prevErrors) => ({ ...prevErrors, [name]: '' }));
     };
 
-    // const progress = 1; // Current progress (e.g., user is on step 3)
-    // const totalSteps = 2; // Total number of steps in the progress bar
 
     return (
         <>
@@ -128,7 +121,6 @@ const Geriatric = ({ closeModal }) => {
                     <p>{headText01}</p>
                 </div>
                 <p className="pxp1">{headText001}</p>
-                {/* <ProgressBar progress={progress} totalSteps={totalSteps} /> */}
                 <div className="progressbar">{headText0001}</div>
 
                 {/* Geriatric input form section */}
@@ -185,18 +177,13 @@ const Geriatric = ({ closeModal }) => {
                                     value={formData1.condition}
                                     onChange={handleChange1}
                                 />
-                                {/* <select value={selectedOption} onChange={handleChange1}>
-                                    <option value="">-- Select --</option>
-                                    <option value="option1">Option 1</option>
-                                    <option value="option2">Option 2</option>
-                                    <option value="option3">Option 3</option>
-                                </select> */}
-                                {/* </select> */}
                                 <label for="condition" class="input__label">
                                     Condition
                                 </label>
                                 {errors.condition && <span className="error-msg">{errors.condition}</span>}
                             </div>
+
+                            <div className="input__textarea">
 
                             <textarea class="textarea__field"
                                 placeholder=" "
@@ -204,12 +191,14 @@ const Geriatric = ({ closeModal }) => {
                                 name="message"
                                 value={formData1.message}
                                 onChange={handleChange1}
-                            ></textarea>
+                            >
+
+                            </textarea>
 
                             <label for="message" class="textarea__label">
                                 Message
                             </label>
-                            {errors.message && <span className="error-msg">{errors.message}</span>}
+                            </div>
 
                             <p className="pxp2">indicates a required field</p>
 
