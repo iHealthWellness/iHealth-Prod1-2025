@@ -86,10 +86,8 @@ const Finance = () => {
                 </div>
             </div>
 
-        </section>)
+        </section>
+
+    )
 }
-
 export default Finance;
-
-
-
