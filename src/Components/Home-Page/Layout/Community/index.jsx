@@ -56,11 +56,7 @@ const Community = () => {
 
         <button
         onClick={toggleModal}
-          // onClick={() => {
-          //   setTeam("Geriatric Disease Team");
-          //   document.querySelector("#UnderConst-wrapper").style.display =
-          //     "flex";
-          // }}
+        
           className={
             team === "Geriatric Disease Team"
               ? "community-team-btn focus"
