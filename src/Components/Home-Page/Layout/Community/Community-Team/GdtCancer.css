@@ -199,12 +199,13 @@ h1 {
   background: #0D99FF;
   border-radius: 20px;
   color: #ffffff;
-  border: 1px solid #F8FAFC;
+  border: 1px solid #0D99FF;
   z-index: 1;
 }
 
 .btnx button:hover {
   background-color: #062758;
+  border: 1px solid #ffffff;
 }
 
 /* ON INPUT FIELD PLACEHOLDER IS SET TO DISPLAY OF NONE */
