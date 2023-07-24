@@ -85,11 +85,12 @@ const Community = () => {
         >
           Cancer Team <p className="coming-soon-p">(Coming soon)</p>
         </button>
+      
       </div>
 
-          {/* MODAL POPUP FOR GERIATRIC TEAM*/}
+       {/* MODAL POPUP FOR GERIATRIC TEAM */}
 
-          <div>
+       <div>
         {isOpen && (
           <Geriatric closeModal={closeModal} />
         )}
@@ -102,6 +103,7 @@ const Community = () => {
           <Cancer closeModal={closeModal} />
         )}
       </div>
+
     </section>
   );
 };
