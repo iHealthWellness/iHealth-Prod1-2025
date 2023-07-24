@@ -29,7 +29,7 @@ const Footer = () => {
             </p>
           </div>
           <div className="footer-subscribe-block">
-            <p className="footer-subscribe-heading">STAY IMFORMED:</p>
+            <p className="footer-subscribe-heading">STAY INFORMED:</p>
             <div className="footer-subscribe-bar">
               <input
                 className="footer-subscribe-input"
