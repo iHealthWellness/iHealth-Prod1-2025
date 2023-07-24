@@ -32,11 +32,11 @@
   top: 0;
   left: 0;
   width: 50%;
-  height: 580px;
+  height: 590px;
   border-radius: 20px;
-  margin: 1.2% 25% 0.5% 25%;
+  margin: 0.5% 25%;
   justify-content: center;
-  z-index: 1;
+  z-index: 333;
   background-color: #F8FAFC;
 }
 
@@ -52,7 +52,7 @@
 
 .Login_down {
   background-color: #07235B;
-  height: 200px;
+  height: 210px;
   width: 100%;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -67,9 +67,9 @@ h1 {
   text-align: center;
 }
 
-.gdt-head p,
-h1 {
+.gdt__p{
   font-size: 15px;
+  color: #000000;
   font-weight: 400;
 }
 
@@ -82,7 +82,7 @@ h1 {
 .pxp1 {
   text-align: center;
   color: #0D99FF;
-  margin-top: 10px;
+  margin-top: 5px;
   margin-bottom: 5px;
   padding: 0 17%;
   font-size: 12px;
@@ -92,18 +92,35 @@ h1 {
 
 .progressbar {
   text-align: center;
+  width: 50%;
+  margin: auto;
+}
+
+.progressbar__img{
+  /* width: 80%; */
+  height: 17px;
+}
+
+.progressbar__img1{
+  height: 17px;
+  margin: 10px 0;
 }
 
 /* FORM STYLING */
 
 .form__content {
   width: 80%;
-  margin: 0 10%;
+  margin: 5px 10% 0 10%;
 }
 
 .input {
   position: relative;
   margin-bottom: 13px;
+}
+
+.input__textarea {
+  position: relative;
+  /* height: 80px; */
 }
 
 .input__field {
@@ -131,25 +148,6 @@ h1 {
   color: red;
 }
 
-.input__field1 {
-  width: 100%;
-  padding: 8px;
-  border: 1px solid #E0E3EB;
-  border-radius: 4px;
-  background-color: #ffffff;
-}
-
-.input__label1 {
-  position: absolute;
-  margin-top: 10px;
-  left: 10px;
-  font-size: 12px;
-  font-weight: 400;
-  color: #A3AAC2;
-  pointer-events: none;
-  transition: all 0.3s ease;
-}
-
 .input__label::after {
   content: "*";
   color: rgba(237, 101, 101, 1);
@@ -168,35 +166,7 @@ h1 {
 .textarea__label {
   position: absolute;
   margin-top: 5px;
-  left: 73px;
-  font-size: 12px;
-  font-weight: 400;
-  color: #A3AAC2;
-  pointer-events: none;
-  transition: all 0.3s ease;
-}
-
-
-
-.input__label1::after {
-  content: "*";
-  color: rgba(237, 101, 101, 1);
-}
-
-.textarea__field1 {
-  width: 100%;
-  height: 100px;
-  padding: 10px;
-  border: none;
-  border-radius: 0px;
-  background-color: #ffffff;
-  resize: none;
-}
-
-.textarea__label1 {
-  position: absolute;
-  margin-top: 5px;
-  left: 92px;
+  left: 10px;
   font-size: 12px;
   font-weight: 400;
   color: #A3AAC2;
@@ -223,7 +193,7 @@ h1 {
 .btnx button {
   font-size: 20px;
   font-weight: 200;
-  margin-top: 135px;
+  margin-top: 140px;
   padding: 10px 14px;
   width: 252.84px;
   background: #0D99FF;
@@ -244,18 +214,8 @@ h1 {
   z-index: -1;
 }
 
-.input__field1:focus~.input__label1,
-.input__field1:not(:placeholder-shown)~.input__label1 {
-  z-index: -1;
-}
-
 .textarea__field:focus~.textarea__label,
 .textarea__field:not(:placeholder-shown)~.textarea__label {
-  z-index: -1;
-}
-
-.textarea__field1:focus~.textarea__label1,
-.textarea__field1:not(:placeholder-shown)~.textarea__label1 {
   z-index: -1;
 }
 
@@ -304,7 +264,6 @@ h1 {
 @media only screen and (max-width: 280px) {
 
   .mod1 {
-    /* width: 100%; */
     height: 600px;
     margin: 0;
     border-radius: 0;
@@ -312,25 +271,40 @@ h1 {
     border-bottom-right-radius: 20px;
   }
 
+  /* .progressbar__img{
+    width: 50%;
+    height: 15px;
+    margin-bottom: 5px;
+  } */
+
+  .gdt__p1{
+    margin-top: 20px;
+  }
+
+  .progressbar__img1{
+    width: 50%;
+    height: 10px;
+    margin: 35px 0;
+  }
+
   .close {
     margin-left: 92%;
   }
 
-  .textarea__label {
-    left: 35px;
-  }
-
   .modal {
-    clip-path: circle(160% at 50% -70%);
-    border: none;
+    clip-path: circle(170% at 50% -70%);
   }
 
   .Login_down {
-    background-color: #07235B;
-    /* height: 20%; */
     height: 130px;
     width: 100%;
     margin-top: -130px;
+  }
+
+  .loader {
+    position: absolute;
+    top: 45%;
+    left: 35%;
   }
 
   .btnx button {
@@ -343,7 +317,6 @@ h1 {
 
 @media only screen and (min-width: 290px) and (max-width: 360px) {
   .mod1 {
-    /* height: 600px; */
     margin: 0;
     border-radius: 0;
     border-bottom-left-radius: 20px;
@@ -351,14 +324,10 @@ h1 {
   }
 
   .modal {
-    /* height: 50%; */
-    background-color: #F8FAFC;
     clip-path: circle(137% at 50% -55%);
-    border: none;
   }
 
   .Login_down {
-    background-color: #07235B;
     height: 230px;
     width: 100%;
   }
@@ -374,13 +343,10 @@ h1 {
   }
 
   .modal {
-    background-color: #F8FAFC;
-    clip-path: circle(137% at 50% -57%);
-    border: none;
+    clip-path: circle(137% at 50% -55%);
   }
 
   .Login_down {
-    background-color: #07235B;
     height: 230px;
     width: 100%;
   }
@@ -396,20 +362,17 @@ h1 {
   }
 
   .modal {
-    background-color: #F8FAFC;
-    clip-path: circle(135% at 50% -60%);
-    border: none;
+    clip-path: circle(135% at 50% -55%);
   }
 
   .Login_down {
-    background-color: #07235B;
     height: 230px;
     width: 100%;
   }
 
 }
 
-@media only screen and (min-width: 395px) and (max-width: 414px) {
+@media only screen and (min-width: 395px) and (max-width: 415px) {
   .mod1 {
     margin: 0;
     border-radius: 0;
@@ -418,13 +381,10 @@ h1 {
   }
 
   .modal {
-    background-color: #F8FAFC;
-    clip-path: circle(137% at 50% -67%);
-    border: none;
+    clip-path: circle(137% at 50% -60%);
   }
 
   .Login_down {
-    background-color: #07235B;
     height: 230px;
     width: 100%;
   }
@@ -434,7 +394,7 @@ h1 {
 
 /* SURFACE PRO STYLING */
 
-@media only screen and (min-width: 415px) and (max-width: 540px) {
+@media only screen and (min-width: 415px) and (max-width: 590px) {
 
   .mod1 {
     margin: 0 0%;
@@ -447,40 +407,21 @@ h1 {
   }
 
   .modal {
-    /* height: 50%; */
     clip-path: circle(107% at 50% -52%);
-    border: none;
-  }
-
-  .textarea__label {
-    left: 48px;
   }
 }
 
-
-@media only screen and (min-width: 320px) and (max-width: 530px) {
-  .textarea__label {
-    left: 50px;
-  }
-}
-
-@media only screen and (width: 768px) {
-  .textarea__label {
-    left: 40px;
-  }
-}
 
 /* Mobile styling */
 
 /* Adjustments for smaller screens */
 @media (max-width: 767px) {
   .mod1 {
-    width: 100vw;
-    /* height: 100vh; */
-    margin: 5% 0;
+    width: 90vw;
+    margin: 30px 5% ;
     border-radius: 20px;
-    /* height: fit-content; */
   }
+
 
   .close {
     margin-left: 92%;
@@ -493,6 +434,18 @@ h1 {
   .pxp1 {
     font-size: 12px;
     padding: 0 10%;
+  }
+
+  .progressbar__img{
+    width: 50%;
+    height: 10px;
+    margin-bottom: 5px;
+  }
+
+  .progressbar__img1{
+    width: 50%;
+    height: 10px;
+    margin: 10px 0;
   }
 
   .input__field,
@@ -513,7 +466,8 @@ h1 {
   }
 
   .error-msg {
-    left: 5%;
+    left: 17.5%;
+    font-size: 10px;
   }
 }
 
@@ -522,26 +476,33 @@ h1 {
 @media only screen and (min-width: 768px) and (max-width: 810px) {
 
   .mod1 {
-    margin: 0 18.5%;
-    border-radius: 0;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    width: 70vw;
+    margin: 30px 15%;
   }
 
   .modal {
-    background-color: #F8FAFC;
-    clip-path: circle(122% at 50% -52%);
-    border: none;
+    clip-path: circle(105% at 50% -52%);
   }
 
   .Login_down {
-    background-color: #07235B;
     height: 230px;
     width: 100%;
   }
 
-  .textarea__label {
-    left: 52px;
+  .progressbar__img{
+    width: 50%;
+    height: 10px;
+    margin-bottom: 5px;
+  }
+
+  .progressbar__img1{
+    width: 50%;
+    height: 10px;
+    margin: 10px 0;
+  }
+
+  .error-msg {
+    left: 23.5%;
   }
 }
 
@@ -574,7 +535,8 @@ h1 {
 @media only screen and (min-width: 820px) and (max-width: 912px) {
 
   .mod1 {
-    margin: 0 20%;
+    width: 70vw;
+    margin: 30px 15%;
   }
 
 
@@ -584,44 +546,38 @@ h1 {
   }
 
   .modal {
-    background-color: #F8FAFC;
-    clip-path: circle(110% at 50% -52%);
-    border: none;
+    clip-path: circle(102% at 50% -52%);
   }
 
-  .textarea__label {
-    left: 58px;
+  .error-msg {
+    left: 23.5%;
   }
 }
 
 /* NEST HUB SCREEN STYLING */
 
-/* @media only screen and (min-width: 1020px) and (max-width: 1024px) {
+ @media only screen and (min-width: 1020px) and (max-width: 1024px) {
 
   .mod1 {
-    margin: 0 9%;
+    width: 70vw;
+    margin: 5px 15%;
+  }
+
+
+  .close {
+    font-size: 30px;
   }
 
   .modal {
-    height: 700px;
-    clip-path: circle(98% at 50% -55%);
-    border: none;
+    clip-path: circle(90% at 50% -50%);
   }
 
-  .Login_down {
-    background-color: #07235B;
-    height: 220px;
-    margin-top: -500px;
+  .btnx button{
+    width: 180px;
+    padding: 5px 14px;
+    margin-top: 160px;
   }
-
-  .textarea__label {
-    left: 145px;
-  }
-
-  .pxp2 {
-    margin-top: 30px;
-  }
-} */
+} 
 
 /* NEST HUB PRO SCREEN STYLING */
 
@@ -658,11 +614,5 @@ h1 {
 
   .modal {
     clip-path: circle(110% at 50% -52%);
-
-    border: none;
-  }
-
-  .textarea__label {
-    left: 60px;
   }
 }
