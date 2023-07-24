@@ -1,0 +1,157 @@
+.more-info, .segas{
+    background: url("src\Assets\Images\research images\Dev_ Test - (2)\Cem\2 973.png"), lightgray 50% / cover no-repeat;
+    background-position: center;
+    width: 1241px;
+    height: 500px;
+    flex-shrink: 0;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 80px;
+    padding-left: 40px;
+}
+    
+.more-info p{
+    width: 1138.162px;
+    height: 311.493px;
+    padding-bottom: 157px;
+    flex-shrink: 0;
+    color: var(--sn-primary-headings-07235-b, #07235B);
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 20px;
+}
+.more-info .span, .segas h2{
+    margin-left: 100px;
+    margin-right:139px ;
+    padding-right: 38px;
+    padding-top: 80px;
+    padding-bottom: 38px;
+    margin-top: 240px;
+    width: 1164.822px;
+    height: 60.563px;
+    flex-shrink: 0;
+    color: var(--sn-black, #000);
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 143%;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 50px;
+    margin-bottom: 50px;
+    padding-left: 28px;
+}
+.evorolimus{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 150px;
+    margin-bottom: 300px;
+}
+.evorolimus img{
+    width: 463px;
+    height: 385px;
+    flex-shrink: 0;
+    margin-left: 100px;
+    background: #FFF;
+    margin-top: 150px;
+}
+.evorolimus p{
+    color: var(--sn-primary-headings-07235-b, #07235B);
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    width: 718px;
+    flex-shrink: 0;
+    margin-right: 100px;
+    margin-left: 59px;
+}
+.span2{
+    padding-left: 52px;
+}
+p span, .span2{
+    color: black;
+    font-weight:500;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+@media (max-width:768px){
+    .more-info{
+        margin-left: 23px;
+        width: 700.381px;
+        height: 680.223px; 
+        margin-bottom: 50px;
+
+    }
+    .more-info h2{
+        width: 647px;
+        height: 19.382px;
+        flex-shrink: 0;
+        color: var(--sn-black, #000);
+        font-family: Roboto;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height:110%;  
+        margin-left: 0px;
+    }
+    .more-info p{
+        width: 650.381px;
+        height: 419.223px;
+        flex-shrink: 0;
+        color: var(--sn-primary-headings-07235-b, #07235B);
+        font-family: Roboto;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 143%;
+        margin-left: 0px; 
+        margin-right: 16px;
+    }
+    .evorolimus{
+        display: block;
+    }
+    .evorolimus img{
+        width: 444px;
+        height: 320px;
+        flex-shrink: 0;
+        margin-top: 0px;
+        margin-left: 162px;
+        margin-right: 161px; 
+        margin-bottom: 100px;
+    }
+    .span2{
+        width: 719px;
+        height: 679px;
+        flex-shrink: 0;
+        color: var(--sn-black, #000);
+        font-family: Roboto;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 143%; 
+        padding-left: 24px;
+    }
+    .evorolimus p{
+        width: 719px;
+        flex-shrink: 0;
+        color: var(--sn-primary-headings-07235-b, #07235B);
+        font-family: Roboto;
+        font-size: 19px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 110%; 
+        margin-left: 24px;
+    }
+}
+@media (max-width:414px){
+    .info{
+        display: none;
+    }
+}

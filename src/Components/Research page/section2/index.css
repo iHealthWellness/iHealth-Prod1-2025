@@ -1,0 +1,277 @@
+.tools{
+    margin-top: 317px;
+    margin-bottom: 51px;
+    margin-left: 101px;
+    margin-right: 100px;
+    width: 1239px;
+    flex-shrink: 0;
+    color: var(--sn-primary-headings-07235-b, #07235B);
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 50px; 
+}
+.tools p{
+    margin-left: 7px;
+    width: 1237px;
+    height: 88px;
+    flex-shrink: 0;
+    color: var(--sn-primary-headings-07235-b, #07235B);
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; 
+}
+.notes{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 370px;
+}
+.notes p{
+    color: #858EAD;
+    width: 625px;
+    flex-shrink: 0;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+}
+.notes p span{
+    font-size: 24px;
+    font-weight: 500;
+}
+.notes img{
+    width: 536px;
+    height: 400px;
+    flex-shrink: 0;
+    margin-left: 105px;
+    margin-top: 20px;
+}
+p span, .span2{
+    color: black;
+    font-weight:500;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+.reminder{
+    background-color: #07235B;
+    display: block;
+    margin-left: 157px;
+    margin-right: 157px;
+    margin-top: 300px;
+    margin-bottom: 190px;
+}
+.reminder h2{
+    text-align: center;
+    padding-top: 95px;
+    padding-bottom: 10px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 143%;
+}
+.reminder p{
+    text-align: center;
+    margin-left: 170px;
+    padding-bottom: 69px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+}  
+@media (max-width:768px) {
+    .tools{
+        margin-left: 16px;
+    }
+    .tools h1{
+        color: var(--sn-primary-headings-07235-b, #07235B);
+        font-family: Roboto;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1; 
+        padding-left: 0px;
+        margin-top: 250px;
+        width: 750px;
+        height: 127px;
+        flex-shrink: 0; 
+    }
+    .tools p{
+        margin-top: 101px;
+        margin-left: 1px;
+        color: var(--sn-primary-headings-07235-b, #07235B);
+        font-family: Roboto;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 143%; 
+        width: 750px;
+        height: 120px;
+        flex-shrink: 0; 
+    }
+    .notes{
+        display: block;
+    }
+    .notes img{
+        margin-top: 50px;
+        margin-left: 138px;
+        margin-right: 182px;
+        margin-bottom: 52px;
+    }
+    .text span{
+        color: var(--sn-black, #000);
+        font-family: Roboto;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 143%;
+    }
+    .text p{
+        width: 750px;
+        flex-shrink: 0; 
+        color: var(--sn-body-text-grey-858-ead, #858EAD);
+        font-family: Roboto;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 143%; 
+        margin-left: 16px;
+    }
+    .reminder{
+        width: 720px;
+        flex-shrink: 0;
+        margin-left: 24px;
+        margin-right: 21px; 
+        display: block;
+    }
+    .reminder h2{
+        width: 604px;
+        flex-shrink: 0;
+        color: #FFF;
+        font-family: Roboto;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 143%;  
+        margin-bottom: 5px;
+        align-items: center;
+        padding-left: 150px;
+    }
+    .reminder p{
+        width: 672px;
+        flex-shrink: 0;
+        color: #FFF;
+        font-family: Roboto;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 143%;   
+        align-items: center;
+        margin-left: 70px;
+        padding-right: 70px;
+        margin-bottom: 128px;
+    }
+
+}
+@media (max-width:414px){
+    .tools{
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+    .tools h1{
+        width: 340px;
+        flex-shrink: 0;
+        color: var(--sn-primary-headings-07235-b, #07235B);
+        font-family: Roboto;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 120%;
+        margin-top: 89px;
+        padding-top: 320px;
+        padding-left: 5px;
+        margin-bottom: 60px;
+    }
+    .tools p{
+        width: 340px;
+        flex-shrink: 0;
+        color: var(--sn-primary-headings-07235-b, #07235B);
+        font-family: Roboto;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 110%;
+        margin-top: 15px; 
+        padding-top: 70px;
+        margin-left: 7px; 
+        margin-bottom: 121px;
+    }
+    .notes img{
+        margin-top: 66px;
+        margin-left: 19px;
+        margin-right: 13px;
+        margin-bottom: 121px;
+        width: 343px;
+        height: 318px;
+        flex-shrink: 0; 
+    }
+    .text p{
+        width: 341px;
+        flex-shrink: 0; 
+        color: var(--sn-body-text-grey-858-ead, #858EAD);
+        font-family: Roboto;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 110%;
+        margin-left: 16px;
+        margin-bottom: 1px;
+    }
+    .reminder{
+        width: 380px;
+        flex-shrink: 0; 
+        margin-top: 0px;
+        margin-left: 16px;
+        padding-left: 50px;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+    .reminder h2{
+        width: 215px;
+        height: 20.146px;
+        flex-shrink: 0;
+        color: #FFF;
+        font-family: Roboto;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 100%;
+        margin: 0px;
+        padding: 0px; 
+        padding-bottom: 35px;
+        padding-left: 50px;
+        align-items: center;
+    }
+    .reminder p{
+        width: 267px;
+        flex-shrink: 0;
+        color: #FFF;
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 110%; 
+        margin: 0px;
+        padding: 0px;
+    }
+}

@@ -20,6 +20,9 @@
   height: 64px;
   padding: 16px;
 }
+.toTop-btn p{
+  padding-right: 50px;
+}
 
 .toTop-btn.visible {
   opacity: 1;
