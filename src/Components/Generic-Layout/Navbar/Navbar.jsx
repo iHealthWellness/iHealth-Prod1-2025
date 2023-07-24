@@ -53,8 +53,8 @@ const Navbar = () => {
                   About Us
                 </NavLink>
                 <div className="nav-dropdown-content">
-                  <a href="#Statement">Corporate Info </a>
-                  <a href="">Our Team </a>
+                  <a href="#Hero">Corporate Info </a>
+                  <a href="#Statement">Our Team </a>
                   <a href="#Finance">Financial Transparency </a>
                   <a href="#Terms">Terms Of Use</a>
                   <a href="">List Of Openings</a>

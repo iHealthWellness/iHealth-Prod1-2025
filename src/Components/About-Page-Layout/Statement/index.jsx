@@ -57,7 +57,7 @@ const Statement = () => {
 
 
 
-                                </div>
+                                </div><br />
 
                                 <div className="text1">
                                     <h3>Integrity</h3>
