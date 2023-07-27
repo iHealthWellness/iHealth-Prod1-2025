@@ -54,6 +54,8 @@
 /* ==================== Set Css rules for DonateTopDonateNow`s component`s div for 3 pictures wrapper div ==================== */
 
 
+
+
 /* ==================== Set Css rules for DonateTopDonateNow`s component`s second div as wrapper ==================== */
 
 #Donate-Top-Donate-Now > div:last-child
@@ -64,6 +66,8 @@
     place-content: center;
 }
 
+
+/* Set Css rules for DonateTopDonateNow`s component`s down part`s picture of sick little kid */
 #Donate-Top-Donate-Now > div:last-child > img
 {
     border-radius: 1.875rem;
@@ -72,6 +76,8 @@
     object-fit: cover;
 }
 
+
+/* Set Css rules for DonateTopDonateNow`s component`s down part`s wrapper div for all pragraph and button */
 #Donate-Top-Donate-Now > div:last-child > div
 {
     display: flex;
@@ -80,6 +86,7 @@
     place-content: center;
     gap: 3rem;
 }
+
 
 #Donate-Top-Donate-Now > div:last-child > div > p
 {
