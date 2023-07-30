@@ -36,18 +36,16 @@ const NavDropdownButton = () => {
       {showMenu && (
         <ul className="nav-dropdown-links-list">
           <li
-            className={`nav-dropdown-links-listitem ${
-              currentPage === "/" ? "active" : ""
-            }`}
+            className={`nav-dropdown-links-listitem ${currentPage === "/" ? "active" : ""
+              }`}
           >
             <NavLink to="/" className="nav-dropdown-links nav-home">
-              Home &gt;
+              Home
             </NavLink>
           </li>
           <li
-            className={`nav-dropdown-links-listitem ${
-              currentPage === "/services" ? "active" : ""
-            }`}
+            className={`nav-dropdown-links-listitem ${currentPage === "/services" ? "active" : ""
+              }`}
           >
             <NavLink
               onClick={() => {
@@ -56,28 +54,35 @@ const NavDropdownButton = () => {
               }}
               className="nav-dropdown-links nav-services"
             >
-              Services &gt;
+              Services
             </NavLink>
           </li>
           <li
-            className={`nav-dropdown-links-listitem ${
-              currentPage === "/about-us" ? "active" : ""
-            }`}
+            className={`nav-dropdown-links-listitem ${currentPage === "/about-us" ? "active" : ""
+              }`}
           >
             <NavLink
-              onClick={() => {
-                document.querySelector("#UnderConst-wrapper").style.display =
-                  "flex";
-              }}
-              className="nav-dropdown-links nav-about-us"
+
+              to="/about-us"
+              className="nav-links-nav-about-us"
             >
-              About Us &gt;
+              About Us
             </NavLink>
+
+            <div className="nav-dropdown-content">
+              <a href="#Hero">Corporate Info </a>
+              <a href="#Statement">Our Team </a>
+              <a href="#Finance">Financial Transparency </a>
+              <a href="#Terms">Terms Of Use</a>
+              <a href="">List Of Openings</a>
+
+
+
+            </div>
           </li>
           <li
-            className={`nav-dropdown-links-listitem ${
-              currentPage === "/research" ? "active" : ""
-            }`}
+            className={`nav-dropdown-links-listitem ${currentPage === "/research" ? "active" : ""
+              }`}
           >
             <NavLink
               onClick={() => {
@@ -86,7 +91,7 @@ const NavDropdownButton = () => {
               }}
               className="nav-dropdown-links nav-research"
             >
-              Research &gt;
+              Research
             </NavLink>
           </li>
         </ul>

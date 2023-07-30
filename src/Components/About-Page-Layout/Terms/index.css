@@ -3,7 +3,8 @@
 
 .terms-condition-tab{
     
-   background-image:linear-gradient(to bottom,rgba(160,226,252,0.7),rgba(160,226,252,0.7)),url("/src/Assets/Images/still-life-with-scales-justice.png");
+    background-image:linear-gradient(to bottom,rgba(242, 248, 253, 0.7),rgba(229, 248, 210, 0.7)),url("/src/Assets/Images/still-life-with-scales-justice.png");
+   /* background-image:linear-gradient(to bottom,rgba(160,226,252,0.7),rgba(160,226,252,0.7)),url("/src/Assets/Images/still-life-with-scales-justice.png"); */
    background-repeat: no-repeat;
    background-size:cover;
    background-position: center;
@@ -20,7 +21,7 @@
     margin-top: 80px;
 }
 .page-text-header{
-width: 1202px;
+width: 1216px;
 margin-top: 35px;
 padding: 20px;
 font-family: Roboto;
@@ -45,10 +46,13 @@ color:black;
 text-align: center;
 margin-top: 10px;
 }
-
+.drop-down-tab{
+    margin-top: 20px;
+    display:flex;
+    gap:7px;
+}
 .terms-textlayout{
-width: 1202px;
-
+width: 1216px;
 font-family: Roboto;
 font-size: 24px;
 font-weight: 400;
@@ -58,33 +62,22 @@ text-align: justified;
 color:black;
 }
 .terms-textlayout p{
-width: 1202px;
+width: 1216px;
 text-align: justify;
 
 }
 .list-outline li{
-    width: 1002px;  
-    margin: auto;
-}
-.terms-flex{
-    display: flex;
-    gap:15px;
-    width:1202px;
-   
-   gap: 44px;
+    width: 1216px;  
+    text-align: justify;
 
 }
-
 .text-header-tab{
-    width:579px;
-/* height:2610px; */
-gap: 40px;
-
-
+  width: 1216px;
 }
-
-.text-header-text{
-    width:578px;
+.plus-icon{
+    margin-top: 4px;
+    width:20px;
+    height:20px;
 }
 .text-header-text p {
     font-size: 24px;
@@ -105,9 +98,12 @@ gap: 40px;
     text-align: left;
     
 }
+
+
 .Binding-tab p{
  font-size: 24px;
  text-align: justify;
+ width: 1216px;
     
 }
 .Binding-tab h3{
@@ -132,12 +128,12 @@ gap: 40px;
     .terms-condition-tab{
       width:100%;
     }
-    .terms-flex{
+    /* .terms-flex{
         display: flex;
         flex-direction: column;
         width:100%;
     
-    }
+    } */
  .page-text-header{
    width:100%;
    }
@@ -162,4 +158,12 @@ gap: 40px;
 .text-header-text{
     width:100%;
 }
+.Binding-tab{
+    width: 100%;
+}
+.Binding-tab p{
+    
+    width: 100%;
+       
+   }
 }

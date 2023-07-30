@@ -24,21 +24,31 @@
 }
 
 .nav-dropdown-links-listitem {
-  padding: 0.5rem 1rem;
+  /* padding: 0.5rem 1rem;  */
+  padding: 12px 16px; 
+  background-color: #ffff;
+  color: #07235b;
 }
 
-.nav-dropdown-links {
+ .nav-dropdown-links {
   color: #07235b;
+  /* padding: 12px 16px; */
+/* background-color: #ffff; */
+  text-decoration: none;
+}
+.nav-links-nav-about-us{
   text-decoration: none;
 }
 
 .nav-dropdown-links-listitem.active {
-  background-color: #07235b;
+  /* background-color: #ffff; */
 }
 
 .nav-dropdown-links-listitem.active .nav-dropdown-links {
-  color: #fff;
+  color:#07235b;
 }
+
+
 
 @media only screen and (min-width: 1024px) {
   .nav-dropdown-container {
