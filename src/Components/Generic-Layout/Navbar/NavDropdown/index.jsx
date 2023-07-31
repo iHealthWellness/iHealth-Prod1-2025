@@ -5,8 +5,29 @@ import dropdownIcon from "src/Assets/Icons/nav-dropdown.svg";
 
 import "./index.css";
 
+function classnames(...args) {
+  const classes = [];
+
+  args.forEach(arg => {
+    if (typeof arg === 'string') {
+      classes.push(arg);
+    } else if (typeof arg === 'object' && arg !== null) {
+      for (const key in arg) {
+        if (arg.hasOwnProperty(key) && arg[key]) {
+          classes.push(key);
+        }
+      }
+    }
+  });
+
+  return classes.join(' ');
+}
+
+
+
 const NavDropdownButton = () => {
   const [showMenu, setShowMenu] = useState(false);
+  const [showdropdown, setShowdropdown] = useState(false);
   const location = useLocation();
   const currentPage = location.pathname;
 
@@ -15,17 +36,28 @@ const NavDropdownButton = () => {
     setShowMenu((prev) => !prev);
   };
 
-  useEffect(() => {
-    if (!showMenu) return;
 
-    const closeMenu = () => {
-      setShowMenu(false);
-    };
+  const closeMenu = () => {
+    setShowMenu(false);
+    setShowdropdown(false)
+  };
 
-    document.addEventListener("click", closeMenu);
+  const toggleDropdown = () => {
 
-    return () => document.removeEventListener("click", closeMenu);
-  }, [showMenu]);
+    setShowdropdown((prev) => !prev)
+
+  }
+  // useEffect(() => {
+  //   if (!showMenu || !showdropdown) return;
+
+  //   const closeMenu = () => {
+  //     setShowMenu(false);
+  //   };
+
+  //   document.addEventListener("click", closeMenu);
+
+  //   return () => document.removeEventListener("click", closeMenu);
+  // }, [showMenu, showdropdown]);
 
   return (
     <div className="nav-dropdown-container">
@@ -39,7 +71,7 @@ const NavDropdownButton = () => {
             className={`nav-dropdown-links-listitem ${currentPage === "/" ? "active" : ""
               }`}
           >
-            <NavLink to="/" className="nav-dropdown-links nav-home">
+            <NavLink to="/" className="nav-dropdown-links nav-home" onClick={closeMenu}>
               Home
             </NavLink>
           </li>
@@ -51,6 +83,7 @@ const NavDropdownButton = () => {
               onClick={() => {
                 document.querySelector("#UnderConst-wrapper").style.display =
                   "flex";
+                closeMenu()
               }}
               className="nav-dropdown-links nav-services"
             >
@@ -62,6 +95,8 @@ const NavDropdownButton = () => {
               }`}
           >
             <NavLink
+              onClick={toggleDropdown}
+
 
               to="/about-us"
               className="nav-links-nav-about-us"
@@ -69,7 +104,7 @@ const NavDropdownButton = () => {
               About Us
             </NavLink>
 
-            <div className="nav-dropdown-content">
+            <div className={classnames('nav-dropdown-content', { block: showdropdown })}>
               <a href="#Hero">Corporate Info </a>
               <a href="#Statement">Our Team </a>
               <a href="#Finance">Financial Transparency </a>
@@ -88,6 +123,7 @@ const NavDropdownButton = () => {
               onClick={() => {
                 document.querySelector("#UnderConst-wrapper").style.display =
                   "flex";
+                closeMenu();
               }}
               className="nav-dropdown-links nav-research"
             >
