@@ -1,5 +1,7 @@
 import { useState } from "react";
 import plus from "src/Assets/Icons/plus.png";
+import minus from "src/Assets/Icons/minus.svg";
+import ihealth from "src/Assets/Icons/ihealth-foundation.png";
 import "./index.css";
 
 const Terms = () => {
@@ -7,6 +9,14 @@ const Terms = () => {
   const [privacy, setPrivacy] = useState(false);
 
   const [isExpanded, setIsExpanded] = useState(false);
+  const [isImageVisible, setImageVisible] = useState(true);
+  const [isErrorVisible, setErrorVisible] = useState(true);
+  const [isthirdVisible, setthirdVisible] = useState(true);
+  const [istermVisible, settermVisible] = useState(true);
+  const [isdisVisible, setdisVisible] = useState(true);
+  const [isindVisible, setindVisible] = useState(true);
+  const [isserviceVisible, setserviceVisible] = useState(true);
+  const [isbindVisible, setbindVisible] = useState(true);
   const [errors, setErrors] = useState(false);
   const [thirdParty, setThirdParty] = useState(false);
   const [termination, setTermination] = useState(false);
@@ -19,28 +29,66 @@ const Terms = () => {
 
   const toggleAccordion = () => {
     setIsExpanded(!isExpanded);
+    setImageVisible((prevState) => !prevState);
   };
+  const reverseAccordion = () => {
+    setIsExpanded(!isExpanded)
+    setImageVisible((prevState) => !prevState);
+  }
   const toggleErrors = () => {
     setErrors(!errors);
   };
+  const reverseErrors = () => {
+    setErrors(!errors);
+    setErrorVisible((prevState) => !prevState);
+  };
+
   const toggleParty = () => {
     setThirdParty(!thirdParty);
+    setthirdVisible((prevState) => !prevState);
+  };
+  const reverseParty = () => {
+    setThirdParty(!thirdParty);
+    setthirdVisible((prevState) => !prevState);
   };
   const toggleTermination = () => {
     setTermination(!termination);
+
+  };
+  const reverseTermination = () => {
+    setTermination(!termination);
+    settermVisible((prevState) => !prevState);
   };
   const toggleDisclaimer = () => {
     setDisclaimer(!disclaimer);
   };
+  const reverseDisclaimer = () => {
+    setDisclaimer(!disclaimer);
+    setdisVisible((prevState) => !prevState);
+  };
   const toggleIndemnity = () => {
     setIndemnity(!indemnity);
   };
+  const reverseIndemnity = () => {
+    setIndemnity(!indemnity);
+    setindVisible((prevState) => !prevState);
+  };
+
   const toggleService = () => {
     setService(!service);
+  };
+  const reverseService = () => {
+    setService(!service);
+    setserviceVisible((prevState) => !prevState);
   };
   const toggleBinding = () => {
     setBinding(!binding);
   };
+  const reverseBinding = () => {
+    setBinding(!binding);
+    setbindVisible((prevState) => !prevState);
+  };
+
 
   return (
     <div id="Terms" className="terms-condition-tab">
@@ -48,8 +96,10 @@ const Terms = () => {
 
       <div className="page-text">
         <div>
+          <img className="ihealth-logo" src={ihealth} alt="" />
           <h2 className="page-text-header">iHealth and Wellness Foundation, Inc.</h2>
-          <h3 className="page-text-subheader">Terms of Service</h3>
+          <h3 className="page-text-subheader">Terms and privacy policy</h3>
+          <h3 className="page-date">Effective: May 23,2023</h3>
         </div>
 
         <div className="terms-textlayout">
@@ -94,8 +144,10 @@ const Terms = () => {
           <div className="text-header-tab">
             <div className="drop-down-tab">
               <h2 className="">Privacy Policy</h2>
-              <img className="plus-icon" src={plus} alt="" onClick={toggleAccordion} />
-
+              {isImageVisible && (
+                <img className="plus-icon" src={plus} alt="" onClick={toggleAccordion} />
+              )}
+              <img className="minus-icon" src={minus} alt="" onClick={reverseAccordion} />
               <span className={`${isExpanded ? "visible" : "hidden"}`}></span>
             </div>
 
@@ -128,7 +180,9 @@ const Terms = () => {
             <div className="text-header-tab">
               <div className="drop-down-tab">
                 <h2>Correction of Site Errors</h2>
-                <img className="plus-icon" src={plus} alt="" onClick={toggleErrors} />
+                {isErrorVisible && (
+                  <img className="plus-icon" src={plus} alt="" onClick={toggleErrors} />)}
+                <img className="minus-icon-error" src={minus} onClick={reverseErrors} alt="" />
               </div>
               <span className={`${errors ? "visible" : "hidden"}`}></span>
             </div>
@@ -146,7 +200,9 @@ const Terms = () => {
             <div className="text-header-tab">
               <div className="drop-down-tab">
                 <h2>Third Party Links</h2>
-                <img className="plus-icon" src={plus} alt="" onClick={toggleParty} />
+                {isthirdVisible && (
+                  <img className="plus-icon" src={plus} alt="" onClick={toggleParty} />)}
+                <img className="minus-icon-links" src={minus} alt="" onClick={reverseParty} />
               </div>
               <span className={`${thirdParty ? "visible" : "hidden"}`}></span>
 
@@ -166,7 +222,9 @@ const Terms = () => {
 
               <div className="drop-down-tab">
                 <h2>Termination</h2>
-                <img className="plus-icon" src={plus} alt="" onClick={toggleTermination} />
+                {istermVisible && (
+                  <img className="plus-icon" src={plus} alt="" onClick={toggleTermination} />)}
+                <img className="minus-icon-term" src={minus} alt="" onClick={reverseTermination} />
                 <span className={`${termination ? "visible" : "hidden"}`}></span>
               </div>
 
@@ -182,7 +240,9 @@ const Terms = () => {
             <div className="text-header-tab">
               <div className="drop-down-tab">
                 <h2>Disclaimer</h2>
-                <img className="plus-icon" src={plus} alt="" onClick={toggleDisclaimer} />
+                {isdisVisible && (
+                  <img className="plus-icon" src={plus} alt="" onClick={toggleDisclaimer} />)}
+                <img className="minus-icon-dis" src={minus} alt="" onClick={reverseDisclaimer} />
                 <span className={`${disclaimer ? "visible" : "hidden"}`}></span>
               </div>
 
@@ -202,11 +262,13 @@ const Terms = () => {
           <div className="text-header-tab">
             <div className="drop-down-tab">
               <h2>Indemnity</h2>
-              <img className="plus-icon" src={plus} alt="" onClick={toggleIndemnity} />
+              {isindVisible && (
+                <img className="plus-icon" src={plus} alt="" onClick={toggleIndemnity} />)}
+              <img className="minus-icon-ind" src={minus} alt="" onClick={reverseIndemnity} />
               <span className={`${indemnity ? "visible" : "hidden"}`}></span>
             </div>
 
-            {disclaimer && (<div>
+            {indemnity && (<div>
               <p>
                 You agree to indemnify and hold iHealth and Wellness Foundation, Inc., (the “Organization” and its officers, directors, agents, subsidiaries, joint ventures, and employees) harmless from any claim or demand, as well as losses, expenses, damages and costs, resulting from any violation of these Terms or your use of
                 the Services (including negligent or wrongful conduct).</p></div>)}
@@ -216,7 +278,9 @@ const Terms = () => {
           <div className="text-header-tab">
             <div className="drop-down-tab">
               <h2>Use of Services</h2>
-              <img className="plus-icon" src={plus} alt="" onClick={toggleService} />
+              {isserviceVisible && (
+                <img className="plus-icon" src={plus} alt="" onClick={toggleService} />)}
+              <img className="minus-icon-ser" src={minus} alt="" onClick={reverseService} />
               <span className={`${service ? "visible" : "hidden"}`}></span>
             </div>
             {service && (<div>
@@ -273,7 +337,9 @@ const Terms = () => {
             <div>
               <div className="drop-down-tab">
                 <h2>Binding Individual Arbitration</h2>
-                <img className="plus-icon" src={plus} alt="" onClick={toggleBinding} />
+                {isbindVisible && (
+                  <img className="plus-icon" src={plus} alt="" onClick={toggleBinding} />)}
+                <img className="minus-icon-bin" src={minus} alt="" onClick={reverseBinding} />
                 <span className={`${binding ? "visible" : "hidden"}`}></span>
               </div>
 
