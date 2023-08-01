@@ -59,7 +59,7 @@ const Statement = () => {
 
                                 </div><br />
 
-                                <div className="text1">
+                                <div className="text-tab">
                                     <h3>Integrity</h3>
                                     <p>We hold ourselves to the highest ethical standards and are dedicated to providing our
                                         users with accurate and reliable information. We will always act with honesty, transparency, and
@@ -73,7 +73,7 @@ const Statement = () => {
                                         resources back into the community.
                                     </p></div><br />
 
-                                <div className="text1">
+                                <div className="text-tab">
                                     <h3>Collaboration</h3>
                                     <p>We understand that complex diseases require a collaborative approach, and we
                                         strive to foster partnerships with healthcare providers, patient advocacy groups, and other
@@ -98,17 +98,22 @@ const Statement = () => {
                             <img src={img3} className="img-vision" alt="" />
                         </div>
                         <div className="text-outline">
+
                             <div className="text">
                                 <p>Our aim is to empower patients to take control of their health, collaborate with healthcare providers
                                     and policymakers, and improve the quality of life for all those affected by complex diseases.</p>
-                                <div className="text-layout">
-                                    <p>Our vision is to create a world where patients living with complex diseases have access to
-                                        high-quality healthcare providers and resources, regardless of geographic location or financial status.
-                                    </p>
-                                </div><br /><br />
+                            </div>
+                            <div className="text-layout">
+                                <p>Our vision is to create a world where patients living with complex diseases have access to
+                                    high-quality healthcare providers and resources, regardless of geographic location or financial status.
+                                </p>
+                            </div><br /><br />
+                            <div className="text">
                                 <p>We strive to be a global non-profit leader in the integration of major EHR systems, providing
                                     innovative medical and wellness social networking platforms and patient advocacy services.</p>
+
                             </div>
+
 
                         </div>
 

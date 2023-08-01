@@ -53,6 +53,11 @@ const Navbar = () => {
                   About Us
                 </NavLink>
                 <div className="nav-dropdown-content">
+                  {/* <NavLink to="/about-us/#Hero" >Corporate Info </NavLink>
+                  <NavLink to="/about-us/#Statement">Our Team </NavLink>
+                  <NavLink to="/about-us/#Finance">Financial Transparency </NavLink>
+                  <NavLink to="/about-us/#Terms">Terms Of Use</NavLink>
+                  <a href=" ">List Of Openings</a> */}
                   <a href="#Hero">Corporate Info </a>
                   <a href="#Statement">Our Team </a>
                   <a href="#Finance">Financial Transparency </a>
