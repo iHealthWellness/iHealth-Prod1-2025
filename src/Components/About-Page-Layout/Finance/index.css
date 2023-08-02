@@ -150,11 +150,11 @@ border-radius: 20px;
 }
 .analysis-img{
     width:80%;
-    height:246px;
+    /* height:246px; */
 }
 .grid-analysis img{
     width: 80%;
-    height: 346px;
+    /* height: 346px; */
     border-radius: 20px;
     }
 .grid2{
