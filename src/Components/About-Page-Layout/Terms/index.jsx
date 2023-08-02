@@ -1,14 +1,35 @@
 import { useState } from "react";
-import plus from "src/Assets/Icons/plus.png";
-import minus from "src/Assets/Icons/minus.svg";
+import Button from "./Button";
+import plus from "../../../Assets/Icons/plus.png"
+import minus from "../../../Assets/Icons/minus.png"
 import ihealth from "src/Assets/Icons/ihealth-foundation.png";
 import "./index.css";
 
 const Terms = () => {
 
-  const [privacy, setPrivacy] = useState(false);
 
-  const [isExpanded, setIsExpanded] = useState(false);
+  const [showContent, setShowContent] = useState({
+    privacy: false,
+    isExpanded: false,
+    errors: false,
+    thirdParty: false,
+    termination: false,
+    disclaimer: false,
+    indemnity: false,
+    service: false,
+    binding: false,
+  })
+
+  const toggleContentVisible = content => e => {
+    setShowContent(prev => ({ ...prev, [content]: !prev[content] }))
+  }
+
+
+
+
+
+
+
   const [isImageVisible, setImageVisible] = useState(true);
   const [isErrorVisible, setErrorVisible] = useState(true);
   const [isthirdVisible, setthirdVisible] = useState(true);
@@ -17,6 +38,10 @@ const Terms = () => {
   const [isindVisible, setindVisible] = useState(true);
   const [isserviceVisible, setserviceVisible] = useState(true);
   const [isbindVisible, setbindVisible] = useState(true);
+
+
+  // const [privacy, setPrivacy] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(false);
   const [errors, setErrors] = useState(false);
   const [thirdParty, setThirdParty] = useState(false);
   const [termination, setTermination] = useState(false);
@@ -144,14 +169,12 @@ const Terms = () => {
           <div className="text-header-tab">
             <div className="drop-down-tab">
               <h2 className="">Privacy Policy</h2>
-              {isImageVisible && (
-                <img className="plus-icon" src={plus} alt="" onClick={toggleAccordion} />
-              )}
-              <img className="minus-icon" src={minus} alt="" onClick={reverseAccordion} />
-              <span className={`${isExpanded ? "visible" : "hidden"}`}></span>
+
+              <Button icon={showContent.privacy ? minus : plus} onClick={toggleContentVisible('privacy')} />
+
             </div>
 
-            {isExpanded && (
+            {showContent.privacy && (
               <div>
                 <p>
 
@@ -180,13 +203,14 @@ const Terms = () => {
             <div className="text-header-tab">
               <div className="drop-down-tab">
                 <h2>Correction of Site Errors</h2>
-                {isErrorVisible && (
-                  <img className="plus-icon" src={plus} alt="" onClick={toggleErrors} />)}
-                <img className="minus-icon-error" src={minus} onClick={reverseErrors} alt="" />
+
+                <Button icon={showContent.errors ? minus : plus} onClick={toggleContentVisible('errors')} />
+
               </div>
-              <span className={`${errors ? "visible" : "hidden"}`}></span>
+
+
             </div>
-            {errors && (
+            {showContent.errors && (
               <div> <p>
                 The information on the Site may contain typographical errors or inaccuracies.
                 We reserve the right to update any information we see fit at any time without
@@ -200,150 +224,132 @@ const Terms = () => {
             <div className="text-header-tab">
               <div className="drop-down-tab">
                 <h2>Third Party Links</h2>
-                {isthirdVisible && (
-                  <img className="plus-icon" src={plus} alt="" onClick={toggleParty} />)}
-                <img className="minus-icon-links" src={minus} alt="" onClick={reverseParty} />
+
+                <Button icon={showContent.thirdParty ? minus : plus} onClick={toggleContentVisible('thirdParty')} />
               </div>
-              <span className={`${thirdParty ? "visible" : "hidden"}`}></span>
-
-              {thirdParty && (
-                <div>
-                  <p>The Services may contain links to third-party websites or resources.
-                    We provide these links only as a convenience and are not responsible for the
-                    content,products or services on or available from those websites or resources
-                    or links displayed on such websites. You acknowledge sole responsibility for and
-                    assume all risk arising from your use of any third-party websites or resources.
-                  </p>
-                </div>)}
-
             </div>
 
-            <div className="text-header-tab">
-
-              <div className="drop-down-tab">
-                <h2>Termination</h2>
-                {istermVisible && (
-                  <img className="plus-icon" src={plus} alt="" onClick={toggleTermination} />)}
-                <img className="minus-icon-term" src={minus} alt="" onClick={reverseTermination} />
-                <span className={`${termination ? "visible" : "hidden"}`}></span>
-              </div>
-
-              {termination && (
-                <div>
-                  <p> We may terminate your access to and use of the services, at our sole discretion,
-                    at any time and without notice to you.
-                  </p>
-                </div>)}
-
-            </div>
-
-            <div className="text-header-tab">
-              <div className="drop-down-tab">
-                <h2>Disclaimer</h2>
-                {isdisVisible && (
-                  <img className="plus-icon" src={plus} alt="" onClick={toggleDisclaimer} />)}
-                <img className="minus-icon-dis" src={minus} alt="" onClick={reverseDisclaimer} />
-                <span className={`${disclaimer ? "visible" : "hidden"}`}></span>
-              </div>
-
-              {disclaimer && (<div>
-                <p>The information provided on this website is for informational purposes only and is not intended to be a substitute for professional medical advice,
-                  diagnosis, or treatment.The website owner does not endorse or recommend any specific healthcare provider listed on the site, and is not responsible
-                  for the quality or performance of any healthcare provider listed on the site.The website owner does not guarantee the accuracy, completeness,
-                  or timeliness of the information provided on the site.Users are encouraged to verify the credentials and qualifications of any healthcare provider
-                  listed on the site before making an appointment.By using this website, users agree to hold the website owner harmless from any claims or
-                  damages arising from the use of the information provided on the site..</p>
+            {showContent.thirdParty && (
+              <div>
+                <p>The Services may contain links to third-party websites or resources.
+                  We provide these links only as a convenience and are not responsible for the
+                  content,products or services on or available from those websites or resources
+                  or links displayed on such websites. You acknowledge sole responsibility for and
+                  assume all risk arising from your use of any third-party websites or resources.
+                </p>
               </div>)}
 
+          </div>
+
+          <div className="text-header-tab">
+
+            <div className="drop-down-tab">
+              <h2>Termination</h2>
+              <Button icon={showContent.termination ? minus : plus} onClick={toggleContentVisible('termination')} />
             </div>
+
+            {showContent.termination && (
+              <div>
+                <p> We may terminate your access to and use of the services, at our sole discretion,
+                  at any time and without notice to you.
+                </p>
+              </div>)}
 
           </div>
 
           <div className="text-header-tab">
             <div className="drop-down-tab">
-              <h2>Indemnity</h2>
-              {isindVisible && (
-                <img className="plus-icon" src={plus} alt="" onClick={toggleIndemnity} />)}
-              <img className="minus-icon-ind" src={minus} alt="" onClick={reverseIndemnity} />
-              <span className={`${indemnity ? "visible" : "hidden"}`}></span>
+              <h2>Disclaimer</h2>
+              <Button icon={showContent.disclaimer ? minus : plus} onClick={toggleContentVisible('disclaimer')} />
             </div>
 
-            {indemnity && (<div>
-              <p>
-                You agree to indemnify and hold iHealth and Wellness Foundation, Inc., (the “Organization” and its officers, directors, agents, subsidiaries, joint ventures, and employees) harmless from any claim or demand, as well as losses, expenses, damages and costs, resulting from any violation of these Terms or your use of
-                the Services (including negligent or wrongful conduct).</p></div>)}
-          </div>
-
-
-          <div className="text-header-tab">
-            <div className="drop-down-tab">
-              <h2>Use of Services</h2>
-              {isserviceVisible && (
-                <img className="plus-icon" src={plus} alt="" onClick={toggleService} />)}
-              <img className="minus-icon-ser" src={minus} alt="" onClick={reverseService} />
-              <span className={`${service ? "visible" : "hidden"}`}></span>
-            </div>
-            {service && (<div>
-              <p>
-                You agree that you won’t do any of the following
-                things: <br />
-                Use, display, mirror, or frame the Services, or any
-                individual element within the Services, iHealth and Wellness (the
-                “Organization”)’s name, any iHealth and Wellness (the
-                “Organization”) trademark, logo, or other proprietary information
-                (including through the use of meta tags or the like), or the layout
-                and design of any page or form contained on a page, without our
-                express written consent; Attempt to access or search the Services or
-                Content or download Content from the Services through the use of any
-                engine, software, tool, agent, device or mechanism (including
-                spiders, robots, crawlers, data mining tools or the like) other than
-                the software and/or search agents provided by iHealth and Wellness
-                (the “Organization”) or other generally available third-party web
-                browsers; Send any unsolicited or unauthorized advertising,
-                promotional materials, email, junk mail, spam, chain letters or
-                other form of solicitation. Use the Services or Content, or any
-                portion thereof, for any commercial purpose or for the benefit of
-                any third party or in any manner not permitted by these Terms;
-
-                Attempt to interfere in any way with the Services or the networks or
-                network security hosting the Services, or attempt to use the
-                Services to gain unauthorized access to any other computer system.
-
-                Collect or store any personally identifiable information from the
-                Services from other users of the Services without their express
-                permission; Impersonate or misrepresent your affiliation with any
-                person or entity; Violate any applicable law or regulation; or
-                Encourage or enable any other third party or individual to do
-                anything listed above.
-
-                Although we’re not obligated to monitor
-                access to or use of the Services or Content or to review or edit any
-                Content, we have the right to do so for the purpose of operating the
-                Services, to ensure compliance with these Terms, and to comply with
-                applicable law or other legal requirements. We reserve the right,
-                but are not obligated, to remove or disable access to any Content,
-                at any time and without notice, including, but not limited to, if
-                we, at our sole discretion, consider any Content to be objectionable
-                or in violation of these Terms. We have the right to investigate
-                violations of these Terms or conduct that affects the Services. We
-                may also consult and cooperate with law enforcement authorities to
-                prosecute users who violate the law.
-
-              </p>
+            {showContent.disclaimer && (<div>
+              <p>The information provided on this website is for informational purposes only and is not intended to be a substitute for professional medical advice,
+                diagnosis, or treatment.The website owner does not endorse or recommend any specific healthcare provider listed on the site, and is not responsible
+                for the quality or performance of any healthcare provider listed on the site.The website owner does not guarantee the accuracy, completeness,
+                or timeliness of the information provided on the site.Users are encouraged to verify the credentials and qualifications of any healthcare provider
+                listed on the site before making an appointment.By using this website, users agree to hold the website owner harmless from any claims or
+                damages arising from the use of the information provided on the site..</p>
             </div>)}
+
           </div>
 
+        </div>
+
+        <div className="text-header-tab">
+          <div className="drop-down-tab">
+            <h2>Indemnity</h2>
+            <Button icon={showContent.indemnity ? minus : plus} onClick={toggleContentVisible('indemnity')} />
+          </div>
+
+          {showContent.indemnity && (<div>
+            <p>
+              You agree to indemnify and hold iHealth and Wellness Foundation, Inc., (the “Organization” and its officers, directors, agents, subsidiaries, joint ventures, and employees) harmless from any claim or demand, as well as losses, expenses, damages and costs, resulting from any violation of these Terms or your use of
+              the Services (including negligent or wrongful conduct).</p></div>)}
+        </div>
+
+
+        <div className="text-header-tab">
+          <div className="drop-down-tab">
+            <h2>Use of Services</h2>
+            <Button icon={showContent.service ? minus : plus} onClick={toggleContentVisible('service')} />
+          </div>
+          {showContent.service && (<div>
+            <p>
+              You agree that you won’t do any of the following
+              things: <br />
+              Use, display, mirror, or frame the Services, or any
+              individual element within the Services, iHealth and Wellness (the
+              “Organization”)’s name, any iHealth and Wellness (the
+              “Organization”) trademark, logo, or other proprietary information
+              (including through the use of meta tags or the like), or the layout
+              and design of any page or form contained on a page, without our
+              express written consent; Attempt to access or search the Services or
+              Content or download Content from the Services through the use of any
+              engine, software, tool, agent, device or mechanism (including
+              spiders, robots, crawlers, data mining tools or the like) other than
+              the software and/or search agents provided by iHealth and Wellness
+              (the “Organization”) or other generally available third-party web
+              browsers; Send any unsolicited or unauthorized advertising,
+              promotional materials, email, junk mail, spam, chain letters or
+              other form of solicitation. Use the Services or Content, or any
+              portion thereof, for any commercial purpose or for the benefit of
+              any third party or in any manner not permitted by these Terms;
+
+              Attempt to interfere in any way with the Services or the networks or
+              network security hosting the Services, or attempt to use the
+              Services to gain unauthorized access to any other computer system.
+
+              Collect or store any personally identifiable information from the
+              Services from other users of the Services without their express
+              permission; Impersonate or misrepresent your affiliation with any
+              person or entity; Violate any applicable law or regulation; or
+              Encourage or enable any other third party or individual to do
+              anything listed above.
+
+              Although we’re not obligated to monitor
+              access to or use of the Services or Content or to review or edit any
+              Content, we have the right to do so for the purpose of operating the
+              Services, to ensure compliance with these Terms, and to comply with
+              applicable law or other legal requirements. We reserve the right,
+              but are not obligated, to remove or disable access to any Content,
+              at any time and without notice, including, but not limited to, if
+              we, at our sole discretion, consider any Content to be objectionable
+              or in violation of these Terms. We have the right to investigate
+              violations of these Terms or conduct that affects the Services. We
+              may also consult and cooperate with law enforcement authorities to
+              prosecute users who violate the law.
+
+            </p>
+          </div>)}
           <div className="Binding-tab">
             <div>
               <div className="drop-down-tab">
                 <h2>Binding Individual Arbitration</h2>
-                {isbindVisible && (
-                  <img className="plus-icon" src={plus} alt="" onClick={toggleBinding} />)}
-                <img className="minus-icon-bin" src={minus} alt="" onClick={reverseBinding} />
-                <span className={`${binding ? "visible" : "hidden"}`}></span>
+                <Button icon={showContent.binding ? minus : plus} onClick={toggleContentVisible('binding')} />
               </div>
 
-              {binding && (<div>
+              {showContent.binding && (<div>
 
                 <p>You and iHealth and Wellness (the “Organization”) agree that any and all Disputes, except those that are resolved informally or brought in a small claims court, will be arbitrated by a neutral arbitrator who has the power to award the same individual damages and individual relief that a court can. “Disputes” are defined as any claim, controversy, or dispute between you and iHealth and Wellness (the “Organization”), its processors, suppliers or licensors (or their respective affiliates, agents, directors or employees), whether based on past, present, or future events, including
                   any claims relating in any way to these Terms or the Services, or any other aspect of our
@@ -364,24 +370,28 @@ const Terms = () => {
                 </p>
               </div>)}
             </div>
+          </div><br /><br />
+
+
+
+          <div className="Binding-tab">
+            <h2>LIMITATION OF LIABILITY</h2>
+
+            <p>NEITHER iHEALTH AND WELLNESS (THE “ORGANIZATION”) NOR ANY OTHER PARTY INVOLVED IN CREATING, PRODUCING, OR DELIVERING THE SERVICES WILL BE LIABLE FOR ANY INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES, INCLUDING LOST PROFITS, LOSS OF DATA OR GOODWILL, SERVICE INTERRUPTION, COMPUTER DAMAGE OR SYSTEM FAILURE OR THE COST OF SUBSTITUTE SERVICES ARISING OUT OF OR IN CONNECTION WITH THESE TERMS OR FROM THE USE OF OR INABILITY TO USE THE SERVICES, WHETHER BASED ON
+              WARRANTY, CONTRACT, TORT (INCLUDING NEGLIGENCE), PRODUCT LIABILITY OR ANY OTHER LEGAL THEORY, AND WHETHER OR NOT iHEALTH AND WELLNESS (THE “ORGANIZATION”) HAS BEEN INFORMED OF THE POSSIBILITY OF SUCH DAMAGE, EVEN IF A LIMITED REMEDY SET FORTH HEREIN IS FOUND TO HAVE FAILED OF ITS ESSENTIAL PURPOSE. SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES, SO THE ABOVE LIMITATION MAY NOT APPLY TO YOU.
+
+              IN NO EVENT WILL iHEALTH AND WELLNESS (THE “ORGANIZATION”)’S TOTAL LIABILITY ARISING OUT OF OR IN CONNECTION WITH THESE TERMS OR FROM THE USE OF OR INABILITY TO USE THE SERVICES OR CONTENT EXCEED THE AMOUNTS YOU HAVE PAID TO iHEALTH AND WELLNESS (THE “ORGANIZATION”) FOR USE OF THE SERVICES OR CONTENT OR ONE HUNDRED DOLLARS ($100), IF YOU HAVE NOT HAD ANY PAYMENT OBLIGATIONS TO iHEALTH AND WELLNESS (THE “ORGANIZATION”), AS APPLICABLE. THE EXCLUSIONS AND LIMITATIONS OF DAMAGES SET FORTH ABOVE ARE FUNDAMENTAL ELEMENTS OF THE BASIS OF THE BARGAIN BETWEEN iHEALTH AND WELLNESS (THE “ORGANIZATION”) AND YOU.
+            </p>
           </div>
+
         </div>
-
-
-
-        <br />
-        <div className="Binding-tab">
-          <h2>LIMITATION OF LIABILITY</h2>
-
-          <p>NEITHER iHEALTH AND WELLNESS (THE “ORGANIZATION”) NOR ANY OTHER PARTY INVOLVED IN CREATING, PRODUCING, OR DELIVERING THE SERVICES WILL BE LIABLE FOR ANY INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES, INCLUDING LOST PROFITS, LOSS OF DATA OR GOODWILL, SERVICE INTERRUPTION, COMPUTER DAMAGE OR SYSTEM FAILURE OR THE COST OF SUBSTITUTE SERVICES ARISING OUT OF OR IN CONNECTION WITH THESE TERMS OR FROM THE USE OF OR INABILITY TO USE THE SERVICES, WHETHER BASED ON
-            WARRANTY, CONTRACT, TORT (INCLUDING NEGLIGENCE), PRODUCT LIABILITY OR ANY OTHER LEGAL THEORY, AND WHETHER OR NOT iHEALTH AND WELLNESS (THE “ORGANIZATION”) HAS BEEN INFORMED OF THE POSSIBILITY OF SUCH DAMAGE, EVEN IF A LIMITED REMEDY SET FORTH HEREIN IS FOUND TO HAVE FAILED OF ITS ESSENTIAL PURPOSE. SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES, SO THE ABOVE LIMITATION MAY NOT APPLY TO YOU.
-
-            IN NO EVENT WILL iHEALTH AND WELLNESS (THE “ORGANIZATION”)’S TOTAL LIABILITY ARISING OUT OF OR IN CONNECTION WITH THESE TERMS OR FROM THE USE OF OR INABILITY TO USE THE SERVICES OR CONTENT EXCEED THE AMOUNTS YOU HAVE PAID TO iHEALTH AND WELLNESS (THE “ORGANIZATION”) FOR USE OF THE SERVICES OR CONTENT OR ONE HUNDRED DOLLARS ($100), IF YOU HAVE NOT HAD ANY PAYMENT OBLIGATIONS TO iHEALTH AND WELLNESS (THE “ORGANIZATION”), AS APPLICABLE. THE EXCLUSIONS AND LIMITATIONS OF DAMAGES SET FORTH ABOVE ARE FUNDAMENTAL ELEMENTS OF THE BASIS OF THE BARGAIN BETWEEN iHEALTH AND WELLNESS (THE “ORGANIZATION”) AND YOU.
-          </p>
-        </div>
-
       </div>
+
+
+
+
     </div>
+
 
 
 

@@ -47,9 +47,12 @@
     width:381px;
     height:880px;
     padding: 20px;
-    
+    overflow: hidden;
+
   
 }
+
+
 .text{
     font-family: Roboto;
     border-radius:20px;
@@ -88,7 +91,10 @@
  letter-spacing: 0em;
  text-align: center;
  padding: 50px;
+ 
+ 
 }
+
 .text-outline1{
     background-color:#FFFFFF;
     border-color:#FFFFFF;
