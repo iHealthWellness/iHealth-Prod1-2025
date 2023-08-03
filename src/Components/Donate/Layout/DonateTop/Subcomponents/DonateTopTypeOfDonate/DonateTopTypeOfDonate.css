@@ -2,7 +2,8 @@
 {
     display: flex;
     flex-direction: column;
-    padding: 4rem 20rem 0 20rem;
+    padding: 4rem 0rem 0 0rem;
+    height: 800px;
 }
 
 /* ==================== Set Css rules for TypeOfDonate component`s text section ==================== */
@@ -10,11 +11,13 @@
 /* Set Css rules for wrapper of all text elements */
 #Donate-Top-TypeOfDonate > div:first-child
 {
-    border-radius: 2.5rem 2.5rem 0rem 0rem;
+    border-radius: 2.5rem;
     background-color: #07235B;
     display: flex;
     flex-direction: row;
     padding: 2rem 1.5rem 3rem 1.5rem;
+    gap: 5rem;
+    min-height: 65%;
 }
 
 
@@ -24,6 +27,8 @@
 #Donate-Top-TypeOfDonate > div:first-child > div:first-child
 {
     flex: 20 0 auto;
+    place-self: center;
+    padding: 2rem;
 }
 
 #Donate-Top-TypeOfDonate > div:first-child > div:first-child > h2
@@ -34,11 +39,12 @@
     font-style: normal;
     font-weight: 600;
     line-height: 110%; 
+    text-align: center;
 }
 
-#Donate-Top-TypeOfDonate > div:first-child > div:first-child > p
+#Donate-Top-TypeOfDonate > div:first-child > div:first-child > h2 > span
 {
-    color: #FFF;
+    color:  #0D99FF;
     font-family: Roboto;
     font-size: 1.5rem;
     font-style: normal;
@@ -50,16 +56,25 @@
 
 
 
-/* Set Css rules for explanation text as p element (right side of the text elements)  */
-#Donate-Top-TypeOfDonate > div:first-child > p
+#Donate-Top-TypeOfDonate > div:first-child > div:last-child 
 {
-    flex: 1 0 50%;
+    flex-direction: column;
+    display: flex;
+    place-content: center;
+}
+
+/* Set Css rules for explanation text as p element (right side of the text elements)  */
+#Donate-Top-TypeOfDonate > div:first-child > div:last-child > p
+{
+    /* flex: 1 0 50%; */
     color: #FFF;
     font-family: Roboto;
     font-size: 1.5rem;
     font-style: normal;
     font-weight: 400;
     line-height: 143%;
+    padding-bottom: 2rem;
+    text-align: center;
 }
 
 
@@ -75,7 +90,7 @@
 {
     display: flex;
     flex-direction: row;
-    place-content: space-around;
+    place-content: space-evenly;
 }
 
 /* Set Css rules for both article elements */
@@ -88,8 +103,8 @@
     place-content: center;
     align-items: center;
     padding: 2rem;
-    transform: translateY(-30px);
-    max-width: 35%;
+    transform: translateY(-87px);
+    max-width: 25%;
     
 }
 
@@ -124,6 +139,23 @@
     font-style: normal;
     font-weight: 400;
     line-height: 143%; 
+    margin-top: 1rem;
+}
+
+/* Set Css rules for both article elements` button element text */
+#Donate-Top-TypeOfDonate > div:last-child > * > button
+{
+    all: unset;
+    padding: 0.4rem 1rem;
+    border-radius: 0.625rem;
+    background: #0D99FF;
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 1.2rem */
     margin-top: 1rem;
 }
 

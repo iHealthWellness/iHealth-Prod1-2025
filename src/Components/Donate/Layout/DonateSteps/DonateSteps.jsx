@@ -22,20 +22,36 @@ function DonateSteps()
             <div>
 
                 <article>
-                    <img loading='lazy' src={manWL} alt='man working laptop picture'/>
+                    <img loading='lazy' src={conceptWS} alt='man working laptop picture'/>
                     <div>
-                        <p>Step 1</p>
-                        <p>Start an Online fundraiser today to make impact</p>
-                        <p>Creating an online fundraiser is an easy and effective way to raise money to help make lasting impact with iHealth</p>
+                        <p>Fundraise on Facebook</p>
+                        <p>Wellness in Every Connection – Fundraise on Facebook, Change Lives!</p>
+                        <ul>
+                            <li>Login to Facebook. Click create.</li>
+                            <li> Click Fundraisers on the left. </li>
+                            <li>On the left, click Raise money.</li>
+                            <li>Click Nonprofit, Search for the nonprofit you want to raise money for.</li>
+                            <li>Select the nonprofit.</li>
+                            <li>Enter the amount of money you need and the currency.</li>
+                            <li>Click create</li>
+                        </ul>
                     </div>
                 </article>
 
                 <article>
-                    <img loading='lazy' src={conceptWS} alt='concept with smartphone picture'/>
+                    <img loading='lazy' src={manWL} alt='concept with smartphone picture'/>
                     <div>
-                        <p>Step 2</p>
-                        <p>Share on social media to attract engagements</p>
-                        <p>Share NFT resources on your social media to attract potential doners and spark interests in our initiatives.</p>
+                        <p>Create your own Fundraiser</p>
+                        <p>Empower, Inspire, Heal – Your Fundraiser, Your Impact!</p>
+                        <ul>
+                            <li>Define your Purpose and Goals.</li>
+                            <li>Choose a fundraising platform. </li>
+                            <li>Create a compelling story.</li>
+                            <li>Set up your fundraiser page, determine incentives</li>
+                            <li>Engage your network, be transparent and responsive.</li>
+                            <li>Host fund raising events.</li>
+                            <li>Follow up and thank Donors.</li>
+                        </ul>
                     </div>
                 </article>
             

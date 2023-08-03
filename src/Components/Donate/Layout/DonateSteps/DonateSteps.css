@@ -2,7 +2,6 @@
 {
     display: flex;
     flex-direction: column;
-    padding: 0 20rem 0 20rem;
 }
 
 
@@ -33,13 +32,13 @@
 /* Set Css rules for Header text wrapper div`s p element */
 #Donate-Steps-Wrapper > div:first-child > p
 {
-    color:  #F0F7FD;
-    text-align: center;
+    color: #0D99FF;
     font-family: Roboto;
     font-size: 1.5rem;
     font-style: normal;
     font-weight: 400;
     line-height: 143%;
+    text-align: center;
 }
 
 
@@ -63,43 +62,62 @@
     place-content: center;
     align-items: center;
     padding:0.7rem 0.5rem;
-    max-width: 40%;
+    max-width: 45%;
+    gap: 1rem;
 }
+
+#Donate-Steps-Wrapper > div:last-child > article > img
+{
+    width: 97%;
+    aspect-ratio: 16/6.5;
+    object-fit: cover;
+    border-radius: 2.5rem;
+    object-position: 0 31%;
+}
+
+#Donate-Steps-Wrapper > div:last-child > article > div 
+{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
 
 #Donate-Steps-Wrapper > div:last-child > article > div > p:first-child
 {
-    all: unset;
-    border-radius: 1.875rem;
-    background: #DCE8F2;
-    padding: 1.25rem 1.875rem;
-    display: inline-block;
     color: #000;
+    text-align: center;
     font-family: Roboto;
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-style: normal;
-    font-weight: 700;
-    line-height: 120%; 
-    margin: 1.5rem 0rem 1.5rem 0.5rem;
+    font-weight: 600;
+    line-height: 110%; /* 1.65rem */
 }
     
 #Donate-Steps-Wrapper > div:last-child > article > div > p:nth-child(2)
 {
-    color: #000;
+    color: #0D99FF;
+    text-align: center;
     font-family: Roboto;
     font-size: 1.5rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 143%; 
-    margin-left: 0.5rem;
+    line-height: 143%; /* 2.145rem */
 }
 
-#Donate-Steps-Wrapper > div:last-child > article > div > p:nth-child(3)
+#Donate-Steps-Wrapper > div:last-child > article > div > ul
 {
     color: #8B9094;
     font-family: Roboto;
     font-size: 1.25rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 110%; 
-    margin-left: 0.5rem;
+    line-height: 143%; /* 1.7875rem */
+}
+
+/* Set Css rules for first article`s align problems */
+#Donate-Steps-Wrapper > div:last-child > article:first-child > div > ul
+{
+    list-style-position: inside;
+    padding-left: 2.5rem;
 }
