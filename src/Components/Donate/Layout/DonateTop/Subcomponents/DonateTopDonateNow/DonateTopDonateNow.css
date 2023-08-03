@@ -117,3 +117,37 @@
 
 
 /* ==================== Set Css rules for DonateTopDonateNow`s component`s second div as wrapper ==================== */
+
+
+
+
+/* ============================================ Responsıve Css Rules ============================================ */
+@media only screen and (max-width: 950px) 
+{
+    #Donate-Top-Donate-Now 
+    {
+        flex-direction: column;
+    }
+
+    /* ==================== Set Css rules for DonateTopDonateNow`s component`s first div for 3 pictures wrapper div ==================== */
+    #Donate-Top-Donate-Now > div:first-child
+    {
+        max-width: 100%;
+    }
+
+
+    #Donate-Top-Donate-Now > div:last-child 
+    {
+        border-radius: 1.875rem;
+        background: #FFF;
+        display: flex;
+        padding: 1.25rem 0.625rem;
+        gap: 3.125rem;
+    }
+
+    #Donate-Top-Donate-Now > div:last-child > img 
+    {
+        aspect-ratio: 6/9;
+        width: 50%;
+    }
+}

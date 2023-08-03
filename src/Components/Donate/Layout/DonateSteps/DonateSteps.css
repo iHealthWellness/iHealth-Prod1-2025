@@ -59,8 +59,6 @@
     border-radius: 1.875rem;
     display: flex;
     flex-direction: column;
-    place-content: center;
-    align-items: center;
     padding:0.7rem 0.5rem;
     max-width: 45%;
     gap: 1rem;
@@ -105,7 +103,12 @@
     line-height: 143%; /* 2.145rem */
 }
 
-#Donate-Steps-Wrapper > div:last-child > article > div > ul
+#Donate-Steps-Wrapper > div:last-child > article > div > div
+{
+    padding-left: 2rem;
+}
+
+#Donate-Steps-Wrapper > div:last-child > article > div > div > p
 {
     color: #8B9094;
     font-family: Roboto;
@@ -115,9 +118,19 @@
     line-height: 143%; /* 1.7875rem */
 }
 
-/* Set Css rules for first article`s align problems */
-#Donate-Steps-Wrapper > div:last-child > article:first-child > div > ul
+#Donate-Steps-Wrapper > div:last-child > article > div > div > p::before
 {
-    list-style-position: inside;
-    padding-left: 2.5rem;
+    content: "\2022  ";
+
+}
+
+
+/* ============================================ Responsıve Css Rules ============================================ */
+@media only screen and (max-width: 950px) 
+{
+    #Donate-Steps-Wrapper > div:last-child 
+    {
+        place-content: center;
+        gap: 1rem;
+    }
 }

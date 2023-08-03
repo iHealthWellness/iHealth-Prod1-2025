@@ -4,3 +4,13 @@
     padding: 0 7rem;
     background: #f2f2f4;
 }
+
+
+/* ============================================ Responsıve Css Rules ============================================ */
+@media only screen and (max-width: 950px) 
+{
+    #Donate-Main-Container
+    {
+        padding: 0 3rem;
+    }
+}

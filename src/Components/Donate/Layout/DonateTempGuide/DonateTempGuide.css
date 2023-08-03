@@ -2,7 +2,6 @@
 {
     display: flex;
     flex-direction: column;
-    padding: 0 20rem 0 20rem;
     place-items: center;
 }
 
@@ -24,6 +23,7 @@
     display: flex;
     flex-direction: column;
     padding: 2rem 0rem 8rem;
+    transform: translateX(-35%);
 
 }
 
@@ -33,7 +33,7 @@
     display: flex;
     flex-direction: row;
     position: relative;
-    width: 59%;
+    width: 34dvw;
     
 }
 
@@ -47,11 +47,11 @@
     background-color: #fff;
     border-radius: 0.625rem;
     padding: 0.625rem;
-    height: 53%;
-    width: 42%;
+    height: 200px;
+    width: 240px;
     position: absolute;
     bottom: 0;
-    right: -40%;
+    right: -34%;
     display: flex;
     flex-direction: column;
     place-content: space-around;
@@ -95,4 +95,50 @@
     margin-left: 8px;
     font-size: 20px;
     text-rendering: geometricprecision;
+}
+
+
+
+/* ============================================ Responsıve Css Rules ============================================ */
+@media only screen and (max-width: 950px) 
+{
+    #Donate-TempGuide-Wrapper > div 
+    {
+        transform: translateX(0);
+    }
+    #Donate-TempGuide-Wrapper > div > article 
+    {
+        width: 100%;
+    }
+
+    #Donate-TempGuide-Wrapper > div > article > img 
+    {
+        width: 73%;
+        aspect-ratio: 16/6;
+        object-fit: cover;
+    }
+
+    #Donate-TempGuide-Wrapper > div > article > div 
+    {
+        height: calc(59% + calc(100vw - 89vw));
+        width: 47dvw;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transform: translateY(55px);
+    }
+}
+
+
+@media only screen and (max-width: 600px) 
+{
+    #Donate-TempGuide-Wrapper > div > article > div
+    {
+        height: calc(110% + calc(100vw - 89vw));
+        width: 54dvw;
+        position: absolute;
+        bottom: -30px;
+        right: -35px;
+        transform: translateY(81px);
+    }
 }

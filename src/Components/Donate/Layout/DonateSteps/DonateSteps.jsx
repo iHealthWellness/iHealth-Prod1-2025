@@ -26,15 +26,15 @@ function DonateSteps()
                     <div>
                         <p>Fundraise on Facebook</p>
                         <p>Wellness in Every Connection – Fundraise on Facebook, Change Lives!</p>
-                        <ul>
-                            <li>Login to Facebook. Click create.</li>
-                            <li> Click Fundraisers on the left. </li>
-                            <li>On the left, click Raise money.</li>
-                            <li>Click Nonprofit, Search for the nonprofit you want to raise money for.</li>
-                            <li>Select the nonprofit.</li>
-                            <li>Enter the amount of money you need and the currency.</li>
-                            <li>Click create</li>
-                        </ul>
+                        <div>
+                            <p>Login to Facebook. Click create.</p>
+                            <p>Click Fundraisers on the left. </p>
+                            <p>On the left, click Raise money.</p>
+                            <p>Click Nonprofit, Search for the nonprofit you want to raise money for.</p>
+                            <p>Select the nonprofit.</p>
+                            <p>Enter the amount of money you need and the currency.</p>
+                            <p>Click create</p>
+                        </div>
                     </div>
                 </article>
 
@@ -43,15 +43,15 @@ function DonateSteps()
                     <div>
                         <p>Create your own Fundraiser</p>
                         <p>Empower, Inspire, Heal – Your Fundraiser, Your Impact!</p>
-                        <ul>
-                            <li>Define your Purpose and Goals.</li>
-                            <li>Choose a fundraising platform. </li>
-                            <li>Create a compelling story.</li>
-                            <li>Set up your fundraiser page, determine incentives</li>
-                            <li>Engage your network, be transparent and responsive.</li>
-                            <li>Host fund raising events.</li>
-                            <li>Follow up and thank Donors.</li>
-                        </ul>
+                        <div>
+                            <p>Define your Purpose and Goals.</p>
+                            <p>Choose a fundraising platform.</p>
+                            <p>Create a compelling story.</p>
+                            <p>Set up your fundraiser page, determine incentives</p>
+                            <p>Engage your network, be transparent and responsive.</p>
+                            <p>Host fund raising events.</p>
+                            <p>Follow up and thank Donors.</p>
+                        </div>
                     </div>
                 </article>
             

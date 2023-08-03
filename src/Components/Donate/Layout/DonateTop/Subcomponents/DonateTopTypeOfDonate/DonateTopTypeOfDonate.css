@@ -3,7 +3,6 @@
     display: flex;
     flex-direction: column;
     padding: 4rem 0rem 0 0rem;
-    height: 800px;
 }
 
 /* ==================== Set Css rules for TypeOfDonate component`s text section ==================== */
@@ -15,9 +14,8 @@
     background-color: #07235B;
     display: flex;
     flex-direction: row;
-    padding: 2rem 1.5rem 3rem 1.5rem;
+    padding: 2rem 1.5rem 7rem 1.5rem;
     gap: 5rem;
-    min-height: 65%;
 }
 
 
@@ -61,6 +59,7 @@
     flex-direction: column;
     display: flex;
     place-content: center;
+    flex: 9 1 auto;
 }
 
 /* Set Css rules for explanation text as p element (right side of the text elements)  */
@@ -160,3 +159,36 @@
 }
 
 /* ==================== Set Css rules for TypeOfDonate component`s Cards with icons section ==================== */
+
+
+
+/* ============================================ Responsıve Css Rules ============================================ */
+@media only screen and (max-width: 1300px) 
+{
+    #Donate-Top-TypeOfDonate > div:first-child > div:first-child 
+    {
+        flex: 20 1 auto;
+    }
+
+    #Donate-Top-TypeOfDonate > div:last-child > * 
+    {
+        
+        max-width: 31%;
+    }
+}
+
+@media only screen and (max-width: 950px) 
+{
+    /* Set Css rules for wrapper of all text elements */
+    #Donate-Top-TypeOfDonate > div:first-child
+    {
+        flex-direction: column;
+        gap: 0rem;
+    }
+
+    #Donate-Top-TypeOfDonate > div:last-child 
+    {
+        place-content: center;
+        gap: 1rem;
+    }
+}
