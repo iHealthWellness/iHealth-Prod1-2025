@@ -105,7 +105,7 @@ const Navbar = () =>
                   <span className="nav-signin-span">Sign up or Log In</span>
                 </NavLink>
                 <div className="nav-dropdown-content ">
-                  <a href="#">Sign In</a>
+                  <a href="#" onClick={() => {document.querySelector("#Login-Main-Container").style.display = "flex";}} >Sign In</a>
                   <a href="#">Sign Up Now</a>
                   <a href="#">Donate as a Guest</a>
                 </div>
