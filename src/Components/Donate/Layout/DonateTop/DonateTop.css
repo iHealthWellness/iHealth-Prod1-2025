@@ -1,0 +1,6 @@
+#Donate-Top-Wrapper
+{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+}

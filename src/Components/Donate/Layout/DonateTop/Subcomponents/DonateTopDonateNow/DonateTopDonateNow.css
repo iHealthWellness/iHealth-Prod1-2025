@@ -1,0 +1,153 @@
+/* Set Css rules for DonateTopDonateNow`s component`s main div  */
+#Donate-Top-Donate-Now
+{
+    display: flex;
+    flex-direction: row;
+    padding: 6rem 0 0 0;
+    gap: 5rem;
+    place-items:center;
+}
+
+
+
+
+/* ==================== Set Css rules for DonateTopDonateNow`s component`s first div for 3 pictures wrapper div ==================== */
+#Donate-Top-Donate-Now > div:first-child
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 53%;
+}
+
+
+/* Set Css rules for DonateTopDonateNow`s component`s first image as Donate colorful letters */
+#Donate-Top-Donate-Now > div:first-child > img
+{
+    border-radius: 20px;
+}
+
+
+
+/* Set Css rules for DonateTopDonateNow`s component`s 2 images` wrapper div comes after first image */
+#Donate-Top-Donate-Now > div:first-child > div
+{
+    display: flex;
+    flex-direction: row;
+    width: Calc(50% - 0.5rem);
+    gap: 1rem;
+}
+
+
+/* Set Css rules for DonateTopDonateNow`s component`s 2nd picture under the image of Donate colorful letters  */
+#Donate-Top-Donate-Now > div:first-child > div > img:first-child
+{
+    object-fit: cover;
+    border-bottom-left-radius: 31px;
+}
+
+/* Set Css rules for DonateTopDonateNow`s component`s 3rd picture under the image of Donate colorful letters  */
+#Donate-Top-Donate-Now > div:first-child > div > img:last-child
+{
+    object-fit: cover;
+    border-bottom-right-radius: 31px;
+}
+
+/* ==================== Set Css rules for DonateTopDonateNow`s component`s div for 3 pictures wrapper div ==================== */
+
+
+
+
+/* ==================== Set Css rules for DonateTopDonateNow`s component`s second div as wrapper ==================== */
+
+#Donate-Top-Donate-Now > div:last-child
+{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    place-content: center;
+}
+
+
+/* Set Css rules for DonateTopDonateNow`s component`s down part`s picture of sick little kid */
+#Donate-Top-Donate-Now > div:last-child > img
+{
+    border-radius: 1.875rem;
+    aspect-ratio: 6/12;
+    width: 62%;
+    object-fit: cover;
+}
+
+
+/* Set Css rules for DonateTopDonateNow`s component`s down part`s wrapper div for all pragraph and button */
+#Donate-Top-Donate-Now > div:last-child > div
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    place-content: center;
+    gap: 3rem;
+}
+
+
+#Donate-Top-Donate-Now > div:last-child > div > p
+{
+    color: #000;
+    font-family: Roboto;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%; 
+    align-self: flex-start;
+}
+
+#Donate-Top-Donate-Now > div:last-child > div > button
+{
+    all: unset;
+    width: 70%;
+    height: 6%;
+    background-color: #0D99FF;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+
+/* ==================== Set Css rules for DonateTopDonateNow`s component`s second div as wrapper ==================== */
+
+
+
+
+/* ============================================ Responsıve Css Rules ============================================ */
+@media only screen and (max-width: 950px) 
+{
+    #Donate-Top-Donate-Now 
+    {
+        flex-direction: column;
+    }
+
+    /* ==================== Set Css rules for DonateTopDonateNow`s component`s first div for 3 pictures wrapper div ==================== */
+    #Donate-Top-Donate-Now > div:first-child
+    {
+        max-width: 100%;
+    }
+
+
+    #Donate-Top-Donate-Now > div:last-child 
+    {
+        border-radius: 1.875rem;
+        background: #FFF;
+        display: flex;
+        padding: 1.25rem 0.625rem;
+        gap: 3.125rem;
+    }
+
+    #Donate-Top-Donate-Now > div:last-child > img 
+    {
+        aspect-ratio: 6/9;
+        width: 50%;
+    }
+}

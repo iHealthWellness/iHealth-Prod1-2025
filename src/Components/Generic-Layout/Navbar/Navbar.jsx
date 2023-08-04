@@ -1,15 +1,30 @@
-import React from "react";
-import { NavLink, Link } from "react-router-dom";
+//Import Libraries/Packages
+import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 
-
-import NavDropdownButton from "./NavDropdown";
-import desktopLogo from "src/Assets/Brand/logo-nav-desktop.png";
-import mobileLogo from "src/Assets/Brand/logo-nav-mobile.png";
-import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+//Import Styles
 import "./Navbar.css";
+import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 
-const Navbar = () => {
+//Import Local files
+import desktopLogo from "../../../Assets/Brand/logo-nav-desktop.png";
+import mobileLogo from "../../../Assets/Brand/logo-nav-mobile.png";
+
+//Import Local Components
+import NavDropdownButton from "./NavDropdown";
+import Login from "../UserAuthentication/Login/Login";
+
+
+
+
+
+const Navbar = () => 
+{
+  
+
+
   return (
+    <>
     <nav className="nav-container">
       <div className="nav-inner-container">
         <NavDropdownButton />
@@ -80,8 +95,15 @@ const Navbar = () => {
 
             {/* Sign up & sign in */}
             <ul className="nav-links-list">
-              <li className="nav-links-listitem nav-dropdown">
-                <NavLink className="nav-links nav-signin">
+              <li className="nav-links-listitem">
+                <NavLink
+                  onClick={() => {
+                    document.querySelector(
+                      "#UnderConst-wrapper"
+                    ).style.display = "flex";
+                  }}
+                  className="nav-links nav-signin"
+                >
                   <AccountCircleIcon
                     className="circle-icon"
                     sx={{ fontSize: 32, marginLeft: 0 }}
@@ -113,8 +135,12 @@ const Navbar = () => {
             </ul>
           </div>
         </div>
-      </div>
-    </nav>
+        </div>
+      </nav>
+
+      {/* Login Component */}
+      <Login />
+    </>
   );
 };
 
