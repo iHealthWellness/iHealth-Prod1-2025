@@ -56,13 +56,13 @@ const Navbar = () => {
                   {/* <NavLink to="/about-us/#Hero" >Corporate Info </NavLink>
                   <NavLink to="/about-us/#Statement">Our Team </NavLink>
                   <NavLink to="/about-us/#Finance">Financial Transparency </NavLink>
-                  <NavLink to="/about-us/#Terms">Terms Of Use</NavLink>
-                  <a href=" ">List Of Openings</a> */}
-                  <a href="#Hero">Corporate Info </a>
-                  <a href="#Statement">Our Team </a>
-                  <a href="#Finance">Financial Transparency </a>
+                  <NavLink to="/about-us/#Terms">Terms Of Use</NavLink> */}
+
+                  <a href="/about-us/#Hero">Corporate Info </a>
+                  <a href="/our-team">Our Team </a>
+                  <a href="/about-us/#Finance">Financial Transparency </a>
                   <a href="#Terms">Terms Of Use</a>
-                  <a href="">List Of Openings</a>
+                  <a href="#Statement">List Of Openings</a>
 
 
 

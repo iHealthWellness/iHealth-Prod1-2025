@@ -1,0 +1,31 @@
+
+.page-holder{
+    margin:0 auto;
+    width: 90%;
+    max-width: 1006px;
+}
+
+.board-text-tab{
+    background-color:#f6f8f7;
+    
+}
+.team-directors-header{
+    padding-top: 80px;
+}
+
+.team-directors-tab{
+    
+    width:1006px;
+    margin-top:20px;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.team-directors-header{
+
+}

@@ -30,89 +30,89 @@ const Terms = () => {
 
 
 
-  const [isImageVisible, setImageVisible] = useState(true);
-  const [isErrorVisible, setErrorVisible] = useState(true);
-  const [isthirdVisible, setthirdVisible] = useState(true);
-  const [istermVisible, settermVisible] = useState(true);
-  const [isdisVisible, setdisVisible] = useState(true);
-  const [isindVisible, setindVisible] = useState(true);
-  const [isserviceVisible, setserviceVisible] = useState(true);
-  const [isbindVisible, setbindVisible] = useState(true);
+  // const [isImageVisible, setImageVisible] = useState(true);
+  // const [isErrorVisible, setErrorVisible] = useState(true);
+  // const [isthirdVisible, setthirdVisible] = useState(true);
+  // const [istermVisible, settermVisible] = useState(true);
+  // const [isdisVisible, setdisVisible] = useState(true);
+  // const [isindVisible, setindVisible] = useState(true);
+  // const [isserviceVisible, setserviceVisible] = useState(true);
+  // const [isbindVisible, setbindVisible] = useState(true);
 
 
-  // const [privacy, setPrivacy] = useState(false);
-  const [isExpanded, setIsExpanded] = useState(false);
-  const [errors, setErrors] = useState(false);
-  const [thirdParty, setThirdParty] = useState(false);
-  const [termination, setTermination] = useState(false);
-  const [disclaimer, setDisclaimer] = useState(false);
-  const [indemnity, setIndemnity] = useState(false);
-  const [service, setService] = useState(false);
-  const [binding, setBinding] = useState(false);
+  // // const [privacy, setPrivacy] = useState(false);
+  // const [isExpanded, setIsExpanded] = useState(false);
+  // const [errors, setErrors] = useState(false);
+  // const [thirdParty, setThirdParty] = useState(false);
+  // const [termination, setTermination] = useState(false);
+  // const [disclaimer, setDisclaimer] = useState(false);
+  // const [indemnity, setIndemnity] = useState(false);
+  // const [service, setService] = useState(false);
+  // const [binding, setBinding] = useState(false);
 
 
 
-  const toggleAccordion = () => {
-    setIsExpanded(!isExpanded);
-    setImageVisible((prevState) => !prevState);
-  };
-  const reverseAccordion = () => {
-    setIsExpanded(!isExpanded)
-    setImageVisible((prevState) => !prevState);
-  }
-  const toggleErrors = () => {
-    setErrors(!errors);
-  };
-  const reverseErrors = () => {
-    setErrors(!errors);
-    setErrorVisible((prevState) => !prevState);
-  };
+  // const toggleAccordion = () => {
+  //   setIsExpanded(!isExpanded);
+  //   setImageVisible((prevState) => !prevState);
+  // };
+  // const reverseAccordion = () => {
+  //   setIsExpanded(!isExpanded)
+  //   setImageVisible((prevState) => !prevState);
+  // }
+  // const toggleErrors = () => {
+  //   setErrors(!errors);
+  // };
+  // const reverseErrors = () => {
+  //   setErrors(!errors);
+  //   setErrorVisible((prevState) => !prevState);
+  // };
 
-  const toggleParty = () => {
-    setThirdParty(!thirdParty);
-    setthirdVisible((prevState) => !prevState);
-  };
-  const reverseParty = () => {
-    setThirdParty(!thirdParty);
-    setthirdVisible((prevState) => !prevState);
-  };
-  const toggleTermination = () => {
-    setTermination(!termination);
+  // const toggleParty = () => {
+  //   setThirdParty(!thirdParty);
+  //   setthirdVisible((prevState) => !prevState);
+  // };
+  // const reverseParty = () => {
+  //   setThirdParty(!thirdParty);
+  //   setthirdVisible((prevState) => !prevState);
+  // };
+  // const toggleTermination = () => {
+  //   setTermination(!termination);
 
-  };
-  const reverseTermination = () => {
-    setTermination(!termination);
-    settermVisible((prevState) => !prevState);
-  };
-  const toggleDisclaimer = () => {
-    setDisclaimer(!disclaimer);
-  };
-  const reverseDisclaimer = () => {
-    setDisclaimer(!disclaimer);
-    setdisVisible((prevState) => !prevState);
-  };
-  const toggleIndemnity = () => {
-    setIndemnity(!indemnity);
-  };
-  const reverseIndemnity = () => {
-    setIndemnity(!indemnity);
-    setindVisible((prevState) => !prevState);
-  };
+  // };
+  // const reverseTermination = () => {
+  //   setTermination(!termination);
+  //   settermVisible((prevState) => !prevState);
+  // };
+  // const toggleDisclaimer = () => {
+  //   setDisclaimer(!disclaimer);
+  // };
+  // const reverseDisclaimer = () => {
+  //   setDisclaimer(!disclaimer);
+  //   setdisVisible((prevState) => !prevState);
+  // };
+  // const toggleIndemnity = () => {
+  //   setIndemnity(!indemnity);
+  // };
+  // const reverseIndemnity = () => {
+  //   setIndemnity(!indemnity);
+  //   setindVisible((prevState) => !prevState);
+  // };
 
-  const toggleService = () => {
-    setService(!service);
-  };
-  const reverseService = () => {
-    setService(!service);
-    setserviceVisible((prevState) => !prevState);
-  };
-  const toggleBinding = () => {
-    setBinding(!binding);
-  };
-  const reverseBinding = () => {
-    setBinding(!binding);
-    setbindVisible((prevState) => !prevState);
-  };
+  // const toggleService = () => {
+  //   setService(!service);
+  // };
+  // const reverseService = () => {
+  //   setService(!service);
+  //   setserviceVisible((prevState) => !prevState);
+  // };
+  // const toggleBinding = () => {
+  //   setBinding(!binding);
+  // };
+  // const reverseBinding = () => {
+  //   setBinding(!binding);
+  //   setbindVisible((prevState) => !prevState);
+  // };
 
 
   return (
@@ -168,7 +168,8 @@ const Terms = () => {
         <div className="">
           <div className="text-header-tab">
             <div className="drop-down-tab">
-              <h2 className="">Privacy Policy</h2>
+
+              <h2 className="" onClick={toggleContentVisible('privacy')}>Privacy Policy</h2>
 
               <Button icon={showContent.privacy ? minus : plus} onClick={toggleContentVisible('privacy')} />
 
@@ -202,7 +203,7 @@ const Terms = () => {
 
             <div className="text-header-tab">
               <div className="drop-down-tab">
-                <h2>Correction of Site Errors</h2>
+                <h2 className="" onClick={toggleContentVisible('errors')}>Correction of Site Errors</h2>
 
                 <Button icon={showContent.errors ? minus : plus} onClick={toggleContentVisible('errors')} />
 
@@ -223,7 +224,7 @@ const Terms = () => {
 
             <div className="text-header-tab">
               <div className="drop-down-tab">
-                <h2>Third Party Links</h2>
+                <h2 className="" onClick={toggleContentVisible('thirdParty')} >Third Party Links</h2>
 
                 <Button icon={showContent.thirdParty ? minus : plus} onClick={toggleContentVisible('thirdParty')} />
               </div>
@@ -244,7 +245,7 @@ const Terms = () => {
           <div className="text-header-tab">
 
             <div className="drop-down-tab">
-              <h2>Termination</h2>
+              <h2 className="" onClick={toggleContentVisible('termination')}>Termination</h2>
               <Button icon={showContent.termination ? minus : plus} onClick={toggleContentVisible('termination')} />
             </div>
 
@@ -259,7 +260,7 @@ const Terms = () => {
 
           <div className="text-header-tab">
             <div className="drop-down-tab">
-              <h2>Disclaimer</h2>
+              <h2 className="" onClick={toggleContentVisible('disclaimer')}>Disclaimer</h2>
               <Button icon={showContent.disclaimer ? minus : plus} onClick={toggleContentVisible('disclaimer')} />
             </div>
 
@@ -278,7 +279,7 @@ const Terms = () => {
 
         <div className="text-header-tab">
           <div className="drop-down-tab">
-            <h2>Indemnity</h2>
+            <h2 className="" onClick={toggleContentVisible('indemnity')}>Indemnity</h2>
             <Button icon={showContent.indemnity ? minus : plus} onClick={toggleContentVisible('indemnity')} />
           </div>
 
@@ -291,7 +292,7 @@ const Terms = () => {
 
         <div className="text-header-tab">
           <div className="drop-down-tab">
-            <h2>Use of Services</h2>
+            <h2 className="" onClick={toggleContentVisible('service')}>Use of Services</h2>
             <Button icon={showContent.service ? minus : plus} onClick={toggleContentVisible('service')} />
           </div>
           {showContent.service && (<div>
@@ -345,7 +346,7 @@ const Terms = () => {
           <div className="Binding-tab">
             <div>
               <div className="drop-down-tab">
-                <h2>Binding Individual Arbitration</h2>
+                <h2 className="" onClick={toggleContentVisible('binding')}>Binding Individual Arbitration</h2>
                 <Button icon={showContent.binding ? minus : plus} onClick={toggleContentVisible('binding')} />
               </div>
 
