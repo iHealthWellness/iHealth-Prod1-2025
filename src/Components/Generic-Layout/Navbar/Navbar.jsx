@@ -1,6 +1,6 @@
 //Import Libraries/Packages
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 //Import Styles
 import "./Navbar.css";
