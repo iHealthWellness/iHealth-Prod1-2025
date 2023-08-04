@@ -95,15 +95,8 @@ const Navbar = () =>
 
             {/* Sign up & sign in */}
             <ul className="nav-links-list">
-              <li className="nav-links-listitem">
-                <NavLink
-                  onClick={() => {
-                    document.querySelector(
-                      "#UnderConst-wrapper"
-                    ).style.display = "flex";
-                  }}
-                  className="nav-links nav-signin"
-                >
+              <li className="nav-links-listitem nav-dropdown">
+                <NavLink className="nav-links nav-signin">
                   <AccountCircleIcon
                     className="circle-icon"
                     sx={{ fontSize: 32, marginLeft: 0 }}
