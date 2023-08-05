@@ -6,7 +6,7 @@ const Team = () => {
 
     return (
         <div className="team-tab-page">
-            <Link className="team-link">
+            <Link to="/Our-Team" className="team-link">
                 <img className="team-image-tab" src={team} alt="" />
             </Link>
         </div>

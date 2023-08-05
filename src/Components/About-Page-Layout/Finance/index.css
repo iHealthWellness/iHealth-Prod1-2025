@@ -11,13 +11,13 @@
     text-align:center;
     background-color:#07235b;
     width: 968px;
-    height:300px;
+    height:280px;
 }
 .financial-outline h2{
     margin-top:90px;
     margin-bottom:15px;
     font-family: Roboto;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 400;
     line-height: 34px;
     letter-spacing: 0em;
@@ -28,7 +28,6 @@
 .financial-outline h4{
   
   margin:auto;
-  width:580px;
   font-family: Roboto;
   font-size: 28px;
   font-weight: 400;
@@ -41,7 +40,7 @@
 
 .trans-Image{
     width:1060px;
-    height: 300px;
+    height: 280px;
 }
 
 .Gen-Rev{

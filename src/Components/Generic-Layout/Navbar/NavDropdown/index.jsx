@@ -106,7 +106,7 @@ const NavDropdownButton = () => {
 
             <div className={classnames('nav-dropdown-content', { block: showdropdown })}>
               <a href="#Hero">Corporate Info </a>
-              <a href="#Statement">Our Team </a>
+              <a href="/our-team">Our Team </a>
               <a href="#Finance">Financial Transparency </a>
               <a href="#Terms">Terms Of Use</a>
               <a href="">List Of Openings</a>

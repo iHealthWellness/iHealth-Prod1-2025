@@ -10,14 +10,14 @@ const Statement = () => {
 
     return (
 
-        <section id="Statement" className="pageholder">
-            <div className="container ">
-                <div className="page" >
+        <section id="Statement" className="pageholder" >
+            <div className="container  " data-aos-container=".custom-scroll-container">
+                <div className="page" data-aos-container=".custom-scroll-container">
                     <div>
-                        <div className="img-outline">
+                        <div data-aos="fade-right" data-aos-duration="1000" className="img-outline">
                             <img src={img1} className="img-mission" alt="mission" />
                         </div>
-                        <div className="text-outline">
+                        <div data-aos="fade-right" data-aos-duration="1000" className="text-outline">
                             <div className="text">
                                 <p>
                                     Our mission is to integrate medical and wellness social networking, patient advocacy, and access to
@@ -36,10 +36,10 @@ const Statement = () => {
 
                     </div>
                     <div>
-                        <div>
+                        <div data-aos="fade-left" data-aos-duration="3000">
                             <img src={img2} className="img-value" alt="core-value" />
                         </div>
-                        <div className="text-outline1">
+                        <div data-aos="fade-right" data-aos-duration="3000" className="text-outline1">
                             <div className="text1">
                                 <div className="text-tab">
                                     <h3>Patient-Centered Care</h3>
@@ -93,11 +93,11 @@ const Statement = () => {
 
                     </div>
 
-                    <div>
+                    <div data-aos="fade-left" data-aos-duration="3000">
                         <div>
                             <img src={img3} className="img-vision" alt="" />
                         </div>
-                        <div className="text-outline">
+                        <div data-aos="fade-left" data-aos-duration="3000" className="text-outline">
 
                             <div className="text">
                                 <p>Our aim is to empower patients to take control of their health, collaborate with healthcare providers
