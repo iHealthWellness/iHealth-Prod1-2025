@@ -7,15 +7,24 @@
 
 .board-text-tab{
     background-color:#f6f8f7;
+
     
 }
 .team-directors-header{
-    padding-top: 80px;
+    padding-top: 70px;
+    font-family: Roboto;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58px;
+    letter-spacing: 0em;
+    text-align: left;
+     color:#07235B;
+
+
 }
 
 .team-directors-tab{
-    
-    width:1006px;
+   color: #858EAD;
     margin-top:20px;
     font-family: Roboto;
     font-size: 24px;
@@ -25,7 +34,13 @@
     text-align: left;
 
 }
-
-.team-directors-header{
-
+.board-image{
+    width: 342px;
+    height: auto;
+}
+.board-directors-tab{
+    display: flex;
+    gap:20px;
+    /* justify-content: center; */
+    /* align-items: center; */
 }
