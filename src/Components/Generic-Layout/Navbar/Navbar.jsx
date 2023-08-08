@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink, Link } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 
 
 import NavDropdownButton from "./NavDropdown";
@@ -76,9 +77,9 @@ const Navbar = () => {
                   Research
                 </NavLink>
                 <div className="research-dropdown">
-                   <a href="#tools">Research Tools & Resources</a>
-                   <a href="#clinical">Clinical Drug Therapies</a>
-                   <a href="#participate">Participate in Research</a> 
+                   <HashLink to={"/research/#tools"}>Research Tools & Resources</HashLink>
+                   <HashLink to={"/research/#clinical"}>Clinical Drug Therapies</HashLink>
+                   <HashLink to={"/research/#participate"}>Participate in Research</HashLink> 
                 </div>
               </li>
               </ul>
