@@ -71,11 +71,30 @@
     margin-left: 105px;
     margin-top: 100px;
 }
+[data-aos="slide-right"] {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  
+[data-aos="slide-right"].aos-animate {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 1s, transform 1s;
+}
 p span, .span2{
     color: black;
     font-weight:500;
     font-size: 24px;
     margin-bottom: 30px;
+}
+[data-aos='slide-left'] {
+    transform: translateX(100%); 
+}
+  
+[data-aos='slide-left'].aos-animate {
+    transform: translateX(0%); 
+    opacity: 1; 
+    transition: transform 0.6s ease, opacity 0.8s ease; 
 }
 .reminder{
     height: 300px;

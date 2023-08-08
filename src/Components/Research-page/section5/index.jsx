@@ -1,7 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./index.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 
 const section5 = () => {
+
+  useEffect(() => {
+    AOS.init({
+      duration:800,
+      mirror: false,
+    });
+  }, []);
+
   return (
   <div>
     <div className="segas">
@@ -16,7 +26,7 @@ const section5 = () => {
               <p>Consulting with a knowledgeable medical professional is crucial to receive a comprehensive evaluation, accurate diagnosis, and personalized management plan based on the individual's specific condition and requirements.</p>
         </div>
         <div className="peginter">
-          <p><span>Peginterferon alfa-2b</span><br/>
+          <p data-aos="slide-left"><span>Peginterferon alfa-2b</span><br/>
 
               <br/>A medication known for its immune-modulating properties, has been the subject of clinical trials aimed at evaluating its effectiveness in treating optic pathway gliomas associated with neurofibromatosis type 1 (NF1). Encouragingly, the results of these trials have demonstrated its potential efficacy in stabilizing tumor growth and preserving vision, representing a significant advancement in the management of this specific manifestation of NF1.
                 

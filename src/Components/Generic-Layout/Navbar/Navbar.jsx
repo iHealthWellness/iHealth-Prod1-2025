@@ -76,11 +76,9 @@ const Navbar = () => {
                   Research
                 </NavLink>
                 <div className="research-dropdown">
-                  <switch>
-                    <a href="#Community">Research Tools & Resources</a>
-                    <a href="#section5">Clinical Drug Therapies</a>
-                    <a href="#section7">Participate in Research</a>
-                    </switch>
+                   <a href="#tools">Research Tools & Resources</a>
+                   <a href="#clinical">Clinical Drug Therapies</a>
+                   <a href="#participate">Participate in Research</a> 
                 </div>
               </li>
               </ul>
