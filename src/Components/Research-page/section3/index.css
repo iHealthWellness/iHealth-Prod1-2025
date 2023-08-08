@@ -58,6 +58,17 @@
     margin: 0px;
     padding: 0px;
 }
+[data-aos="slide-right"] {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  
+[data-aos="slide-right"].aos-animate {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 1s, transform 1s;
+}
+  
 .image-2 img{
     width: 463px;
     height: 385px;
@@ -94,6 +105,15 @@ p span, .span2{
     font-weight:500;
     font-size: 24px;
     line-height: 120%;
+}
+[data-aos='slide-left'] {
+    transform: translateX(100%); 
+}
+  
+[data-aos='slide-left'].aos-animate {
+    transform: translateX(0%); 
+    opacity: 1; 
+    transition: transform 0.6s ease, opacity 0.8s ease; 
 }
 @media (max-width:768px){
     .clinic{

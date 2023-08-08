@@ -71,6 +71,15 @@
     margin: 0px;
     padding: 0px;
 }
+[data-aos='slide-left'] {
+    transform: translateX(100%); 
+}
+  
+[data-aos='slide-left'].aos-animate {
+    transform: translateX(0%); 
+    opacity: 1; 
+    transition: transform 0.6s ease, opacity 0.8s ease; 
+}
 .conclusion{
     height: 390px;
     background-color: #07235B;

@@ -16,6 +16,16 @@
     margin-top: 200px;
     margin-bottom: 360px;
 }
+[data-aos='slide-left'] {
+    transform: translateX(100%); 
+}
+  
+[data-aos='slide-left'].aos-animate {
+    transform: translateX(0%); 
+    opacity: 1; 
+    transition: transform 0.6s ease, opacity 0.8s ease; 
+}
+
 .consideration{
     margin-top: 100px;
     margin-bottom: 0px;
@@ -44,6 +54,16 @@
 }
 .consideration p span{
     font-size: 20px;
+}
+[data-aos="slide-right"] {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  
+[data-aos="slide-right"].aos-animate {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 1s, transform 1s;
 }
 .difference{
     background-color: #07235B;

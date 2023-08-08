@@ -59,6 +59,16 @@
     background: #FFF;
     margin-top: 150px;
 }
+[data-aos="slide-right"] {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  
+[data-aos="slide-right"].aos-animate {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 1s, transform 1s;
+}
 .evorolimus p{
     color: var(--sn-primary-headings-07235-b, #07235B);
     font-family: Roboto;
@@ -71,13 +81,23 @@
     margin-left: 59px;
 }
 .span2{
-    padding-left: 52px;
+    padding: 0;
+    margin: 0;
 }
 p span, .span2{
     color: black;
     font-weight:500;
     font-size: 24px;
     margin-bottom: 30px;
+}
+[data-aos='slide-left'] {
+    transform: translateX(100%); 
+}
+  
+[data-aos='slide-left'].aos-animate {
+    transform: translateX(0%); 
+    opacity: 1; 
+    transition: transform 0.6s ease, opacity 0.8s ease; 
 }
 @media (max-width:768px){
     .more-info{
