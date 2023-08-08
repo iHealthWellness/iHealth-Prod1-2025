@@ -1,0 +1,45 @@
+.toTop-btn{
+    position: fixed;
+    bottom: 50%;
+    right: 20px;
+    transform: translateY(50%);
+    z-index: 1;
+    border: none;
+    border-radius: 50%;
+    background-color: #0d99ff;
+    /* #0d99ff */
+    color: #FFFF;
+    /* #07235b */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-weight: 600;
+    width: 64px;
+    height: 64px;
+    padding: 16px;
+  }
+  .toTop-btn p{
+    padding-right: 50px;
+    color: #fff;
+    margin-top: 2px;
+  }
+  
+  .toTop-btn.visible {
+    opacity: 1;
+  }
+  
+  .toTop-btn:hover {
+    transform: translateY(50%) scale(1.1);
+  }
+  
+  @media only screen and (min-width: 1024px) {
+    .toTop-btn {
+      width: 72px;
+      height: 72px;
+    }
+  }
+  
