@@ -24,8 +24,8 @@ const section1 = () => {
           </div>
         
           <div className="intro">
-            <h1 className="introduction">Introduction</h1>
-            <p data-aos="slide-left" className="welcome">Welcome to the Neurofibromatosis Research Homepage, 
+              <h3 className="introduction">Introduction</h3>
+              <p data-aos="slide-left" className="welcome">Welcome to the Neurofibromatosis Research Homepage, 
               dedicated to shedding light on the complexities of Neurofibromatosis (NF) and driving 
               advancements in research. NF is a group of genetic disorders that cause tumors to form
                on nerves throughout the body, affecting both children and adults.</p>
