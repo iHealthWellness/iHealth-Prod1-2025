@@ -72,6 +72,10 @@
   transform: translateX(0);
   transition: opacity 1s, transform 1s;
 }
+.evorolimus h1 .span2{
+  font-size: 30px;
+  font-weight: 600;
+}
 .evorolimus p {
   color: var(--sn-primary-headings-07235-b, #07235b);
   font-family: Roboto;
@@ -82,17 +86,6 @@
   flex-shrink: 0;
   margin-right: 100px;
   margin-left: 59px;
-}
-.span2 {
-  padding: 0;
-  margin: 0;
-}
-p span,
-.span2 {
-  color: black;
-  font-weight: 500;
-  font-size: 24px;
-  margin-bottom: 30px;
 }
 [data-aos="slide-left"] {
   transform: translateX(100%);

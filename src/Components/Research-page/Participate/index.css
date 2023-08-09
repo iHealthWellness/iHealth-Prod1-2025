@@ -78,7 +78,7 @@
 .participating p span {
   color: var(--sn-primary-headings-07235-b, #07235b);
   font-family: Roboto;
-  font-size: 22px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 500;
   line-height: 110%;
@@ -163,9 +163,9 @@ p span,
     flex-shrink: 0;
     color: var(--sn-black, #000);
     font-family: Roboto;
-    font-size: 23px;
+    font-size: 24px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 143%;
   }
   .participating p {
@@ -228,7 +228,7 @@ p span,
     width: 400px;
     height: 343px;
     flex-shrink: 0;
-    margin: 79px 16px 81px;
+    margin: 50px 16px 50px;
   }
   .participating {
     padding-left: 16px;
@@ -236,12 +236,12 @@ p span,
     margin: 0px;
     padding-left: 30px;
   }
-  .headspan {
+  .participating .headspan {
     color: var(--sn-black, #000);
     font-family: Roboto;
-    font-size: 40px;
+    font-size: 24px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 100%;
     width: 343px;
     flex-shrink: 0;
@@ -263,7 +263,7 @@ p span,
   .participating p span {
     color: var(--sn-primary-headings-07235-b, #07235b);
     font-family: Roboto;
-    font-size: 20px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 500;
     line-height: 110%;

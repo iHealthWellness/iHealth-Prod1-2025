@@ -145,7 +145,7 @@ p span,
     font-weight: 700;
     line-height: 1;
     padding-left: 0px;
-    margin-top: 100px;
+    margin-top: 150px;
     width: 750px;
     height: 127px;
     flex-shrink: 0;
@@ -293,21 +293,22 @@ p span,
     line-height: 110%;
     margin: 0px;
     padding: 0px;
-    margin-left: 16px;
+    margin-left: 24px;
   }
   .note span{
     font-size: 19px;
   }
   .reminder {
-    width: 380px;
+    width: 340px;
     flex-shrink: 0;
-    margin-left: 16px;
-    padding-left: 50px;
-    padding-top: 30px;
+    margin-left: 24px;
+    padding-left: 38px;
+    padding-top: 20px;
     padding-bottom: 20px;
     align-items: center;
     justify-content: center;
     margin-bottom: 50px;
+    align-items: center;
   }
   .reminder h2 {
     width: 215px;
@@ -322,8 +323,7 @@ p span,
     margin: 0px;
     padding: 0px;
     padding-bottom: 35px;
-    padding-left: 50px;
-    align-items: center;
+    padding-left: 30px;
   }
   .reminder p {
     width: 267px;

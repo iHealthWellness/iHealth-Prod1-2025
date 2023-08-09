@@ -29,7 +29,7 @@
   font-family: Roboto;
   font-size: 24px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 143%;
   padding-left: 55px;
 }
@@ -48,7 +48,7 @@
 .involve2 p {
   width: 671px;
   flex-shrink: 0;
-  color: var(--sn-body-text-grey-858-ead, #07235b);
+  color: var(--sn-body-text-grey-858-ead, #858ead);
   font-family: Roboto;
   font-size: 20px;
   font-style: normal;
@@ -57,6 +57,7 @@
 }
 .involve2 p span {
   font-size: 20px;
+  color: #07235b;
 }
 [data-aos="slide-left"] {
   transform: translateX(100%);
@@ -90,7 +91,7 @@
     font-family: Roboto;
     font-size: 24px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 143%;
   }
   .involve2 {
@@ -102,8 +103,8 @@
   .involvement {
     margin: 0px;
     padding: 0px;
-    margin-bottom: 150px;
-    padding-bottom: 350px;
+    margin-bottom: 15px;
+    padding-bottom: 35px;
     padding-top: 50px;
   }
   .involvement img {
@@ -131,12 +132,13 @@
     flex-shrink: 0;
     color: var(--sn-black, #000);
     font-family: Roboto;
-    font-size: 20px;
+    font-size: 24px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 120%;
     margin: 0px;
     padding: 0px;
+    margin-left: 20px;
   }
   .involve1 .p1 {
     width: 343px;
@@ -145,10 +147,13 @@
     padding: 0px;
     color: var(--sn-black, #07235b);
     font-family: Roboto;
-    font-size: 22px;
+    font-size: 19px;
     font-style: normal;
     font-weight: 400;
     line-height: 100%;
+    margin-left: 20px;
+    margin-top: 8px;
+    margin-bottom: 6px;
   }
   .involve2 {
     padding-left: 16px;
@@ -159,7 +164,7 @@
   .involve2 p {
     color: var(--sn-body-text-grey-858-ead, #858ead);
     font-family: Roboto;
-    font-size: 20px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 120%;
@@ -167,20 +172,10 @@
     margin: 0px;
     padding: 0px;
     flex-shrink: 0;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
   }
-  .involve2 span {
-    width: 343px;
-    height: 592px;
-    flex-shrink: 0;
-    color: var(--sn-black, #000);
-    font-family: Roboto;
-    font-size: 20px;
-    font-style: normal;
+  .involve2 p span {
+    font-size: 18px;
+    color: #07235b;
     font-weight: 500;
-    line-height: 120%;
-    margin: 0px;
-    padding: 0px;
   }
 }

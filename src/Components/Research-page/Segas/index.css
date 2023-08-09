@@ -119,8 +119,8 @@ p span,
 }
 @media (max-width: 768px) {
   .segas {
-    width: 700px;
-    height: 680px;
+    width: 685px;
+    height: 660px;
     flex-shrink: 0;
     margin-left: 23px;
     margin-right: 24px;
@@ -180,11 +180,11 @@ p span,
   }
   .conclusion {
     width: 700px;
-    height: 400px;
+    height: 320px;
     flex-shrink: 0;
     display: block;
     margin-left: 16px;
-    margin-bottom: 50px;
+    margin-bottom: 5px;
     padding-left: 70px;
     margin-top: 250px;
   }
@@ -217,13 +217,14 @@ p span,
 }
 @media (max-width: 414px) {
   .segas {
-    width: 372px;
-    height: 750px;
+    width: 380px;
+    height: 725px;
     flex-shrink: 0;
     margin: 0px;
     padding: 0px;
     margin-left: 24px;
     margin-bottom: 50px;
+    padding-bottom: 20px;
   }
   .segas h2 {
     width: 343px;
@@ -240,7 +241,7 @@ p span,
     margin-right: 50px;
     margin-left: 30px;
     padding-left: 30px;
-    padding-top: 40px;
+    padding-top: 20px;
   }
   .segas p {
     width: 343px;
@@ -284,8 +285,8 @@ p span,
     flex-shrink: 0;
   }
   .conclusion {
-    width: 380px;
-    height: 350px;
+    width: 340px;
+    height: 370px;
     flex-shrink: 0;
     margin: 0px;
     padding: 0px;
@@ -304,16 +305,16 @@ p span,
     line-height: 100%;
     margin: 0px;
     padding: 0px;
-    padding-top: 30px;
+    padding-top: 20px;
     padding-bottom: 30px;
-    padding-left: 40px;
+    text-align: center;
   }
   .conclusion p {
     width: 267px;
     flex-shrink: 0;
     color: var(--white, #fff);
     font-family: Roboto;
-    font-size: 14px;
+    font-size: 15px;
     font-style: normal;
     font-weight: 400;
     line-height: 110%;
