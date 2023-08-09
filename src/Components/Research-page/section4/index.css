@@ -1,0 +1,178 @@
+.more-info, .segas{
+    background: url("src/Assets/Images/Research background.png"), lightgray 50%/ cover no-repeat;
+    background-position: center;
+    width: 1241px;
+    height: 500px;
+    flex-shrink: 0;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 80px;
+    padding-left: 40px;
+    margin-top: 1px;
+    position: relative;
+}
+    
+.more-info p{
+    width: 1138.162px;
+    height: 311.493px;
+    padding-bottom: 157px;
+    flex-shrink: 0;
+    color: var(--sn-primary-headings-07235-b, #07235B);
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 20px;
+    position: relative;
+}
+.more-info .span, .segas h2{
+    width: 1164.822px;
+    height: 60.563px;
+    flex-shrink: 0;
+    color: var(--sn-black, #000);
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 143%;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 50px;
+    margin-bottom: 50px;
+    padding-left: 28px;
+    position: relative;
+}
+.evorolimus{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
+.evorolimus img{
+    width: 463px;
+    height: 385px;
+    flex-shrink: 0;
+    margin-left: 100px;
+    background: #FFF;
+    margin-top: 150px;
+}
+[data-aos="slide-right"] {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  
+[data-aos="slide-right"].aos-animate {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 1s, transform 1s;
+}
+.evorolimus p{
+    color: var(--sn-primary-headings-07235-b, #07235B);
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    width: 718px;
+    flex-shrink: 0;
+    margin-right: 100px;
+    margin-left: 59px;
+}
+.span2{
+    padding: 0;
+    margin: 0;
+}
+p span, .span2{
+    color: black;
+    font-weight:500;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+[data-aos='slide-left'] {
+    transform: translateX(100%); 
+}
+  
+[data-aos='slide-left'].aos-animate {
+    transform: translateX(0%); 
+    opacity: 1; 
+    transition: transform 0.6s ease, opacity 0.8s ease; 
+}
+@media (max-width:768px){
+    .more-info{
+        margin-left: 23px;
+        width: 700.381px;
+        height: 600.223px; 
+        margin-bottom: 50px;
+        margin-top: 0px;
+
+    }
+    .more-info h2{
+        width: 647px;
+        height: 19.382px;
+        flex-shrink: 0;
+        color: var(--sn-black, #000);
+        font-family: Roboto;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height:110%;  
+        margin-left: 0px;
+    }
+    .more-info p{
+        width: 650.381px;
+        height: 419.223px;
+        flex-shrink: 0;
+        color: var(--sn-primary-headings-07235-b, #07235B);
+        font-family: Roboto;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 143%;
+        margin-left: 0px; 
+        margin-right: 16px;
+    }
+    .evorolimus{
+        display: block;
+    }
+    .evorolimus img{
+        width: 444px;
+        height: 320px;
+        flex-shrink: 0;
+        margin-top: 0px;
+        margin-left: 162px;
+        margin-right: 161px; 
+        margin-bottom: 60px;
+    }
+    .span2{
+        width: 719px;
+        height: 679px;
+        flex-shrink: 0;
+        color: var(--sn-black, #000);
+        font-family: Roboto;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 143%; 
+        padding-left: 24px;
+    }
+    .evorolimus p{
+        width: 719px;
+        flex-shrink: 0;
+        color: var(--sn-primary-headings-07235-b, #07235B);
+        font-family: Roboto;
+        font-size: 19px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 110%; 
+        margin-left: 24px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+}
+@media (max-width:414px){
+    .info{
+        display: none;
+    }
+}
