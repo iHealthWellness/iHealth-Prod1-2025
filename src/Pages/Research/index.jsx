@@ -9,20 +9,22 @@ import Participate from "src/Components/Research-page/Participate";
 import Involvement from "src/Components/Research-page/Involvement";
 import Consideration from "src/Components/Research-page/Consideration";
 import ToTopBtn from "src/Components/Research-page/TotopBtn";
+import"./index.css"
 
 const index = () => {
   return (
     <div className="research-page">
-    <Hero/>
-    <Tools/>
-    <Therapies/>
-    <Moreinfo/>
-    <Segas/>
-    <Participate/>
-    <Involvement/>
-    <Consideration/>
-    <ToTopBtn/>
-  </div>
-)};
+      <Hero />
+      <Tools />
+      <Therapies />
+      <Moreinfo />
+      <Segas />
+      <Participate />
+      <Involvement />
+      <Consideration />
+      <ToTopBtn />
+    </div>
+  );
+};
 
 export default index;
