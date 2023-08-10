@@ -1,19 +1,39 @@
 //Import Libraries/Packages
-import React from 'react'
+import React, { useRef } from 'react'
 
 
 //Import Styles
 import "./DonateSteps.css"
 
+
 //Import Local files/components etc...
-import manWL from "../../../../Assets/Images/man-working-laptop.png"
-import conceptWS from "../../../../Assets/Images/concept-with-smartphone.png"
+//import manWL from "../../../../Assets/Images/man-working-laptop.png" big size
+import manWL from "../../../../Assets/Images/man-working-laptop-s.jpg"
+//import conceptWS from "../../../../Assets/Images/concept-with-smartphone.png" big size
+import conceptWS from "../../../../Assets/Images/concept-with-smartphone-s.jpg"
+import ObvserverFunc from '../../Utiility/SlideAnimationObserver/ObvserverFunc'
+
 
 function DonateSteps() 
 {
+
+
+    /* References for Html elements to be animated */
+    const leftArticle = useRef()
+    const rightArticle = useRef()
+    const rootElm = useRef()
+    
+
+    /* Function for Animation Logic as when elements got into viewport */
+    ObvserverFunc(leftArticle,rightArticle,{root:rootElm?.current,rootMargin:'100px',threshold:0})
+
+
+
+
+
   return (
     <>
-        <div id='Donate-Steps-Wrapper'>
+        <div id='Donate-Steps-Wrapper' ref={rootElm}>
             
             <div>
                 <h3>Unite, Fundraise, Transform: Making an Impact Together</h3>
@@ -21,7 +41,7 @@ function DonateSteps()
             </div>
             <div>
 
-                <article>
+                <article id='beforeanimationleft' ref={leftArticle}>
                     <img loading='lazy' src={conceptWS} alt='man working laptop picture'/>
                     <div>
                         <p>Fundraise on Facebook</p>
@@ -38,7 +58,7 @@ function DonateSteps()
                     </div>
                 </article>
 
-                <article>
+                <article id='beforeanimationright' ref={rightArticle}>
                     <img loading='lazy' src={manWL} alt='concept with smartphone picture'/>
                     <div>
                         <p>Create your own Fundraiser</p>

@@ -21,11 +21,11 @@ const index = () =>
   return (
   <>
     <section id='Donate-Main-Container'>
-
+    
       <DonateTop />
       <DonateSteps />
       <Donate10Days />
-      <DonateTempGuide />
+      {/* <DonateTempGuide /> --//Changed Design No more Need this component */} 
 
     </section>
   </>

@@ -51,7 +51,8 @@
     flex-direction: row;
     text-align: center;
     place-content: space-between;
-    transform: translateY(-110px);
+    translate: 0px -110px;
+    
 }
 
 
@@ -65,6 +66,7 @@
     border-radius: 1.875rem;
     background: #FFF;
     max-width: 46.5%;
+    transition: transform 2s ease-in-out,translate 2s ease-in, width 1ms ease ;
 
 }
 
@@ -87,4 +89,72 @@
     font-style: normal;
     font-weight: 400;
     line-height: 143%;
+}
+
+
+
+/* ============================================ Responsıve Css Rules ============================================ */
+@media only screen and (max-width: 911px) 
+{
+    #Donate10Days-Main-Container > div:last-child 
+    {
+        place-content: center;
+        gap: 2rem;
+    }
+
+    #Donate10Days-Main-Container > div:last-child > article 
+    {
+       
+        max-width: 50%;
+    }
+}
+
+
+@media only screen and (max-width: 600px) 
+{
+
+    #Donate10Days-Main-Container > div:last-child > article > h4 
+    {
+        font-size: 4dvw;
+    }
+
+    #Donate10Days-Main-Container > div:last-child > article > p 
+    {
+        font-size: 3.1dvw;
+    }
+
+}
+
+@media only screen and (max-width: 479px) 
+{
+    #Donate10Days-Main-Container > div:last-child 
+    {
+        flex-direction: column;
+    }
+
+    #Donate10Days-Main-Container > div:last-child > article 
+    {
+        max-width: 100%;
+    }
+
+    #Donate10Days-Main-Container > div:first-child > h3 
+    {
+        font-size: 9.3dvw;
+    }
+
+    #Donate10Days-Main-Container > div:first-child > p 
+    {
+        font-size: 10dvw;
+        text-align: center;
+    }
+
+    #Donate10Days-Main-Container > div:last-child > article > h4 
+    {
+        font-size: 5dvw;
+    }
+
+    #Donate10Days-Main-Container > div:last-child > article > p 
+    {
+        font-size: 4.1dvw;
+    }
 }

@@ -1,5 +1,5 @@
 //Import Libraries/Packages
-import React from 'react'
+import React, { useRef } from 'react'
 
 
 //Import Styles
@@ -7,20 +7,33 @@ import "./Donate10Days.css"
 
 
 //Import Local files/components etc...
+import ObvserverFunc from '../../Utiility/SlideAnimationObserver/ObvserverFunc'
 
 
 
 function Donate10Days() 
 {
+
+    /* References for Html elements to be animated */
+    const leftArticle = useRef()
+    const rightArticle = useRef()
+    const rootElm = useRef()
+    
+
+    /* Function for Animation Logic as when elements got into viewport */
+    ObvserverFunc(leftArticle,rightArticle,{root:rootElm?.current,rootMargin:'100px',threshold:0})
+    
+
+
   return (
     <>
-        <div id='Donate10Days-Main-Container'>
+        <div id='Donate10Days-Main-Container' ref={rootElm}>
             <div>
                 <h3>Fast Track to Wellness – Raise $500 in 10 Days</h3>
                 <p>Transform your Futures!</p>
             </div>
             <div>
-                <article>
+                <article id='beforeanimationleft' ref={leftArticle}>
                     <h4>DAY 1</h4>
                     <p> Make a $25 self-donation.</p>
                     <h4>DAY 2 </h4>
@@ -32,7 +45,7 @@ function Donate10Days()
                     <h4>DAY 5</h4>
                     <p> Hold a team fundraiser and ask your team to donate the first $30. See how much you can raise beyond that to help you exceed your goal!</p>
                 </article>
-                <article>
+                <article id='beforeanimationright' ref={rightArticle}>
                     <h4>DAY 6</h4>
                     <p>Ask five people from your place of worship or gym to each make a $10 donation.</p>
                     <h4>DAY 7</h4>

@@ -62,6 +62,7 @@
     padding:0.7rem 0.5rem;
     max-width: 45%;
     gap: 1rem;
+    transition: transform 2s ease-in-out,translate 2s ease-in, width 1ms ease ;
 }
 
 #Donate-Steps-Wrapper > div:last-child > article > img
@@ -71,6 +72,7 @@
     object-fit: cover;
     border-radius: 2.5rem;
     object-position: 0 31%;
+    align-self: center;
 }
 
 #Donate-Steps-Wrapper > div:last-child > article > div 
@@ -126,11 +128,58 @@
 
 
 /* ============================================ Responsıve Css Rules ============================================ */
-@media only screen and (max-width: 950px) 
+@media only screen and (max-width: 911px) 
 {
     #Donate-Steps-Wrapper > div:last-child 
     {
         place-content: center;
         gap: 1rem;
+    }
+}
+
+@media only screen and (max-width: 800px) 
+{
+    #Donate-Steps-Wrapper > div:last-child > article > div > p:first-child 
+    {
+        font-size: 3.1dvw;
+    }
+
+    #Donate-Steps-Wrapper > div:last-child > article > div > p:nth-child(2) 
+    {
+        font-size: 3.1dvw;
+    }
+
+    #Donate-Steps-Wrapper > div:last-child > article > div > div > p 
+    {
+        font-size: 2.5dvw;
+    }
+}
+
+
+@media only screen and (max-width: 479px) 
+{
+    #Donate-Steps-Wrapper > div:last-child 
+    {
+        flex-direction: column;
+    }
+    #Donate-Steps-Wrapper > div:last-child > article 
+    {
+        max-width: 100%;
+    }
+
+    #Donate-Steps-Wrapper > div:last-child > article > div > p:first-child 
+    {
+        font-size: 4.1dvw;
+    }
+
+    #Donate-Steps-Wrapper > div:last-child > article > div > p:nth-child(2) 
+    {
+        font-size: 4.1dvw;
+    }
+
+    #Donate-Steps-Wrapper > div:last-child > article > div > div > p 
+    {
+        font-size: 3.5dvw;
+        padding-bottom: 0.5rem;
     }
 }
