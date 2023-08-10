@@ -23,7 +23,7 @@ function DonateTopTypeOfDonate()
     /* Function for Animation Logic as when elements got into viewport */
     ObvserverFunc(leftArticle,rightArticle,{root:rootElm?.current,rootMargin:'100px',threshold:0})
 
-
+    
   return (
     <>
         <div id='Donate-Top-TypeOfDonate'>

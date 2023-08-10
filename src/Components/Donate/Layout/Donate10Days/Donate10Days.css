@@ -130,6 +130,7 @@
     #Donate10Days-Main-Container > div:last-child 
     {
         flex-direction: column;
+        gap: 0;
     }
 
     #Donate10Days-Main-Container > div:last-child > article 
