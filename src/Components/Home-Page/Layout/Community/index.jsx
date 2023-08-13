@@ -51,7 +51,9 @@ const Community = () => {
               : "community-team-btn"
           }
         >
-          NF TEAM/HUB
+
+          NF HUB
+        
         </button>
 
         <button
@@ -63,7 +65,7 @@ const Community = () => {
               : "community-team-btn"
           }
         >
-          Geriatric Disease Team/Hub <p className="coming-soon-p">(Coming soon)</p>
+          Geriatric Disease Hub <p className="coming-soon-p">(Coming soon)</p>
         </button>
 
         <button
@@ -79,7 +81,7 @@ const Community = () => {
               : "community-team-btn"
           }
         >
-          Cancer Team/Hub <p className="coming-soon-p">(Coming soon)</p>
+          Cancer Hub <p className="coming-soon-p">(Coming soon)</p>
         </button>
       
       </div>
