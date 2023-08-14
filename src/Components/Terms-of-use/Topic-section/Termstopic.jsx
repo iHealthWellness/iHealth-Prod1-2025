@@ -2,6 +2,7 @@ import "./Termstopic.css";
 import communityLogo from "../../../Assets/Images/logo1.svg";
 import plusicon from "../../../Assets/Icons/Plus-icon.png";
 import minusicon from "../../../Assets/Icons/minus-icon.png";
+// fontawesome
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faSquarePlus, faSquareMinus } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
@@ -135,7 +136,6 @@ const Termstopic = () => {
               className="after"
             /> */}
             </h3>
-
             {/* expand and collapse icon */}
             <img
               onClick={handleToggle11}
