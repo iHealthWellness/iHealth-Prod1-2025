@@ -1,6 +1,6 @@
 import "./TermsPopup.css";
-import Termstopic from "./Topic-section/Termstopic";
 import Hero from "./Hero/Hero";
+import Termstopic from "./Topic-section/Termstopic";
 
 const TermsPopup = () => {
   return (
