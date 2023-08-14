@@ -1,7 +1,7 @@
 import "./Termstopic.css";
 import communityLogo from "../../../Assets/Images/logo1.svg";
-import plusicon from "../../../Assets/Icons/plusicon.png";
-import minusicon from "../../../Assets/Icons/minus-icon.png";
+import plusicon from "../../../Assets/Images/plusicon.png";
+import minusicon from "../../../Assets/Images/minus-icon.png";
 // fontawesome
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faSquarePlus, faSquareMinus } from "@fortawesome/free-solid-svg-icons";
