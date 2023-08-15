@@ -50,6 +50,7 @@ const section6 = () => {
         </div>
       </div>
       </div>
+      <div className="slide-in-text">
       <div className="participating">
         <h2>
           <span className="participating-span">
@@ -94,6 +95,7 @@ const section6 = () => {
           support, share experiences, and contribute to a network of
           understanding and empathy.
         </p>
+      </div>
       </div>
     </div>
   );
