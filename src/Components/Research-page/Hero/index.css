@@ -2,7 +2,7 @@
   margin:0 auto;
   width: 100%;
   padding-top: 10px; 
-  max-width: 1440px;
+  max-width: 1216px;
 }
 
 .image-img {
@@ -10,7 +10,6 @@
   height: 442px;
   flex-shrink: 0;
   position: relative;
-  margin-left: 80px;
 }
 .intro {
   width: 600px;

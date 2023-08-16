@@ -2,7 +2,7 @@
 .research-tools{
   margin:0 auto;
   width: 100%;
-  max-width: 1440px;
+  max-width: 1216px;
 }
 
 .tools {
@@ -91,11 +91,12 @@
   height: 240px;
   margin: 0;
   padding: 0;
-  margin-left: 170px;
+  margin-left: 100px;
   margin-right: 170px;
   margin-top: 1px;
   padding-top: 1px;
   margin-bottom: 120px;
+  width: 1150px;
 }
 .reminder1 {
   text-align: center;
@@ -110,7 +111,7 @@
   line-height: 143%;
 }
 .reminder2 {
-  margin-left: 50px;
+  margin-left: 30px;
   padding-bottom: 69px;
   flex-shrink: 0;
   color: #fff;

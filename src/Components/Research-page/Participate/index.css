@@ -1,16 +1,14 @@
 .Participate{
   margin:0 auto;
   width: 100%;
-  max-width: 1440px;
+  max-width: 1216px;
 }
 
 .components {
   display: flex;
   margin: 0;
   padding: 0;
-  margin-left: 100px;
   margin-left: 60px;
-  margin-left: 100px;
 }
 .components-p {
   width: 625px;

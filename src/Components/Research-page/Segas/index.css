@@ -1,7 +1,7 @@
 .Segas{
   margin:0 auto;
   width: 100%;
-  max-width: 1440px;
+  max-width: 1216px;
 }
 .segas {
   background: url("src/Assets/Images/Research background.png"),
@@ -93,9 +93,9 @@
   background: url("src/Assets/Images/Blue-Pattern.png");
   background-size: cover;
   background-repeat: no-repeat;
-  width: 1100px;
+  width: 1150px;
   height: 300px;
-  margin-left: 100px;
+  margin-left: 60px;
   margin-right: 157px;
   margin-top: 150px;
   margin-bottom: 130px;
