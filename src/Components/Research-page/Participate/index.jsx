@@ -43,6 +43,7 @@ const section6 = () => {
 
   return (
 <<<<<<< HEAD
+<<<<<<< HEAD
     <div id="participate">
       <div className="slide-in-text">
 =======
@@ -52,6 +53,10 @@ const section6 = () => {
 =======
     <div id="participate" className="slide-in-text">
 >>>>>>> 16586ad (update)
+=======
+    <div id="participate">
+      <div className="slide-in-text">
+>>>>>>> d341193 (update on research)
       <div className="participate">
         <h1 className="participate1">
           Participate in Research for Neurofibromatosis: Making a Difference
@@ -70,10 +75,14 @@ const section6 = () => {
         </div>
       </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
       </div>
       <div className="slide-in-text">
 =======
 >>>>>>> e05d4fd (update on research)
+=======
+      </div>
+>>>>>>> d341193 (update on research)
       <div className="participating">
         <h2>
           <span className="participating-span">

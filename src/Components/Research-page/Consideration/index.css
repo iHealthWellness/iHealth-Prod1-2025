@@ -3,6 +3,7 @@
 }
 .consider-img {
 <<<<<<< HEAD
+<<<<<<< HEAD
   width: 400px;
   height: 346px;
   flex-shrink: 0;
@@ -12,12 +13,20 @@
   margin-bottom: 260px;
 =======
   width: 460px;
+=======
+  width: 400px;
+  height: 346px;
+>>>>>>> d341193 (update on research)
   flex-shrink: 0;
   margin-right: 100px;
-  margin-left: 32px;
+  margin-left: 20px;
   margin-top: 200px;
+<<<<<<< HEAD
   margin-bottom: 360px;
 >>>>>>> e05d4fd (update on research)
+=======
+  margin-bottom: 260px;
+>>>>>>> d341193 (update on research)
 }
 .consideration {
   margin-top: 100px;
@@ -44,9 +53,13 @@
   padding-bottom: 20px;
   padding-top: 20px;
 <<<<<<< HEAD
+<<<<<<< HEAD
   width: 780px;
 =======
 >>>>>>> e05d4fd (update on research)
+=======
+  width: 780px;
+>>>>>>> d341193 (update on research)
 }
 .consideration2 {
   width: 671px;
@@ -69,10 +82,14 @@
   background-repeat: no-repeat;
   width: 1100px;
 <<<<<<< HEAD
+<<<<<<< HEAD
   height: 250px;
 =======
   height: 320px;
 >>>>>>> e05d4fd (update on research)
+=======
+  height: 250px;
+>>>>>>> d341193 (update on research)
   flex-shrink: 0;
   margin: 0;
   padding: 0;
@@ -124,10 +141,14 @@
     padding-top: 40px;
     margin-top: 10px;
 <<<<<<< HEAD
+<<<<<<< HEAD
     margin-left: 24px;
 =======
     margin-left: 16px;
 >>>>>>> e05d4fd (update on research)
+=======
+    margin-left: 24px;
+>>>>>>> d341193 (update on research)
   }
   .consider-img {
     margin: 0;

@@ -95,6 +95,7 @@ const Consideration = () => {
 <<<<<<< HEAD
         </div>
         <div>
+<<<<<<< HEAD
 =======
         </div>
 >>>>>>> 16586ad (update)
@@ -105,6 +106,11 @@ const Consideration = () => {
         <img className="consider-img" src={Research7} alt="" />
       </div>
 >>>>>>> e05d4fd (update on research)
+=======
+        <img className="consider-img" src={Research7} alt="" />
+      </div>
+      </div>
+>>>>>>> d341193 (update on research)
       <div className="difference">
         <h1 className="difference1">Make a Difference Today</h1>
         <p className="difference2">

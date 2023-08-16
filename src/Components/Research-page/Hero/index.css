@@ -65,6 +65,7 @@
   margin-bottom: 2px;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 .slide-in-text {
   opacity: 0;
@@ -95,25 +96,18 @@
   overflow: hidden;
   position: relative;
 }
+=======
+>>>>>>> d341193 (update on research)
 
 .slide-in-text {
   opacity: 0;
-  transform: translateX(-100%);
-  transition: opacity 0.5s, transform 0.9s;
-  position: relative;
-  left: -100px; /* Initial position outside the viewport */
+  transform: translateX(50%);
+  transition: opacity 0.4s, transform 0.3s;
 }
 
 .slide-in-text.active {
   opacity: 1;
   transform: translateX(0);
-  left: 0; /* Slide in from the left */
-}
-
-@keyframes slideIn {
-  to {
-    left: 0;
-  }
 }
 
 >>>>>>> 16586ad (update)
@@ -174,12 +168,17 @@
     background-position: center;
     position: relative;
 <<<<<<< HEAD
+<<<<<<< HEAD
     margin: 0;
     padding: 0;
 =======
     margin: 0px;
     padding: 0px;
 >>>>>>> e05d4fd (update on research)
+=======
+    margin: 0;
+    padding: 0;
+>>>>>>> d341193 (update on research)
     margin-top: 2px;
   }
   .section1 {
@@ -190,12 +189,17 @@
     height: 480px;
     flex-shrink: 0;
 <<<<<<< HEAD
+<<<<<<< HEAD
     margin: 0;
     padding: 0;
 =======
     margin: 0px;
     padding: 0px;
 >>>>>>> e05d4fd (update on research)
+=======
+    margin: 0;
+    padding: 0;
+>>>>>>> d341193 (update on research)
     top: 60%;
   }
   .side1 {
@@ -221,12 +225,17 @@
     padding-top: 10px;
     z-index: 3;
 <<<<<<< HEAD
+<<<<<<< HEAD
     margin: 0;
     padding: 0;
 =======
     margin: 0px;
     padding: 0px;
 >>>>>>> e05d4fd (update on research)
+=======
+    margin: 0;
+    padding: 0;
+>>>>>>> d341193 (update on research)
     padding-top: 400px;
     margin-bottom: 180px;
     padding-bottom: 400px;
@@ -241,12 +250,17 @@
     font-weight: 700;
     line-height: 120%;
 <<<<<<< HEAD
+<<<<<<< HEAD
     margin: 0;
     padding: 0;
 =======
     margin: 0px;
     padding: 0px;
 >>>>>>> e05d4fd (update on research)
+=======
+    margin: 0;
+    padding: 0;
+>>>>>>> d341193 (update on research)
     text-align: center;
   }
   .welcome {
@@ -285,10 +299,14 @@
     margin: 0;
     padding: 0;
 <<<<<<< HEAD
+<<<<<<< HEAD
     top: 40%;
 =======
     top: 30%;
 >>>>>>> e05d4fd (update on research)
+=======
+    top: 40%;
+>>>>>>> d341193 (update on research)
     position: absolute;
     z-index: 1;
   }
@@ -313,10 +331,14 @@
     padding: 0;
     margin-left: 8px;
 <<<<<<< HEAD
+<<<<<<< HEAD
     margin-top: 340px;
 =======
     margin-top: 350px;
 >>>>>>> e05d4fd (update on research)
+=======
+    margin-top: 340px;
+>>>>>>> d341193 (update on research)
     margin-bottom: 100px;
   }
   .introduction {

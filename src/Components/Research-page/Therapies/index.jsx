@@ -84,9 +84,13 @@ const section3 = () => {
         </div>
       </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
       </div>
 =======
 >>>>>>> e05d4fd (update on research)
+=======
+      </div>
+>>>>>>> d341193 (update on research)
       <div className="trametinib">
         <span className="trametinib-span">
           Trametinib: Promising Results in Adults and Children{" "}
@@ -115,7 +119,6 @@ const section3 = () => {
           a significant step forward in advancing treatment strategies for
           individuals affected by this challenging condition.
         </p>
-      </div>
       </div>
     </div>
   );
