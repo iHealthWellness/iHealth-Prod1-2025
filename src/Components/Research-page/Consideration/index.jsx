@@ -1,8 +1,13 @@
+<<<<<<< HEAD
 import React, { useEffect } from "react";
+=======
+import React, { useState, useEffect } from "react";
+>>>>>>> e05d4fd (update on research)
 import "./index.css";
 import Research7 from "src/Assets/Images/Research-7.png";
 
 const Consideration = () => {
+<<<<<<< HEAD
 
   useEffect(() => {
     const textElements = document.querySelectorAll('.slide-in-text');
@@ -33,6 +38,11 @@ const Consideration = () => {
     <div>
       <div className="consider">
         <div className="slide-in-text">
+=======
+  return (
+    <div>
+      <div className="consider">
+>>>>>>> e05d4fd (update on research)
         <div className="consideration">
           <h2>
             <span className="consideration-span">
@@ -71,11 +81,16 @@ const Consideration = () => {
             Some studies may cover certain expenses related to your involvement.
           </p>
         </div>
+<<<<<<< HEAD
         </div>
         <div>
         <img className="consider-img" src={Research7} alt="" />
       </div>
       </div>
+=======
+        <img className="consider-img" src={Research7} alt="" />
+      </div>
+>>>>>>> e05d4fd (update on research)
       <div className="difference">
         <h1 className="difference1">Make a Difference Today</h1>
         <p className="difference2">

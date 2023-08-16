@@ -1,8 +1,13 @@
+<<<<<<< HEAD
 import React, {useEffect} from "react";
+=======
+import React from "react";
+>>>>>>> e05d4fd (update on research)
 import "./index.css";
 import Research4 from "src/Assets/Images/Research-4.png";
 
 const section4 = () => {
+<<<<<<< HEAD
 
   useEffect(() => {
     const textElements = document.querySelectorAll('.slide-in-text');
@@ -29,6 +34,8 @@ const section4 = () => {
     };
   }, []);
 
+=======
+>>>>>>> e05d4fd (update on research)
   return (
     <div className="info">
       <div className="more-info">
@@ -57,7 +64,10 @@ const section4 = () => {
           neurofibromas.
         </p>
       </div>
+<<<<<<< HEAD
       <div className="slide-in-text">
+=======
+>>>>>>> e05d4fd (update on research)
       <div className="evorolimus">
         <img className="evorolimus-img" src={Research4} alt="" />
         <div>
@@ -107,7 +117,10 @@ const section4 = () => {
           </p>
         </div>
       </div>
+<<<<<<< HEAD
       </div>
+=======
+>>>>>>> e05d4fd (update on research)
     </div>
   );
 };

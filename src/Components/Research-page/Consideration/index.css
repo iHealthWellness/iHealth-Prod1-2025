@@ -2,6 +2,7 @@
   display: flex;
 }
 .consider-img {
+<<<<<<< HEAD
   width: 400px;
   height: 346px;
   flex-shrink: 0;
@@ -9,6 +10,14 @@
   margin-left: 20px;
   margin-top: 200px;
   margin-bottom: 260px;
+=======
+  width: 460px;
+  flex-shrink: 0;
+  margin-right: 100px;
+  margin-left: 32px;
+  margin-top: 200px;
+  margin-bottom: 360px;
+>>>>>>> e05d4fd (update on research)
 }
 .consideration {
   margin-top: 100px;
@@ -34,7 +43,10 @@
   line-height: 140%;
   padding-bottom: 20px;
   padding-top: 20px;
+<<<<<<< HEAD
   width: 780px;
+=======
+>>>>>>> e05d4fd (update on research)
 }
 .consideration2 {
   width: 671px;
@@ -56,7 +68,11 @@
   background-size: cover;
   background-repeat: no-repeat;
   width: 1100px;
+<<<<<<< HEAD
   height: 250px;
+=======
+  height: 320px;
+>>>>>>> e05d4fd (update on research)
   flex-shrink: 0;
   margin: 0;
   padding: 0;
@@ -73,7 +89,10 @@
   font-weight: 600;
   line-height: 143%;
   padding-top: 40px;
+<<<<<<< HEAD
   text-align: center;
+=======
+>>>>>>> e05d4fd (update on research)
 }
 .difference2,
 .difference3 {
@@ -104,7 +123,11 @@
     padding: 0;
     padding-top: 40px;
     margin-top: 10px;
+<<<<<<< HEAD
     margin-left: 24px;
+=======
+    margin-left: 16px;
+>>>>>>> e05d4fd (update on research)
   }
   .consider-img {
     margin: 0;

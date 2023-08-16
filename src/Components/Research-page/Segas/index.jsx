@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React,{useEffect} from "react";
 import "./index.css";
 
@@ -28,6 +29,12 @@ const section5 = () => {
     };
   }, []);
 
+=======
+import React from "react";
+import "./index.css";
+
+const section5 = () => {
+>>>>>>> e05d4fd (update on research)
   return (
     <div>
       <div className="segas">
@@ -67,7 +74,10 @@ const section5 = () => {
           condition and requirements.
         </p>
       </div>
+<<<<<<< HEAD
       <div className="slide-in-text">
+=======
+>>>>>>> e05d4fd (update on research)
       <div className="peginter">
         <span className="peginter-span">Peginterferon alfa-2b</span>
         <p className="peginter-p">
@@ -103,7 +113,10 @@ const section5 = () => {
           https://academic.oup.com/neuro-oncology/article/19/2/289/3038131
         </p>
       </div>
+<<<<<<< HEAD
       </div>
+=======
+>>>>>>> e05d4fd (update on research)
       <div className="conclusion">
         <h2 className="conclusion1">Conclusion</h2>
         <p className="conclusion2">

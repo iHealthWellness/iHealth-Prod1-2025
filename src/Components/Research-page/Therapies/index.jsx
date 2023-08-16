@@ -1,8 +1,13 @@
+<<<<<<< HEAD
 import React, {useEffect} from "react";
+=======
+import React from "react";
+>>>>>>> e05d4fd (update on research)
 import "./index.css";
 import Research3 from "src/Assets/Images/Research-3.png";
 
 const section3 = () => {
+<<<<<<< HEAD
   useEffect(() => {
     const textElements = document.querySelectorAll('.slide-in-text');
 
@@ -31,6 +36,10 @@ const section3 = () => {
   return (
     <div className="clinic" id="clinical">
       <div className="slide-in-text">
+=======
+  return (
+    <div className="clinic" id="clinical">
+>>>>>>> e05d4fd (update on research)
       <div className="clinical-therapies">
         <h1 className="clinic1">Clinical Drug Therapies</h1>
         <p className="clinic2">
@@ -64,7 +73,10 @@ const section3 = () => {
           <img className="selumitinib-img" src={Research3} alt="" />
         </div>
       </div>
+<<<<<<< HEAD
       </div>
+=======
+>>>>>>> e05d4fd (update on research)
       <div className="trametinib">
         <span className="trametinib-span">
           Trametinib: Promising Results in Adults and Children{" "}

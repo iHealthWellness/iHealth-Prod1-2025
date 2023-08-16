@@ -1,11 +1,18 @@
 .clinical-therapies {
   background: #fff;
+<<<<<<< HEAD
   margin: 0;
   padding: 0;
   padding-left: 50px;
   margin-bottom: 50px;
   margin-left: 50px;
   width: 1216px;
+=======
+  margin: 0px;
+  padding: 0px;
+  padding-left: 50px;
+  margin-bottom: 50px;
+>>>>>>> e05d4fd (update on research)
 }
 .clinic1 {
   color: #07235b;
@@ -17,8 +24,11 @@
   margin: 0;
   padding: 0;
   padding-bottom: 50px;
+<<<<<<< HEAD
   width: 1216px;
   text-align: center;
+=======
+>>>>>>> e05d4fd (update on research)
 }
 .clinic2 {
   width: 1237px;
@@ -39,8 +49,11 @@
   margin: 0;
   padding: 0;
   padding-left: 50px;
+<<<<<<< HEAD
   margin-left: 50px;
   margin-top: 5px;
+=======
+>>>>>>> e05d4fd (update on research)
 }
 .selumetinib-span {
   font-size: 24px;
@@ -50,7 +63,11 @@
 .selumetinib-p {
   width: 625px;
   height: 343px;
+<<<<<<< HEAD
   line-height: 1.6;
+=======
+  line-height: 1.5;
+>>>>>>> e05d4fd (update on research)
   font-family: Roboto;
   font-size: 20px;
   font-style: normal;
@@ -62,15 +79,23 @@
 }
 .selumitinib-img {
   width: 463px;
+<<<<<<< HEAD
   height: 330px;
   margin-left: 30px;
   margin-top: 10px;
+=======
+  height: 385px;
+  margin-left: 30px;
+>>>>>>> e05d4fd (update on research)
 }
 .trametinib {
   margin: 0;
   padding: 0;
   margin-left: 50px;
+<<<<<<< HEAD
   padding-left: 50px;
+=======
+>>>>>>> e05d4fd (update on research)
   margin-top: 130px;
   margin-bottom: 3px;
 }

@@ -2,19 +2,31 @@
   background: url("src/Assets/Images/Research background.png"),
     lightgray 50% / cover no-repeat;
   background-position: center;
+<<<<<<< HEAD
   width: 1250px;
+=======
+  width: 1241px;
+>>>>>>> e05d4fd (update on research)
   height: 500px;
   flex-shrink: 0;
   margin: 0;
   padding: 0;
+<<<<<<< HEAD
   margin-left: 50px;
+=======
+  margin-left: 20px;
+>>>>>>> e05d4fd (update on research)
   padding-left: 50px;
   margin-top: 1px;
   position: relative;
 }
 
 .more-info-p {
+<<<<<<< HEAD
   width: 1150px;
+=======
+  width: 1138px;
+>>>>>>> e05d4fd (update on research)
   flex-shrink: 0;
   color: var(--sn-primary-headings-07235-b, #07235b);
   font-family: Roboto;
@@ -53,7 +65,10 @@
   height: 385px;
   flex-shrink: 0;
   margin-left: 50px;
+<<<<<<< HEAD
   padding-left: 50px;
+=======
+>>>>>>> e05d4fd (update on research)
   background: #fff;
   margin-top: 150px;
 }
@@ -82,7 +97,11 @@
   width: 650px;
   flex-shrink: 0;
   margin-right: 100px;
+<<<<<<< HEAD
   margin-left: 80px;
+=======
+  margin-left: 50px;
+>>>>>>> e05d4fd (update on research)
   margin-top: 10px;
 }
 /*[data-aos="slide-left"] {

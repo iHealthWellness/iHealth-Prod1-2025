@@ -1,8 +1,13 @@
+<<<<<<< HEAD
 import React, { useEffect} from "react";
+=======
+import React from "react";
+>>>>>>> e05d4fd (update on research)
 import "./index.css";
 import Research1 from "src/Assets/Images/Research-1.png";
 
 const section1 = () => {
+<<<<<<< HEAD
 
   useEffect(() => {
     const textElements = document.querySelectorAll('.slide-in-text');
@@ -29,6 +34,8 @@ const section1 = () => {
     };
   }, []);
 
+=======
+>>>>>>> e05d4fd (update on research)
   return (
     <div>
       <div className="image">
@@ -41,7 +48,11 @@ const section1 = () => {
           </h1>
           <h2 className="side2">Advancing Research for a Brighter Future</h2>
         </div>
+<<<<<<< HEAD
         <div className="slide-in-text">
+=======
+
+>>>>>>> e05d4fd (update on research)
         <div className="intro">
           <h3 className="introduction">Introduction</h3>
           <p className="welcome">
@@ -73,7 +84,10 @@ const section1 = () => {
             of life for NF patients worldwide.
           </p>
         </div>
+<<<<<<< HEAD
         </div>
+=======
+>>>>>>> e05d4fd (update on research)
       </div>
     </div>
   );

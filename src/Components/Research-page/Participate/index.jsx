@@ -1,8 +1,13 @@
+<<<<<<< HEAD
 import React, {useEffect} from "react";
+=======
+import React from "react";
+>>>>>>> e05d4fd (update on research)
 import "./index.css";
 import Research5 from "src/Assets/Images/Research-5.png";
 
 const section6 = () => {
+<<<<<<< HEAD
 
   useEffect(() => {
     const textElements = document.querySelectorAll('.slide-in-text');
@@ -32,6 +37,10 @@ const section6 = () => {
   return (
     <div id="participate">
       <div className="slide-in-text">
+=======
+  return (
+    <div id="participate">
+>>>>>>> e05d4fd (update on research)
       <div className="participate">
         <h1 className="participate1">
           Participate in Research for Neurofibromatosis: Making a Difference
@@ -49,8 +58,11 @@ const section6 = () => {
           <img className="components-img" src={Research5} alt="" />
         </div>
       </div>
+<<<<<<< HEAD
       </div>
       <div className="slide-in-text">
+=======
+>>>>>>> e05d4fd (update on research)
       <div className="participating">
         <h2>
           <span className="participating-span">
@@ -96,7 +108,10 @@ const section6 = () => {
           understanding and empathy.
         </p>
       </div>
+<<<<<<< HEAD
       </div>
+=======
+>>>>>>> e05d4fd (update on research)
     </div>
   );
 };
