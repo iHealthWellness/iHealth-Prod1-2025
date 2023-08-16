@@ -1,13 +1,20 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 import React, {useEffect} from "react";
 =======
 import React from "react";
 >>>>>>> e05d4fd (update on research)
+=======
+import React, {useEffect} from "react";
+>>>>>>> 16586ad (update)
 import "./index.css";
 import Research6 from "src/Assets/Images/Research-6.png";
 
 const section7 = () => {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 16586ad (update)
 
   useEffect(() => {
     const textElements = document.querySelectorAll('.slide-in-text');
@@ -34,12 +41,17 @@ const section7 = () => {
     };
   }, []);
 
+<<<<<<< HEAD
   return (
     <div className="slide-in-text">
 =======
   return (
     <div>
 >>>>>>> e05d4fd (update on research)
+=======
+  return (
+    <div className="slide-in-text">
+>>>>>>> 16586ad (update)
       <div className="involvement">
         <img className="involvement-img" src={Research6} alt="" />
         <div className="involve1">

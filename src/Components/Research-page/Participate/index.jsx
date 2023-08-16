@@ -1,13 +1,20 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 import React, {useEffect} from "react";
 =======
 import React from "react";
 >>>>>>> e05d4fd (update on research)
+=======
+import React, {useEffect} from "react";
+>>>>>>> 16586ad (update)
 import "./index.css";
 import Research5 from "src/Assets/Images/Research-5.png";
 
 const section6 = () => {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 16586ad (update)
 
   useEffect(() => {
     const textElements = document.querySelectorAll('.slide-in-text');
@@ -35,12 +42,16 @@ const section6 = () => {
   }, []);
 
   return (
+<<<<<<< HEAD
     <div id="participate">
       <div className="slide-in-text">
 =======
   return (
     <div id="participate">
 >>>>>>> e05d4fd (update on research)
+=======
+    <div id="participate" className="slide-in-text">
+>>>>>>> 16586ad (update)
       <div className="participate">
         <h1 className="participate1">
           Participate in Research for Neurofibromatosis: Making a Difference

@@ -1,13 +1,20 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 import React, {useEffect} from "react";
 =======
 import React from "react";
 >>>>>>> e05d4fd (update on research)
+=======
+import React, {useEffect} from "react";
+>>>>>>> 16586ad (update)
 import "./index.css";
 import Research3 from "src/Assets/Images/Research-3.png";
 
 const section3 = () => {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 16586ad (update)
   useEffect(() => {
     const textElements = document.querySelectorAll('.slide-in-text');
 
@@ -36,10 +43,13 @@ const section3 = () => {
   return (
     <div className="clinic" id="clinical">
       <div className="slide-in-text">
+<<<<<<< HEAD
 =======
   return (
     <div className="clinic" id="clinical">
 >>>>>>> e05d4fd (update on research)
+=======
+>>>>>>> 16586ad (update)
       <div className="clinical-therapies">
         <h1 className="clinic1">Clinical Drug Therapies</h1>
         <p className="clinic2">
@@ -105,6 +115,7 @@ const section3 = () => {
           a significant step forward in advancing treatment strategies for
           individuals affected by this challenging condition.
         </p>
+      </div>
       </div>
     </div>
   );

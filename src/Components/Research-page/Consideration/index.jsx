@@ -1,13 +1,20 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 import React, { useEffect } from "react";
 =======
 import React, { useState, useEffect } from "react";
 >>>>>>> e05d4fd (update on research)
+=======
+import React, { useEffect } from "react";
+>>>>>>> 16586ad (update)
 import "./index.css";
 import Research7 from "src/Assets/Images/Research-7.png";
 
 const Consideration = () => {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 16586ad (update)
 
   useEffect(() => {
     const textElements = document.querySelectorAll('.slide-in-text');
@@ -38,11 +45,14 @@ const Consideration = () => {
     <div>
       <div className="consider">
         <div className="slide-in-text">
+<<<<<<< HEAD
 =======
   return (
     <div>
       <div className="consider">
 >>>>>>> e05d4fd (update on research)
+=======
+>>>>>>> 16586ad (update)
         <div className="consideration">
           <h2>
             <span className="consideration-span">
@@ -82,8 +92,12 @@ const Consideration = () => {
           </p>
         </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
         </div>
         <div>
+=======
+        </div>
+>>>>>>> 16586ad (update)
         <img className="consider-img" src={Research7} alt="" />
       </div>
       </div>

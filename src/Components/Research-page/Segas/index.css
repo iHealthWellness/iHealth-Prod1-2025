@@ -3,14 +3,19 @@
     lightgray 50% / cover no-repeat;
   background-position: center;
 <<<<<<< HEAD
+<<<<<<< HEAD
   width: 1250px;
 =======
   width: 1241px;
 >>>>>>> e05d4fd (update on research)
+=======
+  width: 1250px;
+>>>>>>> 16586ad (update)
   height: 500px;
   flex-shrink: 0;
   margin: 0;
   padding: 0;
+<<<<<<< HEAD
 <<<<<<< HEAD
   margin-left: 50px;
   padding-left: 50px;
@@ -22,13 +27,20 @@
   width: 1138px;
 =======
   margin-left: 24px;
+=======
+  margin-left: 50px;
+>>>>>>> 16586ad (update)
   padding-left: 50px;
   margin-top: 1px;
   position: relative;
 }
 .segas-p {
+<<<<<<< HEAD
   width: 1138.162px;
 >>>>>>> e05d4fd (update on research)
+=======
+  width: 1138px;
+>>>>>>> 16586ad (update)
   flex-shrink: 0;
   color: var(--sn-primary-headings-07235-b, #07235b);
   font-family: Roboto;
@@ -42,10 +54,14 @@
 }
 .segas1 {
 <<<<<<< HEAD
+<<<<<<< HEAD
   width: 1164px;
 =======
   width: 1164.822px;
 >>>>>>> e05d4fd (update on research)
+=======
+  width: 1164px;
+>>>>>>> 16586ad (update)
   height: 60.563px;
   flex-shrink: 0;
   color: var(--sn-black, #000);

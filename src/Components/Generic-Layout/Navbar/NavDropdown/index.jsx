@@ -120,50 +120,8 @@ const NavDropdownButton = () => {
               }}
               className="nav-dropdown-links nav-services"
             >
-              Services
-            </NavLink>
-          </li>
-          <li
-            className={`nav-dropdown-links-listitem ${currentPage === "/about-us" ? "active" : ""
-              }`}
-          >
-            <NavLink
-              onClick={toggleDropdown}
-
-
-              to="/about-us"
-              className="nav-links-nav-about-us"
-            >
-              About Us
-            </NavLink>
-
-            <div className={classnames('nav-dropdown-content', { block: showdropdown })}>
-              <a href="#Hero">Corporate Info </a>
-              <a href="/our-team">Our Team </a>
-              <a href="#Finance">Financial Transparency </a>
-              <a href="#Terms">Terms Of Use</a>
-              <a href="">List Of Openings</a>
-
-
-
-            </div>
-          </li>
-          <li
-            className={`nav-dropdown-links-listitem ${currentPage === "/research" ? "active" : ""
-              }`}
-          >
-            <NavLink
-              onClick={toggleDropdown}
-              className="nav-dropdown-links-nav-research"
-            >
               Research
             </NavLink>
-
-        {/*<div className={classnames('nav-dropdown-content', { block: showdropdown })}>
-            <a href="/research/#tools">Research Tools & Resources</a>
-            <a href="/research/#clinical">Clinical Drug Therapies</a>
-            <a href="/research/#participate">Participate in Research</a>
-            </div>*/}
           </li>
         </ul>
       )}

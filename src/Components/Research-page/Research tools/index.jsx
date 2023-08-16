@@ -1,13 +1,20 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 import React, {useEffect} from "react";
 =======
 import React from "react";
 >>>>>>> e05d4fd (update on research)
+=======
+import React, {useEffect} from "react";
+>>>>>>> 16586ad (update)
 import "./index.css";
 import Research2 from "src/Assets/Images/Research-2.png";
 
 const section2 = () => {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 16586ad (update)
 
   useEffect(() => {
     const textElements = document.querySelectorAll('.slide-in-text');
@@ -38,11 +45,14 @@ const section2 = () => {
     <section id="tools">
       <div>
       <div className="slide-in-text">
+<<<<<<< HEAD
 =======
   return (
     <section id="tools">
       <div>
 >>>>>>> e05d4fd (update on research)
+=======
+>>>>>>> 16586ad (update)
         <div className="tools">
           <h1 className="tool">
             Neurofibromatosis Research Tools and Resources: Empowering Patients
@@ -109,9 +119,13 @@ const section2 = () => {
             </p>
           </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
           </div>
 =======
 >>>>>>> e05d4fd (update on research)
+=======
+          </div>
+>>>>>>> 16586ad (update)
         </div>
         <div className="reminder">
           <h2 className="reminder1">Do you know?</h2>

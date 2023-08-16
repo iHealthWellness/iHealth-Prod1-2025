@@ -1,9 +1,13 @@
 .image-img {
 <<<<<<< HEAD
+<<<<<<< HEAD
   width: 1216px;
 =======
   width: 1100px;
 >>>>>>> e05d4fd (update on research)
+=======
+  width: 1216px;
+>>>>>>> 16586ad (update)
   height: 442px;
   flex-shrink: 0;
   background-size: cover;
@@ -24,10 +28,14 @@
   margin: 0;
   padding: 0;
 <<<<<<< HEAD
+<<<<<<< HEAD
   padding-left: 600px;
 =======
   padding-left: 550px;
 >>>>>>> e05d4fd (update on research)
+=======
+  padding-left: 600px;
+>>>>>>> 16586ad (update)
   position: relative;
 }
 .introduction {
@@ -79,7 +87,36 @@
   opacity: 1;
   transition: transform 0.6s ease, opacity 0.8s ease;
 }*/
+<<<<<<< HEAD
 >>>>>>> e05d4fd (update on research)
+=======
+.container {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.slide-in-text {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 0.5s, transform 0.9s;
+  position: relative;
+  left: -100px; /* Initial position outside the viewport */
+}
+
+.slide-in-text.active {
+  opacity: 1;
+  transform: translateX(0);
+  left: 0; /* Slide in from the left */
+}
+
+@keyframes slideIn {
+  to {
+    left: 0;
+  }
+}
+
+>>>>>>> 16586ad (update)
 
 .side {
   margin-bottom: 130px;

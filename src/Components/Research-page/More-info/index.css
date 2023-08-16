@@ -3,19 +3,27 @@
     lightgray 50% / cover no-repeat;
   background-position: center;
 <<<<<<< HEAD
+<<<<<<< HEAD
   width: 1250px;
 =======
   width: 1241px;
 >>>>>>> e05d4fd (update on research)
+=======
+  width: 1250px;
+>>>>>>> 16586ad (update)
   height: 500px;
   flex-shrink: 0;
   margin: 0;
   padding: 0;
 <<<<<<< HEAD
+<<<<<<< HEAD
   margin-left: 50px;
 =======
   margin-left: 20px;
 >>>>>>> e05d4fd (update on research)
+=======
+  margin-left: 50px;
+>>>>>>> 16586ad (update)
   padding-left: 50px;
   margin-top: 1px;
   position: relative;
@@ -23,10 +31,14 @@
 
 .more-info-p {
 <<<<<<< HEAD
+<<<<<<< HEAD
   width: 1150px;
 =======
   width: 1138px;
 >>>>>>> e05d4fd (update on research)
+=======
+  width: 1150px;
+>>>>>>> 16586ad (update)
   flex-shrink: 0;
   color: var(--sn-primary-headings-07235-b, #07235b);
   font-family: Roboto;
@@ -66,9 +78,13 @@
   flex-shrink: 0;
   margin-left: 50px;
 <<<<<<< HEAD
+<<<<<<< HEAD
   padding-left: 50px;
 =======
 >>>>>>> e05d4fd (update on research)
+=======
+  padding-left: 50px;
+>>>>>>> 16586ad (update)
   background: #fff;
   margin-top: 150px;
 }
@@ -98,10 +114,14 @@
   flex-shrink: 0;
   margin-right: 100px;
 <<<<<<< HEAD
+<<<<<<< HEAD
   margin-left: 80px;
 =======
   margin-left: 50px;
 >>>>>>> e05d4fd (update on research)
+=======
+  margin-left: 80px;
+>>>>>>> 16586ad (update)
   margin-top: 10px;
 }
 /*[data-aos="slide-left"] {
