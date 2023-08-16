@@ -29,7 +29,7 @@ const Community = () => {
               : "community-team-btn"
           }
         >
-          NF HUB
+          Neurofibromatosis (NF) HUB
         </button>
         <button
           onClick={() => {
