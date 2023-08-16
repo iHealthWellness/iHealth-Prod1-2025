@@ -6,15 +6,7 @@
 }
 
 .image-img {
-<<<<<<< HEAD
-<<<<<<< HEAD
   width: 1216px;
-=======
-  width: 1100px;
->>>>>>> e05d4fd (update on research)
-=======
-  width: 1216px;
->>>>>>> 16586ad (update)
   height: 442px;
   flex-shrink: 0;
   position: relative;
@@ -26,19 +18,7 @@
   flex-shrink: 0;
   margin: 0;
   padding: 0;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  padding-left: 600px;
-=======
   padding-left: 550px;
->>>>>>> e05d4fd (update on research)
-=======
-  padding-left: 600px;
->>>>>>> 16586ad (update)
-=======
-  padding-left: 550px;
->>>>>>> 07f51fe (update on research)
   position: relative;
   margin-left: 20px;
 }
@@ -68,8 +48,6 @@
   line-height: 1.2;
   margin-bottom: 2px;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 .slide-in-text {
   opacity: 0;
@@ -81,40 +59,6 @@
   opacity: 1;
   transform: translateX(0);
 }
-
-=======
-/*[data-aos="slide-left"] {
-  transform: translateX(100%);
-}
-
-[data-aos="slide-left"].aos-animate {
-  transform: translateX(0%);
-  opacity: 1;
-  transition: transform 0.6s ease, opacity 0.8s ease;
-}*/
-<<<<<<< HEAD
->>>>>>> e05d4fd (update on research)
-=======
-.container {
-  height: 100vh;
-  overflow: hidden;
-  position: relative;
-}
-=======
->>>>>>> d341193 (update on research)
-
-.slide-in-text {
-  opacity: 0;
-  transform: translateX(50%);
-  transition: opacity 0.4s, transform 0.3s;
-}
-
-.slide-in-text.active {
-  opacity: 1;
-  transform: translateX(0);
-}
-
->>>>>>> 16586ad (update)
 
 .side {
   margin-bottom: 150px;
@@ -125,7 +69,7 @@
   display: block;
   margin-left: 120px;
   position: absolute;
-  top: 60%;
+  top: 70%;
   z-index: 1; 
 }
 .side1 {
@@ -159,26 +103,16 @@
     width: 100%;
   }
   .image-img {
-    width: 768px;
+    width: 700px;
     height: 400px;
     flex-shrink: 0;
     margin-bottom: 0px;
     background-size: cover;
     background-position: center;
     position: relative;
-<<<<<<< HEAD
-<<<<<<< HEAD
-    margin: 0;
-    padding: 0;
-=======
-    margin: 0px;
-    padding: 0px;
->>>>>>> e05d4fd (update on research)
-=======
-    margin: 0;
-    padding: 0;
->>>>>>> d341193 (update on research)
     margin-top: 2px;
+    margin: 0;
+    padding: 0;
   }
   .section1 {
     display: block;
@@ -187,23 +121,9 @@
     width: 432px;
     height: 480px;
     flex-shrink: 0;
-<<<<<<< HEAD
-<<<<<<< HEAD
     margin: 0;
     padding: 0;
-<<<<<<< HEAD
-=======
-    margin: 0px;
-    padding: 0px;
->>>>>>> e05d4fd (update on research)
-=======
-    margin: 0;
-    padding: 0;
->>>>>>> d341193 (update on research)
-    top: 60%;
-=======
     top: 50%;
->>>>>>> 07f51fe (update on research)
   }
   .side1 {
     color: #0d99ff;
@@ -223,23 +143,9 @@
   }
   .intro {
     z-index: 3;
-<<<<<<< HEAD
-<<<<<<< HEAD
     margin: 0;
     padding: 0;
-<<<<<<< HEAD
-=======
-    margin: 0px;
-    padding: 0px;
->>>>>>> e05d4fd (update on research)
-=======
-    margin: 0;
-    padding: 0;
->>>>>>> d341193 (update on research)
-    padding-top: 400px;
-=======
     padding-top: 440px;
->>>>>>> 07f51fe (update on research)
     margin-bottom: 180px;
     padding-bottom: 400px;
   }
@@ -252,18 +158,8 @@
     font-style: normal;
     font-weight: 700;
     line-height: 120%;
-<<<<<<< HEAD
-<<<<<<< HEAD
     margin: 0;
     padding: 0;
-=======
-    margin: 0px;
-    padding: 0px;
->>>>>>> e05d4fd (update on research)
-=======
-    margin: 0;
-    padding: 0;
->>>>>>> d341193 (update on research)
     text-align: center;
   }
   .welcome {
@@ -306,19 +202,7 @@
     flex-shrink: 0;
     margin: 0;
     padding: 0;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    top: 40%;
-=======
     top: 30%;
->>>>>>> e05d4fd (update on research)
-=======
-    top: 40%;
->>>>>>> d341193 (update on research)
-=======
-    top: 30%;
->>>>>>> 07f51fe (update on research)
     position: absolute;
     z-index: 1;
   }
@@ -341,19 +225,8 @@
   .intro {
     margin: 0;
     padding: 0;
-<<<<<<< HEAD
     margin-left: 8px;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 07f51fe (update on research)
-    margin-top: 340px;
-=======
     margin-top: 350px;
->>>>>>> e05d4fd (update on research)
-=======
-    margin-top: 340px;
->>>>>>> d341193 (update on research)
     margin-bottom: 100px;
   }
   .introduction {

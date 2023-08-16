@@ -7,56 +7,25 @@
   background: url("src/Assets/Images/Research background.png"),
     lightgray 50% / cover no-repeat;
   background-position: center;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  width: 1250px;
-=======
-  width: 1241px;
->>>>>>> e05d4fd (update on research)
-=======
-  width: 1250px;
->>>>>>> 16586ad (update)
-=======
   width: 1216px;
->>>>>>> 07f51fe (update on research)
   height: 500px;
   flex-shrink: 0;
   margin: 0;
   padding: 0;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  margin-left: 50px;
-=======
   margin-left: 30px;
->>>>>>> 07f51fe (update on research)
   padding-left: 50px;
   margin-top: 1px;
   position: relative;
   margin-bottom: 50px;
-<<<<<<< HEAD
 }
 .segas-p {
   width: 1138px;
-=======
-  margin-left: 24px;
-=======
-  margin-left: 50px;
->>>>>>> 16586ad (update)
   padding-left: 50px;
   margin-top: 1px;
   position: relative;
-=======
->>>>>>> d341193 (update on research)
 }
 .segas-p {
-<<<<<<< HEAD
-  width: 1138.162px;
->>>>>>> e05d4fd (update on research)
-=======
   width: 1138px;
->>>>>>> 16586ad (update)
   flex-shrink: 0;
   color: var(--sn-primary-headings-07235-b, #07235b);
   font-family: Roboto;
@@ -69,15 +38,7 @@
   position: relative;
 }
 .segas1 {
-<<<<<<< HEAD
-<<<<<<< HEAD
   width: 1164px;
-=======
-  width: 1164.822px;
->>>>>>> e05d4fd (update on research)
-=======
-  width: 1164px;
->>>>>>> 16586ad (update)
   height: 60.563px;
   flex-shrink: 0;
   color: var(--sn-black, #000);
@@ -97,12 +58,6 @@
   margin: 0;
   padding: 0;
   margin-left: 60px;
-<<<<<<< HEAD
-<<<<<<< HEAD
-  padding-left: 40px;
-  margin-bottom: 10px;
-}
-=======
   margin-bottom: 10px;
 }
 .segas {
@@ -114,12 +69,6 @@
   height: 500px;
   flex-shrink: 0;
 }
->>>>>>> e05d4fd (update on research)
-=======
-  padding-left: 40px;
-  margin-bottom: 10px;
-}
->>>>>>> d341193 (update on research)
 .peginter-p {
   color: var(--sn-primary-headings-07235-b, #07235b);
   width: 1150px;
@@ -146,15 +95,7 @@
   background-repeat: no-repeat;
   width: 1100px;
   height: 300px;
-<<<<<<< HEAD
-<<<<<<< HEAD
   margin-left: 100px;
-=======
-  margin-left: 80px;
->>>>>>> e05d4fd (update on research)
-=======
-  margin-left: 100px;
->>>>>>> d341193 (update on research)
   margin-right: 157px;
   margin-top: 150px;
   margin-bottom: 130px;
@@ -172,17 +113,8 @@
   line-height: 143%;
 }
 .conclusion2 {
-<<<<<<< HEAD
-<<<<<<< HEAD
   width: 1000px;
   margin-left: 50px;
-=======
-  margin-left: 30px;
->>>>>>> e05d4fd (update on research)
-=======
-  width: 1000px;
-  margin-left: 50px;
->>>>>>> d341193 (update on research)
   flex-shrink: 0;
   color: #fff;
   font-family: Roboto;

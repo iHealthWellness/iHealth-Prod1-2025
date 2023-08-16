@@ -6,28 +6,12 @@
 
 .clinical-therapies {
   background: #fff;
-<<<<<<< HEAD
-<<<<<<< HEAD
   margin: 0;
   padding: 0;
   padding-left: 50px;
   margin-bottom: 50px;
   margin-left: 50px;
   width: 1216px;
-=======
-  margin: 0px;
-  padding: 0px;
-  padding-left: 50px;
-  margin-bottom: 50px;
->>>>>>> e05d4fd (update on research)
-=======
-  margin: 0;
-  padding: 0;
-  padding-left: 50px;
-  margin-bottom: 50px;
-  margin-left: 50px;
-  width: 1216px;
->>>>>>> 16586ad (update)
 }
 .clinic1 {
   color: #07235b;
@@ -39,15 +23,9 @@
   margin: 0;
   padding: 0;
   padding-bottom: 50px;
-<<<<<<< HEAD
-<<<<<<< HEAD
   width: 1216px;
   text-align: center;
-=======
->>>>>>> e05d4fd (update on research)
-=======
-  width: 1216px;
->>>>>>> 16586ad (update)
+
 }
 .clinic2 {
   width: 1216px;
@@ -68,18 +46,7 @@
   margin: 0;
   padding: 0;
   padding-left: 50px;
-<<<<<<< HEAD
-<<<<<<< HEAD
   margin-left: 50px;
-  margin-top: 5px;
-<<<<<<< HEAD
-=======
->>>>>>> e05d4fd (update on research)
-=======
-  margin-left: 50px;
->>>>>>> 16586ad (update)
-=======
->>>>>>> d341193 (update on research)
 }
 .selumetinib-span {
   font-size: 24px;
@@ -89,15 +56,7 @@
 .selumetinib-p {
   width: 625px;
   height: 343px;
-<<<<<<< HEAD
-<<<<<<< HEAD
   line-height: 1.6;
-=======
-  line-height: 1.5;
->>>>>>> e05d4fd (update on research)
-=======
-  line-height: 1.6;
->>>>>>> d341193 (update on research)
   font-family: Roboto;
   font-size: 20px;
   font-style: normal;
@@ -109,33 +68,15 @@
 }
 .selumitinib-img {
   width: 463px;
-<<<<<<< HEAD
-<<<<<<< HEAD
   height: 330px;
   margin-left: 30px;
   margin-top: 10px;
-=======
-  height: 385px;
-  margin-left: 30px;
->>>>>>> e05d4fd (update on research)
-=======
-  height: 330px;
-  margin-left: 30px;
-  margin-top: 10px;
->>>>>>> d341193 (update on research)
 }
 .trametinib {
   margin: 0;
   padding: 0;
   margin-left: 50px;
-<<<<<<< HEAD
-<<<<<<< HEAD
   padding-left: 50px;
-=======
->>>>>>> e05d4fd (update on research)
-=======
-  padding-left: 50px;
->>>>>>> 16586ad (update)
   margin-top: 130px;
   margin-bottom: 3px;
 }

@@ -33,7 +33,6 @@ const Consideration = () => {
     <div className="Consider">
       <div className="consider">
         <div className="slide-in-text">
-          16586ad (update)
           <div className="consideration">
             <h2>
               <span className="consideration-span">
@@ -75,8 +74,8 @@ const Consideration = () => {
               your involvement.
             </p>
           </div>
+          </div>
           <img className="consider-img" src={Research7} alt="" />
-        </div>
       </div>
       <div className="difference">
         <h1 className="difference1">Make a Difference Today</h1>

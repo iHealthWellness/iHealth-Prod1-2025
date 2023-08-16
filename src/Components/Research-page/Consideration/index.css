@@ -8,37 +8,14 @@
   display: flex;
 }
 .consider-img {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  width: 400px;
-=======
-  width: 450px;
->>>>>>> 07f51fe (update on research)
-  height: 346px;
-  flex-shrink: 0;
-  margin-top: 230px;
-  margin-bottom: 260px;
-<<<<<<< HEAD
-=======
-  width: 460px;
-=======
   width: 400px;
   height: 346px;
->>>>>>> d341193 (update on research)
   flex-shrink: 0;
   margin-right: 100px;
   margin-left: 20px;
   margin-top: 200px;
-<<<<<<< HEAD
-  margin-bottom: 360px;
->>>>>>> e05d4fd (update on research)
-=======
   margin-bottom: 260px;
->>>>>>> d341193 (update on research)
-=======
   margin-left: 40px;
->>>>>>> 07f51fe (update on research)
 }
 .consideration {
   margin-top: 100px;
@@ -64,18 +41,7 @@
   line-height: 140%;
   padding-bottom: 20px;
   padding-top: 20px;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  width: 780px;
-=======
->>>>>>> e05d4fd (update on research)
-=======
-  width: 780px;
->>>>>>> d341193 (update on research)
-=======
   width: 680px;
->>>>>>> 07f51fe (update on research)
 }
 .consideration2 {
   width: 671px;
@@ -97,15 +63,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   width: 1100px;
-<<<<<<< HEAD
-<<<<<<< HEAD
   height: 250px;
-=======
-  height: 320px;
->>>>>>> e05d4fd (update on research)
-=======
-  height: 250px;
->>>>>>> d341193 (update on research)
   flex-shrink: 0;
   margin: 0;
   padding: 0;
@@ -122,10 +80,7 @@
   font-weight: 600;
   line-height: 143%;
   padding-top: 40px;
-<<<<<<< HEAD
   text-align: center;
-=======
->>>>>>> e05d4fd (update on research)
 }
 .difference2,
 .difference3 {
@@ -156,17 +111,7 @@
     padding: 0;
     padding-top: 40px;
     margin-top: 10px;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    margin-left: 24px;
-=======
     margin-left: 16px;
->>>>>>> e05d4fd (update on research)
-=======
-    margin-left: 24px;
->>>>>>> d341193 (update on research)
-=======
   }
   .consideration1{
     width: 650px;
@@ -190,7 +135,6 @@
     font-style: normal;
     font-weight: 500;
     line-height: 143%;
->>>>>>> 07f51fe (update on research)
   }
   .consider-img {
     margin: 0;
