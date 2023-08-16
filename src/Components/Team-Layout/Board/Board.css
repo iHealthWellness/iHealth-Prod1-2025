@@ -224,4 +224,9 @@
         margin: auto; 
         z-index: 999;
      }
+     .Name-tab{
+        font-size:18px;
+        font-weight:800px;
+        font-family: Roboto;
+    }
 }
