@@ -14,6 +14,7 @@ import { ShowPassword, handleSubmit, validateEmail, validatePassword } from './U
 function LoginUpsideLoginForm() 
 {
 
+  
   /* React State Hook */
   const [UserCrd, setUserCrd] = useState(new Map())
 
@@ -29,7 +30,7 @@ function LoginUpsideLoginForm()
     <>
         <div id='Login-Upside-login-form'>
             <form action=""  onSubmit={(event) => handleSubmit(event,UserCrd)}>
-              <label htmlFor="email"></label><input type='text' id='email' placeholder='Email Address' ref={inputEmail} onBlur={()=>{validateEmail(inputEmail,UserCrd, setUserCrd)}} />
+              <label htmlFor="email"></label><input autoFocus type='text' id='email' placeholder='Email Address' ref={inputEmail} onBlur={()=>{validateEmail(inputEmail,UserCrd, setUserCrd)}} />
               <label htmlFor="password"></label><input type='password' id='password' placeholder='Password' ref={inputPassword} onBlur={()=>{validatePassword(inputPassword,inputEmail,UserCrd, setUserCrd)}} /><i id="togglePassword" onClick={()=>{ShowPassword(inputPassword)}}></i>
               <div id='Login-Upside-login-form-rmpswrd-forget'>
                 <div>
