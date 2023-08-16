@@ -44,7 +44,11 @@ const section6 = () => {
   return (
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <div id="participate">
+=======
+    <div id="participate" className="Participate">
+>>>>>>> 07f51fe (update on research)
       <div className="slide-in-text">
 =======
   return (

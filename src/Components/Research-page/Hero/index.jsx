@@ -47,7 +47,7 @@ const section1 = () => {
 =======
 >>>>>>> 16586ad (update)
   return (
-    <div>
+    <div className="first-part">
       <div className="image">
         <img className="image-img" src={Research1} alt="" />
       </div>

@@ -1,3 +1,9 @@
+.clinic{
+  margin:0 auto;
+  width: 100%;
+  max-width: 1440px;
+}
+
 .clinical-therapies {
   background: #fff;
 <<<<<<< HEAD
@@ -44,7 +50,7 @@
 >>>>>>> 16586ad (update)
 }
 .clinic2 {
-  width: 1237px;
+  width: 1216px;
   height: 88px;
   flex-shrink: 0;
   color: var(--sn-primary-headings-07235-b, #07235b);
@@ -150,17 +156,16 @@
   font-size: 24px;
   line-height: 120%;
 }
-@media (max-width: 820px) {
+@media screen and (max-width: 820px) {
   .clinical-therapies {
-    padding-left: 20px;
-    margin-bottom: 20px;
     margin: 0;
     padding: 0;
-    margin-left: 16px;
+    margin-left: 1px;
+    margin-bottom: 50px;
   }
   .clinic1 {
     margin-top: 50px;
-    width: 715px;
+    width: 650px;
     color: #07235b;
     font-family: Roboto;
     font-size: 36px;
@@ -169,7 +174,7 @@
     line-height: 120%;
   }
   .clinic2 {
-    width: 670px;
+    width: 650px;
     height: 98px;
     flex-shrink: 0;
     color: var(--sn-primary-headings-07235-b, #07235b);
@@ -185,13 +190,13 @@
   .Selumetinib {
     margin: 0;
     padding: 0;
-    margin-left: 16px;
+    margin-left: 1px;
   }
   .selumitinib-img {
     width: 444px;
     height: 320px;
     flex-shrink: 0;
-    margin-left: 138px;
+    margin-left: 100px;
   }
   .selumetinib-p {
     color: var(--sn-primary-headings-07235-b, #07235b);
@@ -200,7 +205,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 143%;
-    width: 680px;
+    width: 650px;
     height: 259px;
     flex-shrink: 0;
     margin: 0;
@@ -214,15 +219,16 @@
     font-style: normal;
     font-weight: 500;
     line-height: 160%;
-    width: 720px;
+    width: 650px;
     height: 259px;
     flex-shrink: 0;
   }
   .trametinib {
     margin: 0;
     padding: 0;
-    margin-left: 16px;
+    margin-left: 1px;
     margin-top: 50px;
+    margin-bottom: 20px;
   }
   .trametinib-p {
     color: var(--sn-primary-headings-07235-b, #07235b);
@@ -231,7 +237,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 143%;
-    width: 720px;
+    width: 650px;
     height: 624px;
     flex-shrink: 0;
     margin: 0;

@@ -69,7 +69,7 @@ const section5 = () => {
 
 >>>>>>> 16586ad (update)
   return (
-    <div>
+    <div className="Segas">
       <div className="segas">
         <h2 className="segas1">Learn more about SEGAs</h2>
         <p className="segas-p">

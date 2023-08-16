@@ -42,7 +42,7 @@ const Consideration = () => {
   }, []);
 
   return (
-    <div>
+    <div className="Consider">
       <div className="consider">
         <div className="slide-in-text">
 <<<<<<< HEAD
