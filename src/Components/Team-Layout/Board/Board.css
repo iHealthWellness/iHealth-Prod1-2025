@@ -186,9 +186,9 @@
     }
 
     .popup-name{
-        font-size: 7vh;
+        font-size: 3vh;
         justify-self: center;
-        
+        text-align: center;
     }
 
     .close-btn {
@@ -202,8 +202,8 @@
       }
     .board-image{
         position: relative;
-        width:173.5px;
-        height:227px;
+        width:230px;
+        height:300px;
         margin: auto; 
         z-index: 999;
      }
@@ -213,6 +213,12 @@
         position: relative;
         /* gap:70px; */
     }
+
+    .Name-tab{
+        font-size:18px;
+        font-weight:800px;
+        font-family: Roboto;
+    }
 }
 
 @media only screen and (max-width:414px){
@@ -221,12 +227,21 @@
         position: relative;
         width:173.5px;
         height:227px;
-        margin: auto; 
+        margin: 10px; 
         z-index: 999;
      }
      .Name-tab{
-        font-size:18px;
+        font-size:16px;
         font-weight:800px;
         font-family: Roboto;
     }
+    .popup-name{
+        font-size: 3vh;
+        justify-self: center;
+        text-align: center;
+    }
+    .popup-linkedin-icon{
+        margin-left: 29%;
+    }
+
 }
