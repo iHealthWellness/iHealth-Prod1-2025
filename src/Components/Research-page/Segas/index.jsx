@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 import React,{useEffect} from "react";
 import "./index.css";
 
@@ -29,45 +28,6 @@ const section5 = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-
-=======
-import React from "react";
-import "./index.css";
-
-const section5 = () => {
->>>>>>> e05d4fd (update on research)
-=======
-import React,{useEffect} from "react";
-import "./index.css";
-
-const section5 = () => {
-
-  useEffect(() => {
-    const textElements = document.querySelectorAll('.slide-in-text');
-
-    const handleScroll = () => {
-      textElements.forEach((textElement) => {
-        const slideInAt = (window.scrollY + window.innerHeight) - textElement.clientHeight / 2;
-        const elementBottom = textElement.offsetTop + textElement.clientHeight;
-        const isHalfShown = slideInAt > textElement.offsetTop;
-        const isNotScrolledPast = window.scrollY < elementBottom;
-
-        if (isHalfShown && isNotScrolledPast) {
-          textElement.classList.add('active');
-        } else {
-          textElement.classList.remove('active');
-        }
-      });
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
->>>>>>> 16586ad (update)
   return (
     <div className="Segas">
       <div className="segas">
@@ -107,14 +67,8 @@ const section5 = () => {
           condition and requirements.
         </p>
       </div>
-<<<<<<< HEAD
-<<<<<<< HEAD
       <div className="slide-in-text">
-=======
->>>>>>> e05d4fd (update on research)
-=======
-      <div className="slide-in-text">
->>>>>>> 16586ad (update)
+
       <div className="peginter">
         <span className="peginter-span">Peginterferon alfa-2b</span>
         <p className="peginter-p">
@@ -150,14 +104,7 @@ const section5 = () => {
           https://academic.oup.com/neuro-oncology/article/19/2/289/3038131
         </p>
       </div>
-<<<<<<< HEAD
-<<<<<<< HEAD
       </div>
-=======
->>>>>>> e05d4fd (update on research)
-=======
-      </div>
->>>>>>> 16586ad (update)
       <div className="conclusion">
         <h2 className="conclusion1">Conclusion</h2>
         <p className="conclusion2">

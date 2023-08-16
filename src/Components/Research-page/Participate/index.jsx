@@ -1,20 +1,9 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 import React, {useEffect} from "react";
-=======
-import React from "react";
->>>>>>> e05d4fd (update on research)
-=======
-import React, {useEffect} from "react";
->>>>>>> 16586ad (update)
 import "./index.css";
 import Research5 from "src/Assets/Images/Research-5.png";
 
 const section6 = () => {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 16586ad (update)
 
   useEffect(() => {
     const textElements = document.querySelectorAll('.slide-in-text');
@@ -42,25 +31,9 @@ const section6 = () => {
   }, []);
 
   return (
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     <div id="participate">
-=======
     <div id="participate" className="Participate">
->>>>>>> 07f51fe (update on research)
       <div className="slide-in-text">
-=======
-  return (
-    <div id="participate">
->>>>>>> e05d4fd (update on research)
-=======
-    <div id="participate" className="slide-in-text">
->>>>>>> 16586ad (update)
-=======
-    <div id="participate">
-      <div className="slide-in-text">
->>>>>>> d341193 (update on research)
       <div className="participate">
         <h1 className="participate1">
           Participate in Research for Neurofibromatosis: Making a Difference
@@ -78,15 +51,9 @@ const section6 = () => {
           <img className="components-img" src={Research5} alt="" />
         </div>
       </div>
-<<<<<<< HEAD
-<<<<<<< HEAD
       </div>
       <div className="slide-in-text">
-=======
->>>>>>> e05d4fd (update on research)
-=======
       </div>
->>>>>>> d341193 (update on research)
       <div className="participating">
         <h2>
           <span className="participating-span">
@@ -132,10 +99,7 @@ const section6 = () => {
           understanding and empathy.
         </p>
       </div>
-<<<<<<< HEAD
       </div>
-=======
->>>>>>> e05d4fd (update on research)
     </div>
   );
 };
