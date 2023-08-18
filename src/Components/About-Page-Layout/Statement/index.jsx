@@ -11,35 +11,48 @@ const Statement = () => {
     return (
 
         <section id="Statement" className="pageholder" >
-            <div className="container  " data-aos-container=".custom-scroll-container">
-                <div className="page" data-aos-container=".custom-scroll-container">
+            <div className="container">
+                <div className="page">
                     <div>
-                        <div data-aos="fade-right" data-aos-duration="1000" className="img-outline">
+                        <div className="img-outline">
                             <img src={img1} className="img-mission" alt="mission" />
                         </div>
-                        <div data-aos="fade-right" data-aos-duration="1000" className="text-outline">
+                        <div className="text-outline">
                             <div className="text">
-                                <p>
-                                    Our mission is to integrate medical and wellness social networking, patient advocacy, and access to
+                                <p>At the heart of our endeavor lies a simple yet profound mission: to drive meaningful change by introducing innovative solutions
+                                    that leave a lasting imprint.
+                                    Our platform integrates medical and wellness social networking, patient advocacy, and access to Major EHR Systems into a platform that
+                                    connects patients living with complex diseases to high-quality
+                                    healthcare providers and resources.
+                                </p>
+
+
+
+                                {/* Our mission is to integrate medical and wellness social networking, patient advocacy, and access to
                                     Major EHR Systems into a platform that connects patients living with complex diseases to high-quality
-                                    healthcare providers and resources.</p>
+                                    healthcare providers and resources. */}
                             </div>
                             <div className="text-layout">
                                 <p>
-                                    Our goal is to empower patients to take charge of their health by
+                                    {/* Our goal is to empower patients to take charge of their health by
                                     providing the tools and resources they need to become informed and engaged advocates. By
                                     fostering collaboration and partnership among patients, healthcare providers, and policymakers, we
-                                    aim to improve healthcare outcomes for all.
+                                    aim to improve healthcare outcomes for all. */}
+                                    By converging empathy with advancement,
+                                    we aspire to shape a brighter future rooted in inclusivity, access, and empowerment.
+                                    By uniting state-of-the-art medical technologies with the power of empathy,
+                                    we strive to create a new paradigm of health and wellness rooted in inclusivity, access, and empowerment.
+
                                 </p>
                             </div>
                         </div>
 
                     </div>
                     <div>
-                        <div data-aos="fade-left" data-aos-duration="3000">
+                        <div>
                             <img src={img2} className="img-value" alt="core-value" />
                         </div>
-                        <div data-aos="fade-right" data-aos-duration="3000" className="text-outline1">
+                        <div className="text-outline1">
                             <div className="text1">
                                 <div className="text-tab">
                                     <h3>Patient-Centered Care</h3>
@@ -93,7 +106,7 @@ const Statement = () => {
 
                     </div>
 
-                    <div data-aos="fade-left" data-aos-duration="3000">
+                    <div>
                         <div>
                             <img src={img3} className="img-vision" alt="" />
                         </div>
