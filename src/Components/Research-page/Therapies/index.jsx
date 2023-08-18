@@ -65,6 +65,8 @@ const section3 = () => {
           <img className="selumitinib-img" src={Research3} alt="" />
         </div>
       </div>
+      </div>
+      <div className="slide-in-text">
       <div className="trametinib">
         <span className="trametinib-span">
           Trametinib: Promising Results in Adults and Children{" "}
