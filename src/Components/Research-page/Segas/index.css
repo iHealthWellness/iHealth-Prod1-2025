@@ -12,17 +12,10 @@
   flex-shrink: 0;
   margin: 0;
   padding: 0;
-  margin-left: 30px;
-  padding-left: 50px;
+  padding-left: 40px;
   margin-top: 1px;
   position: relative;
   margin-bottom: 50px;
-}
-.segas-p {
-  width: 1138px;
-  padding-left: 50px;
-  margin-top: 1px;
-  position: relative;
 }
 .segas-p {
   width: 1138px;
@@ -57,29 +50,16 @@
   flex-shrink: 0;
   margin: 0;
   padding: 0;
-  margin-left: 60px;
   margin-bottom: 10px;
-}
-.segas {
-  margin-left: 20px;
-  margin-right: 101px;
-  margin-bottom: 100px;
-  margin-top: 1px;
-  width: 1190px;
-  height: 500px;
-  flex-shrink: 0;
 }
 .peginter-p {
   color: var(--sn-primary-headings-07235-b, #07235b);
-  width: 1150px;
+  width: 1216px;
   height: 492px;
   flex-shrink: 0;
   flex-shrink: 0;
   font-size: 20px;
   line-height: 1.5;
-  margin-left: 100px;
-  margin-right: 104px;
-  padding-left: 70px;
   margin: 0;
   padding: 0;
 }
@@ -93,17 +73,14 @@
   background: url("src/Assets/Images/Blue-Pattern.png");
   background-size: cover;
   background-repeat: no-repeat;
-  width: 1150px;
+  width: 1216px;
   height: 300px;
-  margin-left: 60px;
-  margin-right: 157px;
   margin-top: 150px;
   margin-bottom: 130px;
 }
 .conclusion1 {
   text-align: center;
   padding-top: 20px;
-  padding-bottom: 0px;
   flex-shrink: 0;
   color: #fff;
   font-family: Roboto;
@@ -113,7 +90,7 @@
   line-height: 143%;
 }
 .conclusion2 {
-  width: 1000px;
+  width: 1120px;
   margin-left: 50px;
   flex-shrink: 0;
   color: #fff;
@@ -127,9 +104,10 @@
   .Segas{
     margin:0 auto;
     width: 100%;
+    margin-left: 24px;
   }
   .segas {
-    width: 660px;
+    width: 700px;
     height: 650px;
     flex-shrink: 0;
     margin-left: 1px;
@@ -137,7 +115,7 @@
     margin-bottom: 91px;
   }
   .segas1 {
-    width: 640px;
+    width: 660px;
     flex-shrink: 0;
     color: var(--sn-black, #000);
     font-family: Roboto;
@@ -148,7 +126,7 @@
     padding-left: 2px;
   }
   .segas-p {
-    width: 620px;
+    width: 660px;
     flex-shrink: 0;
     color: var(--sn-primary-headings-07235-b, #07235b);
     font-family: Roboto;
@@ -297,7 +275,7 @@
     padding: 0;
   }
   .conclusion {
-    width: 340px;
+    width: 350px;
     height: 370px;
     flex-shrink: 0;
     margin: 0;

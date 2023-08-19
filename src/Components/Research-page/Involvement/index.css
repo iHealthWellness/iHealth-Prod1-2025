@@ -10,7 +10,6 @@
   flex-shrink: 0;
   margin: 0;
   padding: 0;
-  padding-left: 100px;
   margin-right: 50px;
 }
 .involve1-span {
@@ -55,6 +54,7 @@
     margin: 0;
     padding: 0;
     display: block;
+    margin-left: 24px;
   }
   .involvement-img {
     width: 444px;
@@ -110,6 +110,7 @@
     margin-bottom: 15px;
     padding-bottom: 35px;
     padding-top: 50px;
+    margin-left: 24px;
   }
   .involvement-img {
     width: 320px;

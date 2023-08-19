@@ -100,8 +100,8 @@ const section5 = () => {
           Patients ≥18 months to 21 years of age with at least one inoperable PN
           that had the potential to cause significant morbidity were eligible.
           <br />
-          Source:
-          https://academic.oup.com/neuro-oncology/article/19/2/289/3038131
+          <i>Source:
+          https://academic.oup.com/neuro-oncology/article/19/2/289/3038131</i>
         </p>
       </div>
       </div>

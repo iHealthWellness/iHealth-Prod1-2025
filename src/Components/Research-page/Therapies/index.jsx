@@ -37,7 +37,6 @@ const section3 = () => {
         <p className="clinic2">
           Neurofibromatosis (NF) and its related symptoms are often managed
           using various clinical drug therapies.
-          <br />
           The following examples highlight some of the treatment options
           available:
         </p>

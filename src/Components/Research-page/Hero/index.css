@@ -22,7 +22,7 @@
   margin-left: 10px;
 }
 .introduction {
-  margin-left: 40px;
+  margin-left: 20px;
   margin-bottom: 38px;
   width: 330px;
   height: 36px;
@@ -35,16 +35,16 @@
   line-height: 120%;
 }
 .welcome {
-  margin-top: 20px;
-  margin-left: 40px;
-  width: 600px;
+  margin-top: 30px;
+  margin-left: 20px;
+  width: 630px;
   flex-shrink: 0;
   color: var(--sn-primary-headings-07235-b, #07235b);
   font-family: Roboto;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.2;
+  line-height: 1.5;
   margin-bottom: 2px;
 }
 
@@ -66,7 +66,7 @@
   height: 600px;
   flex-shrink: 0;
   display: block;
-  margin-left: 120px;
+  margin-left: 80px;
   position: absolute;
   top: 65%;
   z-index: 1; 
@@ -100,18 +100,18 @@
   .first-part{
     margin:0 auto;
     width: 100%;
+    margin-left: 10px;
   }
   .image-img {
-    width: 700px;
+    width: 720px;
     height: 400px;
     flex-shrink: 0;
-    margin-bottom: 0px;
     background-size: cover;
     background-position: center;
     position: relative;
-    margin-top: 2px;
     margin: 0;
     padding: 0;
+    margin-left: 24px;
   }
   .section1 {
     display: block;
@@ -123,6 +123,7 @@
     margin: 0;
     padding: 0;
     top: 50%;
+    margin-left: 24px;
   }
   .side1 {
     color: #0d99ff;
@@ -176,8 +177,6 @@
   .first-part{
     margin:0 auto;
     width: 100%;
-    max-width: 425px;
-    box-sizing: border-box; 
   }
   .image-img {
     width: 400px;
@@ -185,7 +184,6 @@
     flex-shrink: 0;
     background-size: cover;
     background-position: center;
-    position: relative;
     position: relative;
     z-index: 0;
     margin: 0;
@@ -201,7 +199,7 @@
     flex-shrink: 0;
     margin: 0;
     padding: 0;
-    top: 30%;
+    top: 40%;
     position: absolute;
     z-index: 1;
   }
@@ -224,7 +222,6 @@
   .intro {
     margin: 0;
     padding: 0;
-    margin-left: 8px;
     margin-top: 350px;
     margin-bottom: 100px;
   }
