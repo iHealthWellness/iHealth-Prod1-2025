@@ -13,14 +13,11 @@ import Signup from "./Pages/Sign-up/index";
 import Donate from "./Pages/Donate/index";
 import RootLayout from "./Pages/Root";
 import Other from "./Pages/Other/index";
+import Termsofuse from "./Pages/Terms-of-use";
 
 // import Navbar from "./Components/Navbar/Navbar";
 
-function App() 
-{
-
-
-
+function App() {
   const router = createBrowserRouter([
     {
       path: "/",
@@ -33,6 +30,7 @@ function App()
         { path: "/sign-in", element: <Signin /> },
         { path: "/sign-up", element: <Signup /> },
         { path: "/donate", element: <Donate /> },
+        { path: "/terms-of-use", element: <Termsofuse /> },
         // { path: "*", element: <Other /> },
       ],
     },
