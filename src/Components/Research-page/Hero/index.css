@@ -100,7 +100,6 @@
   .first-part{
     margin:0 auto;
     width: 100%;
-    margin-left: 10px;
   }
   .image-img {
     width: 720px;
@@ -111,7 +110,6 @@
     position: relative;
     margin: 0;
     padding: 0;
-    margin-left: 24px;
   }
   .section1 {
     display: block;
@@ -123,7 +121,6 @@
     margin: 0;
     padding: 0;
     top: 50%;
-    margin-left: 24px;
   }
   .side1 {
     color: #0d99ff;
@@ -199,7 +196,7 @@
     flex-shrink: 0;
     margin: 0;
     padding: 0;
-    top: 40%;
+    top: 30%;
     position: absolute;
     z-index: 1;
   }
