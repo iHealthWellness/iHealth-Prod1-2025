@@ -22,11 +22,7 @@ const FooterLinkCard = ({ linkCard }) => {
 
           <HashLink
             className="footer-link"
-            onClick={() => {
-              document.querySelector("#UnderConst-wrapper").style.display =
-                "flex";
-            }}
-            // href={link.path}
+            to={link.path}
             key={`footer-links-${link.title}`}
           >
             {link.title}

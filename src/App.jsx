@@ -14,6 +14,7 @@ import Signup from "./Pages/Sign-up/index";
 import Donate from "./Pages/Donate/index";
 import RootLayout from "./Pages/Root";
 import Team from "./Pages/Our-Team";
+import Termsofuse from "./Pages/Terms-of-use";
 // import Other from "./Pages/Other/index";
 
 // import Navbar from "./Components/Navbar/Navbar";
@@ -35,6 +36,7 @@ function App() {
         { path: "/sign-up", element: <Signup /> },
         { path: "/donate", element: <Donate /> },
         { path: "/our-team", element: <Team /> },
+        { path: "/terms-of-use", element: <Termsofuse /> },
         // { path: "*", element: <Other /> },
       ],
     },
