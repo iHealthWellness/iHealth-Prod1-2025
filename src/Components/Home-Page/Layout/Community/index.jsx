@@ -74,7 +74,6 @@ const Community = () => {
           //   document.querySelector("#UnderConst-wrapper").style.display =
           //     "flex";
           // }}
-
           onClick={toggleModal1}
           className={
             team === "Cancer Team"
