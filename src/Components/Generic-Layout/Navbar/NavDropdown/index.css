@@ -4,6 +4,7 @@
 
 .nav-dropdown-container {
   display: flex;
+  z-index: 2;
 }
 
 .nav-dropdown-menu-button {

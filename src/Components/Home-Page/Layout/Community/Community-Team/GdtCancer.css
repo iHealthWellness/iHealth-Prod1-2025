@@ -42,6 +42,13 @@
 
 .mod1 {
   width: 700px;
+  border-radius: 20px;
+  background-color: #F8FAFC;
+  /* box-shadow: 0px 0px 5px #E3E6EE; */
+  border: 1px solid #07235B;
+  /* border: 2px solid red; */
+  width: 50%;
+  height: 590px;
   /* border: 2px solid red; */
   border-radius: 20px;
   background-color: #F8FAFC;
@@ -126,6 +133,7 @@ gdt-head p {
 
 .form__content {
   /* width: 80%; */
+  width: 80%;
   margin: 5px 10% 0 10%;
 }
 
@@ -137,7 +145,8 @@ gdt-head p {
 .input__textarea {
   position: relative;
   border: 1.5px solid #E0E3EB;
-  /* height: 80px; */
+  /* border: 1.5px solid #E0E3EB;
+  height: 80px; */
 }
 
 .input__field {
@@ -172,6 +181,10 @@ gdt-head p {
 
 .textarea__field {
   width: 100%;
+
+  height: 70px;
+  padding: 10px;
+   border: 1.5px solid #E0E3EB;
   height: 80px;
   padding: 10px;
   border: none;

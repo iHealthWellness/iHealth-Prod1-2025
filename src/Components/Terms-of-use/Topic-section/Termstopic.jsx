@@ -1,7 +1,7 @@
 import "./Termstopic.css";
-import communityLogo from "src/Assets/Images/logo1.svg";
-import plusicon from "src/Assets/Icons/plus.png";
-import minusicon from "src/Assets/Icons/minus.png";
+import communityLogo from "../../../Assets/Images/logo1.svg";
+import plusicon from "../../../Assets/Icons/plus.png";
+import minusicon from "../../../Assets/Icons/minus.png";
 // fontawesome
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faSquarePlus, faSquareMinus } from "@fortawesome/free-solid-svg-icons";
@@ -17,7 +17,6 @@ const Termstopic = () => {
   const [isExpanded66, setIsExpanded66] = useState(false);
   const [isExpanded77, setIsExpanded77] = useState(false);
   const [isExpanded88, setIsExpanded88] = useState(false);
-
   const handleToggle11 = () => {
     setIsExpanded11(!isExpanded11);
     const header3 = document.querySelector(".header30");
@@ -124,7 +123,6 @@ const Termstopic = () => {
             </li>
           </ul>
         </div>
-
         <div className="terms5" id="privacy-policy">
           {/* Terms of use topic section */}
 

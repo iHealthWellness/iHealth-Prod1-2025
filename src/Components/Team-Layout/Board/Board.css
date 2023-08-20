@@ -118,7 +118,6 @@
 .popup-name{
     font-size: 20px;
     justify-self: center;
-    text-align: center;
 }
 
 .popup-linkedin{
@@ -187,9 +186,9 @@
     }
 
     .popup-name{
-        font-size: 3vh;
+        font-size: 7vh;
         justify-self: center;
-        text-align: center;
+        
     }
 
     .close-btn {
@@ -197,14 +196,10 @@
         margin-top: 3%;
         margin-left:80%;
       }
-
-      .board-text-tab {
-       /* margin-top:500px; */
-      }
     .board-image{
         position: relative;
-        width:230px;
-        height:300px;
+        width:173.5px;
+        height:227px;
         margin: auto; 
         z-index: 999;
      }
@@ -214,12 +209,6 @@
         position: relative;
         /* gap:70px; */
     }
-
-    .Name-tab{
-        font-size:18px;
-        font-weight:800px;
-        font-family: Roboto;
-    }
 }
 
 @media only screen and (max-width:414px){
@@ -228,21 +217,7 @@
         position: relative;
         width:173.5px;
         height:227px;
-        margin: 10px; 
+        margin: auto; 
         z-index: 999;
      }
-     .Name-tab{
-        font-size:16px;
-        font-weight:800px;
-        font-family: Roboto;
-    }
-    .popup-name{
-        font-size: 3vh;
-        justify-self: center;
-        text-align: center;
-    }
-    .popup-linkedin-icon{
-        margin-left: 29%;
-    }
-
 }

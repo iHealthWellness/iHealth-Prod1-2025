@@ -50,7 +50,8 @@ const Community = () => {
               : "community-team-btn"
           }
         >
-          NF HUB
+
+            Neurofibromatosis (NF) HUB  
         </button>
         <button
           // onClick={() => {
@@ -73,7 +74,6 @@ const Community = () => {
           //   document.querySelector("#UnderConst-wrapper").style.display =
           //     "flex";
           // }}
-
           onClick={toggleModal1}
           className={
             team === "Cancer Team"
