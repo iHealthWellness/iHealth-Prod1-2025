@@ -77,8 +77,8 @@ const Termstopic = () => {
     header3g.classList.toggle("header3-remove");
   };
   return (
-    <>
     // Terms of use Topic headers and icons
+    <>
       <div className="terms1">
         <img src={communityLogo} alt="ihealth-logo" />
       </div>
@@ -635,6 +635,7 @@ const Termstopic = () => {
           )}
         </div>
       </div>
+    </div>
     </>
   );
 };
