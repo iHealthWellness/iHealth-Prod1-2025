@@ -1,11 +1,38 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import "./index.css";
 import Research7 from "src/Assets/Images/Research-7.png";
 
 const Consideration = () => {
+
+  useEffect(() => {
+    const textElements = document.querySelectorAll('.slide-in-text');
+
+    const handleScroll = () => {
+      textElements.forEach((textElement) => {
+        const slideInAt = (window.scrollY + window.innerHeight) - textElement.clientHeight / 2;
+        const elementBottom = textElement.offsetTop + textElement.clientHeight;
+        const isHalfShown = slideInAt > textElement.offsetTop;
+        const isNotScrolledPast = window.scrollY < elementBottom;
+
+        if (isHalfShown && isNotScrolledPast) {
+          textElement.classList.add('active');
+        } else {
+          textElement.classList.remove('active');
+        }
+      });
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <div>
       <div className="consider">
+        <div className="slide-in-text">
         <div className="consideration">
           <h2>
             <span className="consideration-span">
@@ -43,6 +70,7 @@ const Consideration = () => {
             reimbursements or compensation available for your participation.
             Some studies may cover certain expenses related to your involvement.
           </p>
+        </div>
         </div>
         <img className="consider-img" src={Research7} alt="" />
       </div>

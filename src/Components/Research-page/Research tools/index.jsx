@@ -1,11 +1,38 @@
-import React from "react";
+import React, {useEffect} from "react";
 import "./index.css";
 import Research2 from "src/Assets/Images/Research-2.png";
 
 const section2 = () => {
+
+  useEffect(() => {
+    const textElements = document.querySelectorAll('.slide-in-text');
+
+    const handleScroll = () => {
+      textElements.forEach((textElement) => {
+        const slideInAt = (window.scrollY + window.innerHeight) - textElement.clientHeight / 2;
+        const elementBottom = textElement.offsetTop + textElement.clientHeight;
+        const isHalfShown = slideInAt > textElement.offsetTop;
+        const isNotScrolledPast = window.scrollY < elementBottom;
+
+        if (isHalfShown && isNotScrolledPast) {
+          textElement.classList.add('active');
+        } else {
+          textElement.classList.remove('active');
+        }
+      });
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <section id="tools">
       <div>
+      <div className="slide-in-text">
         <div className="tools">
           <h1 className="tool">
             Neurofibromatosis Research Tools and Resources: Empowering Patients
@@ -70,6 +97,7 @@ const section2 = () => {
               trials and research opportunities here: ClinicalTrials.gov -
               Neurofibromatosis
             </p>
+          </div>
           </div>
         </div>
         <div className="reminder">

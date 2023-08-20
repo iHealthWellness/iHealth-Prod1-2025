@@ -1,10 +1,36 @@
-import React from "react";
+import React, {useEffect} from "react";
 import "./index.css";
 import Research3 from "src/Assets/Images/Research-3.png";
 
 const section3 = () => {
+  useEffect(() => {
+    const textElements = document.querySelectorAll('.slide-in-text');
+
+    const handleScroll = () => {
+      textElements.forEach((textElement) => {
+        const slideInAt = (window.scrollY + window.innerHeight) - textElement.clientHeight / 2;
+        const elementBottom = textElement.offsetTop + textElement.clientHeight;
+        const isHalfShown = slideInAt > textElement.offsetTop;
+        const isNotScrolledPast = window.scrollY < elementBottom;
+
+        if (isHalfShown && isNotScrolledPast) {
+          textElement.classList.add('active');
+        } else {
+          textElement.classList.remove('active');
+        }
+      });
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <div className="clinic" id="clinical">
+      <div className="slide-in-text">
       <div className="clinical-therapies">
         <h1 className="clinic1">Clinical Drug Therapies</h1>
         <p className="clinic2">
@@ -66,6 +92,7 @@ const section3 = () => {
           a significant step forward in advancing treatment strategies for
           individuals affected by this challenging condition.
         </p>
+      </div>
       </div>
     </div>
   );

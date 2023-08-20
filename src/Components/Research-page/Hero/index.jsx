@@ -1,8 +1,34 @@
-import React from "react";
+import React, { useEffect} from "react";
 import "./index.css";
 import Research1 from "src/Assets/Images/Research-1.png";
 
 const section1 = () => {
+
+  useEffect(() => {
+    const textElements = document.querySelectorAll('.slide-in-text');
+
+    const handleScroll = () => {
+      textElements.forEach((textElement) => {
+        const slideInAt = (window.scrollY + window.innerHeight) - textElement.clientHeight / 2;
+        const elementBottom = textElement.offsetTop + textElement.clientHeight;
+        const isHalfShown = slideInAt > textElement.offsetTop;
+        const isNotScrolledPast = window.scrollY < elementBottom;
+
+        if (isHalfShown && isNotScrolledPast) {
+          textElement.classList.add('active');
+        } else {
+          textElement.classList.remove('active');
+        }
+      });
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <div>
       <div className="image">
@@ -15,7 +41,7 @@ const section1 = () => {
           </h1>
           <h2 className="side2">Advancing Research for a Brighter Future</h2>
         </div>
-
+        <div className="slide-in-text">
         <div className="intro">
           <h3 className="introduction">Introduction</h3>
           <p className="welcome">
@@ -46,6 +72,7 @@ const section1 = () => {
             way for new discoveries, improved treatments, and increased quality
             of life for NF patients worldwide.
           </p>
+        </div>
         </div>
       </div>
     </div>

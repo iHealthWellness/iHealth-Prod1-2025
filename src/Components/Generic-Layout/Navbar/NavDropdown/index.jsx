@@ -107,21 +107,21 @@ const NavDropdownButton = () => {
             </div>
           </li>
           <li
-            className={`nav-dropdown-links-listitem ${currentPage === "/research" ? "active" : ""
-              }`}
+            className={`nav-dropdown-links-listitem ${
+              currentPage === "/research" ? "active" : ""
+            }`}
+
           >
             <NavLink
-              onClick={toggleDropdown}
-              className="nav-dropdown-links-nav-research"
+              onClick={() => {
+                document.querySelector("#UnderConst-wrapper").style.display =
+                  "flex";
+                closeMenu()
+              }}
+              className="nav-dropdown-links nav-services"
             >
               Research
             </NavLink>
-
-        {/*<div className={classnames('nav-dropdown-content', { block: showdropdown })}>
-            <a href="/research/#tools">Research Tools & Resources</a>
-            <a href="/research/#clinical">Clinical Drug Therapies</a>
-            <a href="/research/#participate">Participate in Research</a>
-            </div>*/}
           </li>
         </ul>
       )}

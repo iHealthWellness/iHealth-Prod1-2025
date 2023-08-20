@@ -2,19 +2,19 @@
   background: url("src/Assets/Images/Research background.png"),
     lightgray 50% / cover no-repeat;
   background-position: center;
-  width: 1241px;
+  width: 1250px;
   height: 500px;
   flex-shrink: 0;
   margin: 0;
   padding: 0;
-  margin-left: 20px;
+  margin-left: 50px;
   padding-left: 50px;
   margin-top: 1px;
   position: relative;
 }
 
 .more-info-p {
-  width: 1138px;
+  width: 1150px;
   flex-shrink: 0;
   color: var(--sn-primary-headings-07235-b, #07235b);
   font-family: Roboto;
@@ -53,6 +53,7 @@
   height: 385px;
   flex-shrink: 0;
   margin-left: 50px;
+  padding-left: 50px;
   background: #fff;
   margin-top: 150px;
 }
@@ -81,7 +82,7 @@
   width: 650px;
   flex-shrink: 0;
   margin-right: 100px;
-  margin-left: 50px;
+  margin-left: 80px;
   margin-top: 10px;
 }
 /*[data-aos="slide-left"] {

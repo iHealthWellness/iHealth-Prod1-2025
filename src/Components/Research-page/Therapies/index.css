@@ -1,9 +1,11 @@
 .clinical-therapies {
   background: #fff;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   padding-left: 50px;
   margin-bottom: 50px;
+  margin-left: 50px;
+  width: 1216px;
 }
 .clinic1 {
   color: #07235b;
@@ -15,6 +17,7 @@
   margin: 0;
   padding: 0;
   padding-bottom: 50px;
+  width: 1216px;
 }
 .clinic2 {
   width: 1237px;
@@ -35,6 +38,7 @@
   margin: 0;
   padding: 0;
   padding-left: 50px;
+  margin-left: 50px;
 }
 .selumetinib-span {
   font-size: 24px;
@@ -63,6 +67,7 @@
   margin: 0;
   padding: 0;
   margin-left: 50px;
+  padding-left: 50px;
   margin-top: 130px;
   margin-bottom: 3px;
 }
@@ -82,6 +87,19 @@
   font-weight: 500;
   font-size: 24px;
   line-height: 120%;
+}
+.slide-in-text {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 0.5s, transform 0.9s;
+  position: relative;
+  left: -100px; /* Initial position outside the viewport */
+}
+
+.slide-in-text.active {
+  opacity: 1;
+  transform: translateX(0);
+  left: 0; /* Slide in from the left */
 }
 @media (max-width: 820px) {
   .clinical-therapies {

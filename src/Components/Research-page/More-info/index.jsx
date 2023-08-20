@@ -1,8 +1,34 @@
-import React from "react";
+import React, {useEffect} from "react";
 import "./index.css";
 import Research4 from "src/Assets/Images/Research-4.png";
 
 const section4 = () => {
+
+  useEffect(() => {
+    const textElements = document.querySelectorAll('.slide-in-text');
+
+    const handleScroll = () => {
+      textElements.forEach((textElement) => {
+        const slideInAt = (window.scrollY + window.innerHeight) - textElement.clientHeight / 2;
+        const elementBottom = textElement.offsetTop + textElement.clientHeight;
+        const isHalfShown = slideInAt > textElement.offsetTop;
+        const isNotScrolledPast = window.scrollY < elementBottom;
+
+        if (isHalfShown && isNotScrolledPast) {
+          textElement.classList.add('active');
+        } else {
+          textElement.classList.remove('active');
+        }
+      });
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <div className="info">
       <div className="more-info">
@@ -31,6 +57,7 @@ const section4 = () => {
           neurofibromas.
         </p>
       </div>
+      <div className="slide-in-text">
       <div className="evorolimus">
         <img className="evorolimus-img" src={Research4} alt="" />
         <div>
@@ -79,6 +106,7 @@ const section4 = () => {
             had stable visual acuity after treatment with everolimus.
           </p>
         </div>
+      </div>
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
 .image-img {
-  width: 1100px;
+  width: 1216px;
   height: 442px;
   flex-shrink: 0;
   background-size: cover;
@@ -19,7 +19,7 @@
   flex-shrink: 0;
   margin: 0;
   padding: 0;
-  padding-left: 550px;
+  padding-left: 600px;
   position: relative;
 }
 .introduction {
@@ -57,6 +57,32 @@
   opacity: 1;
   transition: transform 0.6s ease, opacity 0.8s ease;
 }*/
+.container {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.slide-in-text {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 0.5s, transform 0.9s;
+  position: relative;
+  left: -100px; /* Initial position outside the viewport */
+}
+
+.slide-in-text.active {
+  opacity: 1;
+  transform: translateX(0);
+  left: 0; /* Slide in from the left */
+}
+
+@keyframes slideIn {
+  to {
+    left: 0;
+  }
+}
+
 
 .side {
   margin-bottom: 130px;

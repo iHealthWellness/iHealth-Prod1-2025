@@ -1,7 +1,33 @@
-import React from "react";
+import React,{useEffect} from "react";
 import "./index.css";
 
 const section5 = () => {
+
+  useEffect(() => {
+    const textElements = document.querySelectorAll('.slide-in-text');
+
+    const handleScroll = () => {
+      textElements.forEach((textElement) => {
+        const slideInAt = (window.scrollY + window.innerHeight) - textElement.clientHeight / 2;
+        const elementBottom = textElement.offsetTop + textElement.clientHeight;
+        const isHalfShown = slideInAt > textElement.offsetTop;
+        const isNotScrolledPast = window.scrollY < elementBottom;
+
+        if (isHalfShown && isNotScrolledPast) {
+          textElement.classList.add('active');
+        } else {
+          textElement.classList.remove('active');
+        }
+      });
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <div>
       <div className="segas">
@@ -41,6 +67,7 @@ const section5 = () => {
           condition and requirements.
         </p>
       </div>
+      <div className="slide-in-text">
       <div className="peginter">
         <span className="peginter-span">Peginterferon alfa-2b</span>
         <p className="peginter-p">
@@ -75,6 +102,7 @@ const section5 = () => {
           Source:
           https://academic.oup.com/neuro-oncology/article/19/2/289/3038131
         </p>
+      </div>
       </div>
       <div className="conclusion">
         <h2 className="conclusion1">Conclusion</h2>
