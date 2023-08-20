@@ -4,7 +4,7 @@ import { HashLink } from "react-router-hash-link";
 
 import NavDropdownButton from "./NavDropdown";
 
-import desktopLogo2 from "src/Assets/Brand/desktopLogoSecond.png";
+
 import desktopLogo from "src/Assets/Brand/logo-nav-desktop.png";
 import mobileLogo from "src/Assets/Brand/logo-nav-mobile.png";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
