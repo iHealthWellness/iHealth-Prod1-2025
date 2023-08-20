@@ -1,0 +1,285 @@
+.clinical-therapies {
+  background: #fff;
+  margin: 0px;
+  padding: 0px;
+  padding-left: 50px;
+  margin-bottom: 50px;
+}
+.clinic1 {
+  color: #07235b;
+  font-family: Roboto;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 50px;
+}
+.clinic2 {
+  width: 1237px;
+  height: 88px;
+  flex-shrink: 0;
+  color: var(--sn-primary-headings-07235-b, #07235b);
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+}
+.type-1 {
+  display: flex;
+  background: #fff;
+}
+.Selumetinib {
+  margin: 0;
+  padding: 0;
+  padding-left: 50px;
+}
+.selumetinib-span {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.selumetinib-p {
+  width: 625px;
+  height: 343px;
+  line-height: 1.5;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  color: var(--sn-primary-headings-07235-b, #07235b);
+  font-size: 20px;
+}
+.selumitinib-img {
+  width: 463px;
+  height: 385px;
+  margin-left: 30px;
+}
+.trametinib {
+  margin: 0;
+  padding: 0;
+  margin-left: 50px;
+  margin-top: 130px;
+  margin-bottom: 3px;
+}
+.trametinib-p {
+  color: var(--sn-primary-headings-07235-b, #07235b);
+  flex-shrink: 0;
+  width: 1150px;
+  height: 492px;
+  flex-shrink: 0;
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+.trametinib-span {
+  color: black;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 120%;
+}
+@media (max-width: 820px) {
+  .clinical-therapies {
+    padding-left: 20px;
+    margin-bottom: 20px;
+    margin: 0;
+    padding: 0;
+    margin-left: 16px;
+  }
+  .clinic1 {
+    margin-top: 50px;
+    width: 715px;
+    color: #07235b;
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+  }
+  .clinic2 {
+    width: 670px;
+    height: 98px;
+    flex-shrink: 0;
+    color: var(--sn-primary-headings-07235-b, #07235b);
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 143%;
+  }
+  .type-1 {
+    display: block;
+  }
+  .Selumetinib {
+    margin: 0;
+    padding: 0;
+    margin-left: 16px;
+  }
+  .selumitinib-img {
+    width: 444px;
+    height: 320px;
+    flex-shrink: 0;
+    margin-left: 138px;
+  }
+  .selumetinib-p {
+    color: var(--sn-primary-headings-07235-b, #07235b);
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 143%;
+    width: 680px;
+    height: 259px;
+    flex-shrink: 0;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 40px;
+  }
+  .selumetinib-span {
+    color: var(--sn-black, #000);
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+    width: 720px;
+    height: 259px;
+    flex-shrink: 0;
+  }
+  .trametinib {
+    margin: 0;
+    padding: 0;
+    margin-left: 16px;
+    margin-top: 50px;
+  }
+  .trametinib-p {
+    color: var(--sn-primary-headings-07235-b, #07235b);
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 143%;
+    width: 720px;
+    height: 624px;
+    flex-shrink: 0;
+    margin: 0;
+    padding: 0;
+  }
+  .trametinib-span {
+    width: 720px;
+    height: 624px;
+    flex-shrink: 0;
+    color: var(--sn-black, #000);
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    margin: 0;
+    padding: 0;
+  }
+}
+@media (max-width: 425px) {
+  .clinical-therapies {
+    margin: 0;
+    padding: 0;
+    margin-left: 16px;
+    padding-bottom: 50px;
+  }
+  .clinic1 {
+    width: 343px;
+    color: #07235b;
+    font-family: Roboto;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 20px;
+  }
+  .clinic2 {
+    width: 343px;
+    height: 95.106px;
+    flex-shrink: 0;
+    color: var(--sn-primary-headings-07235-b, #07235b);
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    margin: 0p;
+    padding: 0;
+  }
+  .selumetinib-p {
+    color: var(--sn-primary-headings-07235-b, #07235b);
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    width: 343px;
+    height: 357.993px;
+    flex-shrink: 0;
+    margin: 0;
+    padding: 0;
+  }
+  .selumetinib-span {
+    width: 343px;
+    height: 357.993px;
+    flex-shrink: 0;
+    color: var(--sn-black, #000);
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+  }
+  .type-1 {
+    display: block;
+    margin-left: 0;
+  }
+  .selumitinib-img {
+    width: 340px;
+    height: 318px;
+    flex-shrink: 0;
+    margin-left: 16px;
+    margin-right: 50px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+  }
+  .trametinib {
+    padding: 0;
+    margin: 0;
+    margin-top: 40px;
+    margin-left: 16px;
+    margin-bottom: 50px;
+  }
+  .trametinib-p {
+    width: 343px;
+    height: 782.38px;
+    flex-shrink: 0;
+    color: var(--sn-primary-headings-07235-b, #07235b);
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+  }
+  .trametinib-span {
+    width: 343px;
+    height: 782.38px;
+    flex-shrink: 0;
+    color: var(--sn-black, #000);
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+  }
+}

@@ -1,5 +1,6 @@
 .nav-dropdown-container {
   display: flex;
+  z-index: 2;
 }
 
 .nav-dropdown-menu-button {
@@ -40,6 +41,23 @@
   color: #ffff;
 }
 
+ .nav-dropdown-links {
+  color: #ffff;
+  text-decoration: none;
+}
+.nav-links-nav-about-us{
+  text-decoration: none;
+  color: #ffff;
+}
+.nav-dropdown-links-nav-research{
+  text-decoration: none;
+  color: #ffff;
+}
+/* .nav-links-nav-about-us  a:hover{
+
+  background-color:#0d99ff;
+  display: block;
+} */
 
 
 .nav-dropdown-links-listitem.active .nav-dropdown-links {
