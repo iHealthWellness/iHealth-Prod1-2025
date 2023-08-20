@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./Privacy.css";
-import plusicon from "../../../Assets/Icons/plus.png";
-import minusicon from "../../../Assets/Icons/minus.png";
+import plusicon from "src/Assets/Icons/plus.png";
+import minusicon from "src/Assets/Icons/minus.png";
 
 const Privacy = () => {
   // Expand and collapse function for terms of use topic sections and icons
