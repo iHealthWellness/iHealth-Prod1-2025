@@ -12,6 +12,7 @@ import Signin from "./Pages/Sigin-in/index";
 import Signup from "./Pages/Sign-up/index";
 import Donate from "./Pages/Donate/index";
 import RootLayout from "./Pages/Root";
+import Termsofuse from "./Pages/Terms-of-use";
 import Other from "./Pages/Other/index";
 import Termsofuse from "./Pages/Terms-of-use";
 

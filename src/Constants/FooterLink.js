@@ -59,7 +59,7 @@ const FooterLink = [
       },
       {
         title: "Terms of Service",
-        path: "/terms-of-use#termsofuse",
+        path: "/terms-of-use",
       },
       {
         title: "Disclaimer",
