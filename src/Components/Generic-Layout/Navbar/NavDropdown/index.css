@@ -9,6 +9,7 @@
   border: none;
   outline: none;
   cursor: pointer;
+  z-index: 1000;
 }
 
 .nav-dropdown-menu-icon {
@@ -21,24 +22,31 @@
   top: 100%;
   left: 0;
   list-style: none;
+  z-index: 1000;
 }
 
 .nav-dropdown-links-listitem {
-  padding: 0.5rem 1rem;
+  padding: 12px 16px; 
+  background-color: #07235b;
+  color: #ffff; 
 }
 
-.nav-dropdown-links {
-  color: #07235b;
+ .nav-dropdown-links {
+  color: #ffff;
   text-decoration: none;
 }
-
-.nav-dropdown-links-listitem.active {
-  background-color: #07235b;
+.nav-links-nav-about-us{
+  text-decoration: none;
+  color: #ffff;
 }
+
+
 
 .nav-dropdown-links-listitem.active .nav-dropdown-links {
-  color: #fff;
+  color:#07235b;
 }
+
+
 
 @media only screen and (min-width: 1024px) {
   .nav-dropdown-container {

@@ -1,12 +1,35 @@
 import { useState, useEffect } from "react";
 import { NavLink, useLocation } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
+
 
 import dropdownIcon from "src/Assets/Icons/nav-dropdown.svg";
 
 import "./index.css";
 
+function classnames(...args) {
+  const classes = [];
+
+  args.forEach(arg => {
+    if (typeof arg === 'string') {
+      classes.push(arg);
+    } else if (typeof arg === 'object' && arg !== null) {
+      for (const key in arg) {
+        if (arg.hasOwnProperty(key) && arg[key]) {
+          classes.push(key);
+        }
+      }
+    }
+  });
+
+  return classes.join(' ');
+}
+
+
+
 const NavDropdownButton = () => {
   const [showMenu, setShowMenu] = useState(false);
+  const [showdropdown, setShowdropdown] = useState(false);
   const location = useLocation();
   const currentPage = location.pathname;
 
@@ -15,17 +38,17 @@ const NavDropdownButton = () => {
     setShowMenu((prev) => !prev);
   };
 
-  useEffect(() => {
-    if (!showMenu) return;
 
-    const closeMenu = () => {
-      setShowMenu(false);
-    };
+  const closeMenu = () => {
+    setShowMenu(false);
+    setShowdropdown(false)
+  };
 
-    document.addEventListener("click", closeMenu);
+  const toggleDropdown = () => {
 
-    return () => document.removeEventListener("click", closeMenu);
-  }, [showMenu]);
+    setShowdropdown((prev) => !prev)
+
+  }
 
   return (
     <div className="nav-dropdown-container">
@@ -36,57 +59,66 @@ const NavDropdownButton = () => {
       {showMenu && (
         <ul className="nav-dropdown-links-list">
           <li
-            className={`nav-dropdown-links-listitem ${
-              currentPage === "/" ? "active" : ""
-            }`}
+            className={`nav-dropdown-links-listitem ${currentPage === "/" ? "active" : ""
+              }`}
           >
-            <NavLink to="/" className="nav-dropdown-links nav-home">
-              Home &gt;
+            <NavLink to="/" className="nav-dropdown-links nav-home" onClick={closeMenu}>
+              Home
             </NavLink>
           </li>
           <li
-            className={`nav-dropdown-links-listitem ${
-              currentPage === "/services" ? "active" : ""
-            }`}
+            className={`nav-dropdown-links-listitem ${currentPage === "/services" ? "active" : ""
+              }`}
           >
             <NavLink
               onClick={() => {
                 document.querySelector("#UnderConst-wrapper").style.display =
                   "flex";
+                closeMenu()
               }}
               className="nav-dropdown-links nav-services"
             >
-              Services &gt;
+              Services
             </NavLink>
           </li>
           <li
-            className={`nav-dropdown-links-listitem ${
-              currentPage === "/about-us" ? "active" : ""
-            }`}
+            className={`nav-dropdown-links-listitem ${currentPage === "/about-us" ? "active" : ""
+              }`}
           >
             <NavLink
-              onClick={() => {
-                document.querySelector("#UnderConst-wrapper").style.display =
-                  "flex";
-              }}
-              className="nav-dropdown-links nav-about-us"
+              onClick={toggleDropdown}
+
+
+              to="/about-us"
+              className="nav-links-nav-about-us"
             >
-              About Us &gt;
+              About Us
             </NavLink>
+
+            <div className={classnames('nav-dropdown-content', { block: showdropdown })}>
+              <HashLink to={"/about-us/#Hero"} >Corporate  info</HashLink>
+              <HashLink to={"/our-team"}>Our Team </HashLink>
+              <HashLink to={"/about-us/#Finance"}>Financial Transparency </HashLink>
+              <HashLink to={"/about-us/#Terms"}>Terms Of Use</HashLink>
+
+
+
+
+            </div>
           </li>
           <li
-            className={`nav-dropdown-links-listitem ${
-              currentPage === "/research" ? "active" : ""
-            }`}
+            className={`nav-dropdown-links-listitem ${currentPage === "/research" ? "active" : ""
+              }`}
           >
             <NavLink
               onClick={() => {
                 document.querySelector("#UnderConst-wrapper").style.display =
                   "flex";
+                closeMenu();
               }}
               className="nav-dropdown-links nav-research"
             >
-              Research &gt;
+              Research
             </NavLink>
           </li>
         </ul>
