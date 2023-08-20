@@ -1,0 +1,23 @@
+/* .container{
+    margin:0 auto;
+    width: 90%;
+    max-width: 1216px;
+}  */
+.Hero-image{
+    background-color: rgb(242, 248, 253);
+}
+.image-page img{
+
+    margin-top: 5px;
+    height:320px;
+}
+
+
+@media only screen and (max-width:480px){
+    
+    
+    .image-page img{
+
+        background-size: contain;
+    }
+    }

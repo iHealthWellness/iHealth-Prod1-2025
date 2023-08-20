@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     // Hero image on terms of use page
     <>
-      <div id="termsofuse">
+      <div className="terms0">
         <img src={termsOfuse} alt="terms-of-use" />
       </div>
     </>
