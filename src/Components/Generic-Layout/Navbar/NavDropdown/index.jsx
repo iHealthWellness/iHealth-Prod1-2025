@@ -120,6 +120,46 @@ const NavDropdownButton = () => {
               }}
               className="nav-dropdown-links nav-services"
             >
+              Services
+            </NavLink>
+          </li>
+          <li
+            className={`nav-dropdown-links-listitem ${currentPage === "/about-us" ? "active" : ""
+              }`}
+          >
+            <NavLink
+              onClick={toggleDropdown}
+
+
+              to="/about-us"
+              className="nav-links-nav-about-us"
+            >
+              About Us
+            </NavLink>
+
+            <div className={classnames('nav-dropdown-content', { block: showdropdown })}>
+              <a href="#Hero">Corporate Info </a>
+              <a href="/our-team">Our Team </a>
+              <a href="#Finance">Financial Transparency </a>
+              <a href="#Terms">Terms Of Use</a>
+              <a href="">List Of Openings</a>
+
+
+
+            </div>
+          </li>
+          <li
+            className={`nav-dropdown-links-listitem ${currentPage === "/research" ? "active" : ""
+              }`}
+          >
+            <NavLink
+              onClick={() => {
+                document.querySelector("#UnderConst-wrapper").style.display =
+                  "flex";
+                closeMenu();
+              }}
+              className="nav-dropdown-links nav-research"
+            >
               Research
             </NavLink>
           </li>

@@ -30,7 +30,8 @@ const section6 = () => {
   }, []);
 
   return (
-    <div id="participate" className="slide-in-text">
+    <div id="participate">
+      <div className="slide-in-text">
       <div className="participate">
         <h1 className="participate1">
           Participate in Research for Neurofibromatosis: Making a Difference
@@ -47,6 +48,7 @@ const section6 = () => {
           </p>
           <img className="components-img" src={Research5} alt="" />
         </div>
+      </div>
       </div>
       <div className="participating">
         <h2>

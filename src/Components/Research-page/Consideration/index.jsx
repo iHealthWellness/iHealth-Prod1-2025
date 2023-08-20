@@ -72,7 +72,9 @@ const Consideration = () => {
           </p>
         </div>
         </div>
+        <div>
         <img className="consider-img" src={Research7} alt="" />
+      </div>
       </div>
       <div className="difference">
         <h1 className="difference1">Make a Difference Today</h1>

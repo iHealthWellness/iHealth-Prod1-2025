@@ -2,12 +2,13 @@
   display: flex;
 }
 .consider-img {
-  width: 460px;
+  width: 400px;
+  height: 346px;
   flex-shrink: 0;
   margin-right: 100px;
-  margin-left: 32px;
+  margin-left: 20px;
   margin-top: 200px;
-  margin-bottom: 360px;
+  margin-bottom: 260px;
 }
 .consideration {
   margin-top: 100px;
@@ -33,6 +34,7 @@
   line-height: 140%;
   padding-bottom: 20px;
   padding-top: 20px;
+  width: 780px;
 }
 .consideration2 {
   width: 671px;
@@ -54,7 +56,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   width: 1100px;
-  height: 320px;
+  height: 250px;
   flex-shrink: 0;
   margin: 0;
   padding: 0;
@@ -101,7 +103,7 @@
     padding: 0;
     padding-top: 40px;
     margin-top: 10px;
-    margin-left: 16px;
+    margin-left: 24px;
   }
   .consider-img {
     margin: 0;
