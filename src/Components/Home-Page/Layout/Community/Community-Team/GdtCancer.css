@@ -42,6 +42,20 @@
 
 .mod1 {
   width: 700px;
+<<<<<<< HEAD
+  /* border: 2px solid red; */
+=======
+<<<<<<< HEAD
+>>>>>>> ff6df77 (update on the page)
+  border-radius: 20px;
+  background-color: #F8FAFC;
+  /* box-shadow: 0px 0px 5px #E3E6EE; */
+  border: 1px solid #07235B;
+<<<<<<< HEAD
+  /* place-items: center; */
+  /* justify-content: center; */
+=======
+=======
   /* border: 2px solid red; */
   border-radius: 20px;
   background-color: #F8FAFC;
@@ -49,6 +63,8 @@
   border: 1px solid #07235B;
   /* place-items: center; */
   /* justify-content: center; */
+>>>>>>> 8786c76 (adding getriatric and cancer form popup)
+>>>>>>> ff6df77 (update on the page)
 }
 
 /* The bottom ellipse styling */
@@ -113,7 +129,14 @@ gdt-head p {
 }
 
 .progressbar__img{
+<<<<<<< HEAD
   /* width: 80%; */
+=======
+<<<<<<< HEAD
+=======
+  /* width: 80%; */
+>>>>>>> 8786c76 (adding getriatric and cancer form popup)
+>>>>>>> ff6df77 (update on the page)
   height: 17px;
 }
 
@@ -125,7 +148,14 @@ gdt-head p {
 /* FORM STYLING */
 
 .form__content {
+<<<<<<< HEAD
   /* width: 80%; */
+=======
+<<<<<<< HEAD
+=======
+  /* width: 80%; */
+>>>>>>> 8786c76 (adding getriatric and cancer form popup)
+>>>>>>> ff6df77 (update on the page)
   margin: 5px 10% 0 10%;
 }
 
@@ -136,8 +166,18 @@ gdt-head p {
 
 .input__textarea {
   position: relative;
+<<<<<<< HEAD
   border: 1.5px solid #E0E3EB;
   /* height: 80px; */
+=======
+<<<<<<< HEAD
+  /* border: 1.5px solid #E0E3EB;
+  height: 80px; */
+=======
+  border: 1.5px solid #E0E3EB;
+  /* height: 80px; */
+>>>>>>> 8786c76 (adding getriatric and cancer form popup)
+>>>>>>> ff6df77 (update on the page)
 }
 
 .input__field {
@@ -172,9 +212,21 @@ gdt-head p {
 
 .textarea__field {
   width: 100%;
+<<<<<<< HEAD
   height: 80px;
   padding: 10px;
   border: none;
+=======
+<<<<<<< HEAD
+  height: 70px;
+  padding: 10px;
+   border: 1.5px solid #E0E3EB;
+=======
+  height: 80px;
+  padding: 10px;
+  border: none;
+>>>>>>> 8786c76 (adding getriatric and cancer form popup)
+>>>>>>> ff6df77 (update on the page)
   border-radius: 0px;
   background-color: #ffffff;
   resize: none;
@@ -253,7 +305,15 @@ gdt-head p {
 .loader {
   position: absolute;
   top: 45%;
+<<<<<<< HEAD
   left: 45%;
+=======
+<<<<<<< HEAD
+  left: 47%;
+=======
+  left: 45%;
+>>>>>>> 8786c76 (adding getriatric and cancer form popup)
+>>>>>>> ff6df77 (update on the page)
   transform: translate(-50%, -50%);
   width: 80px;
   height: 80px;

@@ -59,7 +59,11 @@ const FooterLink = [
       },
       {
         title: "Terms of Service",
+<<<<<<< HEAD
         path: "/terms-of-use#termsofuse",
+=======
+        path: "/terms-of-use",
+>>>>>>> 8786c76 (adding getriatric and cancer form popup)
       },
       {
         title: "Disclaimer",

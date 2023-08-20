@@ -13,7 +13,12 @@ import Signin from "./Pages/Sigin-in/index";
 import Signup from "./Pages/Sign-up/index";
 import Donate from "./Pages/Donate/index";
 import RootLayout from "./Pages/Root";
+<<<<<<< HEAD
 import Team from "./Pages/Our-Team";
+=======
+import Termsofuse from "./Pages/Terms-of-use";
+import Other from "./Pages/Other/index";
+>>>>>>> ff6df77 (update on the page)
 import Termsofuse from "./Pages/Terms-of-use";
 // import Other from "./Pages/Other/index";
 
