@@ -15,7 +15,6 @@ import Donate from "./Pages/Donate/index";
 import RootLayout from "./Pages/Root";
 import Termsofuse from "./Pages/Terms-of-use";
 import Other from "./Pages/Other/index";
-import Termsofuse from "./Pages/Terms-of-use";
 import Team from "./Pages/Our-Team";
 // import Other from "./Pages/Other/index";
 
@@ -38,6 +37,8 @@ function App() {
         { path: "/sign-up", element: <Signup /> },
         { path: "/donate", element: <Donate /> },
         { path: "/our-team", element: <Team /> },
+        { path: "/terms-of-use", element: <Termsofuse /> },
+        { path: "/other", element: <Other /> },
         // { path: "*", element: <Other /> },
       ],
     },

@@ -1,5 +1,6 @@
 import "./Hero.css";
-import termsOfuse from "../../../Assets/Images/terms-of-use.png";
+//import TermsOfUse from "../../../Assets/Images/terms-of-use.png";
+
 
 const Hero = () => {
   return (
@@ -7,7 +8,7 @@ const Hero = () => {
     <>
       <div className="terms0">
       <div className="terms0">
-        <img src={termsOfuse} alt="terms-of-use" />
+        <img src={TermsOfUse} alt="terms-of-use" />
       </div>
     </div>
     </>
