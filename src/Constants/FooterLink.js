@@ -55,15 +55,15 @@ const FooterLink = [
     links: [
       {
         title: "Privacy Policy",
-        path: "#",
+        path: "/terms-of-use#privacy-policy",
       },
       {
         title: "Terms of Service",
-        path: "#",
+        path: "/terms-of-use#termsofuse",
       },
       {
         title: "Disclaimer",
-        path: "#",
+        path: "/terms-of-use#disclaimer",
       },
     ],
   },
