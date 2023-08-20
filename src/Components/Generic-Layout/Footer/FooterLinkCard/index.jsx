@@ -22,15 +22,16 @@ const FooterLinkCard = ({ linkCard }) => {
 
           <HashLink
             className="footer-link"
-<<<<<<< HEAD
-            to={link.path}
-=======
             // onClick={() => {
             //   document.querySelector("#UnderConst-wrapper").style.display =
             //     "flex";
             // }}
             href={link.path}
->>>>>>> 8786c76 (adding getriatric and cancer form popup)
+            onClick={() => {
+              document.querySelector("#UnderConst-wrapper").style.display =
+                "flex";
+            }}
+            // href={link.path}
             key={`footer-links-${link.title}`}
           >
             {link.title}

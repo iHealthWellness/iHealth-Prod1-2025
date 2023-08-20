@@ -14,6 +14,7 @@ const Community = () => {
   };
   const [isOpen, setIsOpen] = useState(false);
 
+
   // Cancer team modal popup js
 
   const toggleModal1 = () => {
@@ -50,47 +51,57 @@ const Community = () => {
               : "community-team-btn"
           }
         >
-          NF HUB
+          Neurofibromatosis (NF) HUB
+
+
         </button>
+
         <button
-          // onClick={() => {
-          //   setTeam("Geriatric Disease Team");
-          //   document.querySelector("#UnderConst-wrapper").style.display =
-          //     "flex";
-          // }}
-          onClick={toggleModal}
+        onClick={toggleModal}
+        
           className={
             team === "Geriatric Disease Team"
               ? "community-team-btn focus"
               : "community-team-btn"
           }
         >
-          Geriatric Disease Hub <p className="coming-soon-p">(Coming soon)</p>
+          Geriatric Disease Team <p className="coming-soon-p">(Coming soon)</p>
         </button>
+
         <button
+        onClick={toggleModal1}
           // onClick={() => {
           //   setTeam("Cancer Team");
           //   document.querySelector("#UnderConst-wrapper").style.display =
           //     "flex";
           // }}
-
-          onClick={toggleModal1}
           className={
             team === "Cancer Team"
               ? "community-team-btn focus"
               : "community-team-btn"
           }
         >
-          Cancer Hub <p className="coming-soon-p">(Coming soon)</p>
+          Cancer Team <p className="coming-soon-p">(Coming soon)</p>
         </button>
+      
       </div>
-      {/* MODAL POPUP FOR GERIATRIC TEAM */}
 
-      <div>{isOpen && <Geriatric closeModal={closeModal} />}</div>
+       {/* MODAL POPUP FOR GERIATRIC TEAM */}
+
+       <div>
+        {isOpen && (
+          <Geriatric closeModal={closeModal} />
+        )}
+      </div>
 
       {/* MODAL POPUP FOR CANCER TEAM */}
 
-      <div>{isOpens && <Cancer closeModal={closeModal} />}</div>
+      <div>
+        {isOpens && (
+          <Cancer closeModal={closeModal} />
+        )}
+      </div>
+
     </section>
   );
 };

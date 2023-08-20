@@ -118,7 +118,10 @@
 .popup-name{
     font-size: 20px;
     justify-self: center;
+<<<<<<< HEAD
     text-align: center;
+=======
+>>>>>>> fb6c7ff (update)
 }
 
 .popup-linkedin{
@@ -187,9 +190,15 @@
     }
 
     .popup-name{
+<<<<<<< HEAD
         font-size: 3vh;
         justify-self: center;
         text-align: center;
+=======
+        font-size: 7vh;
+        justify-self: center;
+        
+>>>>>>> fb6c7ff (update)
     }
 
     .close-btn {
@@ -203,8 +212,13 @@
       }
     .board-image{
         position: relative;
+<<<<<<< HEAD
         width:230px;
         height:300px;
+=======
+        width:173.5px;
+        height:227px;
+>>>>>>> fb6c7ff (update)
         margin: auto; 
         z-index: 999;
      }
@@ -214,12 +228,15 @@
         position: relative;
         /* gap:70px; */
     }
+<<<<<<< HEAD
 
     .Name-tab{
         font-size:18px;
         font-weight:800px;
         font-family: Roboto;
     }
+=======
+>>>>>>> fb6c7ff (update)
 }
 
 @media only screen and (max-width:414px){
@@ -228,6 +245,7 @@
         position: relative;
         width:173.5px;
         height:227px;
+<<<<<<< HEAD
         margin: 10px; 
         z-index: 999;
      }
@@ -245,4 +263,9 @@
         margin-left: 29%;
     }
 
+=======
+        margin: auto; 
+        z-index: 999;
+     }
+>>>>>>> fb6c7ff (update)
 }

@@ -75,11 +75,16 @@ const Board = () => {
             {selectedCard && (
                 <div className="popup-overlay" onClick={handlePopupClose}>
                     <div className="popup-content">
+<<<<<<< HEAD
                         <img onClick={handlePopupClose} src={closeButton} className="close-btn" />
+=======
+                        <img onClick={handlePopupClose} src={closeButton} className="close-btn"/>
+>>>>>>> fb6c7ff (update)
                         <div className="popup-text">
                             <img src={selectedCard.image} className="popup-img" />
                             <h1 className="popup-name">{selectedCard.name}</h1>
                             <div className="popup-linkedin" onClick={handleDivClick}>
+<<<<<<< HEAD
                                 <img src={linkedIn} className="popup-linkedin-icon" /><h2 className="popup-linkedin-text">LinkedIn</h2>
                             </div>
                             <hr className="grey-line"></hr>
@@ -93,12 +98,31 @@ const Board = () => {
 
                         </div>
                         <img src={roundedFrame} className="rounded-frame" />
+=======
+                                <img src={linkedIn} className="popup-linkedin-icon"/><h2 className="popup-linkedin-text">LinkedIn</h2>
+                            </div>
+                            <hr className="grey-line"></hr>
+                            {selectedCard.extendedBio.split("--").map((bioChunk) =>(
+                                <div key={bioChunk} >
+                                    <a>{bioChunk}</a>
+                                    <br/><br/>
+                                </div>
+                            ))}
+
+                        
+                        </div>
+                        <img src={roundedFrame} className="rounded-frame"/>
+>>>>>>> fb6c7ff (update)
                     </div>
                 </div>
             )}
             <div className="page-holder">
 
+<<<<<<< HEAD
                 <div className="teamboard-tab">
+=======
+                <div className="teamboard-tab" data-aos="fade-right" data-aos-duration="1000">
+>>>>>>> fb6c7ff (update)
 
                     <h2 className="team-directors-header">  Board of Directors</h2>
 
@@ -108,7 +132,11 @@ const Board = () => {
                 </div>
 
 
+<<<<<<< HEAD
                 <div className="board-directors-tab">
+=======
+                <div className="board-directors-tab" data-aos="fade-left" data-aos-duration="1000">
+>>>>>>> fb6c7ff (update)
 
                     <div className="board-image" onClick={handleCardClick}>
 
@@ -118,7 +146,11 @@ const Board = () => {
                             <p>Sasika Nanayakkara</p>
                         </div>
 
+<<<<<<< HEAD
                         <button className="btn-board-tab"><img src={Image7} /></button>
+=======
+                        <button  className="btn-board-tab"><img src={Image7} /></button>
+>>>>>>> fb6c7ff (update)
 
                         <button className="btn-board-tab"><img src={Image7} /></button>
 
@@ -163,7 +195,11 @@ const Board = () => {
 
                 </div>
 
+<<<<<<< HEAD
                 <div className="teamboard-tab">
+=======
+                <div className="teamboard-tab" data-aos="fade-right" data-aos-duration="1000">
+>>>>>>> fb6c7ff (update)
                     <h2 className="team-directors-header">Advisory Council</h2>
                     <h3 className="team-directors-tab"> The Advisory Committee for our health and wellness startup serves as a group
                         of experienced advisors who provide valuable insights, guidance, and expertise.
@@ -173,7 +209,11 @@ const Board = () => {
                 </div>
 
 
+<<<<<<< HEAD
                 <div className="board-directors-tab">
+=======
+                <div className="board-directors-tab" data-aos="fade-right" data-aos-duration="1000" >
+>>>>>>> fb6c7ff (update)
 
                     <div className="board-image" onClick={handleCardClick4}>
 
@@ -198,7 +238,11 @@ const Board = () => {
 
                 </div>
 
+<<<<<<< HEAD
                 <div className="board-directors-tab1">
+=======
+                <div className="board-directors-tab1" data-aos="fade-right" data-aos-duration="1000" >
+>>>>>>> fb6c7ff (update)
                     <div className="board-image" onClick={handleCardClick5}>
                         <img className="img-holder" src={Image6} alt="" />
 
@@ -208,7 +252,11 @@ const Board = () => {
                         <button className="btn-board-tab"><img src={Image7} /></button>
                     </div>
                 </div>
+<<<<<<< HEAD
 
+=======
+                
+>>>>>>> fb6c7ff (update)
             </div>
         </div >
 

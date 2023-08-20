@@ -174,7 +174,11 @@ gap: 20px;
 .img-mission{
     margin-top: 10px;
     width: 100%;
+<<<<<<< HEAD
     height: 250px;
+=======
+    height: 340px;
+>>>>>>> fb6c7ff (update)
 
 }
 .img-vision{
@@ -251,15 +255,27 @@ gap: 26px;
 img-mission{
  margin-top: 5px;
  width:auto;
+<<<<<<< HEAD
 
+=======
+ height:auto;
+>>>>>>> fb6c7ff (update)
 }
    
  .img-value{
 margin-top: 10px;
+<<<<<<< HEAD
+=======
+width: auto;
+>>>>>>> fb6c7ff (update)
 height:auto;
       
 }
 .img-vision{
+<<<<<<< HEAD
+=======
+width:380px;
+>>>>>>> fb6c7ff (update)
 height:auto;
 margin-top: 10px;
  }

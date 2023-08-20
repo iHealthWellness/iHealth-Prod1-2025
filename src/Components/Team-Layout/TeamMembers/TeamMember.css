@@ -128,10 +128,17 @@
         width: 100%;
         display: grid;
         /* grid-template-columns: 100px auto auto; */
+<<<<<<< HEAD
         grid-template-columns: 1fr 1fr 1fr;
         background-color: #DCE8F2;
         border-radius: 10px;
         padding: 0px; 
+=======
+        grid-template-columns: 1fr 1fr;
+        background-color: #DCE8F2;
+        border-radius: 10px;
+        padding: 10px; 
+>>>>>>> fb6c7ff (update)
     } 
     .content-name {
         background-color: white;
@@ -142,6 +149,7 @@
         margin-top: 40px;
         width: 100%;
         display: grid;
+<<<<<<< HEAD
         grid-template-columns: 1fr 1fr 1fr;
         background-color: #DCE8F2;
         border-radius: 10px;
@@ -158,16 +166,31 @@
     letter-spacing: -0.019em;
     text-align: center;
 
+=======
+        grid-template-columns: 1fr 1fr;
+        background-color: #DCE8F2;
+        border-radius: 10px;
+        padding: 10px;
+>>>>>>> fb6c7ff (update)
 }
 .content-name p{
     margin: auto;
     font-family: Inter;
+<<<<<<< HEAD
    font-size:  10px;
+=======
+   font-size: 16px;
+>>>>>>> fb6c7ff (update)
    font-style: italic;
   font-weight: 300;
    line-height: 36px;
    letter-spacing: -0.019em;
+<<<<<<< HEAD
    text-align: center;
+=======
+   text-align: left;
+   padding:2px;
+>>>>>>> fb6c7ff (update)
 
 }
 /* .content-tab{
@@ -181,21 +204,38 @@
     color:#07235B;
     padding:10px;
 } */
+<<<<<<< HEAD
 .content-tab {
     width: 50%;
     font-family: Roboto;
     font-size: 12px;
+=======
+.content-tab p{
+    width: 266px;
+    font-family: Roboto;
+    font-size: 20px;
+>>>>>>> fb6c7ff (update)
     font-weight: 400;
     line-height: 34px;
     letter-spacing: 0em;
     text-align: left;
     color:#07235B;
     padding:10px;
+<<<<<<< HEAD
     margin-right: 0%;
 }
 
 .grid-tab-texter{
     width: 30%;
+=======
+}
+.content-name{
+    background-color: white;
+    width:197px;
+    padding:24px;
+}
+.grid-tab-texter{
+>>>>>>> fb6c7ff (update)
     margin-top: 20px;
     padding:5px;
     font-family: Inter;

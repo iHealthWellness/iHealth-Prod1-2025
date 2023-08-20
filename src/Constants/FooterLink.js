@@ -55,19 +55,16 @@ const FooterLink = [
     links: [
       {
         title: "Privacy Policy",
-        path: "/terms-of-use#privacy-policy",
+        path: "#",
       },
       {
         title: "Terms of Service",
-<<<<<<< HEAD
-        path: "/terms-of-use#termsofuse",
-=======
         path: "/terms-of-use",
->>>>>>> 8786c76 (adding getriatric and cancer form popup)
+        path: "#",
       },
       {
         title: "Disclaimer",
-        path: "/terms-of-use#disclaimer",
+        path: "#",
       },
     ],
   },
