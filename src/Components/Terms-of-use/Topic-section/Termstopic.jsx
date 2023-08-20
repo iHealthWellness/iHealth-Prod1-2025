@@ -2,6 +2,8 @@ import "./Termstopic.css";
 import communityLogo from "../../../Assets/Images/logo1.svg";
 import plusicon from "../../../Assets/Icons/Plus1.png";
 import minusicon from "../../../Assets/Icons/minus1.png";
+import plusicon from "../../../Assets/Icons/Plus-icon.png";
+import minusicon from "../../../Assets/Icons/minus-icon.png";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faSquarePlus, faSquareMinus } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
@@ -75,8 +77,8 @@ const Termstopic = () => {
     header3g.classList.toggle("header3-remove");
   };
   return (
-    // Terms of use Topic headers and icons
     <>
+    // Terms of use Topic headers and icons
       <div className="terms1">
         <img src={communityLogo} alt="ihealth-logo" />
       </div>

@@ -1,11 +1,6 @@
 import "./TermsPopup.css";
-<<<<<<< HEAD
-import Hero from "./Hero/Hero";
-import Termstopic from "./Topic-section/Termstopic";
-=======
 import Termstopic from "./Topic-section/Termstopic";
 import Hero from "./Hero/Hero";
->>>>>>> 8786c76 (adding getriatric and cancer form popup)
 
 const TermsPopup = () => {
   return (
