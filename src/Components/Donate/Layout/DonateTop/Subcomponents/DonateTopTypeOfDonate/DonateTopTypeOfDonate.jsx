@@ -49,13 +49,13 @@ function DonateTopTypeOfDonate()
                     <img loading='lazy' src={oneTO} alt='one time option icon'/>
                     <p>Individual Donation</p>
                     <p>Empowering Healing, One Gift at a Time – Donate for Patients, Transform Lives!</p>
-                    <button>Donate Now</button>
+                    <button onClick={() => {document.querySelector("#UnderConst-wrapper").style.display ="flex";}} >Donate Now</button>
                 </article>
                 <article id='beforeanimationright' ref={rightArticle}>
                     <img loading='lazy' src={recurringO} alt='recurring option icon'/>
                     <p>Corporate Donation</p>
                     <p>Corporate Caring, Empowering Patients – Together, We Heal!</p>
-                    <button>Donate Now</button>
+                    <button onClick={() => {document.querySelector("#UnderConst-wrapper").style.display ="flex";}} >Donate Now</button>
                 </article>
             </div>
         </div>

@@ -8,21 +8,25 @@ import "./TermPolicyOnlyViewContent.css"
 
 //Import local files/components etc..
 import ttpimage from '../../../../../../Assets/Images/TPP.png'
+import Termstopic from 'src/Components/Terms-of-use/Topic-section/Termstopic'
 
 
 
 function TermPolicyOnlyViewContent({setShowTPP}) 
 {
-  return (
+    return (
     <>
         <section id='TermPolicyOnlyViewContent-Wrapper'>
             <div id='TermPolicyOnlyViewContent-MainContent-container'>
                 <div id='TermPolicyOnlyViewContent-Picture-Container'>
                     <img src={ttpimage} alt='image for Terms and Policy'/>
                 </div>
-                <div id='TermPolicyOnlyViewContent-Content-Container'>
+                  <div id='TermPolicyOnlyViewContent-Content-Container'>
 
-                    <h3 id='TermsofService-main-iHealth-and-Wellness-Foundation'>iHealth and Wellness Foundation, Inc.</h3>
+                    {/* This Component is from Terms and Policy Page as Sasika Requested */}
+                    <Termstopic />
+                    
+                    {/*<h3 id='TermsofService-main-iHealth-and-Wellness-Foundation'>iHealth and Wellness Foundation, Inc.</h3>
                     <h2 id='TermsofService-main-Terms-of-Service'>Terms of Service</h2>
 
                     <p id='TermsofService-main-paragraph'>
@@ -209,6 +213,7 @@ function TermPolicyOnlyViewContent({setShowTPP})
                         </i>
                         <input type="checkbox" id="TermsofService-main-BindingIndividualArbitration-text-btnControl"/><label class="btn" for="TermsofService-main-BindingIndividualArbitration-text-btnControl"><span class='LearnMoreSpan'> ...Learn More &#62; </span></label>
                     </p>
+                    */}
 
                 </div>
 
