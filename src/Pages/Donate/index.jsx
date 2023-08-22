@@ -25,6 +25,7 @@ const index = () =>
       <DonateTop />
       <DonateSteps />
       <Donate10Days />
+      
       {/* <DonateTempGuide /> --//Changed Design No more Need this component */} 
 
     </section>
