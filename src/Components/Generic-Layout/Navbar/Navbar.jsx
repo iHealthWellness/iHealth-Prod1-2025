@@ -15,6 +15,7 @@ import mobileLogo from "../../../Assets/Brand/logo-nav-mobile.png";
 //Import Local Components
 import NavDropdownButton from "./NavDropdown";
 import Login from "../UserAuthentication/Login/Login";
+import UnderConstruction from "src/Components/Under-Construction/UnderConstruction";
 
 
 
@@ -123,23 +124,23 @@ const MenuList = () => {
         },
         {
           title: "Individual Donation",
-          url: "/donate/#",
+          url: "/donate/#Donate-Top-TypeOfDonate",
         },
         {
           title: " Make a Corporate Donation",
-          url: "/donate/#",
+          url: "/donate/#Donate-Top-TypeOfDonate",
         },
         {
           title: "Fundraise on Facebook",
-          url: "/donate/#",
+          url: "/donate/#Donate-Steps-Wrapper",
         },
         {
           title: "Create Your Own Fundraiser",
-          url: "/donate/#",
+          url: "/donate/#Donate-Steps-Wrapper",
         },
         {
           title: "Raise $500 in 10 days",
-          url: "/donate/#",
+          url: "/donate/#Donate10Days-Main-Container",
         },
       ],
     },
@@ -267,8 +268,11 @@ const Navbar = () => {
       </div>
     </nav>
 
-    {/* Login Component */}
+    {/* Login Component ** This component should be executed here So that from all components can be reachable !!! */}
     <Login />
+
+    {/* Coming Soon/Under Construction Component ** This component should be executed here So that from all components can be reachable !!! */}
+    <UnderConstruction />
     </>
   );
 };
