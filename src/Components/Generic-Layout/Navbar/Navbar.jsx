@@ -1,14 +1,22 @@
+//Import Libraries/Packages
 import React from "react";
 import { NavLink, Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
-import NavDropdownButton from "./NavDropdown";
 
-
-import desktopLogo from "src/Assets/Brand/logo-nav-desktop.png";
-import mobileLogo from "src/Assets/Brand/logo-nav-mobile.png";
-import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+//Import Styles
 import "./Navbar.css";
+import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+
+//Import Local files
+import desktopLogo from "../../../Assets/Brand/logo-nav-desktop.png";
+import mobileLogo from "../../../Assets/Brand/logo-nav-mobile.png";
+
+//Import Local Components
+import NavDropdownButton from "./NavDropdown";
+import Login from "../UserAuthentication/Login/Login";
+
+
 
 /* 
   ===========================================================
@@ -224,6 +232,7 @@ const Navbar = () => {
   // Menu Lists
 
   return (
+    <>
     <nav className="nav-container">
       <div className="nav-inner-container">
         <NavDropdownButton />
@@ -257,6 +266,10 @@ const Navbar = () => {
         </div>
       </div>
     </nav>
+
+    {/* Login Component */}
+    <Login />
+    </>
   );
 };
 
@@ -267,6 +280,7 @@ export default Navbar;
 const Navbar = () => {
   
   return (
+    <>
     <nav className="nav-container">
       <div className="nav-inner-container">
         <NavDropdownButton />
@@ -354,7 +368,7 @@ const Navbar = () => {
                   <span className="nav-signin-span">Sign up or Log In</span>
                 </NavLink>
                 <div className="nav-dropdown-content ">
-                  <a href="#">Sign In</a>
+                  <a href="#" onClick={() => {document.querySelector("#Login-Main-Container").style.display = "flex";}} >Sign In</a>
                   <a href="#">Sign Up Now</a>
                   <a href="#">Donate as a Guest</a>
                 </div>
@@ -367,8 +381,10 @@ const Navbar = () => {
             </ul>
           </div>
         </div>
-      </div>
-    </nav>
+        </div>
+      </nav>
+
+      
   );
 };
 */

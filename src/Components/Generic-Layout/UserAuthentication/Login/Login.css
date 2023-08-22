@@ -1,0 +1,91 @@
+
+/* Set Css rules for Login pop-up section`s main container which includes the light dark background */
+#Login-Main-Container
+{
+    position: fixed;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.652);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    place-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+
+/* Set Css rules for Login pop-up section`s main wrapper */
+#Login-Main-wrapper
+{
+    display: flex;
+    place-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 4rem;
+    position: relative;
+
+    width: 480px;
+    height: 845px;
+    border-radius: 40px;
+    background: #FFF;
+    box-shadow: 0px 4px 23px 0px rgba(0, 0, 0, 0.25);
+    z-index: 1;
+    overflow: hidden;
+}
+
+
+/* Set Css rules for Login pop-up section`s Close button */
+#Login-Main-Container-close-button
+{
+    all: unset;
+    position: absolute;
+    top: 24px;
+    right: 46px;
+    color: lightgrey;
+    font-size: 1.5rem;
+    transform: scaleX(1.5);
+    cursor: pointer;
+    user-select: none;
+    z-index: 2;
+}
+
+
+
+/* -------------------- Responsive Css Rules -------------------- */
+
+@media only screen and (max-width: 515px) 
+{
+    #Login-Main-wrapper 
+    {
+        width: 90vw;
+        height: 880px;
+    }
+}
+
+@media only screen and (max-width: 466px) 
+{
+    #Login-Main-wrapper 
+    {
+        height: 855px;
+    }
+}
+
+
+@media only screen and (max-width: 436px) 
+{
+    #Login-Main-wrapper 
+    {
+        height: 830px;
+    }
+}
+
+@media only screen and (max-width: 416px) 
+{
+    #Login-Main-wrapper 
+    {
+        height: 812px;
+    }
+}
