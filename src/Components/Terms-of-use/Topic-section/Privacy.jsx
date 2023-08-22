@@ -16,10 +16,6 @@ const Privacy = () => {
       <div className="expand-div">
         <h3 className="header30" onClick={handleToggle11}>
           Privacy Policy
-          {/* <FontAwesomeIcon
-              icon={isExpanded11 ? faSquareMinus : faSquarePlus}
-              className="after"
-            /> */}
         </h3>
         {/* expand and collapse icon */}
         <img

@@ -73,8 +73,8 @@
 
 /* css styling for the form header */
 
-.gdt-head
-h1,p {
+.gdt-head p,
+h1 {
   text-align: center;
 }
 

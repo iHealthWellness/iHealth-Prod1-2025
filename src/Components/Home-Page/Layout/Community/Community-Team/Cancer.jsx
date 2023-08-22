@@ -1,7 +1,7 @@
 import "./GdtCancer.css";
-import communitylogo from "../../../../../../src/Assets/Images/logo1.svg";
-import progressbar1 from "../../../../../../src/Assets/Images/progressbar1.svg";
-import progressbar2 from "../../../../../../src/Assets/Images/progressbar2.svg";
+import communitylogo from "src/Assets/Images/logo1.svg";
+import progressbar1 from "src/Assets/Images/progressbar1.svg";
+import progressbar2 from "src/Assets/Images/progressbar2.svg";
 import React, { useState } from "react";
 import axios from "axios";
 
@@ -65,13 +65,6 @@ const Cancer = ({ closeModal }) => {
     }
 
     if (validateForm2()) {
-      // setFormData2({
-      //     name: "",
-      //     email: "",
-      //     condition: "",
-      //     phone: "",
-      //     message: "",
-      // });
       setIsLoading2(true);
 
       // GERIATRIC POST API

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Disclaimer.css";
-import plusicon from "../../../Assets/Icons/plus.png";
-import minusicon from "../../../Assets/Icons/minus.png";
+import plusicon from "src/Assets/Icons/plus.png";
+import minusicon from "src/Assets/Icons/minus.png";
 
 const Disclaimer = () => {
   const [isExpanded22, setIsExpanded22] = useState(false);
