@@ -198,11 +198,14 @@
       }
     .board-image{
         position: relative;
-        width:173.5px;
-        height:227px;
+        width:273.5px;
+        height:347px;
         margin: auto; 
         z-index: 999;
      }
+     .Name-tab p{
+        font-size: 24px;
+      }
      .board-directors-tab1{
         display: flex;
         justify-content:center;
@@ -219,5 +222,15 @@
         height:227px;
         margin: auto; 
         z-index: 999;
+     }
+     .team-directors-header{
+        font-size: 28px;
+     }
+     .team-directors-tab{
+        font-size: 22px;
+        text-align: justify;
+     }
+     .Name-tab p{
+       font-size: 14px;
      }
 }

@@ -28,7 +28,7 @@ const Finance = () => {
                     <h4>Our revenue is generated through the following business activities.</h4>  </div>
             </div>
 
-            <div className="trans-outline" data-aos="fade-left" data-aos-duration="3000">
+            <div className="trans-outline">
                 <div className="grid-outline">
                     <div className="grid">
                         <img src={img6} className="grid1" alt="tag1" />
@@ -76,7 +76,7 @@ const Finance = () => {
 
 
 
-            <div className="chart-analysis-tab" data-aos="fade-left" data-aos-duration="3000">
+            <div className="chart-analysis-tab">
                 <div>
                     <h2>Expenses</h2>
                     <img src={img17} className="analysis-img" alt="pie-chart" /> </div>

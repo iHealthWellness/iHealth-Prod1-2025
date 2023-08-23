@@ -8,6 +8,7 @@
     justify-content: end;
     align-items: end;
     margin-bottom: 25px;
+    max-width:100%;
 }
 .team-link{
 
@@ -20,6 +21,13 @@
    height: 100%;
 }
 
+@media only screen and(max-width: 1200px) {
+    .team-tab-page{
+        /* Adjust background size and position for the desired effect at 65% zoom */
+        background-size: 150%; /* Adjust this value as needed */
+        background-position: center 20%; /* Adjust this value as needed */
+    }
+}
 
 /* tablet view */
 @media only screen and (max-width:820px)
