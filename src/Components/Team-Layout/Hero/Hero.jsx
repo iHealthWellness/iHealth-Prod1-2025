@@ -22,16 +22,16 @@ const Hero = () => {
                 </div>
             </div>
 
-            <div>
+            <div className="tab-holder-tab">
                 <div className="text-tab-tab">
 
-                    <img className="text-tab-image" data-aos="fade-right" data-aos-duration="1000" src={image} />
-                    <h2 className="text-team" data-aos="fade-left" data-aos-duration="1000">Our team comprises dedicated individuals who bring diverse expertise
+                    <img className="text-tab-image" src={image} />
+                    <h2 className="text-team">Our team comprises dedicated individuals who bring diverse expertise
                         and a shared commitment to our mission.  </h2>
                 </div>
-               
+
                 <div className="text-tab-tab">
-                    <div className="team-highlight-tab " data-aos="fade-right" data-aos-duration="1000">
+                    <div className="team-highlight-tab ">
                         <h3 className="team-highlight">Our organization deeply appreciates the unwavering dedication of our Volunteers, Advisors, and Board Members.
                             Their selfless contributions are indispensable in helping us fulfill our mission. Without their support,
                             we would not be able to make a difference and shape a better future for patients with complex diseases.<br /><br />

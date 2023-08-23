@@ -4,15 +4,15 @@ const FooterLink = [
     links: [
       {
         title: "Our Mission",
-        path: "#",
+        path: "/about-us/#Statement",
       },
       {
         title: "Board of Directors",
-        path: "#",
+        path: "/our-team/#Board",
       },
       {
         title: "Advisory Council",
-        path: "#",
+        path: "/our-team/#Advisory",
       },
     ],
   },

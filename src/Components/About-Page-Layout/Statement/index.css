@@ -64,7 +64,10 @@
     text-align: center;
     color:#00427C;
     border-radius:20px;
-    padding: 30px;
+    padding: 20px;
+}
+.text p{
+    padding:20px;
 }
 .text:hover{
     background-color:#07235B;
@@ -124,7 +127,7 @@ font-weight: 600;
 line-height: 26px;
 letter-spacing: 0em;
 text-align: center;
-padding: 5px;
+padding: 10px;
 
 }
 .text1 p{
@@ -171,12 +174,12 @@ gap: 20px;
     height: 340px;
 
 }
-.img-mission{
+/* .img-mission{
     margin-top: 10px;
     width: 100%;
     height: 340px;
 
-}
+} */
 .img-vision{
     margin-top: 10px;
     width: 100%;
@@ -233,7 +236,15 @@ line-height: 34px;
 
 }
 
-
+/* tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .img-mission{
+        margin-top: 10px;
+        width: 100%;
+        height: 340px;
+    
+    }
+}
 
 /*  Responiveness Mobile view */
 @media only screen and (max-width:480px){
@@ -245,17 +256,17 @@ width: 100%;
 .page{
  display:flex;
 flex-direction: column;
-gap: 26px;
+gap: 6px;
 }
 
-img-mission{
+.img-mission{
  margin-top: 5px;
  width:auto;
  height:auto;
 }
    
  .img-value{
-margin-top: 10px;
+margin-top: -18px;
 width: auto;
 height:auto;
       
@@ -263,7 +274,7 @@ height:auto;
 .img-vision{
 width:380px;
 height:auto;
-margin-top: 10px;
+margin-top: -18px;
  }
     
  .text-outline{
@@ -289,4 +300,32 @@ font-weight: 400;
 line-height: 34px;
 padding: 20px;
 }
+.text{
+    
+    font-size: 20px;
+    margin-top: 20px;
+    
+}
+.text p {
+    padding: 10px;
+    font-size: 20px; 
+    font-weight: 400;
+    line-height: 34px;
+}
+.text-layout p{
+    font-size: 20px; 
+}
+.text1 p {
+font-size:20px;
+}
+br{
+    display: none;
+}
+.text1 h3 {
+    margin-top: 20px;
+}
+.text-layout {
+    margin-top: 20px;
+}
+
 }

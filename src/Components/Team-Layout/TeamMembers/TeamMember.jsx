@@ -8,7 +8,7 @@ const TeamMember = () => {
         <section className="TeamPage-holder-tab" >
             <div className="page-holder" >
 
-                <div className="teamboard-tab" data-aos="fade-left" data-aos-duration="1000">
+                <div className="teamboard-tab">
                     <h2 className="team-directors-header">Foundation Staff</h2>
                     <h3 className="team-directors-tab">
                         Our team comprises dedicated individuals who bring diverse expertise and
@@ -32,7 +32,7 @@ const TeamMember = () => {
                         const { id, TeamName, Roles, Names } = page;
 
                         return (
-                            <div className="grid-tab3" data-aos="fade-right" data-aos-duration="1000" key={id}>
+                            <div className="grid-tab3" key={id}>
                                 <div className="grid-tab-texter">{TeamName}</div>
                                 <div className="content-tab">
                                     <p>{Roles}</p>
