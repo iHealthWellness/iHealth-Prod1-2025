@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import "./index.css";
 
 import img1 from "src/Assets/Images/mission.png";
@@ -6,6 +6,57 @@ import img2 from "src/Assets/Images/value.png";
 import img3 from "src/Assets/Images/vision.png";
 
 const Statement = () => {
+
+    const divRef = useRef(null);
+    const divTwoRef = useRef(null);
+    const divThreeRef = useRef(null);
+
+    const [isVisible, setIsVisible] = useState({
+        divRef: false,
+        divTwoRef: false,
+        divThreeRef: false,
+
+    });
+
+
+    useEffect(() => {
+        const handleScroll = () => {
+
+
+            applyVisibleEffect(divRef, "divRef");
+            applyVisibleEffect(divTwoRef, "divTwoRef");
+            applyVisibleEffect(divThreeRef, "divThreeRef");
+        }
+        const applyVisibleEffect = (div, key) => {
+            if (div.current) {
+                const rect = div.current.getBoundingClientRect();
+                const windowHeight =
+                    window.innerHeight || document.documentElement.clientHeight;
+
+                if (rect.top <= windowHeight && rect.bottom >= 0) {
+                    setIsVisible((prevState) => ({
+
+                        ...prevState,
+                        [key]: true
+                    }));
+
+                } else {
+                    setIsVisible((prevState) => ({
+
+                        ...prevState,
+                        [key]: false
+                    }));
+                }
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
+
 
 
     return (
@@ -17,7 +68,9 @@ const Statement = () => {
                         <div className="img-outline">
                             <img src={img1} className="img-mission" alt="mission" />
                         </div>
-                        <div className="text-outline">
+                        {/* <div className="text-outline"> */}
+                        <div className={`text-outline ${isVisible.divRef ? "slide-in" : ""}`}
+                            ref={divRef}>
                             <div className="text">
                                 <p>
                                     At the heart of our endeavor lies a simple yet profound mission: to drive meaningful change by introducing innovative solutions that leave a lasting imprint.
@@ -38,7 +91,8 @@ const Statement = () => {
                         <div>
                             <img src={img2} className="img-value" alt="core-value" />
                         </div>
-                        <div className="text-outline1">
+                        <div className={`text-outline1  ${isVisible.divTwoRef ? "slide-in" : ""}`}
+                            ref={divTwoRef}>
                             <div className="text1">
                                 <div className="text-tab">
                                     <h3>Patient-Centered Care</h3>
@@ -96,7 +150,9 @@ const Statement = () => {
                         <div>
                             <img src={img3} className="img-vision" alt="" />
                         </div>
-                        <div className="text-outline">
+                        {/* <div className="text-outline2"> */}
+                        <div className={`text-outline2 ${isVisible.divThreeRef ? "slide-in" : ""}`}
+                            ref={divThreeRef}>
 
                             <div className="text">
                                 <p>Our aim is to empower patients to take control of their health, collaborate with healthcare providers

@@ -7,6 +7,12 @@
     width: 90%;
     max-width: 1006px;
 }
+.teamboard-tab4{
+    transform: translateX(50%);
+    transition: opacity 0.5s ease-in-out, transform 0.8s ease-in-out; 
+}
+
+
 .grid-tab{
     margin-top: 40px;
     width: 1006px;
@@ -16,7 +22,14 @@
     /* #d6e0f7 */
     border-radius: 10px;
     padding: 20px;
+    /* transform: translateX(50%);
+    transition: opacity 0.5s ease-in-out, transform 0.8s ease-in-out;  */
 }
+.gridd{
+     transform: translateX(50%);
+    transition: opacity 0.5s ease-in-out, transform 0.8s ease-in-out; 
+}
+
 .grid-tab3{
     margin-top: 40px;
     width: 1006px;
@@ -25,8 +38,16 @@
     background-color: #DCE8F2;
     border-radius: 10px;
     padding: 20px; 
+    /* transform: translateX(50%);
+    transition: opacity 0.5s ease-in-out, transform 0.8s ease-in-out;  */
 }
 
+
+.gridd.slide-in,.teamboard-tab4.slide-in
+{
+    opacity: 1;
+    transform: translateX(0);
+}
 .board-image img{
     width:100%;
 }

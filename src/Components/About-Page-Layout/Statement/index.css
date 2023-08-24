@@ -48,10 +48,34 @@
     width:381px;
     height:880px;
     padding: 20px;
+    transform: translateX(50%);
+    transition: opacity 0.5s ease-in-out, transform 0.8s ease-in-out; 
     overflow: hidden;
 
   
 }
+.text-outline.slide-in,
+.text-outline1.slide-in,
+.text-outline2.slide-in {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.text-outline2{
+    background-color:#FFFFFF;
+    border-radius: 0px 0px 20px 20px;
+    width:381px;
+    height:880px;
+    padding: 20px;
+    transform: translateX(50%);
+    transition: opacity 0.5s ease-in-out, transform 0.8s ease-in-out; 
+    overflow: hidden;
+
+  
+}
+
+
+
 
 
 .text{
@@ -106,8 +130,12 @@
     width:381px;
     padding: 20px;
     margin-bottom: 30px;
+    transform: translateX(50%);
+    transition: opacity 0.5s ease-in-out, transform 0.8s ease-in-out; 
   
 }
+
+
 .text1{
     width: 341px;
     font-family: Roboto;
@@ -164,7 +192,6 @@ padding: 20px;
 width: 100%;
 }
 .page{
-display:flex;
 flex-direction: column;
 gap: 20px;
 }
@@ -196,6 +223,13 @@ gap: 20px;
 margin-bottom: 30px;
 }
 
+.text-outline2{
+    width:100%; 
+    height: auto;
+    padding: 20px;
+    gap: 20px;
+    margin-bottom: 30px;
+    }
 .text-outline1{
 background-color:#FFFAFA;
 border-color:#FFFAFA;
@@ -241,46 +275,61 @@ line-height: 34px;
     .img-mission{
         margin-top: 10px;
         width: 100%;
-        height: 340px;
+        height: 240px;
     
     }
 }
 
 /*  Responiveness Mobile view */
 @media only screen and (max-width:480px){
-.container{
+/* .container{
 margin:0 auto;
-width: 100%;
- }
+width: 90%;
+ } */
     
+ .pageholder{
+
+    background-color:#ffff;
+    overflow-x: hidden;
+
+    
+}
 .page{
  display:flex;
 flex-direction: column;
+justify-content: center;
 gap: 6px;
 }
 
 .img-mission{
- margin-top: 5px;
- width:auto;
- height:auto;
+    margin-top: 2px;
+    width: 90%;
+    height: 125px;
+    margin-left: 15px;
 }
    
  .img-value{
 margin-top: -18px;
 width: auto;
 height:auto;
+width: 90%;
+height: 145px;
+margin-left: 15px;
       
 }
 .img-vision{
-width:380px;
-height:auto;
 margin-top: -18px;
+width: 90%;
+height: 125px;
+margin-left: 15px;
+
  }
     
  .text-outline{
- width:100%;
- padding: 20px;
- height:auto;
+    margin-top: -25px;
+    width: 100%;
+    padding: 10px;
+    height: auto;
 }
 
 .text-outline1{

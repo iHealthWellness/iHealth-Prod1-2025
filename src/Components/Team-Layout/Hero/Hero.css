@@ -15,21 +15,23 @@
 }
 .Hero-Header{
     margin-top: 10px;
-    background: #f0f7fd url("src/Assets/Images/teamwork.png")no-repeat;
-    background-size: cover;
-    position:relative;
-    height:389px;
-    display: flex;
-    padding: 120px;
-    justify-content: end;
-    align-items: end;
-    margin-bottom: 25px;
+   
+}
+.Teamss-image-tab{
+    position: relative;
+    height:320px; 
+    margin: 0 auto;
+    width: 100% !important;
+    max-width: 1216px;
 }
 .Hero-btn{
-width: 233px;
-height: 96px;
-border-radius: 15px;
-background-color: #07235B;
+    position: absolute;
+    top:320px;
+    left:1040px;
+    width: 233px;
+    height: 96px;
+    border-radius: 15px;
+    background-color: #07235B;
 
 
 }
@@ -53,6 +55,7 @@ text-align: center;
 color:#0386D0;
 
 }
+
 .text-tab-tab{
     display: flex;
     justify-content: center;
@@ -61,9 +64,9 @@ color:#0386D0;
 } 
 .text-tab-image{
     position: absolute;
-    top:-170px;
-    left:196px;
-    width: 384px;
+    top:-100px;
+    left:296px;
+    width: 284px;
    
 }
 .tab-holder-tab{
@@ -80,6 +83,8 @@ color:#0386D0;
    text-align: left;
    width:797px;
    color:#07235B;
+   transform: translateX(50%);
+    transition: opacity 0.5s ease-in-out, transform 0.8s ease-in-out; 
 
 
 }
@@ -101,63 +106,39 @@ color:#0386D0;
    letter-spacing: 0em;
    text-align: justify;
    color:#07235B;
-   /* padding: 25px; */
+   transform: translateX(50%);
+    transition: opacity 0.5s ease-in-out, transform 0.8s ease-in-out; 
+   
+}
+.text-team.slide-in,
+.team-highlight.slide-in{
+    opacity: 1;
+    transform: translateX(0);
 }
 
 
-@media only screen and (max-width:1024px){
-
-    .text-tab-image{
-        position: absolute;
-        top:-140px;
-        left:76px;
-    
-       
-    }
-    .Hero-btn
-    {
-        position: absolute;
-        top:215px;
-        left:820px;
-        width: 233px;
-        height: 96px;
-        border-radius: 15px;
-        background-color: #07235B;
-        margin-left:-200px ;
-        
-        }
-
-}
 
     @media only screen and (max-width:820px){
 
     
 .Hero-Header{
     margin-top: 10px;
-    background: #f0f7fd url("src/Assets/Images/teamwork.png")no-repeat;
-    background-size: cover;
-    position:relative;
-    height:389px;
-    display: flex;
-    padding: 120px;
-    justify-content: end;
-    align-items: end;
-    margin-bottom: 25px;
+    
 }
 
-.text-tab-image{
+/* .text-tab-image{
     position: absolute;
     top:325px;
     left:80px;
     width: 284px;
    
-}
+} */
 .text-tab-image {
     position: absolute;
-    height:408px;
-    top: -134px;
-    left: 15px;
-    width: 384px;
+    height:308px;
+    top: -74px;
+    left: 35px;
+    width: 304px;
 }
 
 .text-tab-tab{
@@ -198,7 +179,7 @@ color:#0386D0;
     {
         position: absolute;
         top:255px;
-        left:720px;
+        left:570px;
     }
 
 }
@@ -211,17 +192,12 @@ color:#0386D0;
 /*mobile screen  */
 @media only screen and (max-width:414px){
 
-    .Hero-Header{
-        background: #f0f7fd url("src/Assets/Images/teamwork.png")no-repeat;
-        background-size: contain;
-        
-        position:relative;
-        height:10px;
-        margin-bottom:-60px;
-        justify-content: none;
-        align-items: none;
+    .Teamss-image-tab {
+    
+        height: auto ;
+       
     }
-
+    
     .text-tab-tab{
         display: flex;
         flex-direction: column;
@@ -230,13 +206,11 @@ color:#0386D0;
     } 
     .Hero-btn{
         position: absolute;
-        top:77px;
-        left:470px;
+        top:137px;
+        left:270px;
         width: 100px;
         height: 50px;
-        /* margin-left: -20px; */
-        border-radius: 15px;
-        background-color: #07235B;
+       
     }
     .Hero-text{
         font-family: Roboto;
