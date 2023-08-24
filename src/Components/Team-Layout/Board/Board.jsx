@@ -1,4 +1,6 @@
-import Image from "src/Assets/Images/sasika.png";
+import { useState, useRef, useEffect } from "react";
+
+import Image from "src/Assets/Images/Sasikaa.png";
 import Image1 from "src/Assets/Images/Jeff.png";
 import Image2 from "src/Assets/Images/Mathias.png";
 import Image3 from "src/Assets/Images/Joseph.png";
@@ -17,10 +19,69 @@ import plusLogo from "src/Assets/Icons/ic_round-plus.svg";
 import roundedFrame from "src/Assets/Icons/rounded-frame.svg"
 
 
-import { useState } from "react";
-
 import "./Board.css";
 const Board = () => {
+
+    const divRef = useRef(null);
+    const divTwoRef = useRef(null);
+    const divThreeRef = useRef(null);
+    const divFourRef = useRef(null);
+    const divFiveRef = useRef(null);
+    const divSixRef = useRef(null);
+
+    const [isVisible, setIsVisible] = useState({
+        divRef: false,
+        divTwoRef: false,
+        divThreeRef: false,
+        divFourRef: false,
+        divFiveRef: false,
+        divSixRef: false,
+
+    });
+
+
+    useEffect(() => {
+        const handleScroll = () => {
+
+
+            applyVisibleEffect(divRef, "divRef");
+            applyVisibleEffect(divTwoRef, "divTwoRef");
+            applyVisibleEffect(divThreeRef, "divThreeRef");
+            applyVisibleEffect(divFourRef, "divFourRef");
+            applyVisibleEffect(divFiveRef, "divFiveRef");
+            applyVisibleEffect(divSixRef, "divSixRef");
+        }
+        const applyVisibleEffect = (div, key) => {
+            if (div.current) {
+                const rect = div.current.getBoundingClientRect();
+                const windowHeight =
+                    window.innerHeight || document.documentElement.clientHeight;
+
+                if (rect.top <= windowHeight && rect.bottom >= 0) {
+                    setIsVisible((prevState) => ({
+
+                        ...prevState,
+                        [key]: true
+                    }));
+
+                } else {
+                    setIsVisible((prevState) => ({
+
+                        ...prevState,
+                        [key]: false
+                    }));
+                }
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
+
+
 
 
     const [selectedCard, setSelectedCard] = useState(null);
@@ -98,7 +159,8 @@ const Board = () => {
             )}
             <div id="Board" className="page-holder">
 
-                <div className="teamboard-tab">
+                <div className={`teamboard-tab ${isVisible.divRef ? "slide-in" : ""}`}
+                    ref={divRef}>
 
                     <h2 className="team-directors-header">  Board of Directors</h2>
 
@@ -108,7 +170,8 @@ const Board = () => {
                 </div>
 
 
-                <div className="board-directors-tab">
+                <div className={`board-directors-tab  ${isVisible.divTwoRef ? "slide-in" : ""}`}
+                    ref={divTwoRef}>
 
                     <div className="board-image" onClick={handleCardClick}>
 
@@ -138,7 +201,8 @@ const Board = () => {
                 </div>
 
 
-                <div className="board-directors-tab">
+                <div className={`board-directors-tab2  ${isVisible.divThreeRef ? "slide-in" : ""}`}
+                    ref={divThreeRef}>
 
                     <div className="board-image" onClick={handleCardClick2}>
 
@@ -163,7 +227,9 @@ const Board = () => {
 
                 </div>
 
-                <div id="Advisory" className="teamboard-tab">
+                <div id="Advisory" className={`teamboard-tab2 ${isVisible.divFourRef ? "slide-in" : ""}`}
+                    ref={divFourRef}>
+
                     <h2 className="team-directors-header">Advisory Council</h2>
                     <h3 className="team-directors-tab"> The Advisory Committee for our health and wellness startup serves as a group
                         of experienced advisors who provide valuable insights, guidance, and expertise.
@@ -173,7 +239,9 @@ const Board = () => {
                 </div>
 
 
-                <div className="board-directors-tab" >
+                <div className={`board-directors-tab3 ${isVisible.divFiveRef ? "slide-in" : ""}`}
+                    ref={divFiveRef}>
+
 
                     <div className="board-image" onClick={handleCardClick4}>
 
@@ -198,7 +266,8 @@ const Board = () => {
 
                 </div>
 
-                <div className="board-directors-tab1">
+                <div className={`board-directors-tab1 ${isVisible.divSixRef ? "slide-in" : ""}`}
+                    ref={divSixRef}>
                     <div className="board-image" onClick={handleCardClick5}>
                         <img className="img-holder" src={Image6} alt="" />
 

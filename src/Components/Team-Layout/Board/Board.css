@@ -11,6 +11,14 @@
 
     
 }
+.teamboard-tab{
+    transform: translateX(50%);
+    transition: opacity 0.5s ease-in-out, transform 0.8s ease-in-out;
+}
+.teamboard-tab2{
+    transform: translateX(50%);
+    transition: opacity 0.5s ease-in-out, transform 0.8s ease-in-out;
+}
 .team-directors-header{
     padding-top: 70px;
     font-family: Roboto;
@@ -77,8 +85,36 @@
     display: flex;
     justify-content: space-evenly;
     position: relative;
+    transform: translateX(50%);
+    transition: opacity 0.5s ease-in-out, transform 0.8s ease-in-out; 
     /* gap:70px; */
 }
+.board-directors-tab2{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    transform: translateX(50%);
+    transition: opacity 0.5s ease-in-out, transform 0.8s ease-in-out; 
+}
+.board-directors-tab3{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    transform: translateX(50%);
+    transition: opacity 0.5s ease-in-out, transform 0.8s ease-in-out; 
+}
+.board-directors-tab1{
+    transform: translateX(50%);
+    transition: opacity 0.5s ease-in-out, transform 0.8s ease-in-out; 
+}
+.teamboard-tab.slide-in,.board-directors-tab.slide-in,.board-directors-tab1.slide-in,
+.board-directors-tab2.slide-in,
+.board-directors-tab3.slide-in,.teamboard-tab2.slide-in
+{
+    opacity: 1;
+    transform: translateX(0);
+}
+
 
 
 .popup-overlay {

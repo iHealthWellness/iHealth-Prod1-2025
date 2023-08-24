@@ -2,6 +2,7 @@
 .finance-page{
     text-align: center;
     overflow-x: hidden;
+    margin-top: 5px;
 }
 
  .financial-analysis-tab{
@@ -56,7 +57,10 @@
     display:flex;
     justify-content:center;
     gap: 125px;
+    transform: translateX(50%);
+    transition: opacity 0.5s ease-in-out, transform 0.8s ease-in-out; 
     overflow-x: hidden;
+    margin-bottom: 20px;
 
 }
 
@@ -89,10 +93,19 @@ border-radius: 20px;
     display:flex;
     justify-content:center;
      gap:25px;
+     transform: translateX(50%);
+     transition: opacity 0.5s ease-in-out, transform 0.8s ease-in-out; 
+   
      overflow-x: hidden;
 }
 .analysis-img{
     margin-top: 20px;
+}
+.chart-analysis-tab.slide-in,
+.trans-outline.slide-in
+{
+    opacity: 1;
+    transform: translateX(0);
 }
 
 
@@ -196,7 +209,7 @@ font-size: 30px;
         margin:auto;
         width:100%;
         font-family: Roboto;
-        font-size: 22px;
+        font-size: 22px !important;
         
       
       }

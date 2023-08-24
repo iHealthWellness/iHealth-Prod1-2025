@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import "./index.css";
 
 import img4 from "src/Assets/Images/Financial-Transparency.png";
@@ -17,6 +17,54 @@ import img18 from "src/Assets/Images/pie-chart1.png";
 
 
 const Finance = () => {
+    const divRef = useRef(null);
+    const divTwoRef = useRef(null);
+
+
+    const [isVisible, setIsVisible] = useState({
+        divRef: false,
+        divTwoRef: false,
+
+
+    });
+
+
+    useEffect(() => {
+        const handleScroll = () => {
+
+            applyVisibleEffect(divRef, "divRef");
+            applyVisibleEffect(divTwoRef, "divTwoRef");
+        }
+        const applyVisibleEffect = (div, key) => {
+            if (div.current) {
+                const rect = div.current.getBoundingClientRect();
+                const windowHeight =
+                    window.innerHeight || document.documentElement.clientHeight;
+
+                if (rect.top <= windowHeight && rect.bottom >= 0) {
+                    setIsVisible((prevState) => ({
+
+                        ...prevState,
+                        [key]: true
+                    }));
+
+                } else {
+                    setIsVisible((prevState) => ({
+
+                        ...prevState,
+                        [key]: false
+                    }));
+                }
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
+
 
 
     return (
@@ -28,7 +76,8 @@ const Finance = () => {
                     <h4>Our revenue is generated through the following business activities.</h4>  </div>
             </div>
 
-            <div className="trans-outline">
+            <div className={`trans-outline ${isVisible.divRef ? "slide-in" : ""}`}
+                ref={divRef}>
                 <div className="grid-outline">
                     <div className="grid">
                         <img src={img6} className="grid1" alt="tag1" />
@@ -76,7 +125,8 @@ const Finance = () => {
 
 
 
-            <div className="chart-analysis-tab">
+            <div className={`chart-analysis-tab ${isVisible.divTwoRef ? "slide-in" : ""}`}
+                ref={divTwoRef}>
                 <div>
                     <h2>Expenses</h2>
                     <img src={img17} className="analysis-img" alt="pie-chart" /> </div>

@@ -4,7 +4,7 @@
 .terms-condition-tab{
     
      /* background:rgba(160, 226, 252, 0.7) url("/src/Assets/Images/still-life-with-scales-justice.png"); */
-     background-image:linear-gradient(to bottom,rgba(160, 226, 252, 0.3),rgba(160, 226, 252, 0.5)),url("/src/Assets/Images/still-life-with-scales-justice.png");
+     background-image:linear-gradient(to bottom,rgba(160, 226, 252, 0.3),rgba(160, 226, 252, 0.3)),url("/src/Assets/Images/still-life-with-scales-justice.png");
    /* background-image:linear-gradient(to bottom,rgba(215, 211, 241, 0.7),rgba(223, 226, 228, 0.7)),url("/src/Assets/Images/still-life-with-scales-justice.png"); */
    background-repeat: no-repeat;
    background-size:cover;
