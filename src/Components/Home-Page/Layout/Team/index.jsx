@@ -2,7 +2,7 @@ import "./index.css";
 
 const Team = () => {
   return (
-    <section className="team-container">
+    <section id="Home-page-team-container" className="team-container">
       <h2 className="team-heading-h2">
         <span>Join Your Community:</span> Stronger Together
       </h2>
