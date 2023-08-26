@@ -16,6 +16,7 @@ import mobileLogo from "../../../Assets/Brand/logo-nav-mobile.png";
 import NavDropdownButton from "./NavDropdown";
 import Login from "../UserAuthentication/Login/Login";
 import UnderConstruction from "src/Components/Under-Construction/UnderConstruction";
+import ToTopBtn from "src/Components/About-Page-Layout/TotopBtn";
 
 
 
@@ -181,37 +182,19 @@ const MenuList = () => {
 const SignUpSignIn = () => {
   return (
     <li className="nav-links-listitem nav-dropdown">
-      <NavLink  className="nav-links nav-signin"  to={"/"}  onClick={() => {document.querySelector("#Login-Main-Container").style.display = "flex";}}>
+      <NavLink  className="nav-links nav-signin" >
         <AccountCircleIcon className="circle-icon"  sx={{ fontSize: 32, marginLeft: 0 }} sm={{ fontSize: 48 }} />
         <span className="nav-signin-span">Sign In or Sign Up</span>
       </NavLink>
       <div className="nav-dropdown-content ">
-        <a
-          onClick={() => {
-            document.querySelector("#UnderConst-wrapper").style.display =
-              "flex";
-          }}
-          href="#"
-        >
+        <a onClick={() => {document.querySelector("#Login-Main-Container").style.display = "flex";}} href="#">
           Sign In
         </a>
-        <a
-          onClick={() => {
-            document.querySelector("#UnderConst-wrapper").style.display =
-              "flex";
-          }}
-          href="#"
-        >
+        <a onClick={() => {document.querySelector("#UnderConst-wrapper").style.display = "flex";}} href="#">
           Sign Up Now
         </a>
-        <a
-          onClick={() => {
-            document.querySelector("#UnderConst-wrapper").style.display =
-              "flex";
-          }}
-          href="#"
-        >
-          Donate as a Guest
+        <a onClick={() => {document.querySelector("#UnderConst-wrapper").style.display = "flex";}} href="#">
+          Donate as Guest
         </a>
       </div>
     </li>
@@ -241,14 +224,7 @@ const Navbar = () => {
 
               {/* Donate Link */}
               <li className="nav-links-listitem">
-                <NavLink
-                  onClick={() => {
-                    document.querySelector(
-                      "#UnderConst-wrapper"
-                    ).style.display = "flex";
-                  }}
-                  className="nav-links nav-donate"
-                >
+                <NavLink to="/donate" className="nav-links nav-donate">
                   Donate
                 </NavLink>
               </li>
@@ -263,6 +239,11 @@ const Navbar = () => {
 
     {/* Coming Soon/Under Construction Component ** This component should be executed here So that from all components can be reachable !!! */}
     <UnderConstruction />
+    
+    {/* This component for Go To top of the page button  */}
+    <ToTopBtn />
+
+
     </>
   );
 };

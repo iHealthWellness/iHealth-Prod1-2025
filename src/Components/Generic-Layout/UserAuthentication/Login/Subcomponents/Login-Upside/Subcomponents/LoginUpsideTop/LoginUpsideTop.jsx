@@ -17,7 +17,7 @@ function LoginUpsideTop()
             <h2>Welcome</h2>
             <div>
                 <p>Login</p>
-                <a href='/register'>Register</a>
+                <a onClick={() => {document.querySelector("#UnderConst-wrapper").style.display = "flex";}} >Register</a>
             </div>
         </div>
     </>
