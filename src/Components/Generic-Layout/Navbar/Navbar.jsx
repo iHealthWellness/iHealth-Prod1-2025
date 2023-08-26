@@ -218,16 +218,16 @@ const Navbar = () => {
             {/* Menu List*/}
             <MenuList />
 
-            <ul className="nav-links-list-signup-donate">
+            <ul className="nav-links-list">
+              {/* SignIn & Signup */}
+              <SignUpSignIn />
+
               {/* Donate Link */}
               <li className="nav-links-listitem">
                 <NavLink to="/donate" className="nav-links nav-donate">
                   Donate
                 </NavLink>
               </li>
-
-              {/* SignIn & Signup */}
-              <SignUpSignIn />
             </ul>
           </div>
         </div>
