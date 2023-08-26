@@ -4,7 +4,10 @@
     flex-direction: column;
     place-items: center;
     gap:2rem;
+    padding-top: 2rem;
+    transform: scale3d(0.7, 0.71, 1);
     scroll-snap-align: start;
+
 }
 
 
