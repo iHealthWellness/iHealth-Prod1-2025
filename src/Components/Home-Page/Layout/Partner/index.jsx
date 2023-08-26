@@ -18,7 +18,7 @@ import PartnerImageContainer from "./PartnerImageContainer";
 
 const Partner = () => {
   return (
-    <section className="partner-container">
+    <section id="Home-page-partner-container" className="partner-container">
       <div className="partner-heading-block">
         <h2 className="partner-heading">
           Discover Our Innovative Solutions for Medical and Wellness Practices,
