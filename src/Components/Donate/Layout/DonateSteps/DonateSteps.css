@@ -1,0 +1,185 @@
+#Donate-Steps-Wrapper
+{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Set Css rules for Header text wrapper div element */
+#Donate-Steps-Wrapper > div:first-child
+{
+    background-color: #07235B;
+    padding: 3.75rem 0.625rem 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+    align-self: stretch;
+    border-radius: 2.5rem 2.5rem 0rem 0rem;
+}
+
+/* Set Css rules for Header text wrapper div`s h3 element */
+#Donate-Steps-Wrapper > div:first-child > h3
+{
+    color:  #F0F7FD;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%;
+}
+
+/* Set Css rules for Header text wrapper div`s p element */
+#Donate-Steps-Wrapper > div:first-child > p
+{
+    color: #0D99FF;
+    font-family: Roboto;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 143%;
+    text-align: center;
+}
+
+
+
+
+/* ========== Set Css rules for wrapper element of articles with pictures and text ==========*/
+#Donate-Steps-Wrapper > div:last-child
+{
+    display: flex;
+    flex-direction: row;
+    place-content: space-between;
+    transform: translateY(-32px);
+}
+
+#Donate-Steps-Wrapper > div:last-child > article
+{
+    background-color: #fff;
+    border-radius: 1.875rem;
+    display: flex;
+    flex-direction: column;
+    padding:0.7rem 0.5rem;
+    max-width: 45%;
+    gap: 1rem;
+    transition: transform 2s ease-in-out,translate 2s ease-in, width 1ms ease ;
+}
+
+#Donate-Steps-Wrapper > div:last-child > article > img
+{
+    width: 97%;
+    aspect-ratio: 16/6.5;
+    object-fit: cover;
+    border-radius: 2.5rem;
+    object-position: 0 31%;
+    align-self: center;
+}
+
+#Donate-Steps-Wrapper > div:last-child > article > div 
+{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+#Donate-Steps-Wrapper > div:last-child > article > div > p:first-child
+{
+    color: #000;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%; /* 1.65rem */
+}
+    
+#Donate-Steps-Wrapper > div:last-child > article > div > p:nth-child(2)
+{
+    color: #0D99FF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 143%; /* 2.145rem */
+}
+
+#Donate-Steps-Wrapper > div:last-child > article > div > div
+{
+    padding-left: 2rem;
+}
+
+#Donate-Steps-Wrapper > div:last-child > article > div > div > p
+{
+    color: #8B9094;
+    font-family: Roboto;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 143%; /* 1.7875rem */
+}
+
+#Donate-Steps-Wrapper > div:last-child > article > div > div > p::before
+{
+    content: "\2022  ";
+
+}
+
+
+/* ============================================ Responsıve Css Rules ============================================ */
+@media only screen and (max-width: 911px) 
+{
+    #Donate-Steps-Wrapper > div:last-child 
+    {
+        place-content: center;
+        gap: 1rem;
+    }
+}
+
+@media only screen and (max-width: 800px) 
+{
+    #Donate-Steps-Wrapper > div:last-child > article > div > p:first-child 
+    {
+        font-size: 3.1dvw;
+    }
+
+    #Donate-Steps-Wrapper > div:last-child > article > div > p:nth-child(2) 
+    {
+        font-size: 3.1dvw;
+    }
+
+    #Donate-Steps-Wrapper > div:last-child > article > div > div > p 
+    {
+        font-size: 2.5dvw;
+    }
+}
+
+
+@media only screen and (max-width: 479px) 
+{
+    #Donate-Steps-Wrapper > div:last-child 
+    {
+        flex-direction: column;
+    }
+    #Donate-Steps-Wrapper > div:last-child > article 
+    {
+        max-width: 100%;
+    }
+
+    #Donate-Steps-Wrapper > div:last-child > article > div > p:first-child 
+    {
+        font-size: 4.1dvw;
+    }
+
+    #Donate-Steps-Wrapper > div:last-child > article > div > p:nth-child(2) 
+    {
+        font-size: 4.1dvw;
+    }
+
+    #Donate-Steps-Wrapper > div:last-child > article > div > div > p 
+    {
+        font-size: 3.5dvw;
+        padding-bottom: 0.5rem;
+    }
+}

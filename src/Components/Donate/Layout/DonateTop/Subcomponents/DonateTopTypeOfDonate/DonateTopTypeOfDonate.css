@@ -1,0 +1,250 @@
+#Donate-Top-TypeOfDonate
+{
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 0rem 0 0rem;
+}
+
+/* ==================== Set Css rules for TypeOfDonate component`s text section ==================== */
+
+/* Set Css rules for wrapper of all text elements */
+#Donate-Top-TypeOfDonate > div:first-child
+{
+    border-radius: 2.5rem;
+    background-color: #07235B;
+    display: flex;
+    flex-direction: row;
+    padding: 2rem 1.5rem 7rem 1.5rem;
+    gap: 5rem;
+    max-width: 95vw;
+}
+
+
+
+/* ===== Set Css rules div wrapper element for h2 and p as header for explanation text (left side of the text elements) =====  */
+
+#Donate-Top-TypeOfDonate > div:first-child > div:first-child
+{
+    flex: 20 0 auto;
+    place-self: center;
+    padding: 2rem;
+}
+
+#Donate-Top-TypeOfDonate > div:first-child > div:first-child > h2
+{
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%; 
+    text-align: center;
+}
+
+#Donate-Top-TypeOfDonate > div:first-child > div:first-child > h2 > span
+{
+    color:  #0D99FF;
+    font-family: Roboto;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 143%;
+}
+
+/* ===== Set Css rules div wrapper element for h2 and p as header for explanation text =====  */
+
+
+
+#Donate-Top-TypeOfDonate > div:first-child > div:last-child 
+{
+    flex-direction: column;
+    display: flex;
+    place-content: center;
+    flex: 9 1 auto;
+}
+
+/* Set Css rules for explanation text as p element (right side of the text elements)  */
+#Donate-Top-TypeOfDonate > div:first-child > div:last-child > p
+{
+    /* flex: 1 0 50%; */
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 143%;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+
+/* ==================== Set Css rules for TypeOfDonate component`s text section ==================== */
+
+
+
+
+/* ==================== Set Css rules for TypeOfDonate component`s Cards with icons section ==================== */
+
+/* Set Css rules for wrapper of articles with icon and text */
+#Donate-Top-TypeOfDonate > div:last-child
+{
+    display: flex;
+    flex-direction: row;
+    place-content: space-evenly;
+}
+
+/* Set Css rules for both article elements */
+#Donate-Top-TypeOfDonate > div:last-child > *
+{
+    background-color: #FFF;
+    border-radius: 0.9375rem;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    align-items: center;
+    padding: 2rem;
+    max-width: 25%;
+    transition: transform 2s ease-in-out,translate 2s ease-in, width 1ms ease ;
+    translate: 0 -87px;
+    
+}
+
+
+
+
+
+/* Set Css rules for both article elements` images */
+#Donate-Top-TypeOfDonate > div:last-child > * > img 
+{
+    background: #DCE8F2;
+    padding: 1rem 1.125rem;
+    border-radius: 0.9375rem;
+}
+
+/* Set Css rules for both article elements` first p element right under the icon */
+#Donate-Top-TypeOfDonate > div:last-child > * > p:nth-child(2)
+{
+    color: #000;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; 
+    margin-top: 0.7rem;
+}
+
+/* Set Css rules for both article elements` second p element text */
+#Donate-Top-TypeOfDonate > div:last-child > * > p:nth-child(3)
+{
+    color: #8B9094;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 143%; 
+    margin-top: 1rem;
+}
+
+/* Set Css rules for both article elements` button element text */
+#Donate-Top-TypeOfDonate > div:last-child > * > button
+{
+    all: unset;
+    padding: 0.4rem 1rem;
+    border-radius: 0.625rem;
+    background: #0D99FF;
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 1.2rem */
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+/* ==================== Set Css rules for TypeOfDonate component`s Cards with icons section ==================== */
+
+
+
+/* ============================================ Responsıve Css Rules ============================================ */
+@media only screen and (max-width: 1300px) 
+{
+    #Donate-Top-TypeOfDonate > div:first-child > div:first-child 
+    {
+        flex: 20 1 auto;
+    }
+
+    #Donate-Top-TypeOfDonate > div:last-child > * 
+    {
+        
+        max-width: 31%;
+    }
+}
+
+@media only screen and (max-width: 911px) 
+{
+    /* Set Css rules for wrapper of all text elements */
+    #Donate-Top-TypeOfDonate > div:first-child
+    {
+        flex-direction: column;
+        gap: 0rem;
+    }
+
+    #Donate-Top-TypeOfDonate > div:last-child 
+    {
+        place-content: center;
+        gap: 1rem;
+    }
+}
+
+@media only screen and (max-width: 800px) 
+{
+    #Donate-Top-TypeOfDonate > div:last-child > * 
+    {
+        max-width: 34dvw;
+    }
+
+
+    #Donate-Top-TypeOfDonate > div:last-child > * > p:nth-child(2) 
+    {
+        font-size: 2.2dvw;
+    }
+
+    #Donate-Top-TypeOfDonate > div:last-child > * > p:nth-child(3) 
+    {
+       font-size: 2.5dvw;
+    }
+}
+
+
+@media only screen and (max-width: 479px) 
+{
+    #Donate-Top-TypeOfDonate > div:last-child
+    {
+        flex-direction: column;
+    }
+
+  
+    #Donate-Top-TypeOfDonate > div:last-child > * 
+    {
+        max-width: 100%;
+    }
+
+    #Donate-Top-TypeOfDonate > div:last-child > * > p:nth-child(2) 
+    {
+        font-size: 3.2dvw;
+    }
+
+    #Donate-Top-TypeOfDonate > div:last-child > * > p:nth-child(3) 
+    {
+       font-size: 3.5dvw;
+    }
+
+    #Donate-Top-Wrapper 
+    {
+         margin-bottom: 0rem;
+    }
+}   
