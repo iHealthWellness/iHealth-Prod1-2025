@@ -1,14 +1,23 @@
+//Import Libraries/Packages
 import React from "react";
 import { NavLink, Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
-import NavDropdownButton from "./NavDropdown";
 
-
-import desktopLogo from "src/Assets/Brand/logo-nav-desktop.png";
-import mobileLogo from "src/Assets/Brand/logo-nav-mobile.png";
-import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+//Import Styles
 import "./Navbar.css";
+import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+
+//Import Local files
+import desktopLogo from "../../../Assets/Brand/logo-nav-desktop.png";
+import mobileLogo from "../../../Assets/Brand/logo-nav-mobile.png";
+
+//Import Local Components
+import NavDropdownButton from "./NavDropdown";
+import Login from "../UserAuthentication/Login/Login";
+import UnderConstruction from "src/Components/Under-Construction/UnderConstruction";
+
+
 
 /* 
   ===========================================================
@@ -115,23 +124,23 @@ const MenuList = () => {
         },
         {
           title: "Individual Donation",
-          url: "/donate/#",
+          url: "/donate/#Donate-Top-TypeOfDonate",
         },
         {
           title: " Make a Corporate Donation",
-          url: "/donate/#",
+          url: "/donate/#Donate-Top-TypeOfDonate",
         },
         {
           title: "Fundraise on Facebook",
-          url: "/donate/#",
+          url: "/donate/#Donate-Steps-Wrapper",
         },
         {
           title: "Create Your Own Fundraiser",
-          url: "/donate/#",
+          url: "/donate/#Donate-Steps-Wrapper",
         },
         {
           title: "Raise $500 in 10 days",
-          url: "/donate/#",
+          url: "/donate/#Donate10Days-Main-Container",
         },
       ],
     },
@@ -172,18 +181,8 @@ const MenuList = () => {
 const SignUpSignIn = () => {
   return (
     <li className="nav-links-listitem nav-dropdown">
-      <NavLink
-        className="nav-links nav-signin"
-        to={"/"}
-        onClick={() => {
-          document.querySelector("#UnderConst-wrapper").style.display = "flex";
-        }}
-      >
-        <AccountCircleIcon
-          className="circle-icon"
-          sx={{ fontSize: 32, marginLeft: 0 }}
-          sm={{ fontSize: 48 }}
-        />
+      <NavLink  className="nav-links nav-signin"  to={"/"}  onClick={() => {document.querySelector("#Login-Main-Container").style.display = "flex";}}>
+        <AccountCircleIcon className="circle-icon"  sx={{ fontSize: 32, marginLeft: 0 }} sm={{ fontSize: 48 }} />
         <span className="nav-signin-span">Sign In or Sign Up</span>
       </NavLink>
       <div className="nav-dropdown-content ">
@@ -224,6 +223,7 @@ const Navbar = () => {
   // Menu Lists
 
   return (
+    <>
     <nav className="nav-container">
       <div className="nav-inner-container">
         <NavDropdownButton />
@@ -257,6 +257,13 @@ const Navbar = () => {
         </div>
       </div>
     </nav>
+
+    {/* Login Component ** This component should be executed here So that from all components can be reachable !!! */}
+    <Login />
+
+    {/* Coming Soon/Under Construction Component ** This component should be executed here So that from all components can be reachable !!! */}
+    <UnderConstruction />
+    </>
   );
 };
 
@@ -267,6 +274,7 @@ export default Navbar;
 const Navbar = () => {
   
   return (
+    <>
     <nav className="nav-container">
       <div className="nav-inner-container">
         <NavDropdownButton />
@@ -354,7 +362,7 @@ const Navbar = () => {
                   <span className="nav-signin-span">Sign up or Log In</span>
                 </NavLink>
                 <div className="nav-dropdown-content ">
-                  <a href="#">Sign In</a>
+                  <a href="#" onClick={() => {document.querySelector("#Login-Main-Container").style.display = "flex";}} >Sign In</a>
                   <a href="#">Sign Up Now</a>
                   <a href="#">Donate as a Guest</a>
                 </div>
@@ -367,8 +375,10 @@ const Navbar = () => {
             </ul>
           </div>
         </div>
-      </div>
-    </nav>
+        </div>
+      </nav>
+
+      
   );
 };
 */
