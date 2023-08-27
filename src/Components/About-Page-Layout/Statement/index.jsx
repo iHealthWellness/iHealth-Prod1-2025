@@ -110,7 +110,7 @@ const Statement = () => {
 
 
 
-                                </div><br />
+                                </div>
 
                                 <div className="text-tab">
                                     <h3>Integrity</h3>
@@ -124,7 +124,7 @@ const Statement = () => {
                                     <p>We are committed to being a responsible and contributing member of
                                         society. As a global non-profit, we will prioritize our users' needs over profits and will invest our
                                         resources back into the community.
-                                    </p></div><br />
+                                    </p></div>
 
                                 <div className="text-tab">
                                     <h3>Collaboration</h3>
@@ -132,14 +132,14 @@ const Statement = () => {
                                         strive to foster partnerships with healthcare providers, patient advocacy groups, and other
                                         stakeholders to ensure the best outcomes for our users.
                                     </p>
-                                </div><br />
+                                </div>
 
                                 <div className="text-outline-color-change">
                                     <h3>Professionalism</h3>
                                     <p>We pride ourselves on maintaining a professional and respectful environment
                                         for our users, partners, and employees. We will always operate with the utmost professionalism,
                                         following industry standards and regulations.</p>
-                                </div><br />
+                                </div>
 
                             </div>
                         </div>

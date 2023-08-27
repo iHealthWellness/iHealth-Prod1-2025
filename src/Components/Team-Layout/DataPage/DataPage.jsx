@@ -55,7 +55,7 @@ const DataPage = [
         id: 8,
         TeamName: "Marketing and Public Relations ",
         Roles: "Marketing Managers,PR Specialists, Communications Managers  ",
-        Names: ["Mahmood Rizvi,Nelson Izah, Sean Banks"],
+        Names: ["Nelson Izah", "Sean Banks"],
 
     },
     {
@@ -83,7 +83,7 @@ const DataPage = [
         id: 12,
         TeamName: "Research and Innovation ",
         Roles: " Research Scientists, Innovation Strategists, R&D Specialists ",
-        Names: ["Marcella Sarti Souza", "MD"],
+        Names: ["Marcella Sarti Souza MD"],
 
     },
 

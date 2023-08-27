@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import "./index.css";
 
-import img4 from "src/Assets/Images/Financial-Transparency.png";
+import img4 from "src/Assets/Images/finance.png";
 import img5 from "src/Assets/Images/bar.png";
 import img6 from "src/Assets/Icons/Vector1.png";
 import img7 from "src/Assets/Icons/Vector2.png";
@@ -70,11 +70,18 @@ const Finance = () => {
     return (
         <section id="Finance" className="finance-page ">
 
-            <div className="financial-analysis-tab">
-                <div className="trans-Image"><img src={img4} className="trans-Image" alt="Financial-Transparency" /></div>
-                <div className="financial-outline"> <h2>Revenue Generation</h2>
-                    <h4>Our revenue is generated through the following business activities.</h4>  </div>
+            <div className="container">
+                <div className="financial-analysis-tab">
+                    <div>
+                    <div className="trans-Image"><img src={img4} className="trans-Image" alt="Financial-Transparency" />
+                    <h3 className="text-finance">Financial Transparency</h3></div>
+                    </div>
+                    
+                    <div className="financial-outline"> <h2>Revenue Generation</h2>
+                        <h4>Our revenue is generated through the following business activities.</h4>  </div>
+                </div>
             </div>
+
 
             <div className={`trans-outline ${isVisible.divRef ? "slide-in" : ""}`}
                 ref={divRef}>
