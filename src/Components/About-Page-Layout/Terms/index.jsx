@@ -20,11 +20,21 @@ const Terms = () => {
     binding: false,
   })
 
+  // const toggleContentVisible = content => e => {
+  //   e.preventDefault();
+  //   setShowContent(prev => ({ ...prev, [content]: !prev[content] }))
+  // }
   const toggleContentVisible = content => e => {
-    e.preventDefault();
-    setShowContent(prev => ({ ...prev, [content]: !prev[content] }))
-  }
+    // e.preventDefault();
+    // e.stopPropagation(); // Prevent the event from bubbling
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
+    setShowContent(prev => ({ ...prev, [content]: !prev[content] }));
+    // console.log("hello");
+    window.onscroll = function () {
+      window.scrollTo(scrollTop)
+    }
+  };
   return (
     <div id="Terms" className="terms-condition-tab">
 
@@ -277,7 +287,7 @@ const Terms = () => {
                   the AAA Rules. The Arbitrator shall be responsible for determining all threshold arbitrability issues, including issues relating to
                   whether these Terms (or any aspect thereof) are enforceable, unconscionable or illusory and any defense to arbitration, including waiver, delay, laches, or estoppel. Subject to applicable jurisdictional requirements, you may elect to pursue your claim in your local small-claims court rather than through arbitration so long as your matter remains in small claims
                   court and proceeds only on an individual (non-class or non-representative) basis.
-                  {/* <a className="changeBtn" onClick={() => setBinding(previousPrivacy => !previousPrivacy)}> Learn More &gt;</a> */}
+
                 </p>
               </div>)}
             </div>
