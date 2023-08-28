@@ -13,7 +13,9 @@
 
 .pageholder{
 
-    background-color:#F0F7FD;
+    /* background-color:#Ffff; */
+    /* background-color:#F0F7FD; */
+    background-color: rgb(242, 248, 253); 
     overflow-x: hidden;
 
     
@@ -27,17 +29,17 @@
 .img-mission{
     margin-top: 120px;
     width:381px;
-    height:249px;
+    height:219px;
 }
 .img-value{
   margin-top: 20px;
   width: 381px;
-  height:249px;
+  height:219px;
   border-radius: 20px 20px 0px 0px;
 }
 .img-vision{
     width:381px;
-    height:249px;
+    height:219px;
     border-radius: 20px 20px 0px 0px;
     margin-top: 120px;
 
@@ -46,7 +48,7 @@
     background-color:#FFFFFF;
     border-radius: 0px 0px 20px 20px;
     width:381px;
-    height:880px;
+    height:auto;
     padding: 20px;
     transform: translateX(50%);
     transition: opacity 0.5s ease-in-out, transform 0.8s ease-in-out; 
@@ -65,7 +67,7 @@
     background-color:#FFFFFF;
     border-radius: 0px 0px 20px 20px;
     width:381px;
-    height:880px;
+    height:auto;
     padding: 20px;
     transform: translateX(50%);
     transition: opacity 0.5s ease-in-out, transform 0.8s ease-in-out; 
@@ -73,26 +75,36 @@
 
   
 }
-
-
-
-
-
+.text-outline-color-change{
+    margin-bottom: 25px;
+}
 .text{
-    font-family: Roboto;
-    border-radius:20px;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 22px;
-    letter-spacing: 0em;
+    
     text-align: center;
     color:#00427C;
     border-radius:20px;
     padding: 20px;
 }
 .text p{
-    padding:20px;
+    padding:10px;
+    font-family: Roboto;
+    border-radius:20px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
 }
+.text-layout p{
+    padding:10px;
+    font-family: Roboto;
+    border-radius:20px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+
+}
+
 .text:hover{
     background-color:#07235B;
     color: #ffff;
@@ -105,7 +117,7 @@
 }
 .text-tab{
     border-radius: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
 } 
 .text-layout{
  margin-top:50px;
@@ -145,9 +157,10 @@
     letter-spacing: 0em;
     text-align: center;
     color:#07235B;
-    
-    
+   
 }
+    
+
 .text1 h3{
 font-family: Roboto;
 font-size: 24px;
@@ -160,7 +173,7 @@ padding: 10px;
 }
 .text1 p{
 font-family: Roboto;
-font-size: 20px;
+font-size: 24px;
 font-weight: 400;
 line-height: 22px;
 letter-spacing: 0em;
@@ -376,5 +389,18 @@ br{
 .text-layout {
     margin-top: 20px;
 }
-
+.text-layout p {
+    padding: 10px;
+    font-family: Roboto;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0em;
+}
+.text-outline{
+    
+    transform: translateX(0);
+    transition: opacity 0.5s ease-in-out, transform 0.8s ease-in-out; 
+    }
 }

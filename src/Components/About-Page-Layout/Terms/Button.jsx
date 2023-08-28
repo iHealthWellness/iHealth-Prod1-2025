@@ -1,12 +1,12 @@
 import "./Button.css"
 import { clsx } from 'clsx';
-const Button = ({ icon, onClick, className }) => {
+const Button = ({ type, icon, onClick, className }) => {
 
 
     return (
 
-        <button className={clsx('button', className)} onClick={onClick}>
-            <img src={icon} alt="icon" />
+        <button type={type} className={clsx('button', className)} onClick={onClick}>
+            <img src={icon} alt="Toogle" />
         </button>
     )
 

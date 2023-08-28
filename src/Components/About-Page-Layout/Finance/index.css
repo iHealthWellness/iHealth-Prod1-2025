@@ -13,7 +13,7 @@
     text-align:center;
     background-color:#07235b;
     width: 968px;
-    height:280px;
+    height:310px;
 }
 .financial-outline h2{
     margin-top:90px;
@@ -41,8 +41,18 @@
 }
 
 .trans-Image{
-    width:1060px;
-    height: 280px;
+    position:relative;
+    width:760px;
+    height: 310px;
+}
+.text-finance{
+    position:absolute;
+    color:#Ffff;
+    top:170px;
+    left: 40px;
+    font-family: Roboto;
+    font-size:30px;
+    
 }
 
 .Gen-Rev{
@@ -245,6 +255,14 @@ font-size: 30px;
 }
 .grid2{
     font-size: 22px;
+    }
+.text-finance {
+        position: absolute;
+        color: #Ffff;
+        top: 100px;
+        left: 40px;
+        font-family: Roboto;
+        font-size: 22px;
     }
 }
   
