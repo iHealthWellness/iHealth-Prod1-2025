@@ -256,5 +256,13 @@ font-size: 30px;
 .grid2{
     font-size: 22px;
     }
+.text-finance {
+        position: absolute;
+        color: #Ffff;
+        top: 100px;
+        left: 40px;
+        font-family: Roboto;
+        font-size: 22px;
+    }
 }
   
