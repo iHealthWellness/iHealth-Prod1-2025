@@ -21,6 +21,7 @@ const Terms = () => {
   })
 
   const toggleContentVisible = content => e => {
+    e.preventDefault();
     setShowContent(prev => ({ ...prev, [content]: !prev[content] }))
   }
 
