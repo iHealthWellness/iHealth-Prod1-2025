@@ -20,21 +20,12 @@ const Terms = () => {
     binding: false,
   })
 
-  // const toggleContentVisible = content => e => {
-  //   e.preventDefault();
-  //   setShowContent(prev => ({ ...prev, [content]: !prev[content] }))
-  // }
   const toggleContentVisible = content => e => {
-    // e.preventDefault();
-    // e.stopPropagation(); // Prevent the event from bubbling
-    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-    setShowContent(prev => ({ ...prev, [content]: !prev[content] }));
-    // console.log("hello");
-    window.onscroll = function () {
-      window.scrollTo(scrollTop)
-    }
+    setShowContent(prev => ({ ...prev, [content]: !prev[content] }))
   };
+
+
   return (
     <div id="Terms" className="terms-condition-tab">
 
