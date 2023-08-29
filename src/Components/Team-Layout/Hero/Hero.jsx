@@ -65,8 +65,8 @@ const Hero = () => {
 
                     <div className="btn-header">
                         <button className="Hero-btn">
-                            <p className="Hero-text">Join our Team</p>
-                            <p className="Hero-sub-text">View Openings</p>
+                            <p className="Hero-text">View Openings</p>
+                            <p className="Hero-sub-text">Volunteer from Anywhere</p>
                         </button>
 
 
