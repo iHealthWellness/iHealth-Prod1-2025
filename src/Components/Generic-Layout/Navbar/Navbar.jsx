@@ -59,7 +59,7 @@ const MenuList = () => {
         },
         {
           title: "Our Team",
-          {/*url: "/about-us/#Team",*/}
+          //url: "/about-us/#Team",
           url: "/Our-Team/#",
         },
         {
