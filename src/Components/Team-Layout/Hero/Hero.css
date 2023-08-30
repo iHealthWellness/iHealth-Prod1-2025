@@ -60,7 +60,7 @@ color:#0386D0;
     display: flex;
     justify-content: center;
     gap:430px;
-
+    padding-top: -50px;
 } 
 .text-tab-image{
     position: absolute;

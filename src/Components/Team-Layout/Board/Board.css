@@ -217,6 +217,11 @@
         overflow: scroll;
         overflow-x: hidden;
     }
+
+    .btn-board-tab{
+        margin-right:80px;
+        margin-bottom: -15px;
+    }
     
     .popup-linkedin-icon{
         margin-left: 40%;
