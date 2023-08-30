@@ -198,18 +198,22 @@
 .content-tab p{
     width: 266px;
     font-family: Roboto;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
     line-height: 34px;
     letter-spacing: 0em;
     text-align: left;
     color:#07235B;
-    padding:10px;
+    padding:5px;
+    padding-right: 150px;
+    white-space: pre-line;
+    word-wrap: break-word;
 }
 .content-name{
     background-color: white;
-    width:197px;
+    width:190px;
     padding:24px;
+    margin-top:-100px;
 }
 .grid-tab-texter{
     margin-top: 20px;
