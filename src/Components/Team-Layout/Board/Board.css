@@ -20,7 +20,7 @@
     transition: opacity 0.5s ease-in-out, transform 0.8s ease-in-out;
 }
 .team-directors-header{
-    padding-top: 70px;
+    padding-top: 1px;
     font-family: Roboto;
     font-size: 48px;
     font-weight: 700;
@@ -69,7 +69,7 @@
 
 }
 .Name-tab{
-    font-size:30px;
+    font-size:20px;
     font-weight:800px;
     font-family: Roboto;
 }
@@ -82,6 +82,7 @@
 }
 
 .board-directors-tab{
+    margin-top: -80px;
     display: flex;
     justify-content: space-evenly;
     position: relative;
@@ -90,6 +91,7 @@
     /* gap:70px; */
 }
 .board-directors-tab2{
+    margin-top: -10px;
     display: flex;
     justify-content: space-evenly;
     position: relative;
@@ -97,6 +99,7 @@
     transition: opacity 0.5s ease-in-out, transform 0.8s ease-in-out; 
 }
 .board-directors-tab3{
+    margin-top: -80px;
     display: flex;
     justify-content: space-evenly;
     position: relative;
@@ -228,7 +231,7 @@
     }
 
     .popup-name{
-        font-size: 7vh;
+        font-size:3vh;
         justify-self: center;
         
     }
