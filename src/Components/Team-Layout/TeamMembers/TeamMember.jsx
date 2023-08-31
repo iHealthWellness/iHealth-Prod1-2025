@@ -79,7 +79,7 @@ const TeamMember = () => {
                     ref={divTwoRef}>
                     <div className="grid-tab">
                         <div className="bold-color-text">Team Name</div>
-                        <div className="bold-color-text">Roles</div>
+                        {/* <div className="bold-color-text">Roles</div> */}
                         <div className="bold-color-text">Names</div>
                     </div>
                     {
@@ -94,7 +94,6 @@ const TeamMember = () => {
                                         <p>{Roles}</p>
                                     </div>
                                     <div className="content-name">
-
                                         {Names.map((name) => {
                                             return <p key={name}>{name}</p>
                                         })}
@@ -104,9 +103,8 @@ const TeamMember = () => {
                                 </div>
                             )
 
-
                         })
-                    };</div>
+                    } </div>
 
 
             </div>

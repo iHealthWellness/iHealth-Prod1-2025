@@ -63,7 +63,7 @@ const Hero = () => {
 
                     <img className="Teamss-image-tab" src={image2} alt="" />
 
-                    <div className="btn-header">
+                    {/* <div className="btn-header">
                         <button className="Hero-btn">
                             <p className="Hero-text">View Openings</p>
                             <p className="Hero-sub-text">Volunteer from Anywhere</p>
@@ -71,7 +71,7 @@ const Hero = () => {
 
 
 
-                    </div>
+                    </div> */}
 
 
                 </div>
@@ -80,15 +80,14 @@ const Hero = () => {
             <div className="tab-holder-tab">
                 <div className="text-tab-tab">
 
-                    <img className="text-tab-image" src={image} />
-                    <h2 className={`text-team ${isVisible.divRef ? "slide-in" : ""}`}
-                        ref={divRef}>Our team comprises dedicated individuals who bring diverse expertise
-                        and a shared commitment to our mission.  </h2>
+                    {/* <img className="text-tab-image" src={image} /> */}
+                    <h2 className={`text-team ${isVisible.divRef}`}
+                        ref={divRef}>Our team comprises dedicated individuals who bring diverse expertise and a shared commitment to our mission.  </h2>
                 </div>
 
                 <div className="text-tab-tab">
                     <div className="team-highlight-tab ">
-                        <h3 className={`team-highlight ${isVisible.divTwoRef ? "slide-in" : ""}`}
+                        <h3 className={`team-highlight`}
                             ref={divTwoRef}>Our organization deeply appreciates the unwavering dedication of our Volunteers, Advisors, and Board Members.
                             Their selfless contributions are indispensable in helping us fulfill our mission. Without their support,
                             we would not be able to make a difference and shape a better future for patients with complex diseases.<br /><br />

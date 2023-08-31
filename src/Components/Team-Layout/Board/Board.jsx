@@ -141,7 +141,7 @@ const Board = () => {
                             <img src={selectedCard.image} className="popup-img" />
                             <h1 className="popup-name">{selectedCard.name}</h1>
                             <div className="popup-linkedin" onClick={handleDivClick}>
-                                <img src={linkedIn} className="popup-linkedin-icon" /><h2 className="popup-linkedin-text">LinkedIn</h2>
+                                {/* <img src={linkedIn} className="popup-linkedin-icon" /><h2 className="popup-linkedin-text">LinkedIn</h2> */}
                             </div>
                             <hr className="grey-line"></hr>
                             {selectedCard.extendedBio.split("--").map((bioChunk) => (
@@ -192,7 +192,7 @@ const Board = () => {
                         <img src={Image1} alt="" />
 
                         <div className="Name-tab">
-                            <p>Jeff Jacques, M.D.</p>
+                            <p>Jeff Jacques, MD</p>
                         </div>
                         <button className="btn-board-tab"><img src={Image7} /></button>
                     </div>
@@ -257,7 +257,7 @@ const Board = () => {
                         <img src={Image4} alt="" />
 
                         <div className="Name-tab">
-                            <p>Marcella Sarti Souza, M.D</p>
+                            <p>Marcella Sarti Souza, MD</p>
                         </div>
                         <button className="btn-board-tab"><img src={Image7} /></button>
                     </div>
