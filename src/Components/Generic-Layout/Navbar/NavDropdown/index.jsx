@@ -111,7 +111,7 @@ const menuItems = [
   },
 ];
 
-const MenuItems = ({ items, menuId, activeId, setActiveId }) => {
+const MenuItems = ({ items, menuId, activeId, setActiveId,handleShowMenu }) => {
   const [showSubMenu, setSubMenu] = useState(false);
 
   function handleMenu(menuId) {
@@ -142,7 +142,7 @@ const MenuItems = ({ items, menuId, activeId, setActiveId }) => {
           }
         >
           {items.submenu.map((sub) => (
-            <HashLink className="items" to={sub.url} key={sub.title}>
+            <HashLink className="items" to={sub.url} key={sub.title} onClick={handleShowMenu}>
               {sub.title}
             </HashLink>
           ))}
@@ -175,6 +175,7 @@ const NavDropdownButton = () => {
               items={menu}
               key={menu.title}
               menuId={index}
+              handleShowMenu={handleShowMenu}
             />
           ))}
         </ul>
