@@ -218,7 +218,7 @@ const Board = () => {
                     <div className="board-image" onClick={handleCardClick3}>
                         <img src={Image2} alt="" />
 
-                        <div className="Name-tab">
+                        <div id="Advisory" className="Name-tab">
                             <p>Matías Berisso</p>
                         </div>
                         <button className="btn-board-tab"><img src={Image7} /></button>
@@ -227,11 +227,11 @@ const Board = () => {
 
 
                 </div>
-                <div id="Advisory" className={`teamboard-tab2 ${isVisible.divFourRef ? "slide-in" : ""}`}
+                <div  className={`teamboard-tab2 ${isVisible.divFourRef ? "slide-in" : ""}`}
                     ref={divFourRef}>
-                        <div className="team-der">
+                        <div className="team-der" >
                     <h2  className="team-directors-header">Advisory Council</h2>
-                    <h3 className="team-directors-tab"> The Advisory Committee for our health and wellness startup serves as a group
+                    <h3  className="team-directors-tab"> The Advisory Committee for our health and wellness startup serves as a group
                         of experienced advisors who provide valuable insights, guidance, and expertise.
                         They contribute to strategic decision-making, offer industry-specific knowledge,
                         and provide recommendations on various aspects of our business, helping us drive
