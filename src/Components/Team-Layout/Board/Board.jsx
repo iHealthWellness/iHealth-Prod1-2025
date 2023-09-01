@@ -20,6 +20,7 @@ import roundedFrame from "src/Assets/Icons/rounded-frame.svg"
 
 
 import "./Board.css";
+import { Padding } from "@mui/icons-material";
 const Board = () => {
 
     const divRef = useRef(null);
@@ -159,8 +160,8 @@ const Board = () => {
             )}
             <div id="Board" className="page-holder">
 
-                <div className={`teamboard-tab ${isVisible.divRef ? "slide-in" : ""}`}
-                    ref={divRef}>
+                {/* <div className={`teamboard-tab ${isVisible.divRef ? "slide-in" : ""}`}
+                    ref={divRef}> */}
 
                     <h2 className="team-directors-header">  Board of Directors</h2>
 
@@ -274,12 +275,12 @@ const Board = () => {
                         <div className="Name-tab">
                             <p>Alex Lizzappi</p>
                         </div>
-                        <button className="btn-board-tab"><img src={Image7} /></button>
+                        <button  className="btn-board-tab"><img src={Image7} /></button>
                     </div>
                 </div>
 
             </div>
-        </div >
+        // </div >
 
     )
 }
