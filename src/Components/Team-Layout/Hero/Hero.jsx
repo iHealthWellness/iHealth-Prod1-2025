@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 
-import image from "/src/Assets/Images/Titles.png";
+// import image from "/src/Assets/Images/Titles.png";
 import image2 from "/src/Assets/Images/teamwork.png";
 import "./Hero.css";
 
