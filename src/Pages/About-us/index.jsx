@@ -16,7 +16,6 @@ import TotopBtn from "src/Components/About-Page-Layout/TotopBtn";
 const index = () => {
   return (
     <>
-
       <Hero />
       <Statement />
       <Team />
