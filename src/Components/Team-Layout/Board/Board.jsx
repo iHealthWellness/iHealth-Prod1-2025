@@ -227,16 +227,16 @@ const Board = () => {
 
 
                 </div>
-
                 <div id="Advisory" className={`teamboard-tab2 ${isVisible.divFourRef ? "slide-in" : ""}`}
                     ref={divFourRef}>
-
-                    <h2 className="team-directors-header">Advisory Council</h2>
+                        <div className="team-der">
+                    <h2  className="team-directors-header">Advisory Council</h2>
                     <h3 className="team-directors-tab"> The Advisory Committee for our health and wellness startup serves as a group
                         of experienced advisors who provide valuable insights, guidance, and expertise.
                         They contribute to strategic decision-making, offer industry-specific knowledge,
                         and provide recommendations on various aspects of our business, helping us drive
                         innovation and ensure the effectiveness of our programs and services.</h3>
+                        </div>
                 </div>
 
 

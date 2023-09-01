@@ -65,10 +65,10 @@
 
 }
 .grid-tab-texter{
-    margin-top: 20px;
+    margin-top: 10px;
     padding:5px;
     font-family: Inter;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
     line-height: 36px;
     letter-spacing: -0.019em;
@@ -89,18 +89,20 @@
     letter-spacing: 0em;
     text-align: left;
     color:#07235B;
-    padding:10px;
+    padding:80px;
 }
 .content-name{
     background-color: white;
     width:297px;
     padding:24px;
     border-radius: 10px;
+    position: relative;
+    right: 300px;
 }
 .content-name p{
     margin: auto;
     font-family: Inter;
-   font-size: 24px;
+   font-size: 20px;
    font-style: italic;
   font-weight: 500;
    line-height: 36px;
