@@ -6,28 +6,28 @@ const DataPage = [
         id: 1,
         TeamName: "Copywriting",
         // Roles: "Content Writers, Copywriters, Technical Writers",
-        Names: ["Fizza Haider"],
+        Names: ["Emelie Enemo"],
 
     },
     {
         id: 2,
         TeamName: "Data Analysis ",
         // Roles: "Data Analysts,Data Scientists,Data Engineers ",
-        Names: ["Ajeyomi Adedoyin", "Alim Nuriiev", "Ayushi Malaviya", "Ellen Fernandez", "Emmanuel Momoh", "Maaz Ghazi", "Manish Sharma"],
+        Names: ["Ajeyomi Adedoyin", "Alim Nuriiev", "Ayushi Malaviya", "Audrey Gil", "Ellen Fernandez", "Emmanuel Momoh", "Maaz Ghazi",],
 
     },
     {
         id: 3,
         TeamName: " Design",
         // Roles: "UX/UI Designers, Interaction Designers, Visual Designers, Graphic Designers ",
-        Names: [" Adel Akhmed", "Camilla Menin", "Elysa Gaona", "Fiona Doyle", "Hanqi Li", "Innocent Opara", "Justina Ackah", "Mariam Abdulkareem","William Vo"],
+        Names: [" Adel Akhmed", "Innocent Opara", "Mariam Abdulkareem","Nihan Kucukos","Olawafemi Nurudeen","William Vo"],
 
     },
     {
         id: 4,
         TeamName: "Development",
         // Roles: " Software Engineers, Full-Stack Developers,Backend Developers,Frontend Developers, DevOps Engineers,Mobile App Developers ",
-        Names: ["Amal Engulatov","Barisanem Fiiwe", "Cem Mehmet Onal", "Emmanuel Adewoye", "Kelvin Njuiri", "Kiran Yadav", "Oladimeji Ibitoye", "Takuzen LU", "Udemeobong Akpan", "Xuelan Wu", "Yunus Olgan", "Zaid Rafi"],
+        Names: ["Amal Engulatov","Barisanem Fiiwe", "Cem Mehmet Onal", "Emmanuel Adewoye","EPhrem Bayru", "Imesh Chandrasiri", "Kelvin Njuiri", "Kiran Yadav","Krsna Patel", "Nisha Fazululakha", "Oladimeji Ibitoye", "Udemeobong Akpan", "Xuelan Wu", "Yunus Olgan", "Zack Zhou", "Zaid Rafi"],
 
     },
     {
@@ -41,7 +41,7 @@ const DataPage = [
         id: 6,
         TeamName: " Human Resources",
         // Roles: "HR Managers, HR Generalists, Talent Acquisition Specialists",
-        Names: ["Marissa Flanagan", "Serena Pasqualini","Lucia Valerio"],
+        Names: ["Lucia Valerio", "Marissa Flanagan", "Serena Pasqualini","Lucia Valerio"],
 
     },
     {
@@ -55,28 +55,28 @@ const DataPage = [
         id: 8,
         TeamName: "Marketing and Public Relations ",
         // Roles: "Marketing Managers,PR Specialists, Communications Managers  ",
-        Names: ["Nelson Izah", "Sean Banks"],
+        Names: ["Nelson Izah", ],
 
     },
     {
         id: 9,
         TeamName: "Product Management",
         // Roles: "Product Managers, Product Owners  ",
-        Names: ["Arsen Duzrapanyan", "Denis Kiura", "Hsuan Ouyang", "Melissa Enninful", "Susan Haynes",],
+        Names: ["Hsuan Ouyang", "Melissa Enninful", "Susan Haynes",],
 
     },
     {
         id: 10,
         TeamName: "Project Management ",
         // Roles: "Project Managers, Scrum Masters, Agile Coaches  ",
-        Names: ["Anu Ramabhadran", "Sherrie Ricks","Lynda Marsh"],
+        Names: ["Anu Ramabhadran", "Sherrie Ricks"],
 
     },
     {
         id: 11,
         TeamName: "Quality Assurance ",
         // Roles: "QA Engineers, Testers, Quality Assurance Specialists  ",
-        Names: ["Bhavitha Keezhuridathil", "Femi Gideon", "Kofi Tuffour", "Ossei Piyush", "Chakkarwar"],
+        Names: ["Bhavitha Keezhuridathil", "Femi Gideon", "Ossei Piyush", "Chakkarwar"],
 
     },
     {
