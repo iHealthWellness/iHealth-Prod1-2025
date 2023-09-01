@@ -19,6 +19,7 @@
     transform: translateX(50%);
     transition: opacity 0.5s ease-in-out, transform 0.8s ease-in-out;
 }
+
 .team-directors-header{
     padding-top: 35px;
     font-family: Roboto;
@@ -249,7 +250,7 @@
         z-index: 999;
      }
      .Name-tab p{
-        font-size: 18px;
+        font-size: 15px;
       }
      .board-directors-tab1{
         display: flex;
