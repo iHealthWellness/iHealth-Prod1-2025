@@ -8,10 +8,10 @@ const Team = () => {
   return (
     <div id="Team" className="team-tab-page">
       <div className="container">
-        <img className="team-work" src={teamwork} />
         <div className="Team-link-tab">
-        <HashLink to="/Our-Team" className="team-link">
-          <img className="team-image-tab" src={team} alt="" />
+        <HashLink to="/Our-Team" >
+        <img className="team-work" src={teamwork} />
+          {/* <img className="team-image-tab" src={team} alt="" /> */}
         </HashLink>
         </div>
        
