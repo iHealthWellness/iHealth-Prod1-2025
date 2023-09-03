@@ -97,24 +97,28 @@ const MenuList = () => {
       ],
     },
     {
+      
       title: "Stories of Strength",
       url: "/services",
       className: "nav-services" ,
       
-      // subMenu: [
-      //   {
-      //     title: "Share Your Story",
-      //     url: "/services/#",
-      //   },
-      //   {
-      //     title: "Create Your Blog",
-      //     url: "/services/#",
-      //   },
-      //   {
-      //     title: "Blogs",
-      //     url: "/services/#",
-      //   },
-      // ],
+      
+      
+      
+      subMenu: [
+        {
+          title: "Share Your Story",
+          url: "/services/#",
+        },
+        {
+          title: "Create Your Blog",
+          url: "/services/#",
+        },
+        {
+          title: "Blogs",
+          url: "/services/#",
+        },
+      ],
     },
     {
       title: "Ways to Give",
