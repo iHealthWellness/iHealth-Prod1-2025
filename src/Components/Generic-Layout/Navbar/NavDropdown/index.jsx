@@ -89,23 +89,23 @@ const menuItems = [
       },
       {
         title: "Individual Donation",
-        url: "/donate/#",
+        url: "/donate/#Donate-Top-TypeOfDonate",
       },
       {
         title: " Make a Corporate Donation",
-        url: "/donate/#",
+        url: "/donate/#Donate-Top-TypeOfDonate",
       },
       {
         title: "Fundraise on Facebook",
-        url: "/donate/#",
+        url: "/donate/#Donate-Steps-Wrapper",
       },
       {
         title: "Create Your Own Fundraiser",
-        url: "/donate/#",
+        url: "/donate/#Donate-Steps-Wrapper",
       },
       {
         title: "Raise $500 in 10 days",
-        url: "/donate/#",
+        url: "/donate/#Donate10Days-Main-Container",
       },
     ],
   },
