@@ -53,10 +53,10 @@ const MenuList = () => {
       url: "/about-us",
       className: "nav-about-us",
       subMenu: [
-        {
-          title: "Corporate Info",
-          url: "/about-us/#Hero",
-        },
+        // {
+        //   title: "Corporate Info",
+        //   url: "/about-us/#Hero",
+        // },
         {
           title: "Our Team",
           //url: "/about-us/#Team",
@@ -70,10 +70,10 @@ const MenuList = () => {
           title: "Terms Of Use",
           url: "/about-us/#Terms",
         },
-        {
-          title: "Volunteer from Anywhere",
-          url: "/about-us/#",
-        },
+        // {
+        //   title: "Volunteer from Anywhere",
+        //   url: "/about-us/#",
+        // },
       ],
     },
 
@@ -98,9 +98,9 @@ const MenuList = () => {
     },
     {
       
-      title: "Stories of Strength",
-      url: "/services",
-      className: "nav-services" ,
+      // title: "Stories of Strength",
+      // url: "/services",
+      // className: "nav-services" ,
       
       
       

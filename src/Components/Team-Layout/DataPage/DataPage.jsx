@@ -51,25 +51,25 @@ const DataPage = [
         Names: ["Dalia Hechi"],
 
     },
-    {
-        id: 8,
-        TeamName: "Marketing and Public Relations ",
-        // Roles: "Marketing Managers,PR Specialists, Communications Managers  ",
-        Names: ["Nelson Izah", ],
+    // {
+    //     id: 8,
+    //     TeamName: "Marketing and Public Relations ",
+    //     // Roles: "Marketing Managers,PR Specialists, Communications Managers  ",
+    //     Names: ["Nelson Izah", ],
 
-    },
+    // },
     {
         id: 9,
         TeamName: "Product Management",
         // Roles: "Product Managers, Product Owners  ",
-        Names: ["Hsuan Ouyang", "Melissa Enninful", "Susan Haynes",],
+        Names: ["Hsuan Ouyang", "Melissa Enninful", "Susan Haynes", ],
 
     },
     {
         id: 10,
         TeamName: "Project Management ",
         // Roles: "Project Managers, Scrum Masters, Agile Coaches  ",
-        Names: ["Anu Ramabhadran", "Sherrie Ricks"],
+        Names: ["Anu Ramabhadran", "Nelson Izah", "Sherrie Ricks", ],
 
     },
     {

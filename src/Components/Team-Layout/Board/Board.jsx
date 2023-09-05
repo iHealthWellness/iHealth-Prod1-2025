@@ -6,8 +6,11 @@ import Image2 from "src/Assets/Images/Mathias.png";
 import Image3 from "src/Assets/Images/Joseph.png";
 import Image4 from "src/Assets/Images/Elizabeth.png";
 import Image5 from "src/Assets/Images/Marilyn.png";
+import Image8 from "src/Assets/Images/Chris.png";
+
 import Image6 from "src/Assets/Images/Card.png";
 import Image7 from "src/Assets/Icons/plus.png";
+
 import teamData from "src/Components/Team-Layout/DataPage/TeamData.jsx";
 
 import closeButton from "src/Assets/Images/close-button.png";
@@ -116,7 +119,10 @@ const Board = () => {
         console.log("cicked card: " + teamData.executive[1]);
         setSelectedCard(teamData.executive[6]);
     };
-
+    const handleCardClick8 = () => {
+        console.log("cicked card: " + teamData.executive[1]);
+        setSelectedCard(teamData.executive[8]);
+    };
 
     const handlePopupClose = () => {
 
@@ -215,6 +221,7 @@ const Board = () => {
                         <button className="btn-board-tab"><img src={Image7} /></button>
                     </div>
 
+
                     <div className="board-image" onClick={handleCardClick3}>
                         <img src={Image2} alt="" />
 
@@ -241,9 +248,9 @@ const Board = () => {
                 </div>
 
 
-                <div className={`board-directors-tab3 ${isVisible.divFiveRef ? "slide-in" : ""}`}
+                <div className={`board-directors-tab3 ${isVisible.divFiveRef ? "slide-in" : ""} `}
                     ref={divFiveRef}>
-
+                        
 
                     <div className="board-image" onClick={handleCardClick4}>
 
@@ -254,6 +261,7 @@ const Board = () => {
                         </div>
                         <button className="btn-board-tab"><img src={Image7} /></button>
                     </div>
+                    
 
                     <div className="board-image" onClick={handleCardClick6}>
                         <img src={Image4} alt="" />
@@ -267,17 +275,33 @@ const Board = () => {
 
 
                 </div>
+                <div className={`board-directors-tab3 ${isVisible.divFiveRef ? "slide-in" : ""} `}
+                    ref={divFiveRef}>
+                        
 
-                <div className={`board-directors-tab1 ${isVisible.divSixRef ? "slide-in" : ""}`}
-                    ref={divSixRef}>
                     <div className="board-image" onClick={handleCardClick5}>
-                        <img className="img-holder" src={Image6} alt="" />
+
+                        <img src={Image6} alt="" />
 
                         <div className="Name-tab">
                             <p>Alex Lizzappi</p>
                         </div>
-                        <button  className="btn-board-tab"><img src={Image7} /></button>
+                        <button className="btn-board-tab"><img src={Image7} /></button>
                     </div>
+
+
+
+                    <div className="board-image" onClick={handleCardClick8}>
+                        <img src={Image8} alt="" />
+
+                        <div className="Name-tab">
+                            <p>Christophe Foulon, CISSP, GSLC, AWS Security</p>
+                        </div>
+                        <button className="btn-board-tab"><img src={Image7} /></button>
+                    </div>
+
+
+
                 </div>
 
             </div>
