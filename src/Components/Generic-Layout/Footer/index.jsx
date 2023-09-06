@@ -9,13 +9,46 @@ import SocialMedia from "src/Constants/HomePage/SocialMedia.js";
 import FooterLink from "src/Constants/FooterLink.js";
 
 import "./index.css";
+import axios from "axios";
 
 const Footer = () => {
   const [selectedLanguage, setSelectedLanguage] = useState("en");
+  const [email, setEmail] = useState(""); 
 
   const handleChange = (event) => {
     setSelectedLanguage(event.target.value);
   };
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Create an object with the data to be sent to the API
+    const subscribeData = {
+      email: email,
+      // Add other fields as needed
+    };
+
+    // Make the POST request using Axios
+    axios
+      .post("https://ihealth-prod.onrender.com/api/v1/subscription/", subscribeData)
+      .then((response) => {
+        if (response.status === 201) {
+          alert("Data sent successfully:");
+          // Handle the response as needed, e.g., show a success message
+        }
+        else {
+          alert("Oops! Form not submitted");
+        }
+      })
+      .catch((error) => {
+        console.error("Error sending data:", error);
+        // Handle the error as needed, e.g., show an error message
+      });
+  };
+
   return (
     <footer className="footer-container">
       <div className="footer-top">
@@ -31,19 +64,25 @@ const Footer = () => {
           <div className="footer-subscribe-block">
             <p className="footer-subscribe-heading">STAY INFORMED:</p>
             <div className="footer-subscribe-bar">
+            <form onSubmit={handleSubmit}>
               <input
                 className="footer-subscribe-input"
                 placeholder="Your email here"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
               />
-              <a
+              {/*<a
+                type="submit"
                 className="footer-subscribe-btn"
-                onClick={() => {
-                  document.querySelector("#UnderConst-wrapper").style.display =
-                    "flex";
+                onClick={(e) => {
+                  e.preventDefault(); // Prevent the default anchor tag behavior
+                  handleSubmit(); // Call the handleSubmit function to make the API request
                 }}
               >
                 Subscribe
-              </a>
+              </a>*/}
+              <button className="footer-subscribe-btn" type="submit">Subscribe</button>
+              </form>
             </div>
           </div>
           <div className="footer-follow-block">
