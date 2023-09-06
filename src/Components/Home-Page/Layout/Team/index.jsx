@@ -12,9 +12,10 @@ const Team = () => {
         condition to support each other, learn from each other, inspire each
         other, to feel a sense of fellowship, safety and belonging together.
       </h3>
+
       <div className="team-bottom-block">
         <div className="team-video-card">
-          <video autoPlay muted loop className="team-video">
+          <video autoPlay muted loop playsInline className="team-video">
             <source
               src="https://v4.cdnpk.net/videvo_files/video/free/video0455/large_watermarked/_import_609115c00e5a15.53371416_FPpreview.mp4"
               type="video/mp4"
@@ -25,7 +26,7 @@ const Team = () => {
         <div className="team-join-card">
           <p className="team-join-description">
             As a community member, you'll come together with others living with
-            your condition to support each other,learn from each other, inspire
+            your condition to support each other, learn from each other, inspire
             each other, to feel a sense of fellowship, safety and belonging
             together.
           </p>
