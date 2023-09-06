@@ -102,7 +102,7 @@ border-radius: 20px;
 .chart-analysis-tab{
     display:flex;
     justify-content:center;
-     gap:25px;
+     gap:1px;
      transform: translateX(50%);
      transition: opacity 0.5s ease-in-out, transform 0.8s ease-in-out; 
    
@@ -110,6 +110,7 @@ border-radius: 20px;
 }
 .analysis-img{
     margin-top: 20px;
+    width: 90%;
 }
 .chart-analysis-tab.slide-in,
 .trans-outline.slide-in
