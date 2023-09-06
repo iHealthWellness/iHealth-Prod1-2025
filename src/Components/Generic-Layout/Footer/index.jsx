@@ -38,6 +38,7 @@ const Footer = () => {
         if (response.status === 201) {
           alert("Data sent successfully:");
           // Handle the response as needed, e.g., show a success message
+          setEmail("");
         }
         else {
           alert("Oops! Form not submitted");
