@@ -173,9 +173,10 @@
 }
 
 .close-btn {
-    width: 3vh; 
+
+    width: 5vh; 
     margin-top: 7%;
-    margin-left: 85%;
+    margin-left: 80%;
 }
 
 .close-btn:hover {
