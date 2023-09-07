@@ -1,4 +1,4 @@
-import img from "src/Assets/Images/sasika.png";
+import img from "src/Assets/Images/Sasikaa.png";
 import img1 from "src/Assets/Images/bar.png";
 import Image1 from "src/Assets/Images/Jeff.png";
 import Image2 from "src/Assets/Images/Mathias.png";
