@@ -2,13 +2,13 @@
 
 const DataPage = [
 
-    {
-        id: 1,
-        TeamName: "Copywriting",
-        // Roles: "Content Writers, Copywriters, Technical Writers",
-        Names: ["Emelie Enemo"],
+    // {
+    //     id: 1,
+    //     TeamName: "Copywriting",
+    //     // Roles: "Content Writers, Copywriters, Technical Writers",
+    //     Names: ["Emelie Enemo"],
 
-    },
+    // },
     {
         id: 2,
         TeamName: "Data Analysis ",
