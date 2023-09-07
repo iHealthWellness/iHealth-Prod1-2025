@@ -173,7 +173,6 @@
 }
 
 .close-btn {
-
     width: 5vh; 
     margin-top: 7%;
     margin-left: 80%;
@@ -195,6 +194,7 @@
 }
 
 /* Mobile view */
+
 @media only screen and (max-width: 820px) {
     .popup-content {
         width: 80%;
@@ -218,7 +218,7 @@
     }
 
     .close-btn {
-        width: 40px;
+        width: 5vh;
         margin-top: 8%;
         margin-left: 80%;
     }
