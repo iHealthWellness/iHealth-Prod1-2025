@@ -294,7 +294,8 @@ const Board = () => {
           <img src={Image8} alt="" />
 
           <div className="Name-tab">
-            <p>Christophe Foulon, CISSP, GSLC, AWS Security</p>
+{/*             <p>Christophe Foulon, CISSP, GSLC, AWS Security</p> */}
+                        <p>Christophe Foulon, CISSP</p>
           </div>
           <button className="btn-board-tab">
             <img src={Image7} />
