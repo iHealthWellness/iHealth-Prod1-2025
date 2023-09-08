@@ -14,8 +14,13 @@
     background-color: #f6f8f7; /* Adjust background color for smaller screens if needed */
     overflow-x: hidden;
 }
+.team-der h2.team-directors-header,
+.team-der h3.team-directors-tab {
+    margin-left: 200px; /* Adjust the margin for small screens */
+    margin-right: 200px; /* Adjust the margin for small screens */
+}
 
-.team-directors-header {
+/* .team-directors-header {
     padding-top: 15px;
     font-family: Roboto;
     font-size: 48px;
@@ -35,6 +40,44 @@
     line-height: 34px;
     letter-spacing: 0em;
     margin-bottom: 30px;
+} */
+
+.team-directors-header,
+.team-directors-tab {
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0em;
+    color: #858EAD;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    text-align: left; /* Center text on all screens */
+}
+
+.team-directors-header {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58px;
+    color: #07235B;
+    padding-top: 2%; /* Adjust as needed for spacing */
+}
+
+/* Media Query for Small Screens (e.g., smartphones) */
+@media screen and (max-width: 768px) {
+    .team-directors-header,
+    .team-directors-tab {
+        font-size: 20px; /* Adjust as needed for smaller screens */
+        line-height: 28px;
+        margin-top: 2%; /* Adjust as needed for spacing */
+        margin-bottom: 20px; /* Adjust as needed for spacing */
+    }
+
+    .team-directors-header {
+        font-size: 36px; /* Adjust as needed for smaller screens */
+        line-height: 44px;
+        padding-top: 5%; /* Adjust as needed for spacing */
+    }
 }
 
 .board-image {
@@ -95,11 +138,10 @@
     bottom: 25px;
 }
 
-.team-der h2.team-directors-header,
-.team-der h3.team-directors-tab {
-    margin-left: 220px; /* Adjust the margin as needed for larger screens */
-    margin-right: 220px; /* Adjust the margin as needed for larger screens */
-}
+
+
+
+
 
 /* Media query for small screens (adjust the max-width as needed) */
 @media only screen and (max-width: 768px) {
@@ -201,6 +243,7 @@
         width: 80%;
         max-width: none;
     }
+    
 
     .btn-board-tab {
         margin-right: 105px; /* Adjust this value as needed */
@@ -265,5 +308,46 @@
     .popup-name {
         font-size:20px;
         justify-self: center;
+    }
+    .popup-content {
+        width: 80%;
+        max-width: none;
+    }
+
+    .btn-board-tab {
+        margin-right: 105px; /* Adjust this value as needed */
+        margin-bottom: -40px; /* Adjust this value as needed */
+        width: 30px; /* Adjust the width */
+        height: 30px; /* Adjust the height */
+    }
+
+    .popup-linkedin-icon {
+        margin-left: 40%;
+    }
+
+    .popup-name {
+        font-size:24px;
+        justify-self: center;
+    }
+
+    .close-btn {
+        width: 5vh;
+        margin-top: 8%;
+        margin-left: 80%;
+    }
+
+    .board-image {
+        width: 100%;
+        max-width: 273.5px;
+        height: auto;
+    }
+
+    .Name-tab p {
+        font-size: 15px;
+    }
+
+    .board-directors-tab1 {
+        display: flex;
+        justify-content: center;
     }
 }
