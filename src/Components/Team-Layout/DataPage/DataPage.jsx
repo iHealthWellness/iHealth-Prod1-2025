@@ -9,25 +9,32 @@ const DataPage = [
     //     Names: ["Emelie Enemo"],
 
     // },
+        {
+        id: 1,
+        TeamName: "Cybersecurity and Data Privacy",
+        // Roles: "Cybersecurity,Privacy,Data Privacy ",
+        Names: [" Suchit Iyer",],
+
+    },
     {
         id: 2,
         TeamName: "Data Analysis ",
         // Roles: "Data Analysts,Data Scientists,Data Engineers ",
-        Names: ["Ajeyomi Adedoyin", "Alim Nuriiev", "Ayushi Malaviya", "Audrey Gil", "Ellen Fernandez", "Emmanuel Momoh", "Maaz Ghazi",],
+        Names: [" Ajeyomi Adedoyin", "Alim Nuriiev", "Ayushi Malaviya", "Audrey Gil", "Ellen Fernandez", "Emmanuel Momoh", "George Mendez",],
 
     },
     {
         id: 3,
         TeamName: " Design",
         // Roles: "UX/UI Designers, Interaction Designers, Visual Designers, Graphic Designers ",
-        Names: [" Adel Akhmed", "Innocent Opara", "Mariam Abdulkareem","Nihan Kucukos","Olawafemi Nurudeen","William Vo"],
+        Names: [" Aaron Brown", "Adel Akhmed", "Innocent Opara", "Mariam Abdulkareem","Mary Dolmat","Nihan Kucukos","Olawafemi Nurudeen","William Vo"],
 
     },
     {
         id: 4,
         TeamName: "Development",
         // Roles: " Software Engineers, Full-Stack Developers,Backend Developers,Frontend Developers, DevOps Engineers,Mobile App Developers ",
-        Names: ["Amal Engulatov","Barisanem Fiiwe", "Cem Mehmet Onal", "Emmanuel Adewoye","EPhrem Bayru", "Imesh Chandrasiri", "Kelvin Njuiri", "Kiran Yadav","Krsna Patel", "Nisha Fazululakha", "Oladimeji Ibitoye", "Udemeobong Akpan", "Xuelan Wu", "Yunus Olgan", "Zack Zhou", "Zaid Rafi"],
+        Names: ["Abdulbasit Alabi","Amal Engulatov","Barisanem Fiiwe", "Cem Mehmet Onal", "Emmanuel Adewoye","EPhrem Bayru", "Imesh Chandrasiri", "Kelvin Njuiri", "Kiran Yadav","Krsna Patel", "Nisha Fazululakha", "Oladimeji Ibitoye", "Udemeobong Akpan", "Xuelan Wu", "Yunus Olgan", "Zack Zhou"],
 
     },
     {
@@ -41,7 +48,7 @@ const DataPage = [
         id: 6,
         TeamName: " Human Resources",
         // Roles: "HR Managers, HR Generalists, Talent Acquisition Specialists",
-        Names: ["Lucia Valerio", "Marissa Flanagan", "Serena Pasqualini",],
+        Names: [" Aakriti Maharjan", "Lucia Valerio", "Marissa Flanagan", "Serena Pasqualini",],
 
     },
     {
@@ -55,7 +62,7 @@ const DataPage = [
     //     id: 8,
     //     TeamName: "Marketing and Public Relations ",
     //     // Roles: "Marketing Managers,PR Specialists, Communications Managers  ",
-    //     Names: ["Nelson Izah", ],
+    //     Names: [" Sean Banks", ],
 
     // },
     {
@@ -76,14 +83,14 @@ const DataPage = [
         id: 11,
         TeamName: "Quality Assurance ",
         // Roles: "QA Engineers, Testers, Quality Assurance Specialists  ",
-        Names: ["Bhavitha Keezhuridathil", "Femi Gideon", "Ossei Piyush", "Chakkarwar"],
+        Names: ["Bhavitha Keezhuridathil", "Femi Gideon",  "Piyush Chakkarwar", "Vikram Bhanapur"],
 
     },
     {
         id: 12,
         TeamName: "Research and Innovation ",
         // Roles: " Research Scientists, Innovation Strategists, R&D Specialists ",
-        Names: ["Marcella Sarti Souza MD"],
+        Names: ["Marcella Souza, MD"],
 
     },
 
