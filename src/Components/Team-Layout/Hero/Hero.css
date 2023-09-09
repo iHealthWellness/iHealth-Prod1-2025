@@ -67,6 +67,7 @@ color:#0386D0;
     justify-content: center;
     gap:430px;
     padding-top: -50px;
+    
 } 
 /* .text-tab-image{
     position: absolute;
@@ -94,12 +95,28 @@ color:#0386D0;
 
 
 }
-.team-highlight-tab{
+/* .team-highlight-tab{
     margin-top: 5px;
     display: flex; 
     justify-content: center; 
     align-items: center; 
+    
 
+} */
+.team-highlight-tab {
+    margin-top: 2%; /* Adjust as needed for spacing */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Media Query for Small Screens (e.g., smartphones) */
+@media screen and (max-width: 768px) {
+    .team-highlight-tab {
+        flex-direction: column; /* Stack items vertically */
+        text-align: center; /* Center text if needed */
+        margin-top: 5%; /* Adjust as needed for spacing */
+    }
 }
 .team-highlight-tab h3{
     width: 1006px;
