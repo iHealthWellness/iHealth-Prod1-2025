@@ -13,43 +13,48 @@ import axios from "axios";
 
 const Footer = () => {
   const [selectedLanguage, setSelectedLanguage] = useState("en");
-  const [email, setEmail] = useState(""); 
+  const [email, setEmail] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [subscribeStatus, setSubscribeStatus] = useState("");
 
   const handleChange = (event) => {
     setSelectedLanguage(event.target.value);
   };
+
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setLoading(true);
 
-    // Create an object with the data to be sent to the API
     const subscribeData = {
       email: email,
       // Add other fields as needed
     };
 
-    // Make the POST request using Axios
     axios
       .post("https://ihealth-prod.onrender.com/api/v1/subscription/", subscribeData)
       .then((response) => {
+        setLoading(false);
+
         if (response.status === 201) {
-          alert("Data sent successfully:");
+          // Show loading spinner and set subscribe status
+          setSubscribeStatus("Subscribed!");
           // Handle the response as needed, e.g., show a success message
           setEmail("");
-        }
-        else {
-          alert("Oops! Form not submitted");
+        } else {
+          // Set subscribe status to an error message
+          setSubscribeStatus("Oops! Form not submitted");
         }
       })
       .catch((error) => {
-        console.error("Error sending data:", error);
-        // Handle the error as needed, e.g., show an error message
+        setLoading(false);
+        // Set subscribe status to an error message
+        setSubscribeStatus("Error sending data");
       });
   };
-
   return (
     <footer className="footer-container">
       <div className="footer-top">
@@ -65,26 +70,19 @@ const Footer = () => {
           <div className="footer-subscribe-block">
             <p className="footer-subscribe-heading">STAY INFORMED:</p>
             <div className="footer-subscribe-bar">
-            <form onSubmit={handleSubmit}>
-              <input
-                className="footer-subscribe-input"
-                placeholder="Your email here"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-              />
-              {/*<a
-                type="submit"
-                className="footer-subscribe-btn"
-                onClick={(e) => {
-                  e.preventDefault(); // Prevent the default anchor tag behavior
-                  handleSubmit(); // Call the handleSubmit function to make the API request
-                }}
-              >
-                Subscribe
-              </a>*/}
-              <button className="footer-subscribe-btn" type="submit">Subscribe</button>
-              </form>
-            </div>
+          <form onSubmit={handleSubmit}>
+            <input
+              className="footer-subscribe-input"
+              placeholder="Your email here"
+              value={email}
+              onChange={handleEmailChange}
+            />
+            <button className="footer-subscribe-btn" type="submit">
+              {loading ? "Loading..." : subscribeStatus || "Subscribe"}
+            </button>
+          </form>
+          {loading && <div className="loading-spinner"></div>}
+        </div>
           </div>
           <div className="footer-follow-block">
             <p className="footer-follow-heading">FOLLOW US:</p>
