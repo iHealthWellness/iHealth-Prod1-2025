@@ -46,10 +46,16 @@ const Footer = () => {
             alert("Thanks for Subscribing!");
           }, 1000);
           // Handle the response as needed, e.g., show a success message
+<<<<<<< HEAD
           setEmail("");
         } else {
           // Set subscribe status to an error message
           setSubscribeStatus("Oops! Form not submitted");
+=======
+        }
+        else {
+          alert("Oops! Form not submitted");
+>>>>>>> 9edfeee (update)
         }
       })
       .catch((error) => {
