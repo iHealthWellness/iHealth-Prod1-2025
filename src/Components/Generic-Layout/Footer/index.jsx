@@ -42,6 +42,9 @@ const Footer = () => {
         if (response.status === 201) {
           // Show loading spinner and set subscribe status
           setSubscribeStatus("Subscribed!");
+          setTimeout(() => {
+            alert("Thanks for Subscribing!");
+          }, 1000);
           // Handle the response as needed, e.g., show a success message
 <<<<<<< HEAD
           setEmail("");
