@@ -1,8 +1,12 @@
-
-.research-tools{
-  margin:0 auto;
+/* Common styles for all screen sizes */
+.research-tools {
+  margin: 0 auto;
   width: 100%;
   max-width: 1216px;
+  padding: 20px; 
+  box-sizing: border-box;
+  display: flex; 
+  flex-direction: column; 
 }
 
 .tools {
@@ -12,293 +16,213 @@
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
-  line-height: 50px;
+  line-height: 1.5;
   margin: 0;
   padding: 0;
-  margin-bottom: 51px;
-  margin-top: 300px;
+  margin-bottom: 20px; 
 }
+
 .tool {
-  width: 1216px;
   color: #07235b;
   font-family: Roboto;
-  font-size: 48px;
-  font-style: normal;
+  font-size: 36px;
   font-weight: 700;
-  line-height: 120%;
+  line-height: 1.2;
   margin: 0;
   padding: 0;
-  padding-bottom: 50px;
-  text-align: center;
+  padding-right: 20px; 
+  text-align: center; 
+  max-width: 100%; 
+  word-wrap: break-word; 
 }
+
 .tool-p {
-  width: 1216px;
-  height: 88px;
-  flex-shrink: 0;
   color: var(--sn-primary-headings-07235-b, #07235b);
   font-family: Roboto;
   font-size: 20px;
-  font-style: normal;
   font-weight: 400;
-  line-height: 130%;
+  line-height: 1.4;
+  max-width: 100%;
+  margin: 0 auto; 
+  padding: 0 20px; 
+  text-align: center;
 }
+
 .notes {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 180px;
-  margin-top: 50px;
+  justify-content: flex-start; 
+  margin-bottom: 20px; 
+  margin-top: 20px; 
 }
-.note-p {
-  color: #858ead;
-  width: 625px;
-  flex-shrink: 0;
-  font-family: Roboto;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 140%;
-  padding-bottom: 1px;
-}
+
 .notes-img {
   width: 536px;
   height: 346.063px;
   flex-shrink: 0;
   margin: 0;
   padding: 0;
-  margin-right: 30px;
+  margin-left: 20px; 
   margin-top: 10px;
 }
+
+.note {
+  flex-grow: 1; 
+  padding-right: 20px; 
+  word-wrap: break-word; 
+}
+
+.note-p {
+  color: #858ead;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.4;
+  max-width: 100%;
+  word-wrap: break-word; 
+  margin-left: 20px;
+}
+
 .note-span {
   color: black;
   font-weight: 500;
   font-size: 24px;
   margin-bottom: 30px;
 }
+
 .reminder {
   background: url("src/Assets/Images/Blue-Pattern.png");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 240px;
   margin: 0;
-  padding: 0;
-  margin-top: 1px;
-  padding-top: 1px;
-  margin-bottom: 120px;
-  width: 1216px;
+  padding: 20px; 
+  margin-top: 20px; 
+  margin-bottom: 20px; 
+  text-align: center; 
 }
+
 .reminder1 {
-  text-align: center;
   padding-top: 20px;
-  padding-bottom: 0px;
-  flex-shrink: 0;
+  padding-bottom: 10px; 
   color: #fff;
   font-family: Roboto;
-  font-size: 34px;
-  font-style: normal;
+  font-size: 28px; 
   font-weight: 600;
-  line-height: 143%;
-}
-.reminder2 {
-  margin-left: 30px;
-  padding-bottom: 69px;
-  flex-shrink: 0;
-  color: #fff;
-  font-family: Roboto;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 1.5;
 }
+
+.reminder2 {
+  margin: 0 auto; 
+  padding-bottom: 20px; 
+  color: #fff;
+  font-family: Roboto;
+  font-size: 18px; 
+  font-weight: 400;
+  line-height: 1.5;
+  max-width: 800px; 
+}
+
+/* Media Query for screens with a max width of 820px */
 @media screen and (max-width: 820px) {
-  .research-tools{
-    margin:0 auto;
-    width: 100%;
-  }
-  .tools {
-    padding: 0;
-    margin: 0;
-  }
-  .tool {
-    color: var(--sn-primary-headings-07235-b, #07235b);
-    font-family: Roboto;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1;
-    margin-top: 150px;
-    width: 700px;
-    height: 127px;
-    flex-shrink: 0;
-  }
-  .tool-p {
-    margin-top: 10px;
-    color: var(--sn-primary-headings-07235-b, #07235b);
-    font-family: Roboto;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 143%;
-    width: 700px;
-    height: 120px;
-    flex-shrink: 0;
-  }
-  .notes {
-    display: block;
-  }
-  .notes-img {
-    width: 460px;
-    height: 320px;
-    flex-shrink: 0;
-    margin-top: 50px;
-    margin-left: 50px;
-    margin-bottom: 52px;
-  }
-  .note-p {
-    width: 700px;
-    flex-shrink: 0;
-    color: var(--sn-body-text-grey-858-ead, #858ead);
-    font-family: Roboto;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 143%;
-  }
-  .note-span {
-    font-size: 20px;
-  }
-  .reminder {
-    width: 700px;
-    flex-shrink: 0;
-    margin-right: 21px;
-    display: block;
-    padding: 0;
-    margin: 0;
-    margin-top: 10px;
-  }
   .reminder1 {
-    width: 604px;
-    flex-shrink: 0;
-    color: #fff;
-    font-family: Roboto;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 143%;
-    margin-bottom: 5px;
-    align-items: center;
-    padding-left: 150px;
+    font-size: 24px; 
   }
+
   .reminder2 {
-    width: 672px;
-    flex-shrink: 0;
-    color: #fff;
-    font-family: Roboto;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 143%;
-    align-items: center;
-    margin-left: 70px;
-    padding-right: 70px;
+    font-size: 16px; 
   }
 }
-@media (max-width: 425px) {
-  .research-tools{
-    margin:0 auto;
-    width: 100%;
-  }
-  .tools {
-    padding-top: 20px;
-  }
-  .tool {
-    width: 340px;
-    flex-shrink: 0;
-    color: var(--sn-primary-headings-07235-b, #07235b);
-    font-family: Roboto;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 120%;
-    margin-top: 330px;
-  }
-  .tool-p {
-    width: 340px;
-    flex-shrink: 0;
-    color: var(--sn-primary-headings-07235-b, #07235b);
-    font-family: Roboto;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 110%;
-    margin-top: 15px;
-    margin-left: 16px;
-    margin-bottom: 100px;
-  }
-  .notes-img {
-    width: 340px;
-    height: 318px;
-    flex-shrink: 0;
-    margin: 0;
-    padding: 0;
-    margin-top: 66px;
-    margin-bottom: 50px;
-    padding-left: 10px;
-    margin-left: 16px;
-  }
-  .note-p {
-    width: 340px;
-    flex-shrink: 0;
-    color: var(--sn-body-text-grey-858-ead, #858ead);
-    font-family: Roboto;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 110%;
-    margin: 0px;
-    padding: 0px;
-    margin-left: 24px;
-  }
-  .note-span {
-    font-size: 20px;
-  }
-  .reminder {
-    width: 340px;
-    height: 400px;
-    flex-shrink: 0;
-    margin-left: 16px;
-    padding-left: 38px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 50px;
-    align-items: center;
-  }
+
+/* Media Query for screens with a max width of 425px */
+@media screen and (max-width: 425px) {
   .reminder1 {
-    width: 215px;
-    height: 20.146px;
-    flex-shrink: 0;
-    color: #fff;
-    font-family: Roboto;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 100%;
-    margin: 0;
-    padding: 0;
-    padding-bottom: 35px;
-    padding-left: 30px;
+    font-size: 20px; 
   }
+
   .reminder2 {
-    width: 267px;
-    flex-shrink: 0;
-    color: #fff;
-    font-family: Roboto;
+    font-size: 14px; 
+  }
+}
+
+
+/* Media Query for screens with a max width of 820px */
+@media screen and (max-width: 820px) {
+  .research-tools {
+    padding: 10px; 
+  }
+
+  .tool {
+    font-size: 30px; 
+    line-height: 1.2;
+  }
+
+  .tool-p {
     font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 110%;
-    margin: 0;
-    padding: 0;
+    line-height: 1.4;
+  }
+
+  .notes {
+    flex-direction: column; 
+  }
+
+  .notes-img {
+    width: 100%; 
+    height: auto;
+    margin-left: 0; 
+    margin-top: 20px; 
+  }
+
+  .note {
+    padding-right: 0; 
+    margin-left: 0; 
+  }
+
+  .note-p {
+    font-size: 18px; 
+    line-height: 1.4;
+    margin-left: 0; 
+  }
+
+  .reminder {
+  }
+
+  .reminder1 {
+    font-size: 24px; 
+  }
+
+  .reminder2 {
+    font-size: 18px; 
+    margin-left: 0; 
+  }
+}
+
+/* Media Query for screens with a max width of 425px */
+@media (max-width: 425px) {
+  .tool {
+    font-size: 24px;
+  }
+
+  .tool-p {
+    font-size: 20px; 
+  }
+
+  .notes-img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px; 
+    margin-left: 0; 
+  }
+
+  .note-p {
+    font-size: 20px; 
+    margin-left: 0; 
+  }
+
+  .reminder1 {
+    font-size: 20px; 
+  }
+
+  .reminder2 {
+    font-size: 18px;
+    margin-left: 0; 
   }
 }
