@@ -45,7 +45,7 @@
   max-width: 100%;
   margin: 0 auto; 
   padding: 0 20px; 
-  text-align: center;
+  text-align: justify;
 }
 
 .notes {
@@ -80,6 +80,7 @@
   max-width: 100%;
   word-wrap: break-word; 
   margin-left: 20px;
+  text-align: justify;
 }
 
 .note-span {
@@ -119,6 +120,7 @@
   font-weight: 400;
   line-height: 1.5;
   max-width: 800px; 
+  text-align: justify;
 }
 
 /* Media Query for screens with a max width of 820px */
