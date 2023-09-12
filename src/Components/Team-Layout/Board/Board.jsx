@@ -148,12 +148,13 @@ const Board = () => {
               ))}
 
             </div>
+
+            <img src={roundedFrame} className="rounded-frame" />
             <img
                 onClick={handlePopupClose}
                 src={closeButton}
                 className="close-btn-2"
               />
-            <img src={roundedFrame} className="rounded-frame" />
           </div>
         </div>
       )}
@@ -161,7 +162,7 @@ const Board = () => {
         {/* <div className={`teamboard-tab ${isVisible.divRef ? "slide-in" : ""}`}
                     ref={divRef}> */}
 
-        <h2 className="team-directors-header"> Board of Directors</h2>
+        <h2 className="team-directors-header"> Board of  Directors</h2>
 
         <h3 className="team-directors-tab">
           Our Board of Directors governs the Foundation's mission, policies,

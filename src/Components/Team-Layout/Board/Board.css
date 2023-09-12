@@ -139,6 +139,7 @@
     opacity: 1;
     transform: translateX(0);
     bottom: 25px;
+    max-width: 100%;
 }
 
 
@@ -382,6 +383,7 @@
     margin: 5%;
     overflow: scroll;
     overflow-x: hidden;
+    text-align: justify;
 }
 
 .popup-name {
@@ -489,7 +491,7 @@
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin-top: 25px;
+    padding-top: 10px;
   }
   
   
