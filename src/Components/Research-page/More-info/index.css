@@ -1,5 +1,5 @@
 .info {
-  margin: 0 auto;
+  margin: -50px auto;
   width: 100%;
   max-width: 1216px;
   padding: 0 24px; /* Added padding for better look on smaller devices */
@@ -37,8 +37,8 @@
 .evorolimus-span {
   font-size: 24px;
   line-height: 143%;
-  margin-top: 10px;
-  margin-bottom: 50px;
+  margin-top: -30px;
+  margin-bottom: 20px;
 }
 
 .evorolimus {
@@ -51,13 +51,13 @@
 .evorolimus-img {
   width: 100%; /* Take full width on small screens */
   max-width: 470px; /* Max out at 470px */
-  margin: 0 auto 30px; /* center the image and add bottom margin */
+  margin: -500px auto 30px; /* center the image and add bottom margin */
 }
 .evorolimus {
   display: flex;
   flex-wrap: wrap; /* Make sure the items wrap */
   justify-content: space-between;
-  margin: 100px auto 150px;
+  margin: 10px auto 50px;
   align-items: center; /* Vertically aligns items in the center for a more balanced look */
 }
 
@@ -72,6 +72,7 @@
   .evorolimus > div,
   .evorolimus-img {
     max-width: 100%; /* Makes items take the full width on smaller screens */
+    padding-top: 150px;
   }
 }
 
@@ -87,10 +88,11 @@
   
   .evorolimus {
     flex-direction: column;
+    margin-top: 20px;
   }
 
   .evorolimus-img {
-    margin-bottom: 20px;
+    padding-top: 30px;
   }
 }
 

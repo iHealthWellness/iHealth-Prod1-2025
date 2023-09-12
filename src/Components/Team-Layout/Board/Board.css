@@ -112,11 +112,14 @@
 
 .btn-board-tab {
     position: absolute;
-    right: -15px;
-    bottom: 20px;
+    top: 102%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     border: none;
     background: transparent;
+    margin-top: 3px;
 }
+
 
 .board-directors-tab,
 .board-directors-tab2,
@@ -246,10 +249,14 @@
     
 
     .btn-board-tab {
-        margin-right: 105px; /* Adjust this value as needed */
-        margin-bottom: -40px; /* Adjust this value as needed */
         width: 30px; /* Adjust the width */
         height: 30px; /* Adjust the height */
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: none;
+        background: transparent;
     }
 
     .popup-linkedin-icon {
@@ -266,6 +273,7 @@
         margin-top: 8%;
         margin-left: 80%;
     }
+
 
     .board-image {
         width: 100%;
@@ -409,9 +417,11 @@
     padding-left: 8%;
     padding-right: 8%;
 }
+.close-btn-2{
 
-.close-btn,
-.close-btn-2 {
+}
+
+.close-btn {
     width: 5vh;
     position: absolute;
     top: 5%;
@@ -448,7 +458,9 @@
     .popup-name {
         font-size: 20px; /* Adjust font size for smaller screens */
     }
-
+    .close-btn-2{
+        margin-top: 20px;
+    }
     .close-btn,
     .close-btn-2 {
         width: 7vh; /* Adjust the width for smaller screens */
@@ -473,14 +485,13 @@
   
   /* Position Close Button 2 on Bottom Center of Cards */
   .close-btn-2 {
-    position: absolute;
-    bottom: 0;
-    left: 50%; /* Move it to the center */
-    transform: translateX(-50%); /* Center horizontally */
     width: 5vh;
-    margin: 10px;
-    z-index: 2; /* Ensure it's above cards */
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 25px;
   }
+  
   
   /* ... (rest of the CSS remains the same) */
   

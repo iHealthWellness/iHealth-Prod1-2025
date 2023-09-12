@@ -4,31 +4,31 @@ import "./index.css";
 import Research2 from "src/Assets/Images/Research-2.png";
 
 const section2 = () => {
-  useEffect(() => {
-    const textElements = document.querySelectorAll(".slide-in-text");
+  // useEffect(() => {
+  //   const textElements = document.querySelectorAll(".slide-in-text");
 
-    const handleScroll = () => {
-      textElements.forEach((textElement) => {
-        const slideInAt =
-          window.scrollY + window.innerHeight - textElement.clientHeight / 2;
-        const elementBottom = textElement.offsetTop + textElement.clientHeight;
-        const isHalfShown = slideInAt > textElement.offsetTop;
-        const isNotScrolledPast = window.scrollY < elementBottom;
+  //   const handleScroll = () => {
+  //     textElements.forEach((textElement) => {
+  //       const slideInAt =
+  //         window.scrollY + window.innerHeight - textElement.clientHeight / 2;
+  //       const elementBottom = textElement.offsetTop + textElement.clientHeight;
+  //       const isHalfShown = slideInAt > textElement.offsetTop;
+  //       const isNotScrolledPast = window.scrollY < elementBottom;
 
-        if (isHalfShown && isNotScrolledPast) {
-          textElement.classList.add("active");
-        } else {
-          textElement.classList.remove("active");
-        }
-      });
-    };
+  //       if (isHalfShown && isNotScrolledPast) {
+  //         textElement.classList.add("active");
+  //       } else {
+  //         textElement.classList.remove("active");
+  //       }
+  //     });
+  //   };
 
-    window.addEventListener("scroll", handleScroll);
+  //   window.addEventListener("scroll", handleScroll);
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
 
   return (
     <section id="tools" className="research-tools">
