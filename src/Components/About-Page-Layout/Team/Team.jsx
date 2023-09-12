@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import team from "/src/Assets/Images/team-image.svg";
-import teamwork from "/src/Assets/Images/teamwork.png";
+import teamwork from "/src/Assets/Images/business-meeting4.png";
 import "./Team.css";
 
 const Team = () => {

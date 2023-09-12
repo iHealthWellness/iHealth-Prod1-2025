@@ -1,9 +1,8 @@
-
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import "./index.css";
 import Research3 from "src/Assets/Images/Research-3.png";
 
-const section3 = () => {
+const Section3 = () => {
   useEffect(() => {
     const textElements = document.querySelectorAll('.slide-in-text');
 
@@ -31,7 +30,6 @@ const section3 = () => {
 
   return (
     <div className="clinic" id="clinical">
-      <div className="slide-in-text">
       <div className="clinical-therapies">
         <h1 className="clinic1">Clinical Drug Therapies</h1>
         <p className="clinic2">
@@ -43,7 +41,7 @@ const section3 = () => {
       </div>
 
       <div className="type-1">
-        <div className="Selumetinib">
+        <div className="selumetinib">
           <span className="selumetinib-span">
             Selumetinib for Children With Neurofibromatosis Type 1
           </span>
@@ -64,8 +62,7 @@ const section3 = () => {
           <img className="selumitinib-img" src={Research3} alt="" />
         </div>
       </div>
-      </div>
-      <div className="slide-in-text">
+
       <div className="trametinib">
         <span className="trametinib-span">
           Trametinib: Promising Results in Adults and Children{" "}
@@ -96,8 +93,8 @@ const section3 = () => {
         </p>
       </div>
     </div>
-    </div>
-  )
-}
+  );
+};
 
-export default section3;
+export default Section3;
+
