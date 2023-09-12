@@ -62,7 +62,7 @@ const DataPage = [
         id: 8,
         TeamName: "Marketing and Public Relations ",
         // Roles: "Marketing Managers,PR Specialists, Communications Managers  ",
-        Names: [" Sean Banks", "Abigail Ogbe",],
+        Names: [" Abigail Ogbe", "Sean Banks",],
 
     },
     {
