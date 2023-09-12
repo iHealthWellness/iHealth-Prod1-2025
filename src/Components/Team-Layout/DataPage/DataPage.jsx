@@ -58,13 +58,13 @@ const DataPage = [
         Names: ["Dalia Hechi"],
 
     },
-    // {
-    //     id: 8,
-    //     TeamName: "Marketing and Public Relations ",
-    //     // Roles: "Marketing Managers,PR Specialists, Communications Managers  ",
-    //     Names: [" Sean Banks", "Abigail Ogbe",],
+    {
+        id: 8,
+        TeamName: "Marketing and Public Relations ",
+        // Roles: "Marketing Managers,PR Specialists, Communications Managers  ",
+        Names: [" Sean Banks", "Abigail Ogbe",],
 
-    // },
+    },
     {
         id: 9,
         TeamName: "Product Management",
