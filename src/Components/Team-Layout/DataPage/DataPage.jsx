@@ -18,23 +18,23 @@ const DataPage = [
     },
     {
         id: 2,
-        TeamName: "Data Analysis ",
+        TeamName: "Data Science ",
         // Roles: "Data Analysts,Data Scientists,Data Engineers ",
-        Names: [" Ajeyomi Adedoyin", "Alim Nuriiev", "Ayushi Malaviya", "Audrey Gil", "Ellen Fernandez", "Emmanuel Momoh", "George Mendez",],
+        Names: [" Ajeyomi Adedoyin", "Alim Nuriiev", "Ayushi Malaviya", "Audrey Gil", "Ellen Fernandez", "Emmanuel Momoh", "George Mendez", "Rishitha Golla",],
 
     },
     {
         id: 3,
         TeamName: " Design",
         // Roles: "UX/UI Designers, Interaction Designers, Visual Designers, Graphic Designers ",
-        Names: [" Aaron Brown", "Adel Akhmed", "Innocent Opara", "Mariam Abdulkareem","Mary Dolmat","Nihan Kucukos","Olawafemi Nurudeen","William Vo"],
+        Names: [" Adel Akhmed", "Anna Kholyavko",  "Ellen Beatty", "Innocent Opara", "Mariam Abdulkareem","Mary Dolmat","Nihan Kucukos","Olawafemi Nurudeen","William Vo"],
 
     },
     {
         id: 4,
         TeamName: "Development",
         // Roles: " Software Engineers, Full-Stack Developers,Backend Developers,Frontend Developers, DevOps Engineers,Mobile App Developers ",
-        Names: ["Abdulbasit Alabi","Amal Engulatov","Barisanem Fiiwe", "Cem Mehmet Onal", "Emmanuel Adewoye","EPhrem Bayru", "Imesh Chandrasiri", "Kelvin Njuiri", "Kiran Yadav","Krsna Patel", "Nisha Fazululakha", "Oladimeji Ibitoye", "Udemeobong Akpan", "Xuelan Wu", "Yunus Olgan", "Zack Zhou"],
+        Names: ["Abdulbasit Alabi","Amal Engulatov","Barisanem Fiiwe", "Cem Mehmet Onal", "Emmanuel Adewoye","EPhrem Bayru", "Imesh Chandrasiri", "Kelvin Njuiri", "Kiran Yadav","Krsna Patel", "Nisha Fazululakha", "Oladimeji Ibitoye", "Oluwaferanmi Ogunrinola", "Udemeobong Akpan", "Xuelan Wu", "Yunus Olgan", "Zack Zhou"],
 
     },
     {
@@ -62,21 +62,21 @@ const DataPage = [
     //     id: 8,
     //     TeamName: "Marketing and Public Relations ",
     //     // Roles: "Marketing Managers,PR Specialists, Communications Managers  ",
-    //     Names: [" Sean Banks", ],
+    //     Names: [" Sean Banks", "Abigail Ogbe",],
 
     // },
     {
         id: 9,
         TeamName: "Product Management",
         // Roles: "Product Managers, Product Owners  ",
-        Names: ["Hsuan Ouyang", "Melissa Enninful", "Susan Haynes", ],
+        Names: [" Anjali Hill", "Hsuan Ouyang", "Susan Haynes", ],
 
     },
     {
         id: 10,
         TeamName: "Project Management ",
         // Roles: "Project Managers, Scrum Masters, Agile Coaches  ",
-        Names: ["Anu Ramabhadran", "Nelson Izah", "Sherrie Ricks", ],
+        Names: ["Anu Ramabhadran", "Frank Saladis, PMP", "Sherrie Ricks", ],
 
     },
     {
