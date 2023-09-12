@@ -69,7 +69,7 @@ const DataPage = [
         id: 9,
         TeamName: "Product Management",
         // Roles: "Product Managers, Product Owners  ",
-        Names: [" Anjali Hill", "Hsuan Ouyang", "Susan Haynes", ],
+        Names: [" Anjali Hill",  "Ashley Garcia","Hsuan Ouyang", "Susan Haynes", ],
 
     },
     {
