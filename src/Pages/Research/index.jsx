@@ -22,7 +22,7 @@ const index = () => {
       <Participate />
       <Involvement />
       <Consideration />
-      <TotopBtn />
+      <TotopBtn /> 
     </div>
   );
 };

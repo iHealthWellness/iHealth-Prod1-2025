@@ -1,9 +1,11 @@
 
 /* desktop view */
-.container{
-    margin:0 auto;
+.container {
+    margin: 0 auto;
     width: 90%;
     max-width: 1216px;
+    padding-left: 20px;
+    padding-right: 20px; /* Add padding on both sides */
 }
 .img-holder{
   margin-top:9px;
@@ -11,19 +13,19 @@
   height:auto;
 }
 
-.pageholder{
-
-    /* background-color:#Ffff; */
-    /* background-color:#F0F7FD; */
-    background-color: rgb(242, 248, 253); 
+.pageholder {
+    background-color: rgb(242, 248, 253);
     overflow-x: hidden;
-
-    
+    padding-left: 20px;
+    padding-right: 20px; /* Add padding on both sides */
 }
-.page{
-    display:flex;
+
+.page {
+    display: flex;
     justify-content: center;
     gap: 56px;
+    padding-left: 20px;
+    padding-right: 20px; /* Add padding on both sides */
 }
 
 .img-mission{
@@ -44,18 +46,22 @@
     margin-top: 120px;
 
 }
-.text-outline{
-    background-color:#FFFFFF;
+.text-outline {
+    background-color: #FFFFFF;
     border-radius: 0px 0px 20px 20px;
-    width:381px;
-    height:auto;
+    width: 381px;
+    height: auto;
     padding: 20px;
-    transform: translateX(50%);
-    transition: opacity 0.5s ease-in-out, transform 0.8s ease-in-out; 
+    transform: translateX(-100%); /* Start off-screen to the left */
+    transition: opacity 0.5s ease-in-out, transform 0.8s ease-in-out;
     overflow: hidden;
-
-  
 }
+
+/* Add a class to trigger the animation */
+.slide-in {
+    transform: translateX(0); /* Slide in from the left */
+}
+
 .text-outline.slide-in,
 .text-outline1.slide-in,
 .text-outline2.slide-in {
@@ -142,8 +148,8 @@
     width:381px;
     padding: 20px;
     margin-bottom: 30px;
-    transform: translateX(50%);
-    transition: opacity 0.5s ease-in-out, transform 0.8s ease-in-out; 
+    /* transform: translateX(50%);
+    transition: opacity 0.5s ease-in-out, transform 0.8s ease-in-out;  */
   
 }
 
@@ -200,31 +206,23 @@ padding: 20px;
 /* Responsiveness Tablet view */
 
 @media only screen and (max-width:820px){
-.container{
- margin:0 auto;
-width: 100%;
-}
+    .container {
+        width: 100%;
+    }
 .page{
 flex-direction: column;
 gap: 20px;
 }
-.img-value{
+.img-value {
     width: 100%;
     margin-top: 10px;
-    height: 340px;
-
+    height: auto;
 }
-/* .img-mission{
+
+.img-vision {
     margin-top: 10px;
     width: 100%;
-    height: 340px;
-
-} */
-.img-vision{
-    margin-top: 10px;
-    width: 100%;
-    height: autopx;
-
+    height: auto;
 }
 
 
@@ -403,4 +401,56 @@ br{
     transform: translateX(0);
     transition: opacity 0.5s ease-in-out, transform 0.8s ease-in-out; 
     }
+}
+@media only screen and (max-width: 480px) {
+    .pageholder {
+        background-color: #ffffff;
+    }
+
+    .page {
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .img-mission,
+    .img-value,
+    .img-vision {
+        width: 90%;
+        margin-left: 15px;
+        margin-right: 15px; /* Add margin on both sides */
+    }
+
+    .text-outline,
+    .text-outline1 {
+        width: 100%;
+        padding: 10px;
+        height: auto;
+    }
+
+    .text1 {
+        width: 100%;
+        font-family: Roboto;
+        font-size: 24px;
+    }
+
+    .text-layout {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 34px;
+        padding: 20px;
+    }
+
+    .text {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    .text p {
+        padding: 10px;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 34px;
+    }
+
+    /* Adjust other styles as needed for mobile view */
 }

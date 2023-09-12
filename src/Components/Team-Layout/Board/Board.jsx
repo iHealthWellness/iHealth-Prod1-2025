@@ -14,6 +14,7 @@ import Image7 from "src/Assets/Icons/plus.png";
 import teamData from "src/Components/Team-Layout/DataPage/TeamData.jsx";
 
 import closeButton from "src/Assets/Images/close-button.png";
+import closeButton2 from "src/Assets/Images/close-button-2.png";
 
 import linkedIn from "src/Assets/Icons/linkedin.svg";
 
@@ -127,7 +128,7 @@ const Board = () => {
           <div className="popup-content">
             <img
               onClick={handlePopupClose}
-              src={closeButton}
+              src={closeButton2}
               className="close-btn"
             />
             <div className="popup-text">
@@ -137,6 +138,7 @@ const Board = () => {
                 {/* <img src={linkedIn} className="popup-linkedin-icon" /><h2 className="popup-linkedin-text">LinkedIn</h2> */}
               </div>
               <hr className="grey-line"></hr>
+
               {selectedCard.extendedBio.split("--").map((bioChunk) => (
                 <div key={bioChunk}>
                   <a>{bioChunk}</a>
@@ -144,8 +146,15 @@ const Board = () => {
                   <br />
                 </div>
               ))}
+
             </div>
+
             <img src={roundedFrame} className="rounded-frame" />
+            <img
+                onClick={handlePopupClose}
+                src={closeButton}
+                className="close-btn-2"
+              />
           </div>
         </div>
       )}
@@ -153,7 +162,7 @@ const Board = () => {
         {/* <div className={`teamboard-tab ${isVisible.divRef ? "slide-in" : ""}`}
                     ref={divRef}> */}
 
-        <h2 className="team-directors-header"> Board of Directors</h2>
+        <h2 className="team-directors-header"> Board of  Directors</h2>
 
         <h3 className="team-directors-tab">
           Our Board of Directors governs the Foundation's mission, policies,
@@ -294,15 +303,13 @@ const Board = () => {
           <img src={Image8} alt="" />
 
           <div className="Name-tab">
-{/*             <p>Christophe Foulon, CISSP, GSLC, AWS Security</p> */}
-                        <p>Christophe Foulon, CISSP</p>
+            {/*             <p>Christophe Foulon, CISSP, GSLC, AWS Security</p> */}
+            <p>Christophe Foulon, CISSP</p>
           </div>
           <button className="btn-board-tab">
             <img src={Image7} />
           </button>
         </div>
-
-
       </div>
     </div>
   );
