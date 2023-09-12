@@ -20,7 +20,7 @@ const DataPage = [
         id: 2,
         TeamName: "Data Science ",
         // Roles: "Data Analysts,Data Scientists,Data Engineers ",
-        Names: [" Ajeyomi Adedoyin", "Alim Nuriiev", "Ayushi Malaviya", "Audrey Gil", "Ellen Fernandez", "Emmanuel Momoh", "George Mendez", "Rishitha Golla",],
+        Names: [" Alim Nuriiev", "Ayushi Malaviya", "Audrey Gil", "Ellen Fernandez", "Emmanuel Momoh", "George Mendez", "Rishitha Golla",],
 
     },
     {
