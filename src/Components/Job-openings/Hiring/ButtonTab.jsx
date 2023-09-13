@@ -1,6 +1,7 @@
 import "./ButtonTab.css"
 import { clsx } from 'clsx';
-const BntTab = ({ type, icon, onClick, className }) => {
+
+export const BntTab = ({ type, icon, onClick, className }) => {
 
 
     return (
@@ -12,4 +13,17 @@ const BntTab = ({ type, icon, onClick, className }) => {
 
 
 }
-export default BntTab;
+
+
+export const ArrowTab = ({ type, icon, onClick, className }) => {
+
+
+    return (
+
+        <button type={type} className={clsx('buttontab', className)} onClick={onClick}>
+            <img src={icon} alt="Toogle" />
+        </button>
+    )
+
+
+}
