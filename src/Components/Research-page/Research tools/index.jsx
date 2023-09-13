@@ -36,7 +36,7 @@ const section2 = () => {
       {/* <div className="slide-in-text"> */}
         <div className="tools">
           <h1 className="tool">
-            Neurofibromatosis Research Tools and Resources: <br /> <span className="after-break">Empowering Patients and Professionals</span>
+            Neurofibromatosis Research Tools and Resources <br /> <span className="after-break">Empowering Patients and Professionals</span>
           </h1>
           <p className="tool-p">
             Neurofibromatosis (NF) is a complex genetic disorder that requires
