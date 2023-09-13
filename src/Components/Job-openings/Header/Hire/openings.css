@@ -1,0 +1,25 @@
+
+.openings-tab{
+
+    background-color: rgb(242, 248, 253);
+}
+
+.flex{
+    display: flex;
+    gap:50px;
+}
+.grid{
+    display: flex;
+    gap:50px
+    
+
+}
+.career-tab{
+    margin-top: 20px;
+}
+.layerOne-tab{
+     width:40%; 
+}
+.layerTwo-tab{
+    width: 40px;
+}

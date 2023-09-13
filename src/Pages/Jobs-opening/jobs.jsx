@@ -1,13 +1,15 @@
 import React from 'react';
 
-import Hiring from "src/Components/Job-openings/Hiring/openings"
-
+import Header from "src/Components/Job-openings/Header/Header";
+import openings from 'src/Components/Job-openings/Hiring/openings';
 const jobs = () => {
   return (
     <div>
-        <Hiring/>
+      <Header />
+      <openings />
+
     </div>
   )
 }
 
-export default jobs
+export default jobs;
