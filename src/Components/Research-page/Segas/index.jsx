@@ -67,7 +67,7 @@ const section5 = () => {
           condition and requirements.
         </p>
       </div>
-      <div className="slide-in-text">
+      {/* <div className="slide-in-text"> */}
 
       <div className="peginter">
         <span className="peginter-span">Peginterferon alfa-2b</span>
@@ -104,7 +104,7 @@ const section5 = () => {
           https://academic.oup.com/neuro-oncology/article/19/2/289/3038131</i>
         </p>
       </div>
-      </div>
+      {/* </div> */}
       <div className="conclusion">
         <h2 className="conclusion1">Conclusion</h2>
         <p className="conclusion2">

@@ -33,7 +33,7 @@ const section2 = () => {
   return (
     <section id="tools" className="research-tools">
       <div>
-      <div className="slide-in-text">
+      {/* <div className="slide-in-text"> */}
         <div className="tools">
           <h1 className="tool">
             Neurofibromatosis Research Tools and Resources:<br /> Empowering Patients
@@ -113,7 +113,7 @@ const section2 = () => {
             in the field of NF research.
           </p>
         </div>
-      </div>
+      {/* </div> */}
     </section>
   );
 };

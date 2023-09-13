@@ -32,7 +32,7 @@ const Consideration = () => {
   return (
     <div className="Consider">
       <div className="consider">
-        <div className="slide-in-text">
+
           <div className="consideration">
             <h2>
               <span className="consideration-span">
@@ -74,7 +74,7 @@ const Consideration = () => {
               your involvement.
             </p>
           </div>
-          </div>
+
           <img className="consider-img" src={Research7} alt="" />
       </div>
       <div className="difference">

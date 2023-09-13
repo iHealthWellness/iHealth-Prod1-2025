@@ -41,7 +41,7 @@ const DataPage = [
         id: 6,
         TeamName: " Human Resources",
         // Roles: "HR Managers, HR Generalists, Talent Acquisition Specialists",
-        Names: ["Lucia Valerio", "Marissa Flanagan", "Serena Pasqualini",],
+        Names: ["Lucia Valerio", "Marissa Flanagan"],
 
     },
     {
