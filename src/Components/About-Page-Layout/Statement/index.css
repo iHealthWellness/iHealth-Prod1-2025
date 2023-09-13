@@ -85,8 +85,8 @@
     margin-bottom: 25px;
 }
 .text{
-    
-    text-align: center;
+    text-align: justify;
+
     color:#00427C;
     border-radius:20px;
     padding: 20px;
@@ -97,19 +97,44 @@
     border-radius:20px;
     font-size: 24px;
     font-weight: 400;
-    line-height: 22px;
+    line-height: 28px;
     letter-spacing: 0em;
+    word-break: break-all;
 }
 .text-layout p{
-    padding:10px;
     font-family: Roboto;
-    border-radius:20px;
     font-size: 24px;
     font-weight: 400;
     line-height: 22px;
     letter-spacing: 0em;
+    text-align: justify;
+    padding: 20px;
+    letter-spacing: 0em;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    word-break: break-all;
+    padding:10px;
 
 }
+.text1 p{
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: justify;
+    padding: 20px;
+    letter-spacing: 0em;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    word-break: break-all;
+    padding:10px;
+    }
+
 
 .text:hover{
     background-color:#07235B;
@@ -136,10 +161,11 @@
  line-height: 22px;
  letter-spacing: 0em;
  text-align: center;
- padding: 50px;
+ padding: 20px;
  
  
 }
+
 
 .text-outline1{
     background-color:#FFFFFF;
@@ -177,16 +203,7 @@ text-align: center;
 padding: 10px;
 
 }
-.text1 p{
-font-family: Roboto;
-font-size: 24px;
-font-weight: 400;
-line-height: 22px;
-letter-spacing: 0em;
-text-align: center;
-padding: 20px;
 
-}
 
 .text-outline-color-change{
     background-color:#07235B;
