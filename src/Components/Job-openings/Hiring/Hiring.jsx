@@ -1,14 +1,34 @@
 import React from "react";
-import BntTab from "./ButtonTab";
-import "./openings.css"
+import { BntTab } from "./ButtonTab";
+import { ArrowTab } from "./ButtonTab";
+import "./Hiring.css"
 import plusbtn from "src/Assets/Icons/plus.png";
 import minusbtn from "src/Assets/Icons/minus.png";
 import topArrow from "src/Assets/Icons/Icon.png";
 import downArrow from "src/Assets/Icons/Icon2.png";
 
+import { useState } from "react";
 
 
-const openings = () => {
+
+const Hiring = () => {
+
+  const [accordion, setAccordion] = useState({
+
+    privacy: false,
+
+
+
+
+  })
+
+  const toggleAccordion = content => e => {
+
+    setAccordion(prev => ({ ...prev, [content]: !prev[content] }))
+
+  }
+
+
   return (
     <section className="openings-tab" id="job-openings">
 
@@ -17,20 +37,24 @@ const openings = () => {
         <div className="flex">
           <div className="layerOne-tab">
             <div>
-              <div className="flex">
-                <h2>COPYWRITING</h2>
-                <img src="" />
-              </div>
-              <div className="grid">
-                <h2>Copywriter</h2>
-                <h2>Remote</h2>
-                <img src="" />
+              <div className="flex-tab">
+                <h3 className="Text-header">COPYWRITING</h3>
+                <BntTab icon={accordion.privacy ? minusbtn : plusbtn} onClick={toggleAccordion('privacy')} />
 
               </div>
+              {accordion.privacy && (
+                <div className="grid">
+                  <h2 className="grid-text">Copywriter</h2>
+                  <h2 className="grid-text">Remote</h2>
+                  <ArrowTab icon={setAccordion.privacy ? topArrow : downArrow} onClick={toggleAccordion('privacy')} />
+
+
+
+                </div>)}
 
 
               <hr />
-              <div>
+              <div className="text-tab-flow">
 
 
                 <h2>Description</h2>
@@ -92,7 +116,21 @@ const openings = () => {
 
 
           <div className="layerTwo-tab">
-            <h2>IT INFRASTRUCTURE</h2>
+            <div className="flex">
+              <h3 className="Text-header">IT INFRASTRUCTURE</h3>
+              <img src="" />
+            </div>
+            <div className="grid">
+              <h2 className="grid-text">Salesforce Architect (Cloud Health Implementation Expert)</h2>
+              <h2 className="grid-text">Remote</h2>
+              <img src="" />
+
+            </div>
+
+
+
+
+            <hr />
 
           </div>
 
@@ -105,4 +143,4 @@ const openings = () => {
   );
 };
 
-export default openings;
+export default Hiring;
