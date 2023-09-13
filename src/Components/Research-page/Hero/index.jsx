@@ -38,7 +38,7 @@ const section1 = () => {
       <div>
         <div className="side">
           <h1 className="side1">
-            Unraveling the Mysteries of Neurofibromatosis:
+            Unraveling the Mysteries of Neurofibromatosis
           </h1>
           <h2 className="side2">Advancing Research for a Brighter Future</h2>
         </div>
