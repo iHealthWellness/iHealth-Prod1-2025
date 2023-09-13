@@ -146,7 +146,6 @@
 
 
 
-
 /* Media query for small screens (adjust the max-width as needed) */
 @media only screen and (max-width: 768px) {
     .team-der h2.team-directors-header,
@@ -209,6 +208,7 @@
 }
 
 .rounded-frame {
+    padding-top: 15px;
     width: 100%;
     margin-bottom: -5%;
     margin-top: -20%;
@@ -419,9 +419,7 @@
     padding-left: 8%;
     padding-right: 8%;
 }
-.close-btn-2{
 
-}
 
 .close-btn {
     width: 5vh;
@@ -491,7 +489,7 @@
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding-top: 10px;
+    padding-top: 20px;
   }
   
   
