@@ -57,7 +57,7 @@ const section4 = () => {
           neurofibromas.
         </p>
       </div>
-      <div className="slide-in-text">
+      {/* <div className="slide-in-text"> */}
       <div className="evorolimus">
         <img className="evorolimus-img" src={Research4} alt="" />
         <div>
@@ -108,7 +108,7 @@ const section4 = () => {
         </div>
       </div>
 
-      </div>
+      {/* </div> */}
     </div>
   );
 };

@@ -42,8 +42,6 @@ const section1 = () => {
           </h1>
           <h2 className="side2">Advancing Research for a Brighter Future</h2>
         </div>
-{/*SN         <div className="slide-in-text"> */}
-            <div>
         <div className="intro">
           <h3 className="introduction">Introduction</h3>
           <p className="welcome">
@@ -74,7 +72,6 @@ const section1 = () => {
             way for new discoveries, improved treatments, and increased quality
             of life for NF patients worldwide.
           </p>
-        </div>
         </div>
       </div>
     </div>

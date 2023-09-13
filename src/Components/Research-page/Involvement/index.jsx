@@ -31,7 +31,6 @@ const section7 = () => {
   }, []);
 
   return (
-    <div className="slide-in-text">
       <div className="involvement">
         <img className="involvement-img" src={Research6} alt="" />
         <div className="involve1">
@@ -81,7 +80,7 @@ const section7 = () => {
           </div>
         </div>
       </div>
-    </div>
+
   );
 };
 
