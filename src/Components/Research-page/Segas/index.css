@@ -64,7 +64,7 @@ body {
   text-align: center;
   padding-top: 20px;
   color: #fff;
-  font-size: 34px;
+  font-size: 24px;
   font-weight: 600;
   line-height: 143%;
 }
@@ -99,9 +99,11 @@ body {
   .conclusion2 {
       padding: 10px auto;
   }
-
-  .segas-p, .peginter-p, .segas1, .peginter-span, .conclusion1, .conclusion2 {
-      font-size: 24px;
+  .peginter-span {
+    font-size: 24px;
+  }
+  .segas-p, .peginter-p, .segas1,  .conclusion1, .conclusion2 {
+      font-size: 20px;
   }
 
   .segas1 {

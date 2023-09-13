@@ -1,7 +1,7 @@
 .first-part {
   margin: 0 auto;
   max-width: 1216px;
-  padding: 10px;
+  padding: 10px 15px; /* Reduced space on the left and right side */
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -10,64 +10,66 @@
 }
 
 .image-img {
+  width: 100%;  
   max-width: 80%;
   height: auto;
   margin-bottom: 20px;
 }
 
-.content {
-  width: 100%;
-  max-width: 800px;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
 .side {
   background-color: #07235b;
   color: #fff;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
   padding: 20px;
+  margin-top: 20px;
   margin-bottom: 20px;
+  text-align: center;
+}
+
+.side1, .side2 {
+  font-family: Roboto;
+  font-weight: 700;
+  line-height: 120%;
+  padding: 20px;
+  padding-left: 15px; /* Reduced padding for the sides */
+  padding-right: 15px; /* Reduced padding for the sides */
 }
 
 .side1 {
-  font-family: Roboto;
-  font-size: 28px;
-  font-weight: 700;
-  line-height: 120%;
-  padding-top: 20px;
-  padding-right: 20px;
-  padding-left: 20px;
+  font-size: 24px;
 }
 
 .side2 {
-  font-family: Roboto;
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 120%;
-  padding-top: 20px;
-  padding-right: 20px;
-  padding-left: 20px;
-  padding-bottom: 40px;
+  font-size: 36px;
 }
 
 .intro {
+  width: 97%;
+  max-width: 100%;
   margin: 0 auto;
+  padding: 20px;
+  padding-left: 15px; /* Reduced padding for the sides */
+  padding-right: 15px; /* Reduced padding for the sides */
+  box-sizing: border-box;
+}
+
+.introduction, .welcome {
+  font-family: Roboto;
+  margin-bottom: 20px;
 }
 
 .introduction {
-  font-family: Roboto;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 700;
   line-height: 120%;
-  margin-bottom: 20px;
 }
 
 .welcome {
-  font-family: Roboto;
   font-size: 20px;
   font-weight: 400;
   line-height: 1.5;
-  margin-bottom: 20px;
   text-align: justify;
 }
 
@@ -82,13 +84,10 @@
   transform: translateX(0);
 }
 
+/* Medium devices (tablets) */
 @media screen and (max-width: 820px) {
-  .content {
+  .side, .intro {
     max-width: 650px;
-  }
-
-  .side {
-    width: 100%;
   }
 
   .side1 {
@@ -108,25 +107,22 @@
   }
 }
 
+/* Small devices (phones) */
 @media screen and (max-width: 425px) {
-  .content {
-    padding: 10px;
+  .side, .intro {
     max-width: 350px;
+    padding: 10px;
   }
 
-  .side1 {
-    font-size: 20px;
+  .side1, .introduction {
+    font-size: 24px;
   }
 
   .side2 {
     font-size: 30px;
   }
 
-  .introduction {
-    font-size: 20px;
-  }
-
   .welcome {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
