@@ -60,18 +60,19 @@
 }
 
 .difference1 {
-  font-size: 2.125rem;
+  font-size: 24px;
   font-weight: 600;
-  padding-top: 2.5rem;
+  padding-top: 10px;
   line-height: 1.4;
 }
 
 .difference2,
 .difference3 {
-  font-size: 1.25rem;
+  font-size: 20px;
   line-height: 1.2;
   margin: 0.625rem 0;
   padding: 0 1.25rem;
+  text-align: justify;
 }
 
 @media screen and (max-width: 1024px) {
@@ -81,10 +82,12 @@
 
   .consideration1,
   .consideration2,
-  .difference1,
+  .difference1 {
+      font-size: 24px;
+  }
   .difference2,
-  .difference3 {
-      font-size: 1.125rem;
+  .difference3{
+    font-size: 20px;
   }
 }
 
@@ -95,7 +98,7 @@
   }
 
   .difference1 {
-      font-size: 1.5rem;
+      font-size: 24px;
   }
 
   .difference2,
