@@ -84,15 +84,15 @@ const MenuList = () => {
       subMenu: [
         {
           title: "Research Tools & Resources",
-          url: "/research/#",
+          url: "/research/#tools",
         },
         {
           title: "Clinical Drug Therapies",
-          url: "/research/#",
+          url: "/research/#clinical",
         },
         {
           title: "Participate in Research",
-          url: "/research/#",
+          url: "/research/#participate",
         },
       ],
     },
