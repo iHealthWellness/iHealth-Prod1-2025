@@ -36,9 +36,9 @@ const section2 = () => {
       <div className="slide-in-text">
         <div className="tools">
           <h1 className="tool">
-            Neurofibromatosis Research Tools and Resources: Empowering Patients
+            Neurofibromatosis Research Tools and Resources:<br /> Empowering Patients
             and
-            <br />
+            
             Professionals
           </h1>
           <p className="tool-p">
