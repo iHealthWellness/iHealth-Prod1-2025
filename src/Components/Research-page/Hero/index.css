@@ -31,7 +31,7 @@
 .side1, .side2 {
   font-family: Roboto;
   font-weight: 700;
-  line-height: 20%;
+  line-height: 120%;
   padding: 20px;
   padding-left: 15px; /* Reduced padding for the sides */
   padding-right: 15px; /* Reduced padding for the sides */
