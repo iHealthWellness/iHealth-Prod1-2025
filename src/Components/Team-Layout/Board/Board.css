@@ -20,6 +20,9 @@
     margin-right: 200px; /* Adjust the margin for small screens */
 }
 
+
+
+
 /* .team-directors-header {
     padding-top: 15px;
     font-family: Roboto;
@@ -124,8 +127,9 @@
 .board-directors-tab2,
 .board-directors-tab3,
 .board-directors-tab1 {
-    padding-bottom: 20px;
+    padding: 0 20px 20px; /* 0 (top), 20px (right & left), 20px (bottom) */
 }
+
 
 
 .board-directors-tab,
@@ -140,8 +144,9 @@
     .board-directors-tab2,
     .board-directors-tab3,
     .board-directors-tab1 {
-        padding-bottom: 20px;
+        padding: 0 430px 20px; /* 0 (top), 20px (right & left), 20px (bottom) */
     }
+    
 }
 
 
