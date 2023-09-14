@@ -53,6 +53,7 @@
     margin-top: 5px;
     margin-bottom: 30px;
     text-align: left; /* Center text on all screens */
+
 }
 
 .team-directors-header {
@@ -119,6 +120,12 @@
     background: transparent;
     margin-top: 3px;
 }
+.board-directors-tab,
+.board-directors-tab2,
+.board-directors-tab3,
+.board-directors-tab1 {
+    padding-bottom: 20px;
+}
 
 
 .board-directors-tab,
@@ -126,11 +133,19 @@
 .board-directors-tab3,
 .board-directors-tab1 {
     display: flex;
-    justify-content: space-evenly;
-    position: relative;
+    padding: 0;
+}
+@media (min-width: 1200px) { /* adjust 1200px to whatever breakpoint you consider 'large' */
+    .board-directors-tab,
+    .board-directors-tab2,
+    .board-directors-tab3,
+    .board-directors-tab1 {
+        padding-bottom: 20px;
+    }
 }
 
-.teamboard-tab.slide-in,
+
+/* .teamboard-tab.slide-in,
 .board-directors-tab.slide-in,
 .board-directors-tab1.slide-in,
 .board-directors-tab2.slide-in,
@@ -140,7 +155,7 @@
     transform: translateX(0);
     bottom: 25px;
     max-width: 100%;
-}
+} */
 
 
 
@@ -153,8 +168,20 @@
         margin-left: 20px; /* Adjust the margin for small screens */
         margin-right: 20px; /* Adjust the margin for small screens */
     }
-}
 
+    .board-directors-tab,
+    .board-directors-tab2,
+    .board-directors-tab3,
+    .board-directors-tab1 {
+        padding-bottom: 20px;
+    }
+}
+.board-directors-tab,
+.board-directors-tab2,
+.board-directors-tab3,
+.board-directors-tab1 {
+    padding-bottom: 30px;
+}
 .popup-overlay {
     position: fixed;
     top: 0;
@@ -247,7 +274,12 @@
         width: 80%;
         max-width: none;
     }
-    
+        .board-directors-tab,
+    .board-directors-tab2,
+    .board-directors-tab3,
+    .board-directors-tab1 {
+        padding-bottom: 20px;
+    }
 
     .btn-board-tab {
         width: 30px; /* Adjust the width */
@@ -300,6 +332,12 @@
         width: 100%;
         max-width: 173.5px;
         height: auto;
+    }
+    .board-directors-tab,
+    .board-directors-tab2,
+    .board-directors-tab3,
+    .board-directors-tab1 {
+        padding-bottom: 20px;
     }
 
     .team-directors-header {
@@ -469,6 +507,13 @@
     .popup-img {
         width: 60%; /* Adjust image size for smaller screens */
         margin-left: 20%; /* Adjust margin for smaller screens */
+    }
+
+    .board-directors-tab,
+    .board-directors-tab2,
+    .board-directors-tab3,
+    .board-directors-tab1 {
+        padding-bottom: 20px;
     }
 }
 /* ... (previous CSS code) */

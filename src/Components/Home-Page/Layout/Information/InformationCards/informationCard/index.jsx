@@ -26,6 +26,10 @@ const InformationCard = ({ team }) => {
         <a
           className="information-card-link"
           href={detailUrl}
+
+          onClick={heading ==="Education" ? () => {document.querySelector("#UnderConst-wrapper").style.display ="flex";} : " "}
+
+
           // onClick={() => {
           //   document.querySelector("#UnderConst-wrapper").style.display =
           //     "flex";
