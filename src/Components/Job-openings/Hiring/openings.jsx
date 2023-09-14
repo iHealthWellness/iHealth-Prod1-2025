@@ -5,7 +5,7 @@ import Openingsimage from "src/Assets/Images/job-openings.png";
 
 const openings = () => {
   return (
-    <section className="container" id="job-openings">
+    <section className="openings-container" id="job-openings">
       <div className="openings-hero">
         <div className="openings-image container">
           <img className="openings-img" src={Openingsimage} alt="" />
