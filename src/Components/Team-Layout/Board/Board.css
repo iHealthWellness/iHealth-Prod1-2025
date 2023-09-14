@@ -144,7 +144,17 @@
     .board-directors-tab2,
     .board-directors-tab3,
     .board-directors-tab1 {
-        padding: 0 430px 20px; /* 0 (top), 20px (right & left), 20px (bottom) */
+        padding: 0 30px 20px; /* 0 (top), 20px (right & left), 20px (bottom) */
+    }
+    
+}
+
+@media (min-width: 1600px) { /* adjust 1200px to whatever breakpoint you consider 'large' */
+    .board-directors-tab,
+    .board-directors-tab2,
+    .board-directors-tab3,
+    .board-directors-tab1 {
+        padding: 0 300px 20px; /* 0 (top), 20px (right & left), 20px (bottom) */
     }
     
 }
