@@ -1,6 +1,3 @@
-const BASE_URL = "https://i-health.onrender.com";
-// const DEV_URL = "http://localhost:5000";
+import { PROD_URL } from '../../environment/config';
 
-export const PROD_URL = "https://ihealth-prod.onrender.com";
-
-export const getProviders = `${BASE_URL}/api/v1/646a366608cb638735093bc7`;
+export const getProviders = `${PROD_URL}/api/v1/646a366608cb638735093bc7`;
