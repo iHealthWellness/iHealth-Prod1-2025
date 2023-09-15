@@ -26,6 +26,8 @@
   height: auto;
   margin: 1rem auto;
   flex-shrink: 0;
+  padding-left: 20px;
+  
 }
 
 .consideration,
@@ -95,6 +97,16 @@
   .consideration-span,
   .considerspan {
       font-size: 1.5rem;
+  }
+
+  .consider-img {
+    width: 500px;
+    max-width: 100%;
+    height: auto;
+    margin: 1rem auto;
+    flex-shrink: 0;
+    padding: 20px 0;
+    
   }
 
   .difference1 {
