@@ -10,7 +10,7 @@ import FooterLink from "src/Constants/FooterLink.js";
 
 import "./index.css";
 import axios from "axios";
-import { PROD_URL } from '../../../../environment/config';
+import { PROD_URL } from '../../../environment/config';
 
 const Footer = () => {
   const [selectedLanguage, setSelectedLanguage] = useState("en");
