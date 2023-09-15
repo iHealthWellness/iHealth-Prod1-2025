@@ -97,5 +97,7 @@
 }
 
 @media (max-width: 425px) {
-  /* Consider showing the info in a more mobile-friendly way rather than hiding it */
-}
+  .evorolimus-img {
+    width: 100%; /* Take full width on small screens */
+  padding-top: 500px;
+margin-bottom: -130px;  }}
