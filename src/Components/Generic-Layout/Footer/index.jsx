@@ -10,6 +10,7 @@ import FooterLink from "src/Constants/FooterLink.js";
 
 import "./index.css";
 import axios from "axios";
+import { PROD_URL } from '../../../../environment/config';
 
 const Footer = () => {
   const [selectedLanguage, setSelectedLanguage] = useState("en");
@@ -35,7 +36,7 @@ const Footer = () => {
     };
 
     axios
-      .post("https://ihealth-prod.onrender.com/api/v1/subscription/", subscribeData)
+      .post(`${PROD_URL}/api/v1/subscription/`, subscribeData)
       .then((response) => {
         setLoading(false);
 
