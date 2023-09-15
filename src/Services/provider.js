@@ -1,5 +1,5 @@
 import axios from "axios";
-import { PROD_URL } from "../../environment/config";
+import { PROD_URL } from "../environment/config";
 
 const handleGetAllDisease = () => {
   return axios.get(

@@ -19,8 +19,12 @@ import Termsofuse from "./Pages/Terms-of-use";
 // import Other from "./Pages/Other/index";
 
 // import Navbar from "./Components/Navbar/Navbar";
+import { PROD_URL, API_VERSION } from "./environment/config";
 
 function App() {
+  console.log("App is running with the following config:");
+  console.log("API Version:", API_VERSION);
+  console.log("Production URL:", PROD_URL);
   const router = createBrowserRouter([
     {
       path: "/",
