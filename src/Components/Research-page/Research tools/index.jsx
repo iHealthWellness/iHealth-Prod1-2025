@@ -33,13 +33,11 @@ const section2 = () => {
   return (
     <section id="tools" className="research-tools">
       <div>
-      <div className="slide-in-text">
+      {/* <div className="slide-in-text"> */}
         <div className="tools">
           <h1 className="tool">
-            Neurofibromatosis Research Tools and Resources: Empowering Patients
-            and
-            <br />
-            Professionals
+          Empowering Patients and Professionals
+             <br /> <span className="after-break"> Neurofibromatosis Research Tools and Resources </span>
           </h1>
           <p className="tool-p">
             Neurofibromatosis (NF) is a complex genetic disorder that requires
@@ -113,7 +111,7 @@ const section2 = () => {
             in the field of NF research.
           </p>
         </div>
-      </div>
+      {/* </div> */}
     </section>
   );
 };

@@ -62,13 +62,63 @@ color:#0386D0;
 
 }
 
-.text-tab-tab{
+
+
+
+
+.team-highlight-tab {
+    margin-top: 2rem;  /* Adjust to provide more spacing, if needed */
     display: flex;
     justify-content: center;
-    gap:430px;
-    padding-top: -50px;
-    
-} 
+    align-items: center;
+    flex-wrap: wrap;   /* Allow items to wrap onto the next line when needed */
+    padding: 1rem;     /* Consistent padding */
+}
+
+.text-tab-tab {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;         /* This value may need to be adjusted based on your specific design */
+    flex-wrap: wrap;   /* Allow items to wrap onto the next line when needed */
+    padding-top: 1rem;
+}
+
+.team-highlight-tab h3 {
+    font-family: Roboto;
+    font-size: 1.5rem;  /* Adjust to make the font size responsive */
+    font-weight: 400;
+    line-height: 2rem;
+    letter-spacing: 0em;
+    text-align: justify;
+    color: #07235B;
+    max-width: 90vw;    /* Ensuring the content doesn't overflow the viewport */
+    margin: 0 auto;     /* Center the text when it's narrower than its container */
+}
+
+/* Media Query for Tablet Screens */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Adjustments for tablet view */
+    .text-tab-tab {
+        gap: 3rem;
+    }
+}
+
+/* Media Query for Large Screens (e.g., desktop) */
+@media screen and (min-width: 1025px) {
+    .text-tab-tab {
+        gap: 5rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
 /* .text-tab-image{
     position: absolute;
     top:-300px;
@@ -103,12 +153,7 @@ color:#0386D0;
     
 
 } */
-.team-highlight-tab {
-    margin-top: 2%; /* Adjust as needed for spacing */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 
 /* Media Query for Small Screens (e.g., smartphones) */
 @media screen and (max-width: 768px) {

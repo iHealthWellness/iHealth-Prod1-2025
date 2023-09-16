@@ -84,15 +84,15 @@ const MenuList = () => {
       subMenu: [
         {
           title: "Research Tools & Resources",
-          url: "/research/#",
+          url: "/research/#tools",
         },
         {
           title: "Clinical Drug Therapies",
-          url: "/research/#",
+          url: "/research/#clinical",
         },
         {
           title: "Participate in Research",
-          url: "/research/#",
+          url: "/research/#participate",
         },
       ],
     },
@@ -190,10 +190,14 @@ const SignUpSignIn = () => {
     <li className="nav-links-listitem nav-dropdown">
       <NavLink  className="nav-links nav-signin" >
         <AccountCircleIcon className="circle-icon"  sx={{ fontSize: 32, marginLeft: 0 }} sm={{ fontSize: 48 }} />
+        
+        <a onClick={() => {document.querySelector("#UnderConst-wrapper").style.display = "flex";}} href="#">
         <span className="nav-signin-span">Sign In or Sign Up</span>
+        </a>
       </NavLink>
       <div className="nav-dropdown-content ">
-        <a onClick={() => {document.querySelector("#Login-Main-Container").style.display = "flex";}} href="#">
+        {/* <a onClick={() => {document.querySelector("#Login-Main-Container").style.display = "flex";}} href="#"> */}
+        <a onClick={() => {document.querySelector("#UnderConst-wrapper").style.display = "flex";}} href="#">
           Sign In
         </a>
         <a onClick={() => {document.querySelector("#UnderConst-wrapper").style.display = "flex";}} href="#">

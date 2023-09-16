@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 .openings-tab{
     
@@ -57,3 +58,79 @@ line-height: 110%; /* 22px */
 .layerTwo-tab{
     width: 40%;
 }
+=======
+.openings-tab {
+  background-color: rgb(242, 248, 253);
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 140px;
+}
+.flex-tab {
+  display: flex;
+  gap: 1000px;
+}
+.grid {
+  display: flex;
+  gap: 120px;
+  justify-content: space-between;
+}
+.Text-header {
+  color: var(--SN-Primary-Headings-07235B, #07235b);
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 143%;
+}
+.description-title,
+.responsibilities-title,
+.qualifications-title,
+.skills-title,
+.note-title {
+  color: var(--SN-Primary-Headings-07235B, #07235b);
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 143%;
+  padding: 20px 0 20px 0;
+}
+.description-text,
+.responsibilities-text,
+.qualifications-text,
+.skills-text,
+.note-text,
+.apply-text {
+  padding: 20px 0 20px 0;
+  color: var(--SN-Primary-Headings-07235B, #07235b);
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 143%;
+}
+.text-tab-flow {
+  max-width: 100%;
+}
+
+.grid-text {
+  color: var(--SN-Primary-Headings-07235B, #07235b);
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%; /* 22px */
+}
+.career-tab {
+  padding-top: 50px;
+}
+/*.layerOne-tab {
+  width: 40%;
+}
+.layerTwo-tab {
+  width: 40%;
+}*/
+>>>>>>> 1bddb194edf578713084a73327acca4dc86aad79

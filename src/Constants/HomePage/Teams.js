@@ -11,7 +11,7 @@ const Teams = [
     },
     heading: "Living with NF",
     content: ["Quality Of Life Measures", "NF Registry", "Find A Provider"],
-    detailUrl: "#",
+    detailUrl: "/#Home-Page-provider-container",
   },
   {
     icon: {
@@ -24,7 +24,7 @@ const Teams = [
       "Clinical Drug Therapies",
       "Participate in Research",
     ],
-    detailUrl: "#",
+    detailUrl: "/research",
   },
   {
     icon: {
@@ -37,7 +37,7 @@ const Teams = [
       "Conferences and Workshops",
       "Workshops",
     ],
-    detailUrl: "#",
+    detailUrl: "#Information",
   },
 ];
 

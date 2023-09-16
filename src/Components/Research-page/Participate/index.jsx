@@ -33,7 +33,7 @@ const section6 = () => {
   return (
     <div id="participate">
     <div id="participate" className="Participate">
-      <div className="slide-in-text">
+      {/* <div className="slide-in-text"> */}
       <div className="participate">
         <h1 className="participate1">
           Participate in Research for Neurofibromatosis: Making a Difference
@@ -51,7 +51,7 @@ const section6 = () => {
           <img className="components-img" src={Research5} alt="" />
         </div>
       </div>
-      </div>
+      {/* </div> */}
       <div className="slide-in-text">
       </div>
       <div className="participating">

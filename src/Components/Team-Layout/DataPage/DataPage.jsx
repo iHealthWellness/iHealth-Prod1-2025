@@ -34,7 +34,7 @@ const DataPage = [
         id: 4,
         TeamName: "Development",
         // Roles: " Software Engineers, Full-Stack Developers,Backend Developers,Frontend Developers, DevOps Engineers,Mobile App Developers ",
-        Names: ["Abdulbasit Alabi","Amal Engulatov","Barisanem Fiiwe", "Cem Mehmet Onal", "Emmanuel Adewoye","EPhrem Bayru", "Imesh Chandrasiri", "Kelvin Njuiri", "Kiran Yadav","Krsna Patel", "Nisha Fazululakha", "Oladimeji Ibitoye", "Oluwaferanmi Ogunrinola", "Udemeobong Akpan", "Xuelan Wu", "Yunus Olgan", "Zack Zhou"],
+        Names: ["Abdulbasit Alabi","Amal Engulatov","Barisanem Fiiwe", "Cem Mehmet Onal", "Emmanuel Adewoye","EPhrem Bayru", "Imesh Chandrasiri", "Kelvin Njuiri", "Kiran Yadav","Krsna Patel", "Nisha Fazululakha", "Oladimeji Ibitoye", "Oluwaferanmi Ogunrinola", "Udemeobong Akpan", "Xuelan Wu", "Yunus Olgan"],
 
     },
     {
@@ -48,7 +48,10 @@ const DataPage = [
         id: 6,
         TeamName: " Human Resources",
         // Roles: "HR Managers, HR Generalists, Talent Acquisition Specialists",
-        Names: [" Aakriti Maharjan", "Lucia Valerio", "Marissa Flanagan", "Serena Pasqualini",],
+
+        // Names: ["Lucia Valerio", "Marissa Flanagan"],
+         Names: [" Aakriti Maharjan", "Marissa Flanagan", "Sherrie Ricks"],
+
 
     },
     {
