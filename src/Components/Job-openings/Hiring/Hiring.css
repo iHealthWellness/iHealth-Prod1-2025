@@ -70,7 +70,7 @@ line-height: 110%; /* 22px */
 }
 .flex-tab {
   display: flex;
-  gap: 1000px;
+  gap: 210px;
 }
 .grid {
   display: flex;
@@ -127,10 +127,32 @@ line-height: 110%; /* 22px */
 .career-tab {
   padding-top: 50px;
 }
-/*.layerOne-tab {
+.layerOne-tab {
   width: 40%;
 }
 .layerTwo-tab {
   width: 40%;
+<<<<<<< HEAD
 }*/
 >>>>>>> 1bddb194edf578713084a73327acca4dc86aad79
+=======
+}
+
+
+
+/*RESPONSIVENESS*/
+
+@media screen and (max-width:911px){
+.layerOne-tab,
+.layerTwo-tab {
+  display: flex;
+  min-width: 468px;
+  max-width: 911px;
+  padding: 10px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch; 
+}
+}
+>>>>>>> 28d666121ae5f26b00197ec51cfbf870d428d4e2
