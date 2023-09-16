@@ -1,0 +1,279 @@
+.openings-tab {
+  background-color: rgb(242, 248, 253);
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 140px;
+}
+.flex-tab {
+  display: flex;
+}
+.grid {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0 20px 0;
+}
+.Text-header {
+  width: 100%;
+  color: var(--SN-Primary-Headings-07235B, #07235b);
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 143%;
+}
+.grid-title {
+  color: var(--SN-Primary-Headings-07235B, #07235B);
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;  
+}
+.grid-title {
+  width: 50%;
+}
+.description-title,
+.responsibilities-title,
+.qualifications-title,
+.skills-title,
+.note-title {
+  color: var(--SN-Primary-Headings-07235B, #07235b);
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 143%;
+  padding: 20px 0 20px 0;
+}
+.description-text,
+.responsibilities-text,
+.qualifications-text,
+.skills-text,
+.note-text,
+.apply-text {
+  padding: 20px 0 20px 0;
+  color: var(--SN-Primary-Headings-07235B, #07235b);
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 143%;
+}
+.text-tab-flow {
+  max-width: 100%;
+}
+
+.grid-text {
+  color: var(--SN-Primary-Headings-07235B, #07235b);
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%; /* 22px */
+}
+.career-tab {
+  padding-top: 50px;
+}
+.layerOne-tab {
+  width: 40%;
+}
+.layerTwo-tab {
+  width: 40%;
+}
+
+/*RESPONSIVENESS*/
+
+@media screen and (max-width: 911px) {
+  .layerOne-tab {
+    width: 100%;
+  }
+  .layerTwo-tab {
+    width: 100%;
+  }
+  .flex-tab {
+    display: flex;
+    gap: 0;
+  }
+  .Text-header {
+    width: 100%;
+    color: var(--SN-Primary-Headings-07235B, #07235b);
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 143%;
+  }
+  .grid {
+    display: flex;
+    gap: 0;
+    justify-content: space-between;
+    padding: 20px 0 10px 0;
+  }
+  .grid-text {
+    color: var(--SN-Primary-Headings-07235B, #07235b);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+  }
+  .flex {
+    padding: 20px;
+  }
+  .job-body {
+    padding: 10px;
+  }
+  .grid-title {
+    color: var(--SN-Primary-Headings-07235B, #07235B);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;  
+  }
+  .grid-title {
+    width: 0%;
+  }
+  .description-title {
+    color: var(--SN-Primary-Headings-07235B, #07235b);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    padding: 20px 0 10px 0;
+  }
+  .description-text {
+    color: var(--SN-Primary-Headings-07235B, #07235b);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    padding: 10px 0 10px 0;
+  }
+  .responsibilities-title,
+  .qualifications-title,
+  .skills-title,
+  .note-title {
+    color: var(--SN-Primary-Headings-07235B, #07235b);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    padding: 10px 0 10px 0;
+  }
+  .responsibilities-text,
+  .qualifications-text,
+  .skills-text,
+  .note-text,
+  .apply-text {
+    color: var(--SN-Primary-Headings-07235B, #07235b);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    padding: 10px 0 10px 0;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  .layerOne-tab {
+    width: 100%;
+  }
+  .layerTwo-tab {
+    width: 100%;
+  }
+  .flex-tab {
+    display: flex;
+    gap: 0;
+  }
+  .Text-header {
+    width: 100%;
+    color: var(--SN-Primary-Headings-07235B, #07235b);
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 143%;
+  }
+  .grid {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0 10px 0;
+  }
+  .grid-title {
+    color: var(--SN-Primary-Headings-07235B, #07235B);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;  
+  }
+  .grid-title {
+    width: 15%;
+  }
+  .grid-text {
+    color: var(--SN-Primary-Headings-07235B, #07235B);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%; 
+  }
+  .flex {
+    padding: 20px;
+  }
+  .job-body {
+    padding: 10px;
+  }
+  .description-title {
+    color: var(--SN-Primary-Headings-07235B, #07235b);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    padding: 24px 0 10px 0;
+  }
+  .description-text {
+    color: var(--SN-Primary-Headings-07235B, #07235b);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    padding: 20px 0 20px 0;
+  }
+  .responsibilities-title,
+  .qualifications-title,
+  .skills-title,
+  .note-title {
+    color: var(--SN-Primary-Headings-07235B, #07235b);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    padding: 10px 0 10px 0;
+  }
+  .responsibilities-text,
+  .qualifications-text,
+  .skills-text,
+  .note-text,
+  .apply-text {
+    color: var(--SN-Primary-Headings-07235B, #07235b);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    padding: 10px 0 10px 0;
+  }
+}
