@@ -4,6 +4,7 @@ import progressbar1 from "../../../../../../src/Assets/Images/progressbar1.svg";
 import progressbar2 from "../../../../../../src/Assets/Images/progressbar2.svg";
 import React, { useState } from "react";
 import axios from "axios";
+import { BASE_URL } from "../../../../../../environment/config";
 
 const Cancer = ({ closeModal }) => {
   // Cancer form api post request VERSION 2
@@ -76,7 +77,7 @@ const Cancer = ({ closeModal }) => {
 
       // GERIATRIC POST API
       axios
-        .post("https://ihealth-dev.onrender.com/api/v1/community/", formData2)
+      .post(`${BASE_URL}/api/v1/community/`, formData2)
         .then((response) => {
           console.log(response.status === 200);
           {
