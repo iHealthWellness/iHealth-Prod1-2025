@@ -8,7 +8,6 @@ class Config {
   constructor() {
     // Using import.meta.env for Vite
     this.envVars = import.meta.env;
-    console.log("Running in environment:", this.envVars);
   }
 
   // Internal method to get an environment variable
@@ -45,7 +44,6 @@ class Config {
 }
 
 const config = new Config();
-console.log("Running in environment:", config.envVars);
 
 export const {
   baseUrl: BASE_URL,
