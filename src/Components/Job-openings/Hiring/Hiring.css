@@ -1,64 +1,3 @@
-<<<<<<< HEAD
-
-.openings-tab{
-    
-    background-color: rgb(242, 248, 253);
-}
-
-.flex{
-    display: flex;
-    flex-wrap: wrap;
-    gap:140px;
-}
-.flex-tab{
-    display: flex;
-    gap:210px;
-}
-.grid{
-    display: flex;
-    gap:120px
-    
-
-}
-.Text-header{
-    color: var(--SN-Primary-Headings-07235B, #07235B);
-font-family: Roboto;
-font-size: 24px;
-font-style: normal;
-font-weight: 400;
-line-height: 143%; 
-}
-
-p,ul{
-    color: var(--SN-Primary-Headings-07235B, #07235B);
-font-family: Roboto;
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: 143%;
-}
-.text-tab-flow{
-    max-width: 100%;
-}
-
-.grid-text{
-color: var(--SN-Primary-Headings-07235B, #07235B);
-font-family: Roboto;
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: 110%; /* 22px */
-}
-.career-tab{
-    padding-top: 50px;
-}
-.layerOne-tab{
-     width:40%; 
-}
-.layerTwo-tab{
-    width: 40%;
-}
-=======
 .openings-tab {
   background-color: rgb(242, 248, 253);
 }
@@ -132,10 +71,6 @@ line-height: 110%; /* 22px */
 }
 .layerTwo-tab {
   width: 40%;
-<<<<<<< HEAD
-}*/
->>>>>>> 1bddb194edf578713084a73327acca4dc86aad79
-=======
 }
 
 
@@ -155,4 +90,3 @@ line-height: 110%; /* 22px */
   align-self: stretch; 
 }
 }
->>>>>>> 28d666121ae5f26b00197ec51cfbf870d428d4e2
