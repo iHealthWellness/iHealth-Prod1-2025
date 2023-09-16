@@ -31,9 +31,11 @@ const It = () => {
                   onClick={toggleAccordion("privacy")}
                 />
               </div>
+
+              <div className="job-body">
               {accordion.privacy && (
                 <div className="grid">
-                  <h2 className="grid-text">
+                  <h2 className="grid-title">
                     Salesforce Architect (Cloud Health Implementation Expert)
                   </h2>
                   <h2 className="grid-text">Remote</h2>
@@ -146,6 +148,7 @@ const It = () => {
                   How to Apply: To apply for any open position, please contact
                   HR at onehealthconnectapp@gmail.com
                 </p>
+              </div>
               </div>
             </div>
           </div>

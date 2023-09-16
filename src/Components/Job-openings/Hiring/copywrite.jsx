@@ -28,9 +28,10 @@ const Copywrite = () => {
                   onClick={toggleAccordion("privacy")}
                 />
               </div>
+              <div className="job-body">
               {accordion.privacy && (
                 <div className="grid">
-                  <h2 className="grid-text">Copywriter</h2>
+                  <h2 className="grid-title">Copywriter</h2>
                   <h2 className="grid-text">Remote</h2>
                   <ArrowTab
                     icon={setAccordion.privacy ? topArrow : downArrow}
@@ -157,6 +158,7 @@ const Copywrite = () => {
                   How to Apply: To apply for any open position, please contact
                   HR at onehealthconnectapp@gmail.com
                 </p>
+              </div>
               </div>
             </div>
           </div>

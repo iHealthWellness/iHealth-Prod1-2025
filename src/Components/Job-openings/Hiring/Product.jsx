@@ -28,9 +28,11 @@ const Product = () => {
             onClick={toggleAccordion("privacy")}
           />
         </div>
+
+        <div className="job-body">
         {accordion.privacy && (
           <div className="grid">
-            <h2 className="grid-text">Pro Bono Generalist</h2>
+            <h2 className="grid-title">Pro Bono Generalist</h2>
             <h2 className="grid-text">Remote</h2>
             <ArrowTab
               icon={setAccordion.privacy ? topArrow : downArrow}
@@ -122,6 +124,7 @@ const Product = () => {
             onehealthconnectapp@gmail.com
           </p>
         </div>
+      </div>
       </div>
     </div>
   );

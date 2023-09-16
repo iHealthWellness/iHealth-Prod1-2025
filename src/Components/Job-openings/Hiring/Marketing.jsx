@@ -29,9 +29,11 @@ const Marketing = () => {
             onClick={toggleAccordion("privacy")}
           />
         </div>
+
+        <div className="job-body">
         {accordion.privacy && (
           <div className="grid">
-            <h2 className="grid-text">Marketing and Outreach</h2>
+            <h2 className="grid-title">Marketing and Outreach</h2>
             <h2 className="grid-text">Remote</h2>
             <ArrowTab
               icon={setAccordion.privacy ? topArrow : downArrow}
@@ -182,7 +184,7 @@ const Marketing = () => {
       <div>
         {accordion.privacy && (
           <div className="grid">
-            <h2 className="grid-text">Marketing Specialist </h2>
+            <h2 className="grid-title">Marketing Specialist </h2>
             <h2 className="grid-text">Remote</h2>
             <ArrowTab
               icon={setAccordion.privacy ? topArrow : downArrow}
@@ -289,7 +291,7 @@ const Marketing = () => {
       <div>
         {accordion.privacy && (
           <div className="grid">
-            <h2 className="grid-text">Marketing Strategy Consultant</h2>
+            <h2 className="grid-title">Marketing Strategy Consultant</h2>
             <h2 className="grid-text">Remote</h2>
             <ArrowTab
               icon={setAccordion.privacy ? topArrow : downArrow}
@@ -424,7 +426,7 @@ const Marketing = () => {
       <div>
         {accordion.privacy && (
           <div className="grid">
-            <h2 className="grid-text">
+            <h2 className="grid-title">
               Parliamentary Procedure Specialist
             </h2>
             <h2 className="grid-text">Remote</h2>
@@ -534,7 +536,7 @@ const Marketing = () => {
       <div>
         {accordion.privacy && (
           <div className="grid">
-            <h2 className="grid-text">Product Specialist/Associate</h2>
+            <h2 className="grid-title">Product Specialist/Associate</h2>
             <h2 className="grid-text">Remote</h2>
             <ArrowTab
               icon={setAccordion.privacy ? topArrow : downArrow}
@@ -638,7 +640,7 @@ const Marketing = () => {
       <div>
         {accordion.privacy && (
           <div className="grid">
-            <h2 className="grid-text">
+            <h2 className="grid-title">
               Social Media and Community Specialist
             </h2>
             <h2 className="grid-text">Remote</h2>
@@ -757,6 +759,7 @@ const Marketing = () => {
             How to Apply: To apply for any open position, please contact
             HR at onehealthconnectapp@gmail.com
           </p>
+        </div>
         </div>
       </div>
     </div>

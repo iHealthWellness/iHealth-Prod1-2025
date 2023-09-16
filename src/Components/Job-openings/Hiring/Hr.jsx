@@ -28,9 +28,11 @@ const Hr = () => {
             onClick={toggleAccordion("privacy")}
           />
         </div>
+
+        <div className="job-body">
         {accordion.privacy && (
           <div className="grid">
-            <h2 className="grid-text">Human Resource Specialist/ Generalist</h2>
+            <h2 className="grid-title">Human Resource Specialist/ Generalist</h2>
             <h2 className="grid-text">Remote</h2>
             <ArrowTab
               icon={setAccordion.privacy ? topArrow : downArrow}
@@ -142,6 +144,7 @@ const Hr = () => {
             How to Apply: To apply for any open position, please contact HR at
             onehealthconnectapp@gmail.com
           </p>
+        </div>
         </div>
       </div>
     </div>

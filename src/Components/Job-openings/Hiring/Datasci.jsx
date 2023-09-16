@@ -28,9 +28,10 @@ const Datasci = () => {
           onClick={toggleAccordion("privacy")}
         />
       </div>
+      <div className="job-body">
       {accordion.privacy && (
         <div className="grid">
-          <h2 className="grid-text">
+          <h2 className="grid-title">
             Web Scraping Focus Data Engineer
           </h2>
           <h2 className="grid-text">Remote</h2>
@@ -127,6 +128,7 @@ const Datasci = () => {
           How to Apply: To apply for any open position, please contact
           HR at onehealthconnectapp@gmail.com
         </p>
+      </div>
       </div>
     </div>
   </div>

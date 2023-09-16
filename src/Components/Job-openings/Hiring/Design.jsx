@@ -28,9 +28,11 @@ const Design = () => {
           onClick={toggleAccordion("privacy")}
         />
       </div>
+
+      <div className="job-body">
       {accordion.privacy && (
         <div className="grid">
-          <h2 className="grid-text">UX Researcher</h2>
+          <h2 className="grid-title">UX Researcher</h2>
           <h2 className="grid-text">Remote</h2>
           <ArrowTab
             icon={setAccordion.privacy ? topArrow : downArrow}
@@ -137,7 +139,7 @@ const Design = () => {
 
       {accordion.privacy && (
         <div className="grid">
-          <h2 className="grid-text">UX/UI Designer</h2>
+          <h2 className="grid-title">UX/UI Designer</h2>
           <h2 className="grid-text">Remote</h2>
           <ArrowTab
             icon={setAccordion.privacy ? topArrow : downArrow}
@@ -221,6 +223,7 @@ const Design = () => {
           How to Apply: To apply for any open position, please contact
           HR at onehealthconnectapp@gmail.com
         </p>
+      </div>
       </div>
     </div>
   </div>
