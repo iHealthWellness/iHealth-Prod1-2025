@@ -11,10 +11,10 @@ const Header = () => {
 
         <section className="openings-container" id="job-openings">
 
-            <div className="container">
+            <div className="container-1">
                 <img className="openings-img" src={icon} alt="" />
 
-            </div>
+            
 
             <div className="openings-side">
                 <h2 className="openings-side-h2">
@@ -23,6 +23,7 @@ const Header = () => {
                 <h1 className="openings-side-h1">
                     Welcome to our Career Opportunities Page!
                 </h1>
+            </div>
             </div>
 
 
