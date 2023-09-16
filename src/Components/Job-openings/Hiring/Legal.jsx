@@ -28,9 +28,11 @@ const Legal = () => {
                   onClick={toggleAccordion("privacy")}
                 />
               </div>
+
+              <div className="job-body">
               {accordion.privacy && (
                 <div className="grid">
-                  <h2 className="grid-text">Corporate Attorney</h2>
+                  <h2 className="grid-title">Corporate Attorney</h2>
                   <h2 className="grid-text">Remote</h2>
                   <ArrowTab
                     icon={setAccordion.privacy ? topArrow : downArrow}
@@ -106,7 +108,7 @@ const Legal = () => {
               <div>
                 {accordion.privacy && (
                   <div className="grid">
-                    <h2 className="grid-text">
+                    <h2 className="grid-title">
                       Healthcare Regulatory Compliance Specialist
                     </h2>
                     <h2 className="grid-text">Remote</h2>
@@ -215,6 +217,7 @@ const Legal = () => {
                     HR at onehealthconnectapp@gmail.com
                   </p>
                 </div>
+              </div>
               </div>
             </div>
           </div>

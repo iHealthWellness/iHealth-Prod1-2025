@@ -28,9 +28,11 @@ const Operations = () => {
             onClick={toggleAccordion("privacy")}
           />
         </div>
+
+        <div className="job-body">
         {accordion.privacy && (
           <div className="grid">
-            <h2 className="grid-text">
+            <h2 className="grid-title">
               Business Development Specialist, Clinical Trials
             </h2>
             <h2 className="grid-text">Remote</h2>
@@ -44,6 +46,7 @@ const Operations = () => {
         <hr />
         <div className="text-tab-flow">
           <h2 className="description-title">Description</h2>
+          <ul className="description-text">
           <li>
             Research and build relationships with companies specializing in
             treatments for complex diseases
@@ -70,6 +73,7 @@ const Operations = () => {
             Create communications cadence and partner with internal teams to
             keep platform up-to-date on activities
           </li>
+          </ul>
 
           <h3 className="qualifications-title">Qualifications</h3>
           <ul className="qualifications-text">
@@ -114,7 +118,7 @@ const Operations = () => {
 
         {accordion.privacy && (
           <div className="grid">
-            <h2 className="grid-text">Clinical Integration Specialist</h2>
+            <h2 className="grid-title">Clinical Integration Specialist</h2>
             <h2 className="grid-text">Remote</h2>
             <ArrowTab
               icon={setAccordion.privacy ? topArrow : downArrow}
@@ -219,7 +223,7 @@ const Operations = () => {
 
         {accordion.privacy && (
           <div className="grid">
-            <h2 className="grid-text">
+            <h2 className="grid-title">
               Health Cloud Infrastructure and Integration Specialist{" "}
             </h2>
             <h2 className="grid-text">Remote</h2>
@@ -309,7 +313,7 @@ const Operations = () => {
 
         {accordion.privacy && (
           <div className="grid">
-            <h2 className="grid-text">Physician Integration Specialist </h2>
+            <h2 className="grid-title">Physician Integration Specialist </h2>
             <h2 className="grid-text">Remote</h2>
             <ArrowTab
               icon={setAccordion.privacy ? topArrow : downArrow}
@@ -408,7 +412,7 @@ const Operations = () => {
 
         {accordion.privacy && (
           <div className="grid">
-            <h2 className="grid-text">
+            <h2 className="grid-title">
               Research Analyst, Research and Development
             </h2>
             <h2 className="grid-text">Remote</h2>
@@ -500,6 +504,7 @@ const Operations = () => {
             onehealthconnectapp@gmail.com
           </p>
         </div>
+      </div>
       </div>
     </div>
   );

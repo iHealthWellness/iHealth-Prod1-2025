@@ -28,9 +28,11 @@ const Development = () => {
             onClick={toggleAccordion("privacy")}
           />
         </div>
+
+        <div className="job-body">
         {accordion.privacy && (
           <div className="grid">
-            <h2 className="grid-text">
+            <h2 className="grid-title">
               EPIC Interface / Integration Specialist Principal Back-End
               Engineer
             </h2>
@@ -132,7 +134,7 @@ const Development = () => {
 
         {accordion.privacy && (
           <div className="grid">
-            <h2 className="grid-text">Principal Back-End Engineer</h2>
+            <h2 className="grid-title">Principal Back-End Engineer</h2>
             <h2 className="grid-text">Remote</h2>
             <ArrowTab
               icon={setAccordion.privacy ? topArrow : downArrow}
@@ -237,7 +239,7 @@ const Development = () => {
 
         {accordion.privacy && (
           <div className="grid">
-            <h2 className="grid-text">Principal Front-End Engineer</h2>
+            <h2 className="grid-title">Principal Front-End Engineer</h2>
             <h2 className="grid-text">Remote</h2>
             <ArrowTab
               icon={setAccordion.privacy ? topArrow : downArrow}
@@ -346,7 +348,7 @@ const Development = () => {
 
         {accordion.privacy && (
           <div className="grid">
-            <h2 className="grid-text">Principal Full-Stack Engineer</h2>
+            <h2 className="grid-title">Principal Full-Stack Engineer</h2>
             <h2 className="grid-text">Remote</h2>
             <ArrowTab
               icon={setAccordion.privacy ? topArrow : downArrow}
@@ -475,7 +477,7 @@ const Development = () => {
 
         {accordion.privacy && (
           <div className="grid">
-            <h2 className="grid-text">Senior Platform Developer</h2>
+            <h2 className="grid-title">Senior Platform Developer</h2>
             <h2 className="grid-text">Remote</h2>
             <ArrowTab
               icon={setAccordion.privacy ? topArrow : downArrow}
@@ -600,7 +602,7 @@ const Development = () => {
 
         {accordion.privacy && (
           <div className="grid">
-            <h2 className="grid-text">Senior Software Engineer </h2>
+            <h2 className="grid-title">Senior Software Engineer </h2>
             <h2 className="grid-text">Remote</h2>
             <ArrowTab
               icon={setAccordion.privacy ? topArrow : downArrow}
@@ -706,6 +708,7 @@ const Development = () => {
             How to Apply: To apply for any open position, please contact HR at
             onehealthconnectapp@gmail.com
           </p>
+        </div>
         </div>
       </div>
     </div>
