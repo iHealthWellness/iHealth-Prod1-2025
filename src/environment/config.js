@@ -2,7 +2,7 @@
 const DEFAULT_API_VERSION = "v1";
 // Note: We are using the same URL for both base and production.
 // Update this if you plan to have different URLs for each.
-const DEFAULT_PROD_URL = "https://ihealth-dev.onrender.com";
+const DEFAULT_BASE_URL = "https://ihealth-dev.onrender.com";
 
 class Config {
   constructor() {
@@ -29,18 +29,15 @@ class Config {
   }
 
   // Lazy getters for environment variables
-  // Note: BASE_URL and PROD_URL are the same in our current setup.
+  // Note: BASE_URL and BASE_URL are the same in our current setup.
   get baseUrl() {
-    return this.getString("VITE_REACT_APP_PROD_URL", DEFAULT_PROD_URL);
+    return this.getString("VITE_REACT_APP_BASE_URL", DEFAULT_BASE_URL);
   }
 
   get apiVersion() {
     return this.getString("VITE_REACT_APP_API_VERSION", DEFAULT_API_VERSION);
   }
 
-  get prodUrl() {
-    return this.getString("VITE_REACT_APP_PROD_URL", DEFAULT_PROD_URL);
-  }
 }
 
 const config = new Config();
@@ -48,5 +45,4 @@ const config = new Config();
 export const {
   baseUrl: BASE_URL,
   apiVersion: API_VERSION,
-  prodUrl: PROD_URL,
 } = config;

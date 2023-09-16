@@ -4,7 +4,7 @@ import progressbar1 from "../../../../../../src/Assets/Images/progressbar1.svg";
 import progressbar2 from "../../../../../../src/Assets/Images/progressbar2.svg";
 import React, { useState } from "react";
 import axios from "axios";
-import { PROD_URL } from "../../../../../../environment/config";
+import { BASE_URL } from "../../../../../../environment/config";
 
 const Geriatric = ({ closeModal }) => {
   // Geriatric form api post request and input validation VERSION 2
@@ -72,7 +72,7 @@ const Geriatric = ({ closeModal }) => {
 
       // GERIATRIC POST API
       axios
-      .post(`${PROD_URL}/api/v1/community/`, formData1)
+      .post(`${BASE_URL}/api/v1/community/`, formData1)
         .then((response) => {
           console.log(response.status === 200);
           {

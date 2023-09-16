@@ -1,27 +1,27 @@
 import axios from "axios";
-import { PROD_URL } from "../environment/config";
+import { BASE_URL } from "../environment/config";
 
 const handleGetAllDisease = () => {
   return axios.get(
-    `${PROD_URL}/api/v1/provider-data/available-data?type=disease_name`
+    `${BASE_URL}/api/v1/provider-data/available-data?type=disease_name`
   );
 };
 
 const handleGetAllSpeciality = () => {
   return axios.get(
-    `${PROD_URL}/api/v1/provider-data/available-data?type=speciality`
+    `${BASE_URL}/api/v1/provider-data/available-data?type=speciality`
   );
 };
 
 const handleGetAllCity = () => {
   return axios.get(
-    `${PROD_URL}/api/v1/provider-data/available-data?type=provider_city`
+    `${BASE_URL}/api/v1/provider-data/available-data?type=provider_city`
   );
 };
 
 const handleGetAllState = () => {
   return axios.get(
-    `${PROD_URL}/api/v1/provider-data/available-data?type=provider_state`
+    `${BASE_URL}/api/v1/provider-data/available-data?type=provider_state`
   );
 };
 
