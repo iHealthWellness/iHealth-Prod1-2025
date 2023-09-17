@@ -15,8 +15,9 @@ const Copywriter = () => {
     view: false,
   });
 
+
   const toggleAccordion = (content) => (e) => {
-    setAccordion((prev) => ({ ...prev, [content]: !prev[content] }));
+    setAccordion((prev) => ({ ...prev, [content]: !prev[content] })); 
   };
 
   return (
@@ -36,7 +37,7 @@ const Copywriter = () => {
               <h2 className="grid-title">Copywriter</h2>
               <h2 className="grid-text">Remote</h2>
               <ArrowTab
-                icon={setAccordion.privacy ? topArrow : downArrow}
+                icon={accordion.view ? topArrow : downArrow}
                 onClick={toggleAccordion("view")}
               />
             </div>

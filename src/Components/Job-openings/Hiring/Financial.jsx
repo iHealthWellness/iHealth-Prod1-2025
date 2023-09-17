@@ -12,7 +12,8 @@ import { useState } from "react";
 const Financial = () => {
   const [accordion, setAccordion] = useState({
     privacy: false,
-    view: false,
+    unshut: false,
+    look: false,
   });
 
   const toggleAccordion = (content) => (e) => {
@@ -36,13 +37,15 @@ const Financial = () => {
               <h2 className="grid-title">Funding and Financial Specialist</h2>
               <h2 className="grid-text">Remote</h2>
               <ArrowTab
-                icon={setAccordion.privacy ? topArrow : downArrow}
-                onClick={toggleAccordion("privacy")}
+                icon={accordion.unshut ? topArrow : downArrow}
+                onClick={toggleAccordion("unshut")}
               />
             </div>
           )}
 
           <hr />
+
+          {accordion.unshut && (
           <div className="text-tab-flow">
             <h2 className="description-title">Description</h2>
             <p className="description-text">
@@ -111,19 +114,22 @@ const Financial = () => {
               onehealthconnectapp@gmail.com
             </p>
           </div>
+          )}
 
           {accordion.privacy && (
             <div className="grid">
               <h2 className="grid-title">Fundraiser/ Development Officer</h2>
               <h2 className="grid-text">Remote</h2>
               <ArrowTab
-                icon={setAccordion.privacy ? topArrow : downArrow}
-                onClick={toggleAccordion("privacy")}
+                icon={accordion.look ? topArrow : downArrow}
+                onClick={toggleAccordion("look")}
               />
             </div>
           )}
 
-          <hr />
+          {/* <hr /> */}
+
+          {accordion.look && (
           <div className="text-tab-flow">
             <h2 className="description-title">Description</h2>
             <p className="description-text">
@@ -212,6 +218,7 @@ const Financial = () => {
               onehealthconnectapp@gmail.com
             </p>
           </div>
+          )}
         </div>
       </div>
     </div>

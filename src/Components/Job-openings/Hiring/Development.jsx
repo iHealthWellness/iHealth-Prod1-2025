@@ -12,7 +12,11 @@ import { useState } from "react";
 const Development = () => {
   const [accordion, setAccordion] = useState({
     privacy: false,
-    view: false,
+    clear: false,
+    free: false,
+    bare: false,
+    expose: false,
+    disclose: false,
   });
 
   const toggleAccordion = (content) => (e) => {
@@ -39,13 +43,14 @@ const Development = () => {
               </h2>
               <h2 className="grid-text">Remote</h2>
               <ArrowTab
-                icon={setAccordion.privacy ? topArrow : downArrow}
-                onClick={toggleAccordion("privacy")}
+                icon={accordion.clear ? topArrow : downArrow}
+                onClick={toggleAccordion("clear")}
               />
             </div>
           )}
 
           <hr />
+          {accordion.clear && (
           <div className="text-tab-flow">
             <h2 className="description-title">Description</h2>
             <p className="description-text">
@@ -132,19 +137,22 @@ const Development = () => {
               onehealthconnectapp@gmail.com
             </p>
           </div>
+          )}
 
           {accordion.privacy && (
             <div className="grid">
               <h2 className="grid-title">Principal Back-End Engineer</h2>
               <h2 className="grid-text">Remote</h2>
               <ArrowTab
-                icon={setAccordion.privacy ? topArrow : downArrow}
-                onClick={toggleAccordion("privacy")}
+                icon={accordion.free ? topArrow : downArrow}
+                onClick={toggleAccordion("free")}
               />
             </div>
           )}
 
-          <hr />
+          {/* <hr /> */}
+
+          {accordion.free && (
           <div className="text-tab-flow">
             <h2 className="description-title">Description</h2>
             <p className="description-text">
@@ -237,19 +245,21 @@ const Development = () => {
               onehealthconnectapp@gmail.com
             </p>
           </div>
+          )}
 
           {accordion.privacy && (
             <div className="grid">
               <h2 className="grid-title">Principal Front-End Engineer</h2>
               <h2 className="grid-text">Remote</h2>
               <ArrowTab
-                icon={setAccordion.privacy ? topArrow : downArrow}
-                onClick={toggleAccordion("privacy")}
+                icon={accordion.free ? topArrow : downArrow}
+                onClick={toggleAccordion("free")}
               />
             </div>
           )}
 
-          <hr />
+          {/* <hr /> */}
+          {accordion.free && (
           <div className="text-tab-flow">
             <h2 className="description-title">Description</h2>
             <p className="description-text">
@@ -346,19 +356,22 @@ const Development = () => {
               onehealthconnectapp@gmail.com
             </p>
           </div>
+          )}
 
           {accordion.privacy && (
             <div className="grid">
               <h2 className="grid-title">Principal Full-Stack Engineer</h2>
               <h2 className="grid-text">Remote</h2>
               <ArrowTab
-                icon={setAccordion.privacy ? topArrow : downArrow}
-                onClick={toggleAccordion("privacy")}
+                icon={accordion.bare ? topArrow : downArrow}
+                onClick={toggleAccordion("bare")}
               />
             </div>
           )}
 
-          <hr />
+          {/* <hr /> */}
+
+          {accordion.bare && (
           <div className="text-tab-flow">
             <h2 className="description-title">Description</h2>
             <p className="description-text">
@@ -475,19 +488,22 @@ const Development = () => {
               onehealthconnectapp@gmail.com
             </p>
           </div>
+          )}
 
           {accordion.privacy && (
             <div className="grid">
               <h2 className="grid-title">Senior Platform Developer</h2>
               <h2 className="grid-text">Remote</h2>
               <ArrowTab
-                icon={setAccordion.privacy ? topArrow : downArrow}
-                onClick={toggleAccordion("privacy")}
+                icon={accordion.expose? topArrow : downArrow}
+                onClick={toggleAccordion("expose")}
               />
             </div>
           )}
 
-          <hr />
+          {/* <hr /> */}
+
+          {accordion.expose && (
           <div className="text-tab-flow">
             <h2 className="description-title">Description</h2>
             <p className="description-text">
@@ -600,19 +616,22 @@ const Development = () => {
               onehealthconnectapp@gmail.com
             </p>
           </div>
+          )}
 
           {accordion.privacy && (
             <div className="grid">
               <h2 className="grid-title">Senior Software Engineer </h2>
               <h2 className="grid-text">Remote</h2>
               <ArrowTab
-                icon={setAccordion.privacy ? topArrow : downArrow}
-                onClick={toggleAccordion("privacy")}
+                icon={accordion.disclose ? topArrow : downArrow}
+                onClick={toggleAccordion("disclose")}
               />
             </div>
           )}
 
-          <hr />
+          {/* <hr /> */}
+
+          {accordion.disclose && (
           <div className="text-tab-flow">
             <h2 className="description-title">Description</h2>
             <p className="description-text">
@@ -710,6 +729,7 @@ const Development = () => {
               onehealthconnectapp@gmail.com
             </p>
           </div>
+          )}
         </div>
       </div>
     </div>

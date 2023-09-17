@@ -12,6 +12,7 @@ import { useState } from "react";
 const Product = () => {
   const [accordion, setAccordion] = useState({
     privacy: false,
+    design: false,
   });
 
   const toggleAccordion = (content) => (e) => {
@@ -35,13 +36,14 @@ const Product = () => {
             <h2 className="grid-title">Pro Bono Generalist</h2>
             <h2 className="grid-text">Remote</h2>
             <ArrowTab
-              icon={setAccordion.privacy ? topArrow : downArrow}
-              onClick={toggleAccordion("privacy")}
+              icon={accordion.design ? topArrow : downArrow}
+              onClick={toggleAccordion("design")}
             />
           </div>
         )}
 
         <hr />
+        {accordion.design && (
         <div className="text-tab-flow">
           <h2 className="description-title">Description</h2>
           <p className="description-text">
@@ -124,6 +126,7 @@ const Product = () => {
             onehealthconnectapp@gmail.com
           </p>
         </div>
+        )}
       </div>
       </div>
     </div>

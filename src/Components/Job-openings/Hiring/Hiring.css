@@ -7,12 +7,12 @@
 }
 .layer-tab-one{
 
-  width:44%;
+  width:47%;
 
 }
 
 .layer-tab-two{
-  width:45%;
+  width:47%;
 
 }
 
@@ -20,12 +20,13 @@
 
 .flex {
   display: flex;
-  gap:10%;
+  gap:6%;
   
   
 }
 .flex-tab {
   display: flex;
+  margin-bottom: 20px;
 }
 .grid {
   display: flex;
@@ -53,6 +54,10 @@
 }
 .grid-title {
   width: 50%;
+}
+.job-body {
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 .description-title,
 .responsibilities-title,
@@ -106,14 +111,19 @@
   width: 40%;
 } */
 
+
 /*RESPONSIVENESS*/
 
 @media screen and (max-width: 911px) {
-  .layerOne-tab {
-    width: 100%;
+  .layer-tab-one{
+
+    width:100%;
+  
   }
-  .layerTwo-tab {
-    width: 100%;
+  
+  .layer-tab-two{
+    width:100%;
+  
   }
   .flex-tab {
     display: flex;
@@ -144,6 +154,7 @@
   }
   .flex {
     padding: 20px;
+   flex-wrap: wrap ;
   }
   .job-body {
     padding: 10px;
@@ -156,9 +167,7 @@
     font-weight: 700;
     line-height: 110%;  
   }
-  .grid-title {
-    width: 0%;
-  }
+ 
   .description-title {
     color: var(--SN-Primary-Headings-07235B, #07235b);
     font-family: Roboto;
@@ -206,11 +215,18 @@
 
 
 @media screen and (max-width: 480px) {
-  .layerOne-tab {
-    width: 100%;
+  .layer-tab-one{
+
+    width:100%;
+  
   }
-  .layerTwo-tab {
-    width: 100%;
+  
+  .layer-tab-two{
+    width:100%;
+  
+  }
+  .flex {
+    flex-direction: column;
   }
   .flex-tab {
     display: flex;

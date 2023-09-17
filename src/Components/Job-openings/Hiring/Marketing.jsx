@@ -12,6 +12,12 @@ import { useState } from "react";
 const Marketing = () => {
   const [accordion, setAccordion] = useState({
     privacy: false,
+    opening: false,
+    illustrate: false,
+    appear: false,
+    appearance: false,
+    outline: false,
+    prospect: false,
   });
 
   const toggleAccordion = (content) => (e) => {
@@ -36,13 +42,14 @@ const Marketing = () => {
             <h2 className="grid-title">Marketing and Outreach</h2>
             <h2 className="grid-text">Remote</h2>
             <ArrowTab
-              icon={setAccordion.privacy ? topArrow : downArrow}
-              onClick={toggleAccordion("privacy")}
+              icon={accordion.opening ? topArrow : downArrow}
+              onClick={toggleAccordion("opening")}
             />
           </div>
         )}
 
         <hr />
+        {accordion.opening && (
         <div className="text-tab-flow">
           <h2 className="description-title">Description</h2>
           <p className="description-text">
@@ -179,6 +186,7 @@ const Marketing = () => {
             HR at onehealthconnectapp@gmail.com
           </p>
         </div>
+        )}
       </div>
 
       <div>
@@ -187,13 +195,14 @@ const Marketing = () => {
             <h2 className="grid-title">Marketing Specialist </h2>
             <h2 className="grid-text">Remote</h2>
             <ArrowTab
-              icon={setAccordion.privacy ? topArrow : downArrow}
-              onClick={toggleAccordion("privacy")}
+              icon={accordion.illustrate ? topArrow : downArrow}
+              onClick={toggleAccordion("illustrate")}
             />
           </div>
         )}
 
-        <hr />
+        {/* <hr /> */}
+        {accordion.illustrate && (
         <div className="text-tab-flow">
           <h2 className="description-title">Description</h2>
           <p className="description-text">
@@ -286,6 +295,7 @@ const Marketing = () => {
             HR at onehealthconnectapp@gmail.com
           </p>
         </div>
+        )}
       </div>
 
       <div>
@@ -294,13 +304,14 @@ const Marketing = () => {
             <h2 className="grid-title">Marketing Strategy Consultant</h2>
             <h2 className="grid-text">Remote</h2>
             <ArrowTab
-              icon={setAccordion.privacy ? topArrow : downArrow}
-              onClick={toggleAccordion("privacy")}
+              icon={accordion.appear ? topArrow : downArrow}
+              onClick={toggleAccordion("appear")}
             />
           </div>
         )}
 
-        <hr />
+        {/* <hr /> */}
+        {accordion.appear && (
         <div className="text-tab-flow">
           <h2 className="description-title">Description</h2>
           <p className="description-text">
@@ -421,6 +432,7 @@ const Marketing = () => {
             HR at onehealthconnectapp@gmail.com
           </p>
         </div>
+        )}
       </div>
 
       <div>
@@ -431,13 +443,14 @@ const Marketing = () => {
             </h2>
             <h2 className="grid-text">Remote</h2>
             <ArrowTab
-              icon={setAccordion.privacy ? topArrow : downArrow}
-              onClick={toggleAccordion("privacy")}
+              icon={accordion.appearance ? topArrow : downArrow}
+              onClick={toggleAccordion("appearance")}
             />
           </div>
         )}
 
-        <hr />
+        {/* <hr /> */}
+        {accordion.appearance && (
         <div className="text-tab-flow">
           <h2 className="description-title">Description</h2>
           <p className="description-text">
@@ -531,6 +544,7 @@ const Marketing = () => {
             HR at onehealthconnectapp@gmail.com
           </p>
         </div>
+        )}
       </div>
 
       <div>
@@ -539,13 +553,14 @@ const Marketing = () => {
             <h2 className="grid-title">Product Specialist/Associate</h2>
             <h2 className="grid-text">Remote</h2>
             <ArrowTab
-              icon={setAccordion.privacy ? topArrow : downArrow}
-              onClick={toggleAccordion("privacy")}
+              icon={accordion.outline ? topArrow : downArrow}
+              onClick={toggleAccordion("outline")}
             />
           </div>
         )}
 
-        <hr />
+        {/* <hr /> */}
+        {accordion.outline && (
         <div className="text-tab-flow">
           <h2 className="description-title">Description</h2>
           <p className="description-text">
@@ -635,6 +650,7 @@ const Marketing = () => {
             HR at onehealthconnectapp@gmail.com
           </p>
         </div>
+        )}
       </div>
 
       <div>
@@ -645,13 +661,14 @@ const Marketing = () => {
             </h2>
             <h2 className="grid-text">Remote</h2>
             <ArrowTab
-              icon={setAccordion.privacy ? topArrow : downArrow}
-              onClick={toggleAccordion("privacy")}
+              icon={accordion.prospect ? topArrow : downArrow}
+              onClick={toggleAccordion("prospect")}
             />
           </div>
         )}
 
-        <hr />
+        {/* <hr /> */}
+        {accordion.prospect && (
         <div className="text-tab-flow">
           <h2 className="description-title">Description</h2>
           <p className="description-text">
@@ -760,6 +777,7 @@ const Marketing = () => {
             HR at onehealthconnectapp@gmail.com
           </p>
         </div>
+        )}
         </div>
       </div>
     </div>

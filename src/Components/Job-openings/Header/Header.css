@@ -10,7 +10,7 @@
 }
 .openings-img {
   width: 105%;
-  height: 410px;
+  height: 510px;
   padding: 10px 20px 0 20px;
   display: flex;
   justify-content: center;
@@ -20,14 +20,14 @@
 .openings-side {
   display: flex;
   width: 290px;
-  height: 290px;
+  height: 330px;
   padding: 40px;
   flex-direction: column; 
   justify-content: center;
   align-items: flex-start;
   gap: 20px;
   left: 52px;
-  top: 210px;
+  top: 250px;
   bottom: 0.984px;
   box-shadow: 0px 17px 40px 0px rgba(0, 0, 0, 0.4);
   background: var(--SN-Primary-Headings-07235B, #07235b);
@@ -183,13 +183,17 @@
 }
 
 @media screen and (max-width: 480px) {
+  .container img{
+    margin: 0 auto;
+    width: 100% !important;
+  }
   .container-1 {
     align-self: stretch;
   }
-  .openings-img {
+  /*.openings-img {
     width: 100%;
     height: auto;
-  }
+  }*/
   .openings-side {
     display: flex;
     width: 156px;
@@ -199,7 +203,7 @@
     justify-content: center;
     align-items: flex-start;
     gap: 20px;
-    top: 40%;
+    top: 55%;
     z-index: 2;
   }
   .openings-side-h2 {
@@ -213,7 +217,7 @@
   .openings-side-h1 {
     color: #fff;
     font-family: Roboto;
-    font-size: 20px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 500;
     line-height: 100%;
@@ -227,7 +231,7 @@
   .openings-title-h2 {
     color: var(--SN-Primary-Headings-07235B, #07235b);
     font-family: Roboto;
-    font-size: 20px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 500;
     line-height: 100%;
@@ -235,7 +239,7 @@
   .openings-title-h1 {
     color: var(--SN-Primary-Headings-07235B, #07235b);
     font-family: Roboto;
-    font-size: 24px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 600;
     line-height: 110%;
