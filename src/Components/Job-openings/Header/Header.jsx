@@ -11,19 +11,19 @@ const Header = () => {
 
         <section className="openings-container" id="job-openings">
 
-            <div className="container-1">
+            <div className="container openings-tab">
                 <img className="openings-img" src={icon} alt="" />
 
-            
 
-            <div className="openings-side">
-                <h2 className="openings-side-h2">
-                    Empower Change Through Volunteer Engagement!
-                </h2>
-                <h1 className="openings-side-h1">
-                    Welcome to our Career Opportunities Page!
-                </h1>
-            </div>
+
+                <div className="openings-side">
+                    <h2 className="openings-side-h2">
+                        Empower Change Through Volunteer Engagement!
+                    </h2>
+                    <h1 className="openings-side-h1">
+                        Welcome to our Career Opportunities Page!
+                    </h1>
+                </div>
             </div>
 
 
@@ -33,7 +33,7 @@ const Header = () => {
                         Volunteer From Anywhere
                     </h2>
 
-                    <h className="openings-title-h1">Career Opportunities</h>
+                    <h1 className="openings-title-h1">Career Opportunities</h1>
                     <h3 className="openings-title-h3">To apply for any open position, please contact HR at <span className="openings-span">onehealthconnectapp@gmail.com</span></h3>
                 </div>
             </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import "./Hiring.css";
-import Copywrite from "./copywrite";
+import Copywriter from "./copywriter";
 import Cybersecurity from "./cybersecurity";
 import It from "./IT";
 import Legal from "./Legal";
@@ -19,28 +19,29 @@ const Hiring = () => {
   return (
     <section className="openings-tab" id="job-openings">
       <div className="container career-tab">
-        <div className="flex">
-          <Copywrite />
+        <div className="flex layer-tab">
+          <div className=" layer-tab-one">
+            <Copywriter />
+            <Cybersecurity />
+            <Datasci />
+            <Design />
+            <Development />
+            <Financial />
+            <Hr />
 
-          <It />
+          </div>
 
-          <Cybersecurity />
-          <Legal />
 
-          <Datasci />
-          <Marketing />
-          <Design />
+          <div className="layer-tab-two">
+            <It />
+            <Legal />
+            <Marketing />
+            <Product />
+            <Project />
+            <Quality />
+            <Operations />
+          </div>
 
-          <Product />
-
-          <Development />
-
-          <Project />
-
-          <Financial />
-          <Quality />
-          <Hr />
-          <Operations />
         </div>
       </div>
     </section>

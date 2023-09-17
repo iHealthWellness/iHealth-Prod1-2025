@@ -9,7 +9,7 @@ import downArrow from "src/Assets/Icons/Icon2.png";
 
 import { useState } from "react";
 
-const Cybersecurity = () => {
+const Copywriter = () => {
   const [accordion, setAccordion] = useState({
     privacy: false,
     view: false,
@@ -20,29 +20,30 @@ const Cybersecurity = () => {
   };
 
   return (
-    <div className="layerTwo-tab">
+    <div className="layerOne-tab">
       <div>
         <div className="flex-tab">
-          <h3 className="Text-header">CYBERSECURITY AND DATA PRIVACY</h3>
+          <h3 className="Text-header">COPYWRITING</h3>
           <BntTab
             icon={accordion.privacy ? minusbtn : plusbtn}
             onClick={toggleAccordion("privacy")}
           />
         </div>
+
         <div className="job-body">
           {accordion.privacy && (
             <div className="grid">
-              <h2 className="grid-title">CyberSecurity</h2>
+              <h2 className="grid-title">Copywriter</h2>
               <h2 className="grid-text">Remote</h2>
               <ArrowTab
                 icon={setAccordion.privacy ? topArrow : downArrow}
-                onClick={toggleAccordion("privacy")}
+                onClick={toggleAccordion("view")}
               />
             </div>
           )}
 
           <hr />
-          {accordion.view && (<div className="text-tab-flow">
+          {accordion.view && (<div className="text-tab-flow2">
             <h2 className="description-title">Description</h2>
             <p className="description-text">
               We are an 'early stage' pre-money nonprofit/ tech startup
@@ -84,7 +85,7 @@ const Cybersecurity = () => {
               <li>
                 Stay up to date on marketing trends, follow industry
                 best-practices and participate in ongoing knowledge sharing
-                with larger team{" "}
+                with larger team
               </li>
               <li>
                 Take direction and work both collaboratively and
@@ -164,8 +165,7 @@ const Cybersecurity = () => {
         </div>
       </div>
     </div>
-
   );
 };
 
-export default Cybersecurity;
+export default Copywriter;
