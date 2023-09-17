@@ -2,10 +2,27 @@
   background-color: rgb(242, 248, 253);
 }
 
+.layer-tab{
+  width:100%;
+}
+.layer-tab-one{
+
+  width:44%;
+
+}
+
+.layer-tab-two{
+  width:45%;
+
+}
+
+
+
 .flex {
   display: flex;
-  flex-wrap: wrap;
-  gap: 140px;
+  gap:10%;
+  
+  
 }
 .flex-tab {
   display: flex;
@@ -15,6 +32,8 @@
   justify-content: space-between;
   padding: 20px 0 20px 0;
 }
+
+
 .Text-header {
   width: 100%;
   color: var(--SN-Primary-Headings-07235B, #07235b);
@@ -61,9 +80,12 @@
   font-style: normal;
   font-weight: 400;
   line-height: 143%;
+  text-align: justify;
 }
-.text-tab-flow {
-  max-width: 100%;
+.text-tab-flow2 {
+  width: 100% !important; 
+  height: 100vh; 
+  
 }
 
 .grid-text {
@@ -77,12 +99,12 @@
 .career-tab {
   padding-top: 50px;
 }
-.layerOne-tab {
+/* .layerOne-tab {
   width: 40%;
 }
 .layerTwo-tab {
   width: 40%;
-}
+} */
 
 /*RESPONSIVENESS*/
 
