@@ -9,12 +9,52 @@ import SocialMedia from "src/Constants/HomePage/SocialMedia.js";
 import FooterLink from "src/Constants/FooterLink.js";
 
 import "./index.css";
+import axios from "axios";
+import { BASE_URL } from '../../../environment/config';
 
 const Footer = () => {
   const [selectedLanguage, setSelectedLanguage] = useState("en");
+  const [email, setEmail] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [subscribeStatus, setSubscribeStatus] = useState("");
 
   const handleChange = (event) => {
     setSelectedLanguage(event.target.value);
+  };
+
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    const subscribeData = {
+      email: email,
+      // Add other fields as needed
+    };
+
+    axios
+      .post(`${BASE_URL}/api/v1/subscription/`, subscribeData)
+      .then((response) => {
+        setLoading(false);
+
+        if (response.status === 201) {
+          // Show loading spinner and set subscribe status
+          setSubscribeStatus("Subscribed!");
+          // Handle the response as needed, e.g., show a success message
+          setEmail("");
+        } else {
+          // Set subscribe status to an error message
+          setSubscribeStatus("Oops! Form not submitted");
+        }
+      })
+      .catch((error) => {
+        setLoading(false);
+        // Set subscribe status to an error message
+        setSubscribeStatus("Error sending data");
+      });
   };
   return (
     <footer className="footer-container">
@@ -31,20 +71,19 @@ const Footer = () => {
           <div className="footer-subscribe-block">
             <p className="footer-subscribe-heading">STAY INFORMED:</p>
             <div className="footer-subscribe-bar">
-              <input
-                className="footer-subscribe-input"
-                placeholder="Your email here"
-              />
-              <a
-                className="footer-subscribe-btn"
-                onClick={() => {
-                  document.querySelector("#UnderConst-wrapper").style.display =
-                    "flex";
-                }}
-              >
-                Subscribe
-              </a>
-            </div>
+          <form onSubmit={handleSubmit}>
+            <input
+              className="footer-subscribe-input"
+              placeholder="Your email here"
+              value={email}
+              onChange={handleEmailChange}
+            />
+            <button className="footer-subscribe-btn" type="submit">
+              {loading ? "Loading..." : subscribeStatus || "Subscribe"}
+            </button>
+          </form>
+          {loading && <div className="loading-spinner"></div>}
+        </div>
           </div>
           <div className="footer-follow-block">
             <p className="footer-follow-heading">FOLLOW US:</p>

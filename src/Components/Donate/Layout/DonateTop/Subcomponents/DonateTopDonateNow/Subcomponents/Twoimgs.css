@@ -1,0 +1,23 @@
+#Twoimgs-wrapper
+{
+    display: flex;
+    flex-direction: row;
+    width: Calc(50% - 0.5rem);
+    gap: 1rem;
+
+}
+
+
+#Twoimgs-wrapper > img:first-child
+{
+    object-fit: cover;
+    border-bottom-left-radius: 31px;
+    flex: 0 0 auto;
+}
+
+#Twoimgs-wrapper > img:last-child
+{
+    object-fit: cover;
+    border-bottom-right-radius: 31px;
+    flex: 0 0 auto;
+}

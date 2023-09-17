@@ -1,0 +1,23 @@
+#beforeanimationleft
+{
+    transform: translateX(-20vw) ;
+    /* width: 25px !important; */
+}
+
+#slideDaninLeft
+{
+    transform: translateX(0) !important;
+    width: 100% !important;
+}
+
+#slideDaninRight
+{
+    transform: translateX(0);
+    width: 100%;
+}
+
+#beforeanimationright
+{
+    transform: translateX(35vw) ;
+    /* width: 1px !important; */
+}

@@ -25,11 +25,12 @@ const InformationCard = ({ team }) => {
       <div className="information-card-link-block">
         <a
           className="information-card-link"
-          // href={detailUrl}
-          onClick={() => {
-            document.querySelector("#UnderConst-wrapper").style.display =
-              "flex";
-          }}
+          href={detailUrl}
+          onClick={heading ==="Education" ? () => {document.querySelector("#UnderConst-wrapper").style.display ="flex";} : " "}
+          // onClick={() => {
+          //   document.querySelector("#UnderConst-wrapper").style.display =
+          //     "flex";
+          // }}
         >
           Learn More &gt;
         </a>

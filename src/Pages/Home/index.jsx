@@ -28,7 +28,6 @@ const index = () => {
       <Benefit />
       <PartnerWithUs />
       <Information />
-      <UnderConstruction />
       <ToTopBtn />
     </div>
   );

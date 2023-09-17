@@ -4,15 +4,15 @@ const FooterLink = [
     links: [
       {
         title: "Our Mission",
-        path: "#",
+        path: "/about-us/#Statement",
       },
       {
         title: "Board of Directors",
-        path: "#",
+        path: "/our-team/#Board",
       },
       {
         title: "Advisory Council",
-        path: "#",
+        path: "/our-team/#Advisory",
       },
     ],
   },
@@ -21,11 +21,11 @@ const FooterLink = [
     links: [
       {
         title: "Ways to Give",
-        path: "#",
+        path: "/donate/#top",
       },
       {
         title: "Fundraise",
-        path: "#",
+        path: "/donate/#Donate-Steps-Wrapper",
       },
       {
         title: "Volunteer",
@@ -38,15 +38,15 @@ const FooterLink = [
     links: [
       {
         title: "Provider Lookup",
-        path: "#",
+        path: "/#Home-Page-provider-container",
       },
       {
         title: "Community Portal",
-        path: "#",
+        path: "/#Home-page-team-container",
       },
       {
         title: "Partner with Us",
-        path: "#",
+        path: "/#Home-page-partner-container",
       },
     ],
   },
@@ -55,15 +55,15 @@ const FooterLink = [
     links: [
       {
         title: "Privacy Policy",
-        path: "#",
+        path: "/terms-of-use/#privacy-policy",
       },
       {
         title: "Terms of Service",
-        path: "#",
+        path: "/terms-of-use/#termsofuse",
       },
       {
         title: "Disclaimer",
-        path: "#",
+        path: "/terms-of-use/#disclaimer",
       },
     ],
   },

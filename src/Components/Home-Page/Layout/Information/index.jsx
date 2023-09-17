@@ -6,7 +6,7 @@ import InformationCards from "./InformationCards";
 
 const Information = () => {
   return (
-    <section className="information-container">
+    <section id="Information" className="information-container">
       <InformationHeader />
       <div className="information-divider"></div>
       <InformationTabs />
