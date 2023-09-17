@@ -11,7 +11,8 @@ import { useState } from "react";
 const Design = () => {
   const [accordion, setAccordion] = useState({
     privacy: false,
-    view: false,
+    open: false,
+    hide: false,
   });
 
   const toggleAccordion = (content) => (e) => {
@@ -36,13 +37,14 @@ const Design = () => {
               <h2 className="grid-title">UX Researcher</h2>
               <h2 className="grid-text">Remote</h2>
               <ArrowTab
-                icon={setAccordion.privacy ? topArrow : downArrow}
-                onClick={toggleAccordion("privacy")}
+                icon={accordion.open ? topArrow : downArrow}
+                onClick={toggleAccordion("open")}
               />
             </div>
           )}
 
           <hr />
+          {accordion.open && (
           <div className="text-tab-flow">
             <h2 className="description-title">Description</h2>
             <p className="description-text">
@@ -137,20 +139,21 @@ const Design = () => {
               HR at onehealthconnectapp@gmail.com
             </p>
           </div>
+          )}
 
           {accordion.privacy && (
             <div className="grid">
               <h2 className="grid-title">UX/UI Designer</h2>
               <h2 className="grid-text">Remote</h2>
               <ArrowTab
-                icon={setAccordion.privacy ? topArrow : downArrow}
-                onClick={toggleAccordion("privacy")}
+                icon={accordion.hide ? topArrow : downArrow}
+                onClick={toggleAccordion("hide")}
               />
             </div>
           )}
 
-          <hr />
-          {accordion.view && (<div className="text-tab-flow">
+          {/* <hr /> */}
+          {accordion.hide && (<div className="text-tab-flow">
             <h2 className="description-title">Description</h2>
             <p className="description-text">
               We are an 'early stage' pre-money nonprofit/ tech startup

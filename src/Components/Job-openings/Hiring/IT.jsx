@@ -8,12 +8,11 @@ import topArrow from "src/Assets/Icons/Icon.png";
 import downArrow from "src/Assets/Icons/Icon2.png";
 
 import { useState } from "react";
-import Copywrite from "./copywriter";
-import Cybersecurity from "./cybersecurity";
 
 const It = () => {
   const [accordion, setAccordion] = useState({
     privacy: false,
+    sight: false,
   });
 
   const toggleAccordion = (content) => (e) => {
@@ -40,13 +39,14 @@ const It = () => {
               </h2>
               <h2 className="grid-text">Remote</h2>
               <ArrowTab
-                icon={setAccordion.privacy ? topArrow : downArrow}
-                onClick={toggleAccordion("privacy")}
+                icon={accordion.sight ? topArrow : downArrow}
+                onClick={toggleAccordion("sight")}
               />
             </div>
           )}
 
           <hr />
+          {accordion.sight && (
           <div className="text-tab-flow">
             <h2 className="description-title">Description</h2>
             <p className="description-text">
@@ -149,6 +149,7 @@ const It = () => {
               HR at onehealthconnectapp@gmail.com
             </p>
           </div>
+          )}
         </div>
       </div>
     </div>

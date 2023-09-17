@@ -12,6 +12,11 @@ import { useState } from "react";
 const Operations = () => {
   const [accordion, setAccordion] = useState({
     privacy: false,
+    aspect: false,
+    looking: false,
+    viewing: false,
+    glimpse: false,
+    outlook: false,
   });
 
   const toggleAccordion = (content) => (e) => {
@@ -37,13 +42,14 @@ const Operations = () => {
             </h2>
             <h2 className="grid-text">Remote</h2>
             <ArrowTab
-              icon={setAccordion.privacy ? topArrow : downArrow}
-              onClick={toggleAccordion("privacy")}
+              icon={accordion.aspect ?  topArrow : downArrow}
+              onClick={toggleAccordion("aspect")}
             />
           </div>
         )}
 
         <hr />
+        {accordion.aspect && (
         <div className="text-tab-flow">
           <h2 className="description-title">Description</h2>
           <ul className="description-text">
@@ -115,19 +121,21 @@ const Operations = () => {
             onehealthconnectapp@gmail.com
           </p>
         </div>
+        )}
 
         {accordion.privacy && (
           <div className="grid">
             <h2 className="grid-title">Clinical Integration Specialist</h2>
             <h2 className="grid-text">Remote</h2>
             <ArrowTab
-              icon={setAccordion.privacy ? topArrow : downArrow}
-              onClick={toggleAccordion("privacy")}
+              icon={accordion.looking ? topArrow : downArrow}
+              onClick={toggleAccordion("looking")}
             />
           </div>
         )}
 
-        <hr />
+        {/*<hr />*/}
+        {accordion.looking && (
         <div className="text-tab-flow">
           <h2 className="description-title">Description</h2>
           <p className="description-text">
@@ -220,6 +228,7 @@ const Operations = () => {
             onehealthconnectapp@gmail.com
           </p>
         </div>
+        )}
 
         {accordion.privacy && (
           <div className="grid">
@@ -228,13 +237,14 @@ const Operations = () => {
             </h2>
             <h2 className="grid-text">Remote</h2>
             <ArrowTab
-              icon={setAccordion.privacy ? topArrow : downArrow}
-              onClick={toggleAccordion("privacy")}
+              icon={accordion.viewing ? topArrow : downArrow}
+              onClick={toggleAccordion("viewing")}
             />
           </div>
         )}
 
-        <hr />
+        {/* <hr /> */}
+        {accordion.viewing && (
         <div className="text-tab-flow">
           <h2 className="description-title">Description</h2>
           <p className="description-text">
@@ -310,19 +320,21 @@ const Operations = () => {
             onehealthconnectapp@gmail.com
           </p>
         </div>
+        )}
 
         {accordion.privacy && (
           <div className="grid">
             <h2 className="grid-title">Physician Integration Specialist </h2>
             <h2 className="grid-text">Remote</h2>
             <ArrowTab
-              icon={setAccordion.privacy ? topArrow : downArrow}
-              onClick={toggleAccordion("privacy")}
+              icon={accordion.glimpse ? topArrow : downArrow}
+              onClick={toggleAccordion("glimpse")}
             />
           </div>
         )}
 
-        <hr />
+        {/* <hr /> */}
+        {accordion.glimpse && (
         <div className="text-tab-flow">
           <h2 className="description-title">Description</h2>
           <p className="description-text">
@@ -409,6 +421,7 @@ const Operations = () => {
             onehealthconnectapp@gmail.com
           </p>
         </div>
+        )}
 
         {accordion.privacy && (
           <div className="grid">
@@ -417,13 +430,14 @@ const Operations = () => {
             </h2>
             <h2 className="grid-text">Remote</h2>
             <ArrowTab
-              icon={setAccordion.privacy ? topArrow : downArrow}
-              onClick={toggleAccordion("privacy")}
+              icon={accordion.outlook ? topArrow : downArrow}
+              onClick={toggleAccordion("outlook")}
             />
           </div>
         )}
 
-        <hr />
+        {/* <hr /> */}
+        {accordion.outlook && (
         <div className="text-tab-flow">
           <h2 className="description-title">Description</h2>
           <p className="description-text">
@@ -504,6 +518,7 @@ const Operations = () => {
             onehealthconnectapp@gmail.com
           </p>
         </div>
+        )}
       </div>
       </div>
     </div>

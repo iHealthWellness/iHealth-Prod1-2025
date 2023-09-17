@@ -12,6 +12,8 @@ import { useState } from "react";
 const Legal = () => {
   const [accordion, setAccordion] = useState({
     privacy: false,
+    seen: false,
+    stretch: false,
   });
 
   const toggleAccordion = (content) => (e) => {
@@ -35,13 +37,14 @@ const Legal = () => {
                   <h2 className="grid-title">Corporate Attorney</h2>
                   <h2 className="grid-text">Remote</h2>
                   <ArrowTab
-                    icon={setAccordion.privacy ? topArrow : downArrow}
-                    onClick={toggleAccordion("privacy")}
+                    icon={accordion.seen ? topArrow : downArrow}
+                    onClick={toggleAccordion("seen")}
                   />
                 </div>
               )}
 
               <hr />
+              {accordion.seen && (
               <div className="text-tab-flow">
                 <h2 className="description-title">Description</h2>
                 <p className="description-text">
@@ -104,6 +107,7 @@ const Legal = () => {
                   HR at onehealthconnectapp@gmail.com
                 </p>
               </div>
+              )}
 
               <div>
                 {accordion.privacy && (
@@ -113,13 +117,14 @@ const Legal = () => {
                     </h2>
                     <h2 className="grid-text">Remote</h2>
                     <ArrowTab
-                      icon={setAccordion.privacy ? topArrow : downArrow}
-                      onClick={toggleAccordion("privacy")}
+                      icon={accordion.stretch ? topArrow : downArrow}
+                      onClick={toggleAccordion("stretch")}
                     />
                   </div>
                 )}
 
-                <hr />
+                {/* <hr /> */}
+                {accordion.stretch && (
                 <div className="text-tab-flow">
                   <h2 className="description-title">Description</h2>
                   <p className="description-text">
@@ -217,6 +222,7 @@ const Legal = () => {
                     HR at onehealthconnectapp@gmail.com
                   </p>
                 </div>
+                )}
               </div>
               </div>
             </div>

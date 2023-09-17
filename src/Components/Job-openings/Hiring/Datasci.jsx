@@ -12,7 +12,7 @@ import { useState } from "react";
 const Datasci = () => {
   const [accordion, setAccordion] = useState({
     privacy: false,
-    view: false,
+    wide: false,
   });
 
   const toggleAccordion = (content) => (e) => {
@@ -37,14 +37,14 @@ const Datasci = () => {
               </h2>
               <h2 className="grid-text">Remote</h2>
               <ArrowTab
-                icon={setAccordion.privacy ? topArrow : downArrow}
-                onClick={toggleAccordion("privacy")}
+                icon={accordion.wide ? topArrow : downArrow}
+                onClick={toggleAccordion("wide")}
               />
             </div>
           )}
 
           <hr />
-          {accordion.view && (<div className="text-tab-flow">
+          {accordion.wide && (<div className="text-tab-flow">
             <h2 className="description-title">Description</h2>
             <p className="description-text">
               We are an 'early stage' pre-money nonprofit/ tech startup
