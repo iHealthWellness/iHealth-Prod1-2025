@@ -31,7 +31,7 @@
 .grid {
   display: flex;
   justify-content: space-between;
-  padding: 20px 0 20px 0;
+  padding: 10px 0 10px 0;
 }
 
 
@@ -45,6 +45,7 @@
   line-height: 143%;
 }
 .grid-title {
+  width: 45%;
   color: var(--SN-Primary-Headings-07235B, #07235B);
   font-family: Roboto;
   font-size: 20px;
@@ -52,8 +53,14 @@
   font-weight: 400;
   line-height: 110%;  
 }
-.grid-title {
-  width: 50%;
+.grid-text {
+  width: 40%;
+  color: var(--SN-Primary-Headings-07235B, #07235b);
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%; 
 }
 .job-body {
   margin-top: 20px;
@@ -93,23 +100,9 @@
   
 }
 
-.grid-text {
-  color: var(--SN-Primary-Headings-07235B, #07235b);
-  font-family: Roboto;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 110%; /* 22px */
-}
 .career-tab {
   padding-top: 50px;
 }
-/* .layerOne-tab {
-  width: 40%;
-}
-.layerTwo-tab {
-  width: 40%;
-} */
 
 
 /*RESPONSIVENESS*/
@@ -138,13 +131,17 @@
     font-weight: 400;
     line-height: 143%;
   }
-  .grid {
-    display: flex;
-    gap: 0;
-    justify-content: space-between;
-    padding: 20px 0 10px 0;
+  .grid-title {
+    width: 50%;
+    color: var(--SN-Primary-Headings-07235B, #07235B);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;  
   }
   .grid-text {
+    width: 40%;
     color: var(--SN-Primary-Headings-07235B, #07235b);
     font-family: Roboto;
     font-size: 16px;
@@ -156,17 +153,7 @@
     padding: 20px;
    flex-wrap: wrap ;
   }
-  .job-body {
-    padding: 10px;
-  }
-  .grid-title {
-    color: var(--SN-Primary-Headings-07235B, #07235B);
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 110%;  
-  }
+  
  
   .description-title {
     color: var(--SN-Primary-Headings-07235B, #07235b);
@@ -243,10 +230,11 @@
   }
   .grid {
     display: flex;
-    justify-content: space-between;
-    padding: 20px 0 10px 0;
+    justify-content: space-between; 
   }
+
   .grid-title {
+    width: 50%;
     color: var(--SN-Primary-Headings-07235B, #07235B);
     font-family: Roboto;
     font-size: 16px;
@@ -254,10 +242,8 @@
     font-weight: 700;
     line-height: 110%;  
   }
-  .grid-title {
-    width: 15%;
-  }
   .grid-text {
+    width: 40%;
     color: var(--SN-Primary-Headings-07235B, #07235B);
     font-family: Roboto;
     font-size: 16px;
@@ -267,9 +253,6 @@
   }
   .flex {
     padding: 20px;
-  }
-  .job-body {
-    padding: 10px;
   }
   .description-title {
     color: var(--SN-Primary-Headings-07235B, #07235b);
