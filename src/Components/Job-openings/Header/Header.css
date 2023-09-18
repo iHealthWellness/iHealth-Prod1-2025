@@ -9,9 +9,9 @@
   position: relative;
 }
 .openings-img {
-  width: 105%;
+  width: 100%;
   height: 510px;
-  padding: 10px 20px 0 20px;
+  padding: 10px 0 0 0;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -19,14 +19,14 @@
 
 .openings-side {
   display: flex;
-  width: 290px;
+  width: 260px;
   height: 330px;
   padding: 40px;
   flex-direction: column; 
   justify-content: center;
   align-items: flex-start;
   gap: 20px;
-  left: 52px;
+  left: 30px;
   top: 250px;
   bottom: 0.984px;
   box-shadow: 0px 17px 40px 0px rgba(0, 0, 0, 0.4);
@@ -109,16 +109,18 @@
     align-self: stretch;
   }
   .openings-img {
-    width: 100%;
-    height: auto;
+      width: 100%;
+      height: 350px;
+      padding: 10px 0 0 0;
+    
   }
   .openings-side {
     display: flex;
     width: 176px;
     height: 225px;
-    left: 20px;
+    left: 25px;
     padding: 10px;
-    top: 60%;
+    top: 65%;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
@@ -142,7 +144,7 @@
     line-height: 143%;
   }
 
-  .openings-title-container {
+  .openings-titles {
     width: 100%;
     height: auto;
     padding: 20px;
@@ -183,27 +185,24 @@
 }
 
 @media screen and (max-width: 480px) {
-  .container img{
-    margin: 0 auto;
-    width: 100% !important;
-  }
   .container-1 {
     align-self: stretch;
   }
-  /*.openings-img {
+  .openings-img {
     width: 100%;
-    height: auto;
-  }*/
+    height: 210px;
+  }
   .openings-side {
     display: flex;
-    width: 156px;
-    height: 174px;
+    width: 162px;
+    height: 178px;
     padding: 10px;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     gap: 20px;
-    top: 55%;
+    top: 65%;
+    left: 20px;
     z-index: 2;
   }
   .openings-side-h2 {
@@ -217,13 +216,13 @@
   .openings-side-h1 {
     color: #fff;
     font-family: Roboto;
-    font-size: 18px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 500;
     line-height: 100%;
   }
 
-  .openings-title-container {
+  .openings-titles {
     width: 100%;
     height: auto;
     padding: 20px;
