@@ -3,11 +3,12 @@ import Header from 'src/Components/Job-openings/Header/Header';
 import Hiring from 'src/Components/Job-openings/Hiring/Hiring';
 // import openings from 'src/Components/Job-openings/Hiring/openings/openings';
 
+import Hiring from "src/Components/Job-openings/Hiring/openings"
 
 const jobs = () => {
   return (
     <div>
-      <Header />
+        <Header />
       <Hiring />
 
     </div>
