@@ -1,3 +1,66 @@
+.team-banner {
+    display: flex;            
+    justify-content: center; 
+    align-items: center;     
+    height: auto;
+    padding: 10px;      /* Inner padding */
+    background-color: #07235B;
+    margin: 5px auto;     /* Centers the element horizontally and gives it space on left and right */
+    max-width: 75%;     /* Uses up to 90% of the viewport's width */
+    border-radius: 10px;
+}
+
+.team-link {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: white;      
+    white-space: normal;     
+}
+
+.team-link:hover {
+    text-decoration: underline;
+}
+
+/* Styles for larger screens */
+@media (min-width: 768px) {
+    .team-banner {
+        display: flex;            
+        justify-content: center; 
+        align-items: center;     
+        height: auto;
+        padding: 20px;      /* Inner padding */
+        background-color: #07235B;
+        margin: 5px auto;     /* Centers the element horizontally and gives it space on left and right */
+        max-width: 75%;     /* Uses up to 90% of the viewport's width */
+        border-radius: 10px;
+        max-width: 980px;   /* You can adjust this value based on your design needs */
+    }
+
+    .team-link {
+        white-space: nowrap;  
+        font-family: Roboto;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 34px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: white;      
+        white-space: normal;    
+    }
+}
+
+
+
+
+
+
+
+
+
 
 .container{
     margin:0 auto;

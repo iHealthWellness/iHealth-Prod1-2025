@@ -77,11 +77,16 @@ const TeamMember = () => {
                 </div>
                 <div className={`gridd ${isVisible.divTwoRef ? "slide-in" : ""}`}
                     ref={divTwoRef}>
+
+
+{/* 
                     <div className="grid-tab">
                         <div className="bold-color-text">Workstream</div>
-                        {/* <div className="bold-color-text">Roles</div> */}
                         <div className="bold-color-text">Our Team</div>
-                    </div>
+                    </div> */}
+
+
+                    
                     {
                         DataPage.map((page) => {
 
