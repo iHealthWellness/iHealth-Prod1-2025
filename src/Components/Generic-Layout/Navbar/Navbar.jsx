@@ -71,8 +71,8 @@ const MenuList = () => {
           url: "/about-us/#Terms",
         },
          {
-          title: "Job Openings",
-           url: "/Job-openings/#",
+          title: "",
+           url: "",
          },
       ],
     },
