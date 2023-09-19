@@ -1,6 +1,6 @@
 .container {
     margin: 0 auto;
-    width: 90%;
+    width: 100%;
 }
 
 .openings-hero {
@@ -11,9 +11,10 @@
 }
 .openings-img {
   position: relative;
-  width: 90%;
+  width: 100%;
 }
 .openings-side {
+    max-width: 60%;
   display: flex;
   width: 290px;
   height: 362px;
@@ -22,8 +23,8 @@
   justify-content: center;
   align-items: flex-start;
   gap: 40px;
-  left: 55px;
-  top: 95%;
+  left: 80px;
+  top: 80%;
   bottom: 0.984px;
   box-shadow: 0px 17px 40px 0px rgba(0, 0, 0, 0.4);
   background: var(--SN-Primary-Headings-07235B, #07235b);
@@ -66,7 +67,6 @@
 .openings-title-h2 {
     width: 1206px;
     height: 34px;
-    padding-left: 20px;
     color: var(--SN-Primary-Headings-07235B, #07235B);
     font-family: Roboto;
     font-size: 24px;
@@ -78,7 +78,6 @@
 .openings-title-h1 { 
     width: 1206px;
     height: 40px;
-    padding-left: 20px;
     color: var(--SN-Primary-Headings-07235B, #07235B);
     font-family: Roboto;
     font-size: 36px;
@@ -91,7 +90,6 @@
 .openings-title-h3 {
     width: 1206px;
     height: 22px;
-    padding-left: 20px;
     color: #07235B;
     font-family: Roboto;
     font-size: 20px;
