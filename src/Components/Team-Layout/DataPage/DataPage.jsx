@@ -79,7 +79,7 @@ const DataPage = [
         id: 10,
         TeamName: "Project Management ",
         // Roles: "Project Managers, Scrum Masters, Agile Coaches  ",
-        Names: ["Anu Ramabhadran", "Frank Saladis, PMP", "Sherrie Ricks", ],
+        Names: ["Anu Ramabhadran", "Frank Saladis, PMP", "Satyam Kishore", ],
 
     },
     {
