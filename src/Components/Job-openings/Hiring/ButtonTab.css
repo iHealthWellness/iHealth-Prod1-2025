@@ -16,3 +16,8 @@
  .button:focus{
      outline: none;
  }
+ .buttonTab img{
+    width:20%;
+    height:20%;
+    border: none;
+ }
