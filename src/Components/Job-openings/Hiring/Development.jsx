@@ -14,6 +14,7 @@ const Development = () => {
     privacy: false,
     clear: false,
     free: false,
+    showcase: false,
     bare: false,
     expose: false,
     disclose: false,
@@ -260,14 +261,14 @@ const Development = () => {
               <h2 className="grid-title">Principal Front-End Engineer</h2>
               <h2 className="grid-text">Remote</h2>
               <ArrowTab
-                icon={accordion.free ? topArrow : downArrow}
-                onClick={toggleAccordion("free")}
+                icon={accordion.showcase ? topArrow : downArrow}
+                onClick={toggleAccordion("showcase")}
               />
             </div>
           )}
 
           {accordion.privacy && <hr />}
-          {accordion.free && (
+          {accordion.showcase && (
             <div className="text-tab-flow">
               <h2 className="description-title">Description</h2>
               <p className="description-text">

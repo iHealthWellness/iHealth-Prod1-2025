@@ -20,14 +20,14 @@
 .openings-side {
   display: flex;
   width: 260px;
-  height: 330px;
+  height: 350px;
   padding: 40px;
   flex-direction: column; 
   justify-content: center;
   align-items: flex-start;
   gap: 20px;
   left: 30px;
-  top: 250px;
+  top: 30%;
   bottom: 0.984px;
   box-shadow: 0px 17px 40px 0px rgba(0, 0, 0, 0.4);
   background: var(--SN-Primary-Headings-07235B, #07235b);
@@ -59,13 +59,13 @@
 }
 
 .openings-titles {
-  margin-top: 140px;
+  margin-top: 100px;
 }
 .openings-title-h2 {
   color: var(--SN-Primary-Headings-07235B, #07235b);
   margin-top: -40px;
   font-family: Roboto;
-  font-size: 24px;
+  font-size: 36px;
   font-style: normal;
   font-weight: 400;
   line-height: 143%;
@@ -74,7 +74,7 @@
 .openings-title-h1 {
   color: var(--SN-Primary-Headings-07235B, #07235b);
   font-family: Roboto;
-  font-size: 36px;
+  font-size: 48px;
   font-style: normal;
   font-weight: 600;
   line-height: 110%;
@@ -85,7 +85,7 @@
 .openings-title-h3 {
   color: #07235b;
   font-family: Roboto;
-  font-size: 20px;
+  font-size: 24px;
   font-style: normal;
   font-weight: 400;
   line-height: 110%;
@@ -94,7 +94,7 @@
 .openings-span {
   color: #07235b;
   font-family: Roboto;
-  font-size: 20px;
+  font-size: 24px;
   font-style: normal;
   font-weight: 400;
   line-height: 110%;
