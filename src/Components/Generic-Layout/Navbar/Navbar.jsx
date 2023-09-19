@@ -70,10 +70,17 @@ const MenuList = () => {
           title: "Terms Of Use",
           url: "/about-us/#Terms",
         },
+<<<<<<< HEAD
         {
           title: "Volunteer from Anywhere",
           url: "/about-us/#",
         },
+=======
+         {
+          title: "Job Openings",
+           url: "/Job-openings/#",
+         },
+>>>>>>> e39de81 (update on the page)
       ],
     },
 
