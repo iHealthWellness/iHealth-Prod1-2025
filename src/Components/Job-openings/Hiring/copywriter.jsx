@@ -4,10 +4,8 @@ import { ArrowTab } from "./ButtonTab";
 import "./Hiring.css";
 import plusbtn from "src/Assets/Icons/plus.png";
 import minusbtn from "src/Assets/Icons/minus.png";
-// import topArrow from "src/Assets/Icons/Icon.png";
-// import downArrow from "src/Assets/Icons/Icon2.png";
-import {TbCircleChevronsUp} from "react-icons/tb";
-import {BsChevronDown} from "react-icons/bs";
+import topArrow from "src/Assets/Icons/Icon.png";
+import downArrow from "src/Assets/Icons/Icon2.png";
 
 import { useState } from "react";
 
@@ -37,7 +35,7 @@ const Copywriter = () => {
               <h2 className="grid-title">Copywriter</h2>
               <h2 className="grid-text">Remote</h2>
               <ArrowTab
-                icon={accordion.show ? <TbCircleChevronsUp/> : BsChevronDown}
+                icon={accordion.show ? topArrow : downArrow}
                 onClick={toggleAccordion("show")}
               />
             </div>

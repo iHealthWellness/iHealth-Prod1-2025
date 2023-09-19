@@ -18,12 +18,12 @@
  .button:focus{
      outline: none;
  }
- .buttonTab img{
-    width:20%;
-    height:20%;
+ .buttontab img{
+    width:50%;
+    height:50%;
     border: none;
  }
- .buttonTab {
+ .buttontab {
     display: inline-flex;
     border-radius: 100%;
     width:6%;
@@ -31,5 +31,5 @@
     padding: 0px;
     align-items: center;
     justify-content: center;
-    border: none;
+    border: none  !important;
  }
