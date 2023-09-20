@@ -65,7 +65,7 @@
   color: var(--SN-Primary-Headings-07235B, #07235b);
   margin-top: -40px;
   font-family: Roboto;
-  font-size: 36px;
+  font-size: 48px;
   font-style: normal;
   font-weight: 400;
   line-height: 143%;
@@ -74,7 +74,7 @@
 .openings-title-h1 {
   color: var(--SN-Primary-Headings-07235B, #07235b);
   font-family: Roboto;
-  font-size: 48px;
+  font-size: 36px;
   font-style: normal;
   font-weight: 600;
   line-height: 110%;
@@ -172,6 +172,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 143%;
+    margin-bottom: -20px;
   }
   .openings-span {
     color: #07235b;
@@ -191,6 +192,7 @@
   .openings-img {
     width: 100%;
     height: 210px;
+    margin-bottom: -60px;
   }
   .openings-side {
     display: flex;

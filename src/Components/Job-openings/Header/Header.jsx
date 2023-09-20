@@ -16,14 +16,14 @@ const Header = () => {
 
 
 
-                <div className="openings-side">
+                {/* <div className="openings-side">
                     <h2 className="openings-side-h2">
                         Empower Change Through Volunteer Engagement!
                     </h2>
                     <h1 className="openings-side-h1">
                         Welcome to our Career Opportunities Page!
                     </h1>
-                </div>
+                </div> */}
             </div>
 
 
