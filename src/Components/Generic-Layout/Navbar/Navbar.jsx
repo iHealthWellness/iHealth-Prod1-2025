@@ -72,7 +72,7 @@ const MenuList = () => {
         },
         {
           title: "Volunteer from Anywhere",
-          url: "/about-us/#",
+          url: "/job-openings",
         },
       ],
     },
