@@ -38,11 +38,11 @@
 }
 
 .side1 {
-  font-size: 24px;
+  font-size: 36px;
 }
 
 .side2 {
-  font-size: 36px;
+  font-size: 48px;
 }
 
 .intro {
@@ -114,8 +114,11 @@
     padding: 10px;
   }
 
-  .side1, .introduction {
+   .introduction {
     font-size: 24px;
+  }
+  .side1 {
+    font-size: 16px;
   }
 
   .side2 {

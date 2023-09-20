@@ -4,8 +4,8 @@ import { ArrowTab } from "./ButtonTab";
 import "./Hiring.css";
 import plusbtn from "src/Assets/Icons/plus.png";
 import minusbtn from "src/Assets/Icons/minus.png";
-import topArrow from "src/Assets/Icons/Icon.png";
-import downArrow from "src/Assets/Icons/Icon2.png";
+import topArrow from "src/Assets/Icons/icon.png";
+import downArrow from "src/Assets/Icons/icon2 (2).png";
 
 import { useState } from "react";
 
@@ -20,8 +20,14 @@ const Marketing = () => {
     prospect: false,
   });
 
+  const [marketVisible, setMarketVisible] = useState(false);
+
   const toggleAccordion = (content) => (e) => {
     setAccordion((prev) => ({ ...prev, [content]: !prev[content] }));
+  };
+
+  const toggleMarket = () => {
+    setMarketVisible((prev) => !prev); 
   };
 
   return (
@@ -29,15 +35,15 @@ const Marketing = () => {
       <div className="layerTwo-tab">
         <div>
           <div className="flex-tab">
-            <h3 className="Text-header">MARKETING & PUBLIC RELATION </h3>
+            <h3 className="Text-header" onClick={toggleMarket}>MARKETING & PUBLIC RELATION </h3>
             <BntTab
-              icon={accordion.privacy ? minusbtn : plusbtn}
-              onClick={toggleAccordion("privacy")}
+              icon={marketVisible ? minusbtn : plusbtn}
+              onClick={toggleMarket}
             />
           </div>
 
           <div className="job-body">
-            {accordion.privacy && (
+            {marketVisible && (
               <div className="grid">
                 <h2 className="grid-title">Marketing and Outreach</h2>
                 <h2 className="grid-text">Remote</h2>
@@ -180,14 +186,14 @@ const Marketing = () => {
 
                 <p className="apply-text">
                   How to Apply: To apply for any open position, please contact
-                  HR at onehealthconnectapp@gmail.com
+                  HR at hr-team@ihealthwellness.one
                 </p>
               </div>
             )}
           </div>
 
           <div className="job-body">
-            {accordion.privacy && (
+            {marketVisible && (
               <div className="grid">
                 <h2 className="grid-title">Marketing Specialist </h2>
                 <h2 className="grid-text">Remote</h2>
@@ -197,7 +203,7 @@ const Marketing = () => {
                 />
               </div>
             )}
-            {accordion.privacy && <hr />}
+            {marketVisible && <hr />}
             {accordion.illustrate && (
               <div className="text-tab-flow">
                 <h2 className="description-title">Description</h2>
@@ -284,14 +290,14 @@ const Marketing = () => {
 
                 <p className="apply-text">
                   How to Apply: To apply for any open position, please contact
-                  HR at onehealthconnectapp@gmail.com
+                  HR at hr-team@ihealthwellness.one
                 </p>
               </div>
             )}
           </div>
 
           <div className="job-body">
-            {accordion.privacy && (
+            {marketVisible && (
               <div className="grid">
                 <h2 className="grid-title">Marketing Strategy Consultant</h2>
                 <h2 className="grid-text">Remote</h2>
@@ -302,7 +308,7 @@ const Marketing = () => {
               </div>
             )}
 
-            {accordion.privacy && <hr />}
+            {marketVisible && <hr />}
             {accordion.appear && (
               <div className="text-tab-flow">
                 <h2 className="description-title">Description</h2>
@@ -417,14 +423,14 @@ const Marketing = () => {
 
                 <p className="apply-text">
                   How to Apply: To apply for any open position, please contact
-                  HR at onehealthconnectapp@gmail.com
+                  HR at hr-team@ihealthwellness.one
                 </p>
               </div>
             )}
           </div>
 
           <div className="job-body">
-            {accordion.privacy && (
+            {marketVisible && (
               <div className="grid">
                 <h2 className="grid-title">
                   Parliamentary Procedure Specialist
@@ -437,7 +443,7 @@ const Marketing = () => {
               </div>
             )}
 
-            {accordion.privacy && <hr />}
+            {marketVisible && <hr />}
             {accordion.appearance && (
               <div className="text-tab-flow">
                 <h2 className="description-title">Description</h2>
@@ -527,14 +533,14 @@ const Marketing = () => {
 
                 <p className="apply-text">
                   How to Apply: To apply for any open position, please contact
-                  HR at onehealthconnectapp@gmail.com
+                  HR at hr-team@ihealthwellness.one
                 </p>
               </div>
             )}
           </div>
 
           <div className="job-body">
-            {accordion.privacy && (
+            {marketVisible && (
               <div className="grid">
                 <h2 className="grid-title">Product Specialist/Associate</h2>
                 <h2 className="grid-text">Remote</h2>
@@ -544,7 +550,7 @@ const Marketing = () => {
                 />
               </div>
             )}
-            {accordion.privacy && <hr />}
+            {marketVisible && <hr />}
             {accordion.outline && (
               <div className="text-tab-flow">
                 <h2 className="description-title">Description</h2>
@@ -630,14 +636,14 @@ const Marketing = () => {
 
                 <p className="apply-text">
                   How to Apply: To apply for any open position, please contact
-                  HR at onehealthconnectapp@gmail.com
+                  HR at hr-team@ihealthwellness.one
                 </p>
               </div>
             )}
           </div>
 
           <div className="job-body">
-            {accordion.privacy && (
+            {marketVisible && (
               <div className="grid">
                 <h2 className="grid-title">
                   Social Media and Community Specialist
@@ -650,7 +656,7 @@ const Marketing = () => {
               </div>
             )}
 
-            {accordion.privacy && <hr />}
+            {marketVisible && <hr />}
             {accordion.prospect && (
               <div className="text-tab-flow">
                 <h2 className="description-title">Description</h2>
@@ -751,7 +757,7 @@ const Marketing = () => {
 
                 <p className="apply-text">
                   How to Apply: To apply for any open position, please contact
-                  HR at onehealthconnectapp@gmail.com
+                  HR at hr-team@ihealthwellness.one
                 </p>
               </div>
             )}

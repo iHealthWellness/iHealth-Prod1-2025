@@ -4,8 +4,8 @@ import { ArrowTab } from "./ButtonTab";
 import "./Hiring.css";
 import plusbtn from "src/Assets/Icons/plus.png";
 import minusbtn from "src/Assets/Icons/minus.png";
-import topArrow from "src/Assets/Icons/Icon.png";
-import downArrow from "src/Assets/Icons/Icon2.png";
+import topArrow from "src/Assets/Icons/icon.png";
+import downArrow from "src/Assets/Icons/icon2 (2).png";
 
 import { useState } from "react";
 
@@ -15,23 +15,29 @@ const Quality = () => {
     spectacle: false,
   });
 
+  const [qualityVisible, setQualityVisible] = useState(false);
+
   const toggleAccordion = (content) => (e) => {
     setAccordion((prev) => ({ ...prev, [content]: !prev[content] }));
+  };
+
+  const toggleQuality = () => {
+    setQualityVisible((prev) => !prev); 
   };
 
   return (
     <div className="layerTwo-tab">
       <div>
         <div className="flex-tab">
-          <h3 className="Text-header">QUALITY ASSURANCE</h3>
+          <h3 className="Text-header" onClick={toggleQuality}>QUALITY ASSURANCE</h3>
           <BntTab
-            icon={accordion.privacy ? minusbtn : plusbtn}
-            onClick={toggleAccordion("privacy")}
+            icon={qualityVisible ? minusbtn : plusbtn}
+            onClick={toggleQuality}
           />
         </div>
 
         <div className="job-body">
-          {accordion.privacy && (
+          {qualityVisible && (
             <div className="grid">
               <h2 className="grid-title">BA/PM Engineer/ Associate</h2>
               <h2 className="grid-text">Remote</h2>
@@ -150,7 +156,7 @@ const Quality = () => {
 
               <p className="apply-text">
                 How to Apply: To apply for any open position, please contact HR
-                at onehealthconnectapp@gmail.com
+                at hr-team@ihealthwellness.one
               </p>
             </div>
           )}

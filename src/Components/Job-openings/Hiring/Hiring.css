@@ -36,6 +36,7 @@
 
 
 .Text-header {
+  cursor: pointer;
   width: 100%;
   color: var(--SN-Primary-Headings-07235B, #07235b);
   font-family: Roboto;

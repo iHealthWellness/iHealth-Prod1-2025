@@ -4,8 +4,8 @@ import { ArrowTab } from "./ButtonTab";
 import "./Hiring.css";
 import plusbtn from "src/Assets/Icons/plus.png";
 import minusbtn from "src/Assets/Icons/minus.png";
-import topArrow from "src/Assets/Icons/Icon.png";
-import downArrow from "src/Assets/Icons/Icon2.png";
+import topArrow from "src/Assets/Icons/icon.png";
+import downArrow from "src/Assets/Icons/icon2 (2).png";
 
 import { useState } from "react";
 
@@ -19,23 +19,30 @@ const Operations = () => {
     outlook: false,
   });
 
+  const [operationsVisible, setOperationsVisible] = useState(false);
+
+
   const toggleAccordion = (content) => (e) => {
     setAccordion((prev) => ({ ...prev, [content]: !prev[content] }));
+  };
+
+  const toggleOperations = () => {
+    setOperationsVisible((prev) => !prev); 
   };
 
   return (
     <div className="layerTwo-tab">
       <div>
         <div className="flex-tab">
-          <h3 className="Text-header">RESEARCH, INNOVATION & OPERATIONS</h3>
+          <h3 className="Text-header" onClick={toggleOperations}>RESEARCH, INNOVATION & OPERATIONS</h3>
           <BntTab
-            icon={accordion.privacy ? minusbtn : plusbtn}
-            onClick={toggleAccordion("privacy")}
+            icon={operationsVisible ? minusbtn : plusbtn}
+            onClick={toggleOperations}
           />
         </div>
 
         <div className="job-body">
-          {accordion.privacy && (
+          {operationsVisible && (
             <div className="grid">
               <h2 className="grid-title">
                 Business Development Specialist, Clinical Trials
@@ -121,12 +128,12 @@ const Operations = () => {
 
               <p className="apply-text">
                 How to Apply: To apply for any open position, please contact HR
-                at onehealthconnectapp@gmail.com
+                at hr-team@ihealthwellness.one
               </p>
             </div>
           )}
           <div className="job-body">
-            {accordion.privacy && (
+            {operationsVisible && (
               <div className="grid">
                 <h2 className="grid-title">Clinical Integration Specialist</h2>
                 <h2 className="grid-text">Remote</h2>
@@ -137,7 +144,7 @@ const Operations = () => {
               </div>
             )}
 
-            {accordion.privacy && <hr />}
+            {operationsVisible && <hr />}
             {accordion.looking && (
               <div className="text-tab-flow">
                 <h2 className="description-title">Description</h2>
@@ -231,13 +238,13 @@ const Operations = () => {
 
                 <p className="apply-text">
                   How to Apply: To apply for any open position, please contact
-                  HR at onehealthconnectapp@gmail.com
+                  HR at hr-team@ihealthwellness.one
                 </p>
               </div>
             )}
           </div>
           <div className="job-body">
-            {accordion.privacy && (
+            {operationsVisible && (
               <div className="grid">
                 <h2 className="grid-title">
                   Health Cloud Infrastructure and Integration Specialist{" "}
@@ -250,7 +257,7 @@ const Operations = () => {
               </div>
             )}
 
-            {accordion.privacy && <hr />}
+            {operationsVisible && <hr />}
             {accordion.viewing && (
               <div className="text-tab-flow">
                 <h2 className="description-title">Description</h2>
@@ -327,13 +334,13 @@ const Operations = () => {
 
                 <p className="apply-text">
                   How to Apply: To apply for any open position, please contact
-                  HR at onehealthconnectapp@gmail.com
+                  HR at hr-team@ihealthwellness.one
                 </p>
               </div>
             )}
           </div>
           <div className="job-body">
-            {accordion.privacy && (
+            {operationsVisible && (
               <div className="grid">
                 <h2 className="grid-title">
                   Physician Integration Specialist{" "}
@@ -346,7 +353,7 @@ const Operations = () => {
               </div>
             )}
 
-            {accordion.privacy && <hr />}
+            {operationsVisible && <hr />}
             {accordion.glimpse && (
               <div className="text-tab-flow">
                 <h2 className="description-title">Description</h2>
@@ -434,13 +441,13 @@ const Operations = () => {
                 <p className="note-text">Join us, you win, we both win!!</p>
                 <p className="apply-text">
                   How to Apply: To apply for any open position, please contact
-                  HR at onehealthconnectapp@gmail.com
+                  HR at hr-team@ihealthwellness.one
                 </p>
               </div>
             )}
           </div>
           <div className="job-body">
-            {accordion.privacy && (
+            {operationsVisible && (
               <div className="grid">
                 <h2 className="grid-title">
                   Research Analyst, Research and Development
@@ -453,7 +460,7 @@ const Operations = () => {
               </div>
             )}
 
-            {accordion.privacy && <hr />}
+            {operationsVisible && <hr />}
             {accordion.outlook && (
               <div className="text-tab-flow">
                 <h2 className="description-title">Description</h2>
@@ -538,7 +545,7 @@ const Operations = () => {
 
                 <p className="apply-text">
                   How to Apply: To apply for any open position, please contact
-                  HR at onehealthconnectapp@gmail.com
+                  HR at hr-team@ihealthwellness.one
                 </p>
               </div>
             )}
