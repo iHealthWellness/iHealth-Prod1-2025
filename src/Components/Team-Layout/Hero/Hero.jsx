@@ -68,7 +68,7 @@ const Hero = () => {
 
 
         <div class="team-banner">
-          <a href="/job-openings/" class="team-link">
+          <a href="/job-openings" class="team-link">
             Join Our Team
           </a>
         </div>
