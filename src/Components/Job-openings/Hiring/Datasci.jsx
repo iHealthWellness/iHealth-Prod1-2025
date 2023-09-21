@@ -5,7 +5,7 @@ import "./Hiring.css";
 import plusbtn from "src/Assets/Icons/plus.png";
 import minusbtn from "src/Assets/Icons/minus.png";
 import topArrow from "src/Assets/Icons/icon.png";
-import downArrow from "src/Assets/Icons/icon2 (2).png";
+import downArrow from "src/Assets/Icons/icontwo.png";
 
 import { useState } from "react";
 
