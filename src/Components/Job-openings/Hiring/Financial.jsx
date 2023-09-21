@@ -4,8 +4,8 @@ import { ArrowTab } from "./ButtonTab";
 import "./Hiring.css";
 import plusbtn from "src/Assets/Icons/plus.png";
 import minusbtn from "src/Assets/Icons/minus.png";
-import topArrow from "src/Assets/Icons/iconone.png";
-import downArrow from "src/Assets/Icons/icontwo.png";
+// import topArrow from "src/Assets/Icons/iconone.png";
+// import downArrow from "src/Assets/Icons/icontwo.png";
 
 import { useState } from "react";
 
@@ -43,7 +43,7 @@ const Financial = () => {
               <h2 className="grid-title">Funding and Financial Specialist</h2>
               <h2 className="grid-text">Remote</h2>
               <ArrowTab
-                icon={accordion.unshut ? topArrow : downArrow}
+                icon={accordion.unshut}
                 onClick={toggleAccordion("unshut")}
               />
             </div>
@@ -130,7 +130,7 @@ const Financial = () => {
               <h2 className="grid-title">Fundraiser/ Development Officer</h2>
               <h2 className="grid-text">Remote</h2>
               <ArrowTab
-                icon={accordion.look ? topArrow : downArrow}
+                icon={accordion.look}
                 onClick={toggleAccordion("look")}
               />
             </div>

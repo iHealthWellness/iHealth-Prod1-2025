@@ -4,8 +4,8 @@ import { ArrowTab } from "./ButtonTab";
 import "./Hiring.css";
 import plusbtn from "src/Assets/Icons/plus.png";
 import minusbtn from "src/Assets/Icons/minus.png";
-import topArrow from "src/Assets/Icons/iconone.png";
-import downArrow from "src/Assets/Icons/icontwo.png";
+// import topArrow from "src/Assets/Icons/iconone.png";
+// import downArrow from "src/Assets/Icons/icontwo.png";
 
 import { useState } from "react";
 
@@ -48,7 +48,7 @@ const Marketing = () => {
                 <h2 className="grid-title">Marketing and Outreach</h2>
                 <h2 className="grid-text">Remote</h2>
                 <ArrowTab
-                  icon={accordion.opening ? topArrow : downArrow}
+                  icon={accordion.opening}
                   onClick={toggleAccordion("opening")}
                 />
               </div>
@@ -198,7 +198,7 @@ const Marketing = () => {
                 <h2 className="grid-title">Marketing Specialist </h2>
                 <h2 className="grid-text">Remote</h2>
                 <ArrowTab
-                  icon={accordion.illustrate ? topArrow : downArrow}
+                  icon={accordion.illustrate}
                   onClick={toggleAccordion("illustrate")}
                 />
               </div>
@@ -302,7 +302,7 @@ const Marketing = () => {
                 <h2 className="grid-title">Marketing Strategy Consultant</h2>
                 <h2 className="grid-text">Remote</h2>
                 <ArrowTab
-                  icon={accordion.appear ? topArrow : downArrow}
+                  icon={accordion.appear}
                   onClick={toggleAccordion("appear")}
                 />
               </div>
@@ -437,7 +437,7 @@ const Marketing = () => {
                 </h2>
                 <h2 className="grid-text">Remote</h2>
                 <ArrowTab
-                  icon={accordion.prospect ? topArrow : downArrow}
+                  icon={accordion.prospect}
                   onClick={toggleAccordion("prospect")}
                 />
               </div>

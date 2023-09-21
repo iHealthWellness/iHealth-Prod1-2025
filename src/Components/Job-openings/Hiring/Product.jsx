@@ -4,8 +4,8 @@ import { ArrowTab } from "./ButtonTab";
 import "./Hiring.css";
 import plusbtn from "src/Assets/Icons/plus.png";
 import minusbtn from "src/Assets/Icons/minus.png";
-import topArrow from "src/Assets/Icons/iconone.png";
-import downArrow from "src/Assets/Icons/icontwo.png";
+// import topArrow from "src/Assets/Icons/iconone.png";
+// import downArrow from "src/Assets/Icons/icontwo.png";
 
 import { useState } from "react";
 
@@ -45,7 +45,7 @@ const Product = () => {
               <h2 className="grid-title">Pro Bono Generalist</h2>
               <h2 className="grid-text">Remote</h2>
               <ArrowTab
-                icon={accordion.design ? topArrow : downArrow}
+                icon={accordion.design }
                 onClick={toggleAccordion("design")}
               />
             </div>
@@ -147,7 +147,7 @@ const Product = () => {
               <h2 className="grid-title">Product Specialist/Associate</h2>
               <h2 className="grid-text">Remote</h2>
               <ArrowTab
-                icon={accordion.outline ? topArrow : downArrow}
+                icon={accordion.outline }
                 onClick={toggleAccordion("outline")}
               />
             </div>

@@ -4,8 +4,8 @@ import { ArrowTab } from "./ButtonTab";
 import "./Hiring.css";
 import plusbtn from "src/Assets/Icons/plus.png";
 import minusbtn from "src/Assets/Icons/minus.png";
-import topArrow from "src/Assets/Icons/iconone.png";
-import downArrow from "src/Assets/Icons/icontwo.png";
+// import topArrow from "src/Assets/Icons/iconone.png";
+// import downArrow from "src/Assets/Icons/icontwo.png";
 
 import { useState } from "react";
 
@@ -49,7 +49,7 @@ const Operations = () => {
               </h2>
               <h2 className="grid-text">Remote</h2>
               <ArrowTab
-                icon={accordion.aspect ? topArrow : downArrow}
+                icon={accordion.aspect }
                 onClick={toggleAccordion("aspect")}
               />
             </div>
@@ -138,7 +138,7 @@ const Operations = () => {
                 <h2 className="grid-title">Clinical Integration Specialist</h2>
                 <h2 className="grid-text">Remote</h2>
                 <ArrowTab
-                  icon={accordion.looking ? topArrow : downArrow}
+                  icon={accordion.looking}
                   onClick={toggleAccordion("looking")}
                 />
               </div>
@@ -251,7 +251,7 @@ const Operations = () => {
                 </h2>
                 <h2 className="grid-text">Remote</h2>
                 <ArrowTab
-                  icon={accordion.viewing ? topArrow : downArrow}
+                  icon={accordion.viewing}
                   onClick={toggleAccordion("viewing")}
                 />
               </div>
@@ -347,7 +347,7 @@ const Operations = () => {
                 </h2>
                 <h2 className="grid-text">Remote</h2>
                 <ArrowTab
-                  icon={accordion.glimpse ? topArrow : downArrow}
+                  icon={accordion.glimpse}
                   onClick={toggleAccordion("glimpse")}
                 />
               </div>
@@ -454,7 +454,7 @@ const Operations = () => {
                 </h2>
                 <h2 className="grid-text">Remote</h2>
                 <ArrowTab
-                  icon={accordion.outlook ? topArrow : downArrow}
+                  icon={accordion.outlook}
                   onClick={toggleAccordion("outlook")}
                 />
               </div>
