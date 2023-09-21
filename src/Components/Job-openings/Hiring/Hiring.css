@@ -46,7 +46,7 @@
   line-height: 143%;
 }
 .grid-title {
-  width: 45%;
+  width: 50%;
   color: var(--SN-Primary-Headings-07235B, #07235B);
   font-family: Roboto;
   font-size: 20px;
@@ -55,7 +55,7 @@
   line-height: 110%;  
 }
 .grid-text {
-  width: 40%;
+  width: 35%;
   color: var(--SN-Primary-Headings-07235B, #07235b);
   font-family: Roboto;
   font-size: 20px;
@@ -108,7 +108,7 @@
 
 /*RESPONSIVENESS*/
 
-@media screen and (max-width: 911px) {
+@media screen and (max-width: 768px) {
   .layer-tab-one{
 
     width:100%;
@@ -133,7 +133,7 @@
     line-height: 143%;
   }
   .grid-title {
-    width: 50%;
+    width: 40%;
     color: var(--SN-Primary-Headings-07235B, #07235B);
     font-family: Roboto;
     font-size: 16px;
@@ -244,7 +244,7 @@
     line-height: 110%;  
   }
   .grid-text {
-    width: 40%;
+    width: 30%;
     color: var(--SN-Primary-Headings-07235B, #07235B);
     font-family: Roboto;
     font-size: 16px;
