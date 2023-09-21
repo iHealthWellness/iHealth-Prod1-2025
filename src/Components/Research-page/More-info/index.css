@@ -94,6 +94,11 @@
   .evorolimus-img {
     padding-top: 30px;
   }
+  .evorolimus-img {
+    max-width: 100%; /* Makes items take the full width on smaller screens */
+    padding-top: 500px;
+    margin-bottom: -130px; 
+  }
 }
 
 @media (max-width: 425px) {

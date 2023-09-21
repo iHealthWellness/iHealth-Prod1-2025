@@ -36,10 +36,10 @@ const menuItems = [
         title: "Terms Of Use",
         url: "/about-us/#Terms",
       },
-      // {
-      //   title: "Volunteer from Anywhere",
-      //   url: "/about-us/#",
-      // },
+      {
+        title: "Volunteer from Anywhere",
+        url: "/job-openings",
+      },
     ],
   },
   {

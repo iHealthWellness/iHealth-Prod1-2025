@@ -72,21 +72,21 @@ const DataPage = [
         id: 9,
         TeamName: "Product Management",
         // Roles: "Product Managers, Product Owners  ",
-        Names: [" Anjali Hill",  "Ashley Garcia","Hsuan Ouyang", "Susan Haynes", ],
+        Names: [" Anjali Hill",  "Ashley Garcia","Hsuan Ouyang", "Kathleen Davis", "Susan Haynes", ],
 
     },
     {
         id: 10,
         TeamName: "Project Management ",
         // Roles: "Project Managers, Scrum Masters, Agile Coaches  ",
-        Names: ["Anu Ramabhadran", "Frank Saladis, PMP", "Sherrie Ricks", ],
+        Names: ["Anu Ramabhadran", "Frank Saladis, PMP", "Satyam Kishore", ],
 
     },
     {
         id: 11,
         TeamName: "Quality Assurance ",
         // Roles: "QA Engineers, Testers, Quality Assurance Specialists  ",
-        Names: ["Bhavitha Keezhuridathil", "Femi Gideon",  "Piyush Chakkarwar", "Vikram Bhanapur"],
+        Names: ["Atharva Bhadke", "Bhavitha Keezhuridathil", "Femi Gideon", "Piyush Chakkarwar", "Vikram Bhanapur"],
 
     },
     {
