@@ -39,7 +39,7 @@ const Quality = () => {
         <div className="job-body">
           {qualityVisible && (
             <div className="grid">
-              <h2 className="grid-title">BA/PM Engineer/ Associate</h2>
+              <h2 className="grid-title">BA/QA Engineer/ Associate</h2>
               <h2 className="grid-text">Remote</h2>
               <ArrowTab
                 icon={accordion.spectacle ? topArrow : downArrow}

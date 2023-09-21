@@ -4,7 +4,7 @@ import { ArrowTab } from "./ButtonTab";
 import "./Hiring.css";
 import plusbtn from "src/Assets/Icons/plus.png";
 import minusbtn from "src/Assets/Icons/minus.png";
-import topArrow from "src/Assets/Icons/iconone.png";
+import topArrow from "src/Assets/Icons/Iconone.png";
 import downArrow from "src/Assets/Icons/icontwo.png";
 
 import { useState } from "react";

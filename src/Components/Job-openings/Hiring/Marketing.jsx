@@ -15,8 +15,6 @@ const Marketing = () => {
     opening: false,
     illustrate: false,
     appear: false,
-    appearance: false,
-    outline: false,
     prospect: false,
   });
 
@@ -27,7 +25,7 @@ const Marketing = () => {
   };
 
   const toggleMarket = () => {
-    setMarketVisible((prev) => !prev); 
+    setMarketVisible((prev) => !prev);
   };
 
   return (
@@ -35,7 +33,9 @@ const Marketing = () => {
       <div className="layerTwo-tab">
         <div>
           <div className="flex-tab">
-            <h3 className="Text-header" onClick={toggleMarket}>MARKETING & PUBLIC RELATION </h3>
+            <h3 className="Text-header" onClick={toggleMarket}>
+              MARKETING & PUBLIC RELATION{" "}
+            </h3>
             <BntTab
               icon={marketVisible ? minusbtn : plusbtn}
               onClick={toggleMarket}
@@ -420,219 +420,6 @@ const Marketing = () => {
                   Future Salary would be promised for employees (after seed
                   funding round).
                 </p>
-
-                <p className="apply-text">
-                  How to Apply: To apply for any open position, please contact
-                  HR at hr-team@ihealthwellness.one
-                </p>
-              </div>
-            )}
-          </div>
-
-          <div className="job-body">
-            {marketVisible && (
-              <div className="grid">
-                <h2 className="grid-title">
-                  Parliamentary Procedure Specialist
-                </h2>
-                <h2 className="grid-text">Remote</h2>
-                <ArrowTab
-                  icon={accordion.appearance ? topArrow : downArrow}
-                  onClick={toggleAccordion("appearance")}
-                />
-              </div>
-            )}
-
-            {marketVisible && <hr />}
-            {accordion.appearance && (
-              <div className="text-tab-flow">
-                <h2 className="description-title">Description</h2>
-                <p className="description-text">
-                  We are an 'early stage' pre-money nonprofit/ tech startup
-                  preparing for a proof-of-concept launch / seed-raise looking
-                  to recruit VOLUNTEERS (unpaid) as PARLIAMENTARY PROCEDURE
-                  SPECIALIST. Future Salary would be promised for employees
-                  (after seed funding round).
-                </p>
-
-                <h3 className="responsibilities-title">Responsibilities</h3>
-                <ul className="responsibilities-text">
-                  <li>
-                    Plays a crucial role in assisting the CEO in preparing for
-                    meetings to ensure they follow Robert's Rules of Order.
-                  </li>
-                  <li>
-                    This includes reviewing the agenda, identifying required
-                    procedures, and ensuring necessary documentation is
-                    available.
-                  </li>
-                  <li>
-                    Comprehensive understanding of Robert's Rules of Order.
-                  </li>
-                  <li>
-                    They should be familiar with the key principles and
-                    guidelines outlined in Robert's Rules and be able to provide
-                    guidance on their implementation.
-                  </li>
-                  <li>Meeting Procedures and Documentation.</li>
-                  <li>Facilitate Meeting Process.</li>
-                  <li>Record and Distribute Meeting Minutes.</li>
-                  <li>Continuous Improvement.</li>
-                </ul>
-                <h3 className="qualifications-title">Qualifications</h3>
-                <ul className="qualifications-text">
-                  <li>
-                    The Specialist should have a thorough understanding of
-                    parliamentary procedures and a deep knowledge of Robert's
-                    Rules of Order. They should have experience applying these
-                    rules in real-world meeting scenarios.
-                  </li>
-                  <li>
-                    Familiarity with Meeting Facilitation: Strong experience in
-                    facilitating meetings and guiding discussions is essential.
-                    The Specialist should be comfortable managing diverse groups
-                    of participants and resolving conflicts within the context
-                    of Robert's Rules.
-                  </li>
-                  <li>
-                    Excellent Communication Skills: Effective communication is
-                    crucial for explaining and clarifying the rules to meeting
-                    participants. The Specialist should possess excellent verbal
-                    and written communication skills to convey complex concepts
-                    in a clear and concise manner.
-                  </li>
-                  <li>
-                    Attention to Detail: Precise record-keeping and
-                    minute-taking are essential aspects of the role. The
-                    Specialist should demonstrate a keen eye for detail and
-                    accuracy to ensure that meeting minutes capture all
-                    significant discussions and decisions accurately.
-                  </li>
-                  <li>
-                    Adaptability and Problem-Solving: The Specialist should be
-                    adaptable and able to think on their feet, as meetings may
-                    present unexpected challenges or situations that require
-                    quick problem-solving while adhering to Robert's Rules.
-                  </li>
-                  <li>Ability to commit to a minimum of 4+ hour work weeks</li>
-                  <li>
-                    Ability to attend weekly standup meeting (conference call
-                    with desktop/ laptop access for screen sharing)
-                  </li>
-                  <li>HealthTech experience is a plus</li>
-                </ul>
-                <p className="note-text">
-                  Through your pro-bono work, you will not only continue to
-                  demonstrate your current skills while gaining some new ones,
-                  practice teamwork, make new friends and develop professional
-                  connections in a professional setting, but you will also have
-                  the opportunity to demonstrate what companies value in ways
-                  other than paid employment: ability to get things done and
-                  ability to work as a team.
-                </p>
-
-                <p className="apply-text">
-                  How to Apply: To apply for any open position, please contact
-                  HR at hr-team@ihealthwellness.one
-                </p>
-              </div>
-            )}
-          </div>
-
-          <div className="job-body">
-            {marketVisible && (
-              <div className="grid">
-                <h2 className="grid-title">Product Specialist/Associate</h2>
-                <h2 className="grid-text">Remote</h2>
-                <ArrowTab
-                  icon={accordion.outline ? topArrow : downArrow}
-                  onClick={toggleAccordion("outline")}
-                />
-              </div>
-            )}
-            {marketVisible && <hr />}
-            {accordion.outline && (
-              <div className="text-tab-flow">
-                <h2 className="description-title">Description</h2>
-                <p className="description-text">
-                  We are an 'early stage' pre-money nonprofit/ tech startup
-                  preparing for a proof-of-concept launch / seed-raise looking
-                  to recruit VOLUNTEERS (unpaid) as PARLIAMENTARY PROCEDURE
-                  SPECIALIST. Future Salary would be promised for employees
-                  (after seed funding round).
-                </p>
-
-                <h3 className="responsibilities-title">Responsibilities</h3>
-                <ul className="responsibilities-text">
-                  <li>
-                    Evaluate, analyze, author and communicate systems
-                    requirements on a continuing basis, and maintain systems
-                    processes
-                  </li>
-                  <li>
-                    Drive the execution of all processes in the product
-                    lifecycle, including product and market research, competitor
-                    analysis, planning, positioning, requirements and roadmap
-                    development, and product launch
-                  </li>
-                  <li>
-                    Translate product strategy into detailed requirements for
-                    prototyping and final development by engineering teams
-                  </li>
-                  <li>
-                    Drive the product- and business-planning processes for
-                    cross-functional teams
-                  </li>
-                  <li>
-                    Develop, implement, and maintain production timelines across
-                    multiple departments
-                  </li>
-                  <li>
-                    Appraise new product ideas and strategize appropriate
-                    go-to-market plans
-                  </li>
-                </ul>
-                <h3 className="qualifications-title">Qualifications</h3>
-                <ul className="qualifications-text">
-                  <li>Proven work experience in software development</li>
-                  <li>
-                    Strong experience in a dynamic product management role
-                  </li>
-                  <li>
-                    Proven success in overseeing all elements of the product
-                    development lifecycle
-                  </li>
-                  <li>
-                    Experience in delivering finely tuned product marketing
-                    strategies
-                  </li>
-                  <li>
-                    Exceptional writing and editing skills, combined with strong
-                    presentation and public speaking skills
-                  </li>
-                  <li>
-                    Experience working in an Agile/Scrum development process
-                  </li>
-                  <li>
-                    Team players with a desire to learn, iterate and move
-                    quickly
-                  </li>
-                  <li>Ability to commit to a minimum of 4+ hour work weeks</li>
-                  <li>
-                    Ability to attend weekly standup meeting (conference call
-                    with desktop/ laptop access for screen sharing)
-                  </li>
-                  <li>
-                    Experience with performance and/or security testing is a
-                    plus
-                  </li>
-                  <li>
-                    BS/MS degree in Computer Science, Engineering or a related
-                    subject
-                  </li>
-                  <li>HealthTech experience is a plus</li>
-                </ul>
-                <p className="note-text">Join us, you win, we both win!!"</p>
 
                 <p className="apply-text">
                   How to Apply: To apply for any open position, please contact
