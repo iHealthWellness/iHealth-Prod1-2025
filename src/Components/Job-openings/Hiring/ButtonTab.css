@@ -33,3 +33,10 @@
     justify-content: center;
     border: none  !important;
  }
+ @media screen and (max-width:768px){
+    .buttontab svg{
+        width:50%;
+        height:50%;
+        border: none;
+     }
+ }
