@@ -155,8 +155,7 @@ const Statement = () => {
                             ref={divThreeRef}>
 
                             <div className="text">
-                                <p>Our aim is to empower patients to take control of their health, collaborate with healthcare providers
-                                    and policymakers, and improve the quality of life for all those affected by complex diseases.</p>
+                                <p>Our aim is to empower patients to take control of their health, collaborate with healthcare providers, and improve the quality of life for all those affected by complex diseases.</p>
                             </div>
                             <div className="text-layout">
                                 <p>Our vision is to create a world where patients living with complex diseases have access to

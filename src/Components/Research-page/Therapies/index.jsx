@@ -34,9 +34,12 @@ const Section3 = () => {
         <h1 className="clinic1">Clinical Drug Therapies</h1>
         <p className="clinic2">
           Neurofibromatosis (NF) and its related symptoms are often managed
-          using various clinical drug therapies.
-          The following examples highlight some of the treatment options
+          using various clinical drug therapies. The following examples highlight some of the treatment options
           available:
+        </p>
+
+        <p>
+          
         </p>
       </div>
 
