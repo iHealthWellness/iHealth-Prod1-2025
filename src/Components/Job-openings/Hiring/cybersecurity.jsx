@@ -4,8 +4,8 @@ import { ArrowTab } from "./ButtonTab";
 import "./Hiring.css";
 import plusbtn from "src/Assets/Icons/plus.png";
 import minusbtn from "src/Assets/Icons/minus.png";
-import topArrow from "src/Assets/Icons/Icon.png";
-import downArrow from "src/Assets/Icons/Icon2.png";
+// import topArrow from "src/Assets/Icons/iconone.png";
+// import downArrow from "src/Assets/Icons/icontwo.png";
 
 import { useState } from "react";
 
@@ -15,27 +15,33 @@ const Cybersecurity = () => {
     show: false,
   });
 
+  const [cybersecurityVisible, setCybersecurityVisible] = useState(false);
+
   const toggleAccordion = (content) => (e) => {
     setAccordion((prev) => ({ ...prev, [content]: !prev[content] }));
+  };
+
+  const toggleCybesecurity = () => {
+    setCybersecurityVisible((prev) => !prev); 
   };
 
   return (
     <div className="layerTwo-tab">
       <div>
         <div className="flex-tab">
-          <h3 className="Text-header">CYBERSECURITY AND DATA PRIVACY</h3>
+          <h3 className="Text-header" onClick={toggleCybesecurity}>CYBERSECURITY AND DATA PRIVACY</h3>
           <BntTab
-            icon={accordion.privacy ? minusbtn : plusbtn}
-            onClick={toggleAccordion("privacy")}
+            icon={cybersecurityVisible ? minusbtn : plusbtn}
+            onClick={toggleCybesecurity}
           />
         </div>
         <div className="job-body">
-          {accordion.privacy && (
+          {cybersecurityVisible && (
             <div className="grid">
               <h2 className="grid-title">CyberSecurity</h2>
               <h2 className="grid-text">Remote</h2>
               <ArrowTab
-                icon={accordion.show ? topArrow : downArrow}
+                icon={accordion.show}
                 onClick={toggleAccordion("show")}
               />
             </div>
@@ -155,7 +161,7 @@ const Cybersecurity = () => {
 
               <p className="apply-text">
                 How to Apply: To apply for any open position, please contact HR
-                at onehealthconnectapp@gmail.com
+                at hr-team@ihealthwellness.one
               </p>
             </div>
           )}

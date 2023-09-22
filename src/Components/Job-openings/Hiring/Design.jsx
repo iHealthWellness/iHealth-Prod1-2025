@@ -4,8 +4,8 @@ import { ArrowTab } from "./ButtonTab";
 import "./Hiring.css";
 import plusbtn from "src/Assets/Icons/plus.png";
 import minusbtn from "src/Assets/Icons/minus.png";
-import topArrow from "src/Assets/Icons/Icon.png";
-import downArrow from "src/Assets/Icons/Icon2.png";
+// import topArrow from "src/Assets/Icons/iconone.png";
+// import downArrow from "src/Assets/Icons/icontwo.png";
 
 import { useState } from "react";
 const Design = () => {
@@ -15,28 +15,34 @@ const Design = () => {
     hide: false,
   });
 
+  const [designVisible, setDesignVisible] = useState(false);
+
   const toggleAccordion = (content) => (e) => {
     setAccordion((prev) => ({ ...prev, [content]: !prev[content] }));
+  };
+
+  const toggleDesign = () => {
+    setDesignVisible((prev) => !prev); 
   };
 
   return (
     <div className="layerOne-tab">
       <div>
         <div className="flex-tab">
-          <h3 className="Text-header">DESIGN</h3>
+          <h3 className="Text-header" onClick={toggleDesign}>DESIGN</h3>
           <BntTab
-            icon={accordion.privacy ? minusbtn : plusbtn}
-            onClick={toggleAccordion("privacy")}
+            icon={designVisible ? minusbtn : plusbtn}
+            onClick={toggleDesign}
           />
         </div>
 
         <div className="job-body">
-          {accordion.privacy && (
+          {designVisible && (
             <div className="grid">
               <h2 className="grid-title">UX Researcher</h2>
               <h2 className="grid-text">Remote</h2>
               <ArrowTab
-                icon={accordion.open ? topArrow : downArrow}
+                icon={accordion.open}
                 onClick={toggleAccordion("open")}
               />
             </div>
@@ -133,24 +139,24 @@ const Design = () => {
 
               <p className="apply-text">
                 How to Apply: To apply for any open position, please contact HR
-                at onehealthconnectapp@gmail.com
+                at hr-team@ihealthwellness.one
               </p>
             </div>
           )}
         </div>
         <div className="job-body">
-          {accordion.privacy && (
+          {designVisible && (
             <div className="grid">
               <h2 className="grid-title">UX/UI Designer</h2>
               <h2 className="grid-text">Remote</h2>
               <ArrowTab
-                icon={accordion.hide ? topArrow : downArrow}
+                icon={accordion.hide}
                 onClick={toggleAccordion("hide")}
               />
             </div>
           )}
 
-          {accordion.privacy && <hr />}
+          {designVisible && <hr />}
           {accordion.hide && (
             <div className="text-tab-flow">
               <h2 className="description-title">Description</h2>
@@ -221,7 +227,7 @@ const Design = () => {
 
               <p className="apply-text">
                 How to Apply: To apply for any open position, please contact HR
-                at onehealthconnectapp@gmail.com
+                at hr-team@ihealthwellness.one
               </p>
             </div>
           )}

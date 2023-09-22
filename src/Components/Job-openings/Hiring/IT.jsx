@@ -4,8 +4,8 @@ import { ArrowTab } from "./ButtonTab";
 import "./Hiring.css";
 import plusbtn from "src/Assets/Icons/plus.png";
 import minusbtn from "src/Assets/Icons/minus.png";
-import topArrow from "src/Assets/Icons/Icon.png";
-import downArrow from "src/Assets/Icons/Icon2.png";
+// import topArrow from "src/Assets/Icons/iconone.png";
+// import downArrow from "src/Assets/Icons/icontwo.png";
 
 import { useState } from "react";
 
@@ -15,30 +15,36 @@ const It = () => {
     sight: false,
   });
 
+  const [itVisible, setItVisible] = useState(false);
+
   const toggleAccordion = (content) => (e) => {
     setAccordion((prev) => ({ ...prev, [content]: !prev[content] }));
+  };
+
+  const toggleIt = () => {
+    setItVisible((prev) => !prev); 
   };
 
   return (
     <div className="layerTwo-tab">
       <div>
         <div className="flex-tab">
-          <h3 className="Text-header">IT INFRASTRUCTURE</h3>
+          <h3 className="Text-header" onClick={toggleIt}>IT INFRASTRUCTURE</h3>
           <BntTab
-            icon={accordion.privacy ? minusbtn : plusbtn}
-            onClick={toggleAccordion("privacy")}
+            icon={itVisible ? minusbtn : plusbtn}
+            onClick={toggleIt}
           />
         </div>
 
         <div className="job-body">
-          {accordion.privacy && (
+          {itVisible && (
             <div className="grid">
               <h2 className="grid-title">
                 Salesforce Architect (Cloud Health Implementation Expert)
               </h2>
               <h2 className="grid-text">Remote</h2>
               <ArrowTab
-                icon={accordion.sight ? topArrow : downArrow}
+                icon={accordion.sight }
                 onClick={toggleAccordion("sight")}
               />
             </div>
@@ -144,7 +150,7 @@ const It = () => {
 
               <p className="apply-text">
                 How to Apply: To apply for any open position, please contact HR
-                at onehealthconnectapp@gmail.com
+                at hr-team@ihealthwellness.one
               </p>
             </div>
           )}

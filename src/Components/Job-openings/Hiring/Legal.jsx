@@ -4,8 +4,8 @@ import { ArrowTab } from "./ButtonTab";
 import "./Hiring.css";
 import plusbtn from "src/Assets/Icons/plus.png";
 import minusbtn from "src/Assets/Icons/minus.png";
-import topArrow from "src/Assets/Icons/Icon.png";
-import downArrow from "src/Assets/Icons/Icon2.png";
+// import topArrow from "src/Assets/Icons/iconone.png";
+// import downArrow from "src/Assets/Icons/icontwo.png";
 
 import { useState } from "react";
 
@@ -16,28 +16,35 @@ const Legal = () => {
     stretch: false,
   });
 
+  const [legalVisible, setLegalVisible] = useState(false);
+
   const toggleAccordion = (content) => (e) => {
     setAccordion((prev) => ({ ...prev, [content]: !prev[content] }));
   };
+
+  const toggleLegal = () => {
+    setLegalVisible((prev) => !prev); 
+  };
+
   return (
     <div className="legal">
       <div className="layerOne-tab">
         <div>
           <div className="flex-tab">
-            <h3 className="Text-header">LEGAL & COMPLIANCE</h3>
+            <h3 className="Text-header" onClick={toggleLegal}>LEGAL & COMPLIANCE</h3>
             <BntTab
-              icon={accordion.privacy ? minusbtn : plusbtn}
-              onClick={toggleAccordion("privacy")}
+              icon={legalVisible ? minusbtn : plusbtn}
+              onClick={toggleLegal}
             />
           </div>
 
           <div className="job-body">
-            {accordion.privacy && (
+            {legalVisible && (
               <div className="grid">
                 <h2 className="grid-title">Corporate Attorney</h2>
                 <h2 className="grid-text">Remote</h2>
                 <ArrowTab
-                  icon={accordion.seen ? topArrow : downArrow}
+                  icon={accordion.seen}
                   onClick={toggleAccordion("seen")}
                 />
               </div>
@@ -104,26 +111,26 @@ const Legal = () => {
 
                 <p className="apply-text">
                   How to Apply: To apply for any open position, please contact
-                  HR at onehealthconnectapp@gmail.com
+                  HR at hr-team@ihealthwellness.one
                 </p>
               </div>
             )}
           </div>
           <div className="job-body">
-            {accordion.privacy && (
+            {legalVisible && (
               <div className="grid">
                 <h2 className="grid-title">
                   Healthcare Regulatory Compliance Specialist
                 </h2>
                 <h2 className="grid-text">Remote</h2>
                 <ArrowTab
-                  icon={accordion.stretch ? topArrow : downArrow}
+                  icon={accordion.stretch}
                   onClick={toggleAccordion("stretch")}
                 />
               </div>
             )}
 
-            {accordion.privacy && <hr />}
+            {legalVisible && <hr />}
             {accordion.stretch && (
               <div className="text-tab-flow">
                 <h2 className="description-title">Description</h2>
@@ -217,7 +224,7 @@ const Legal = () => {
 
                 <p className="apply-text">
                   How to Apply: To apply for any open position, please contact
-                  HR at onehealthconnectapp@gmail.com
+                  HR at hr-team@ihealthwellness.one
                 </p>
               </div>
             )}

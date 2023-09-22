@@ -4,8 +4,8 @@ import { ArrowTab } from "./ButtonTab";
 import "./Hiring.css";
 import plusbtn from "src/Assets/Icons/plus.png";
 import minusbtn from "src/Assets/Icons/minus.png";
-import topArrow from "src/Assets/Icons/Icon.png";
-import downArrow from "src/Assets/Icons/Icon2.png";
+// import topArrow from "src/Assets/Icons/iconone.png";
+// import downArrow from "src/Assets/Icons/icontwo.png";
 
 import { useState } from "react";
 
@@ -16,28 +16,34 @@ const Financial = () => {
     look: false,
   });
 
+  const [financialVisible, setFinancialVisible] = useState(false);
+
   const toggleAccordion = (content) => (e) => {
     setAccordion((prev) => ({ ...prev, [content]: !prev[content] }));
+  };
+
+  const toggleFinancial = () => {
+    setFinancialVisible((prev) => !prev); 
   };
 
   return (
     <div className="layerTwo-tab">
       <div>
         <div className="flex-tab">
-          <h3 className="Text-header">FINANCIAL MANAGEMENT</h3>
+          <h3 className="Text-header" onClick={toggleFinancial}>FINANCIAL MANAGEMENT</h3>
           <BntTab
-            icon={accordion.privacy ? minusbtn : plusbtn}
-            onClick={toggleAccordion("privacy")}
+            icon={financialVisible ? minusbtn : plusbtn}
+            onClick={toggleFinancial}
           />
         </div>
 
         <div className="job-body">
-          {accordion.privacy && (
+          {financialVisible && (
             <div className="grid">
               <h2 className="grid-title">Funding and Financial Specialist</h2>
               <h2 className="grid-text">Remote</h2>
               <ArrowTab
-                icon={accordion.unshut ? topArrow : downArrow}
+                icon={accordion.unshut}
                 onClick={toggleAccordion("unshut")}
               />
             </div>
@@ -113,7 +119,7 @@ const Financial = () => {
 
               <p className="apply-text">
                 How to Apply: To apply for any open position, please contact HR
-                at onehealthconnectapp@gmail.com
+                at hr-team@ihealthwellness.one
               </p>
             </div>
           )}
@@ -124,7 +130,7 @@ const Financial = () => {
               <h2 className="grid-title">Fundraiser/ Development Officer</h2>
               <h2 className="grid-text">Remote</h2>
               <ArrowTab
-                icon={accordion.look ? topArrow : downArrow}
+                icon={accordion.look}
                 onClick={toggleAccordion("look")}
               />
             </div>
@@ -220,7 +226,7 @@ const Financial = () => {
 
               <p className="apply-text">
                 How to Apply: To apply for any open position, please contact HR
-                at onehealthconnectapp@gmail.com
+                at hr-team@ihealthwellness.one
               </p>
             </div>
           )}

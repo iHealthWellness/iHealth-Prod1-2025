@@ -4,8 +4,8 @@ import { ArrowTab } from "./ButtonTab";
 import "./Hiring.css";
 import plusbtn from "src/Assets/Icons/plus.png";
 import minusbtn from "src/Assets/Icons/minus.png";
-import topArrow from "src/Assets/Icons/Icon.png";
-import downArrow from "src/Assets/Icons/Icon2.png";
+// import topArrow from "src/Assets/Icons/iconone.png";
+// import downArrow from "src/Assets/Icons/icontwo.png";
 
 import { useState } from "react";
 
@@ -20,30 +20,36 @@ const Development = () => {
     disclose: false,
   });
 
+  const [developmentVisible, setDevelopmentVisible] = useState(false);
+
   const toggleAccordion = (content) => (e) => {
     setAccordion((prev) => ({ ...prev, [content]: !prev[content] }));
+  };
+
+  const toggleDevelopment = () => {
+    setDevelopmentVisible((prev) => !prev); 
   };
 
   return (
     <div className="layerTwo-tab">
       <div>
         <div className="flex-tab">
-          <h3 className="Text-header">DEVELOPMENT</h3>
+          <h3 className="Text-header" onClick={toggleDevelopment}>DEVELOPMENT</h3>
           <BntTab
-            icon={accordion.privacy ? minusbtn : plusbtn}
-            onClick={toggleAccordion("privacy")}
+            icon={developmentVisible ? minusbtn : plusbtn}
+            onClick={toggleDevelopment}
           />
         </div>
 
         <div className="job-body">
-          {accordion.privacy && (
+          {developmentVisible && (
             <div className="grid">
               <h2 className="grid-title">
                 EPIC Interface / Integration Specialist 
               </h2>
               <h2 className="grid-text">Remote</h2>
               <ArrowTab
-                icon={accordion.clear ? topArrow : downArrow}
+                icon={accordion.clear}
                 onClick={toggleAccordion("clear")}
               />
             </div>
@@ -136,24 +142,24 @@ const Development = () => {
 
               <p className="apply-text">
                 How to Apply: To apply for any open position, please contact HR
-                at onehealthconnectapp@gmail.com
+                at hr-team@ihealthwellness.one
               </p>
             </div>
           )}
         </div>
         <div className="job-body">
-          {accordion.privacy && (
+          {developmentVisible && (
             <div className="grid">
               <h2 className="grid-title">Principal Back-End Engineer</h2>
               <h2 className="grid-text">Remote</h2>
               <ArrowTab
-                icon={accordion.free ? topArrow : downArrow}
+                icon={accordion.free}
                 onClick={toggleAccordion("free")}
               />
             </div>
           )}
 
-          {accordion.privacy && <hr />}
+          {developmentVisible && <hr />}
 
           {accordion.free && (
             <div className="text-tab-flow">
@@ -250,24 +256,24 @@ const Development = () => {
 
               <p className="apply-text">
                 How to Apply: To apply for any open position, please contact HR
-                at onehealthconnectapp@gmail.com
+                at hr-team@ihealthwellness.one
               </p>
             </div>
           )}
         </div>
         <div className="job-body">
-          {accordion.privacy && (
+          {developmentVisible && (
             <div className="grid">
               <h2 className="grid-title">Principal Front-End Engineer</h2>
               <h2 className="grid-text">Remote</h2>
               <ArrowTab
-                icon={accordion.showcase ? topArrow : downArrow}
+                icon={accordion.showcase}
                 onClick={toggleAccordion("showcase")}
               />
             </div>
           )}
 
-          {accordion.privacy && <hr />}
+          {developmentVisible && <hr />}
           {accordion.showcase && (
             <div className="text-tab-flow">
               <h2 className="description-title">Description</h2>
@@ -363,24 +369,24 @@ const Development = () => {
 
               <p className="apply-text">
                 How to Apply: To apply for any open position, please contact HR
-                at onehealthconnectapp@gmail.com
+                at hr-team@ihealthwellness.one
               </p>
             </div>
           )}
         </div>
         <div className="job-body">
-          {accordion.privacy && (
+          {developmentVisible && (
             <div className="grid">
               <h2 className="grid-title">Principal Full-Stack Engineer</h2>
               <h2 className="grid-text">Remote</h2>
               <ArrowTab
-                icon={accordion.bare ? topArrow : downArrow}
+                icon={accordion.bare}
                 onClick={toggleAccordion("bare")}
               />
             </div>
           )}
 
-          {accordion.privacy && <hr />}
+          {developmentVisible && <hr />}
 
           {accordion.bare && (
             <div className="text-tab-flow">
@@ -504,24 +510,24 @@ const Development = () => {
 
               <p className="apply-text">
                 How to Apply: To apply for any open position, please contact HR
-                at onehealthconnectapp@gmail.com
+                at hr-team@ihealthwellness.one
               </p>
             </div>
           )}
         </div>
         <div className="job-body">
-          {accordion.privacy && (
+          {developmentVisible && (
             <div className="grid">
               <h2 className="grid-title">Senior Platform Developer</h2>
               <h2 className="grid-text">Remote</h2>
               <ArrowTab
-                icon={accordion.expose ? topArrow : downArrow}
+                icon={accordion.expose}
                 onClick={toggleAccordion("expose")}
               />
             </div>
           )}
 
-          {accordion.privacy && <hr />}
+          {developmentVisible && <hr />}
           {accordion.expose && (
             <div className="text-tab-flow">
               <h2 className="description-title">Description</h2>
@@ -633,24 +639,24 @@ const Development = () => {
 
               <p className="apply-text">
                 How to Apply: To apply for any open position, please contact HR
-                at onehealthconnectapp@gmail.com
+                at hr-team@ihealthwellness.one
               </p>
             </div>
           )}
         </div>
         <div className="job-body">
-          {accordion.privacy && (
+          {developmentVisible && (
             <div className="grid">
               <h2 className="grid-title">Senior Software Engineer </h2>
               <h2 className="grid-text">Remote</h2>
               <ArrowTab
-                icon={accordion.disclose ? topArrow : downArrow}
+                icon={accordion.disclose }
                 onClick={toggleAccordion("disclose")}
               />
             </div>
           )}
 
-          {accordion.privacy && <hr />}
+          {developmentVisible && <hr />}
           {accordion.disclose && (
             <div className="text-tab-flow">
               <h2 className="description-title">Description</h2>
@@ -749,7 +755,7 @@ const Development = () => {
 
               <p className="apply-text">
                 How to Apply: To apply for any open position, please contact HR
-                at onehealthconnectapp@gmail.com
+                at hr-team@ihealthwellness.one
               </p>
             </div>
           )}

@@ -4,9 +4,8 @@ import { ArrowTab } from "./ButtonTab";
 import "./Hiring.css";
 import plusbtn from "src/Assets/Icons/plus.png";
 import minusbtn from "src/Assets/Icons/minus.png";
-import topArrow from "src/Assets/Icons/Icon.png";
-import downArrow from "src/Assets/Icons/Icon2.png";
-
+// import topArrow from "src/Assets/Icons/iconone.png";
+// import downArrow from "src/Assets/Icons/icontwo.png";
 import { useState } from "react";
 
 const Hr = () => {
@@ -15,30 +14,36 @@ const Hr = () => {
     way: false,
   });
 
+  const [hrVisible, setHrVisible] = useState(false);
+
   const toggleAccordion = (content) => (e) => {
     setAccordion((prev) => ({ ...prev, [content]: !prev[content] }));
+  };
+
+  const toggleHr = () => {
+    setHrVisible((prev) => !prev); 
   };
 
   return (
     <div className="layerTwo-tab">
       <div>
         <div className="flex-tab">
-          <h3 className="Text-header">HUMAN RESOURCES</h3>
+          <h3 className="Text-header" onClick={toggleHr}>HUMAN RESOURCES</h3>
           <BntTab
-            icon={accordion.privacy ? minusbtn : plusbtn}
-            onClick={toggleAccordion("privacy")}
+            icon={hrVisible ? minusbtn : plusbtn}
+            onClick={toggleHr}
           />
         </div>
 
         <div className="job-body">
-          {accordion.privacy && (
+          {hrVisible && (
             <div className="grid">
               <h2 className="grid-title">
                 Human Resource Specialist/ Generalist
               </h2>
               <h2 className="grid-text">Remote</h2>
               <ArrowTab
-                icon={accordion.way ? topArrow : downArrow}
+                icon={accordion.way}
                 onClick={toggleAccordion("way")}
               />
             </div>
@@ -149,7 +154,7 @@ const Hr = () => {
 
               <p className="apply-text">
                 How to Apply: To apply for any open position, please contact HR
-                at onehealthconnectapp@gmail.com
+                at hr-team@ihealthwellness.one
               </p>
             </div>
           )}
