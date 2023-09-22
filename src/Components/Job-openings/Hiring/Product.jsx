@@ -4,8 +4,8 @@ import { ArrowTab } from "./ButtonTab";
 import "./Hiring.css";
 import plusbtn from "src/Assets/Icons/plus.png";
 import minusbtn from "src/Assets/Icons/minus.png";
-import topArrow from "src/Assets/Icons/iconone.png";
-import downArrow from "src/Assets/Icons/icontwo.png";
+// import topArrow from "src/Assets/Icons/iconone.png";
+// import downArrow from "src/Assets/Icons/icontwo.png";
 
 import { useState } from "react";
 
@@ -13,6 +13,7 @@ const Product = () => {
   const [accordion, setAccordion] = useState({
     privacy: false,
     design: false,
+    outline: false,
   });
 
   const [productVisible, setProductVisible] = useState(false);
@@ -22,14 +23,16 @@ const Product = () => {
   };
 
   const toggleProduct = () => {
-    setProductVisible((prev) => !prev); 
+    setProductVisible((prev) => !prev);
   };
 
   return (
     <div className="layerOne-tab">
       <div>
         <div className="flex-tab">
-          <h3 className="Text-header" onClick={toggleProduct}>PRODUCT MANAGEMENT</h3>
+          <h3 className="Text-header" onClick={toggleProduct}>
+            PRODUCT MANAGEMENT
+          </h3>
           <BntTab
             icon={productVisible ? minusbtn : plusbtn}
             onClick={toggleProduct}
@@ -42,7 +45,7 @@ const Product = () => {
               <h2 className="grid-title">Pro Bono Generalist</h2>
               <h2 className="grid-text">Remote</h2>
               <ArrowTab
-                icon={accordion.design ? topArrow : downArrow}
+                icon={accordion.design }
                 onClick={toggleAccordion("design")}
               />
             </div>
@@ -129,6 +132,104 @@ const Product = () => {
                 Future Salary would be promised for employees (after seed
                 funding round).
               </p>
+
+              <p className="apply-text">
+                How to Apply: To apply for any open position, please contact HR
+                at hr-team@ihealthwellness.one
+              </p>
+            </div>
+          )}
+        </div>
+
+        <div className="job-body">
+          {productVisible && (
+            <div className="grid">
+              <h2 className="grid-title">Product Specialist/Associate</h2>
+              <h2 className="grid-text">Remote</h2>
+              <ArrowTab
+                icon={accordion.outline }
+                onClick={toggleAccordion("outline")}
+              />
+            </div>
+          )}
+          {productVisible && <hr />}
+          {accordion.outline && (
+            <div className="text-tab-flow">
+              <h2 className="description-title">Description</h2>
+              <p className="description-text">
+                We are an 'early stage' pre-money nonprofit/ tech startup
+                preparing for a proof-of-concept launch / seed-raise looking to
+                recruit VOLUNTEERS (unpaid) as PARLIAMENTARY PROCEDURE
+                SPECIALIST. Future Salary would be promised for employees (after
+                seed funding round).
+              </p>
+
+              <h3 className="responsibilities-title">Responsibilities</h3>
+              <ul className="responsibilities-text">
+                <li>
+                  Evaluate, analyze, author and communicate systems requirements
+                  on a continuing basis, and maintain systems processes
+                </li>
+                <li>
+                  Drive the execution of all processes in the product lifecycle,
+                  including product and market research, competitor analysis,
+                  planning, positioning, requirements and roadmap development,
+                  and product launch
+                </li>
+                <li>
+                  Translate product strategy into detailed requirements for
+                  prototyping and final development by engineering teams
+                </li>
+                <li>
+                  Drive the product- and business-planning processes for
+                  cross-functional teams
+                </li>
+                <li>
+                  Develop, implement, and maintain production timelines across
+                  multiple departments
+                </li>
+                <li>
+                  Appraise new product ideas and strategize appropriate
+                  go-to-market plans
+                </li>
+              </ul>
+              <h3 className="qualifications-title">Qualifications</h3>
+              <ul className="qualifications-text">
+                <li>Proven work experience in software development</li>
+                <li>Strong experience in a dynamic product management role</li>
+                <li>
+                  Proven success in overseeing all elements of the product
+                  development lifecycle
+                </li>
+                <li>
+                  Experience in delivering finely tuned product marketing
+                  strategies
+                </li>
+                <li>
+                  Exceptional writing and editing skills, combined with strong
+                  presentation and public speaking skills
+                </li>
+                <li>
+                  Experience working in an Agile/Scrum development process
+                </li>
+                <li>
+                  Team players with a desire to learn, iterate and move quickly
+                </li>
+                <li>Ability to commit to a minimum of 4+ hour work weeks</li>
+                <li>
+                  Ability to attend weekly standup meeting (conference call with
+                  desktop/ laptop access for screen sharing)
+                </li>
+                <li>
+                  Experience with performance and/or security testing is a plus
+                </li>
+                <li>
+                  BS/MS degree in Computer Science, Engineering or a related
+                  subject
+                </li>
+                <li>HealthTech experience is a plus</li>
+              </ul>
+              <p className="note-text">Join us, you win, we both win!!"</p>
 
               <p className="apply-text">
                 How to Apply: To apply for any open position, please contact HR

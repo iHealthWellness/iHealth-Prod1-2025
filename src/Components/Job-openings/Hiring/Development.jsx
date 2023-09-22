@@ -4,8 +4,8 @@ import { ArrowTab } from "./ButtonTab";
 import "./Hiring.css";
 import plusbtn from "src/Assets/Icons/plus.png";
 import minusbtn from "src/Assets/Icons/minus.png";
-import topArrow from "src/Assets/Icons/iconone.png";
-import downArrow from "src/Assets/Icons/icontwo.png";
+// import topArrow from "src/Assets/Icons/iconone.png";
+// import downArrow from "src/Assets/Icons/icontwo.png";
 
 import { useState } from "react";
 
@@ -49,7 +49,7 @@ const Development = () => {
               </h2>
               <h2 className="grid-text">Remote</h2>
               <ArrowTab
-                icon={accordion.clear ? topArrow : downArrow}
+                icon={accordion.clear}
                 onClick={toggleAccordion("clear")}
               />
             </div>
@@ -153,7 +153,7 @@ const Development = () => {
               <h2 className="grid-title">Principal Back-End Engineer</h2>
               <h2 className="grid-text">Remote</h2>
               <ArrowTab
-                icon={accordion.free ? topArrow : downArrow}
+                icon={accordion.free}
                 onClick={toggleAccordion("free")}
               />
             </div>
@@ -267,7 +267,7 @@ const Development = () => {
               <h2 className="grid-title">Principal Front-End Engineer</h2>
               <h2 className="grid-text">Remote</h2>
               <ArrowTab
-                icon={accordion.showcase ? topArrow : downArrow}
+                icon={accordion.showcase}
                 onClick={toggleAccordion("showcase")}
               />
             </div>
@@ -380,7 +380,7 @@ const Development = () => {
               <h2 className="grid-title">Principal Full-Stack Engineer</h2>
               <h2 className="grid-text">Remote</h2>
               <ArrowTab
-                icon={accordion.bare ? topArrow : downArrow}
+                icon={accordion.bare}
                 onClick={toggleAccordion("bare")}
               />
             </div>
@@ -521,7 +521,7 @@ const Development = () => {
               <h2 className="grid-title">Senior Platform Developer</h2>
               <h2 className="grid-text">Remote</h2>
               <ArrowTab
-                icon={accordion.expose ? topArrow : downArrow}
+                icon={accordion.expose}
                 onClick={toggleAccordion("expose")}
               />
             </div>
@@ -650,7 +650,7 @@ const Development = () => {
               <h2 className="grid-title">Senior Software Engineer </h2>
               <h2 className="grid-text">Remote</h2>
               <ArrowTab
-                icon={accordion.disclose ? topArrow : downArrow}
+                icon={accordion.disclose }
                 onClick={toggleAccordion("disclose")}
               />
             </div>
