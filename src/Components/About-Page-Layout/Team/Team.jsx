@@ -9,7 +9,7 @@ const Team = () => {
     <div id="Team" className="team-tab-page">
       <div className="container">
         <div className="Team-link-tab">
-        <HashLink to="/Our-Team" >
+        <HashLink to="/Our-Team/#" >
         <img className="team-work" src={teamwork} />
           {/* <img className="team-image-tab" src={team} alt="" /> */}
         </HashLink>
