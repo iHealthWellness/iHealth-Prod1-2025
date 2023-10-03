@@ -182,7 +182,7 @@ const Board = () => {
           <img src={Image} alt="" />
 
           <div className="Name-tab">
-            <p>Sasika Nanayakkara, PMP
+            <p>Sasika Nanayakkara, PMP <br />
               Founder, CEO, CTO, Chair
               </p>
           </div>
@@ -201,7 +201,7 @@ const Board = () => {
 
           <div className="Name-tab">
             <p>Jeff Jacques, MD <br />
-              {/* Vice President */}
+              Vice President
               </p>
           </div>
           <button className="btn-board-tab">
