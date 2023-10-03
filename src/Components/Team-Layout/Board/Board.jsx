@@ -182,7 +182,9 @@ const Board = () => {
           <img src={Image} alt="" />
 
           <div className="Name-tab">
-            <p>Sasika Nanayakkara, PMP</p>
+            <p>Sasika Nanayakkara, PMP <br />
+              Founder, CEO, CTO, Chair
+              </p>
           </div>
 
           <button className="btn-board-tab">
@@ -198,7 +200,9 @@ const Board = () => {
           <img src={Image1} alt="" />
 
           <div className="Name-tab">
-            <p>Jeff Jacques, MD</p>
+            <p>Jeff Jacques, MD <br />
+              Vice President
+              </p>
           </div>
           <button className="btn-board-tab">
             <img src={Image7} />
@@ -216,7 +220,9 @@ const Board = () => {
           <img src={Image3} alt="" />
 
           <div className="Name-tab">
-            <p>Joseph Karcich</p>
+            <p>Joseph Karcich, <br />
+              Vice President
+              </p>
           </div>
           <button className="btn-board-tab">
             <img src={Image7} />
@@ -227,7 +233,9 @@ const Board = () => {
           <img src={Image2} alt="" />
 
           <div className="Name-tab">
-            <p>Matías Berisso</p>
+            <p>Matias Berisso <br />
+              Treasurer and Secretary
+              </p>
           </div>
           <button className="btn-board-tab">
             <img src={Image7} />
