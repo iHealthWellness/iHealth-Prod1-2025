@@ -196,18 +196,18 @@ const Board = () => {
           </button>
         </div>
 
-        {/* <div className="board-image" onClick={handleCardClick1}>
+        <div className="board-image" onClick={handleCardClick1}>
           <img src={Image1} alt="" />
 
           <div className="Name-tab">
-            <p>Jeff Jacques, MD, <br />
-              Vice President
+            <p>Jeff Jacques, MD <br />
+              {/* Vice President */}
               </p>
           </div>
           <button className="btn-board-tab">
             <img src={Image7} />
           </button>
-        </div> */}
+        </div>
       </div>
 
       <div
@@ -233,7 +233,7 @@ const Board = () => {
           <img src={Image2} alt="" />
 
           <div className="Name-tab">
-            <p>Matias Berisso, <br />
+            <p>Matias Berisso <br />
               Treasurer and Secretary
               </p>
           </div>
