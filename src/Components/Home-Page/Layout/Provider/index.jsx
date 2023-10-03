@@ -79,11 +79,11 @@ const Provider = () => {
                 value={diseaseValue}
                 onInputChange={setDiseaseValue}
               />
-              <ProviderCheckbox
+              {/* <ProviderCheckbox
                 label="Accepting New Patients"
                 value={acceptingNewPatients}
                 onCheckboxChange={setAcceptingNewPatients}
-              />
+              /> */}
             </div>
             <div className="provider-form-field">
               <ProviderAutocomplete
@@ -92,11 +92,11 @@ const Provider = () => {
                 value={specialtyValue}
                 onInputChange={setSpecialtyValue}
               />
-              <ProviderCheckbox
+              {/* <ProviderCheckbox
                 label="Treats Children"
                 value={treatsChildren}
                 onCheckboxChange={setTreatsChildren}
-              />
+              /> */}
             </div>
             <div className="provider-form-field">
               <ProviderAutocomplete
