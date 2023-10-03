@@ -196,7 +196,7 @@ const Board = () => {
           </button>
         </div>
 
-        <div className="board-image" onClick={handleCardClick1}>
+        {/* <div className="board-image" onClick={handleCardClick1}>
           <img src={Image1} alt="" />
 
           <div className="Name-tab">
@@ -207,7 +207,7 @@ const Board = () => {
           <button className="btn-board-tab">
             <img src={Image7} />
           </button>
-        </div>
+        </div> */}
       </div>
 
       <div
