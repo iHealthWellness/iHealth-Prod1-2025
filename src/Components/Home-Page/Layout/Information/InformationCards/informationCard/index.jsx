@@ -2,6 +2,7 @@ import "./index.css";
 
 const InformationCard = ({ team }) => {
   const { icon, heading, content, detailUrl } = team;
+
   return (
     <div className="information-card">
       <div className="information-card-heading-block">
@@ -16,9 +17,9 @@ const InformationCard = ({ team }) => {
       </div>
       <ul className="information-card-list">
         {content.map((c) => (
-          <li className="information-card-listitem" key={c}>
+          <li className="information-card-listitem" key={c.text}>
             <span className="information-card-listitem-span">&#10004; </span>
-            {c}
+            <a href={c.link}>{c.text}</a>
           </li>
         ))}
       </ul>
@@ -26,11 +27,7 @@ const InformationCard = ({ team }) => {
         <a
           className="information-card-link"
           href={detailUrl}
-          onClick={heading ==="Education" ? () => {document.querySelector("#UnderConst-wrapper").style.display ="flex";} : " "}
-          // onClick={() => {
-          //   document.querySelector("#UnderConst-wrapper").style.display =
-          //     "flex";
-          // }}
+          onClick={heading === "Education" ? () => {document.querySelector("#UnderConst-wrapper").style.display = "flex";} : null}
         >
           Learn More &gt;
         </a>

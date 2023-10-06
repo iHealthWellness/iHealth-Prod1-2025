@@ -1,4 +1,4 @@
-//Import Local Files
+// Import Local Files
 import heartImage from "src/Assets/Icons/team-heart.svg";
 import personsImage from "src/Assets/Icons/team-group.svg";
 import educationImage from "src/Assets/Icons/team-education.svg";
@@ -10,7 +10,11 @@ const Teams = [
       alt: "Heart icon",
     },
     heading: "Living with NF",
-    content: ["Quality Of Life Measures", "NF Registry", "Find A Provider"],
+    content: [
+      { text: "Quality Of Life Measures", link: "https://www.youtube.com/" },
+      { text: "NF Registry", link: "/nf-registry" },
+      { text: "Find A Provider", link: "/find-provider" }
+    ],
     detailUrl: "/#Home-Page-provider-container",
   },
   {
@@ -20,9 +24,9 @@ const Teams = [
     },
     heading: "Research",
     content: [
-      "Research Tools & Resources",
-      "Clinical Drug Therapies",
-      "Participate in Research",
+      { text: "Research Tools & Resources", link: "/research-tools" },
+      { text: "Clinical Drug Therapies", link: "/clinical-drug-therapies" },
+      { text: "Participate in Research", link: "/participate-research" }
     ],
     detailUrl: "/research",
   },
@@ -33,12 +37,12 @@ const Teams = [
     },
     heading: "Education",
     content: [
-      "Understanding the Condition",
-      "Conferences and Workshops",
-      "Workshops",
+      { text: "Understanding the Condition", link: "/understanding-condition" },
+      { text: "Conferences and Workshops", link: "/conferences-workshops" },
+      { text: "Workshops", link: "/workshops" }
     ],
     detailUrl: "#Information",
-  },
+  }
 ];
 
 export default Teams;
