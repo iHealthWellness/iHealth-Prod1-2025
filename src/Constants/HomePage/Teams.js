@@ -11,9 +11,9 @@ const Teams = [
     },
     heading: "Living with NF",
     content: [
-      { text: "Quality Of Life Measures", link: "https://www.youtube.com/" },
-      { text: "NF Registry", link: "/nf-registry" },
-      { text: "Find A Provider", link: "/find-provider" }
+      { text: "Understanding NF", link: "" },
+      { text: "Survey Now: Clinical Trials", link: "/nf-registry" },
+      { text: "Sign-Up: NF Registry", link: "/find-provider" }
     ],
     detailUrl: "/#Home-Page-provider-container",
   },
@@ -37,9 +37,9 @@ const Teams = [
     },
     heading: "Education",
     content: [
-      { text: "Understanding the Condition", link: "/understanding-condition" },
-      { text: "Conferences and Workshops", link: "/conferences-workshops" },
-      { text: "Workshops", link: "/workshops" }
+      { text: "For Patients", link: "/understanding-condition" },
+      { text: "For Providers", link: "/conferences-workshops" },
+      { text: "For Caregivers", link: "/workshops" }
     ],
     detailUrl: "#Information",
   }
