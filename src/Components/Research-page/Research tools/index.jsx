@@ -1,38 +1,40 @@
 
-import React, { useEffect } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import "./index.css";
 import Research2 from "src/Assets/Images/Research-2.png";
 
 const section2 = () => {
-  // useEffect(() => {
-  //   const textElements = document.querySelectorAll(".slide-in-text");
+ 
 
-  //   const handleScroll = () => {
-  //     textElements.forEach((textElement) => {
-  //       const slideInAt =
-  //         window.scrollY + window.innerHeight - textElement.clientHeight / 2;
-  //       const elementBottom = textElement.offsetTop + textElement.clientHeight;
-  //       const isHalfShown = slideInAt > textElement.offsetTop;
-  //       const isNotScrolledPast = window.scrollY < elementBottom;
+  const [isVisible, setIsVisible] = useState(false);
+  const divRef = useRef(null);
 
-  //       if (isHalfShown && isNotScrolledPast) {
-  //         textElement.classList.add("active");
-  //       } else {
-  //         textElement.classList.remove("active");
-  //       }
-  //     });
-  //   };
+  useEffect(() => {
+    function handleScroll() {
+      const div = divRef.current;
+      if (div) {
+        const rect = div.getBoundingClientRect();
+        const windowHeight =
+          window.innerHeight || document.documentElement.clientHeight;
 
-  //   window.addEventListener("scroll", handleScroll);
+        if (rect.top <= windowHeight && rect.bottom >= 0) {
+          setIsVisible(true);
+        } else {
+          setIsVisible(false);
+        }
+      }
+    }
 
-  //   return () => {
-  //     window.removeEventListener("scroll", handleScroll);
-  //   };
-  // }, []);
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <section id="tools" className="research-tools">
-      <div>
+      <div className={`Tool ${isVisible ? "slide-in2" : ""}`}
+        ref={divRef}>
       {/* <div className="slide-in-text"> */}
         <div className="tools">
           <h1 className="tool">

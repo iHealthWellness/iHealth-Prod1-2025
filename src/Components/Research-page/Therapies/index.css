@@ -7,7 +7,19 @@
   background-color: #ffffff;
   padding: 20px;
   margin-top: -50px;
+  overflow: hidden;
 }
+
+
+.Clinic {
+    opacity: 0;
+  transform: translateX(50%);
+  transition: opacity 0.5s ease-in-out, transform 0.8s ease-in-out;
+}
+ .Clinic.slide-in3 {
+  opacity: 1;
+  transform: translateX(0);
+} 
 
 .clinical-therapies h1,
 .clinical-therapies p,
@@ -75,18 +87,6 @@
 }
 
 /* Scroll animation */
-
-.slide-in-text.active {
-  opacity: 1;
-  transform: translateY(0);
-  transition: opacity 0.5s, transform 0.5s;
-}
-
-.slide-in-text {
-  opacity: 0;
-  transform: translateY(30px);
-}
-
 /* Responsive design */
 
 @media (max-width: 768px) {

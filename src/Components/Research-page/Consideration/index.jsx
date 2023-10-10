@@ -1,37 +1,38 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import "./index.css";
 import Research7 from "src/Assets/Images/Research-7.png";
 
 const Consideration = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  const divRef = useRef(null);
+
   useEffect(() => {
-    const textElements = document.querySelectorAll(".slide-in-text");
+    function handleScroll() {
+      const div = divRef.current;
+      if (div) {
+        const rect = div.getBoundingClientRect();
+        const windowHeight =
+          window.innerHeight || document.documentElement.clientHeight;
 
-    const handleScroll = () => {
-      textElements.forEach((textElement) => {
-        const slideInAt =
-          window.scrollY + window.innerHeight - textElement.clientHeight / 2;
-        const elementBottom = textElement.offsetTop + textElement.clientHeight;
-        const isHalfShown = slideInAt > textElement.offsetTop;
-        const isNotScrolledPast = window.scrollY < elementBottom;
-
-        if (isHalfShown && isNotScrolledPast) {
-          textElement.classList.add("active");
+        if (rect.top <= windowHeight && rect.bottom >= 0) {
+          setIsVisible(true);
         } else {
-          textElement.classList.remove("active");
+          setIsVisible(false);
         }
-      });
-    };
+      }
+    }
 
     window.addEventListener("scroll", handleScroll);
-
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+ 
 
   return (
     <div className="Consider">
-      <div className="consider">
+      <div className={`consider ${isVisible ? "slide-in8" : ""}`}
+        ref={divRef}>
 
           <div className="consideration">
             <h2>

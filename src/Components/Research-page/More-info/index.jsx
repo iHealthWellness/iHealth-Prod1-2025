@@ -1,34 +1,36 @@
 
-import React, {useEffect} from "react";
+import React, {useEffect, useState, useRef} from "react";
 import "./index.css";
 import Research4 from "src/Assets/Images/Research-4.png";
 
 const section4 = () => {
 
+  const [isVisible, setIsVisible] = useState(false);
+  const divRef = useRef(null);
+
   useEffect(() => {
-    const textElements = document.querySelectorAll('.slide-in-text');
+    function handleScroll() {
+      const div = divRef.current;
+      if (div) {
+        const rect = div.getBoundingClientRect();
+        const windowHeight =
+          window.innerHeight || document.documentElement.clientHeight;
 
-    const handleScroll = () => {
-      textElements.forEach((textElement) => {
-        const slideInAt = (window.scrollY + window.innerHeight) - textElement.clientHeight / 2;
-        const elementBottom = textElement.offsetTop + textElement.clientHeight;
-        const isHalfShown = slideInAt > textElement.offsetTop;
-        const isNotScrolledPast = window.scrollY < elementBottom;
-
-        if (isHalfShown && isNotScrolledPast) {
-          textElement.classList.add('active');
+        if (rect.top <= windowHeight && rect.bottom >= 0) {
+          setIsVisible(true);
         } else {
-          textElement.classList.remove('active');
+          setIsVisible(false);
         }
-      });
-    };
+      }
+    }
 
-    window.addEventListener('scroll', handleScroll);
-
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+ 
   return (
     <div className="info">
       <div className="more-info">
@@ -58,7 +60,8 @@ const section4 = () => {
         </p>
       </div>
       {/* <div className="slide-in-text"> */}
-      <div className="evorolimus">
+      <div className={`evorolimus ${isVisible ? "slide-in4" : ""}`}
+        ref={divRef}>
         <img className="evorolimus-img" src={Research4} alt="" />
         <div>
           <h1>

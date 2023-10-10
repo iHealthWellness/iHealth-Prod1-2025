@@ -11,6 +11,7 @@
   max-width: 1216px;
   width: 100%;
   padding: 0 1rem;
+  overflow: hidden;
 }
 
 .consider {
@@ -18,7 +19,16 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  opacity: 0;
+  transform: translateX(50%);
+  transition: opacity 0.5s ease-in-out, transform 0.8s ease-in-out;
+  
 }
+.consider.slide-in8 {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 
 .consider-img {
   width: 500px;
@@ -76,6 +86,18 @@
   padding: 0 1.25rem;
   text-align: justify;
 }
+
+.slide-in-text9 {
+  opacity: 0;
+  transform: translateX(50%);
+  transition: opacity 0.4s, transform 0.3s;
+}
+
+.slide-in-text9.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 
 @media screen and (max-width: 1024px) {
   .consider {
