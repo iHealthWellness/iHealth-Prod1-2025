@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
@@ -111,7 +111,7 @@ const menuItems = [
   },
 ];
 
-const MenuItems = ({ items, menuId, activeId, setActiveId,handleShowMenu }) => {
+const MenuItems = ({ items, menuId, activeId, setActiveId, handleShowMenu }) => {
   const [showSubMenu, setSubMenu] = useState(false);
 
   function handleMenu(menuId) {
@@ -156,12 +156,29 @@ const NavDropdownButton = () => {
   const [showMenu, setShowMenu] = useState(false);
   const [activeId, setActiveId] = useState(0);
 
+  const menuRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setShowMenu(false);
+      }
+    };
+
+    document.addEventListener("click", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, []);
+
+
   function handleShowMenu() {
     setShowMenu((show) => !show);
   }
 
   return (
-    <div className="nav-dropdown-container">
+    <div className="nav-dropdown-container" ref={menuRef}>
       <button className="nav-dropdown-menu-button" onClick={handleShowMenu}>
         <img className="nav-dropdown-menu-icon" src={dropdownIcon}></img>
       </button>
