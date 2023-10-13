@@ -1,37 +1,41 @@
 import "./index.css";
 
 const InformationCard = ({ team }) => {
-  const { icon, heading, content, detailUrl } = team;
+  const { icon, heading, content, detailPath } = team;
+
+  const handleOnClick = (e, path) => {
+    if (["Living with NF", "Education"].includes(heading)) {
+      e.preventDefault();
+      document.querySelector("#UnderConst-wrapper").style.display = "flex";
+      return;
+    }
+
+    if (path && path.includes("#")) {
+      e.preventDefault();
+      
+      // Directly set the window's location href to the desired URL.
+      window.location.href = path;
+    }
+  };
+
   return (
     <div className="information-card">
       <div className="information-card-heading-block">
         <div className="information-card-icon-box">
-          <img
-            className="information-card-icon"
-            src={icon.src}
-            alt={icon.alt}
-          ></img>
+          <img className="information-card-icon" src={icon.src} alt={icon.alt}></img>
         </div>
         <h2 className="information-card-heading">{heading}</h2>
       </div>
       <ul className="information-card-list">
         {content.map((c) => (
-          <li className="information-card-listitem" key={c}>
+          <li className="information-card-listitem" key={c.text}>
             <span className="information-card-listitem-span">&#10004; </span>
-            {c}
+            <a href={c.path} onClick={(e) => handleOnClick(e, c.path)}>{c.text}</a>
           </li>
         ))}
       </ul>
       <div className="information-card-link-block">
-        <a
-          className="information-card-link"
-          href={detailUrl}
-          onClick={heading ==="Education" ? () => {document.querySelector("#UnderConst-wrapper").style.display ="flex";} : " "}
-          // onClick={() => {
-          //   document.querySelector("#UnderConst-wrapper").style.display =
-          //     "flex";
-          // }}
-        >
+        <a className="information-card-link" href={detailPath} onClick={(e) => handleOnClick(e, detailPath)}>
           Learn More &gt;
         </a>
       </div>

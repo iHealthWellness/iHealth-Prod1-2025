@@ -25,6 +25,22 @@
   justify-content: center;
   align-items: center;
 }
+.information-card-listitem a {
+  color: black;
+  text-decoration: none; /* Removes the underline from the links. */
+  transition: color 0.3s; /* Smooth transition for color changes */
+}
+
+.information-card:hover .information-card-listitem a {
+  color: white; /* Changes color to white on hover */
+}
+
+/* Optionally, for hover effects to show it's clickable */
+.information-card-listitem a:hover {
+  text-decoration: underline; /* Adds an underline on individual link hover */
+}
+
+
 
 .information-card-icon {
   width: 100%;
