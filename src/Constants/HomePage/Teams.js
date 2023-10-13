@@ -1,4 +1,3 @@
-// Import Local Files
 import heartImage from "src/Assets/Icons/team-heart.svg";
 import personsImage from "src/Assets/Icons/team-group.svg";
 import educationImage from "src/Assets/Icons/team-education.svg";
@@ -11,11 +10,11 @@ const Teams = [
     },
     heading: "Living with NF",
     content: [
-      { text: "Understanding NF", link: "" },
-      { text: "Survey Now: Clinical Trials", link: "/nf-registry" },
-      { text: "Sign-Up: NF Registry", link: "/find-provider" }
+      { text: "Understanding NF", path: "" },
+      { text: "Survey Now: Clinical Trials", path: "/nf-registry" },
+      { text: "Sign-Up: NF Registry", path: "/find-provider" }
     ],
-    detailUrl: "/#Home-Page-provider-container",
+    detailPath: "/#Home-Page-provider-container",
   },
   {
     icon: {
@@ -24,11 +23,11 @@ const Teams = [
     },
     heading: "Research",
     content: [
-      { text: "Research Tools & Resources", link: "/research-tools" },
-      { text: "Clinical Drug Therapies", link: "/clinical-drug-therapies" },
-      { text: "Participate in Research", link: "/participate-research" }
+      { text: "Research Tools & Resources", path: "/research/#tools" },
+      { text: "Clinical Drug Therapies", path: "/research/#clinical" },
+      { text: "Participate in Research", path: "/research/#participate" }
     ],
-    detailUrl: "/research",
+    detailPath: "/research",
   },
   {
     icon: {
@@ -37,11 +36,11 @@ const Teams = [
     },
     heading: "Education",
     content: [
-      { text: "For Patients", link: "/understanding-condition" },
-      { text: "For Providers", link: "/conferences-workshops" },
-      { text: "For Caregivers", link: "/workshops" }
+      { text: "For Patients", path: "/understanding-condition" },
+      { text: "For Providers", path: "/conferences-workshops" },
+      { text: "For Caregivers", path: "/workshops" }
     ],
-    detailUrl: "#Information",
+    detailPath: "#Information",
   }
 ];
 

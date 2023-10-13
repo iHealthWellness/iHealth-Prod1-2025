@@ -136,7 +136,10 @@ const Finance = () => {
                 ref={divTwoRef}>
                 <div>
                     <h2>Expenses</h2>
-                    <img src={img17} className="analysis-img" alt="pie-chart" /> </div>
+                    <div className="sp">
+                    <img src={img17} className="analysis-img" alt="pie-chart" /> 
+                    </div>
+                    </div>
                 <div>
                     <h2>Projected Revenue Streams</h2>
                     <img src={img18} className="analysis-img" alt="chart1" />
