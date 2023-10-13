@@ -51,10 +51,12 @@
   font-size: 1rem;
   font-weight: 400;
   line-height: 120%;
+  margin-top: -15px;
 }
 
 .benefit-flipcard-list {
   padding: 1rem;
+
 }
 
 .benefit-flipcard-listitem {
