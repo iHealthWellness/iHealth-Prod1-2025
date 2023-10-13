@@ -1,7 +1,5 @@
 import Teams from "src/Constants/HomePage/Teams.js";
-
 import InformationCard from "./informationCard";
-
 import "./index.css";
 
 const InformationCards = () => {

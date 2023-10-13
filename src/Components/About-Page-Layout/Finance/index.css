@@ -75,7 +75,9 @@
 }
 
 
-
+.sp{
+   padding-left: 20px;
+}
 
 
 
@@ -96,6 +98,7 @@
     margin-top: 5px;
     flex-shrink: 0; /* Prevents the image from shrinking in flexbox */
     margin-bottom: 5px;
+
 }
 
 .grid2 {
@@ -105,6 +108,7 @@
     line-height: 23px;
     letter-spacing: 0.02em;
     text-align: justify;
+    
     color: #00325D;
     padding: 9px;
     flex-grow: 1; /* Allows the text to grow if there's available space */
@@ -126,7 +130,9 @@
     }
 
     .grid2 {
-        font-size: 24px;
+        font-size: 23px;
+        
+        
     }
     .grid-outline{
         padding-bottom: 15px;
@@ -143,29 +149,14 @@
 }
 
 /* For smaller screens like mobile devices */
-@media only screen and (max-width: 480px) {
+/* For smaller screens like mobile devices */
+/* For smaller screens like mobile devices */
+@media screen and (max-width: 480px) {
     .grid {
-        flex-direction: row; /* Items will appear side by side */
-        flex-wrap: nowrap;  /* This ensures they don't wrap onto multiple lines */
-        justify-content: left; /* Distribute items evenly across the row */
-        gap: 5px; /* Reduced gap for smaller screens */
-    }
-
-    .grid1 {
-        width: 18px;
-        height: 18px;
-    }
-
-    .grid2 {
-        font-size: 24px;
-        flex-grow: 0; /* Prevent the text from taking extra space */
+        display: flex;
+        justify-content: left !important;
     }
 }
-
-
-
-
-
 
 
 
@@ -237,7 +228,7 @@
     
 }
 .grid-outline{
-    
+
     margin: auto;
 }
 .chart-analysis-tab{
@@ -313,4 +304,12 @@
         font-size: 22px;
     }
 }
-  
+@media screen and (max-width: 480px){
+
+.grid {
+    display: flex;
+    justify-content: left;
+    
+}
+}
+
