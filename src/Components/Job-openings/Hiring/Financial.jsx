@@ -4,8 +4,7 @@ import { ArrowTab } from "./ButtonTab";
 import "./Hiring.css";
 import plusbtn from "src/Assets/Icons/plus.png";
 import minusbtn from "src/Assets/Icons/minus.png";
-// import topArrow from "src/Assets/Icons/iconone.png";
-// import downArrow from "src/Assets/Icons/icontwo.png";
+
 
 import { useState } from "react";
 
@@ -23,7 +22,7 @@ const Financial = () => {
   };
 
   const toggleFinancial = () => {
-    setFinancialVisible((prev) => !prev); 
+    setFinancialVisible((prev) => !prev);
   };
 
   return (
@@ -124,8 +123,9 @@ const Financial = () => {
             </div>
           )}
         </div>
+
         <div className="job-body">
-          {accordion.privacy && (
+          {financialVisible && (
             <div className="grid">
               <h2 className="grid-title">Fundraiser/ Development Officer</h2>
               <h2 className="grid-text">Remote</h2>
