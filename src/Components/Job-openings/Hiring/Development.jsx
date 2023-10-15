@@ -795,6 +795,6 @@ const Development = () => {
       </div>
     </div>
   );
-}; s
+};
 
 export default Development;
