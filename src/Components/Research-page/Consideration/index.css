@@ -19,16 +19,8 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  opacity: 0;
-  transform: translateX(50%);
-  transition: opacity 0.5s ease-in-out, transform 0.8s ease-in-out;
   
 }
-.consider.slide-in8 {
-  opacity: 1;
-  transform: translateX(0);
-}
-
 
 .consider-img {
   width: 500px;
@@ -87,16 +79,16 @@
   text-align: justify;
 }
 
-.slide-in-text9 {
+ .slide-in-text8 {
   opacity: 0;
   transform: translateX(50%);
   transition: opacity 0.4s, transform 0.3s;
 }
 
-.slide-in-text9.active {
+.slide-in-text8.active {
   opacity: 1;
   transform: translateX(0);
-}
+} 
 
 
 @media screen and (max-width: 1024px) {

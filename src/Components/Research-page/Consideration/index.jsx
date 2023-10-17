@@ -1,28 +1,34 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect } from "react";
 import "./index.css";
 import Research7 from "src/Assets/Images/Research-7.png";
 
 const Consideration = () => {
-  const [isVisible, setIsVisible] = useState(false);
-  const divRef = useRef(null);
-
   useEffect(() => {
-    function handleScroll() {
-      const div = divRef.current;
-      if (div) {
-        const rect = div.getBoundingClientRect();
-        const windowHeight =
-          window.innerHeight || document.documentElement.clientHeight;
+    const textElements = document.querySelectorAll(".slide-in-text8");
+    const handleScroll = () => {
+      textElements.forEach((textElement) => {
+        const slideInAt =
+          window.scrollY +
+          window.innerHeight -
+          textElement.getBoundingClientRect().top;
+        const elementBottom = textElement.offsetTop + textElement.clientHeight;
+        const isHalfShown = slideInAt > textElement.offsetTop;
+        const isNotScrolledPast = window.scrollY < elementBottom;
 
-        if (rect.top <= windowHeight && rect.bottom >= 0) {
-          setIsVisible(true);
+        if (isHalfShown && isNotScrolledPast) {
+          textElement.classList.add("active");
         } else {
-          setIsVisible(false);
+          textElement.classList.remove("active");
         }
-      }
-    }
+      });
+    };
+    // Initial call to handleScroll
+    handleScroll();
 
+    // Listen for scroll events
     window.addEventListener("scroll", handleScroll);
+
+    // Cleanup the event listener on component unmount
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -31,8 +37,7 @@ const Consideration = () => {
 
   return (
     <div className="Consider">
-      <div className={`consider ${isVisible ? "slide-in8" : ""}`}
-        ref={divRef}>
+      <div className="consider slide-in-text8">
 
           <div className="consideration">
             <h2>

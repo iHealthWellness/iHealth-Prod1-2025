@@ -48,14 +48,8 @@
   flex-wrap: wrap; /* allow the content to wrap on smaller screens */
   justify-content: space-between;
   margin: 100px auto 150px;
-  opacity: 0;
-  transform: translateX(50%);
-  transition: opacity 0.5s ease-in-out, transform 0.8s ease-in-out;
 }
-.evorolimus.slide-in4 {
-  opacity: 1;
-  transform: translateX(0);
-}
+
 
 .evorolimus-img {
   width: 100%; /* Take full width on small screens */
@@ -76,13 +70,13 @@
   max-width: calc(50% - 20px); /* Gives a little space between the two items */
   margin-bottom: 20px;
 }
-.slide-in-text5 {
+.slide-in-text4 {
   opacity: 0;
   transform: translateX(50%);
-  transition: opacity 0.4s, transform 0.3s;
+  transition: opacity 0.4s, transform 0.5s;
 }
 
-.slide-in-text5.active {
+.slide-in-text4.active {
   opacity: 1;
   transform: translateX(0);
 }

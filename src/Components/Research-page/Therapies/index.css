@@ -11,15 +11,16 @@
 }
 
 
-.Clinic {
-    opacity: 0;
+.slide-in-text3 {
+  opacity: 0;
   transform: translateX(50%);
-  transition: opacity 0.5s ease-in-out, transform 0.8s ease-in-out;
+  transition: opacity 0.4s, transform 0.5s;
 }
- .Clinic.slide-in3 {
+
+.slide-in-text3.active {
   opacity: 1;
   transform: translateX(0);
-} 
+}
 
 .clinical-therapies h1,
 .clinical-therapies p,

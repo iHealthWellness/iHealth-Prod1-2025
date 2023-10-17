@@ -1,30 +1,36 @@
 
-import React, { useEffect, useState, useRef} from "react";
+import React, { useEffect } from "react";
 import "./index.css";
 import Research1 from "src/Assets/Images/Research-1.png";
 
 const section1 = () => {
 
-  const [isVisible, setIsVisible] = useState(false);
-  const divRef = useRef(null);
-
   useEffect(() => {
-    function handleScroll() {
-      const div = divRef.current;
-      if (div) {
-        const rect = div.getBoundingClientRect();
-        const windowHeight =
-          window.innerHeight || document.documentElement.clientHeight;
+    const textElements = document.querySelectorAll(".slide-in-text1");
+    const handleScroll = () => {
+      textElements.forEach((textElement) => {
+        const slideInAt =
+          window.scrollY +
+          window.innerHeight -
+          textElement.getBoundingClientRect().top;
+        const elementBottom = textElement.offsetTop + textElement.clientHeight;
+        const isHalfShown = slideInAt > textElement.offsetTop;
+        const isNotScrolledPast = window.scrollY < elementBottom;
 
-        if (rect.top <= windowHeight && rect.bottom >= 0) {
-          setIsVisible(true);
+        if (isHalfShown && isNotScrolledPast) {
+          textElement.classList.add("active");
         } else {
-          setIsVisible(false);
+          textElement.classList.remove("active");
         }
-      }
-    }
+      });
+    };
+    // Initial call to handleScroll
+    handleScroll();
 
+    // Listen for scroll events
     window.addEventListener("scroll", handleScroll);
+
+    // Cleanup the event listener on component unmount
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -43,8 +49,7 @@ const section1 = () => {
           </h1>
           <h2 className="side2">Advancing Research for a Brighter Future</h2>
         </div>
-        <div  className={`intro ${isVisible ? "slide-in1" : ""}`}
-        ref={divRef}>
+        <div  className="intro slide-in-text1">
           <h3 className="introduction">Introduction</h3>
           <p className="welcome">
             Welcome to the Neurofibromatosis Research Homepage, dedicated to

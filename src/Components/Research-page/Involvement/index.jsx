@@ -1,30 +1,35 @@
 
-import React, {useEffect, useState, useRef} from "react";
+import React, {useEffect } from "react";
 import "./index.css";
 import Research6 from "src/Assets/Images/Research-6.png";
 
 const section7 = () => {
-
-  const [isVisible, setIsVisible] = useState(false);
-  const divRef = useRef(null);
-
   useEffect(() => {
-    function handleScroll() {
-      const div = divRef.current;
-      if (div) {
-        const rect = div.getBoundingClientRect();
-        const windowHeight =
-          window.innerHeight || document.documentElement.clientHeight;
+    const textElements = document.querySelectorAll(".slide-in-text7");
+    const handleScroll = () => {
+      textElements.forEach((textElement) => {
+        const slideInAt =
+          window.scrollY +
+          window.innerHeight -
+          textElement.getBoundingClientRect().top;
+        const elementBottom = textElement.offsetTop + textElement.clientHeight;
+        const isHalfShown = slideInAt > textElement.offsetTop;
+        const isNotScrolledPast = window.scrollY < elementBottom;
 
-        if (rect.top <= windowHeight && rect.bottom >= 0) {
-          setIsVisible(true);
+        if (isHalfShown && isNotScrolledPast) {
+          textElement.classList.add("active");
         } else {
-          setIsVisible(false);
+          textElement.classList.remove("active");
         }
-      }
-    }
+      });
+    };
+    // Initial call to handleScroll
+    handleScroll();
 
+    // Listen for scroll events
     window.addEventListener("scroll", handleScroll);
+
+    // Cleanup the event listener on component unmount
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -32,10 +37,8 @@ const section7 = () => {
 
   return (
       <div className="involvement">
-        <img className={`involvement-img ${isVisible ? "slide-in7" : ""}`}
-        ref={divRef} src={Research6} alt="" />
-        <div className={`involve1 ${isVisible ? "slide-in7" : ""}`}
-        ref={divRef}>
+        <img className="involvement-img slide-in-text7" src={Research6} alt="" />
+        <div className="involve1 slide-in-text7">
           <h2>
             <span className="involve1-span">How to Get Involved?</span>
           </h2>

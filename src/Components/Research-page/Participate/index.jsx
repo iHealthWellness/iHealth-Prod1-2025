@@ -1,41 +1,45 @@
 
-import React, {useEffect, useState, useRef} from "react";
+import React, {useEffect } from "react";
 import "./index.css";
 import Research5 from "src/Assets/Images/Research-5.png";
 
 const section6 = () => {
 
-  const [isVisible, setIsVisible] = useState(false);
-  const divRef = useRef(null);
-
   useEffect(() => {
-    function handleScroll() {
-      const div = divRef.current;
-      if (div) {
-        const rect = div.getBoundingClientRect();
-        const windowHeight =
-          window.innerHeight || document.documentElement.clientHeight;
+    const textElements = document.querySelectorAll(".slide-in-text6");
+    const handleScroll = () => {
+      textElements.forEach((textElement) => {
+        const slideInAt =
+          window.scrollY +
+          window.innerHeight -
+          textElement.getBoundingClientRect().top;
+        const elementBottom = textElement.offsetTop + textElement.clientHeight;
+        const isHalfShown = slideInAt > textElement.offsetTop;
+        const isNotScrolledPast = window.scrollY < elementBottom;
 
-        if (rect.top <= windowHeight && rect.bottom >= 0) {
-          setIsVisible(true);
+        if (isHalfShown && isNotScrolledPast) {
+          textElement.classList.add("active");
         } else {
-          setIsVisible(false);
+          textElement.classList.remove("active");
         }
-      }
-    }
+      });
+    };
+    // Initial call to handleScroll
+    handleScroll();
 
+    // Listen for scroll events
     window.addEventListener("scroll", handleScroll);
+
+    // Cleanup the event listener on component unmount
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  
   return (
     <div id="participate">
     <div id="participate" className="Participate">
       {/* <div className="slide-in-text"> */}
-      <div className={`participate ${isVisible ? "slide-in6" : ""}`}
-        ref={divRef}>
+      <div className="participate slide-in-text6">
         <h1 className="participate1">
           Participate in Research for Neurofibromatosis: Making a Difference
         </h1>
@@ -53,8 +57,7 @@ const section6 = () => {
         </div>
       </div>
       {/* </div> */}
-      <div className={`participating ${isVisible ? "slide-in-6" : ""}`}
-        ref={divRef}>
+      <div className="participating slide-in-text6">
         <h2>
           <span className="participating-span">
             Participating in NF research offers several benefits:

@@ -44,13 +44,6 @@ body {
 
 .peginter {
   margin-bottom: 10px;
-  opacity: 0;
-  transform: translateX(50%);
-  transition: opacity 0.5s ease-in-out, transform 0.8s ease-in-out;
-}
-.peginter.slide-in5 {
-  opacity: 1;
-  transform: translateX(0);
 }
 
 .peginter-span {
@@ -88,6 +81,16 @@ body {
   font-size: 20px;
   line-height: 1.5;
   text-align: justify;
+}
+.slide-in-text5 {
+  opacity: 0;
+  transform: translateX(50%);
+  transition: opacity 0.4s, transform 0.5s;
+}
+
+.slide-in-text5.active {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 
