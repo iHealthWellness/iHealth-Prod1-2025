@@ -21,30 +21,6 @@
 }
 
 
-
-
-/* .team-directors-header {
-    padding-top: 15px;
-    font-family: Roboto;
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 58px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #07235B;
-}
-
-.team-directors-tab {
-    color: #858EAD;
-    margin-top: 5px;
-    font-family: Roboto;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 34px;
-    letter-spacing: 0em;
-    margin-bottom: 30px;
-} */
-
 .team-directors-header,
 .team-directors-tab {
     font-family: Roboto;
@@ -58,6 +34,65 @@
     text-align: left; /* Center text on all screens */
 
 }
+
+
+
+/* Set a consistent margin for the page holder */
+.page-holder {
+    margin: 0 auto; /* Center the content horizontally */
+    width: 90%;
+    max-width: 1006px; /* Set a maximum width for the content */
+}
+
+/* Add padding to the board-directors-tab, board-directors-tab2, and board-directors-tab3 sections */
+.board-directors-tab,
+.board-directors-tab2,
+.board-directors-tab3 {
+    margin: 0 auto; /* Center the content horizontally */
+    width: 100%; /* Make the sections take full width */
+    max-width: 1006px; /* Set a maximum width for the content */
+    padding: 0 20px; /* Add padding to the right and left */
+}
+
+/* Media Query for Small Screens (e.g., smartphones) */
+@media screen and (max-width: 768px) {
+    /* Remove the maximum width and adjust padding for smaller screens */
+    .page-holder,
+    .board-directors-tab,
+    .board-directors-tab2,
+    .board-directors-tab3 {
+        max-width: 100%; /* Remove the maximum width for smaller screens */
+        padding: 0 20px; /* Add padding to the right and left */
+    }
+}
+
+/* Media Query for Large Screens (e.g., tablets and desktops) */
+@media (min-width: 1200px) {
+    /* Adjust the maximum width and padding for larger screens if needed */
+    .page-holder {
+        max-width: 1006px; /* Adjust the maximum width for larger screens if needed */
+    }
+    .board-directors-tab,
+    .board-directors-tab2,
+    .board-directors-tab3 {
+        max-width: 1006px; /* Adjust the maximum width for larger screens if needed */
+        padding: 0 20px; /* Adjust padding for larger screens if needed */
+    }
+}
+
+/* Media Query for Extra Large Screens (e.g., large desktops) */
+@media (min-width: 1600px) {
+    /* Adjust the maximum width and padding for even larger screens if needed */
+    .page-holder,
+    .board-directors-tab,
+    .board-directors-tab2,
+    .board-directors-tab3 {
+        max-width: 2000px; /* Adjust the maximum width for even larger screens if needed */
+        padding: 0 20px; /* Adjust padding for even larger screens if needed */
+    }
+}
+
+/* Rest of your CSS code here */
 
 
 .team-directors-header {
@@ -160,18 +195,6 @@
     
 }
 
-
-/* .teamboard-tab.slide-in,
-.board-directors-tab.slide-in,
-.board-directors-tab1.slide-in,
-.board-directors-tab2.slide-in,
-.board-directors-tab3.slide-in,
-.teamboard-tab2.slide-in {
-    opacity: 1;
-    transform: translateX(0);
-    bottom: 25px;
-    max-width: 100%;
-} */
 
 
 

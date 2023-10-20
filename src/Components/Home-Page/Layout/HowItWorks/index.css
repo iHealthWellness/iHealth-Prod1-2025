@@ -37,6 +37,8 @@
   }
 }
 
+
+
 @media only screen and (min-width: 1024px) {
   .how-it-works-container {
     padding: 5rem 0;
@@ -58,6 +60,27 @@
     align-items: start;
     row-gap: 2rem;
   }
+}
+
+
+.how-it-works-learn-more-box {
+  /* You can add specific styles if you want this box to stand out from the regular cards */
+}
+
+.how-it-works-learn-more-box .how-it-works-button-label {
+  text-decoration: underline; /* gives the Learn More a visual cue that it's clickable */
+}
+
+.how-it-works-learn-more-box:hover .how-it-works-button-label {
+  color: #2947a9; /* change the color on hover for better UX */
+}
+
+.how-it-works-learn-more-box .how-it-works-content-block {
+  /* Add any additional styles for positioning or appearance if needed */
+}
+
+.how-it-works-learn-more-box .how-it-works-button {
+  /* Add any additional styles for positioning or appearance if needed */
 }
 
 /* .how-it-works-benefit-container {
