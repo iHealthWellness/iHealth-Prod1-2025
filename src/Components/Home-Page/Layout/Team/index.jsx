@@ -1,5 +1,5 @@
 import "./index.css";
-import joinVideo from 'src/Assets/Images/Join.mp4';
+import joinVideo from 'src/Assets/Images/Join2.mp4';
 
 const Team = () => {
   return (
