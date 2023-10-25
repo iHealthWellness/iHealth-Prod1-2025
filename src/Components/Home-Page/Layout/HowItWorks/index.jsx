@@ -3,6 +3,7 @@ import React, { useState, useRef, useEffect } from "react";
 import HowItWorksCard from "./HowItWorksCard";
 
 import HowItWorksSteps from "src/Constants/HomePage/HowItWorks.js";
+import LearnMoreCard from "./LearnMoreCard";
 
 import "./index.css";
 
@@ -45,19 +46,25 @@ const HowItWorks = () => {
             isVisible={isVisible}
           />
         ))}
-        <div className="how-it-works-learn-more-box">
-          <div className="how-it-works-button even">
-            <a
-              className="how-it-works-learn-more how-it-works-button-label"
-              href="#"
-            >
-              Learn More &gt;
-            </a>
-          </div>
-        </div>
+         <LearnMoreCard isVisible={isVisible} />
       </div>
     </section>
   );
 };
 
 export default HowItWorks;
+
+
+
+
+
+{/* <div className="how-it-works-learn-more-box">
+<div className="how-it-works-button even">
+  <a
+    className="how-it-works-learn-more how-it-works-button-label"
+    href="#"
+  >
+    Learn More &gt;
+  </a>
+</div>
+</div> */}

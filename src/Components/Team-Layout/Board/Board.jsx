@@ -16,9 +16,6 @@ import teamData from "src/Components/Team-Layout/DataPage/TeamData.jsx";
 import closeButton from "src/Assets/Images/close-button.png";
 import closeButton2 from "src/Assets/Images/close-button-2.png";
 
-import linkedIn from "src/Assets/Icons/linkedin.svg";
-
-import plusLogo from "src/Assets/Icons/ic_round-plus.svg";
 import roundedFrame from "src/Assets/Icons/rounded-frame.svg";
 
 import "./Board.css";
@@ -243,25 +240,25 @@ const Board = () => {
         </div>
       </div>
 
-      <div
-        id="Advisory"
-        className={`teamboard-tab2 ${isVisible.divFourRef ? "slide-in" : ""}`}
-        ref={divFourRef}
-      >
-        <div className="team-der">
-          <h2 className="team-directors-header">Advisory Council</h2>
-          <h3 className="team-directors-tab">
-            {" "}
-            The Advisory Committee for our health and wellness startup serves as
+
+
+      <div id="Board" className="page-holder">
+        {/* <div className={`teamboard-tab ${isVisible.divRef ? "slide-in" : ""}`}
+                    ref={divRef}> */}
+
+        <h2 className="team-directors-header">Advisory Council</h2>
+
+        <h3 className="team-directors-tab">
+        The Advisory Committee for our health and wellness startup serves as
             a group of experienced advisors who provide valuable insights,
             guidance, and expertise. They contribute to strategic
             decision-making, offer industry-specific knowledge, and provide
             recommendations on various aspects of our business, helping us drive
             innovation and ensure the effectiveness of our programs and
             services.
-          </h3>
-        </div>
+        </h3>
       </div>
+
 
       <div
         className={`board-directors-tab3 ${

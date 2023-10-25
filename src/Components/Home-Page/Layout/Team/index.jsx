@@ -1,4 +1,5 @@
 import "./index.css";
+import joinVideo from 'src/Assets/Images/Join2.mp4';
 
 const Team = () => {
   return (
@@ -16,10 +17,7 @@ const Team = () => {
       <div className="team-bottom-block">
         <div className="team-video-card">
           <video autoPlay muted loop playsInline className="team-video">
-            <source
-              src="https://v4.cdnpk.net/videvo_files/video/free/video0455/large_watermarked/_import_609115c00e5a15.53371416_FPpreview.mp4"
-              type="video/mp4"
-            />
+            <source src={joinVideo} type="video/mp4" />
           </video>
         </div>
 
