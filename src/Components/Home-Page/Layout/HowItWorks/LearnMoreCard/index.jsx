@@ -1,16 +1,15 @@
 import React from 'react';
 import "./index.css";
+import step5Image from "src/Assets/Images/Learn-more.jpg";
+
 
 const LearnMoreCard = ({ isVisible }) => {
   return (
-    <div className={`lmc-container ${isVisible ? "lmc-visible" : ""}`}>
-      <div className="lmc-content-block">
-        <h2 className="lmc-title">
-          <a href="#">Learn More</a>
-        </h2>
-      </div>
+    <div className={`lmc-container ${isVisible ? "lmc-visible" : ""}`} style={{backgroundImage: `url(${step5Image})`}}>
+
     </div>
   );
 };
+
 
 export default LearnMoreCard;

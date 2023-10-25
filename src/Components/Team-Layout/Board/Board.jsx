@@ -16,9 +16,6 @@ import teamData from "src/Components/Team-Layout/DataPage/TeamData.jsx";
 import closeButton from "src/Assets/Images/close-button.png";
 import closeButton2 from "src/Assets/Images/close-button-2.png";
 
-import linkedIn from "src/Assets/Icons/linkedin.svg";
-
-import plusLogo from "src/Assets/Icons/ic_round-plus.svg";
 import roundedFrame from "src/Assets/Icons/rounded-frame.svg";
 
 import "./Board.css";
