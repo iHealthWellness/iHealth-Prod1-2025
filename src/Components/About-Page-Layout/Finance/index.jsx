@@ -12,8 +12,8 @@ import img11 from "src/Assets/Icons/Vector6.png";
 import img12 from "src/Assets/Icons/Vector7.png";
 import img13 from "src/Assets/Icons/Vector8.png";
 import img14 from "src/Assets/Icons/Vector9.png";
-import img17 from "src/Assets/Images/pie-chart.png";
-import img18 from "src/Assets/Images/pie-chart1.png";
+import img17 from "src/Assets/Images/pie-chart2.png";
+import img18 from "src/Assets/Images/pie-chart3.png";
 
 
 const Finance = () => {

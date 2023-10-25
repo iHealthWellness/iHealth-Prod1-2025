@@ -11,39 +11,15 @@
 
 .teamboard-tab,
 .teamboard-tab2 {
-    background-color: #f6f8f7; /* Adjust background color for smaller screens if needed */
+    background-color: #f6f8f7; 
     overflow-x: hidden;
 }
 .team-der h2.team-directors-header,
 .team-der h3.team-directors-tab {
-    margin-left: 200px; /* Adjust the margin for small screens */
-    margin-right: 200px; /* Adjust the margin for small screens */
+    margin-left: 200px; 
+    margin-right: 200px;
 }
 
-
-
-
-/* .team-directors-header {
-    padding-top: 15px;
-    font-family: Roboto;
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 58px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #07235B;
-}
-
-.team-directors-tab {
-    color: #858EAD;
-    margin-top: 5px;
-    font-family: Roboto;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 34px;
-    letter-spacing: 0em;
-    margin-bottom: 30px;
-} */
 
 .team-directors-header,
 .team-directors-tab {
@@ -55,9 +31,64 @@
     color: #858EAD;
     margin-top: 5px;
     margin-bottom: 30px;
-    text-align: left; /* Center text on all screens */
+    text-align: left; 
 
 }
+
+
+
+.page-holder {
+    margin: 0 auto; 
+    width: 90%;
+    max-width: 1006px; 
+}
+
+.board-directors-tab,
+.board-directors-tab2,
+.board-directors-tab3 {
+    margin: 0 auto; 
+    width: 100%; 
+    max-width: 1006px; 
+    padding: 0 20px; 
+}
+
+
+@media screen and (max-width: 768px) {
+   
+    .page-holder,
+    .board-directors-tab,
+    .board-directors-tab2,
+    .board-directors-tab3 {
+        max-width: 100%; 
+        padding: 0 20px; 
+    }
+}
+
+@media (min-width: 1200px) {
+  
+    .page-holder {
+        max-width: 1006px;
+    }
+    .board-directors-tab,
+    .board-directors-tab2,
+    .board-directors-tab3 {
+        max-width: 2006px; 
+        padding: 0 20px; 
+    }
+}
+
+@media (min-width: 1600px) {
+    
+    .page-holder,
+    .board-directors-tab,
+    .board-directors-tab2,
+    .board-directors-tab3 {
+        max-width: 2000px; 
+        padding: 0 20px; 
+}
+}
+
+/* Rest of your CSS code here */
 
 
 .team-directors-header {
@@ -65,31 +96,31 @@
     font-weight: 700;
     line-height: 58px;
     color: #07235B;
-    padding-top: 2%; /* Adjust as needed for spacing */
+    padding-top: 2%; 
 }
 
-/* Media Query for Small Screens (e.g., smartphones) */
+
 @media screen and (max-width: 768px) {
     .team-directors-header,
     .team-directors-tab {
-        font-size: 20px; /* Adjust as needed for smaller screens */
+        font-size: 20px; 
         line-height: 28px;
-        margin-top: 2%; /* Adjust as needed for spacing */
-        margin-bottom: 20px; /* Adjust as needed for spacing */
+        margin-top: 2%; 
+        margin-bottom: 20px; 
     }
 
     .team-directors-header {
-        font-size: 36px; /* Adjust as needed for smaller screens */
+        font-size: 36px;
         line-height: 44px;
-        padding-top: 5%; /* Adjust as needed for spacing */
+        padding-top: 5%; 
     }
 }
 
 .board-image {
     position: relative;
-    width: 100%; /* Use percentage for responsiveness */
-    max-width: 347px; /* Set a max-width if needed */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%; 
+    max-width: 347px; 
+    height: auto; 
     margin: auto;
     z-index: 999;
     margin-bottom: 5px;
@@ -128,7 +159,7 @@
 .board-directors-tab2,
 .board-directors-tab3,
 .board-directors-tab1 {
-    padding: 0 20px 20px; /* 0 (top), 20px (right & left), 20px (bottom) */
+    padding: 0 20px 20px; 
 }
 
 
@@ -140,49 +171,36 @@
     display: flex;
     padding: 0;
 }
-@media (min-width: 1200px) { /* adjust 1200px to whatever breakpoint you consider 'large' */
+@media (min-width: 1200px) { 
     .board-directors-tab,
     .board-directors-tab2,
     .board-directors-tab3,
     .board-directors-tab1 {
-        padding: 0 30px 20px; /* 0 (top), 20px (right & left), 20px (bottom) */
+        padding: 0 30px 20px; 
     }
     
 }
 
-@media (min-width: 1600px) { /* adjust 1200px to whatever breakpoint you consider 'large' */
+@media (min-width: 1600px) { 
     .board-directors-tab,
     .board-directors-tab2,
     .board-directors-tab3,
     .board-directors-tab1 {
-        padding: 0 300px 20px; /* 0 (top), 20px (right & left), 20px (bottom) */
+        padding: 0 300px 20px; 
     }
     
 }
 
 
-/* .teamboard-tab.slide-in,
-.board-directors-tab.slide-in,
-.board-directors-tab1.slide-in,
-.board-directors-tab2.slide-in,
-.board-directors-tab3.slide-in,
-.teamboard-tab2.slide-in {
-    opacity: 1;
-    transform: translateX(0);
-    bottom: 25px;
-    max-width: 100%;
-} */
 
 
 
 
-
-/* Media query for small screens (adjust the max-width as needed) */
 @media only screen and (max-width: 768px) {
     .team-der h2.team-directors-header,
     .team-der h3.team-directors-tab {
-        margin-left: 20px; /* Adjust the margin for small screens */
-        margin-right: 20px; /* Adjust the margin for small screens */
+        margin-left: 20px; 
+        margin-right: 20px; 
     }
 
     .board-directors-tab,
@@ -215,8 +233,8 @@
     position: absolute;
     background-color: #fff;
     border-radius: 5vh;
-    width: 50%; /* Adjust width for smaller screens */
-    max-width: 30rem; /* Limit maximum width */
+    width: 50%; 
+    max-width: 30rem; 
     height: 80%;
     margin: 5%;
     overflow: scroll;
@@ -378,10 +396,10 @@
     }
 
     .btn-board-tab {
-        margin-right: 105px; /* Adjust this value as needed */
-        margin-bottom: -40px; /* Adjust this value as needed */
-        width: 30px; /* Adjust the width */
-        height: 30px; /* Adjust the height */
+        margin-right: 105px; 
+        margin-bottom: -40px; 
+        width: 30px; 
+        height: 30px; 
     }
 
     .popup-linkedin-icon {
@@ -431,8 +449,8 @@
     position: absolute;
     background-color: #fff;
     border-radius: 5vh;
-    width: 80%; /* Adjust width for smaller screens */
-    max-width: 30rem; /* Limit maximum width */
+    width: 80%; 
+    max-width: 30rem; 
     height: 80%;
     margin: 5%;
     overflow: scroll;
@@ -442,12 +460,12 @@
 
 .popup-name {
     font-size: 24px;
-    text-align: center; /* Center the text */
+    text-align: center; 
 }
 
 .popup-linkedin {
     display: flex;
-    align-items: center; /* Center the items vertically */
+    align-items: center; 
 }
 
 .popup-linkedin:hover {
@@ -455,7 +473,7 @@
 }
 
 .popup-linkedin-icon {
-    margin-left: 1%; /* Adjust the margin as needed */
+    margin-left: 1%; 
 }
 
 .popup-linkedin-text {
@@ -498,31 +516,30 @@
     margin: 20px 0;
 }
 
-/* Media query for small screens (adjust the max-width as needed) */
 @media only screen and (max-width: 768px) {
     .popup-content {
-        width: 90%; /* Adjust width for smaller screens */
+        width: 90%; 
         max-width: none;
     }
 
     .popup-linkedin-icon {
-        margin-left: 5%; /* Adjust the margin as needed */
+        margin-left: 5%; 
     }
 
     .popup-name {
-        font-size: 20px; /* Adjust font size for smaller screens */
+        font-size: 20px; 
     }
     .close-btn-2{
         margin-top: 20px;
     }
     .close-btn,
     .close-btn-2 {
-        width: 7vh; /* Adjust the width for smaller screens */
+        width: 7vh; 
     }
 
     .popup-img {
-        width: 60%; /* Adjust image size for smaller screens */
-        margin-left: 20%; /* Adjust margin for smaller screens */
+        width: 60%; 
+        margin-left: 20%; 
     }
 
     .board-directors-tab,
@@ -532,19 +549,18 @@
         padding-bottom: 20px;
     }
 }
-/* ... (previous CSS code) */
 
-/* Position Close Button on Top Right of Cards */
+
+
 .close-btn {
     position: absolute;
     top: 0;
     right: 0;
     width: 5vh;
     margin: 10px;
-    z-index: 2; /* Ensure it's above cards */
+    z-index: 2; 
   }
   
-  /* Position Close Button 2 on Bottom Center of Cards */
   .close-btn-2 {
     width: 5vh;
     position: absolute;
@@ -553,7 +569,5 @@
     padding-top: 20px;
   }
   
-  
-  /* ... (rest of the CSS remains the same) */
   
 
