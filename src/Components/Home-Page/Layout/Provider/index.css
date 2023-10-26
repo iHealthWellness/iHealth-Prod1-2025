@@ -2,6 +2,7 @@
   background: #f0f7fd;
   display: flex;
   justify-content: center;
+  padding: 0 50px;
 }
 
 .provider-inner-container {
@@ -58,21 +59,25 @@ width: 250px;
     line-height: 110%;
     min-width: 375px;
     width: 75%;
+    
   }
 
   .provider-form {
     align-items: center;
+    
   }
 
   .provider-form-inputs {
     min-width: 375px;
     width: 70%;
+    padding: 0 50px;
   }
 }
 
 @media only screen and (min-width: 1024px) {
   .provider-container {
     padding-bottom: 3rem;
+    
   }
 
   .provider-inner-container {
