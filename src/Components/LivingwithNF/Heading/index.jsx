@@ -8,9 +8,9 @@ function index() {
       <h1>Living with Neurofibromotisis</h1>
       <p className="nf-paragraph">
         A comprehensive web resource dedicated to providing support,
-        information, and resources for individuals and families affected by
-        neurofibromatosis (NF). It servers as a hub for those navigating the
-        challenges associated with NF, offering a wealth of valuable content.
+        information,<br /> and resources for individuals and families affected by
+        neurofibromatosis <br /> (NF). It servers as a hub for those navigating the
+        challenges associated with<br /> NF, offering a wealth of valuable content.
       </p>
       <div className="nf-btn-container">
         <button className="nf-btn">Sign-Up for Registry</button>
