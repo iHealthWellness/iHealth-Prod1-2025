@@ -5,7 +5,8 @@
     background-color:#f0f7fd; 
     padding: 3rem 5rem ;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    margin-top: 3rem;
 }
 .survey-content{
    display: flex;

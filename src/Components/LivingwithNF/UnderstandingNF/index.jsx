@@ -3,7 +3,7 @@ import "./index.css";
 function index() {
   return (
     <div>
-      <div className="understandingnf-heading">
+      <div id="understand-nf" className="understandingnf-heading">
         <h1 className="heading">Understanding NF</h1>
         <p className="paragraph">
           Neurofibromatosis (NF) is a group of genetic disorders that <br /> affect the

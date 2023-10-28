@@ -4,7 +4,7 @@ import React from 'react'
 
 function index() {
   return (
-    <div className="survey-container">
+    <div id="take-survey" className="survey-container">
       <div className="survey-content">
          <h1 className="survey-heading">Survey Now: Clinical Trials</h1>
          <p>Join us in shaping the future of medicine-take the survey <br />and find your match in the world of clinical trials!</p>
