@@ -8,23 +8,38 @@
   padding: 3rem 0 3rem 0;
 }
 
-.container {
+.img-container {
     position: relative; /* Required for positioning */
-   
+ 
 }
-
+.cause-container{
+    padding-bottom: 10rem;
+}
 .overlay {
     position: absolute;
-    top: 100%; /* Position halfway down the parent */
+    top: 87%; /* Position halfway down the parent */
     left: 50%; /* Position halfway across the parent */
     transform: translate(-50%, -50%); /* Center the overlay */
     background-color:  rgba(246,245,246,255);/* Add a semi-transparent background color */
-    width: 75%;
-    height: 80%;
+    width: 83%;
+    height: 55%;
     color:black; /* Text color for the overlay content */
     font-size: 1.5rem;
     font-weight: 400;
-    line-height: 140%;
+    line-height: 150%;
     padding: 4rem ;
     border-radius: 3rem;
 }
+/* mobile */
+@media screen and (max-width: 479px) {
+ 
+    }
+    /* tablet */
+    @media screen and (min-width: 480px) and (max-width: 1023px){
+      
+       
+    }
+    /* desktop */
+    @media screen and (min-width: 1024px){
+      
+    }
