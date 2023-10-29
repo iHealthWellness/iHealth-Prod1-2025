@@ -13,27 +13,29 @@ function index() {
             NF2, and Schwannomatosis <br /> can be inherited from a parent who
             carries the mutated gene, or they can occur spontaneously due
             <br /> to new mutations in the affected person. Individuals with NF
-            have a 50% chance of passing the <br />condition on to their children. <br /> <br />
+            have a 50% chance of passing the <br />
+            condition on to their children. <br /> <br />
           </p>
           <p>
             Genetic testing can identify mutations assoiated with specific types
             of NF, aiding in early
             <br /> diagnosis and management. While there is no cure for NF,
             treatment focuses on managing <br /> symptoms, monitoring tumor
-            growth, and providing supportive care. <br /><br />
+            growth, and providing supportive care. <br />
+            <br />
           </p>
           <p>
             In conclusion, neurofibromatosis encompasses a group of genetic
             disorders the result in the <br />
             formation of tumores on nerves, leading to various health issues.
-            Understanding the different types <br />of NF, their
-            causes, and the genetic aspects involved is crucial for early
-            detection, appropriate <br />
+            Understanding the different types <br />
+            of NF, their causes, and the genetic aspects involved is crucial for
+            early detection, appropriate <br />
             medical intervention, and improved quality of life for affected
             individuals.
           </p>
-         
-        </div> <img className="doc-img" src={doctor} />
+        </div>{" "}
+        <img className="doc-img" src={doctor} />
       </div>
     </div>
   );

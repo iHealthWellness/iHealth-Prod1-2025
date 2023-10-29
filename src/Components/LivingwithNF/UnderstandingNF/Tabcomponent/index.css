@@ -23,3 +23,49 @@
      border-radius: 4rem;
 
  }
+  /* mobile */
+@media screen and (max-width: 579px) {
+    .tab-image {
+        max-width: 25%;
+        display: block;
+        border-radius: 4rem;
+    }
+}
+/* tablet */
+@media screen and (min-width: 480px) and (max-width: 1023px){
+    .main-tab-container {
+        padding: 2rem 1rem 2rem 1rem;
+    }
+    .tab-container {
+        padding: 1rem 1rem 1rem 1rem;
+     
+    }
+    .tab-paragraph {
+        font-size: 1.2rem;
+        font-weight: 400;
+        text-align: center;
+        line-height: 140%;
+        padding: 1rem 2rem 0 0;
+    }
+    .tab-image {
+        max-width: 35%;
+        display: block;
+        border-radius: 4rem;
+    }
+}
+/* desktop */
+@media screen and (min-width: 1024px){
+
+}
+ /* mobile */
+@media screen and (max-width: 479px) {
+  
+    }
+    /* tablet */
+    @media screen and (min-width: 480px) and (max-width: 1023px){
+  
+    }
+    /* desktop */
+    @media screen and (min-width: 1024px){
+   
+    }

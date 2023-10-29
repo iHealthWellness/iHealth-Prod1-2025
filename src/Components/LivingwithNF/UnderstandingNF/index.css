@@ -18,3 +18,37 @@
     line-height: 110%;
    
 }
+  /* mobile */
+  @media screen and (max-width: 479px) {
+    .understandingnf-heading{
+      padding: 0 5rem 0 5rem;
+     
+   }
+    }
+    /* tablet */
+    @media screen and (min-width: 480px) and (max-width: 950px){
+      .understandingnf-heading{
+       padding: 0 5rem 0 5rem;
+      
+    } 
+    .heading{
+        font-size: 2rem;
+        font-weight: 600;
+        line-height: 80%;
+        padding: 1rem;
+      }
+      .paragraph{
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 110%;
+       
+    }
+    }
+
+    /* desktop */
+    @media screen and (min-width: 1024px){
+      .understandingnf-heading{
+        padding: 0 33rem 0 33rem;
+       
+     }
+    }

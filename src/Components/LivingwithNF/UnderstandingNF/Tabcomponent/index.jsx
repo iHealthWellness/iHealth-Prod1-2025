@@ -103,12 +103,12 @@ function index() {
       <CustomTabPanel value={value} index={0}>
         <div className="tab-container">
           <div className="tab-paragraph">
-          NF1 is the most common type of <br />neurofibromatosis, affecting about 1
-            in 3,000 <br />people worldwide. It is caused by mutations in<br /> the NF1 gene
-            and results in the growth of tumors <br />on nerves throughout the body.
-            These tumors,<br /> known as neurofibromas, can vary in size and<br /> may cause
-            a range of symptoms, including skin<br /> changes, bone deformities, and
-            learning<br /> disabilities.
+          NF1 is the most common type of neurofibromatosis, affecting about 1
+            in 3,000 people worldwide. It is caused by mutations   NF1 gene
+            and results in the growth of tumors on nerves throughout the body.
+            These tumors, known as neurofibromas, can vary in size and may cause
+            a range of symptoms, including skin changes, bone deformities, and
+            learning disabilities.
           </div>
           <img className="tab-image" src={Headache} />
           </div>
@@ -116,12 +116,12 @@ function index() {
       <CustomTabPanel value={value} index={1}>
       <div className="tab-container">
           <div className="tab-paragraph">
-            NF2 is the most common type of <br />neurofibromatosis, affecting about 1
-            in 3,000 <br />people worldwide. It is caused by mutations in<br /> the NF1 gene
-            and results in the growth of tumors <br />on nerves throughout the body.
-            These tumors,<br /> known as neurofibromas, can vary in size and<br /> may cause
-            a range of symptoms, including skin<br /> changes, bone deformities, and
-            learning<br /> disabilities.
+            NF2 is the most common type of neurofibromatosis, affecting about 1
+            in 3,000 people worldwide. It is caused by mutations   NF1 gene
+            and results in the growth of tumors on nerves throughout the body.
+            These tumors, known as neurofibromas, can vary in size and may cause
+            a range of symptoms, including skin changes, bone deformities, and
+            learning disabilities.
           </div>
           <img className="tab-image" src={Headache} />
           </div>
@@ -129,12 +129,12 @@ function index() {
       <CustomTabPanel value={value} index={2}>
       <div className="tab-container">
           <div className="tab-paragraph">
-          NF3 is the most common type of <br />neurofibromatosis, affecting about 1
-            in 3,000 <br />people worldwide. It is caused by mutations in<br /> the NF1 gene
-            and results in the growth of tumors <br />on nerves throughout the body.
-            These tumors,<br /> known as neurofibromas, can vary in size and<br /> may cause
-            a range of symptoms, including skin<br /> changes, bone deformities, and
-            learning<br /> disabilities.
+          Schwannomatosis is the most common type of neurofibromatosis, affecting about 1
+            in 3,000 people worldwide. It is caused by mutations   NF1 gene
+            and results in the growth of tumors on nerves throughout the body.
+            These tumors, known as neurofibromas, can vary in size and may cause
+            a range of symptoms, including skin changes, bone deformities, and
+            learning disabilities.
           </div>
           <img className="tab-image" src={Headache} />
           </div>
