@@ -1,19 +1,25 @@
 .circle-img-container{
-    background-color: rgba(246,245,246,255);
-    display: flex;
+    background-color: rgba(246, 245, 246, 255);
+        display: flex;
         justify-content: center;
         padding: 5rem 0 1.5rem;
-        color: rgb(7, 35, 91);
+        color:#07235B;
         font-family: Roboto;
-        font-size: 1rem;
-        font-weight: 900;
         text-align: center;
+        display: flex;
+        font-family: Roboto;
+        font-size: 1.875rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 110%;
+        /* 2.0625rem */
 
 }
 .image{
-    border-radius: 50%;
-    width: 30rem;
-    height: 30rem;
+    border-radius:28.125rem;
+    width: 28.125rem;
+    height: 28.125rem;
+    flex-shrink: 0;
 }
 .circle-img1{
    position: relative;

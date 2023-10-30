@@ -18,9 +18,12 @@
  }
 
  .tab-image {
-     max-width: 40%;
+     /* max-width: 40%; */
      display: block;
      border-radius: 4rem;
+     width: 32.3125rem;
+height: 23.125rem;
+border-radius: 3.125rem;
 
  }
   /* mobile */

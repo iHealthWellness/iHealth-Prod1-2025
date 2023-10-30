@@ -18,14 +18,27 @@
     text-align: center;
     gap: 3rem;
     min-width: 40%;
+    font-size: 1.25rem;
+font-style: normal;
+font-weight: 400;
+line-height: 110%; /* 1.375rem */
 
 }
 
 .enroll-content2 {
     padding: 0 0 0 7rem;
     text-align: center;
+    font-size: 1.25rem;
+font-style: normal;
+font-weight: 400;
+line-height: 110%; /* 1.375rem */
 }
 
 .signup-heading {
+    color: #07235B;
+    font-family: Roboto;
     font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 3.6rem */
 }

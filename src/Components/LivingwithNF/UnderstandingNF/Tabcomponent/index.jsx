@@ -103,12 +103,7 @@ function index() {
       <CustomTabPanel value={value} index={0}>
         <div className="tab-container">
           <div className="tab-paragraph">
-          NF1 is the most common type of neurofibromatosis, affecting about 1
-            in 3,000 people worldwide. It is caused by mutations   NF1 gene
-            and results in the growth of tumors on nerves throughout the body.
-            These tumors, known as neurofibromas, can vary in size and may cause
-            a range of symptoms, including skin changes, bone deformities, and
-            learning disabilities.
+          NF1 is the most common type of neurofibromatosis, affecting about 1 in 3,000 people worldwide. It is caused by mutations in the NF1 gene and results in the growth of tumors on nerves throughout the body. These tumors, known as neurofibromas, can vary in size and may cause a range of symptoms, including skin changes, bone deformities, and learning disabilities.
           </div>
           <img className="tab-image" src={Headache} />
           </div>
