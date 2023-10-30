@@ -24,7 +24,7 @@ function index() {
             style={{ color: "inherit", textDecoration: "none" }}
             to="#take-survey"
           >
-            <img className="circle-img2 image" src={NF2} />
+            <img className="circle-img2  image" src={NF2} />
             <p className="img-txt2">
               Survey Now: <p>Clinical Trials</p>
             </p>
