@@ -1,34 +1,41 @@
 
-import React, { useEffect} from "react";
+import React, { useEffect } from "react";
 import "./index.css";
 import Research1 from "src/Assets/Images/Research-1.png";
 
 const section1 = () => {
 
   useEffect(() => {
-    const textElements = document.querySelectorAll('.slide-in-text');
-
+    const textElements = document.querySelectorAll(".slide-in-text1");
     const handleScroll = () => {
       textElements.forEach((textElement) => {
-        const slideInAt = (window.scrollY + window.innerHeight) - textElement.clientHeight / 2;
+        const slideInAt =
+          window.scrollY +
+          window.innerHeight -
+          textElement.getBoundingClientRect().top;
         const elementBottom = textElement.offsetTop + textElement.clientHeight;
         const isHalfShown = slideInAt > textElement.offsetTop;
         const isNotScrolledPast = window.scrollY < elementBottom;
 
         if (isHalfShown && isNotScrolledPast) {
-          textElement.classList.add('active');
+          textElement.classList.add("active");
         } else {
-          textElement.classList.remove('active');
+          textElement.classList.remove("active");
         }
       });
     };
+    // Initial call to handleScroll
+    handleScroll();
 
-    window.addEventListener('scroll', handleScroll);
+    // Listen for scroll events
+    window.addEventListener("scroll", handleScroll);
 
+    // Cleanup the event listener on component unmount
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+ 
 
   return (
     <div className="first-part">
@@ -42,7 +49,7 @@ const section1 = () => {
           </h1>
           <h2 className="side2">Advancing Research for a Brighter Future</h2>
         </div>
-        <div className="intro">
+        <div  className="intro slide-in-text1">
           <h3 className="introduction">Introduction</h3>
           <p className="welcome">
             Welcome to the Neurofibromatosis Research Homepage, dedicated to

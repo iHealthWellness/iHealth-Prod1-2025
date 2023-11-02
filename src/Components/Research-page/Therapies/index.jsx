@@ -3,33 +3,41 @@ import "./index.css";
 import Research3 from "src/Assets/Images/Research-3.png";
 
 const Section3 = () => {
-  useEffect(() => {
-    const textElements = document.querySelectorAll('.slide-in-text');
 
+  useEffect(() => {
+    const textElements = document.querySelectorAll(".slide-in-text3");
     const handleScroll = () => {
       textElements.forEach((textElement) => {
-        const slideInAt = (window.scrollY + window.innerHeight) - textElement.clientHeight / 2;
+        const slideInAt =
+          window.scrollY +
+          window.innerHeight -
+          textElement.getBoundingClientRect().top;
         const elementBottom = textElement.offsetTop + textElement.clientHeight;
         const isHalfShown = slideInAt > textElement.offsetTop;
         const isNotScrolledPast = window.scrollY < elementBottom;
 
         if (isHalfShown && isNotScrolledPast) {
-          textElement.classList.add('active');
+          textElement.classList.add("active");
         } else {
-          textElement.classList.remove('active');
+          textElement.classList.remove("active");
         }
       });
     };
+    // Initial call to handleScroll
+    handleScroll();
 
-    window.addEventListener('scroll', handleScroll);
+    // Listen for scroll events
+    window.addEventListener("scroll", handleScroll);
 
+    // Cleanup the event listener on component unmount
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   return (
     <div className="clinic" id="clinical">
+      <div className="Clinic slide-in-text3">
       <div className="clinical-therapies">
         <h1 className="clinic1">Clinical Drug Therapies</h1>
         <p className="clinic2">
@@ -94,6 +102,7 @@ const Section3 = () => {
           a significant step forward in advancing treatment strategies for
           individuals affected by this challenging condition.
         </p>
+      </div>
       </div>
     </div>
   );

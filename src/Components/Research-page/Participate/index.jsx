@@ -1,40 +1,45 @@
 
-import React, {useEffect} from "react";
+import React, {useEffect } from "react";
 import "./index.css";
 import Research5 from "src/Assets/Images/Research-5.png";
 
 const section6 = () => {
 
   useEffect(() => {
-    const textElements = document.querySelectorAll('.slide-in-text');
-
+    const textElements = document.querySelectorAll(".slide-in-text6");
     const handleScroll = () => {
       textElements.forEach((textElement) => {
-        const slideInAt = (window.scrollY + window.innerHeight) - textElement.clientHeight / 2;
+        const slideInAt =
+          window.scrollY +
+          window.innerHeight -
+          textElement.getBoundingClientRect().top;
         const elementBottom = textElement.offsetTop + textElement.clientHeight;
         const isHalfShown = slideInAt > textElement.offsetTop;
         const isNotScrolledPast = window.scrollY < elementBottom;
 
         if (isHalfShown && isNotScrolledPast) {
-          textElement.classList.add('active');
+          textElement.classList.add("active");
         } else {
-          textElement.classList.remove('active');
+          textElement.classList.remove("active");
         }
       });
     };
+    // Initial call to handleScroll
+    handleScroll();
 
-    window.addEventListener('scroll', handleScroll);
+    // Listen for scroll events
+    window.addEventListener("scroll", handleScroll);
 
+    // Cleanup the event listener on component unmount
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
   return (
     <div id="participate">
     <div id="participate" className="Participate">
       {/* <div className="slide-in-text"> */}
-      <div className="participate">
+      <div className="participate slide-in-text6">
         <h1 className="participate1">
           Participate in Research for Neurofibromatosis: Making a Difference
         </h1>
@@ -52,9 +57,7 @@ const section6 = () => {
         </div>
       </div>
       {/* </div> */}
-      <div className="slide-in-text">
-      </div>
-      <div className="participating">
+      <div className="participating slide-in-text6">
         <h2>
           <span className="participating-span">
             Participating in NF research offers several benefits:

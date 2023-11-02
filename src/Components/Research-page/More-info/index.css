@@ -3,6 +3,8 @@
   width: 100%;
   max-width: 1216px;
   padding: 0 24px; /* Added padding for better look on smaller devices */
+  overflow: hidden;
+ 
 }
 
 .more-info {
@@ -48,6 +50,7 @@
   margin: 100px auto 150px;
 }
 
+
 .evorolimus-img {
   width: 100%; /* Take full width on small screens */
   max-width: 470px; /* Max out at 470px */
@@ -66,6 +69,16 @@
   flex: 1; /* Allows the items to grow and take up equal width */
   max-width: calc(50% - 20px); /* Gives a little space between the two items */
   margin-bottom: 20px;
+}
+.slide-in-text4 {
+  opacity: 0;
+  transform: translateX(50%);
+  transition: opacity 0.4s, transform 0.5s;
+}
+
+.slide-in-text4.active {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 @media screen and (max-width: 820px) {
