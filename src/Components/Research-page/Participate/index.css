@@ -1,9 +1,13 @@
+
 .Participate {
   max-width: 1216px;
   margin: 0 auto;
   padding: 0 20px;  
   margin-top: -110px;
+  overflow: hidden;
 }
+
+
 
 .components {
   display: flex;
@@ -31,6 +35,7 @@
   height: auto;
 }
 
+
 .participate1 {
   color: #07235b;
   font-family: Roboto;
@@ -44,6 +49,8 @@
 .participating {
   margin: 10px 0 10px;
 }
+
+
 
 .participating-span, .participating-span2 {
   display: block;
@@ -72,6 +79,17 @@
   margin-top: 20px;
   text-align: justify;
 }
+.slide-in-text6 {
+  opacity: 0;
+  transform: translateX(50%);
+  transition: opacity 0.4s, transform 0.5s;
+}
+
+.slide-in-text6.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 
 
 
@@ -79,6 +97,9 @@
   .components-p, .participating-p, .participate1 {
     font-size: 18px;
   }
+  .components{
+  flex-direction: column;
+}
 
   .components-p{
     margin: 20px auto;
@@ -93,7 +114,7 @@
   }
   
   .components-img {
-    margin-top: 20px;
+    margin: 20px auto;
   }
   .participating-p {
     font-family: Roboto;

@@ -7,6 +7,7 @@ body {
   width: 100%;
   max-width: 1216px;
   padding: 0 20px; 
+  overflow: hidden;
 }
 
 .segas {
@@ -81,9 +82,23 @@ body {
   line-height: 1.5;
   text-align: justify;
 }
+.slide-in-text5 {
+  opacity: 0;
+  transform: translateX(50%);
+  transition: opacity 0.4s, transform 0.5s;
+}
+
+.slide-in-text5.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 
 /* Medium devices */
 @media screen and (max-width: 820px) {
+  .segas {
+    height: auto;
+}
   .conclusion2 {
       padding: 20px auto;
   }

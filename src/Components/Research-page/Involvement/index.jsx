@@ -1,39 +1,44 @@
 
-import React, {useEffect} from "react";
+import React, {useEffect } from "react";
 import "./index.css";
 import Research6 from "src/Assets/Images/Research-6.png";
 
 const section7 = () => {
-
   useEffect(() => {
-    const textElements = document.querySelectorAll('.slide-in-text');
-
+    const textElements = document.querySelectorAll(".slide-in-text7");
     const handleScroll = () => {
       textElements.forEach((textElement) => {
-        const slideInAt = (window.scrollY + window.innerHeight) - textElement.clientHeight / 2;
+        const slideInAt =
+          window.scrollY +
+          window.innerHeight -
+          textElement.getBoundingClientRect().top;
         const elementBottom = textElement.offsetTop + textElement.clientHeight;
         const isHalfShown = slideInAt > textElement.offsetTop;
         const isNotScrolledPast = window.scrollY < elementBottom;
 
         if (isHalfShown && isNotScrolledPast) {
-          textElement.classList.add('active');
+          textElement.classList.add("active");
         } else {
-          textElement.classList.remove('active');
+          textElement.classList.remove("active");
         }
       });
     };
+    // Initial call to handleScroll
+    handleScroll();
 
-    window.addEventListener('scroll', handleScroll);
+    // Listen for scroll events
+    window.addEventListener("scroll", handleScroll);
 
+    // Cleanup the event listener on component unmount
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   return (
       <div className="involvement">
-        <img className="involvement-img" src={Research6} alt="" />
-        <div className="involve1">
+        <img className="involvement-img slide-in-text7" src={Research6} alt="" />
+        <div className="involve1 slide-in-text7">
           <h2>
             <span className="involve1-span">How to Get Involved?</span>
           </h2>
