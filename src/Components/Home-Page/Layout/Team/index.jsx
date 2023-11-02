@@ -17,7 +17,7 @@ const Team = () => {
       <div className="team-bottom-block">
         <div className="team-video-card">
           <video autoPlay muted loop playsInline className="team-video">
-            <source src={joinVideo} type="video/mp4" />
+            <source src={joinVideo} type="video/mp4"  />
           </video>
         </div>
 

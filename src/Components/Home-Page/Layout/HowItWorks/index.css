@@ -5,6 +5,14 @@
   padding-top: 2rem;
 }
 
+/* This is just an example, adjust the max-width as needed for your design */
+@media screen and (max-width: 468px) {
+  .learn-more-card {
+    display: none;
+  }
+}
+
+
 .how-it-works-heading {
   color: #062758;
   font-size: 1.5rem;
