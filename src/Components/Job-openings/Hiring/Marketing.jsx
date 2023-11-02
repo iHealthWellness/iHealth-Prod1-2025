@@ -4,8 +4,6 @@ import { ArrowTab } from "./ButtonTab";
 import "./Hiring.css";
 import plusbtn from "src/Assets/Icons/plus.png";
 import minusbtn from "src/Assets/Icons/minus.png";
-// import topArrow from "src/Assets/Icons/iconone.png";
-// import downArrow from "src/Assets/Icons/icontwo.png";
 
 import { useState } from "react";
 
@@ -45,8 +43,8 @@ const Marketing = () => {
           <div className="job-body">
             {marketVisible && (
               <div className="grid">
-                <h2 className="grid-title">Marketing and Outreach</h2>
-                <h2 className="grid-text">Remote</h2>
+                <h2 className="grid-title" onClick={toggleAccordion("opening")}>Marketing and Outreach</h2>
+                <h2 className="grid-text" onClick={toggleAccordion("opening")}>Remote</h2>
                 <ArrowTab
                   icon={accordion.opening}
                   onClick={toggleAccordion("opening")}
@@ -198,8 +196,8 @@ const Marketing = () => {
           <div className="job-body">
             {marketVisible && (
               <div className="grid">
-                <h2 className="grid-title">Marketing Specialist </h2>
-                <h2 className="grid-text">Remote</h2>
+                <h2 className="grid-title" onClick={toggleAccordion("illustrate")}>Marketing Specialist </h2>
+                <h2 className="grid-text" onClick={toggleAccordion("illustrate")}>Remote</h2>
                 <ArrowTab
                   icon={accordion.illustrate}
                   onClick={toggleAccordion("illustrate")}
@@ -306,8 +304,8 @@ const Marketing = () => {
           <div className="job-body">
             {marketVisible && (
               <div className="grid">
-                <h2 className="grid-title">Marketing Strategy Consultant</h2>
-                <h2 className="grid-text">Remote</h2>
+                <h2 className="grid-title" onClick={toggleAccordion("appear")}>Marketing Strategy Consultant</h2>
+                <h2 className="grid-text" onClick={toggleAccordion("appear")}>Remote</h2>
                 <ArrowTab
                   icon={accordion.appear}
                   onClick={toggleAccordion("appear")}
@@ -442,10 +440,10 @@ const Marketing = () => {
           <div className="job-body">
             {marketVisible && (
               <div className="grid">
-                <h2 className="grid-title">
+                <h2 className="grid-title" onClick={toggleAccordion("prospect")}>
                   Social Media and Community Specialist
                 </h2>
-                <h2 className="grid-text">Remote</h2>
+                <h2 className="grid-text" onClick={toggleAccordion("prospect")}>Remote</h2>
                 <ArrowTab
                   icon={accordion.prospect}
                   onClick={toggleAccordion("prospect")}

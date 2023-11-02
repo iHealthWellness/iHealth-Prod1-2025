@@ -4,8 +4,7 @@ import { ArrowTab } from "./ButtonTab";
 import "./Hiring.css";
 import plusbtn from "src/Assets/Icons/plus.png";
 import minusbtn from "src/Assets/Icons/minus.png";
-// import topArrow from "src/Assets/Icons/iconone.png";
-// import downArrow from "src/Assets/Icons/icontwo.png";
+
 
 import { useState } from "react";
 
@@ -38,8 +37,8 @@ const Cybersecurity = () => {
         <div className="job-body">
           {cybersecurityVisible && (
             <div className="grid">
-              <h2 className="grid-title">CyberSecurity</h2>
-              <h2 className="grid-text">Remote</h2>
+              <h2 className="grid-title" onClick={toggleAccordion("show")}>CyberSecurity</h2>
+              <h2 className="grid-text" onClick={toggleAccordion("show")}>Remote</h2>
               <ArrowTab
                 icon={accordion.show}
                 onClick={toggleAccordion("show")}

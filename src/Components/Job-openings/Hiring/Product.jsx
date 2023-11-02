@@ -41,8 +41,8 @@ const Product = () => {
         <div className="job-body">
           {productVisible && (
             <div className="grid">
-              <h2 className="grid-title">Pro Bono Generalist</h2>
-              <h2 className="grid-text">Remote</h2>
+              <h2 className="grid-title" onClick={toggleAccordion("design")}>Pro Bono Generalist</h2>
+              <h2 className="grid-text" onClick={toggleAccordion("design")}>Remote</h2>
               <ArrowTab
                 icon={accordion.design}
                 onClick={toggleAccordion("design")}
@@ -149,8 +149,8 @@ const Product = () => {
         <div className="job-body">
           {productVisible && (
             <div className="grid">
-              <h2 className="grid-title">Product Specialist/Associate</h2>
-              <h2 className="grid-text">Remote</h2>
+              <h2 className="grid-title" onClick={toggleAccordion("outline")}>Product Specialist/Associate</h2>
+              <h2 className="grid-text" onClick={toggleAccordion("outline")}>Remote</h2>
               <ArrowTab
                 icon={accordion.outline}
                 onClick={toggleAccordion("outline")}

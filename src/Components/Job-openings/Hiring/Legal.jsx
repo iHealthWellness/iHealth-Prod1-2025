@@ -4,8 +4,6 @@ import { ArrowTab } from "./ButtonTab";
 import "./Hiring.css";
 import plusbtn from "src/Assets/Icons/plus.png";
 import minusbtn from "src/Assets/Icons/minus.png";
-// import topArrow from "src/Assets/Icons/iconone.png";
-// import downArrow from "src/Assets/Icons/icontwo.png";
 
 import { useState } from "react";
 
@@ -41,8 +39,8 @@ const Legal = () => {
           <div className="job-body">
             {legalVisible && (
               <div className="grid">
-                <h2 className="grid-title">Corporate Attorney</h2>
-                <h2 className="grid-text">Remote</h2>
+                <h2 className="grid-title" onClick={toggleAccordion("seen")}>Corporate Attorney</h2>
+                <h2 className="grid-text" onClick={toggleAccordion("seen")}>Remote</h2>
                 <ArrowTab
                   icon={accordion.seen}
                   onClick={toggleAccordion("seen")}
@@ -122,10 +120,10 @@ const Legal = () => {
           <div className="job-body">
             {legalVisible && (
               <div className="grid">
-                <h2 className="grid-title">
+                <h2 className="grid-title" onClick={toggleAccordion("stretch")}>
                   Healthcare Regulatory Compliance Specialist
                 </h2>
-                <h2 className="grid-text">Remote</h2>
+                <h2 className="grid-text" onClick={toggleAccordion("stretch")}>Remote</h2>
                 <ArrowTab
                   icon={accordion.stretch}
                   onClick={toggleAccordion("stretch")}

@@ -4,8 +4,7 @@ import { ArrowTab } from "./ButtonTab";
 import "./Hiring.css";
 import plusbtn from "src/Assets/Icons/plus.png";
 import minusbtn from "src/Assets/Icons/minus.png";
-// import topArrow from "src/Assets/Icons/iconone.png";
-// import downArrow from "src/Assets/Icons/icontwo.png";
+
 
 import { useState } from "react";
 
@@ -44,10 +43,10 @@ const Development = () => {
         <div className="job-body">
           {developmentVisible && (
             <div className="grid">
-              <h2 className="grid-title">
+              <h2 className="grid-title" onClick={toggleAccordion("clear")}>
                 EPIC Interface / Integration Specialist
               </h2>
-              <h2 className="grid-text">Remote</h2>
+              <h2 className="grid-text" onClick={toggleAccordion("clear")}>Remote</h2>
               <ArrowTab
                 icon={accordion.clear}
                 onClick={toggleAccordion("clear")}
@@ -154,8 +153,8 @@ const Development = () => {
         <div className="job-body">
           {developmentVisible && (
             <div className="grid">
-              <h2 className="grid-title">Principal Back-End Engineer</h2>
-              <h2 className="grid-text">Remote</h2>
+              <h2 className="grid-title" onClick={toggleAccordion("free")}>Principal Back-End Engineer</h2>
+              <h2 className="grid-text" onClick={toggleAccordion("free")}>Remote</h2>
               <ArrowTab
                 icon={accordion.free}
                 onClick={toggleAccordion("free")}
@@ -272,8 +271,8 @@ const Development = () => {
         <div className="job-body">
           {developmentVisible && (
             <div className="grid">
-              <h2 className="grid-title">Principal Front-End Engineer</h2>
-              <h2 className="grid-text">Remote</h2>
+              <h2 className="grid-title" onClick={toggleAccordion("showcase")}>Principal Front-End Engineer</h2>
+              <h2 className="grid-text" onClick={toggleAccordion("showcase")}>Remote</h2>
               <ArrowTab
                 icon={accordion.showcase}
                 onClick={toggleAccordion("showcase")}
@@ -392,8 +391,8 @@ const Development = () => {
         <div className="job-body">
           {developmentVisible && (
             <div className="grid">
-              <h2 className="grid-title">Principal Full-Stack Engineer</h2>
-              <h2 className="grid-text">Remote</h2>
+              <h2 className="grid-title" onClick={toggleAccordion("bare")}>Principal Full-Stack Engineer</h2>
+              <h2 className="grid-text" onClick={toggleAccordion("bare")}>Remote</h2>
               <ArrowTab
                 icon={accordion.bare}
                 onClick={toggleAccordion("bare")}
@@ -539,8 +538,8 @@ const Development = () => {
         <div className="job-body">
           {developmentVisible && (
             <div className="grid">
-              <h2 className="grid-title">Senior Platform Developer</h2>
-              <h2 className="grid-text">Remote</h2>
+              <h2 className="grid-title" onClick={toggleAccordion("expose")}>Senior Platform Developer</h2>
+              <h2 className="grid-text" onClick={toggleAccordion("expose")}>Remote</h2>
               <ArrowTab
                 icon={accordion.expose}
                 onClick={toggleAccordion("expose")}
@@ -674,8 +673,8 @@ const Development = () => {
         <div className="job-body">
           {developmentVisible && (
             <div className="grid">
-              <h2 className="grid-title">Senior Software Engineer </h2>
-              <h2 className="grid-text">Remote</h2>
+              <h2 className="grid-title" onClick={toggleAccordion("disclose")}>Senior Software Engineer </h2>
+              <h2 className="grid-text" onClick={toggleAccordion("disclose")}>Remote</h2>
               <ArrowTab
                 icon={accordion.disclose}
                 onClick={toggleAccordion("disclose")}
