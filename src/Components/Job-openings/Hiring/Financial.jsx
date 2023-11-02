@@ -39,8 +39,8 @@ const Financial = () => {
         <div className="job-body">
           {financialVisible && (
             <div className="grid">
-              <h2 className="grid-title">Funding and Financial Specialist</h2>
-              <h2 className="grid-text">Remote</h2>
+              <h2 className="grid-title" onClick={toggleAccordion("unshut")}>Funding and Financial Specialist</h2>
+              <h2 className="grid-text" onClick={toggleAccordion("unshut")}>Remote</h2>
               <ArrowTab
                 icon={accordion.unshut}
                 onClick={toggleAccordion("unshut")}
@@ -132,8 +132,8 @@ const Financial = () => {
         <div className="job-body">
           {financialVisible && (
             <div className="grid">
-              <h2 className="grid-title">Fundraiser/ Development Officer</h2>
-              <h2 className="grid-text">Remote</h2>
+              <h2 className="grid-title" onClick={toggleAccordion("look")}>Fundraiser/ Development Officer</h2>
+              <h2 className="grid-text" onClick={toggleAccordion("look")}>Remote</h2>
               <ArrowTab
                 icon={accordion.look}
                 onClick={toggleAccordion("look")}
