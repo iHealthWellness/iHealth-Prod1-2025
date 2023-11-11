@@ -6,13 +6,14 @@ import progressbar1 from "src/Assets/Images/progressbar1.svg";
 import progressbar2 from "src/Assets/Images/progressbar2.svg";
 import buttom_curve from "src/Assets/Images/subtract1.png";
 import droparrow from "src/Assets/Icons/arrowdowns.svg";
-import CloseImage from "./Community-Team/CloseImage";
-import { BASE_URL } from "../../../../../environment/config";
+import CloseImage from "./CloseImage";
+import { BASE_URL } from "src/environment/config";
 
-const Geriatric = ({ closeModal }) => {
+const Cancer = ({ closeModal }) => {
 	// Geriatric form api post request and input validation VERSION 1
-	const [formData1, setFormData1] = useState({
-		community: "Geriatric Disease Team",
+
+	const [formData2, setFormData2] = useState({
+		community: "Cancer Team",
 		name: "",
 		email: "",
 		condition: "Condition",
@@ -21,14 +22,14 @@ const Geriatric = ({ closeModal }) => {
 	});
 
 	// ERROR MESSAGE TO VALIDATE INPUT
-	const [errors, setErrors] = useState({});
-	const validateForm1 = () => {
-		const errors = {};
-		if (!formData1.name.trim()) {
-			errors.name = "This field is required";
+	const [errors2, setErrors2] = useState({});
+	const validateForm2 = () => {
+		const errors2 = {};
+		if (!formData2.name.trim()) {
+			errors2.name = "This field is required";
 		}
-		if (!formData1.email.trim()) {
-			errors.email = "This field is required";
+		if (!formData2.email.trim()) {
+			errors2.email = "This field is required";
 		}
 		// if (!formData2.condition.trim()) {
 		// 	errors2.condition = "This field is required";
@@ -46,23 +47,23 @@ const Geriatric = ({ closeModal }) => {
 		// ) {
 		// 	errors2.condition = "Please select a valid condition";
 		// }
-		setErrors(errors);
-		return Object.keys(errors).length === 0;
+		setErrors2(errors2);
+		return Object.keys(errors2).length === 0;
 	};
 
-	const [showInputField1, setShowInputField1] = useState(false);
-	const [isSubmitted1, setIsSubmitted1] = useState(false);
+	const [showInputField2, setShowInputField2] = useState(false);
+	const [isSubmitted2, setIsSubmitted2] = useState(false);
 
-	const handleDropdownChange1 = (e) => {
+	const handleDropdownChange2 = (e) => {
 		const { name, value } = e.target;
-		setFormData1((prevFormData1) => ({
-			...prevFormData1,
+		setFormData2((prevFormData2) => ({
+			...prevFormData2,
 			[name]: value,
 		}));
 
 		if (value === "OTHER: Please add a condition if 'Other' is selected.") {
-			setErrors((prevErrors1) => ({
-				...prevErrors1,
+			setErrors2((prevErrors2) => ({
+				...prevErrors2,
 				otherCondition: "",
 			}));
 		}
@@ -72,8 +73,8 @@ const Geriatric = ({ closeModal }) => {
 			value !== "OTHER: Please add a condition if 'Other' is selected."
 		) {
 			// Close the dropdown if a non-'OTHER' option is selected
-			setIsOpen1(false);
-			setShowInputField1(false);
+			setIsOpen2(false);
+			setShowInputField2(false);
 		}
 
 		if (
@@ -81,70 +82,70 @@ const Geriatric = ({ closeModal }) => {
 			value === "OTHER: Please add a condition if 'Other' is selected."
 		) {
 			// Show the input field if 'OTHER' is selected
-			setShowInputField1(true);
+			setShowInputField2(true);
 		}
-		setIsOpen1(false);
+		setIsOpen2(false);
 	};
 
 	// text shown before submission of form
-	const [headText1, setheadText1] = useState("Geriatric Team");
-	const [headText01, setheadText01] = useState(
+	const [headText2, setheadText2] = useState("Cancer Team");
+	const [headText02, setheadText02] = useState(
 		<p className="gdt__p">(Coming Soon)</p>
 	);
-	const [headText001, setheadText001] = useState(
+	const [headText002, setheadText002] = useState(
 		" Do not see the condition you are looking for? Let us know. We will be adding new social networks based on community feedback."
 	);
-	const [headText0001, setheadText0001] = useState(
+	const [headText0002, setheadText0002] = useState(
 		<img className="progressbar__img" src={progressbar1} alt="progress-bar" />
 	);
 
-	const [buttonText1, setbuttonText1] = useState(
+	const [buttonText2, setbuttonText2] = useState(
 		<button id="" type="submit">
 			submit
 		</button>
 	);
 
 	// form submission Preloader function
-	const [isLoading1, setIsLoading1] = useState(false);
+	const [isLoading2, setIsLoading2] = useState(false);
 
-	const handleSubmit1 = (event) => {
+	const handleSubmit2 = (event) => {
 		event.preventDefault();
-		// console.log(formData1);
+		// console.log(formData2);
 
 		// POST gtd TEAM FORM IF THE VALIDATION AND MAIL IS CORRECT
-		setIsLoading1(false);
+		setIsLoading2(false);
 
-		if (validateForm1()) {
-			setIsLoading1(true);
+		if (validateForm2()) {
+			setIsLoading2(true);
 			// GERIATRIC POST API
 			axios
-				.post(`${BASE_URL}/api/v1/community/`, formData1)
+				.post(`${BASE_URL}/api/v1/community/`, formData2)
 				.then((response) => {
 					if (response.status === 201) {
 						// text shown after successful form submission
-						setheadText1("Thank you");
-						setheadText01(<p className="gdt__p1"></p>);
-						setheadText001(
+						setheadText2("Thank you");
+						setheadText02(<p className="gdt__p1"></p>);
+						setheadText002(
 							"Thank you for sharing the information with us. Your contribution is greatly appreciated."
 						);
-						setheadText0001(
+						setheadText0002(
 							<img
 								className="progressbar__img1"
 								src={progressbar2}
 								alt="progress-bar-success"
 							/>
 						);
-						setbuttonText1(<CloseImage />);
+						setbuttonText2(<CloseImage />);
 
 						// Set loading state back to false
-						setIsLoading1(false);
+						setIsLoading2(false);
 
 						// Make text not editable after it has been submitted
-						setIsSubmitted1(true);
+						setIsSubmitted2(true);
 
 						// Onclick of close button to redirect back to homepage
-						const buttonText1 = document.getElementById("closex");
-						buttonText1.addEventListener("click", closeModal);
+						const buttonText2 = document.getElementById("closex");
+						buttonText2.addEventListener("click", closeModal);
 					} else {
 						alert("Oops! Form not submitted");
 					}
@@ -157,38 +158,34 @@ const Geriatric = ({ closeModal }) => {
 		}
 	};
 
-	const handleChange1 = (event) => {
+	const handleChange2 = (event) => {
 		const { name, value } = event.target;
-		setFormData1((prevFormData1) => ({ ...prevFormData1, [name]: value }));
-		setErrors((prevErrors1) => ({ ...prevErrors1, [name]: "" }));
+		setFormData2((prevFormData2) => ({ ...prevFormData2, [name]: value }));
+		setErrors2((prevErrors2) => ({ ...prevErrors2, [name]: "" }));
 	};
 
 	// API to fetch disease list
-	const [DiseaseList1, setDiseaseList1] = useState([]);
-	const [LoadDisease, setLoadDisease] = useState(true);
-
+	// const [data, setData] = useState([]);
+	const [DiseaseList, setDiseaseList] = useState([]);
 	useEffect(() => {
-		setLoadDisease(true);
 		fetch(`${BASE_URL}/api/v1/diseases/list`)
 			.then((response) => response.json())
 			.then((responseData) => {
-				setDiseaseList1(responseData.data);
-				setLoadDisease(true);
+				setDiseaseList(responseData.data);
 			})
 			.catch((error) => {
 				console.error("Error fetching data:", error);
-				setLoadDisease(true);
 			});
 	}, []);
 
 	// DEFAULT LABEL FUNCTIONS
-	const [isOpen1, setIsOpen1] = useState(false);
+	const [isOpen2, setIsOpen2] = useState(false);
 	const selectRef = useRef(null);
 
 	useEffect(() => {
 		const handleOutsideClick = (e) => {
 			if (selectRef.current && !selectRef.current.contains(e.target)) {
-				closeSelect1();
+				closeSelect2();
 			}
 		};
 
@@ -200,37 +197,19 @@ const Geriatric = ({ closeModal }) => {
 	}, []);
 
 	// IF FORM SUBMISSION IS SUCCESSFUL THE DROPDOWN OPTION SHOULD NOT OPEN
-	const toggleSelect1 = () => {
-		if (!isSubmitted1) {
-			setIsOpen1(!isOpen1);
+	const toggleSelect2 = () => {
+		if (!isSubmitted2) {
+			setIsOpen2(!isOpen2);
 		}
 	};
 
-	const closeSelect1 = () => {
-		setIsOpen1(false);
+	const closeSelect2 = () => {
+		setIsOpen2(false);
 	};
-
-	// const [DiseaseList, setDiseaseList] = useState([]);
-	// useEffect(() => {
-	// 	fetch(`${BASE_URL}/api/v1/diseases/list`)
-	// 		.then((response) => response.json())
-	// 		.then((responseData) => {
-	// 			// Add "Other" to the list obtained from the API
-	// 			const diseases = responseData.data.concat(
-	// 				"OTHER: Please add a condition if 'Other' is selected."
-	// 			);
-
-	// 			setDiseaseList(diseases);
-	// 		})
-	// 		.catch((error) => {
-	// 			console.error("Error fetching data:", error);
-	// 		});
-	// }, []);
 
 	return (
 		<div className="jct-holder">
 			<div className="mod1">
-				{/* Close (X) button */}
 				<span className="close" onClick={closeModal}>
 					&times;
 				</span>
@@ -242,17 +221,17 @@ const Geriatric = ({ closeModal }) => {
 				</div>
 
 				<div className="gdt-head">
-					<h1 id="modal__header">{headText1}</h1>
-					<p>{headText01}</p>
+					<h1 id="modal__header">{headText2}</h1>
+					<p>{headText02}</p>
 				</div>
-				<p className="pxp1">{headText001}</p>
-				<div className="progressbar">{headText0001}</div>
+				<p className="pxp1">{headText002}</p>
+				<div className="progressbar">{headText0002}</div>
 
 				{/* Geriatric input form section */}
-				<form onSubmit={handleSubmit1}>
+				<form onSubmit={handleSubmit2}>
 					<div className="modal">
 						{/* PRELOADER AFTER FORM IS SUBMITTED */}
-						{isLoading1 && <div className="loader"></div>}
+						{isLoading2 && <div className="loader"></div>}
 
 						<div className="form__content">
 							<div class="input">
@@ -262,18 +241,18 @@ const Geriatric = ({ closeModal }) => {
 									class="input__field"
 									placeholder=" "
 									name="name"
-									value={formData1.name}
-									onChange={handleChange1}
-									disabled={isSubmitted1}
+									value={formData2.name}
+									onChange={handleChange2}
+									disabled={isSubmitted2}
 								/>
 								<label
 									for="yourName"
-									class={`input__label ${isSubmitted1 ? "hidden-label" : ""}`}
+									class={`input__label ${isSubmitted2 ? "hidden-label" : ""}`}
 								>
 									Your Name
 								</label>
-								{errors.name && (
-									<span className="error-msg">{errors.name}</span>
+								{errors2.name && (
+									<span className="error-msg">{errors2.name}</span>
 								)}
 							</div>
 
@@ -284,18 +263,18 @@ const Geriatric = ({ closeModal }) => {
 									class="input__field"
 									placeholder=" "
 									name="email"
-									value={formData1.email}
-									onChange={handleChange1}
-									disabled={isSubmitted1}
+									value={formData2.email}
+									onChange={handleChange2}
+									disabled={isSubmitted2}
 								/>
 								<label
 									for="email"
-									class={`input__label ${isSubmitted1 ? "hidden-label" : ""}`}
+									class={`input__label ${isSubmitted2 ? "hidden-label" : ""}`}
 								>
 									Email
 								</label>
-								{errors.email && (
-									<span className="error-msg">{errors.email}</span>
+								{errors2.email && (
+									<span className="error-msg">{errors2.email}</span>
 								)}
 							</div>
 
@@ -304,80 +283,80 @@ const Geriatric = ({ closeModal }) => {
 								<div className="custom-select" ref={selectRef}>
 									<div
 										className={`select-selected ${
-											isOpen1 ? "select-arrow-active" : ""
+											isOpen2 ? "select-arrow-active" : ""
 										}`}
-										onClick={toggleSelect1}
+										onClick={toggleSelect2}
 										name="condition"
-										onChange={handleChange1}
+										onChange={handleChange2}
+										disabled={isSubmitted2}
 									>
-										<span
-											style={{
-												color: "#000000",
-												fontSize: "12px",
-												fontWeight: "400",
-											}}
-										>
-											{formData1.condition}
+										<span style={{ color: "#000000", fontSize: "12px" }}>
+											{formData2.condition}
 										</span>
-										{formData1.condition === "Condition" && (
-											<span style={{ color: "red", marginLeft: "-5px" }}>
+										{formData2.condition === "Condition" && (
+											<span
+												style={{
+													color: "red",
+													marginLeft: "-5px",
+												}}
+											>
 												{" "}
 												*
 											</span>
 										)}
-										<span>{LoadDisease && <div className="loader"></div>}</span>
 
 										<img src={droparrow} alt="dropdown-icon" />
 									</div>
-									{isOpen1 && (
+									{isOpen2 && (
 										<div className="select-items input__filed">
-											{DiseaseList1.map((item, index) => (
+											{DiseaseList.map((item, index) => (
 												<div
 													key={item.id}
 													value={item.id}
 													onClick={() =>
-														handleDropdownChange1({
+														handleDropdownChange2({
 															target: { name: "condition", value: item },
 														})
 													}
 													className={
-														item === formData1.condition
+														item === formData2.condition
 															? "same-as-selected"
 															: "same-as-selected1"
 													}
+													disabled={isSubmitted2}
 												>
 													{item}
 												</div>
 											))}
 										</div>
 									)}
-									{errors.condition && (
-										<span className="error-msg">{errors.condition}</span>
+									{errors2.condition && (
+										<span className="error-msg">{errors2.condition}</span>
 									)}
 								</div>
 							</div>
 
 							{/* SHOW THIS IF OTHERS IS SELECTED */}
-							{showInputField1 && (
+							{showInputField2 && (
 								<div className="input">
 									<input
 										className="input__field"
 										type="text"
 										placeholder=""
 										name="otherCondition"
-										value={formData1.otherCondition}
-										onChange={handleChange1}
-										disabled={isSubmitted1}
+										value={formData2.otherCondition}
+										onChange={handleChange2}
+										disabled={isSubmitted2}
 									/>
 									<label
-										class={`input__label ${isSubmitted1 ? "hidden-label" : ""}`}
+										class={`input__label ${isSubmitted2 ? "hidden-label" : ""}`}
 									>
 										Enter Condition
 									</label>
 								</div>
 							)}
-							{errors.otherCondition && (
-								<span className="error-msg">{errors.otherCondition}</span>
+							{errors2.otherCondition && (
+								<span className="error-msg">{errors2.otherCondition}</span>
 							)}
 
 							<div className="input__textarea">
@@ -386,15 +365,15 @@ const Geriatric = ({ closeModal }) => {
 									placeholder=" "
 									id="message"
 									name="message"
-									value={formData1.message}
-									onChange={handleChange1}
-									disabled={isSubmitted1}
+									value={formData2.message}
+									onChange={handleChange2}
+									disabled={isSubmitted2}
 								/>
 
 								<label
 									for="message"
 									class={`textarea__label ${
-										isSubmitted1 ? "hidden-label" : ""
+										isSubmitted2 ? "hidden-label" : ""
 									}`}
 								>
 									Message
@@ -405,7 +384,7 @@ const Geriatric = ({ closeModal }) => {
 						</div>
 					</div>
 					<div className="xxx btnx" id="closex">
-						{buttonText1}
+						{buttonText2}
 						<img className="xxx-img" src={buttom_curve} alt="ellipse" />
 					</div>
 				</form>
@@ -414,4 +393,4 @@ const Geriatric = ({ closeModal }) => {
 	);
 };
 
-export default Geriatric;
+export default Cancer;

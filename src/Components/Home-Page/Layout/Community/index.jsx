@@ -1,8 +1,8 @@
 import { useState } from "react";
 
 import "./index.css";
-import Geriatric from "./Community-Team/Geriatric";
-import Cancer from "./Community-Team/Cancer";
+import Geriatric from "./Community-Team/Jc-team/Geriatric";
+import Cancer from "./Community-Team/Jc-team/Cancer";
 
 const Community = () => {
 	const [team, setTeam] = useState("NF TEAM");
