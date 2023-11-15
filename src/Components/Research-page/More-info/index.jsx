@@ -54,7 +54,7 @@ const section4 = () => {
           receptor on the cell surface, it triggers a cascade of molecular
           events, leading to the activation of MEK. Activated MEK then
           phosphorylates and activates downstream kinases, known as ERK
-          (Extracellular signal-Regulated Kinases). ERKs subsequently enter the
+MyComponent copy          (Extracellular signal-Regulated Kinases). ERKs subsequently enter the
           nucleus and initiate gene expression, resulting in the regulation of
           various cellular functions. In the context of neurofibromatosis, the
           MEK protein plays a significant role in the development of
@@ -66,7 +66,7 @@ const section4 = () => {
         </p>
       </div>
       {/* <div className="slide-in-text"> */}
-      <div className="evorolimus slide-in-text4">
+      {/* <div className="evorolimus slide-in-text4">
         <img className="evorolimus-img" src={Research4} alt="" />
         <div>
           <h1>
@@ -82,7 +82,24 @@ const section4 = () => {
             research. Extensive clinical trials have investigated its potential
             in treating NF-related tumors, particularly subependymal giant cell
             astrocytomas (SEGAs) associated with neurofibromatosis type 1 (NF1)
-            or tuberous sclerosis complex
+            or tuberous sclerosis complex.           The efficacy of Everolimus in managing SEGAs has been significant,
+            leading to its approval by the U.S. Food and Drug Administration
+            (FDA) specifically for the treatment of SEGAs in individuals with
+            TSC. This achievement signifies the recognition of Everolimus as a
+            viable and beneficial treatment option for this particular
+            manifestation of NF-related tum.              The targeted inhibition of mTOR, a protein involved in regulating
+            cell growth and proliferation, has shown promise in effectively
+            addressing SEGAs associated with NF1 and TSC. The approval of
+            Everolimus for SEGAs marks an important milestone in the field of NF
+            research and presents new hope for individuals affected by these tum.             As ongoing research and clinical trials continue to unfold, further
+            insights may emerge regarding the broader applicability of
+            Everolimus and its potential for treating other NF-related tum.             Everolimus was well-tolerated by the participants in the study.
+            Fifteen of the 22 participants in the study experienced tumor
+            shrinkage or no tumor growth, with 10 of those remaining free of
+            progression during follow-up. The study indicates that everolimus
+            should be considered for therapy in this patient population. In
+            addition, amongst those with an optic pathway glioma, the majority
+            had stable visual acuity after treatment with everolimus.
           </p>
           <p className="evorolimus-p">
             The efficacy of Everolimus in managing SEGAs has been significant,
@@ -114,7 +131,7 @@ const section4 = () => {
             had stable visual acuity after treatment with everolimus.
           </p>
         </div>
-      </div>
+      </div> */}
 
       {/* </div> */}
     </div>
