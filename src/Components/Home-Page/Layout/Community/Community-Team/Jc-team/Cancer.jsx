@@ -4,8 +4,9 @@ import axios from "axios";
 import communitylogo from "src/Assets/Images/logo1.svg";
 import progressbar1 from "src/Assets/Images/progressbar1.svg";
 import progressbar2 from "src/Assets/Images/progressbar2.svg";
+// import buttom_curve from "src/Assets/Images/logo1.svg";
 import buttom_curve from "src/Assets/Images/subtract1.png";
-import droparrow from "src/Assets/Icons/arrowdowns.svg";
+import drop_arrow from "src/Assets/Icons/arrowdowns.svg";
 import CloseImage from "./CloseImage";
 import { BASE_URL } from "src/environment/config";
 
@@ -166,15 +167,18 @@ const Cancer = ({ closeModal }) => {
 
 	// API to fetch disease list
 	// const [data, setData] = useState([]);
-	const [DiseaseList, setDiseaseList] = useState([]);
+	const [DiseaseList2, setDiseaseList2] = useState([]);
+	const [LoadDisease, setLoadDisease] = useState(true);
 	useEffect(() => {
 		fetch(`${BASE_URL}/api/v1/diseases/list`)
 			.then((response) => response.json())
 			.then((responseData) => {
-				setDiseaseList(responseData.data);
+				setDiseaseList2(responseData.data);
+				setLoadDisease(false);
 			})
 			.catch((error) => {
 				console.error("Error fetching data:", error);
+				setLoadDisease(false);
 			});
 	}, []);
 
@@ -305,11 +309,15 @@ const Cancer = ({ closeModal }) => {
 											</span>
 										)}
 
-										<img src={droparrow} alt="dropdown-icon" />
+										<span>
+											{LoadDisease && <div className="loader1"></div>}
+										</span>
+
+										<img src={drop_arrow} alt="dropdown-icon" />
 									</div>
 									{isOpen2 && (
 										<div className="select-items input__filed">
-											{DiseaseList.map((item, index) => (
+											{DiseaseList2.map((item, index) => (
 												<div
 													key={item.id}
 													value={item.id}

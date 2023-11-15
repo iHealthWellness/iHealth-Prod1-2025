@@ -166,18 +166,16 @@ const Geriatric = ({ closeModal }) => {
 	// API to fetch disease list
 	const [DiseaseList1, setDiseaseList1] = useState([]);
 	const [LoadDisease, setLoadDisease] = useState(true);
-
 	useEffect(() => {
-		setLoadDisease(true);
 		fetch(`${BASE_URL}/api/v1/diseases/list`)
 			.then((response) => response.json())
 			.then((responseData) => {
 				setDiseaseList1(responseData.data);
-				setLoadDisease(true);
+				setLoadDisease(false);
 			})
 			.catch((error) => {
 				console.error("Error fetching data:", error);
-				setLoadDisease(true);
+				setLoadDisease(false);
 			});
 	}, []);
 
@@ -325,7 +323,9 @@ const Geriatric = ({ closeModal }) => {
 												*
 											</span>
 										)}
-										<span>{LoadDisease && <div className="loader"></div>}</span>
+										<span>
+											{LoadDisease && <div className="loader1"></div>}
+										</span>
 
 										<img src={droparrow} alt="dropdown-icon" />
 									</div>
