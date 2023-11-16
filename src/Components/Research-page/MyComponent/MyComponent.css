@@ -5,7 +5,7 @@
   margin-top: 10px;
   margin-bottom: 50px;
   max-width: 1216px;
-  flex-wrap: wrap; /* Enable wrapping */
+  flex-wrap: wrap; 
 }
 
 .textSections {
@@ -28,7 +28,7 @@
   color: #000;
   font-weight: 500;
   font-size: 24px;
-  flex-grow: 1; /* Makes the title take the available space */
+  flex-grow: 1; 
 }
 
 .section p {
@@ -94,6 +94,7 @@
 @media screen and (max-width: 768px) {
   .section h2, .section p, .button img {
     font-size: smaller; /* Adjust font size */
+    margin: auto;
   }
 
   .photo, .textSections {
@@ -102,7 +103,7 @@
   }
 
   .titleContainer {
-    flex-direction: column;
+    flex-direction:initial;
     align-items: flex-start;
   }
 }
@@ -110,6 +111,7 @@
 @media screen and (max-width: 480px) {
   .section h2, .section p {
     font-size: even smaller; /* Further reduce font size */
+    
   }
 
   .button img {
