@@ -40,17 +40,18 @@
 }
 
 .fullContent {
-  max-height: 0;
-  overflow: hidden;
+  transform-origin: top;
+  transform: scaleY(0);
   opacity: 0;
-  transition: max-height 1s ease-in-out, opacity 0.5s ease-in-out;
-  /* Increase the transition duration for max-height */
+  transition: transform 0.3s ease-in-out, opacity 0.5s ease-in-out;
+  height: 0; /* Add this to initially hide the content */
+  overflow: hidden;
 }
 
 .section.expanded .fullContent {
-  max-height: 1000px; /* Adjust based on expected content size, or higher */
+  transform: scaleY(1);
   opacity: 1;
-  transition: max-height 1s ease-in-out, opacity 0.5s ease-in-out;
+  height: auto; /* Add this to expand the content */
 }
 
 .section button {
@@ -178,4 +179,16 @@
   display: flex;
   flex-direction: column;
   overflow: hidden;
+}
+
+
+.slide-in {
+  opacity: 0;
+  transform: translateX(50px); /* Smaller translation for smoother effect */
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out; /* Shorter duration */
+}
+
+.active.slide-in {
+  opacity: 1;
+  transform: translateX(0);
 }

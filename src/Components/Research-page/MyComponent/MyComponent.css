@@ -5,6 +5,7 @@
   margin-top: 10px;
   margin-bottom: 50px;
   max-width: 1216px;
+  flex-wrap: wrap; /* Enable wrapping */
 }
 
 .textSections {
@@ -40,18 +41,21 @@
 }
 
 .fullContent {
-  max-height: 0;
-  overflow: hidden;
+  transform-origin: top;
+  transform: scaleY(0);
   opacity: 0;
-  transition: max-height 1s ease-in-out, opacity 0.5s ease-in-out;
-  /* Increase the transition duration for max-height */
+  transition: transform 0.3s ease-in-out, opacity 0.5s ease-in-out;
+  height: 0; /* Add this to initially hide the content */
+  overflow: hidden;
 }
 
 .section.expanded .fullContent {
-  max-height: 1000px; /* Adjust based on expected content size, or higher */
+  transform: scaleY(1);
   opacity: 1;
-  transition: max-height 1s ease-in-out, opacity 0.5s ease-in-out;
+  height: auto; /* Add this to expand the content */
 }
+
+
 
 .section button {
   border: none;
@@ -87,53 +91,33 @@
   object-fit: contain; /* Ensure the image is scaled correctly */
 }
 
-@media screen and (max-width: 820px) {
-  .reminder1, .reminder2 {
-    font-size: 24px;
-  }
-}
-
-@media screen and (max-width: 425px) {
-  .reminder1 {
-    font-size: 24px;
+@media screen and (max-width: 768px) {
+  .section h2, .section p, .button img {
+    font-size: smaller; /* Adjust font size */
   }
 
-  .reminder2 {
-    font-size: 20px;
-  }
-
-  .container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .textSections, .photo {
-    margin-right: 0;
-    margin-left: 0;
-    width: 100%;
+  .photo, .textSections {
+    width: 100%; /* Full width for smaller screens */
+    margin: 0;
   }
 
   .titleContainer {
     flex-direction: column;
     align-items: flex-start;
   }
+}
 
-  .button {
-    margin: 10px 0; /* Add space above the button */
-  }
-
-  .section h2 {
-    font-size: 24px; /* Even smaller font size for phone screens */
-  }
-
-  .section p {
-    font-size: 20px; /* Smaller font size for readability on phones */
+@media screen and (max-width: 480px) {
+  .section h2, .section p {
+    font-size: even smaller; /* Further reduce font size */
   }
 
   .button img {
-    width: 30px; /* Even smaller button size */
+    width: 30px; /* Smaller buttons */
     height: 30px;
   }
+
+  /* Additional adjustments for small screens */
 }
 
 .reminder {
@@ -178,4 +162,71 @@
   display: flex;
   flex-direction: column;
   overflow: hidden;
+}
+
+/* Adjustments for tablet screens */
+@media screen and (max-width: 820px) {
+  .reminder1, .reminder2 {
+    font-size: 24px;
+  }
+}
+
+/* Adjustments for mobile screens */
+@media screen and (max-width: 425px) {
+  .reminder1 {
+    font-size: 24px;
+  }
+
+  .reminder2 {
+    font-size: 20px;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .textSections, .photo {
+    margin-right: 0;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .titleContainer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .button {
+    margin: 10px 0; /* Add space above the button */
+  }
+
+  .section h2 {
+    font-size: 24px; /* Even smaller font size for phone screens */
+  }
+
+  .section p {
+    font-size: 20px; /* Smaller font size for readability on phones */
+  }
+
+  .button img {
+    width: 30px; /* Even smaller button size */
+    height: 30px;
+  }
+}
+
+
+
+
+
+
+.slide-in {
+  opacity: 0;
+  transform: translateX(50px); /* Smaller translation for smoother effect */
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out; /* Shorter duration */
+}
+
+.active.slide-in {
+  opacity: 1;
+  transform: translateX(0);
 }

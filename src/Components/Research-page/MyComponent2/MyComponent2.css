@@ -179,3 +179,15 @@ padding-bottom: 30px;
   flex-direction: column;
   overflow: hidden;
 }
+
+
+.slide-in {
+  opacity: 0;
+  transform: translateX(50px); /* Smaller translation for smoother effect */
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out; /* Shorter duration */
+}
+
+.active.slide-in {
+  opacity: 1;
+  transform: translateX(0);
+}

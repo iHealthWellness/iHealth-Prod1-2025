@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect, useRef } from "react";
 import "./MyComponent.css";
 import Research2 from "src/Assets/Images/Research-2.png";
@@ -28,52 +29,62 @@ const Section = ({ title, content, summary }) => {
         </div>
       </div>
       <p className="summary">{summary}</p>
-      {expanded && <p className="fullContent">{content}</p>}
-
+      <div className="fullContent">
+        {expanded && <p>{content}</p>}
+      </div>
     </div>
   );
 };
 
-
-
-
-
 const MyComponent = () => {
   const sectionRefs = useRef([]);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      sectionRefs.current.forEach((ref) => {
-        if (ref) {
-          const slideInAt =
-            window.scrollY +
-            window.innerHeight -
-            ref.getBoundingClientRect().top;
-          const elementBottom = ref.offsetTop + ref.clientHeight;
-          const isHalfShown = slideInAt > ref.offsetTop;
-          const isNotScrolledPast = window.scrollY < elementBottom;
-
-          if (isHalfShown && isNotScrolledPast) {
-            ref.classList.add("active");
-          } else {
-            ref.classList.remove("active");
-          }
-        }
-      });
+  const debounce = (func, wait) => {
+    let timeout;
+    return function executedFunction(...args) {
+      const later = () => {
+        clearTimeout(timeout);
+        func(...args);
+      };
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
     };
+  };
 
-    handleScroll(); // Call it once to check on load
-    window.addEventListener("scroll", handleScroll);
+  const handleScroll = () => {
+    sectionRefs.current.forEach((ref) => {
+      if (ref) {
+        const slideInAt =
+          window.scrollY +
+          window.innerHeight -
+          ref.offsetHeight / 2;
+        const elementBottom = ref.offsetTop + ref.offsetHeight;
+        const isHalfShown = slideInAt > ref.offsetTop;
+        const isNotScrolledPast = window.scrollY < elementBottom;
+
+        if (isHalfShown && isNotScrolledPast) {
+          ref.classList.add("active");
+        } else {
+          ref.classList.remove("active");
+        }
+      }
+    });
+  };
+
+  useEffect(() => {
+    const debouncedHandleScroll = debounce(handleScroll, 50);
+
+    window.addEventListener("scroll", debouncedHandleScroll);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("scroll", debouncedHandleScroll);
     };
   }, []);
 
   return (
     <div>
-      <div className="container" ref={(el) => (sectionRefs.current[0] = el)}>
-      <div className="photo">
+      <div className="container slide-in" ref={(el) => (sectionRefs.current[0] = el)}>
+        <div className="photo">
           <img src={Research2} alt="Display" />
         </div>
         <div className="textSections active">
@@ -98,7 +109,6 @@ const MyComponent = () => {
             content="It serves as a valuable resource for researchers and professionals seeking the latest neurofibromatosis research articles, reviews, and clinical studies. Explore PubMed's neurofibromatosis publications here: PubMed - Neurofibromatosis Research"
           />
         </div>
-
       </div>
       <section
         id="tools"

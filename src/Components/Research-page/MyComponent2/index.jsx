@@ -16,21 +16,22 @@ const Section = ({ title, content, summary }) => {
     <div className={`section ${expanded ? "expanded" : ""}`}>
       <div className="titleContainer">
         <h2>{title}</h2>
-        <div
-          className="button"
-          onClick={toggleExpanded}
-          role="button"
-          tabIndex={0}
-        >
-          <img
-            src={expanded ? Close : Open}
-            alt={expanded ? "Read Less" : "Read More"}
-          />
-        </div>
       </div>
       <p className="summary">{summary}</p>
-      {expanded && <p className="fullContent">{content}</p>}
-
+      <div className="fullContent" style={{ transformOrigin: 'top', transition: 'transform 0.5s ease-in-out, opacity 0.5s ease-in-out' }}>
+        {expanded && <p>{content}</p>}
+      </div>
+      <div
+        className="button"
+        onClick={toggleExpanded}
+        role="button"
+        tabIndex={0}
+      >
+        <img
+          src={expanded ? Close : Open}
+          alt={expanded ? "Read Less" : "Read More"}
+        />
+      </div>
     </div>
   );
 };
@@ -39,41 +40,56 @@ const Section = ({ title, content, summary }) => {
 
 
 
+
+
 const MyComponent2 = () => {
   const sectionRefs = useRef([]);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      sectionRefs.current.forEach((ref) => {
-        if (ref) {
-          const slideInAt =
-            window.scrollY +
-            window.innerHeight -
-            ref.getBoundingClientRect().top;
-          const elementBottom = ref.offsetTop + ref.clientHeight;
-          const isHalfShown = slideInAt > ref.offsetTop;
-          const isNotScrolledPast = window.scrollY < elementBottom;
-
-          if (isHalfShown && isNotScrolledPast) {
-            ref.classList.add("active");
-          } else {
-            ref.classList.remove("active");
-          }
-        }
-      });
+  const debounce = (func, wait) => {
+    let timeout;
+    return function executedFunction(...args) {
+      const later = () => {
+        clearTimeout(timeout);
+        func(...args);
+      };
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
     };
+  };
 
-    handleScroll(); // Call it once to check on load
-    window.addEventListener("scroll", handleScroll);
+  const handleScroll = () => {
+    sectionRefs.current.forEach((ref) => {
+      if (ref) {
+        const slideInAt =
+          window.scrollY +
+          window.innerHeight -
+          ref.offsetHeight / 2;
+        const elementBottom = ref.offsetTop + ref.offsetHeight;
+        const isHalfShown = slideInAt > ref.offsetTop;
+        const isNotScrolledPast = window.scrollY < elementBottom;
+
+        if (isHalfShown && isNotScrolledPast) {
+          ref.classList.add("active");
+        } else {
+          ref.classList.remove("active");
+        }
+      }
+    });
+  };
+
+  useEffect(() => {
+    const debouncedHandleScroll = debounce(handleScroll, 50);
+
+    window.addEventListener("scroll", debouncedHandleScroll);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("scroll", debouncedHandleScroll);
     };
   }, []);
 
   return (
     <div>
-      <div className="container" ref={(el) => (sectionRefs.current[0] = el)}>
+      <div className="container slide-in" ref={(el) => (sectionRefs.current[0] = el)}>
       <div className="photo">
           <img src={Research4} alt="Display" />
         </div>
@@ -115,3 +131,7 @@ const MyComponent2 = () => {
 };
 
 export default MyComponent2;
+
+
+
+
