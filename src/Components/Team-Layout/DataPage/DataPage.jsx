@@ -10,7 +10,7 @@ const DataPage = [
     id: 1,
     TeamName: "Cybersecurity and Data Privacy",
     // Roles: "Cybersecurity,Privacy,Data Privacy ",
-    Names: [" Suchit Iyer", "Somya Narain", "Viswajit Srinivasan"],
+    Names: ["Somya Narain", "Suchit Iyer", "Viswajit Srinivasan"],
   },
   {
     id: 2,
