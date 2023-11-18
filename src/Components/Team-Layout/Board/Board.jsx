@@ -7,7 +7,10 @@ import Image3 from "src/Assets/Images/Joseph.png";
 import Image4 from "src/Assets/Images/Elizabeth.png";
 import Image5 from "src/Assets/Images/Marilyn.png";
 import Image8 from "src/Assets/Images/Chris.png";
-
+import Image8b from "src/Assets/Images/mala.png";
+import Image9 from "src/Assets/Images/hilda.png";
+import Image10 from "src/Assets/Images/mark.png";
+import Image11 from "src/Assets/Images/oliver.png";
 import Image6 from "src/Assets/Images/Card.png";
 import Image7 from "src/Assets/Icons/plus.png";
 
@@ -107,7 +110,22 @@ const Board = () => {
     console.log("cicked card: " + teamData.executive[8]);
     setSelectedCard(teamData.executive[7]);
   };
-
+  const handleCardClick8 = () => {
+    console.log("cicked card: " + teamData.executive[1]);
+    setSelectedCard(teamData.executive[8]);
+  };
+  const handleCardClick9 = () => {
+    console.log("cicked card: " + teamData.executive[1]);
+    setSelectedCard(teamData.executive[9]);
+  };
+  const handleCardClick10 = () => {
+    console.log("cicked card: " + teamData.executive[1]);
+    setSelectedCard(teamData.executive[10]);
+  };
+  const handleCardClick11 = () => {
+    console.log("cicked card: " + teamData.executive[1]);
+    setSelectedCard(teamData.executive[11]);
+  };
   const handlePopupClose = () => {
     console.log("clicked close");
     setSelectedCard(null);
@@ -153,7 +171,6 @@ const Board = () => {
             />
           </div>
         </div>
-      
       )}
       <div id="Board" className="page-holder">
         {/* <div className={`teamboard-tab ${isVisible.divRef ? "slide-in" : ""}`}
@@ -179,9 +196,10 @@ const Board = () => {
           <img src={Image} alt="" />
 
           <div className="Name-tab">
-            <p>Sasika Nanayakkara, PMP <br />
+            <p>
+              Sasika Nanayakkara, PMP <br />
               Founder, CEO, CTO, Chair
-              </p>
+            </p>
           </div>
 
           <button className="btn-board-tab">
@@ -197,9 +215,10 @@ const Board = () => {
           <img src={Image1} alt="" />
 
           <div className="Name-tab">
-            <p>Jeff Jacques, MD <br />
+            <p>
+              Jeff Jacques, MD <br />
               Vice President
-              </p>
+            </p>
           </div>
           <button className="btn-board-tab">
             <img src={Image7} />
@@ -217,9 +236,10 @@ const Board = () => {
           <img src={Image3} alt="" />
 
           <div className="Name-tab">
-            <p>Joseph Karcich, <br />
+            <p>
+              Joseph Karcich, <br />
               Vice President
-              </p>
+            </p>
           </div>
           <button className="btn-board-tab">
             <img src={Image7} />
@@ -230,17 +250,16 @@ const Board = () => {
           <img src={Image2} alt="" />
 
           <div className="Name-tab">
-            <p>Matias Berisso <br />
+            <p>
+              Matias Berisso <br />
               Treasurer and Secretary
-              </p>
+            </p>
           </div>
           <button className="btn-board-tab">
             <img src={Image7} />
           </button>
         </div>
       </div>
-
-
 
       <div id="Board" className="page-holder">
         {/* <div className={`teamboard-tab ${isVisible.divRef ? "slide-in" : ""}`}
@@ -249,16 +268,14 @@ const Board = () => {
         <h2 className="team-directors-header">Advisory Council</h2>
 
         <h3 className="team-directors-tab">
-        The Advisory Committee for our health and wellness startup serves as
-            a group of experienced advisors who provide valuable insights,
-            guidance, and expertise. They contribute to strategic
-            decision-making, offer industry-specific knowledge, and provide
-            recommendations on various aspects of our business, helping us drive
-            innovation and ensure the effectiveness of our programs and
-            services.
+          The Advisory Committee for our health and wellness startup serves as a
+          group of experienced advisors who provide valuable insights, guidance,
+          and expertise. They contribute to strategic decision-making, offer
+          industry-specific knowledge, and provide recommendations on various
+          aspects of our business, helping us drive innovation and ensure the
+          effectiveness of our programs and services.
         </h3>
       </div>
-
 
       <div
         className={`board-directors-tab3 ${
@@ -310,6 +327,61 @@ const Board = () => {
           <div className="Name-tab">
             {/*             <p>Christophe Foulon, CISSP, GSLC, AWS Security</p> */}
             <p>Christophe Foulon, CISSP</p>
+          </div>
+          <button className="btn-board-tab">
+            <img src={Image7} />
+          </button>
+        </div>
+      </div>
+      <div
+        className={`board-directors-tab3 ${
+          isVisible.divFiveRef ? "slide-in" : ""
+        } `}
+        ref={divFiveRef}
+      >
+        <div className="board-image" onClick={handleCardClick8}>
+          <img src={Image8b} alt="mala" />
+
+          <div className="Name-tab">
+            <p>Mala Tudawe, MD</p>
+          </div>
+          <button className="btn-board-tab">
+            <img src={Image7} />
+          </button>
+        </div>
+        <div className="board-image" onClick={handleCardClick9}>
+          <img src={Image9} alt="dalia" />
+
+          <div className="Name-tab">
+            <p>Dalia Heci, LLM</p>
+          </div>
+          <button className="btn-board-tab">
+            <img src={Image7} />
+          </button>
+        </div>
+      </div>
+
+      <div
+        className={`board-directors-tab3 ${
+          isVisible.divFiveRef ? "slide-in" : ""
+        } `}
+        ref={divFiveRef}
+      >
+        <div className="board-image" onClick={handleCardClick10}>
+          <img src={Image10} alt="mark" />
+
+          <div className="Name-tab">
+            <p>Mark Huntzinger </p>
+          </div>
+          <button className="btn-board-tab">
+            <img src={Image7} />
+          </button>
+        </div>
+        <div className="board-image" onClick={handleCardClick11}>
+          <img src={Image11} alt="oliver" />
+
+          <div className="Name-tab">
+            <p>Oliver Degnan, PhD</p>
           </div>
           <button className="btn-board-tab">
             <img src={Image7} />
