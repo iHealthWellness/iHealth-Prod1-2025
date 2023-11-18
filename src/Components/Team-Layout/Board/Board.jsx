@@ -381,7 +381,7 @@ const Board = () => {
           <img src={Image11} alt="oliver" />
 
           <div className="Name-tab">
-            <p>Dr. Oliver Degnan, PhD</p>
+            <p>Oliver Degnan, PhD</p>
           </div>
           <button className="btn-board-tab">
             <img src={Image7} />
