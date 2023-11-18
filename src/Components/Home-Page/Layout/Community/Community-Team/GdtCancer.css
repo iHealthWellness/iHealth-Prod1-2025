@@ -27,37 +27,45 @@
 
 /* Modal popup styling */
 
-.jct-holder{
+.jct-holder {
   position: fixed;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   z-index: 999;
-  top: 0;
-  left: 0;
+  top: 0px;
+  padding: 20;
+  left: 0px;
   display: flex;
+  background-color: rgba(0, 0, 0, 0.7);
   place-content: center;
   align-items: center;
 }
 
-
 .mod1 {
   width: 700px;
-  /* border: 2px solid red; */
   border-radius: 20px;
   background-color: #F8FAFC;
-  /* box-shadow: 0px 0px 5px #E3E6EE; */
   border: 1px solid #07235B;
-  /* place-items: center; */
-  /* justify-content: center; */
 }
 
 /* The bottom ellipse styling */
+.xxx {
+  /* width: 700px; */
+  height: 130px;
+}
+
+.xxx-img {
+  height: 127px;
+  width: 100%;
+  margin-top: -30px;
+  background-color: transparent;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
 
 .modal {
-  height: 360px;
-  width: 100%;
+  height: 260px;
   background-color: #F8FAFC;
-  clip-path: circle(118% at 50% -100%);
   border: none;
 }
 
@@ -119,59 +127,95 @@
 /* FORM STYLING */
 
 .form__content {
-  /* width: 80%; */
   margin: 5px 10% 0 10%;
 }
 
 .input {
   position: relative;
   margin-bottom: 13px;
+  /* width: 100vw; */
 }
 
 .input__textarea {
   position: relative;
-  /* border: 1.5px solid #E0E3EB; */
-  /* height: 80px; */
 }
 
 .input__field {
   width: 100%;
-  padding: 8px;
+  padding: 6px;
   border: 1px solid #E0E3EB;
   border-radius: 4px;
   background-color: #ffffff;
+  cursor:pointer;
 }
 
 .input__label {
   position: absolute;
-  margin-top: 10px;
+  margin-top: 8px;
   left: 10px;
   font-size: 12px;
   font-weight: 400;
-  color: #A3AAC2;
+  /* color: #A3AAC2; */
+  color: #000000;
   pointer-events: none;
   transition: all 0.3s ease;
 }
 
+.input__labelx {
+  position: absolute;
+  margin-top: 8px;
+  left: 10px;
+  font-size: 12px;
+  font-weight: 400;
+  /* color: #A3AAC2; */
+  color: #000000;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
 
 .opt__gdt::after {
   content: "*";
   color: red;
+  font-size: 15px;
+}
+
+.input__labelx::after {
+  content: "*";
+  color: red;
+  font-size: 15px;
 }
 
 .input__label::after {
   content: "*";
-  color: rgba(237, 101, 101, 1);
+  color: red;
+  font-size: 15px;
+}
+
+/* SET THE BACKGROUND COLOR OF THE INPUT FIELD ON INPUT OF A TEXT */
+
+.input-filled {
+  background-color: #ffffff;
+  /* color: #ffffff; */
+}
+
+.input__field:disabled{
+  background-color: #ffffff94;
+}
+
+
+.input:-internal-autofill-selected{
+  background-color: #0D99FF;
 }
 
 .textarea__field {
   width: 100%;
-  height: 80px;
+  height: 60px;
   padding: 10px;
   border:  1.5px solid #E0E3EB;
   border-radius: 0px;
   background-color: #ffffff;
   resize: none;
+  cursor: pointer;
 }
 
 .textarea__label {
@@ -180,7 +224,8 @@
   left: 10px;
   font-size: 12px;
   font-weight: 400;
-  color: #A3AAC2;
+  /* color: #A3AAC2; */
+  color: #000000;
   pointer-events: none;
   transition: all 0.3s ease;
 }
@@ -193,8 +238,10 @@
 }
 
 .pxp2::before {
-  content: "* ";
-  color: rgba(237, 101, 101, 1);
+  content: "*";
+  color: red;
+  font-size: 15px;
+  /* color: rgba(237, 101, 101, 1); */
 }
 
 .btnx {
@@ -202,10 +249,11 @@
 }
 
 .btnx button {
+  position: relative;
+  top: 80px;
   font-size: 20px;
   font-weight: 200;
-  margin-top: 120px;
-  padding: 10px 14px;
+  padding: 5px 14px;
   width: 252.84px;
   background: #0D99FF;
   border-radius: 20px;
@@ -226,17 +274,101 @@
   z-index: -1;
 }
 
+.input__field:focus~.input__labelx,
+.input__field:not(:placeholder-shown)~.input__labelx {
+  z-index: -1;
+}
+
 .textarea__field:focus~.textarea__label,
 .textarea__field:not(:placeholder-shown)~.textarea__label {
   z-index: -1;
 }
 
+.hidden-label{
+  display: none;
+}
+
+/* .input__label:is(:where(isSubmitted2)) {
+  display: none;
+} */
+
+/* CONDITION DROPDOWN STYLING */
+.custom-select  {
+  color: #ffffff;
+}
+
+.select-selected img{
+  float: right;
+  margin: 6px 0;
+}
+
+.select-items{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+    max-height: 150px;
+    width: 100%;
+  color: black;
+  font-size: 15px;
+  overflow-y: auto;
+  z-index: 2222;
+}
+
+/* .same-as-selected{
+  color: #0D99FF;
+}
+
+.same-as-selected1{
+  color: #062758;
+} */
+
+/* Highlight the dropdown options on hover */
+.select-items div:hover {
+  background-color: #0D99FF; 
+  cursor: pointer;
+  color: #ffffff;
+}
+
+/* Highlight the selected dropdown option*/
+.same-as-selected {
+  background-color: #e0e0e0;
+  color: #000000; 
+}
+
+/* Track */
+.select-items::-webkit-scrollbar {
+  width: 5px; 
+}
+
+/* Handle */
+.select-items::-webkit-scrollbar-thumb {
+  background-color: #07235B;
+  border-radius: 6px; 
+}
+
+/* Track on hover
+.select-items::-webkit-scrollbar:hover {
+  width: 5px; 
+}
+
+Handle on hover
+.select-items::-webkit-scrollbar-thumb:hover {
+  background-color: #555; 
+}
+
+Button (up and down arrows)
+select::-webkit-scrollbar-button {
+  display: none; 
+} */
+
+
+
 /* input validation message styling */
 .error-msg {
-  position: fixed;
+  position: absolute;
   margin-top: -12px;
-  left: 29%;
-  /* left: 370px; */
+  left: 3%;
   color: red;
   font-size: 12px;
   transform: translate(-10%, -10%);
@@ -246,19 +378,34 @@
 
 .loader {
   position: absolute;
-  top: 45%;
+  top: 50%;
   left: 47%;
   transform: translate(-50%, -50%);
   width: 80px;
   height: 80px;
-  /* background: conic-gradient(from 180deg at 50% 50.00%, #062758 0deg, rgba(13, 153, 255, 0.00) 360deg); */
   border: 10px solid #062758;
   border-top: 10px solid #f1f1f1;
   border-radius: 50%;
   /* Animation for the spinning element */
   animation: spin 1s linear infinite;
-  z-index: 1;
+  z-index: 100;
 }
+
+.loader1 {
+  position: absolute;
+  top: 5px;
+  left: 49%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  border: 2px solid #062758;
+  border-top: 2px solid #f1f1f1;
+  border-radius: 50%;
+  /* Animation for the spinning element */
+  animation: spin 1s linear infinite;
+  z-index: 100;
+}
+
 
 
 
@@ -274,21 +421,48 @@
 
 
 
+
+
+
+@media screen and (max-width: 768px) {
+
+  .xxx-img{
+    height: 137px;
+  }
+  .form__content {
+    margin: 5px 5% 0 5%;
+  }
+
+  .btnx button{
+    top: 87px;
+  }
+
+  .loader {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    border: 5px solid #062758;
+    border-top: 5px solid #f1f1f1;
+    border-radius: 50%;
+    /* Animation for the spinning element */
+    animation: spin 1s linear infinite;
+    z-index: 1;
+  }
+}
+
+
+
 @media only screen and (max-width: 280px) {
 
   .mod1 {
-    height: 600px;
     margin: 0;
     border-radius: 0;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
   }
-
-  /* .progressbar__img{
-    width: 50%;
-    height: 15px;
-    margin-bottom: 5px;
-  } */
 
   .gdt__p1{
     margin-top: 20px;
@@ -305,7 +479,7 @@
   }
 
   .modal {
-    clip-path: circle(170% at 50% -70%);
+    clip-path: circle(170% at 50% -67%);
   }
 
   .Login_down {
@@ -323,7 +497,6 @@
   .btnx button {
     font-size: 14px;
     width: 222.84px;
-    margin-top: 50px;
   }
 }
 
@@ -337,13 +510,14 @@
   }
 
   .modal {
-    clip-path: circle(137% at 50% -55%);
+    clip-path: circle(137% at 50% -53%);
   }
 
   .Login_down {
-    height: 230px;
+    height: 200px;
     width: 100%;
   }
+
 
 }
 
@@ -356,11 +530,11 @@
   }
 
   .modal {
-    clip-path: circle(137% at 50% -55%);
+    clip-path: circle(137% at 50% -53%);
   }
 
   .Login_down {
-    height: 230px;
+    height: 200px;
     width: 100%;
   }
 
@@ -374,12 +548,8 @@
     border-bottom-right-radius: 20px;
   }
 
-  .modal {
-    clip-path: circle(135% at 50% -55%);
-  }
-
   .Login_down {
-    height: 230px;
+    height: 200px;
     width: 100%;
   }
 
@@ -394,11 +564,11 @@
   }
 
   .modal {
-    clip-path: circle(137% at 50% -60%);
+    clip-path: circle(137% at 50% -58%);
   }
 
   .Login_down {
-    height: 230px;
+    height: 200px;
     width: 100%;
   }
 
@@ -407,7 +577,7 @@
 
 /* SURFACE PRO STYLING */
 
-@media only screen and (min-width: 415px) and (max-width: 590px) {
+@media only screen and (min-width: 520px) and (max-width: 590px) {
 
   .mod1 {
     margin: 0 0%;
@@ -420,7 +590,16 @@
   }
 
   .modal {
-    clip-path: circle(107% at 50% -52%);
+    clip-path: circle(114% at 50% -50%);
+  }
+
+  .Login_down {
+    height: 200px;
+    width: 100%;
+  }
+
+  .btnx button {
+    margin-top: 135px;
   }
 }
 
@@ -473,12 +652,6 @@
     font-size: 12px;
   }
 
-  .btnx button {
-    font-weight: 200;
-    width: 200.84px;
-    margin-top: 130px;
-  }
-
   .error-msg {
     left: 17.5%;
     font-size: 10px;
@@ -495,7 +668,7 @@
   }
 
   .modal {
-    clip-path: circle(105% at 50% -52%);
+    clip-path: circle(108% at 50% -50%);
   }
 
   .Login_down {
@@ -518,31 +691,65 @@
   .error-msg {
     left: 23.5%;
   }
+
+  .jct-holder{
+    top: 28px;
+  }
+
+  .xxx{
+    height: 160px;
+  }
+
+  .xxx img{
+    height: auto;
+  }
+
+  .btnx button{
+    top: 110px;
+  }
+
+  .close_img {
+    position: relative;
+    top: 130px;
+    left: 0;
+    height: 47px;
+}
 }
 
 /* IPAD STYLING */
 
-/* @media only screen and (min-width: 810px) and (max-width: 830px) {
+@media only screen and (min-width: 810px) and (max-width: 830px) {
 
-  .close {
-    margin-left: 92%;
-    font-size: 30px;
+  .mod1 {
+    width: 70vw;
+    margin: 30px 15%;
   }
 
   .modal {
-    clip-path: circle(115% at 50% -55%);
-    border: none;
+    clip-path: circle(100% at 50% -45%);
   }
 
   .Login_down {
     height: 200px;
+    width: 100%;
   }
 
 
-  .textarea__label {
-    left: 53px;
+  .loader {
+    position: absolute;
+    top: 50%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    border: 6px solid #062758;
+    border-top: 6px solid #f1f1f1;
+    border-radius: 50%;
+    /* Animation for the spinning element */
+    animation: spin 1s linear infinite;
+    z-index: 1;
   }
-} */
+}
 
 /* SURFACE PRO STYLING */
 
@@ -579,18 +786,20 @@
 
 
   .close {
-    font-size: 30px;
+    font-size: 40px;
   }
 
-  .modal {
-    clip-path: circle(90% at 50% -50%);
+  .Login_down {
+    height: 200px;
+    width: 100%;
   }
 
   .btnx button{
-    width: 180px;
+    width: 230px;
     padding: 5px 14px;
-    margin-top: 150px;
+    /* margin-top: 140px; */
   }
+
 } 
 
 /* NEST HUB PRO SCREEN STYLING */
@@ -625,10 +834,6 @@
 /* MINI DESKTOP SCREEN STYLING */
 
 @media only screen and (min-width: 1028px) and (max-width: 1035px) {
-
-  /* .modal {
-    clip-path: circle(110% at 50% -79%);
-  } */
 
 /* input validation message styling */
 .error-msg {
