@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect, useRef } from "react";
 import "./MyComponent.css";
 import Research2 from "src/Assets/Images/Research-2.png";
@@ -16,25 +15,50 @@ const Section = ({ title, content, summary }) => {
     <div className={`section ${expanded ? "expanded" : ""}`}>
       <div className="titleContainer">
         <h2>{title}</h2>
-        <div
-          className="button"
-          onClick={toggleExpanded}
-          role="button"
-          tabIndex={0}
-        >
-          <img
-            src={expanded ? Close : Open}
-            alt={expanded ? "Read Less" : "Read More"}
-          />
-        </div>
       </div>
-      <p className="summary">{summary}</p>
+
+      <p className="summary">
+        {summary}
+        {!expanded && (
+          <div
+            className="button"
+            onClick={toggleExpanded}
+            role="button"
+            tabIndex={0}
+          >
+            <img
+              src={Open}
+              alt="Read More"
+            />
+          </div>
+        )}
+      </p>
+
       <div className="fullContent">
-        {expanded && <p>{content}</p>}
+        {expanded && (
+          <>
+            <p>{content}</p>
+            <div
+              className="button"
+              onClick={toggleExpanded}
+              role="button"
+              tabIndex={0}
+            >
+              <img
+                src={Close}
+                alt="Read Less"
+              />
+            </div>
+          </>
+        )}
       </div>
+
+      
     </div>
   );
 };
+
+
 
 const MyComponent = () => {
   const sectionRefs = useRef([]);

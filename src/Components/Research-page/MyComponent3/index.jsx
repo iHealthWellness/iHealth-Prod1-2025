@@ -1,6 +1,19 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 import React, { useState, useEffect, useRef } from "react";
 import "./MyComponent3.css";
-import Research2 from "src/Assets/Images/Research-2.png";
 import Close from "src/Assets/Icons/minus.png";
 import Open from "src/Assets/Icons/plus.png";
 import Research6 from "src/Assets/Images/Research-6.png";
@@ -16,27 +29,48 @@ const Section = ({ title, content, summary }) => {
     <div className={`section ${expanded ? "expanded" : ""}`}>
       <div className="titleContainer">
         <h2>{title}</h2>
-        <div
-          className="button"
-          onClick={toggleExpanded}
-          role="button"
-          tabIndex={0}
-        >
-          <img
-            src={expanded ? Close : Open}
-            alt={expanded ? "Read Less" : "Read More"}
-          />
-        </div>
       </div>
-      <p className="summary">{summary}</p>
+
+      <p className="summary">
+        {summary}
+        {!expanded && (
+          <div
+            className="button"
+            onClick={toggleExpanded}
+            role="button"
+            tabIndex={0}
+          >
+            <img
+              src={Open}
+              alt="Read More"
+            />
+          </div>
+        )}
+      </p>
+
       <div className="fullContent">
-        {expanded && <p>{content}</p>}
+        {expanded && (
+          <>
+            <p>{content}</p>
+            <div
+              className="button"
+              onClick={toggleExpanded}
+              role="button"
+              tabIndex={0}
+            >
+              <img
+                src={Close}
+                alt="Read Less"
+              />
+            </div>
+          </>
+        )}
       </div>
+
+      
     </div>
   );
 };
-
-
 
 
 
@@ -88,11 +122,11 @@ const MyComponent3 = () => {
   return (
     <div>
       <div className="container slide-in" ref={(el) => (sectionRefs.current[0] = el)}>
-      <div className="photo">
-          <img src={Research6} alt="Display" />
+        <div className="photo">
+        <img src={Research6} alt="Display" />
         </div>
         <div className="textSections active">
-          <Section
+        <Section
             title="1.Stay Informed"
             summary="Keep yourself updated on the latest NF research by following reputable NF organizations, medical journals, and research institutions."
             content="They often share information about ongoing studies and clinical trials.            "
@@ -113,8 +147,25 @@ const MyComponent3 = () => {
             content="They can guide you, provide recommendations, and help connect you with relevant research opportunities."
           />
         </div>
-
       </div>
+      <section
+        id="tools"
+        className="research-tools"
+        ref={(el) => (sectionRefs.current[1] = el)}
+      >
+        <div className="reminder">
+          <h2 className="reminder1">Do you know?</h2>
+          <p className="reminder2">
+            These resources can serve as valuable tools for researchers and
+            individuals interested in NF research. It's important to explore
+            specific databases, funding opportunities, and networks relevant to
+            your research interests or goals. Additionally, staying up-to-date
+            with the latest research publications and attending conferences or
+            scientific meetings can further enhance knowledge and collaboration
+            in the field of NF research.
+          </p>
+        </div>
+      </section>
     </div>
   );
 };

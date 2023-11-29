@@ -4,7 +4,6 @@ import Research2 from "src/Assets/Images/Research-2.png";
 import Close from "src/Assets/Icons/minus.png";
 import Open from "src/Assets/Icons/plus.png";
 import Research4 from "src/Assets/Images/Research-4.png";
-
 const Section = ({ title, content, summary }) => {
   const [expanded, setExpanded] = useState(false);
 
@@ -17,21 +16,44 @@ const Section = ({ title, content, summary }) => {
       <div className="titleContainer">
         <h2>{title}</h2>
       </div>
-      <p className="summary">{summary}</p>
-      <div className="fullContent" style={{ transformOrigin: 'top', transition: 'transform 0.5s ease-in-out, opacity 0.5s ease-in-out' }}>
-        {expanded && <p>{content}</p>}
+
+      <p className="summary">
+        {summary}
+        {!expanded && (
+          <div
+            className="button"
+            onClick={toggleExpanded}
+            role="button"
+            tabIndex={0}
+          >
+            <img
+              src={Open}
+              alt="Read More"
+            />
+          </div>
+        )}
+      </p>
+
+      <div className="fullContent">
+        {expanded && (
+          <>
+            <p>{content}</p>
+            <div
+              className="button"
+              onClick={toggleExpanded}
+              role="button"
+              tabIndex={0}
+            >
+              <img
+                src={Close}
+                alt="Read Less"
+              />
+            </div>
+          </>
+        )}
       </div>
-      <div
-        className="button"
-        onClick={toggleExpanded}
-        role="button"
-        tabIndex={0}
-      >
-        <img
-          src={expanded ? Close : Open}
-          alt={expanded ? "Read Less" : "Read More"}
-        />
-      </div>
+
+      
     </div>
   );
 };
