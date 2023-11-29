@@ -4,8 +4,6 @@ import { ArrowTab } from "./ButtonTab";
 import "./Hiring.css";
 import plusbtn from "src/Assets/Icons/plus.png";
 import minusbtn from "src/Assets/Icons/minus.png";
-// import topArrow from "src/Assets/Icons/iconone.png";
-// import downArrow from "src/Assets/Icons/icontwo.png";
 
 import { useState } from "react";
 
@@ -39,10 +37,10 @@ const It = () => {
         <div className="job-body">
           {itVisible && (
             <div className="grid">
-              <h2 className="grid-title">
+              <h2 className="grid-title" onClick={toggleAccordion("sight")}>
                 Salesforce Architect (Cloud Health Implementation Expert)
               </h2>
-              <h2 className="grid-text">Remote</h2>
+              <h2 className="grid-text" onClick={toggleAccordion("sight")}>Remote</h2>
               <ArrowTab
                 icon={accordion.sight}
                 onClick={toggleAccordion("sight")}

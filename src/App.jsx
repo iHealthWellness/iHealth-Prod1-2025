@@ -17,9 +17,7 @@ import Other from "./Pages/Other/index";
 import Team from "./Pages/Our-Team";
 import Termsofuse from "./Pages/Terms-of-use";
 import Jobs from "./Pages/Jobs-opening/jobs.jsx";
-// import Other from "./Pages/Other/index";
 
-// import Navbar from "./Components/Navbar/Navbar";
 
 function App() {
   const router = createBrowserRouter([
@@ -37,8 +35,7 @@ function App() {
         { path: "/our-team", element: <Team /> },
         { path: "/other", element: <Other /> },
         { path: "/terms-of-use", element: <Termsofuse /> },
-        { path: "/job-openings", element: <Jobs/>},
-        // { path: "*", element: <Other /> },
+        { path: "/job-openings", element: <Jobs /> },
       ],
     },
   ]);
@@ -46,16 +43,11 @@ function App() {
     <>
       <RouterProvider router={router} />
 
-      {/* <Router>
-        <Switch>
 
-          <Route path="/Our-Team" component={Team} />
-        </Switch>
-      </Router> */}
 
       {/* https://stackoverflow.com/questions/74297769/how-to-navigate-to-sections-with-id-as-well-as-pages-in-react-router-dom */}
 
-      {/* <Footer/> */}
+
     </>
   );
 }

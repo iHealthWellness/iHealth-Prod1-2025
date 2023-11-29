@@ -148,7 +148,7 @@ const MyComponent3 = () => {
           />
         </div>
       </div>
-      <section
+      {/* <section
         id="tools"
         className="research-tools"
         ref={(el) => (sectionRefs.current[1] = el)}
@@ -165,7 +165,7 @@ const MyComponent3 = () => {
             in the field of NF research.
           </p>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

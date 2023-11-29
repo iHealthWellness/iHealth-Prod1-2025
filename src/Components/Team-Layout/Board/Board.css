@@ -269,10 +269,12 @@
 }
 
 .rounded-frame {
-    padding-top: 15px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
     width: 100%;
-    margin-bottom: -5%;
-    margin-top: -20%;
+    padding-top: 15px;
+    margin-bottom: 0;
 }
 
 .popup-text {
@@ -562,11 +564,11 @@
   }
   
   .close-btn-2 {
-    width: 5vh;
+    width: 3vh;
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding-top: 20px;
+    padding-top: 50px;
   }
   
   

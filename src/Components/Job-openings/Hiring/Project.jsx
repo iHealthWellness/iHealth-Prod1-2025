@@ -39,8 +39,8 @@ const Project = () => {
         <div className="job-body">
           {projectVisible && (
             <div className="grid">
-              <h2 className="grid-title">Parliamentary Procedure Specialist</h2>
-              <h2 className="grid-text">Remote</h2>
+              <h2 className="grid-title" onClick={toggleAccordion("appearance")}>Parliamentary Procedure Specialist</h2>
+              <h2 className="grid-text" onClick={toggleAccordion("appearance")}>Remote</h2>
               <ArrowTab
                 icon={accordion.appearance}
                 onClick={toggleAccordion("appearance")}
@@ -147,8 +147,8 @@ const Project = () => {
         <div className="job-body">
           {projectVisible && (
             <div className="grid">
-              <h2 className="grid-title">Project/ Agile Delivery Associate</h2>
-              <h2 className="grid-text">Remote</h2>
+              <h2 className="grid-title" onClick={toggleAccordion("landscape")}>Project/ Agile Delivery Associate</h2>
+              <h2 className="grid-text" onClick={toggleAccordion("landscape")}>Remote</h2>
               <ArrowTab
                 icon={accordion.landscape}
                 onClick={toggleAccordion("landscape")}
