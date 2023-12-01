@@ -65,11 +65,19 @@ const menuItems = [
     url: "/services",
     submenu: [
       {
-        title: "Share Your Story: Form",
+        title: "Share Your Story",
         url: "/services/#",
       },
       {
         title: "Create Your Blog",
+        url: "/services/#",
+      },
+      {
+        title: "Our Blogs",
+        url: "/services/#",
+      },
+      {
+        title: "Community Insights",
         url: "/services/#",
       },
       // {
@@ -78,6 +86,10 @@ const menuItems = [
       // },
     ],
   },
+
+
+
+
   {
     title: "Ways to Give",
     url: "/donate",
