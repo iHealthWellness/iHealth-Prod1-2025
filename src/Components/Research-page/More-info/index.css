@@ -119,3 +119,25 @@
     width: 100%; /* Take full width on small screens */
   padding-top: 500px;
 margin-bottom: -130px;  }}
+
+
+
+
+
+
+
+
+/* Add a class for the paragraph that needs to show more on hover */
+.evorolimus-p-collapsed {
+  /* these properties will hide overflowed content */
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 5; /* number of lines to show */
+  -webkit-box-orient: vertical;
+  transition: all .5s ease; /* smooth transition */
+}
+
+/* Expand the paragraph to its full height on hover */
+.evorolimus:hover .evorolimus-p-collapsed {
+  -webkit-line-clamp: none; /* show all lines on hover */
+}

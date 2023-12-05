@@ -40,40 +40,40 @@ const Board = () => {
     divSixRef: false,
   });
 
-  useEffect(() => {
-    const handleScroll = () => {
-      applyVisibleEffect(divRef, "divRef");
-      applyVisibleEffect(divTwoRef, "divTwoRef");
-      applyVisibleEffect(divThreeRef, "divThreeRef");
-      applyVisibleEffect(divFourRef, "divFourRef");
-      applyVisibleEffect(divFiveRef, "divFiveRef");
-      applyVisibleEffect(divSixRef, "divSixRef");
-    };
-    const applyVisibleEffect = (div, key) => {
-      if (div.current) {
-        const rect = div.current.getBoundingClientRect();
-        const windowHeight =
-          window.innerHeight || document.documentElement.clientHeight;
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     applyVisibleEffect(divRef, "divRef");
+  //     applyVisibleEffect(divTwoRef, "divTwoRef");
+  //     applyVisibleEffect(divThreeRef, "divThreeRef");
+  //     applyVisibleEffect(divFourRef, "divFourRef");
+  //     applyVisibleEffect(divFiveRef, "divFiveRef");
+  //     applyVisibleEffect(divSixRef, "divSixRef");
+  //   };
+  //   const applyVisibleEffect = (div, key) => {
+  //     if (div.current) {
+  //       const rect = div.current.getBoundingClientRect();
+  //       const windowHeight =
+  //         window.innerHeight || document.documentElement.clientHeight;
 
-        if (rect.top <= windowHeight && rect.bottom >= 0) {
-          setIsVisible((prevState) => ({
-            ...prevState,
-            [key]: true,
-          }));
-        } else {
-          setIsVisible((prevState) => ({
-            ...prevState,
-            [key]: false,
-          }));
-        }
-      }
-    };
+  //       if (rect.top <= windowHeight && rect.bottom >= 0) {
+  //         setIsVisible((prevState) => ({
+  //           ...prevState,
+  //           [key]: true,
+  //         }));
+  //       } else {
+  //         setIsVisible((prevState) => ({
+  //           ...prevState,
+  //           [key]: false,
+  //         }));
+  //       }
+  //     }
+  //   };
 
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
 
   const [selectedCard, setSelectedCard] = useState(null);
 
@@ -162,7 +162,6 @@ const Board = () => {
                 </div>
               ))}
             </div>
-
             <img src={roundedFrame} className="rounded-frame" />
             <img
               onClick={handlePopupClose}

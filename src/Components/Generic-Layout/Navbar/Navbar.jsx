@@ -107,17 +107,21 @@ const MenuList = () => {
       
       subMenu: [
         {
-          title: "Share Your Story: Form",
+          title: "Share Your Story",
           url: "/services/#",
         },
         {
           title: "Create Your Blog",
           url: "/services/#",
         },
-        // {
-        //   title: "Blogs",
-        //   url: "/services/#",
-        // },
+        {
+          title: "Our Blogs",
+          url: "/services/#",
+        },
+        {
+          title: "Community Insights & Blogs",
+          url: "/services/#",
+        },
         // {
         //   title: "Share Your Story",
         //   url: "/services/#",
