@@ -1,34 +1,42 @@
 
-import React, {useEffect} from "react";
+import React, {useEffect } from "react";
 import "./index.css";
 import Research4 from "src/Assets/Images/Research-4.png";
 
 const section4 = () => {
 
   useEffect(() => {
-    const textElements = document.querySelectorAll('.slide-in-text');
-
+    const textElements = document.querySelectorAll(".slide-in-text4");
     const handleScroll = () => {
       textElements.forEach((textElement) => {
-        const slideInAt = (window.scrollY + window.innerHeight) - textElement.clientHeight / 2;
+        const slideInAt =
+          window.scrollY +
+          window.innerHeight -
+          textElement.getBoundingClientRect().top;
         const elementBottom = textElement.offsetTop + textElement.clientHeight;
         const isHalfShown = slideInAt > textElement.offsetTop;
         const isNotScrolledPast = window.scrollY < elementBottom;
 
         if (isHalfShown && isNotScrolledPast) {
-          textElement.classList.add('active');
+          textElement.classList.add("active");
         } else {
-          textElement.classList.remove('active');
+          textElement.classList.remove("active");
         }
       });
     };
+    // Initial call to handleScroll
+    handleScroll();
 
-    window.addEventListener('scroll', handleScroll);
+    // Listen for scroll events
+    window.addEventListener("scroll", handleScroll);
 
+    // Cleanup the event listener on component unmount
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+ 
   return (
     <div className="info">
       <div className="more-info">
@@ -58,7 +66,7 @@ const section4 = () => {
         </p>
       </div>
       {/* <div className="slide-in-text"> */}
-      <div className="evorolimus">
+      <div className="evorolimus slide-in-text4">
         <img className="evorolimus-img" src={Research4} alt="" />
         <div>
           <h1>

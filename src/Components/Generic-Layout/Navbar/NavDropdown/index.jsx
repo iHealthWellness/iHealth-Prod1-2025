@@ -60,24 +60,24 @@ const menuItems = [
       },
     ],
   },
-  // {
-  //   title: "Stories of Strength",
-  //   url: "/services",
-  //   submenu: [
-  //     {
-  //       title: "Share Your Story",
-  //       url: "/services/#",
-  //     },
-  //     {
-  //       title: "Create Your Blog",
-  //       url: "/services/#",
-  //     },
-  //     {
-  //       title: "Blogs",
-  //       url: "/services/#",
-  //     },
-  //   ],
-  // },
+  {
+    title: "Stories of Strength",
+    url: "/services",
+    submenu: [
+      {
+        title: "Share Your Story: Form",
+        url: "/services/#",
+      },
+      {
+        title: "Create Your Blog",
+        url: "/services/#",
+      },
+      // {
+      //   title: "Blogs",
+      //   url: "/services/#",
+      // },
+    ],
+  },
   {
     title: "Ways to Give",
     url: "/donate",

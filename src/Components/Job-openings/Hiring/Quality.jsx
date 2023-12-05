@@ -4,8 +4,6 @@ import { ArrowTab } from "./ButtonTab";
 import "./Hiring.css";
 import plusbtn from "src/Assets/Icons/plus.png";
 import minusbtn from "src/Assets/Icons/minus.png";
-// import topArrow from "src/Assets/Icons/iconone.png";
-// import downArrow from "src/Assets/Icons/icontwo.png";
 
 import { useState } from "react";
 
@@ -39,8 +37,8 @@ const Quality = () => {
         <div className="job-body">
           {qualityVisible && (
             <div className="grid">
-              <h2 className="grid-title">BA/QA Engineer/ Associate</h2>
-              <h2 className="grid-text">Remote</h2>
+              <h2 className="grid-title" onClick={toggleAccordion("spectacle")}>BA/QA Engineer/ Associate</h2>
+              <h2 className="grid-text" onClick={toggleAccordion("spectacle")}>Remote</h2>
               <ArrowTab
                 icon={accordion.spectacle}
                 onClick={toggleAccordion("spectacle")}

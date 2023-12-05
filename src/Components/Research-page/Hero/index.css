@@ -7,6 +7,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  overflow: hidden;
 }
 
 .image-img {
@@ -73,13 +74,13 @@
   text-align: justify;
 }
 
-.slide-in-text {
+.slide-in-text1 {
   opacity: 0;
   transform: translateX(50%);
-  transition: opacity 0.4s, transform 0.3s;
+  transition: opacity 0.4s, transform 0.5s;
 }
 
-.slide-in-text.active {
+.slide-in-text1.active {
   opacity: 1;
   transform: translateX(0);
 }

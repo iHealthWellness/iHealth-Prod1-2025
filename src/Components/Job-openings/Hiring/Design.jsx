@@ -38,8 +38,8 @@ const Design = () => {
         <div className="job-body">
           {designVisible && (
             <div className="grid">
-              <h2 className="grid-title">UX Researcher</h2>
-              <h2 className="grid-text">Remote</h2>
+              <h2 className="grid-title" onClick={toggleAccordion("open")}>UX Researcher</h2>
+              <h2 className="grid-text" onClick={toggleAccordion("open")} >Remote</h2>
               <ArrowTab
                 icon={accordion.open}
                 onClick={toggleAccordion("open")}
@@ -151,8 +151,8 @@ const Design = () => {
         <div className="job-body">
           {designVisible && (
             <div className="grid">
-              <h2 className="grid-title">UX/UI Designer</h2>
-              <h2 className="grid-text">Remote</h2>
+              <h2 className="grid-title" onClick={toggleAccordion("hide")}>UX/UI Designer</h2>
+              <h2 className="grid-text" onClick={toggleAccordion("hide")}>Remote</h2>
               <ArrowTab
                 icon={accordion.hide}
                 onClick={toggleAccordion("hide")}

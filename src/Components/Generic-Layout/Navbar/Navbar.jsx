@@ -98,26 +98,38 @@ const MenuList = () => {
     },
     {
       
-      // title: "Stories of Strength",
-      // url: "/services",
-      // className: "nav-services" ,
+      title: "Stories of Strength",
+      url: "/services",
+      className: "nav-services" ,
       
       
       
       
       subMenu: [
         {
-          title: "Share Your Story",
+          title: "Share Your Story: Form",
           url: "/services/#",
         },
         {
           title: "Create Your Blog",
           url: "/services/#",
         },
-        {
-          title: "Blogs",
-          url: "/services/#",
-        },
+        // {
+        //   title: "Blogs",
+        //   url: "/services/#",
+        // },
+        // {
+        //   title: "Share Your Story",
+        //   url: "/services/#",
+        // },
+        // {
+        //   title: "Create Your Blog",
+        //   url: "/services/#",
+        // },
+        // {
+        //   title: "Blogs",
+        //   url: "/services/#",
+        // },
       ],
     },
     {

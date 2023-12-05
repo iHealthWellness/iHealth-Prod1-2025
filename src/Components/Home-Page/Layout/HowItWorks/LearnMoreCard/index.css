@@ -23,6 +23,20 @@
     background-position: center;
 }
 
+/* iPad Screen Sizes: 769px to 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .lmc-container {
+        display: none;
+    }
+}
+
+/* Small Screens (phones, etc.): Max width up to 768px */
+@media (max-width: 768px) {
+    .lmc-container {
+        display: none;
+    }
+}
+
 
 .lmc-container.lmc-visible {
     opacity: 1;

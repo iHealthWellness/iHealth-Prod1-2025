@@ -1,33 +1,42 @@
 
-import React,{useEffect} from "react";
+import React,{useEffect } from "react";
 import "./index.css";
 
 const section5 = () => {
 
   useEffect(() => {
-    const textElements = document.querySelectorAll('.slide-in-text');
-
+    const textElements = document.querySelectorAll(".slide-in-text5");
     const handleScroll = () => {
       textElements.forEach((textElement) => {
-        const slideInAt = (window.scrollY + window.innerHeight) - textElement.clientHeight / 2;
+        const slideInAt =
+          window.scrollY +
+          window.innerHeight -
+          textElement.getBoundingClientRect().top;
         const elementBottom = textElement.offsetTop + textElement.clientHeight;
         const isHalfShown = slideInAt > textElement.offsetTop;
         const isNotScrolledPast = window.scrollY < elementBottom;
 
         if (isHalfShown && isNotScrolledPast) {
-          textElement.classList.add('active');
+          textElement.classList.add("active");
         } else {
-          textElement.classList.remove('active');
+          textElement.classList.remove("active");
         }
       });
     };
+    // Initial call to handleScroll
+    handleScroll();
 
-    window.addEventListener('scroll', handleScroll);
+    // Listen for scroll events
+    window.addEventListener("scroll", handleScroll);
 
+    // Cleanup the event listener on component unmount
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+
+ 
   return (
     <div className="Segas">
       <div className="segas">
@@ -69,7 +78,7 @@ const section5 = () => {
       </div>
       {/* <div className="slide-in-text"> */}
 
-      <div className="peginter">
+      <div className="peginter slide-in-text5">
         <span className="peginter-span">Peginterferon alfa-2b</span>
         <p className="peginter-p">
           <br />A medication known for its immune-modulating properties, has

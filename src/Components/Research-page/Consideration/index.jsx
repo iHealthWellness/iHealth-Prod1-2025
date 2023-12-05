@@ -4,12 +4,13 @@ import Research7 from "src/Assets/Images/Research-7.png";
 
 const Consideration = () => {
   useEffect(() => {
-    const textElements = document.querySelectorAll(".slide-in-text");
-
+    const textElements = document.querySelectorAll(".slide-in-text8");
     const handleScroll = () => {
       textElements.forEach((textElement) => {
         const slideInAt =
-          window.scrollY + window.innerHeight - textElement.clientHeight / 2;
+          window.scrollY +
+          window.innerHeight -
+          textElement.getBoundingClientRect().top;
         const elementBottom = textElement.offsetTop + textElement.clientHeight;
         const isHalfShown = slideInAt > textElement.offsetTop;
         const isNotScrolledPast = window.scrollY < elementBottom;
@@ -21,17 +22,22 @@ const Consideration = () => {
         }
       });
     };
+    // Initial call to handleScroll
+    handleScroll();
 
+    // Listen for scroll events
     window.addEventListener("scroll", handleScroll);
 
+    // Cleanup the event listener on component unmount
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+ 
 
   return (
     <div className="Consider">
-      <div className="consider">
+      <div className="consider slide-in-text8">
 
           <div className="consideration">
             <h2>

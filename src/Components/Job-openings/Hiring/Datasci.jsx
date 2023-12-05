@@ -4,8 +4,7 @@ import { ArrowTab } from "./ButtonTab";
 import "./Hiring.css";
 import plusbtn from "src/Assets/Icons/plus.png";
 import minusbtn from "src/Assets/Icons/minus.png";
-// import topArrow from "src/Assets/Icons/iconone.png";
-// import downArrow from "src/Assets/Icons/icontwo.png";
+
 
 import { useState } from "react";
 
@@ -38,8 +37,8 @@ const Datasci = () => {
         <div className="job-body">
           {datasciVisible && (
             <div className="grid">
-              <h2 className="grid-title">Web Scraping Focus Data Engineer</h2>
-              <h2 className="grid-text">Remote</h2>
+              <h2 className="grid-title" onClick={toggleAccordion("wide")}>Web Scraping Focus Data Engineer</h2>
+              <h2 className="grid-text" onClick={toggleAccordion("wide")}>Remote</h2>
               <ArrowTab
                 icon={accordion.wide}
                 onClick={toggleAccordion("wide")}

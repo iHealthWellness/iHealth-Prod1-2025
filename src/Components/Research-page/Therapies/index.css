@@ -7,6 +7,19 @@
   background-color: #ffffff;
   padding: 20px;
   margin-top: -50px;
+  overflow: hidden;
+}
+
+
+.slide-in-text3 {
+  opacity: 0;
+  transform: translateX(50%);
+  transition: opacity 0.4s, transform 0.5s;
+}
+
+.slide-in-text3.active {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .clinical-therapies h1,
@@ -75,18 +88,6 @@
 }
 
 /* Scroll animation */
-
-.slide-in-text.active {
-  opacity: 1;
-  transform: translateY(0);
-  transition: opacity 0.5s, transform 0.5s;
-}
-
-.slide-in-text {
-  opacity: 0;
-  transform: translateY(30px);
-}
-
 /* Responsive design */
 
 @media (max-width: 768px) {
