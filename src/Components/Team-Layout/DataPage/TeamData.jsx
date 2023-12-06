@@ -10,7 +10,7 @@ import Image7 from "src/Assets/Images/Chris.png";
 import Image8b from "src/Assets/Images/mala.png";
 import Image9 from "src/Assets/Images/hilda.png";
 import Image10 from "src/Assets/Images/mark.png";
-import Image11 from "src/Assets/Images/oliver.png";
+import Image11 from "src/Assets/Images/Michelle.png";
 
 const sasikaBio = `Sasika is the founder, Chief Executive Officer (CEO), and Chief Technology Officer (CTO) of iHealth and Wellness Foundation, Inc. --A former Wall Street technologist, she revolutionized enterprise-level web solutions at Prudential Financial, supporting Fixed Income Trading systems & Compliance systems, and PruFN.com with 20 million annual unique visitors. Now, she's disrupting healthcare technology. --At Aetna (a CVS Health Company), Sasika led the implementation of a powerful and interactive claims-driven Personal Health Record (PHR) system, serving 29.9 million individuals. This innovative solution provided members a comprehensive view of their health by integrating detailed, claims-driven information gathered across the health care spectrum - such as physician office, lab, diagnostic treatment and prescriptions. --Passionate about leveraging technology for better healthcare, Sasika established iHealth and Wellness Foundation, Inc. to improve the lives of individuals with complex diseases. Under her leadership, the foundation develops a platform that integrates with major Electronic Health Record (EHR) systems, while offering medical and wellness provider lookup, social networking, and patient advocacy services.--Sasika's contributions have earned her numerous awards in the tech industry and philanthropy, highlighting her dedication to improving lives through innovation. With a unique blend of expertise in technology and a deep understanding of the healthcare landscape, Sasika is dedicated to advancing medical and wellness care through disruptive and innovative solutions. Her visionary approach and commitment to improving lives make her a driving force behind the iHealth and Wellness Foundation's mission.--You'll often find Sasika indulging in her passions for hiking and cycling. Exploring new destinations and immersing herself in live music are also among her favorite pastimes.`;
 
@@ -93,11 +93,12 @@ On the personal side, Mark grew up in Wisconsin, lived in Boston for nearly 20 y
 --
 Mark graduated from the Massachusetts Institute of Technology with a Bachelors and Masters Degree in Electrical Engineering. He also has a Masters in Business Administration from the Harvard Business School.`;
 
-const bio12 = `Dr. Oliver Degnan, an accomplished senior technology executive, entrepreneur, and business strategist, brings a wealth of expertise to Fortium Partners. With over 15 years of C-suite experience in healthcare and technology innovation, Oliver possesses a robust skill set in product development, innovation, and people-centric leadership. His role as a Chief Information Officer (CIO) involved reshaping IT strategies, enhancing service stability, and implementing cutting-edge cloud and visualization solutions.
---
-In his capacity as Chief Technology Officer (CTO), Oliver led complex digital transformation initiatives, overseeing global teams of over 1,200 members and managing multimillion-dollar budgets. His profound impact extended to his role as the Founder of MoreTalent, where he pioneered an AI-enabled SaaS platform, revolutionizing the new hire employee experience and boosting retention rates.
---
-An influential thought leader and author on artificial intelligence, Oliver holds a Bachelor's in German Literature and an Executive Master of Business Administration from the University of Wisconsin, Milwaukee. Recently, he earned his Doctorate of Business Administration from the University of Wisconsin, Whitewater. Fluent in both English and German, Oliver holds dual U.S. and German citizenship, embodying an international perspective in his work. A dedicated member of organizations like the Association for Corporate Growth and the Golden Angels Investors, he is committed to improving lives through innovative solutions and meaningful contributions. Oliver's passion for creating positive change underscores his role as a dedicated advocate for progress and improvement.
+const bio12 = `Michelle Waldgeir is a CPG-trained marketer, operator, and brand builder with broad executive leadership experience across a diverse range of Fortune 500 firms (McKesson, P&G, Clorox), early stage startups, and nonprofits. For decades, she’s been listening intently to customers and developing solutions to better meet their needs and deliver game-changing growth.  
+
+At Clorox, she created and built Clorox Disinfecting Wipes from an idea to a $100M+ business in 1 out of 3 U.S. homes. As Vice President of Consumer Products at McKesson she led a $1B+ marketing and retail services business unit through a major business model transformation. And, as Chief Marketing Officer of a home solar provider she ignited growth that scaled the startup from $100K to $41M over 3 years. The meteoric growth earned Astrum Solar the #2 ranking on Inc. Magazine’s 2012 List of Fastest Growing Private U.S. companies. It was later acquired by Direct Energy.  
+
+A versatile leader, Michelle specializes in helping purpose-driven organizations unlock new possibilities. In her roles as a fractional CMO, she has helped both online marketplaces and health and wellness organizations of all sizes grow exponentially. Michelle earned her B.S. in Economics from The Wharton School of the University of Pennsylvania and her M.B.A. from the Kellogg Graduate School of Management. 
+
 `;
 const teamData = {
   executive: [
@@ -180,7 +181,7 @@ const teamData = {
     },
     {
       id: 12,
-      name: "Dr. Oliver Degnan, PhD",
+      name: "Michelle Waldgeir",
       extendedBio: bio12,
       image: Image11,
       link: "https://www.linkedin.com/in/lizzappi",

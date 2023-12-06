@@ -10,7 +10,7 @@ import Image8 from "src/Assets/Images/Chris.png";
 import Image8b from "src/Assets/Images/mala.png";
 import Image9 from "src/Assets/Images/hilda.png";
 import Image10 from "src/Assets/Images/mark.png";
-import Image11 from "src/Assets/Images/oliver.png";
+import Image11 from "src/Assets/Images/Michelle.png";
 import Image6 from "src/Assets/Images/Card.png";
 import Image7 from "src/Assets/Icons/plus.png";
 
@@ -380,7 +380,7 @@ const Board = () => {
           <img src={Image11} alt="oliver" />
 
           <div className="Name-tab">
-            <p>Oliver Degnan, PhD</p>
+            <p>Michelle Waldgeir</p>
           </div>
           <button className="btn-board-tab">
             <img src={Image7} />
