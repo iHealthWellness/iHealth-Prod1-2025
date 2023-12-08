@@ -48,6 +48,7 @@
   font-size: 1rem;
   font-weight: 400;
   line-height: 120%;
+  
 }
 
 .footer-subscribe-block {
@@ -151,8 +152,8 @@
 
   .footer-address {
     color: #07235b;
-    font-size: 1.25rem;
-    font-weight: 400;
+    font-size: 1rem;
+    font-weight: 500;
     line-height: 120%;
   }
 
