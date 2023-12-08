@@ -127,7 +127,7 @@ const MenuList = () => {
     // },
     {
       title: "Stories of Strength",
-      url: "/services",
+      url: "/",
       className: "nav-services",
       onClick: () => {
         document.querySelector("#UnderConst-wrapper").style.display = "flex";
