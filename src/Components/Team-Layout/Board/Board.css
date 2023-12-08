@@ -171,6 +171,7 @@
     display: flex;
     padding: 0;
 }
+
 @media (min-width: 1200px) { 
     .board-directors-tab,
     .board-directors-tab2,
@@ -285,11 +286,7 @@
     padding-right: 8%;
 }
 
-.close-btn {
-    position: absolute;
-    top: 10px; /* Adjust as needed */
-    right: 10px;
-}
+
 
 .close-btn:hover {
     background-color: #B7B7B766;
@@ -494,10 +491,12 @@
 
 
 .close-btn {
-    width: 5vh;
     position: absolute;
-    top: 5%;
-    right: 5%;
+    top: 0;
+    right: 0;
+    width: 3vw; /* Adjust as needed for appropriate sizing */
+    margin: 10px;
+    z-index: 2; 
 }
 
 .close-btn:hover,

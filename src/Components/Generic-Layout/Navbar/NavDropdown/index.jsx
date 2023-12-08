@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
-
+import UnderConstruction from "src/Components/Under-Construction/UnderConstruction";
 import dropdownIcon from "src/Assets/Icons/nav-dropdown.svg";
 import "./index.css";
 
@@ -62,31 +62,36 @@ const menuItems = [
   },
   {
     title: "Stories of Strength",
-    url: "/services",
-    submenu: [
-      {
-        title: "Share Your Story",
-        url: "/services/#",
-      },
-      {
-        title: "Create Your Blog",
-        url: "/services/#",
-      },
-      {
-        title: "Our Blogs",
-        url: "/services/#",
-      },
-      {
-        title: "Community Insights",
-        url: "/services/#",
-      },
-      // {
-      //   title: "Blogs",
-      //   url: "/services/#",
-      // },
-    ],
-  },
+    url: "/",
+    onClick: (event) => {
+      event.preventDefault();
+      document.querySelector("#UnderConst-wrapper").style.display = "flex";
+    },
+  },  
+  
+  // {
+  //   title: "Stories of Strength",
+  //   url: "/services",
 
+  // },
+  //   submenu: [
+  //     {
+  //       title: "Share Your Story",
+  //       url: "/services/#",
+  //     },
+  //     {
+  //       title: "Create Your Blog",
+  //       url: "/services/#",
+  //     },
+  //     {
+  //       title: "Our Blogs",
+  //       url: "/services/#",
+  //     },
+  //     {
+  //       title: "Community Insights",
+  //       url: "/services/#",
+  //     },
+  //   ],
 
 
 
@@ -132,27 +137,18 @@ const MenuItems = ({ items, menuId, activeId, setActiveId, handleShowMenu }) => 
   }
 
   return (
-    <li
-      className="nav-dropdown-links-listitem"
-      onClick={handleMenu.bind(this, menuId)}
+    <li className="nav-dropdown-links-listitem" onClick={(e) => {
+        handleMenu(menuId);
+        if (items.onClick) {
+          items.onClick(e);
+        }
+      }}
     >
-      <NavLink
-        to={items.url}
-        className={({ isActive }) => {
-          return (
-            "nav-dropdown-links" + (isActive ? "nav-dropdown-links border" : "")
-          );
-        }}
-      >
+      <NavLink to={items.url} className={({ isActive }) => ("nav-dropdown-links" + (isActive ? " nav-dropdown-links border" : ""))}>
         {items.title}
       </NavLink>
-
       {items.submenu && showSubMenu && activeId === menuId ? (
-        <div
-          className={
-            showSubMenu ? `nav-dropdown-contents` : `nav-dropdown-hidden`
-          }
-        >
+        <div className={showSubMenu ? `nav-dropdown-contents` : `nav-dropdown-hidden`}>
           {items.submenu.map((sub) => (
             <HashLink className="items" to={sub.url} key={sub.title} onClick={handleShowMenu}>
               {sub.title}
@@ -184,7 +180,6 @@ const NavDropdownButton = () => {
     };
   }, []);
 
-
   function handleShowMenu() {
     setShowMenu((show) => !show);
   }
@@ -192,9 +187,8 @@ const NavDropdownButton = () => {
   return (
     <div className="nav-dropdown-container" ref={menuRef}>
       <button className="nav-dropdown-menu-button" onClick={handleShowMenu}>
-        <img className="nav-dropdown-menu-icon" src={dropdownIcon}></img>
+        <img className="nav-dropdown-menu-icon" src={dropdownIcon} alt="dropdown icon"></img>
       </button>
-
       {showMenu && (
         <ul className="nav-dropdown-links-list">
           {menuItems.map((menu, index) => (
@@ -212,7 +206,9 @@ const NavDropdownButton = () => {
     </div>
   );
 };
+
 export default NavDropdownButton;
+
 
 // Old Codebase
 /*

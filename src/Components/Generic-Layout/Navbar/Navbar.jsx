@@ -96,46 +96,44 @@ const MenuList = () => {
         },
       ],
     },
-    {
+    
+    // {
       
+    //   title: "Stories of Strength",
+    //   url: "/services",
+    //   className: "nav-services" ,
+      
+      
+      
+      
+    //   subMenu: [
+    //     {
+    //       title: "Share Your Story",
+    //       url: "/services/#",
+    //     },
+    //     {
+    //       title: "Create Your Blog",
+    //       url: "/services/#",
+    //     },
+    //     {
+    //       title: "Our Blogs",
+    //       url: "/services/#",
+    //     },
+    //     {
+    //       title: "Community Insights & Blogs",
+    //       url: "/services/#",
+    //     },
+    //   ],
+    // },
+    {
       title: "Stories of Strength",
       url: "/services",
-      className: "nav-services" ,
-      
-      
-      
-      
-      subMenu: [
-        {
-          title: "Share Your Story",
-          url: "/services/#",
-        },
-        {
-          title: "Create Your Blog",
-          url: "/services/#",
-        },
-        {
-          title: "Our Blogs",
-          url: "/services/#",
-        },
-        {
-          title: "Community Insights & Blogs",
-          url: "/services/#",
-        },
-        // {
-        //   title: "Share Your Story",
-        //   url: "/services/#",
-        // },
-        // {
-        //   title: "Create Your Blog",
-        //   url: "/services/#",
-        // },
-        // {
-        //   title: "Blogs",
-        //   url: "/services/#",
-        // },
-      ],
+      className: "nav-services",
+      onClick: () => {
+        document.querySelector("#UnderConst-wrapper").style.display = "flex";
+      }
     },
+
     {
       title: "Ways to Give",
       url: "/donate",
@@ -175,12 +173,11 @@ const MenuList = () => {
         <li className="nav-links-listitem nav-dropdown" key={menu.title}>
           <NavLink
             to={menu.url}
-            className={({ isActive }) => {
-              return (
-                `nav-links ${menu.className}` +
-                (isActive ? `nav-links actives ${menu.className}` : "")
-              );
-            }}
+            className={({ isActive }) => (
+              `nav-links ${menu.className}` + 
+              (isActive ? `nav-links actives ${menu.className}` : "")
+            )}
+            onClick={menu.onClick ? menu.onClick : null}
           >
             {menu.title}
           </NavLink>
