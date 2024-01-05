@@ -6,18 +6,47 @@ import Open from "src/Assets/Icons/plus.png";
 
 const Section = ({ title, content, summary }) => {
   const [expanded, setExpanded] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   const toggleExpanded = () => {
     setExpanded(!expanded);
   };
 
+  const checkIfMobile = () => {
+    setIsMobile(window.innerWidth < 768); // threshold to check if mobile screen
+  };
+
+  // Event listener to update the isMobile state when the window is resized
+  useEffect(() => {
+    checkIfMobile();
+    window.addEventListener('resize', checkIfMobile);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener('resize', checkIfMobile);
+    };
+  }, []);
+
   return (
     <div className={`section ${expanded ? "expanded" : ""}`}>
       <div className="titleContainer">
-        <h2>{title}</h2>
+        <h2 className={isMobile ? "titleInline" : ""}>{title}</h2>
+        {isMobile && !expanded && (
+          <div
+            className="button"
+            onClick={toggleExpanded}
+            role="button"
+            tabIndex={0}
+          >
+            <img
+              src={Open}
+              alt="Read More"
+            />
+          </div>
+        )}
       </div>
 
-      <p className="summary">
+      {!isMobile && <p className="summary">
         {summary}
         {!expanded && (
           <div
@@ -32,11 +61,12 @@ const Section = ({ title, content, summary }) => {
             />
           </div>
         )}
-      </p>
+      </p>}
 
       <div className="fullContent">
         {expanded && (
           <>
+            <p>{isMobile && summary}</p>
             <p>{content}</p>
             <div
               className="button"

@@ -23,6 +23,10 @@
   align-items: center;
 }
 
+.titleInline {
+  display: inline;
+}
+
 .section h2 {
   margin: 0;
   color: #000;
