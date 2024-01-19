@@ -9,8 +9,8 @@ import SignupRegistry from 'src/Components/LivingwithNF/Signup-Registry/index'
 function index() {
   return (
     <div>
-        <CircleImages/>
         <NFHeading/>
+        <CircleImages/>
         <UnderstandingNF/>
         <TabComponent/>
         <CausesAspects/>
