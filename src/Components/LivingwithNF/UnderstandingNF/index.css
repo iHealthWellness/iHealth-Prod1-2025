@@ -1,56 +1,47 @@
-.understandingnf-heading{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 0 33rem 0 33rem;
-    color:#07235b;
+.understandingnf-heading {
+  padding: 0 33rem 0 33rem;
+  color: #07235b;
 }
-.heading{
-    font-size: 3.5rem;
+.heading {
+  font-size: 3.5rem;
+  font-weight: 600;
+  line-height: 80%;
+  padding: 1.5rem;
+}
+.paragraph {
+  font-family: Roboto;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%; /* 1.375rem */
+}
+/* mobile */
+@media screen and (max-width: 479px) {
+  .understandingnf-heading {
+    padding: 0 5rem 0 5rem;
+  }
+}
+/* tablet */
+@media screen and (min-width: 480px) and (max-width: 950px) {
+  .understandingnf-heading {
+    padding: 0 5rem 0 5rem;
+  }
+  .heading {
+    font-size: 2rem;
     font-weight: 600;
     line-height: 80%;
-    padding: 1.5rem;
+    padding: 1rem;
   }
-  .paragraph{
-    font-family: Roboto;
-    font-size: 1.25rem;
-    font-style: normal;
+  .paragraph {
+    font-size: 1.2rem;
     font-weight: 400;
-    line-height: 110%; /* 1.375rem */
-   
+    line-height: 110%;
+  }
 }
-  /* mobile */
-  @media screen and (max-width: 479px) {
-    .understandingnf-heading{
-      padding: 0 5rem 0 5rem;
-     
-   }
-    }
-    /* tablet */
-    @media screen and (min-width: 480px) and (max-width: 950px){
-      .understandingnf-heading{
-       padding: 0 5rem 0 5rem;
-      
-    } 
-    .heading{
-        font-size: 2rem;
-        font-weight: 600;
-        line-height: 80%;
-        padding: 1rem;
-      }
-      .paragraph{
-        font-size: 1.2rem;
-        font-weight: 400;
-        line-height: 110%;
-       
-    }
-    }
 
-    /* desktop */
-    @media screen and (min-width: 1024px){
-      .understandingnf-heading{
-        padding: 0 33rem 0 33rem;
-       
-     }
-    }
+/* desktop */
+@media screen and (min-width: 1024px) {
+  .understandingnf-heading {
+    padding: 0 33rem 0 33rem;
+  }
+}

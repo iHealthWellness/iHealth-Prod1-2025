@@ -6,9 +6,10 @@ import TabComponent from "src/Components/LivingwithNF/UnderstandingNF/Tabcompone
 import CausesAspects from "src/Components/LivingwithNF/Causes-Aspects/index";
 import SurveyNow from "src/Components/LivingwithNF/Survey-Now/index";
 import SignupRegistry from "src/Components/LivingwithNF/Signup-Registry/index";
+import "./index.css";
 function index() {
   return (
-    <div>
+    <div className="understanding-nf-container">
       <NFHeading />
       <CircleImages />
       <UnderstandingNF />

@@ -1,0 +1,8 @@
+.understanding-nf-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.38rem;
+    margin-inline: 7rem;
+}
