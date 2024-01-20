@@ -3,11 +3,9 @@
 }
 
 .heading-container {
-  padding: 1.1rem 7rem 1.1rem 0;
+  padding: 3.5rem 7rem;
   color: rgb(7, 35, 91);
   background-color: var(--Shade-White, #fff);
-  width: 100vw;
-  margin-top: 3.12rem;
 }
 
 .nf-btn {
@@ -20,8 +18,7 @@
   cursor: pointer;
   margin: 1.12rem 0.63rem 0 0;
 }
-
-/* mobile */
+/* 
 @media screen and (max-width: 479px) {
   .nf-paragraph {
     font-size: 0.7rem;
@@ -42,7 +39,6 @@
   }
 }
 
-/* mobile */
 @media screen and (max-width: 479px) {
   .nf-paragraph {
     font-size: 0.5rem;
@@ -56,7 +52,6 @@
   }
 }
 
-/* tablet */
 @media screen and (min-width: 480px) and (max-width: 1023px) {
   .nf-paragraph {
     font-size: 1rem;
@@ -76,7 +71,6 @@
   }
 }
 
-/* desktop */
 @media screen and (min-width: 1024px) {
   .nf-paragraph {
     font-size: 1.5rem;
@@ -90,4 +84,4 @@
     padding: 3rem 30rem 2rem 10rem;
     color: rgb(7, 35, 91);
   }
-}
+} */
