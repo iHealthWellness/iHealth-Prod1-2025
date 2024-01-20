@@ -19,7 +19,6 @@ const theme = createTheme({
           "&.Mui-selected": {
             color: "black", // Text color for the selected tab
           },
-          minWidth: "30rem", // Increase the minimum width to make the tabs wider
         },
       },
     },
@@ -119,7 +118,7 @@ function index() {
           </ThemeProvider>
         </Box>
         <CustomTabPanel value={value} index={0}>
-          <div>
+          <div className="tab-text">
             <img loading="lazy" className="tab-image" src={Headache} />
             <div className="SN-D-P-20">
               NF1 is the most common type of neurofibromatosis, affecting about
@@ -132,7 +131,7 @@ function index() {
           </div>
         </CustomTabPanel>
         <CustomTabPanel value={value} index={1}>
-          <div>
+          <div className="tab-text">
             <img loading="lazy" className="tab-image" src={Lab} />
             <div className="SN-D-P-20">
               NF2 is rarer than NF1, occurring in approximately 1 in 25,000
@@ -145,7 +144,7 @@ function index() {
           </div>
         </CustomTabPanel>
         <CustomTabPanel value={value} index={2}>
-          <div>
+          <div className="tab-text">
             <img loading="lazy" className="tab-image" src={Neuron} />
             <div className="SN-D-P-20">
               Schwannomatosis is the least common type of neurofibromatosis.

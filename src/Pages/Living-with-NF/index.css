@@ -1,29 +1,24 @@
 .understanding-nf-container {
+  display: grid;
+  padding-inline: 7rem;
   background-color: rgba(179, 179, 179, 0.7);
   padding-bottom: 3rem;
   padding-top: 3rem;
+  place-items: center;
 }
 
-.understanding-nf-container
-  > :not(:nth-child(1)):not(:nth-child(6)):not(:nth-child(7)):not(
-    :nth-child(5)
-  ) {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1.38rem;
-  padding-inline: 7rem;
+.full-width-background {
+  background-color: var(--Shade-White, #fff);
 }
 
+/* Responsive styles for smaller screens */
 @media screen and (max-width: 1024px) {
   .understanding-nf-container {
+    display: grid;
+    gap: 1.38rem;
     padding-top: 1.4rem;
+    padding-inline: 2rem;
   }
-}
 
-@media screen and (max-width: 480px) {
-  .understanding-nf-container {
-    padding-top: 1.4rem;
-  }
+  
 }

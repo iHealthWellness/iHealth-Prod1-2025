@@ -9,13 +9,15 @@ import SignupRegistry from "src/Components/LivingwithNF/Signup-Registry/index";
 import "./index.css";
 function index() {
   return (
-    <div className="understanding-nf-container">
+    <div>
       <NFHeading />
-      <CircleImages />
-      <UnderstandingNF />
-      <TabComponent />
-      <CausesAspects />
-      <SurveyNow />
+      <div className="understanding-nf-container">
+        <CircleImages />
+        <UnderstandingNF />
+        <TabComponent />
+        <CausesAspects />
+      </div>
+        <SurveyNow />
       <SignupRegistry />
     </div>
   );
