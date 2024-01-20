@@ -15,3 +15,15 @@
   gap: 1.38rem;
   padding-inline: 7rem;
 }
+
+@media screen and (max-width: 1024px) {
+  .understanding-nf-container {
+    padding-top: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .understanding-nf-container {
+    padding-top: 1.4rem;
+  }
+}
