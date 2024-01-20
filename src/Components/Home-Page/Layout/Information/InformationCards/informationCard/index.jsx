@@ -4,7 +4,7 @@ const InformationCard = ({ team }) => {
   const { icon, heading, content, detailPath } = team;
 
   const handleOnClick = (e, path) => {
-    if (["Living with NF", "Education"].includes(heading)) {
+    if (["Education"].includes(heading)) {
       e.preventDefault();
       document.querySelector("#UnderConst-wrapper").style.display = "flex";
       return;

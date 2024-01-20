@@ -14,7 +14,7 @@ const Teams = [
       { text: "Survey Now: Clinical Trials", path: "/nf-registry" },
       { text: "Sign-Up: NF Registry", path: "/find-provider" }
     ],
-    detailPath: "/#Home-Page-provider-container",
+    detailPath: "/livingwith-nf",
   },
   {
     icon: {
