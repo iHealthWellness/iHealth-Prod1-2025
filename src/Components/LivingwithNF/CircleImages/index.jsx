@@ -7,8 +7,8 @@ import "./index.css";
 function index() {
   return (
     <div>
-      <div className="circle-img-container">
-        <div className="circle-img ">
+      <div className="circle-img-container ">
+        <div className="circle-img SN-T-H2-30">
           <Link
             style={{ color: "inherit", textDecoration: "none" }}
             to="#understand-nf"
@@ -19,7 +19,7 @@ function index() {
             </p>
           </Link>
         </div>
-        <div className="circle-img">
+        <div className="circle-img SN-T-H2-30">
           <Link
             style={{ color: "inherit", textDecoration: "none" }}
             to="#take-survey"
@@ -30,7 +30,7 @@ function index() {
             </p>
           </Link>
         </div>
-        <div className="circle-img">
+        <div className="circle-img SN-T-H2-30">
           <Link
             style={{ color: "inherit", textDecoration: "none" }}
             to="#signup-reg"
