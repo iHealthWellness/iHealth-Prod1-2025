@@ -1,12 +1,9 @@
 .circle-img-container {
   display: flex;
   justify-content: center;
-  padding: 5rem 0 1.5rem;
+  padding: 5rem 1.5rem 6.5rem;
   color: #07235b;
   text-align: center;
-  font-size: 1.875rem;
-  font-weight: 600;
-  line-height: 110%;
 }
 .image {
   border-radius: 50%;
