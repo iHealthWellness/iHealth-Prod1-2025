@@ -1,48 +1,23 @@
-.doc-img{
-    width: 100%;
-    height: auto;
-}
-.causes-heading{
-  display: flex;
-  justify-content: center;
-  padding: 3rem 0 3rem 0;
+.cause-container {
+  display: grid;
+  gap: 1.8rem;
+  padding-block: 3.1rem;
 }
 
-.img-container {
-    position: relative; /* Required for positioning */
- 
+.cause-container h1 {
+  color: #07235b;
 }
-.cause-container{
-    padding-bottom: 10rem;
+
+.doc-img {
+  max-width: 90%;
 }
-.overlay {
-    position: absolute;
-    top: 87%; /* Position halfway down the parent */
-    left: 50%; /* Position halfway across the parent */
-    transform: translate(-50%, -50%); /* Center the overlay */
-    background-color:  rgba(246,245,246,255);/* Add a semi-transparent background color */
-    width: 83%;
-    height: 55%;
-    color:black; /* Text color for the overlay content */
-    padding: 5.5rem 8rem 5rem 8rem;
-    
-    border-radius: 3rem;
-    font-family: Roboto;
-font-size: 1.5rem;
-font-style: normal;
-font-weight: 400;
-line-height: 143%; /* 2.145rem */
-}
+
 /* mobile */
 @media screen and (max-width: 479px) {
- 
-    }
-    /* tablet */
-    @media screen and (min-width: 480px) and (max-width: 1023px){
-      
-       
-    }
-    /* desktop */
-    @media screen and (min-width: 1024px){
-      
-    }
+}
+/* tablet */
+@media screen and (min-width: 480px) and (max-width: 1023px) {
+}
+/* desktop */
+@media screen and (min-width: 1024px) {
+}
