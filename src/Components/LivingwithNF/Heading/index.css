@@ -1,127 +1,93 @@
 .nf-paragraph {
-
-    padding: 1rem 2rem 2rem 0;
-    color: rgb(7, 35, 91);
-    font-family: Roboto;
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 143%;
-    /* 2.145rem */
+  color: rgb(7, 35, 91);
 }
 
 .heading-container {
-    padding: 3rem 30rem 2rem 10rem;
-    color: rgb(7, 35, 91);
-    ;
-    font-family: Roboto;
+  padding: 1.1rem 7rem 1.1rem 0;
+  color: rgb(7, 35, 91);
+  background-color: var(--Shade-White, #fff);
+  width: 100vw;
+  margin-top: 3.12rem;
 }
 
 .nf-btn {
-    font-family: Roboto;
-    font-size: 1.5rem;
-    font-style: normal;
+  background: #0d99ff;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 0.6rem;
+  color: var(--Shade-White, #fff);
+  text-decoration: none;
+  cursor: pointer;
+  margin: 1.12rem 0.63rem 0 0;
+}
+
+/* mobile */
+@media screen and (max-width: 479px) {
+  .nf-paragraph {
+    font-size: 0.7rem;
     font-weight: 400;
-    line-height: 143%;
-    /* 2.145rem */
+    line-height: 140%;
+  }
+
+  .heading-container {
+    padding: 1rem 5rem 1rem 5rem;
+  }
+
+  .nf-btn {
     background: #0d99ff;
-    ;
-    height: 3.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem 2rem;
-    border: none;
-    border-radius: 0.7rem;
-    color: #fff;
-    text-decoration: none;
-    cursor: pointer;
-    margin: 0.5rem;
-    max-width: fit-content;
-}
-
-.nf-btn-container {
-    display: flex;
-}
-
-.horizontal-block {
-    background-color: rgba(246, 245, 246, 255);
-    width: 100%;
-    height: 4rem;
+    height: 1.5rem;
+    font-size: 0.7rem;
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+  }
 }
 
 /* mobile */
 @media screen and (max-width: 479px) {
-    .nf-paragraph {
-        font-size: .7rem;
-        font-weight: 400;
-        line-height: 140%;
-    }
+  .nf-paragraph {
+    font-size: 0.5rem;
+    font-weight: 400;
+    line-height: 140%;
+    padding: 1rem 1rem 1rem 0;
+  }
 
-    .heading-container {
-        padding: 1rem 5rem 1rem 5rem;
-    }
-
-    .nf-btn {
-        background: #0d99ff;
-        ;
-        height: 1.5rem;
-        font-size: .7rem;
-        padding: .6rem;
-        border-radius: 0.5rem;
-    }
-}
-
-/* mobile */
-@media screen and (max-width: 479px) {
-    .nf-paragraph {
-        font-size: .5rem;
-        font-weight: 400;
-        line-height: 140%;
-        padding: 1rem 1rem 1rem 0;
-    }
-
-    .heading-container {
-        padding: 3rem 5rem 2rem 5rem;
-    }
+  .heading-container {
+    padding: 3rem 5rem 2rem 5rem;
+  }
 }
 
 /* tablet */
 @media screen and (min-width: 480px) and (max-width: 1023px) {
-    .nf-paragraph {
-        font-size: 1rem;
-        font-weight: 400;
-        line-height: 140%;
-        padding: 1rem 1rem 1rem 0;
+  .nf-paragraph {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 140%;
+    padding: 1rem 1rem 1rem 0;
+  }
 
-    }
+  .heading-container {
+    padding: 3rem 10rem 2rem 10rem;
+  }
 
-    .heading-container {
-        padding: 3rem 10rem 2rem 10rem;
-    }
-
-    .nf-btn {
-        height: 2.5rem;
-        font-size: .6rem;
-        padding: 1rem 2.5rem;
-
-    }
+  .nf-btn {
+    height: 2.5rem;
+    font-size: 0.6rem;
+    padding: 1rem 2.5rem;
+  }
 }
 
 /* desktop */
 @media screen and (min-width: 1024px) {
-    .nf-paragraph {
-        font-size: 1.5rem;
-        font-weight: 400;
-        line-height: 140%;
-        padding: 1rem 2rem 2rem 0;
-        color: rgb(7, 35, 91);
-        ;
-    }
+  .nf-paragraph {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 140%;
+    padding: 1rem 2rem 2rem 0;
+    color: rgb(7, 35, 91);
+  }
 
-    .heading-container {
-        padding: 3rem 30rem 2rem 10rem;
-        color: rgb(7, 35, 91);
-        ;
-    }
+  .heading-container {
+    padding: 3rem 30rem 2rem 10rem;
+    color: rgb(7, 35, 91);
+  }
 }
