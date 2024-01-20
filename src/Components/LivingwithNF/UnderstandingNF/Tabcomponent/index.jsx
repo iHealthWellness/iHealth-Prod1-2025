@@ -75,7 +75,10 @@ function index() {
   };
   return (
     <div>
-      <Box className="main-tab-container" sx={{ width: "100%" }}>
+      <Box
+        className="main-tab-container"
+        sx={{ width: "100%", borderBottom: 1, borderColor: "divider" }}
+      >
         <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
           <ThemeProvider theme={theme}>
             <Tabs

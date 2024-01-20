@@ -1,7 +1,7 @@
 .cause-container {
   display: grid;
   gap: 1.8rem;
-  padding-block: 3.1rem;
+  padding: 3.1rem 7rem;
 }
 
 .cause-container h1 {
@@ -9,7 +9,7 @@
 }
 
 .doc-img {
-  max-width: 90%;
+  max-width: 80%;
 }
 
 /* mobile */

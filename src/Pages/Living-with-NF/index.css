@@ -4,7 +4,9 @@
 }
 
 .understanding-nf-container
-  > :not(:nth-child(1)):not(:nth-child(6)):not(:nth-child(7)) {
+  > :not(:nth-child(1)):not(:nth-child(6)):not(:nth-child(7)):not(
+    :nth-child(5)
+  ) {
   display: flex;
   flex-direction: column;
   align-items: center;
