@@ -17,8 +17,10 @@ function index() {
         <TabComponent />
         <CausesAspects />
       </div>
-        <SurveyNow />
+      <SurveyNow />
+      <div className="grey-block-divider"></div>
       <SignupRegistry />
+      <div className="grey-block-divider"></div>
     </div>
   );
 }

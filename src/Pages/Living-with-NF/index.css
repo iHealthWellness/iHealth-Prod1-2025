@@ -11,6 +11,12 @@
   background-color: var(--Shade-White, #fff);
 }
 
+.grey-block-divider {
+  height: 1.5rem;
+  width: 100%;
+  background-color: rgba(179, 179, 179, 0.7);
+}
+
 /* Responsive styles for smaller screens */
 @media screen and (max-width: 1024px) {
   .understanding-nf-container {
@@ -19,6 +25,16 @@
     padding-top: 1.4rem;
     padding-inline: 2rem;
   }
+  .grey-block-divider {
+    height: 0.8rem;
+  }
+  .grey-block-divider:last-child {
+    display: none;
+  }
+}
 
-  
+@media screen and (max-width: 479px) {
+  .understanding-nf-container {
+    padding-inline: 1rem;
+  }
 }

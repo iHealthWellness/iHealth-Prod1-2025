@@ -1,7 +1,11 @@
 .cause-container {
   display: grid;
   gap: 1.8rem;
-  padding: 3.1rem 7rem;
+  padding: 1.5rem;
+}
+
+.cause-container > div p {
+  padding: 0.8rem;
 }
 
 .cause-container h1 {
@@ -12,12 +16,20 @@
   max-width: 80%;
 }
 
-/* mobile */
+@media screen and (max-width: 1024px) {
+  .doc-img {
+    max-width: 100%;
+    object-fit: cover;
+  }
+}
+
 @media screen and (max-width: 479px) {
-}
-/* tablet */
-@media screen and (min-width: 480px) and (max-width: 1023px) {
-}
-/* desktop */
-@media screen and (min-width: 1024px) {
+  .cause-container {
+    gap: 0.6rem;
+    padding: 0;
+  }
+  .cause-container h1,
+  .cause-container > div {
+    font-size: 1rem;
+  }
 }

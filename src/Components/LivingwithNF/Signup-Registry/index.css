@@ -17,3 +17,23 @@
 .enroll-content1 h1 {
   color: #07235b;
 }
+
+@media screen and (max-width: 768px) {
+  .enroll-content2 p {
+    font-size: 1rem;
+  }
+  .signup-container {
+    padding: 1rem;
+    margin: 0;
+  }
+  .enroll-content1 button.nf-btn {
+    padding: 0.375rem 0.75rem;
+    width: fit-content;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .enroll-content1 h1 {
+    font-size: 1rem;
+  }
+}

@@ -18,6 +18,12 @@
   .tab-image {
     max-width: 14.4375rem;
   }
+  .tab-text > div {
+    font-size: 1rem;
+  }
+  .custom-tabs .MuiTab-root {
+    font-size: 1rem;
+  }
 }
 /* tablet */
 @media screen and (min-width: 480px) and (max-width: 1023px) {
@@ -25,6 +31,9 @@
     width: 29.375rem;
   }
   .tab-text > div {
+    font-size: 1rem;
+  }
+  .custom-tabs .MuiTab-root {
     font-size: 1rem;
   }
 }
