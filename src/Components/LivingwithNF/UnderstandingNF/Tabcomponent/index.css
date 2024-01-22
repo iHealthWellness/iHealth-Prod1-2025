@@ -14,9 +14,11 @@
 }
 
 /* mobile */
-@media screen and (max-width: 479px) {
+
+/* tablet */
+@media screen and (min-width: 480px) and (max-width: 1023px) {
   .tab-image {
-    max-width: 14.4375rem;
+    max-width: 29.375rem;
   }
   .tab-text > div {
     font-size: 1rem;
@@ -25,15 +27,21 @@
     font-size: 1rem;
   }
 }
-/* tablet */
-@media screen and (min-width: 480px) and (max-width: 1023px) {
+
+@media screen and (max-width: 610px) {
   .tab-image {
-    width: 29.375rem;
+    max-width: 14.4rem;
   }
   .tab-text > div {
     font-size: 1rem;
   }
   .custom-tabs .MuiTab-root {
     font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .custom-tabs .MuiTab-root {
+    font-size: 0.5rem;
   }
 }
