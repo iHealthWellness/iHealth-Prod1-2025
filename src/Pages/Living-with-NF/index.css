@@ -3,23 +3,23 @@
   grid-template-columns: 7rem 1fr 7rem;
   background-color: rgba(179, 179, 179, 0.7);
   padding: 2rem 0;
+  gap: 1.38rem;
 }
 .understanding-nf-container > * {
   grid-column: 2; /* Place each child in the middle column */
 }
 
-/* Responsive styles for smaller screens */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
   .understanding-nf-container {
-    display: grid;
+    grid-template-columns: 1.5rem 1fr 1.5rem;
     gap: 1.38rem;
-    padding-top: 1.4rem;
-    padding-inline: 2rem;
+    padding: 1.4rem 0 0 0;
   }
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 468px) {
   .understanding-nf-container {
-    padding-inline: 1rem;
+    grid-template-columns: 1rem 1fr 1rem;
+    gap: 0.9rem;
   }
 }

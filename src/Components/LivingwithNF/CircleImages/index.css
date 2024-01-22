@@ -1,7 +1,6 @@
 .circle-img-container {
   display: flex;
   justify-content: center;
-  padding: 5rem 1.5rem 6.5rem;
   color: #07235b;
   text-align: center;
 }
@@ -47,7 +46,6 @@
 /* mobile */
 @media screen and (max-width: 480px) {
   .image {
-    border-radius: 50%;
     width: 8rem;
     height: 8rem;
   }
@@ -69,11 +67,6 @@
 }
 /* tablet */
 @media screen and (min-width: 480px) and (max-width: 1023px) {
-  .image {
-    border-radius: 50%;
-    width: 13rem;
-    height: 13rem;
-  }
   .circle-img-container {
     display: grid;
     place-items: center;
@@ -87,5 +80,19 @@
   }
   .circle-img-container {
     padding: 1rem 0;
+  }
+}
+
+@media screen and (max-width: 1540px) {
+  .image {
+    width: 17rem;
+    height: 17rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .image {
+    width: 8rem;
+    height: 8rem;
   }
 }
