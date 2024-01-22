@@ -11,13 +11,13 @@ function index() {
   return (
     <div>
       <div className="understanding-nf-container">
-        {/* <NFHeading />
+        <NFHeading />
         <CircleImages />
         <UnderstandingNF />
-        <TabComponent /> 
-        <CausesAspects /> */}
+        <TabComponent />
+        <CausesAspects />
         <SurveyNow />
-        {/* <SignupRegistry /> */}
+        <SignupRegistry />
       </div>
     </div>
   );

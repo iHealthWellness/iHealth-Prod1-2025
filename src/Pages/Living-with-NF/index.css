@@ -1,7 +1,7 @@
 .understanding-nf-container {
   display: grid;
   grid-template-columns: 7rem 1fr 7rem;
-  background-color: rgba(179, 179, 179, 0.7);
+  background-color: rgba(247, 246, 243);
   padding: 2rem 0;
   row-gap: 1.38rem;
 }

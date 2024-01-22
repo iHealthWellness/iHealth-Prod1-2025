@@ -3,22 +3,21 @@
 }
 
 .tab-image {
-  object-fit: cover;
   display: block;
   margin: auto;
+  object-fit: cover;
   border-radius: 4rem;
   max-width: 32.3125rem;
+  height: 30rem;
   border-radius: 3.125rem;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   margin-bottom: 1.2rem;
 }
 
-/* mobile */
-
-/* tablet */
 @media screen and (min-width: 480px) and (max-width: 1023px) {
   .tab-image {
     max-width: 29.375rem;
+    height: 21rem;
   }
   .tab-text > div {
     font-size: 1rem;
@@ -31,6 +30,7 @@
 @media screen and (max-width: 610px) {
   .tab-image {
     max-width: 14.4rem;
+    height: 10rem;
   }
   .tab-text > div {
     font-size: 1rem;
@@ -42,6 +42,10 @@
 
 @media screen and (max-width: 480px) {
   .custom-tabs .MuiTab-root {
-    font-size: 0.5rem;
+    font-size: 0.7rem;
+  }
+
+  .main-tab-container .MuiBox-root {
+    padding: 2rem 0 0 0;
   }
 }

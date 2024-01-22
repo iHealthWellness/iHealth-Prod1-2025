@@ -37,9 +37,7 @@
     font-size: 1rem;
   }
 
-  .understanding-nf-container .survey-container {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
+  .survey-container {
     gap: 1rem;
   }
 
@@ -48,11 +46,13 @@
   }
 }
 
-@media screen and (max-width: 479px) {
-  .survey-container {
+@media screen and (max-width: 535px) {
+  .understanding-nf-container .survey-container {
     padding: 2rem 1rem 2rem 1rem;
     place-items: center;
+    display: grid;
     grid-template-columns: none;
+    grid-template-rows: 1fr 1fr;
   }
 
   .survey-img {
