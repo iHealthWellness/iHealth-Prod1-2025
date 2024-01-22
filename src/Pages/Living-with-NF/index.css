@@ -1,20 +1,11 @@
 .understanding-nf-container {
   display: grid;
-  padding-inline: 7rem;
+  grid-template-columns: 7rem 1fr 7rem;
   background-color: rgba(179, 179, 179, 0.7);
-  padding-bottom: 3rem;
-  padding-top: 3rem;
-  place-items: center;
+  padding: 2rem 0;
 }
-
-.full-width-background {
-  background-color: var(--Shade-White, #fff);
-}
-
-.grey-block-divider {
-  height: 1.5rem;
-  width: 100%;
-  background-color: rgba(179, 179, 179, 0.7);
+.understanding-nf-container > * {
+  grid-column: 2; /* Place each child in the middle column */
 }
 
 /* Responsive styles for smaller screens */
@@ -24,12 +15,6 @@
     gap: 1.38rem;
     padding-top: 1.4rem;
     padding-inline: 2rem;
-  }
-  .grey-block-divider {
-    height: 0.8rem;
-  }
-  .grey-block-divider:last-child {
-    display: none;
   }
 }
 

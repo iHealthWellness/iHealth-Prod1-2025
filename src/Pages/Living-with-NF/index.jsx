@@ -10,17 +10,15 @@ import "./index.css";
 function index() {
   return (
     <div>
-      <NFHeading />
       <div className="understanding-nf-container">
+        <NFHeading />
         <CircleImages />
         <UnderstandingNF />
         <TabComponent />
         <CausesAspects />
+        <SurveyNow />
+        <SignupRegistry />
       </div>
-      <SurveyNow />
-      <div className="grey-block-divider"></div>
-      <SignupRegistry />
-      <div className="grey-block-divider"></div>
     </div>
   );
 }

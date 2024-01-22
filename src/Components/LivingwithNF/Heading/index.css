@@ -1,11 +1,13 @@
 .nf-paragraph {
   color: rgb(7, 35, 91);
+  padding: 1.1rem 0;
 }
 
-.heading-container {
-  padding: 3.5rem 7rem;
+.understanding-nf-container .heading-container {
+  padding: 3.75rem 7rem;
   color: rgb(7, 35, 91);
   background-color: var(--Shade-White, #fff);
+  grid-column: 1/ -1;
 }
 
 .nf-btn {
