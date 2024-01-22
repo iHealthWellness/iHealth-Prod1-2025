@@ -14,10 +14,10 @@ function index() {
         {/* <NFHeading />
         <CircleImages />
         <UnderstandingNF />
-        <TabComponent /> */}
-        <CausesAspects />
-        {/* <SurveyNow />
-        <SignupRegistry /> */}
+        <TabComponent /> 
+        <CausesAspects /> */}
+        <SurveyNow />
+        {/* <SignupRegistry /> */}
       </div>
     </div>
   );

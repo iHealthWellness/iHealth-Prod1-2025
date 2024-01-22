@@ -5,6 +5,7 @@
   padding: 1.5rem 7rem;
   background-color: #fff;
   grid-column: 1/ -1;
+  gap: 1rem;
 }
 
 .survey-content p {
@@ -21,15 +22,24 @@
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
+@media screen and (max-width: 1024px) {
+  .survey-img {
+    width: 100%;
+    max-width: 23rem;
+  }
+  .understanding-nf-container .survey-container {
+    padding: 1rem;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .survey-content p {
     font-size: 1rem;
   }
 
-  .survey-container {
-    padding: 2rem 1rem 2rem 3rem;
+  .understanding-nf-container .survey-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     gap: 1rem;
   }
 
@@ -46,8 +56,9 @@
   }
 
   .survey-img {
-    max-width: 10.5625rem;
+    max-width: 15.5625rem;
     margin: auto;
+    grid-row: 1;
   }
   .survey-content h1 {
     font-size: 1rem;
