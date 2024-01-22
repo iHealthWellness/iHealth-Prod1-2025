@@ -1,11 +1,10 @@
 .cause-container {
   display: grid;
   gap: 1.8rem;
-  padding: 1.5rem;
 }
 
 .cause-container > div p {
-  padding: 0.8rem;
+  padding: 0.8rem 0;
 }
 
 .cause-container h1 {
@@ -25,7 +24,7 @@
 
 @media screen and (max-width: 479px) {
   .cause-container {
-    gap: 0.6rem;
+    gap: 0.8rem;
     padding: 0;
   }
   .cause-container h1,

@@ -13,10 +13,10 @@ function index() {
       <div className="understanding-nf-container">
         {/* <NFHeading />
         <CircleImages />
-        <UnderstandingNF /> */}
-        <TabComponent />
-        {/* <CausesAspects />
-        <SurveyNow />
+        <UnderstandingNF />
+        <TabComponent /> */}
+        <CausesAspects />
+        {/* <SurveyNow />
         <SignupRegistry /> */}
       </div>
     </div>
