@@ -21,7 +21,10 @@ function index() {
   return (
     <div>
       <div className="understanding-nf-container">
-        <NFHeading openExternalLink={openExternalLink} />
+        <NFHeading
+          openExternalLink={openExternalLink}
+          underConstruction={underConstruction}
+        />
         <CircleImages openExternalLink={openExternalLink} />
         <UnderstandingNF />
         <TabComponent />

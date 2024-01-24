@@ -1,6 +1,7 @@
 .cause-container {
   display: grid;
-  gap: 1.8rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
 }
 
 .cause-container > div p {
@@ -12,15 +13,20 @@
 }
 
 .doc-img {
-  max-width: 80%;
+  max-width: 100%;
 }
 
 @media screen and (max-width: 1024px) {
+  .cause-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.8rem;
+  }
   .doc-img {
     max-width: 100%;
     object-fit: cover;
   }
-  .cause-container > div {
+  .cause-container > div > div {
     font-size: 1rem;
   }
 }
