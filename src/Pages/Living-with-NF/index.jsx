@@ -8,16 +8,26 @@ import SurveyNow from "src/Components/LivingwithNF/Survey-Now/index";
 import SignupRegistry from "src/Components/LivingwithNF/Signup-Registry/index";
 import "./index.css";
 function index() {
+  const externalLink = "https://www.nfregistry.org";
+
+  const openExternalLink = () => {
+    window.open(externalLink, "_blank");
+  };
+
+  const underConstruction = () => {
+    document.querySelector("#UnderConst-wrapper").style.display = "flex";
+  };
+
   return (
     <div>
       <div className="understanding-nf-container">
-        <NFHeading />
-        <CircleImages />
+        <NFHeading openExternalLink={openExternalLink} />
+        <CircleImages openExternalLink={openExternalLink} />
         <UnderstandingNF />
         <TabComponent />
         <CausesAspects />
-        <SurveyNow />
-        <SignupRegistry />
+        <SurveyNow underConstruction={underConstruction} />
+        <SignupRegistry openExternalLink={openExternalLink} />
       </div>
     </div>
   );

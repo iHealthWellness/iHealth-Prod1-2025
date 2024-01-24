@@ -1,7 +1,7 @@
 import React from "react";
 import "./index.css";
 import { HashLink as Link } from "react-router-hash-link";
-function index() {
+function index({ openExternalLink }) {
   return (
     <div className="heading-container">
       <h1 className="SN-D-H1-48">Living with Neurofibromotisis (NF)</h1>
@@ -12,9 +12,9 @@ function index() {
         challenges associated with NF, offering a wealth of valuable content.
       </p>
       <div className="nf-btn-container">
-        <Link to="#signup-reg">
-          <button className="nf-btn SN-D-T-M-B-16">Sign-Up for Registry</button>
-        </Link>
+        <button onClick={openExternalLink} className="nf-btn SN-D-T-M-B-16">
+          Sign-Up for Registry
+        </button>
         <Link to="#take-survey ">
           <button className="nf-btn SN-D-T-M-B-16">Survey Now</button>
         </Link>

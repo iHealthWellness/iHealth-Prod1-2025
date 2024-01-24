@@ -2,7 +2,7 @@ import "./index.css";
 import survey from "src/Assets/Images/surveyclinicaltrials.jpg";
 import React from "react";
 
-function index() {
+function index({ underConstruction }) {
   return (
     <div id="take-survey" className="survey-container">
       <div className="survey-content">
@@ -12,15 +12,12 @@ function index() {
           your match in the world of clinical trials!
         </p>
         {/* navigate to "/nf-registry" */}
-        <button
-          className="nf-btn SN-D-T-M-B-16"
-          onClick={() => console.log("/nf-registry")}
-        >
+        <button className="nf-btn SN-D-T-M-B-16" onClick={underConstruction}>
           Take the survey!
         </button>
       </div>
 
-      <img className="survey-img" src={survey} />
+      <img onClick={underConstruction} className="survey-img" src={survey} />
     </div>
   );
 }

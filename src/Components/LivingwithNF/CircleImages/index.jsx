@@ -4,7 +4,7 @@ import NF2 from "src/Assets/Images/surveynow.jpg";
 import NF3 from "src/Assets/Images/signupregistry.jpg";
 import { HashLink as Link } from "react-router-hash-link";
 import "./index.css";
-function index() {
+function index({ openExternalLink }) {
   return (
     <div>
       <div className="circle-img-container ">
@@ -31,15 +31,14 @@ function index() {
           </Link>
         </div>
         <div className="circle-img SN-T-H2-30">
-          <Link
-            style={{ color: "inherit", textDecoration: "none" }}
-            to="#signup-reg"
-          >
-            <img className="circle-img3 image" src={NF3} />
-            <p className="img-txt3">
-              Sign-Up: NF <p>Registry</p>
-            </p>
-          </Link>
+          <img
+            onClick={openExternalLink}
+            className="circle-img3 image"
+            src={NF3}
+          />
+          <p className="img-txt3">
+            Sign-Up: NF <p>Registry</p>
+          </p>
         </div>
       </div>
     </div>

@@ -1,13 +1,7 @@
 import "./index.css";
 import React from "react";
 
-function index() {
-  const externalLink = "https://www.nfregistry.org";
-
-  const openExternalLink = () => {
-    window.open(externalLink, "_blank");
-  };
-
+function index({ openExternalLink }) {
   return (
     <div id="signup-reg" className="signup-container">
       <div className="enroll-content1">
