@@ -10,6 +10,7 @@
 
 .survey-content p {
   padding: 1rem 0;
+  text-align: justify;
 }
 
 .survey-content h1 {

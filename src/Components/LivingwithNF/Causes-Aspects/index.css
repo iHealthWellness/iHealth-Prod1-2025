@@ -6,6 +6,7 @@
 
 .cause-container > div p {
   padding: 0.8rem 0;
+  text-align: justify;
 }
 
 .cause-container > div {

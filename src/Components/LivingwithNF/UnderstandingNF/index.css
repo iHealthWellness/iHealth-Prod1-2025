@@ -4,6 +4,10 @@
   color: #07235b;
 }
 
+.understandingnf-heading > p {
+  text-align: justify;
+}
+
 .understandingnf-heading h1 {
   padding-bottom: 0.6rem;
 }

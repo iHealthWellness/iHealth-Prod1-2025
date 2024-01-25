@@ -8,6 +8,7 @@
 .enroll-content2 {
   display: grid;
   gap: 1rem;
+  text-align: justify;
 }
 
 .enroll-content1 button.nf-btn {
