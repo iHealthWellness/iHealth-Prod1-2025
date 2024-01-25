@@ -8,9 +8,8 @@ import SurveyNow from "src/Components/LivingwithNF/Survey-Now/index";
 import SignupRegistry from "src/Components/LivingwithNF/Signup-Registry/index";
 import "./index.css";
 function index() {
-  const externalLink = "https://www.nfregistry.org";
-
   const openExternalLink = () => {
+    const externalLink = "https://www.nfregistry.org";
     window.open(externalLink, "_blank");
   };
 
