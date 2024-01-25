@@ -10,6 +10,7 @@
 
 .cause-container > div {
   order: 1;
+  opacity: 0;
 }
 
 .cause-container > img {
@@ -22,6 +23,23 @@
 
 .doc-img {
   max-width: 100%;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animated-text {
+  animation-name: slideInFromLeft;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 
 @media screen and (max-width: 1024px) {

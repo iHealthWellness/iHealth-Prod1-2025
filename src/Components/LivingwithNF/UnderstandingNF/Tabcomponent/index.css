@@ -24,6 +24,24 @@
   max-width: 60%;
 }
 
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animated-text-right {
+  opacity: 0; /* Initially hide the text */
+  animation-name: slideInFromRight;
+  animation-duration: 1s; /* Duration of the animation */
+  animation-fill-mode: forwards; /* Ensures the element remains visible after animation */
+}
+
 @media screen and (min-width: 480px) and (max-width: 1023px) {
   .tab-image {
     max-width: 29.375rem;
