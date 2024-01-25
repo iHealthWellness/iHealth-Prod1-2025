@@ -8,6 +8,14 @@
   padding: 0.8rem 0;
 }
 
+.cause-container > div {
+  order: 1;
+}
+
+.cause-container > img {
+  order: 2;
+}
+
 .cause-container h1 {
   color: #07235b;
 }
@@ -17,6 +25,14 @@
 }
 
 @media screen and (max-width: 1024px) {
+  .cause-container > div {
+    order: 2;
+  }
+
+  .cause-container > img {
+    order: 1;
+  }
+
   .cause-container {
     display: grid;
     grid-template-columns: 1fr;
