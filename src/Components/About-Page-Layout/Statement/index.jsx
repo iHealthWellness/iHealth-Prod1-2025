@@ -73,9 +73,9 @@ const Statement = () => {
                             ref={divRef}>
                             <div className="text">
                                 <p>
-                                    At the heart of our endeavor lies a simple yet profound mission: to drive meaningful change by introducing innovative solutions that leave a lasting imprint.
-                                    Our platform integrates medical and wellness social networking, patient advocacy, and access to Major EHR Systems into a platform that connects patients
-                                    living with complex diseases to high-quality healthcare providers and resources. </p>
+                                    To improve the quality of life for patients with complex diseases by enhancing healthcare access,
+                                    fostering social connections, championing patient advocacy, advancing EHR, and promoting overall well-being.
+                                </p>
                             </div>
                             <div className="text-layout">
                                 <p>

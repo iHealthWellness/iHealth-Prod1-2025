@@ -8,13 +8,11 @@ const Hero = () => {
 
     return (
         <section  id="Hero" className="Hero-image">
-            <div className="container"> <div className="image-page">
-                <img src={img} className="img-holder" alt="meeting" />
+            <div className="container"> 
+                <div className="image-page">
+                    <img src={img} className="img-holder" alt="meeting" />
+                </div>
             </div>
-
-            </div>
-
-
         </section>
     )
 };

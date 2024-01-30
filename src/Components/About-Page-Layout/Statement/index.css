@@ -1,16 +1,21 @@
-
 /* desktop view */
 .container {
     margin: 0 auto;
     width: 90%;
     max-width: 1216px;
-    padding-left: 20px;
-    padding-right: 20px; /* Add padding on both sides */
+    padding: 0px 20px;
 }
 .img-holder{
   margin-top:9px;
-  width:100%;
+  /* width:100%; */
   height:auto;
+}
+
+.image-page{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .pageholder {
@@ -27,6 +32,7 @@
     padding-left: 20px;
     padding-right: 20px; /* Add padding on both sides */
 }
+
 
 .img-mission{
     margin-top: 120px;
@@ -86,69 +92,61 @@
 }
 .text{
     text-align: justify;
-
     color:#00427C;
     border-radius:20px;
-    padding: 20px;
+    padding: 10px;
+    display: inline-block;
 }
 .text p{
-    padding:10px;
     font-family: Roboto;
-    border-radius:20px;
-    font-size: 24px;
+    border-radius: 20px;
     font-weight: 400;
     line-height: 28px;
     letter-spacing: 0em;
+    hyphens: auto;
+    word-spacing: -0.05em;
+    font-size: 1.25rem;
 }
-.text-layout p{
-    font-family: Roboto;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 22px;
-    letter-spacing: 0em;
-    text-align: justify;
-    padding: 20px;
-    letter-spacing: 0em;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 28px;
-    letter-spacing: 0em;
-    padding:10px;
 
+.text-layout P{
+    font-family: Roboto;
+    border-radius: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: justify;
+    hyphens: auto;
+    word-spacing: -0.05em;
+    
 }
+
 .text1 p{
     font-family: Roboto;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 22px;
-    letter-spacing: 0em;
-    text-align: justify;
-    padding: 20px;
-    letter-spacing: 0em;
-    font-size: 24px;
-    font-weight: 400;
+    border-radius: 20px;
     line-height: 28px;
     letter-spacing: 0em;
-    padding:10px;
-    }
+    text-align: justify;
+    hyphens: auto;
+    word-spacing: -0.05em;
+    font-size: 1.25rem;
+}
 
 
 .text:hover{
     background-color:#07235B;
     color: #ffff;
-
 }
 .text-layout:hover{
     background-color:#ffff;
     color: #07235B;
-
 }
+
 .text-tab{
     border-radius: 20px;
     margin-bottom: 25px;
+    padding: 10px;
 } 
 .text-layout{
- margin-top:50px;
+ margin-top:25px;
  background-color:#07235B;
  border-radius:20px;
  color:white;
@@ -157,10 +155,8 @@
  font-weight: 400;
  line-height: 22px;
  letter-spacing: 0em;
- text-align: center;
+ text-align: justify;
  padding: 20px;
- 
- 
 }
 
 
@@ -180,13 +176,12 @@
 .text1{
     width: 341px;
     font-family: Roboto;
-    font-size: 24px;
+    /* font-size: 24px; */
     font-weight: 400;
     line-height: 22px;
     letter-spacing: 0em;
-    text-align: center;
+    text-align: justify;
     color:#07235B;
-   
 }
     
 
@@ -206,15 +201,15 @@ padding: 10px;
     background-color:#07235B;
     color:white;
     border-radius:20px;
+    padding: 20px;
 }
 .text-outline-color-change:hover{
     background-color:#ffff;
     color:#07235B;
-}
-.text-tab:hover{
+} 
+ .text-tab:hover{
     background-color:#07235B;
     color:#ffff;
-    
 }
 
 /* Responsiveness Tablet view */
@@ -287,12 +282,12 @@ font-family: Roboto;
 
 }
 .text p{
-font-size: 24px;
+font-size: 115%;
 font-weight: 400;
 line-height: 34px;
 }
 .text-layout{
-font-size: 24px;
+font-size: 115%;
 font-weight: 400;
 line-height: 34px;
 }
@@ -382,10 +377,8 @@ line-height: 34px;
 padding: 20px;
 }
 .text{
-    
     font-size: 20px;
     margin-top: 20px;
-    
 }
 .text p {
     padding: 10px;
@@ -393,9 +386,9 @@ padding: 20px;
     font-weight: 400;
     line-height: 34px;
 }
-.text-layout p{
+/* .text-layout p{
     font-size: 20px; 
-}
+} */
 .text1 p {
 font-size:20px;
 }
@@ -405,9 +398,9 @@ br{
 .text1 h3 {
     margin-top: 20px;
 }
-.text-layout {
+/* .text-layout {
     margin-top: 20px;
-}
+} */
 .text-layout p {
     padding: 10px;
     font-family: Roboto;
