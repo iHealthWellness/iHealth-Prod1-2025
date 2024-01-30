@@ -6,7 +6,9 @@ const InformationTabs = () => {
   const NFTypes = ["NF1", "NF2", "Schwannomatosis (NF3)", "ANY"];
   return (
     <div className="information-tab-container">
-      <h2 className="information-tab-heading">
+
+{/* UPDATE 1.30 REMOVE NF TYPE BAR - COMMENTED OUT IN CASE IT IS TO BE USED IN FUTURE */}
+      {/* <h2 className="information-tab-heading">
         Select Your Neurofibromatosis(NF) Type:
       </h2>
       <div className="information-tabs">
@@ -21,7 +23,9 @@ const InformationTabs = () => {
             {typeEl}
           </button>
         ))}
-      </div>
+      </div> */}
+
+
     </div>
   );
 };
