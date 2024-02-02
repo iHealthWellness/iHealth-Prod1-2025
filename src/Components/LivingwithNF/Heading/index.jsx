@@ -12,15 +12,15 @@ function index({ openExternalLink, underConstruction }) {
         challenges associated with NF, offering a wealth of valuable content.
       </p>
       <div className="nf-btn-container">
-        <button onClick={openExternalLink} className="nf-btn SN-D-T-M-B-16">
-          Sign-Up for Registry
-        </button>
-        <button onClick={underConstruction} className="nf-btn SN-D-T-M-B-16">
-          Survey Now
-        </button>
         <Link to="#understand-nf">
           <button className="nf-btn SN-D-T-M-B-16">Understanding NF</button>
         </Link>
+        <button onClick={underConstruction} className="nf-btn SN-D-T-M-B-16">
+          Survey Now
+        </button>
+        <button onClick={openExternalLink} className="nf-btn SN-D-T-M-B-16">
+          Sign-Up for Registry
+        </button>
       </div>
     </div>
   );
