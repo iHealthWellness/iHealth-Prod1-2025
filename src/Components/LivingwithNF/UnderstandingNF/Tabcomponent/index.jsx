@@ -112,7 +112,7 @@ function index() {
                   fontSize: "1.5rem",
                   fontWeight: "500",
                 }}
-                label="Schwannomatosis"
+                label="SWN"
                 {...a11yProps(2)}
               />
             </Tabs>
@@ -148,12 +148,12 @@ function index() {
           <div className="tab-text">
             <img loading="lazy" className="tab-image" src={Neuron} />
             <div className="SN-D-P-20">
-              Schwannomatosis is the least common type of neurofibromatosis.
-              Unlike NF1 and NF2, Schwannomatosis only involves the growth of
-              schwannomas, which are tumors that develop on the Schwann cells
-              that wrap around nerves. These tumors typically cause pain but do
-              not lead to hearing loss, making Schwannomatosis distinct from
-              NF2.
+              Schwannomatosis (SWN) is the least common type of
+              neurofibromatosis. Unlike NF1 and NF2, Schwannomatosis only
+              involves the growth of schwannomas, which are tumors that develop
+              on the Schwann cells that wrap around nerves. These tumors
+              typically cause pain but do not lead to hearing loss, making
+              Schwannomatosis distinct from NF2.
             </div>
           </div>
         </CustomTabPanel>
