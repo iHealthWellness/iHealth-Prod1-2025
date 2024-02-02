@@ -6,37 +6,37 @@ import { HashLink as Link } from "react-router-hash-link";
 import "./index.css";
 function index({ openExternalLink }) {
   return (
-    <div>
-      <div className="circle-img-container ">
+    <div className="main-circle-container">
+      <Link
+        style={{ color: "inherit", textDecoration: "none" }}
+        to="#understand-nf"
+      >
         <div className="circle-img SN-T-H2-30">
-          <Link
-            style={{ color: "inherit", textDecoration: "none" }}
-            to="#understand-nf"
-          >
-            <img className="circle-img1 image" src={NF1} />
-            <p className="img-txt1">
+          <div className="inside-circle-container">
+            <img className="image" src={NF1} />
+            <p className="img-txt">
               Understanding<p>NF</p>
             </p>
-          </Link>
+          </div>
         </div>
+      </Link>
+      <Link
+        style={{ color: "inherit", textDecoration: "none" }}
+        to="#take-survey"
+      >
         <div className="circle-img SN-T-H2-30">
-          <Link
-            style={{ color: "inherit", textDecoration: "none" }}
-            to="#take-survey"
-          >
-            <img className="circle-img2  image" src={NF2} />
-            <p className="img-txt2">
+          <div className="inside-circle-container">
+            <img className="image" src={NF2} />
+            <p className="img-txt">
               Survey Now: <p>Clinical Trials</p>
             </p>
-          </Link>
+          </div>
         </div>
-        <div className="circle-img SN-T-H2-30">
-          <img
-            onClick={openExternalLink}
-            className="circle-img3 image"
-            src={NF3}
-          />
-          <p className="img-txt3">
+      </Link>
+      <div className="circle-img SN-T-H2-30">
+        <div className="inside-circle-container">
+          <img onClick={openExternalLink} className="image" src={NF3} />
+          <p className="img-txt">
             Sign-Up: NF <p>Registry</p>
           </p>
         </div>
