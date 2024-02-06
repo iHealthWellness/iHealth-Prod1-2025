@@ -1,0 +1,132 @@
+.provider-card {
+  position: relative;
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px solid #8B9094;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  margin-right: 20px;
+  margin-bottom: -90px;
+}
+
+.provider-photo img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  border: 5px solid #ffffff;
+  object-fit: cover;
+  object-position: center;
+}
+
+.provider-info {
+  flex-grow: 1;
+  padding-left: 20px;
+}
+
+.provider-hospital {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #000000;
+  margin-top: 5px;
+  font-weight: 400;
+  line-height: 22.88px;
+}
+
+.provider-name {
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 33px;
+  text-align: left;
+  margin-bottom: 5px;
+  color: #07235B;
+}
+
+.provider-rating .stars {
+  color: gold;
+  font-size: 1em;
+}
+
+.provider-status .accepting-new {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+  padding: 2px 5px;
+  margin-right: 10px;
+}
+
+.provider-specialty {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #000000;
+  border: 1px solid #8B9094;
+  padding: 10px 20px;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  max-width: 1000px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.provider-specialty-title {
+  font-family: 'Arial', sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.Education {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 5px;
+  color: #07235B;
+}
+
+.provider-address {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+  color: #000000;
+  padding: 5px 8px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.provider-address .distance {
+  font-weight: 500;
+  margin-right: 5px;
+}
+
+.provider-contact .provider-phone {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border-radius: 20px;
+  background: #07235B;
+  color: #ffffff;
+  padding: 12px 35px;
+  text-decoration: none;
+}
+
+.provider-footer {
+  font-size: 0.8em;
+  color: #666666;
+  margin-top: 20px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 5px;
+  margin-right: 20px;
+}

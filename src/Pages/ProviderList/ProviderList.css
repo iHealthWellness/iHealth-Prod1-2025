@@ -1,0 +1,30 @@
+.provider-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f9f9f9;
+    padding: 20px;
+  }
+  
+  .provider-cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    padding-bottom: 100px;
+  }
+
+.provider-list-container {
+  display: flex;
+}
+
+.provider-list-main {
+  flex-grow: 1; 
+}
+
+.provider-cards-container {
+  display: flex;
+  flex-direction: column;
+}
+

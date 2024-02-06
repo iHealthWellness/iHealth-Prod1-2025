@@ -17,6 +17,7 @@ import Other from "./Pages/Other/index";
 import Team from "./Pages/Our-Team";
 import Termsofuse from "./Pages/Terms-of-use";
 import Jobs from "./Pages/Jobs-opening/jobs.jsx";
+import ProviderList from "./Pages/ProviderList/ProviderList.jsx";
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
       children: [
         { index: true, element: <Home /> },
         { path: "/services", element: <Services /> },
+        { path: "/ProviderList", element: <ProviderList /> },
         { path: "/about-us", element: <Aboutus /> },
         { path: "/research", element: <Research /> },
         { path: "/sign-in", element: <Signin /> },
