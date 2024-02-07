@@ -42,6 +42,8 @@ const ProviderAutocomplete = ({
             zIndex: 10,
             width: "2rem",
             height: "2rem",
+            border: "5px solid #062758",
+            borderTop: "5px solid #f1f1f1",
           }}
         ></div>
       )}
