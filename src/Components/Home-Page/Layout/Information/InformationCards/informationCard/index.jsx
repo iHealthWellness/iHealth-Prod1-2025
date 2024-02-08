@@ -1,3 +1,4 @@
+import { HashLink } from "react-router-hash-link";
 import "./index.css";
 
 const InformationCard = ({ team }) => {
@@ -10,12 +11,12 @@ const InformationCard = ({ team }) => {
       return;
     }
 
-    if (path && path.includes("#")) {
-      e.preventDefault();
+    // if (path && path.includes("#")) {
+    //   e.preventDefault();
 
-      // Directly set the window's location href to the desired URL.
-      window.location.href = path;
-    }
+    //   // Directly set the window's location href to the desired URL.
+    //   window.location.href = path;
+    // }
   };
 
   return (
@@ -34,9 +35,15 @@ const InformationCard = ({ team }) => {
         {content.map((c) => (
           <li className="information-card-listitem" key={c.text}>
             <span className="information-card-listitem-span">&#10004; </span>
-            <a href={c.path} onClick={(e) => handleOnClick(e, c.path)}>
+            {heading === "Education" ? (
+              <a href={c.path} onClick={(e) => handleOnClick(e, c.path)}>
+                {c.text}
+              </a>
+              ):(
+            <HashLink smooth to={c.path}>
               {c.text}
-            </a>
+            </HashLink>
+            )}
           </li>
         ))}
       </ul>
