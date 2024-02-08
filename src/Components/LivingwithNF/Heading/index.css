@@ -18,7 +18,7 @@
 
 .nf-paragraph {
   color: rgb(7, 35, 91);
-  padding: 1.1rem 0;
+  padding: 1.7rem 0;
   text-align: justify;
 }
 
@@ -49,9 +49,6 @@
     width: 100%;
     margin: 0;
     padding: 0.6rem;
-  }
-  .understanding-nf-container .heading-container p {
-    padding-block: 0.6rem;
   }
 }
 
