@@ -51,6 +51,7 @@ const DataPage = [
       "Nisha Fazululakhan",
       "Saad Elmesaoudi",
       "Oladimeji Stephen Ibitoye",
+      "Sauhard Aggarwal",
       "Siddhant Ravindra Wadaskar",
       "Temitope Alabi",
       "Tyler Mason",
