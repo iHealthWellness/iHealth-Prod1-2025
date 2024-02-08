@@ -1,0 +1,59 @@
+.understanding-nf-container .heading-container {
+  padding: 3.75rem 7rem;
+  color: rgb(7, 35, 91);
+  background-color: var(--Shade-White, #fff);
+  grid-column: 1/ -1;
+}
+
+.nf-btn {
+  background: #0d99ff;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 0.6rem;
+  color: var(--Shade-White, #fff);
+  text-decoration: none;
+  cursor: pointer;
+  margin: 1.12rem 0.63rem 0 0;
+}
+
+.nf-paragraph {
+  color: rgb(7, 35, 91);
+  padding: 1.7rem 0;
+  text-align: justify;
+}
+
+@media screen and (min-width: 632px) and (max-width: 1024px) {
+  .understanding-nf-container .heading-container {
+    padding: 1.5rem;
+  }
+  .understanding-nf-container .heading-container h1 {
+    font-size: 2.25rem;
+  }
+  .understanding-nf-container .heading-container p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 632px) {
+  .understanding-nf-container .heading-container h1 {
+    font-size: 1.8rem;
+  }
+  .understanding-nf-container .heading-container {
+    padding: 1rem;
+  }
+  .understanding-nf-container .nf-btn-container {
+    display: grid;
+    gap: 0.6rem;
+  }
+  .nf-btn {
+    width: 100%;
+    margin: 0;
+    padding: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .understanding-nf-container .heading-container p {
+    font-size: 1rem;
+  }
+}
