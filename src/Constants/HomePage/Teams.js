@@ -10,9 +10,9 @@ const Teams = [
     },
     heading: "Living with NF",
     content: [
-      { text: "Understanding NF", path: "" },
-      { text: "Survey Now: Clinical Trials", path: "/nf-registry" },
-      { text: "Sign-Up: NF Registry", path: "/find-provider" }
+      { text: "Understanding NF", path: "/livingwith-nf/#understand-nf" },
+      { text: "Survey Now: Clinical Trials", path: "/livingwith-nf/#take-survey" },
+      { text: "Sign-Up: NF Registry", path: "/livingwith-nf/#signup-reg" }
     ],
     detailPath: "/livingwith-nf",
   },
