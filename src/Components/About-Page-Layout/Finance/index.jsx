@@ -72,13 +72,14 @@ const Finance = () => {
 
             <div className="container">
                 <div className="financial-analysis-tab">
-                    <div>
-                    <div className="trans-Image"><img src={img4} className="trans-Image" alt="Financial-Transparency" />
-                    <h3 className="text-finance">Financial Transparency</h3></div>
+                        <div className="trans-Image">
+                            <img src={img4} className="trans-Image-src" alt="Financial-Transparency" />
+                            <h3 className="text-finance">Financial Transparency</h3>
+                        </div>
+                    <div className="financial-outline"> 
+                        <h2>Revenue Generation</h2>
+                        <h4>Our revenue is generated through the following business activities.</h4>  
                     </div>
-                    
-                    <div className="financial-outline"> <h2>Revenue Generation</h2>
-                        <h4>Our revenue is generated through the following business activities.</h4>  </div>
                 </div>
             </div>
 
