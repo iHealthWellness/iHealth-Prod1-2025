@@ -1,26 +1,53 @@
 import { Autocomplete, TextField } from "@mui/material";
 import ArrowDropDownCircleRoundedIcon from "@mui/icons-material/ArrowDropDownCircleRounded";
 import "./index.css";
-const ProviderAutocomplete = ({ options, label, value, onInputChange }) => {
+const ProviderAutocomplete = ({
+  options,
+  label,
+  value,
+  onInputChange,
+  loading,
+}) => {
   return (
-    <Autocomplete
-      className={`provider-autocomplete ${label}`}
-      value={value}
-      onChange={(event, newValue) => {
-        onInputChange(newValue);
-      }}
-      sx={{
-        "& .MuiOutlinedInput-root": {
-          borderRadius: "0.5rem",
-        },
-      }}
-      disablePortal
-      options={options}
-      renderInput={(params) => <TextField {...params} label={label} />}
-      popupIcon={
-        <ArrowDropDownCircleRoundedIcon style={{ color: "#07235B" }} />
-      }
-    />
+    <div
+      className="provider-autocomplete-container"
+      style={{ position: "relative" }}
+    >
+      <Autocomplete
+        className={`provider-autocomplete ${label}`}
+        value={value}
+        onChange={(event, newValue) => {
+          onInputChange(newValue);
+        }}
+        sx={{
+          "& .MuiOutlinedInput-root": {
+            borderRadius: "0.5rem",
+            position: "relative",
+          },
+        }}
+        options={options}
+        renderInput={(params) => <TextField {...params} label={label} />}
+        popupIcon={
+          <ArrowDropDownCircleRoundedIcon style={{ color: "#07235B" }} />
+        }
+      />
+      {loading && (
+        <div
+          className="loader"
+          style={{
+            position: "absolute",
+            top: "25%",
+            left: "40%",
+            transform: "translate(-50%, -50%)",
+            zIndex: 10,
+            width: "2rem",
+            height: "2rem",
+            border: "5px solid #062758",
+            borderTop: "5px solid #f1f1f1",
+          }}
+        ></div>
+      )}
+    </div>
   );
 };
 
