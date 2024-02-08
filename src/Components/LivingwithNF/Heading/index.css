@@ -22,7 +22,7 @@
   text-align: justify;
 }
 
-@media screen and (min-width: 632px) and (max-width: 1023px) {
+@media screen and (min-width: 632px) and (max-width: 1024px) {
   .understanding-nf-container .heading-container {
     padding: 1.5rem;
   }

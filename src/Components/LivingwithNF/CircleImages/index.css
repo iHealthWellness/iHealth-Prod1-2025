@@ -29,10 +29,6 @@
 }
 
 @media screen and (min-width: 481px) and (max-width: 1024px) {
-  .main-circle-container {
-    gap: 1rem;
-  }
-
   .inside-circle-container {
     padding: 1rem;
   }
@@ -46,7 +42,7 @@
 @media screen and (max-width: 480px) {
   .main-circle-container {
     grid-template-columns: 1fr;
-    gap: 0.8rem;
+    gap: 0;
   }
 
   .image {

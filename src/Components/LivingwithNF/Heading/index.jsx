@@ -1,6 +1,7 @@
 import React from "react";
 import "./index.css";
 import { HashLink as Link } from "react-router-hash-link";
+import CircleImages from "../CircleImages/index";
 function index({ openExternalLink, underConstruction }) {
   return (
     <div className="heading-container">
@@ -11,7 +12,7 @@ function index({ openExternalLink, underConstruction }) {
         neurofibromatosis (NF). It serves as a hub for those navigating the
         challenges associated with NF, offering a wealth of valuable content.
       </p>
-      <div className="nf-btn-container">
+      {/* <div className="nf-btn-container">
         <Link to="#understand-nf">
           <button className="nf-btn SN-D-T-M-B-16">Understanding NF</button>
         </Link>
@@ -21,7 +22,8 @@ function index({ openExternalLink, underConstruction }) {
         <button onClick={openExternalLink} className="nf-btn SN-D-T-M-B-16">
           Sign-Up for Registry
         </button>
-      </div>
+      </div> */}
+      <CircleImages openExternalLink={openExternalLink} />
     </div>
   );
 }
