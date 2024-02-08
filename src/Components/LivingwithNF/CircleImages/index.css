@@ -33,6 +33,10 @@
     padding: 1rem;
   }
 
+  .circle-img.SN-T-H2-30 {
+    line-height: 80%;
+  }
+
   .image {
     width: 10rem;
     height: 10rem;
@@ -43,6 +47,10 @@
   .main-circle-container {
     grid-template-columns: 1fr;
     gap: 0;
+  }
+
+  .circle-img.SN-T-H2-30 {
+    line-height: 80%;
   }
 
   .image {
