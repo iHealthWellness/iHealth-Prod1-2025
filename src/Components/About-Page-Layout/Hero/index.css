@@ -5,6 +5,7 @@
 } 
 .Hero-image{
     background-color: rgb(242, 248, 253); 
+    padding: 1rem;
     /* background-color:#Ffff; */
 }
 .img-holder{

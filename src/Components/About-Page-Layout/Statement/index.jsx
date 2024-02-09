@@ -62,7 +62,7 @@ const Statement = () => {
     return (
 
         <section id="Statement" className="pageholder" >
-            <div className="container">
+            <div className="statement-container">
                 <div className="page">
                     <div>
                         <div className="img-outline">
