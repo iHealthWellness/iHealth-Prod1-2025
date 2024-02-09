@@ -3,14 +3,14 @@ const DataPage = [
       id: 1,
       TeamName: "Copywriting",
       // Roles: "Content Writers, Copywriters, Technical Writers",
-      Names: ["Marie Clardy"],
+      Names: ["Aurora Basnet", "Marie Clardy"],
 
   },
   {
     id: 1,
     TeamName: "Cybersecurity and Data Privacy",
     // Roles: "Cybersecurity,Privacy,Data Privacy ",
-    Names: ["Somya Narain", "Suchit Iyer", "Viswajit Srinivasan"],
+    Names: ["Somya Narain", "Viswajit Srinivasan"],
   },
   {
     id: 2,
@@ -28,6 +28,7 @@ const DataPage = [
     TeamName: " Design",
     // Roles: "UX/UI Designers, Interaction Designers, Visual Designers, Graphic Designers ",
     Names: [
+      "Cattleya Visanvit",
       "Ellen Beatty",
       "Happy Emerame",
       "Jiani Chen",
@@ -42,11 +43,11 @@ const DataPage = [
     TeamName: "Development",
     // Roles: " Software Engineers, Full-Stack Developers,Backend Developers,Frontend Developers, DevOps Engineers,Mobile App Developers ",
     Names: [
+      "Amal Engulatov",
       "Abhirup Acharya",
       "Bauket Fabrice",
       "David Tevzadze",
       "Faizan Elahi",
-      "George Karani",
       "Miguel Negron Garcia",
       "Nisha Fazululakhan",
       "Saad Elmesaoudi",
