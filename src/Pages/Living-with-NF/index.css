@@ -1,0 +1,28 @@
+.understanding-nf-container {
+  display: grid;
+  grid-template-columns: 7rem 1fr 7rem;
+  background-color: rgba(247, 246, 243);
+  padding-bottom: 2rem;
+  row-gap: 1.38rem;
+}
+.understanding-nf-container > * {
+  grid-column: 2; /* Place each child in the middle column */
+}
+
+.understanding-nf-container img {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  .understanding-nf-container {
+    grid-template-columns: 1.5rem 1fr 1.5rem;
+    row-gap: 1.38rem;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .understanding-nf-container {
+    grid-template-columns: 1rem 1fr 1rem;
+    row-gap: 0.9rem;
+  }
+}

@@ -7,7 +7,7 @@ const InformationTabs = () => {
   return (
     <div className="information-tab-container">
 
-      {/* UPDATE 1.30 REMOVE NF TYPE BAR - COMMENTED OUT IN CASE IT IS TO BE USED IN FUTURE */}
+{/* UPDATE 1.30 REMOVE NF TYPE BAR - COMMENTED OUT IN CASE IT IS TO BE USED IN FUTURE */}
       {/* <h2 className="information-tab-heading">
         Select Your Neurofibromatosis(NF) Type:
       </h2>
@@ -25,7 +25,6 @@ const InformationTabs = () => {
         ))}
       </div> */}
 
-      
     </div>
   );
 };
