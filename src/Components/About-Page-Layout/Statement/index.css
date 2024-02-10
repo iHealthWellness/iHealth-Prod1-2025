@@ -317,13 +317,10 @@ width: 90%;
     display: none;
 }
     
- .pageholder{
-
+ /* .pageholder{
     background-color:#ffff;
     overflow-x: hidden;
-
-    
-}
+} */
 .page{
  display:flex;
 flex-direction: column;
@@ -420,9 +417,9 @@ br{
     }
 }
 @media only screen and (max-width: 480px) {
-    .pageholder {
+    /* .pageholder {
         background-color: #ffffff;
-    }
+    } */
 
     .page {
         flex-direction: column;
