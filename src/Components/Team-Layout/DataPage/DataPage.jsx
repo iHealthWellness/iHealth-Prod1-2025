@@ -35,7 +35,7 @@ const DataPage = [
       "Kyle Welsh",
       "Mariam Abdulkareem",
       "Mary Dolmat",
-      "Oluwafemi Adegbola Nurudeen",
+      "Oluwafemi Nurudeen",
     ],
   },
   {
