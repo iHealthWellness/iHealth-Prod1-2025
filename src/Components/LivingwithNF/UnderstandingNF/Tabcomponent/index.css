@@ -14,6 +14,10 @@
   background-color: transparent;
 }
 
+.rotate-flip-horizontal{
+  transform: scaleX(-1);
+}
+
 .tab-text {
   display: flex;
   justify-content: space-evenly;
