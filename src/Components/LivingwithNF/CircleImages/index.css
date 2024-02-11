@@ -19,6 +19,11 @@
   border-radius: 0.5rem;
 }
 
+.img-txt{
+  cursor:pointer;
+  
+}
+
 .inside-circle-container {
   place-items: center;
   text-align: center;

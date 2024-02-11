@@ -29,7 +29,7 @@ const Team = () => {
             together.
           </p>
           <div className="team-join-card-inner">
-            <h2 className="team-join-heading">Join NF Community</h2>
+            <h2 className="team-join-heading"> iHealth360 Community Hub</h2>
             <p className="team-join-slogan">
               Connect with other people. Share your story.
             </p>

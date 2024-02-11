@@ -120,7 +120,7 @@ function index() {
         </Box>
         <CustomTabPanel value={value} index={0}>
           <div className="tab-text">
-            <img loading="lazy" className="tab-image" src={Headache} />
+            <img loading="lazy" className="tab-image rotate-flip-horizontal" src={Headache} />
             <div className="SN-D-P-20">
               NF1 is the most common type of neurofibromatosis, affecting about
               1 in 3,000 people worldwide. It is caused by mutations in the NF1

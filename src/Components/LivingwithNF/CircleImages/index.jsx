@@ -34,8 +34,8 @@ function index({ openExternalLink }) {
         </div>
       </Link>
       <div className="circle-img SN-T-H2-30">
-        <div className="inside-circle-container">
-          <img onClick={openExternalLink} className="image" src={NF3} />
+        <div onClick={openExternalLink} className="inside-circle-container">
+          <img className="image" src={NF3} />
           <p className="img-txt">
             Sign-Up: NF <p>Registry</p>
           </p>
