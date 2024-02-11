@@ -93,12 +93,13 @@ const Footer = () => {
                 return (
                   <a
                     className="footer-follow-link"
-                    // href={ele.url}
-                    onClick={() => {
-                      document.querySelector(
-                        "#UnderConst-wrapper"
-                      ).style.display = "flex";
-                    }}
+                    target="_blank"
+                    href={ele.url}
+                    // onClick={() => {
+                    //   document.querySelector(
+                    //     "#UnderConst-wrapper"
+                    //   ).style.display = "flex";
+                    // }}
                     key={`social-icon-${idx}`}
                   >
                     <img
