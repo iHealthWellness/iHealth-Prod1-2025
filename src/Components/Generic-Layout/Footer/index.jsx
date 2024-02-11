@@ -120,10 +120,19 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-bottom">
-        <p className="footer-terms-right SN-M-P-16">
-          @2023 iHealth and Wellness Foundation, Inc. All rights reserved
-        </p>
 
+        <div className="footer-terms-center SN-M-P-16">
+          <div className="footer-terms">
+            <span>
+            Copyright © 2024 iHealth and Wellness Foundation, Inc. All rights reserved. iHealth and Wellness Foundation, Inc. is a 501 (c)(3) non-profit recognized by the IRS.
+            </span>
+            <span>
+              Tax ID Number: 93-1567099
+            </span>
+          </div>
+        </div>
+
+        <div className="language-select-cont">
         <Select
           value={selectedLanguage}
           onChange={handleChange}
@@ -144,7 +153,7 @@ const Footer = () => {
               color: "white",
             },
             "@media (max-width: 768px)": {
-              minWidth: "100px", // Adjust as needed
+              minWidth: "50px", // Adjust as needed
             },
             "@media (max-width: 576px)": {
               minWidth: "80px",
@@ -208,6 +217,7 @@ const Footer = () => {
             Deutsch
           </MenuItem>
         </Select>
+      </div>
       </div>
     </footer>
   );
