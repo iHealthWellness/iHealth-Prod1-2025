@@ -39,7 +39,7 @@ const section1 = () => {
 
   return (
     <div className="first-part">
-      <div className="image">
+      <div>
         <img className="image-img" src={Research1} alt="" />
       </div>
       <div>
