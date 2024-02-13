@@ -1,35 +1,39 @@
-.selected-filters {
+.selected-filters1 {
   width: 250px;
-  height: 500px;
+  height: 570px; 
   background: #ffffff;
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  margin-right: 20px;
-  margin-left: 20px;
+  margin-right: -10px; 
+  margin-left: 20px; 
   margin-top: 70px;
+
 }
 
-.filter-section h2,
-.filter-section h3 {
+
+
+
+.filter-section1 h2,
+.filter-section1 h3 {
   color: #07235B;
   font-size: 18px;
-  margin-bottom: 10px;
+  margin-bottom: 15px; 
 }
 
-.filter-chip-container {
+.filter-chip-container1 {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 25px; 
 }
 
-.filter-chip {
+.filter-chip1 {
   width: 100%;
   border: 1px solid #8B9094;
   color: #8B9094;
   border-radius: 20px;
-  padding: 7px 15px;
+  padding: 10px 15px; 
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -38,7 +42,7 @@
   cursor: pointer;
 }
 
-.filter-chip .remove-filter {
+.filter-chip1 .remove-filter1 {
   display: inline-block;
   margin-left: 10px;
   color: #999999;
@@ -48,11 +52,11 @@
   border: none;
 }
 
-.filter-chip .remove-filter:hover {
+.filter-chip1 .remove-filter1:hover {
   color: #666666;
 }
 
-.remove-filter {
+.remove-filter1 {
   background: none;
   border: none;
   cursor: pointer;
@@ -60,25 +64,25 @@
 
 label {
   display: block;
-  margin: 5px 0;
+  margin: 10px 0; 
 }
 
 input[type="radio"] {
   margin-right: 5px;
 }
 
-.apply-button {
+.apply-button1 {
   width: 100%;
-  padding: 10px;
+  padding: 12px; 
   border: none;
   background-color: #07235B;
   color: white;
   border-radius: 20px;
   cursor: pointer;
-  margin-top: 20px;
+  margin-top: 30px; 
   transition: background-color 0.3s;
 }
 
-.apply-button:hover {
-  background-color: #07235B;
+.apply-button1:hover {
+  background-color: #0A3D84; 
 }

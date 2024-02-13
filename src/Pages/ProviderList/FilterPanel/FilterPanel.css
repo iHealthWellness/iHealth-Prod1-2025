@@ -1,51 +1,64 @@
+.filter-panel {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+}
+
+.filter-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px; 
+}
+
 .filter-button {
-  background-color: #ffffff;
-  border: 1px solid #D1D5DB;
-  color: #6B7280;
-  border-radius: 20px;
-  padding: 10px 20px;
-  display: inline-flex;
-  align-items: center;
+  display: flex;
   justify-content: space-between;
-  gap: 10px;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 18px;
+  padding: 15px 20px;
   cursor: pointer;
-  outline: none;
-  font-size: 14px;
+  font-size: 16px; 
+  color: #07235B;
+  background-color: white;
+  font-weight: 400;
   position: relative;
-  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  min-width: 180px; 
+  text-align: left; 
 }
 
-.filter-button .fa-chevron-down {
-  color: #ffffff;
-  background-color: #3B82F6;
-  border-radius: 50%;
-  padding: 5px;
-  position: absolute;
-  right: 10px;
-  font-size: 12px;
-  height: 20px;
-  width: 20px;
-  text-align: center;
-  line-height: 20px;
+/* Style for the FontAwesome icons */
+
+.filter-button .icon-chevron-down {
+  margin-left: auto; 
+  font-size: 0.8em; 
 }
 
-.filter-button:hover {
-  background-color: #EFF6FF;
-  border-color: #3B82F6;
-  color: #3B82F6;
+
+.icon-chevron-down {
+  margin-left: auto;
+  font-size: 0.8em; 
+  margin-left: 5px;
 }
 
-.filter-button:hover .fa-chevron-down {
-  background-color: #3B82F6;
-  border-color: #3B82F6;
+.filter-label, .results-found {
+  margin: 0;
 }
 
-.filter-button:focus,
-.filter-button:active {
-  outline: none;
-  box-shadow: none;
+.filter-label {
+  font-weight: bold;
 }
 
-.filter-button:active {
-  transform: scale(0.98);
+.results-found {
+  white-space: nowrap; 
 }

@@ -52,13 +52,13 @@ const mockProviders = [
 
 
 const ProviderList = () => {
-    return (
-      <div>
-<Header />
+  return (
+    <div>
+      <Header />
+      <FilterPanel />
       <div className="provider-list-container">
-        <SelectedFilters />
         <div className="provider-list-main">
-          {/* <FilterPanel /> */}
+          <SelectedFilters />
           <div className="provider-cards-container">
             {mockProviders.map(provider => (
               <ProviderCard key={provider.id} provider={provider} />
@@ -66,8 +66,11 @@ const ProviderList = () => {
           </div>
         </div>
       </div>
-      </div>
-    );
-  };
+    </div>
+  );
+};
+
+
+
 
 export default ProviderList;
