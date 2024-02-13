@@ -68,10 +68,11 @@ const Termstopic = () => {
 
         <div className="terms4">
           <p>
-            We connect patients with complex diseases to high-quality medical
-            and wellness providers and resources through an integrated platform,
-            empowering patients to take charge of their health while fostering
-            collaboration among all stakeholders to improve healthcare outcomes.
+            Welcome to our website!  We connect patients with complex 
+            diseases to high-quality medical and wellness providers and
+            resources through an integrated platform, empowering patients
+            to take charge of their health while fostering collaboration
+            among all stakeholders to improve healthcare outcomes. 
             <br />
             <br />
             By using this website, you agree to the following terms and
@@ -297,24 +298,20 @@ const Termstopic = () => {
                 <br />
                 Violate any applicable law or regulation; or Encourage or enable
                 any other third party or individual to do anything listed above.
+                <br />
+                <br />
                 Although we’re not obligated to monitor access to or use of the
                 Services or Content or to review or edit any Content, we have
                 the right to do so for the purpose of operating the Services, to
                 ensure compliance with these Terms, and to comply with
                 applicable law or other legal requirements.
-                <br />
-                <br />
                 We reserve the right, but are not obligated, to remove or
                 disable access to any Content, at any time and without notice,
                 including, but not limited to, if we, at our sole discretion,
                 consider any Content to be objectionable or in violation of
                 these Terms.
-                <br />
-                <br />
                 We have the right to investigate violations of these Terms or
                 conduct that affects the Services.
-                <br />
-                <br />
                 We may also consult and cooperate with law enforcement
                 authorities to prosecute users who violate the law.
               </p>
@@ -350,7 +347,10 @@ const Termstopic = () => {
               AMOUNTS YOU HAVE PAID TO iHEALTH AND WELLNESS (THE “ORGANIZATION”)
               FOR USE OF THE SERVICES OR CONTENT OR ONE HUNDRED DOLLARS ($100),
               IF YOU HAVE NOT HAD ANY PAYMENT OBLIGATIONS TO iHEALTH AND
-              WELLNESS (THE “ORGANIZATION”), AS APPLICABLE. THE EXCLUSIONS AND
+              WELLNESS (THE “ORGANIZATION”), AS APPLICABLE. 
+              <br />
+              <br />
+              THE EXCLUSIONS AND
               LIMITATIONS OF DAMAGES SET FORTH ABOVE ARE FUNDAMENTAL ELEMENTS OF
               THE BASIS OF THE BARGAIN BETWEEN iHEALTH AND WELLNESS (THE
               “ORGANIZATION”) AND YOU.
@@ -404,9 +404,10 @@ const Termstopic = () => {
                 “Organization”) must first send to the other party a written
                 Notice (“Notice”). Any Notice to iHealth and Wellness (the
                 “Organization”) should be sent by email to
-                onehealthconnectapp@gmail.com AND certified mail to: iHealth and
-                Wellness Foundation, Inc., 115 Broadway St. Fl 5,New York,NY
-                10006, USA. Any Notice sent to you will be sent to the address
+                legal-team@ihealthwellness.one AND certified mail to: iHealth and
+                Wellness Foundation, Inc. - C/O GOOD COUNSEL SERVICES, INC. 106
+                West 32nd Street, 2nd Floor, Office 138 New York, NY 10001,
+                United States. Any Notice sent to you will be sent to the address
                 on file for your account. The Notice must: (i) include your name
                 and account number; (ii) describe the nature and basis of the
                 Dispute; and (iii) set forth the specific relief sought. Both
