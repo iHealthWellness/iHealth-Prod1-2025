@@ -165,10 +165,6 @@ const MenuList = () => {
         },
       ],
     },
-    {
-      title: "Store",
-      url: "/store",
-    },
   ];
 
   return (
