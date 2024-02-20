@@ -3,6 +3,7 @@
   flex-direction: column;
   width: 100%;
   padding: 10px;
+  
 }
 
 .filter-info {
@@ -61,4 +62,45 @@
 
 .results-found {
   white-space: nowrap; 
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  .filter-panel {
+    padding: 8px;
+
+  }
+
+  .filter-buttons {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .filter-button {
+    padding: 12px 16px;
+    font-size: 14px;
+  }
+}
+
+/* Mobile styles */
+@media screen and (max-width: 480px) {
+  .filter-panel {
+    padding: 5px;
+    margin: 0px auto; 
+
+  }
+
+  .filter-buttons {
+    gap: 5px;
+  }
+
+  .filter-button {
+    padding: 10px 12px;
+    font-size: 12px;
+  }
 }

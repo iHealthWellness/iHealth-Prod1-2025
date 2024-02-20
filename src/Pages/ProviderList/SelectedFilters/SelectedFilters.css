@@ -8,11 +8,7 @@
   margin-right: -10px; 
   margin-left: 20px; 
   margin-top: 70px;
-
 }
-
-
-
 
 .filter-section1 h2,
 .filter-section1 h3 {
@@ -85,4 +81,28 @@ input[type="radio"] {
 
 .apply-button1:hover {
   background-color: #0A3D84; 
+}
+
+@media (max-width: 768px) {
+  .selected-filters1 {
+    width: auto;
+    height: auto;
+    margin: 20px 10px;
+  }
+
+  .filter-chip1 {
+    width: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .selected-filters1 {
+    width: 400px;
+    height: auto;
+    margin: 15px auto;
+  }
+
+  .filter-chip1 {
+    width: auto;
+  }
 }

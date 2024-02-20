@@ -7,8 +7,8 @@ const FilterPanel = () => {
   return (
     <div className="filter-panel">
       <div className="filter-info">
-        <span className="filter-label">Filters:</span>
-        <span className="results-found">Results found: 15</span>
+        {/* <span className="filter-label">Filters:</span>
+        <span className="results-found">Results found: 15</span> */}
       </div>
       <div className="filter-buttons">
         <button className="filter-button">Disease Type<FontAwesomeIcon icon={faChevronDown} className="icon-chevron-down" /></button>

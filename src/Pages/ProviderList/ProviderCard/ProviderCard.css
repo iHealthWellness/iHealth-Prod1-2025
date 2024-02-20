@@ -130,3 +130,64 @@
   margin-bottom: 5px;
   margin-right: 20px;
 }
+
+@media (max-width: 768px) {
+  .provider-card {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+    position: relative;
+    width: 700px;
+    margin-top: -15px;
+  }
+
+  .provider-photo img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .provider-info {
+    padding-left: 0;
+    padding-top: 10px;
+    width: 100%;
+  }
+
+  .provider-contact .provider-phone {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    margin-top: 0;
+    width: auto;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .provider-footer {
+    position: static;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .provider-card {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .provider-name {
+    font-size: 24px;
+  }
+
+  .provider-hospital, .provider-specialty, .provider-address, .provider-status .accepting-new, .provider-specialty-title, .Education, .provider-contact .provider-phone {
+    font-size: 14px;
+  }
+
+  .provider-rating .stars {
+    font-size: 0.9em;
+  }
+
+  .provider-specialty {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
