@@ -29,24 +29,28 @@ const Disclaimer = () => {
       {isExpanded22 && (
         <div>
           <p>
-            The information provided may come from different sources, including but not limited
-            to information published on the open web and public datasets, to enhance and improve
-            our services, products, and user experience.
+            The information provided on this website is for informational purposes 
+            only and is not intended to be a substitute for professional medical advice,
+            diagnosis, or treatment.
             <br />
             <br />
-            This data may include publicly available information
-            such as user-generated content, publicly shared social media posts,
-            government records, and other publicly accessible data.
+            The website owner does not endorse or recommend any
+            specific healthcare provider listed on the site, and is not responsible for
+            the quality or performance of any healthcare provider listed on the site.
+            The website owner does not guarantee the accuracy, completeness, or 
+            timeliness of the information provided on the site.
             <br />
             <br />
-            We will use such public data in accordance with our Privacy Policy,
-            and we will make reasonable efforts to ensure that the data
-            collected from public sources is accurate, relevant, and up-to-date.
+            Users are encouraged
+            to verify the credentials and qualifications of any healthcare provider 
+            listed on the site before making an appointment. By using this website,
+            users agree to hold the website owner harmless from any claims or damages
+            arising from the use of the information provided on the site.
             <br />
             <br />
-            The ongoing utilization of our services constitutes your clear and
+            {/* The ongoing utilization of our services constitutes your clear and
             unambiguous agreement to the gathering and utilization of data from publicly
-            accessible sources.
+            accessible sources. */}
           </p>
           <br />
         </div>

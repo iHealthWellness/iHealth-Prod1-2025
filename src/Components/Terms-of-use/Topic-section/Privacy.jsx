@@ -30,8 +30,6 @@ const Privacy = () => {
         <div>
           <p>
             Protecting your privacy is important to us.
-            <br />
-            <br />
             This Privacy Policy outlines how we collect, use, and protect your
             personal information when you use our website. By using our website,
             you agree to the terms of this Privacy Policy.
@@ -41,26 +39,25 @@ const Privacy = () => {
             when you sign up for our services. We use this information to
             provide you with the services you have requested and to communicate
             with you about our services.
-            <br />
-            <br />
             We do not share your personal information with third parties, except
             when required by law or when necessary to provide you with the
             services you have requested. We take appropriate measures to protect
             your personal information from unauthorized access, disclosure,
             alteration, or destruction.
-            <br />
-            <br />
             We may use cookies to collect information about your use of our
             website. This information is used to improve our website and to
             provide you with a more personalized experience. You can choose to
             disable cookies in your web browser, but this may limit your use of
             our website.
-            <br />
-            <br />
             We may also use third-party services, such as Google Analytics, to
             analyze website traffic and usage. These third-party services may
             collect and use your information in accordance with their own
             privacy policies.
+            <br />
+            <br />
+            iHealth and Wellness reserves the right to change this policy whenever 
+            deemed necessary and without prior notification. Should changes be made, 
+            they will be posted on this Privacy Notice with the date of revision.
           </p>
           <br />
         </div>

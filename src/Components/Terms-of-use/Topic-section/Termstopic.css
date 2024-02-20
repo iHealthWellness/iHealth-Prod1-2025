@@ -64,6 +64,7 @@
 }
 
 .expand-div{
+    margin-top: 1rem;
     display: flex;
     padding: 5px 0;
 }
@@ -84,7 +85,8 @@
 }
 
 .header3a h3{
-    margin-bottom: 10px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
     font-weight: 600;
     color: rgba(7, 35, 91, 1);
 }
