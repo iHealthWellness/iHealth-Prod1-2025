@@ -37,6 +37,7 @@
 
 .terms4{
     color: rgba(7, 35, 91, 1);
+    text-align: justify;
 }
 
 .terms4 p{
@@ -116,4 +117,8 @@
     border: none;
     border-radius: 15px;
 }
+
+p, h1, h2, h3, h4, span{
+    text-align: justify;
+} 
 
