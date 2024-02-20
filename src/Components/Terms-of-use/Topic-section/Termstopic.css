@@ -37,12 +37,11 @@
 
 .terms4{
     color: rgba(7, 35, 91, 1);
-    text-align: justify;
 }
 
 .terms4 p{
     margin-bottom: 20px;
-
+    text-align: justify;
 }
 
 
@@ -55,9 +54,14 @@
 .terms4 ul{
     padding: 0 0 0 30px;
 }
+
+.terms4 ul li{
+    margin-bottom: 1rem;
+}
 .terms5 {
     margin-top: 50px;
     padding: 0 0 0 10px;
+    text-align: justify;
 }
 
 .terms5 p{
@@ -68,6 +72,7 @@
     margin-top: 1rem;
     display: flex;
     padding: 5px 0;
+    text-align: justify;
 }
 
 .header30, .header31, .header32, .header33, .header34, .header35, .header36,.header37{
@@ -118,7 +123,4 @@
     border-radius: 15px;
 }
 
-p, h1, h2, h3, h4, span{
-    text-align: justify;
-} 
 
