@@ -86,6 +86,7 @@
     text-decoration: underline;
     text-decoration-skip-ink: none;
     cursor: pointer;
+    white-space: nowrap;
 }
 
 .header3a{

@@ -200,6 +200,7 @@
     font-size: 2rem;
     font-weight: 600;
     line-height: 110%;
+    white-space: nowrap;
   }
 
   .footer-address {
