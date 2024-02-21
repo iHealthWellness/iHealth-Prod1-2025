@@ -5,6 +5,7 @@
   gap: 1rem;
   padding: 1rem;
   color: #07235b;
+  white-space: nowrap;
 }
 
 .footer-links {
