@@ -6,6 +6,7 @@ import PersonSearchOutlinedIcon from "@mui/icons-material/PersonSearchOutlined";
 import { Button } from "@mui/material";
 import PinDropIcon from "@mui/icons-material/PinDrop";
 import ProviderServices from "src/Services/provider";
+import { stateData } from "../../../../Constants/HomePage/StateData";
 
 import "./index.css";
 import ProviderCheckbox from "./ProviderCheckbox";
@@ -35,38 +36,41 @@ const Provider = () => {
 
   useEffect(() => {
     const fetchProviders = async () => {
+      // console.log( stateData.map(stateObj => Object.values(stateObj)[0]))
       const cache = {
         diseases: localStorage.getItem("diseases"),
         specialities: localStorage.getItem("specialities"),
         states: localStorage.getItem("states"),
       };
 
+      
       if (cache.diseases && cache.specialities && cache.states) {
         // Data is available in cache
         setDiseases(JSON.parse(cache.diseases));
         setSpecialities(JSON.parse(cache.specialities));
-        setStates(JSON.parse(cache.states));
+        setStates(((cache.states).split(",")));
       } else {
         // Data needs to be fetched
-        setIsLoading(true);
+        setIsLoading(true);     
+        // Extract state names (full names) from stateData
+        const stateOptions = stateData.map(stateObj => Object.values(stateObj)[0]);
         try {
-          const [diseaseRes, specialtyRes, stateRes] = await Promise.all([
+          const [diseaseRes, specialtyRes] = await Promise.all([
             ProviderServices.handleGetAllDisease(),
             ProviderServices.handleGetAllSpeciality(),
-            ProviderServices.handleGetAllState(),
+            // ProviderServices.handleGetAllState(),
           ]);
 
           setDiseases(diseaseRes.data);
           setSpecialities(specialtyRes.data);
-          setStates(stateRes.data);
+          // setStates(stateRes.data);
+          setStates(stateOptions);
 
           // Cache the data
           localStorage.setItem("diseases", JSON.stringify(diseaseRes.data));
-          localStorage.setItem(
-            "specialities",
-            JSON.stringify(specialtyRes.data)
-          );
-          localStorage.setItem("states", JSON.stringify(stateRes.data));
+          localStorage.setItem("specialities",JSON.stringify(specialtyRes.data));
+          // localStorage.setItem("states", JSON.stringify(stateRes.data));
+          localStorage.setItem("states", stateOptions);
         } catch (e) {
           console.log(e);
         } finally {
