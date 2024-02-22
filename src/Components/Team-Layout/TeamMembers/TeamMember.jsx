@@ -59,7 +59,7 @@ const TeamMember = () => {
 
 
     return (
-        <section className="TeamPage-holder-tab" >
+        <section id="Advisory" className="TeamPage-holder-tab" >
             <div className="page-holder" >
 
                 <div className={`teamboard-tab4 ${isVisible.divRef ? "slide-in" : ""}`}
