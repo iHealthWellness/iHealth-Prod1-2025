@@ -69,7 +69,9 @@ export function convertState(state) {
     {'MP': 'Northern Mariana Islands'},
     {'PW': 'Palau'},
     {'PR': 'Puerto Rico'},
-    {'VI': 'Virgin Islands'}
+    {'VI': 'Virgin Islands'},
+    {'QC': 'Quebec'},
+    {'ONT': 'Ontario'}
   ];
 
 
