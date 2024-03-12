@@ -168,6 +168,7 @@
   }
 }
 
+
 @media (max-width: 480px) {
   .provider-card {
     margin-right: 10px;
@@ -190,4 +191,24 @@
     flex-direction: column;
     align-items: flex-start;
   }
+}
+
+
+
+@media screen and (max-width: 428px) and (aspect-ratio: 19.5/9) {
+  .provider-card {
+    /* Example adjustments, modify as needed */
+    margin-right: 10px;
+    margin-left: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+  }
+
+  .provider-photo img {
+    width: 80px;
+    height: 80px;
+  }
+
+  /* Additional specific adjustments as needed */
 }
