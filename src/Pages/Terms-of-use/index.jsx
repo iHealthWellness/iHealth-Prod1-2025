@@ -2,6 +2,7 @@ import "./index.css";
 import Termstopic from "src/Components/Terms-of-use/Topic-section/Termstopic";
 import Hero from "src/Components/Terms-of-use/Hero/Hero";
 // import TermsPopup from "src/Components/Terms-of-use/TermsPopup";
+import EEOModal from "src/Components/Terms-of-use/EEOModal/Modal.jsx"
 
 const index = () => {
   return (
@@ -12,6 +13,7 @@ const index = () => {
         <Termstopic />
       </div>
       {/* <TermsPopup /> */}
+      <EEOModal></EEOModal>
       {/* <div className="terms-button-close terms-bottom-curve">
         <button>Close</button>
       </div>

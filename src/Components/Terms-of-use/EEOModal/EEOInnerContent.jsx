@@ -1,5 +1,5 @@
 import { useState } from "react";
-import styles from "./EOP.module.css";
+import styles from "src/Components/Terms-of-use/EEOModal/EEO.module.css";
 import plusIcon from "src/Assets/Icons/plus.png"; 
 import minusIcon from "src/Assets/Icons/minus.png";
 import closeIcon from "src/Assets/Icons/closes.svg"; 
