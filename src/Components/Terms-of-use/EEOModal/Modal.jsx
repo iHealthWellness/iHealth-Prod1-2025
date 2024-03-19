@@ -68,17 +68,17 @@ function App() {
         </div>
       </div> */}
       <div className={styles.jctHolder}>
-        <button className={styles.button} onClick={toggleModal}>Toggle Modal</button>
+        <button className={styles.button} onClick={toggleModal}>Equal Opportunity Policy</button>
         {isModalOpen && (
           <div className={isModalOpen ? styles.containerModalopen : styles.container}>
-            <h1 className={styles.title}>Term of Use Modal</h1>
-            <p>siuuu</p>
+            {/* <h1 className={styles.title}>Term of Use Modal</h1>
+            <p>siuuu</p> */}
             {/* <EEOInnerContent />  this component wasn't importing correctly therefore I pass that component code to this file*/}
             {/*EEO Inner content logic*/}
             <div className={stylesEEOContent.modal}>
             <img className={stylesEEOContent.closeIcon} src={closeIcon} onClick={toggleModal} alt=""/>
           <div className={stylesEEOContent.header}>
-            <img src={logo} alt="" />
+            <img className={styles.logo} src={logo} alt="" />
             <h1 className={stylesEEOContent.foundationName}>
               iHealth and Wellness Foundation, Inc.
             </h1>

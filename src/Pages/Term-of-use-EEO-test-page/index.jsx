@@ -1,8 +1,10 @@
+import EEOModal from "src/Components/Terms-of-use/EEOModal/Modal.jsx"
+
 function TermOFUse() {
 
     return(
         <>
-        <h1>fghjkkjhgfghj</h1>
+            <EEOModal/>
         </>
     )
 }
