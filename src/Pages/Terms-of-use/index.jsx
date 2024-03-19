@@ -13,7 +13,7 @@ const index = () => {
         <Termstopic />
       </div>
       {/* <TermsPopup /> */}
-      <EEOModal></EEOModal>
+      <EEOModal/>
       {/* <div className="terms-button-close terms-bottom-curve">
         <button>Close</button>
       </div>
