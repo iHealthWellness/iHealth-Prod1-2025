@@ -67,9 +67,10 @@ function App() {
           {isModalOpen && <EEOInnerContent />}
         </div>
       </div> */}
-      <div className={styles.jctHolder}>
         <button className={styles.button} onClick={toggleModal}>Equal Opportunity Policy</button>
         {isModalOpen && (
+          <div className={`${styles.jctHolder} ${isModalOpen ? styles.containerModalopen : ''}`}>
+
           <div className={isModalOpen ? styles.containerModalopen : styles.container}>
             {/* <h1 className={styles.title}>Term of Use Modal</h1>
             <p>siuuu</p> */}
@@ -127,8 +128,8 @@ function App() {
         </div>
             {/*EEO Inner content logic*/}
           </div>
+          </div>
         )}
-      </div>
       {/* </ModaLayout> */}
     </>
   );
