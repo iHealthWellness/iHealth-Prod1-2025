@@ -135,57 +135,78 @@
   margin-bottom: 5px;
   margin-right: 20px;
 }
-
 @media (max-width: 768px) {
   .provider-card {
     flex-direction: column;
     align-items: flex-start;
-    padding: 15px;
-    position: relative;
-    width: 700px;
-    margin-top: -15px;
+    padding: 20px;
+    width: auto;
   }
 
   .provider-photo img {
-    width: 80px;
-    height: 80px;
+    margin-top: 0;
+    width: 70px;
+    height: 70px;
+    margin-left: 110px;
   }
 
   .provider-info {
-    padding-left: 0;
-    padding-top: 10px;
-    width: 100%;
+    padding-top: 20px;
+  }
+
+  .provider-specialty,
+  .provider-specialty-title {
+    padding-left: 5px;
   }
 
   .provider-contact .provider-phone {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    margin-top: 0;
-    width: auto;
+    position: relative;
+    margin-top: 20px;
+    margin-left: 60px;
+    width: 100%;
     text-align: center;
-    padding: 10px;
+    padding: 10px 20px;
   }
 
   .provider-footer {
-    position: static;
-    margin-top: 10px;
+    position: relative;
+    margin-top: 40px;
+    width: 100%;
+    margin-left: 60px;
+  }
+
+  .provider-specialty {
+    margin-left: 0;
+    padding: 0 10px;
+    word-wrap: break-word;
+  }
+
+  .provider-specialty-title {
+    margin-left: 0;
+    padding: 0 10px;
+    word-wrap: break-word;
   }
 }
 
-
 @media (max-width: 480px) {
   .provider-card {
-    margin-right: 10px;
-    margin-left: 10px;
+    margin: 10px;
   }
 
-  .provider-name {
-    font-size: 24px;
+  .provider-specialty {
+    max-width: 100%;
+    overflow-wrap: break-word;
   }
 
-  .provider-hospital, .provider-specialty, .provider-address, .provider-status .accepting-new, .provider-specialty-title, .Education, .provider-contact .provider-phone {
-    font-size: 14px;
+  .provider-name,
+  .provider-hospital,
+  .provider-specialty,
+  .provider-address,
+  .provider-status .accepting-new,
+  .provider-specialty-title,
+  .Education,
+  .provider-contact .provider-phone {
+    font-size: 16px;
   }
 
   .provider-rating .stars {
@@ -194,15 +215,20 @@
 
   .provider-specialty {
     flex-direction: column;
-    align-items: flex-start;
+    margin-left: 0;
+    padding-left: 5px;
+  }
+
+  .provider-specialty-title, 
+  .provider-address, 
+  .provider-status .accepting-new, 
+  .Education {
+    padding-left: 5px;
   }
 }
 
-
-
 @media screen and (max-width: 428px) and (aspect-ratio: 19.5/9) {
   .provider-card {
-    /* Example adjustments, modify as needed */
     margin-right: 10px;
     margin-left: 10px;
     flex-direction: column;
@@ -214,6 +240,5 @@
     width: 80px;
     height: 80px;
   }
-
-  /* Additional specific adjustments as needed */
 }
+
