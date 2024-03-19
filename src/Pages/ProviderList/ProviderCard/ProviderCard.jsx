@@ -13,11 +13,12 @@ const ProviderCard = ({ provider }) => {
       <div className="provider-info">
         <div className="provider-name-section">
           <h2 className="provider-name">{provider.name}, MD</h2>
-          <div className="provider-hospital">{provider.hospitalName}</div>
           <div className="provider-rating">
             {/* Add logic for dynamic rating here, for now, it's static */}
             <span className="stars">★★★★☆</span>
           </div>
+          <div className="provider-hospital">{provider.hospitalName}</div>
+
           <div className="provider-status">
             <span className="accepting-new">
               <FontAwesomeIcon icon={faCheckCircle} color="#0B99FF" /> Accepting New Patients
@@ -32,7 +33,7 @@ const ProviderCard = ({ provider }) => {
           <div className="provider-specialty">
             {provider.specialty}
           </div>
-          <h3 className="Education">{provider.Education}</h3>
+          {/* <h3 className="Education">{provider.Education}</h3> */}
 
         </div>
         <div className="provider-contact">
