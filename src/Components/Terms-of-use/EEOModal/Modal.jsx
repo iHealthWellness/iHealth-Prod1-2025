@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styles from './EEO.module.css';
-import EEOInnerContent from 'src/Components/Terms-of-use/EEOModal/EEOInnerContent.jsx';
+// import EEOInnerContent from 'src/Components/Terms-of-use/EEOModal/EEOInnerContent.jsx';
 
   /*EEO Inner content logic*/
   import stylesEEOContent from "src/Components/Terms-of-use/EEOModal/EEO.module.css";
