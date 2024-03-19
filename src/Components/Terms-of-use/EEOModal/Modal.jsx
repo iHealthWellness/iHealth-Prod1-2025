@@ -7,7 +7,7 @@ import styles from './EEO.module.css';
   import plusIcon from "src/Assets/Icons/plus.png"; 
   import minusIcon from "src/Assets/Icons/minus.png";
   import closeIcon from "src/Assets/Icons/closes.svg"; 
-  import logo from "src/Assets/Brand/logo-nav-mobile.png";
+  import logo from "src/Assets/Images/logo1.svg";
 
 
 
@@ -67,7 +67,7 @@ function App() {
           {isModalOpen && <EEOInnerContent />}
         </div>
       </div> */}
-        <button className={styles.button} onClick={toggleModal}>Equal Opportunity Policy</button>
+        <button className={styles.buttonEEO} onClick={toggleModal}>Equal Opportunity Policy</button>
         {isModalOpen && (
           <div className={`${styles.jctHolder} ${isModalOpen ? styles.containerModalopen : ''}`}>
 
