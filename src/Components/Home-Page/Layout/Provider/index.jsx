@@ -7,7 +7,6 @@ import { Button } from "@mui/material";
 import PinDropIcon from "@mui/icons-material/PinDrop";
 import ProviderServices from "src/Services/provider";
 import { stateData } from "../../../../Constants/HomePage/StateData";
-import { stateData } from "../../../../Constants/HomePage/StateData";
 
 import "./index.css";
 import ProviderCheckbox from "./ProviderCheckbox";
@@ -34,7 +33,6 @@ const Provider = () => {
   const handleLoading = (loading) => {
     setIsLoading(loading);
   };
-
 
   useEffect(() => {
     const fetchProviders = async () => {
@@ -82,7 +80,6 @@ const Provider = () => {
         }
       }
     };
-
 
     fetchProviders();
   }, []);
