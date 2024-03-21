@@ -7,6 +7,7 @@ import { Button } from "@mui/material";
 import PinDropIcon from "@mui/icons-material/PinDrop";
 import ProviderServices from "src/Services/provider";
 import { stateData } from "../../../../Constants/HomePage/StateData";
+import { stateData } from "../../../../Constants/HomePage/StateData";
 
 import "./index.css";
 import ProviderCheckbox from "./ProviderCheckbox";
@@ -22,12 +23,17 @@ const Provider = () => {
   const [acceptingNewPatients, setAcceptingNewPatients] = useState(false);
   const [treatsChildren, setTreatsChildren] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   const GetLocationInfo = () => {
     navigator.geolocation.getCurrentPosition(
       (position) => console.log(position),
       (error) => console.log(error)
     );
+  };
+
+  const handleLoading = (loading) => {
+    setIsLoading(loading);
   };
 
   const handleLoading = (loading) => {
@@ -81,6 +87,7 @@ const Provider = () => {
       }
     };
 
+
     fetchProviders();
   }, []);
 
@@ -118,6 +125,7 @@ const Provider = () => {
                 value={diseaseValue}
                 onInputChange={setDiseaseValue}
                 loading={isLoading}
+                loading={isLoading}
               />
               {/* <ProviderCheckbox
                 label="Accepting New Patients"
@@ -132,6 +140,7 @@ const Provider = () => {
                 value={specialtyValue}
                 onInputChange={setSpecialtyValue}
                 loading={isLoading}
+                loading={isLoading}
               />
               {/* <ProviderCheckbox
                 label="Treats Children"
@@ -145,6 +154,7 @@ const Provider = () => {
                 label="State"
                 value={stateValue}
                 onInputChange={setStateValue}
+                loading={isLoading}
                 loading={isLoading}
               />
               <Button
