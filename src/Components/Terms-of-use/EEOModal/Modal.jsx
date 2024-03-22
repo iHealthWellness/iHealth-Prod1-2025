@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 import styles from './EEO.module.css';
-// import EEOInnerContent from 'src/Components/Terms-of-use/EEOModal/EEOInnerContent.jsx';
 
   /*EEO Inner content logic*/
   import stylesEEOContent from "src/Components/Terms-of-use/EEOModal/EEO.module.css";
   import plusIcon from "src/Assets/Icons/plus.png"; 
   import minusIcon from "src/Assets/Icons/minus.png";
-  import closeIcon from "src/Assets/Icons/closes.svg"; 
+  import closeIcon from "src/Assets/Images/close-button-2.png"; 
   import logo from "src/Assets/Images/logo1.svg";
 
 
@@ -37,10 +36,7 @@ import styles from './EEO.module.css';
   };
   
 
-  /*EEO Inner content logic*/
 
-// import { useToggle } from "./Components/EqualOpportunityPolicyModal/toggleModal";
-// import  EOP  from "./Components/EqualOpportunityPolicyModal/EOP";
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const toggleModal = () => setIsModalOpen(!isModalOpen); // Toggle function
@@ -57,25 +53,12 @@ function App() {
 
   /*EEO Inner content logic*/
   return (
-    // <ModaLayout>
     <>
-      {/* <div className={styles.jctHolder}>
-        <div className={isModalOpen? styles.containerModalopen : styles.container}>
-          <h1 className={styles.title}>Term of Use Modal</h1>
-          <button className={styles.button} onClick={toggleModal}>Toggle Modal</button>
-          <EOO isModalOpen={isModalOpen} toggleModal={toggleModal}/>
-          {isModalOpen && <EEOInnerContent />}
-        </div>
-      </div> */}
         <button className={styles.buttonEEO} onClick={toggleModal}>Equal Opportunity Policy</button>
         {isModalOpen && (
           <div className={`${styles.jctHolder} ${isModalOpen ? styles.containerModalopen : ''}`}>
 
           <div className={isModalOpen ? styles.containerModalopen : styles.container}>
-            {/* <h1 className={styles.title}>Term of Use Modal</h1>
-            <p>siuuu</p> */}
-            {/* <EEOInnerContent />  this component wasn't importing correctly therefore I pass that component code to this file*/}
-            {/*EEO Inner content logic*/}
             <div className={stylesEEOContent.modal}>
             <img className={stylesEEOContent.closeIcon} src={closeIcon} onClick={toggleModal} alt=""/>
           <div className={stylesEEOContent.header}>

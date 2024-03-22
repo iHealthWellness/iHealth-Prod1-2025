@@ -30,8 +30,8 @@
     color: #a3aac2;
     margin-left: 96%;
     padding-top: 5px;
-    font-size: 25px;
     cursor: pointer;
+    width: 25px;
 }
 .jctHolder{
   /* background shadow*/
@@ -83,7 +83,7 @@
     /* Your date styling here */
     color: #000000;
     font-size: 1.5rem;
-    margin-block: 0 1rem;
+    margin-block: 0 1.75rem;
   }
   .mainParagraph{
     font-size: 1rem;
@@ -189,6 +189,10 @@
       height: 820px; /* Height for tablet */
       /* Adjust font sizes, paddings, and margins if necessary */
     }
+    .closeIcon{
+      width:18px;
+    }
+
   }
   
   /* For phones */
@@ -198,6 +202,9 @@
       width: 80%;
       height: 1026px; /* Height for phone */
       /* Adjust font sizes, paddings, and margins if necessary */
+    }
+    .closeIcon{
+      width:18px;
     }
     .foundationName{
       font-size: 1.25em;
