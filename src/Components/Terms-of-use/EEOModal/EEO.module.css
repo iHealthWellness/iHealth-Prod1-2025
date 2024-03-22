@@ -6,11 +6,9 @@
     overflow-y: auto;
     background-color: #fff;
     width: 700px;
-    /* height: 922px; */
     color: #07235b;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     z-index: 99;
     padding: 20px;
     border-radius: 20px;
@@ -35,12 +33,8 @@
     font-size: 25px;
     cursor: pointer;
 }
-/* logo */
-.logo{
-  width: 100px;
-  /* background-color: brown; */
-}
 .jctHolder{
+  /* background shadow*/
   position: fixed;
   width: 100%;
   height: 100%;
@@ -59,7 +53,6 @@
   margin-block: 8rem;
   transform: translateX(-50%);
 }
-/*  test background shadow*/
 
   .header {
     display: flex;
@@ -96,50 +89,41 @@
     font-size: 1rem;
     font-weight: 400px;
   }
-  .mainParagraph > p:nth-child(2){
+  .mainParagraph > p:nth-child(1){
+    margin-block-end: 1em;
+  }
+    .mainParagraph > p:nth-child(2){
     margin-block-end: 0
   }
   .sectionsContainer{
     margin-block: 28px;
   }
   .section {
-    /* Your section styling */
-    /* width: 500px; */
-    /* margin-block-end: 24px; */
     width: 100%;
     margin-block: 10px
   }
-  /* .section:nth-child(1) {
-    margin-block-start: 60px
-  } */
   .section:nth-last-child(section) {
     margin-block-end: 20px
   }
   .sectionTitleContainer{
     display: flex;
     align-items: flex-start;
+    margin-block: 0  11px;
   }
   .sectionTitle {
     /* Your section title styling */
     display: inline;
     font-weight: 700;
     font-size: 1rem;
-    margin-block: 0  11px;
-    /* margin-block-start: 400px; */
   }
   
   .toggleButton {
     /* Your toggle button styling */
-    /* background-color: #0d99ff; */
-    /* border-radius: 100%; */
-    /* width: 17px;
-    height: 20px; */
     padding: 1px;
     border: none;
     margin-left: 10px;
     background-color: #fff;
     border: none;
-    margin-block-start: 2px;
   }
   .toggleButton:focus {
     outline: none;
@@ -148,16 +132,14 @@
   
   .toggleButton img {
     /* Style for your plus and minus images */
-    width: 17px;
+    width: 20px;
     height: 20px;
-    object-fit: cover;
   }
   .sectionContent{
     margin-block-start: 0;
   }
   .sectionContent:nth-child(1){
     /* Your section content styling */
-    /* display: none; */
     width: 100%;
     height: 20px;
     padding-block-end: 5px;
@@ -212,8 +194,24 @@
   /* For phones */
   @media (max-width: 480px) {
     .modal {
-      width: 345px; /* Width for phone */
+      /* width: 345px; Width for phone */
+      width: 80%;
       height: 1026px; /* Height for phone */
       /* Adjust font sizes, paddings, and margins if necessary */
+    }
+    .foundationName{
+      font-size: 1.25em;
+      text-align: center;
+    }
+    .subheader{
+      font-size: 1em;
+  }
+    .foundationName + .subheader {
+      font-size: 1.125em;
+      text-align: center;
+    }
+
+    .date{
+      font-size: 1em;
     }
   }
