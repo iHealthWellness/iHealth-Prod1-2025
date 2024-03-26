@@ -19,10 +19,10 @@ const MyComponent = () => {
         <AccordionSection
           title="1. National Institutes of Health (NIH)"
           visibleContent={{
-            p1: "Neurofibromatosis Research: The National Institutes of Health (NIH)",
+            p1: "Neurofibromatosis Research: The National Institutes of Health (NIH) is a renowned institution at the forefront of medical research.",
           }}
           hiddenContent={{
-            p1: "is a renowned institution at the forefront of medical research. Their dedicated branch, the National Institute of Neurological Disorders and Stroke (NINDS), offers a comprehensive range of resources and updates on neurofibromatosis research. Visit their website to access grants, clinical trials, research publications, and patient support information: NIH - NINDS Neurofibromatosis Research.",
+            p1: "Their dedicated branch, the National Institute of Neurological Disorders and Stroke (NINDS), offers a comprehensive range of resources and updates on neurofibromatosis research. Visit their website to access grants, clinical trials, research publications, and patient support information: NIH - NINDS Neurofibromatosis Research.",
           }}
           buttonColor="blue"
           className={{
@@ -35,10 +35,10 @@ const MyComponent = () => {
         <AccordionSection
           title="2. PubMed"
           visibleContent={{
-            p1: "Neurofibromatosis Research Articles: PubMed is a widely recognized database",
+            p1: "Neurofibromatosis Research Articles: PubMed is a widely recognized database that provides access to a vast collection of biomedical literature.",
           }}
           hiddenContent={{
-            p1: "that provides access to a vast collection of biomedical literature. It serves as a valuable resource for researchers and professionals seeking the latest neurofibromatosis research articles, reviews, and clinical studies. Explore PubMed's neurofibromatosis publications here: PubMed - Neurofibromatosis Research.",
+            p1: "It serves as a valuable resource for researchers and professionals seeking the latest neurofibromatosis research articles, reviews, and clinical studies. Explore PubMed's neurofibromatosis publications here: PubMed - Neurofibromatosis Research.",
           }}
           buttonColor="blue"
           className={{

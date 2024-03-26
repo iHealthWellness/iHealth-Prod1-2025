@@ -22,50 +22,66 @@ const Consideration = () => {
         <section className={styles.contentSection}>
           <AccordionSection
             title="1. Informed Consent"
+            visibleContent={{
+              p1: "Understand the purpose, procedures, potential risks, and benefits of the study.",
+            }}
             hiddenContent={{
-              p1: "Understand the purpose, procedures, potential risks, and benefits of the study. Make sure you receive and review the informed consent document before agreeing to participate. If you have any questions, don't hesitate to ask the research team.",
+              p1: "Make sure you receive and review the informed consent document before agreeing to participate. If you have any questions, don't hesitate to ask the research team.",
             }}
             buttonColor="blue"
             className={{
               titleStyle: styles.titleStyle,
               hiddenContentStyle: styles.hiddenContentStyle,
               customAccordionContainer: styles.customAccordionContainer,
+              visibleContentStyle: styles.visibleContentStyle,  
             }}
           />
           <AccordionSection
             title="2. Confidentiality and Privacy"
+            visibleContent={{
+              p1: "Ensure that your personal information remains confidential and protected in accordance with research ethics and regulations.",
+            }}
             hiddenContent={{
-              p1: "Ensure that your personal information remains confidential and protected in accordance with research ethics and regulations. Research studies have strict protocols to safeguard participants' privacy.",
+              p1: "Research studies have strict protocols to safeguard participants' privacy.",
             }}
             buttonColor="blue"
             className={{
               titleStyle: styles.titleStyle,
               hiddenContentStyle: styles.hiddenContentStyle,
               customAccordionContainer: styles.customAccordionContainer,
+              visibleContentStyle: styles.visibleContentStyle,
             }}
           />
           <AccordionSection
             title="3. Time Commitment"
+            visibleContent={{
+              p1: "Evaluate the time commitment required for participation, including visits, tests, and follow-ups.",
+            }}
             hiddenContent={{
-              p1: "Evaluate the time commitment required for participation, including visits, tests, and follow-ups. Determine if the study's timeline aligns with your availability and schedule.",
+              p1: "Determine if the study's timeline aligns with your availability and schedule.",
             }}
             buttonColor="blue"
             className={{
               titleStyle: styles.titleStyle,
               hiddenContentStyle: styles.hiddenContentStyle,
               customAccordionContainer: styles.customAccordionContainer,
+              visibleContentStyle: styles.visibleContentStyle,
             }}
           />
           <AccordionSection
             title="4. Travel and Expenses"
+            visibleContent={{
+              p1: "Consider any associated travel or financial implications.",
+            }}
             hiddenContent={{
-              p1: "Consider any associated travel or financial implications. Inquire about reimbursements or compensation available for your participation. Some studies may cover certain expenses related to your involvement.",
+              p1: "Inquire about reimbursements or compensation available for your participation. Some studies may cover certain expenses related to your involvement.",
             }}
             buttonColor="blue"
             className={{
               titleStyle: styles.titleStyle,
               hiddenContentStyle: styles.hiddenContentStyle,
               customAccordionContainer: styles.customAccordionContainer,
+              visibleContentStyle: styles.visibleContentStyle,
             }}
           />
         </section>
