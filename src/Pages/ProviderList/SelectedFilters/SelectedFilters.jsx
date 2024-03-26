@@ -7,6 +7,7 @@ const SelectedFilters1 = () => {
     
     
     <div className="selected-filters1">
+     <div className='back-color'>
       <div className="filter-section1">
         <h2>Selected Filters</h2>
         <div className="filter-chip-container1">
@@ -20,6 +21,7 @@ const SelectedFilters1 = () => {
           00501
           </div>
         </div>
+      </div>
       </div>
 
       <div className="filter-section1">
@@ -43,6 +45,7 @@ const SelectedFilters1 = () => {
           <input type="radio" name="provider1" value="adults" /> +65
         </label>
       </div>
+      <hr className="divider-line" />
 
       <div className="filter-section1">
         <h3>Scheduling</h3>

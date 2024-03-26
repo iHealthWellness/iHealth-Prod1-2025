@@ -1,57 +1,68 @@
-/* Default styles for desktop */
-.provider-list-main {
-  display: flex;
-  flex-direction: row; 
-}
-
-.filter-panel {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  padding: 10px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.filter-section {
-  flex-basis: 24%; 
-  text-align: center;
-  padding: 10px;
-  border: 1px solid #ccc; 
-}
-
-.provider-cards-container {
+.provider-list-page {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
   width: 100%;
-  flex-grow: 1;
-  padding-bottom: 100px;
 }
 
-/* Styles for tablets */
+.header-container {
+  width: 100%;
+}
+
+.filter-panel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 0px;
+}
+
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1350px;
+  padding-left: 55px;
+}
+
+.selected-filters-container {
+  flex-basis: 10%;
+  padding: 10px 35px 0px 0px;
+}
+
+.provider-cards-container {
+  flex-basis: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.provider-cards-container > div:last-child {
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 769px) {
+}
+
 @media screen and (max-width: 768px) {
-  .provider-list-main {
+  .content-container {
     flex-direction: column;
   }
 
-  .filter-section {
-    flex-basis: 100%;
-    margin-bottom: 10px;
-  }
-
+  .selected-filters-container,
   .provider-cards-container {
-    width: 90%;
+    width: 100%;
+    flex-basis: auto;
   }
 }
 
-/* Styles for phones */
 @media screen and (max-width: 480px) {
-  .filter-panel, .filter-section {
-    padding: 5px;
-  }
-
+  .filter-panel-container, 
+  .selected-filters-container, 
   .provider-cards-container {
-    width: 100%;
+    padding: 5px;
+    box-shadow: none;
   }
 }
