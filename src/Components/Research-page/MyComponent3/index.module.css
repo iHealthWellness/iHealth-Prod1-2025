@@ -11,7 +11,7 @@
 .sectionContainer {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2rem 1rem;
+  gap: 2rem;
 }
 
 .sectionContainer > aside:first-of-type {

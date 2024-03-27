@@ -77,6 +77,12 @@ header.applyPadding {
   gap: 1rem;
 }
 
+@media screen and (min-width: 480px) and (max-width: 1024px) {
+  .applyGap {
+    gap: 0.5rem;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .accordionSection aside.greyCircle,
   .accordionSection aside.blueCircle {
