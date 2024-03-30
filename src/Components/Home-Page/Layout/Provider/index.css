@@ -13,6 +13,7 @@
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+  box-shadow: 0rem 0.19rem 0.94rem -0.13rem rgba(134, 134, 134, 0.2);
 }
 
 .provider-heading {
@@ -60,6 +61,10 @@
     width: 75%;
   }
 
+  .provider-container {
+    padding-bottom: 1rem;
+  }
+
   .provider-form {
     align-items: center;
   }
@@ -86,6 +91,10 @@
     font-size: 25px;
     font-weight: 700;
     line-height: 120%;
+  }
+
+  .provider-inner-container .provider-heading {
+    display: none;
   }
 
   .provider-form {

@@ -60,7 +60,41 @@
   display: block;
 }
 
+.take-survey-span {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.hero-survey-banner {
+  background-color: rgb(148, 212, 255);
+  padding: 0.63rem 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.provider-heading {
+  margin-top: auto;
+  padding-bottom: 1rem;
+}
+
+@media only screen and (max-width: 480px) {
+  .hero-survey-banner {
+    font-size: 1rem;
+  }
+  .hero-container-inner h2.provider-heading {
+    display: none;
+  }
+}
+
 @media only screen and (min-width: 480px) and (max-width: 1023px) {
+  .hero-container-inner h2.provider-heading {
+    display: none;
+  }
+
+  .hero-survey-banner {
+    font-size: 1.2rem;
+  }
+
   .hero-heading-h3 {
     font-size: 1.5rem;
     font-weight: 400;
@@ -105,10 +139,11 @@
   .hero-container-inner {
     display: flex;
     max-width: 1216px;
+    justify-content: space-between;
   }
 
   .hero-heading-container {
-    width: 60%;
+    width: 50%;
     justify-content: center;
   }
 
@@ -138,7 +173,7 @@
 
   .hero-heading-h4 {
     color: #07235b;
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 700;
     line-height: 120%;
   }
