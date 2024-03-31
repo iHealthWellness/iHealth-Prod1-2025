@@ -57,8 +57,66 @@
   background-color: #07235b;
   color: #ffffff;
 }
+
+.disease-green {
+  background-color: rgb(201, 255, 234);
+}
+
+.disease-purple {
+  background-color: rgb(197, 208, 254);
+}
+
+.disease-yellow {
+  background-color: rgb(253, 253, 186);
+}
+
+.community-container aside {
+  display: flex;
+  gap: 3rem;
+}
+
+.new-disease-card {
+  text-align: center;
+  padding: 3rem;
+  color: #07235b;
+  border-radius: 1rem;
+}
+
+.new-disease-card h1.large-disease-title {
+  font-size: 6rem;
+}
+
+.new-disease-card h1 {
+  font-size: 3rem;
+  font-family: Rampart One;
+  position: relative;
+}
+
+.disease-before-content {
+  position: absolute;
+  top: -1rem;
+  left: -2rem;
+}
+
+.new-disease-card p,
+.disease-before-content {
+  font-size: 1.5rem;
+}
+
+.new-disease-card button {
+  background-color: #07235b;
+  color: #fff;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 1.5rem;
+  text-align: center;
+  object-fit: contain;
+  min-width: 11rem;
+  padding: 0.5rem;
+}
+
 /* tablet view */
-@media only screen and (min-width: 480px) and (max-width: 1023px) {
+@media only screen and (min-width: 480px) and (max-width: 1024px) {
   .community-heading {
     font-size: 2.25rem;
     font-weight: 700;

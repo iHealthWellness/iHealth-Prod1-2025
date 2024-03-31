@@ -31,7 +31,7 @@
 }
 
 .information-header-img {
-  width: 14rem;
+  width: 18rem;
   aspect-ratio: 1 / 1;
   position: absolute;
   z-index: 1;
@@ -96,5 +96,18 @@
     top: 30%;
     right: 0;
     transform: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .information-header-img {
+    width: 16rem;
+  }
+  .information-header-heading-card {
+    height: 30rem;
+    padding: 3rem;
+  }
+  .information-header-heading-card-inner {
+    border-radius: 5px;
   }
 }

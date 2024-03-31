@@ -28,14 +28,39 @@ const Community = () => {
 
   return (
     <section className="community-container">
-      <h2 className="community-heading">Empowering Health and Wellness</h2>
+      <h2 className="community-heading">We give power to you, the patient</h2>
       <p className="community-description">
-        Empower yourself with the information you need to make informed
-        decisions and lead a healthier, happier life. Choose your area of
-        interest and embark on a journey towards improved well-being.
+        Find all the information and resources you need to make informed
+        decisions about your health and live your best life.
       </p>
 
-      <div className="community-teams">
+      <aside>
+        <section className="new-disease-card disease-green">
+          <h1 className="large-disease-title">
+            NF
+            <p className="disease-before-content">iHealth</p>
+          </h1>
+          <button>Hub</button>
+        </section>
+        <section className="new-disease-card disease-purple">
+          <h1>
+            Cancer
+            <p className="disease-before-content">iHealth</p>
+          </h1>
+          <p>Hub</p>
+          <button>Coming soon</button>
+        </section>
+        <section className="new-disease-card disease-yellow">
+          <h1>
+            Geriatric
+            <p className="disease-before-content">iHealth</p>
+          </h1>
+          <p>Hub</p>
+          <button>Coming soon</button>
+        </section>
+      </aside>
+
+      {/* <div className="community-teams">
         <button
           onClick={() => {
             setTeam("NF TEAM");
@@ -82,7 +107,7 @@ const Community = () => {
         >
           Cancer Hub <p className="coming-soon-p">(Coming soon)</p>
         </button>
-      </div>
+      </div> */}
       {/* MODAL POPUP FOR GERIATRIC TEAM */}
 
       <div>{isOpen && <Geriatric closeModal={closeModal} />}</div>

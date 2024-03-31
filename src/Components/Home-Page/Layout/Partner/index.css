@@ -9,6 +9,7 @@
   background-image: url("src/Assets/Images/partner-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .partner-heading {
@@ -21,7 +22,15 @@
 
 .partner-content-block {
   width: 100%;
-  background-color: #062758;
+  background-color: rgb(148, 249, 210);
+}
+
+.first-block {
+  background-color: rgb(148, 249, 210);
+}
+
+.second-block {
+  background-color: rgb(253, 189, 177);
 }
 
 .partner-content-block.tablet {
@@ -35,7 +44,7 @@
 
 .partner-heading-block aside {
   max-width: 40%;
-  padding: 5rem 0 5rem 09rem;
+  padding: 5rem 0 3rem 09rem;
 }
 
 .partner-heading {
@@ -66,6 +75,9 @@
 }
 /* Desktop view */
 @media only screen and (min-width: 1024px) {
+  .partner-heading-block {
+    margin-bottom: 1rem;
+  }
   .partner-container {
     display: flex;
     flex-direction: column;

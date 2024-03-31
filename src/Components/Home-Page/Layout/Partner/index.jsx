@@ -29,6 +29,11 @@ const Partner = () => {
       </div>
 
       <div className="partner-content-block mobile">
+        <div className="partner-img-block"></div>
+
+        <PartnerTextCard partner={Partners[0]} />
+      </div>
+      <div className="partner-content-block mobile second-block">
         <div className="partner-img-block">
           <img
             className="partner-mobile-img"
@@ -36,24 +41,13 @@ const Partner = () => {
             alt="female image"
           ></img>
         </div>
-
-        <PartnerTextCard partner={Partners[0]} />
-      </div>
-      <div className="partner-content-block mobile">
-        <div className="partner-img-block">
-          <img
-            className="partner-mobile-img"
-            src={ElectronicHealthRecord}
-            alt="female image"
-          ></img>
-        </div>
         <PartnerTextCard partner={Partners[1]} />
       </div>
       <div className="partner-content-block mobile">
-        <img className="partner-mobile-img" src={Baby} alt="baby image"></img>
+        <img className="partner-mobile-img" src={Heart} alt="heart"></img>
       </div>
 
-      <div className="partner-content-block tablet desktop">
+      <div className="partner-content-block tablet desktop first-block">
         <PartnerTextCard partner={Partners[0]} />
         <PartnerImageContainer
           leftImg={Female}
@@ -62,7 +56,7 @@ const Partner = () => {
         />
       </div>
 
-      <div className="partner-content-block tablet desktop desktop-reverse">
+      <div className="partner-content-block tablet desktop desktop-reverse second-block">
         <PartnerTextCard partner={Partners[1]} />
         <PartnerImageContainer
           leftImg={Heart}
