@@ -34,7 +34,7 @@ const HowItWorks = () => {
   }, []);
   return (
     <section className="how-it-works-container">
-      <h2 className="how-it-works-heading">How It Works</h2>
+      <h2 className="how-it-works-heading">Getting started is easy</h2>
       <div className="how-it-works-cards" ref={divRef}>
         {HowItWorksSteps.map((step, idx) => (
           <HowItWorksCard
@@ -46,7 +46,7 @@ const HowItWorks = () => {
             isVisible={isVisible}
           />
         ))}
-         <LearnMoreCard isVisible={isVisible} />
+        <LearnMoreCard isVisible={isVisible} />
       </div>
     </section>
   );
@@ -54,11 +54,8 @@ const HowItWorks = () => {
 
 export default HowItWorks;
 
-
-
-
-
-{/* <div className="how-it-works-learn-more-box">
+{
+  /* <div className="how-it-works-learn-more-box">
 <div className="how-it-works-button even">
   <a
     className="how-it-works-learn-more how-it-works-button-label"
@@ -67,4 +64,5 @@ export default HowItWorks;
     Learn More &gt;
   </a>
 </div>
-</div> */}
+</div> */
+}

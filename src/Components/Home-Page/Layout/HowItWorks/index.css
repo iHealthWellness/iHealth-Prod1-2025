@@ -12,7 +12,6 @@
   }
 }
 
-
 .how-it-works-heading {
   color: #062758;
   font-size: 1.5rem;
@@ -45,8 +44,6 @@
   }
 }
 
-
-
 @media only screen and (min-width: 1024px) {
   .how-it-works-container {
     padding: 5rem 0;
@@ -66,10 +63,9 @@
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     align-items: start;
-    row-gap: 2rem;
+    row-gap: 5rem;
   }
 }
-
 
 .how-it-works-learn-more-box {
   /* You can add specific styles if you want this box to stand out from the regular cards */

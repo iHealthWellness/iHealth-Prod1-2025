@@ -33,7 +33,9 @@ const Services = () => {
 
   return (
     <section className="services-container">
-      <h2 className="services-heading">Our Services</h2>
+      <h2 className="services-heading">
+        We believe patients deserve better services
+      </h2>
 
       <div
         className={`services-inner ${isVisible ? "slide-in" : ""}`}
