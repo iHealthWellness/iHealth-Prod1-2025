@@ -58,7 +58,6 @@ const BenefitCard = ({ benefit }) => {
 
   return (
     <div className={`benefit-card`}>
-       <h3 className="benefit-card-heading SN-M-H3-20">{benefit.title}</h3>
       <div className="benefit-flipcard" ref={divRef}>
         <div className="benefit-flipcard-inner">
           <div className="benefit-flipcard-front">
@@ -76,7 +75,9 @@ const BenefitCard = ({ benefit }) => {
           </div>
         </div>
       </div>
-     
+      <div>
+        <h3 className="benefit-card-heading SN-D-H2-36">{benefit.title}</h3>
+      </div>
     </div>
   );
 };
