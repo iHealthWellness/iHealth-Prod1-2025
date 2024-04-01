@@ -72,6 +72,7 @@
 
 .community-container aside {
   display: flex;
+
   gap: 3rem;
 }
 
@@ -80,6 +81,8 @@
   padding: 3rem;
   color: #07235b;
   border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .new-disease-card h1.large-disease-title {
@@ -89,34 +92,72 @@
 .new-disease-card h1 {
   font-size: 3rem;
   font-family: Rampart One;
+  font-weight: 400;
   position: relative;
 }
 
 .disease-before-content {
   position: absolute;
   top: -1rem;
-  left: -2rem;
+  left: -1rem;
 }
 
-.new-disease-card p,
-.disease-before-content {
+.new-disease-card h1 p,
+.disease-before-content,
+.new-disease-card button a,
+.new-disease-card button {
   font-size: 1.5rem;
 }
 
 .new-disease-card button {
   background-color: #07235b;
-  color: #fff;
   border-radius: 0.5rem;
   border: none;
-  font-size: 1.5rem;
   text-align: center;
   object-fit: contain;
   min-width: 11rem;
   padding: 0.5rem;
+  margin-top: auto;
+  cursor: pointer;
+}
+
+.new-disease-card button a,
+.new-disease-card button {
+  color: #fff;
+}
+
+.disease-before-content,
+.new-disease-card h1 p,
+.new-disease-card button a,
+.new-disease-card button {
+  font-family: Rancho;
 }
 
 /* tablet view */
 @media only screen and (min-width: 480px) and (max-width: 1024px) {
+  .community-container aside {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .new-disease-card {
+    padding: 3rem 6rem 2rem;
+  }
+
+  .community-container {
+    padding: 2rem;
+    padding-bottom: 0;
+  }
+
+  .new-disease-card:not(:first-child) button {
+    margin-top: 0.5rem;
+  }
+
+  .disease-before-content {
+    left: -4rem;
+  }
+
   .community-heading {
     font-size: 2.25rem;
     font-weight: 700;
@@ -194,5 +235,40 @@
     font-size: 1.5rem;
     font-weight: 400;
     line-height: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .community-container aside {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .community-container {
+    padding-bottom: 0;
+  }
+
+  .new-disease-card:not(:first-child) button {
+    margin-top: 0.5rem;
+  }
+
+  .new-disease-card {
+    padding: 3rem 4rem 2rem;
+  }
+
+  .new-disease-card h1 p,
+  .disease-before-content,
+  .new-disease-card button a,
+  .new-disease-card button {
+    font-size: 1.2rem;
+  }
+
+  .new-disease-card h1.large-disease-title {
+    font-size: 4rem;
+  }
+
+  .new-disease-card h1 {
+    font-size: 2rem;
   }
 }

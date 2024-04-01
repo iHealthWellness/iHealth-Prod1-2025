@@ -46,8 +46,9 @@ const HowItWorks = () => {
             isVisible={isVisible}
           />
         ))}
-        <LearnMoreCard isVisible={isVisible} />
+        <LearnMoreCard className="desk-card" isVisible={isVisible} />
       </div>
+      <LearnMoreCard className="not-desk-card" isVisible={isVisible} />
     </section>
   );
 };

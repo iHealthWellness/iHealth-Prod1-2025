@@ -3,6 +3,7 @@ import { useState } from "react";
 import "./index.css";
 import Geriatric from "./Community-Team/Geriatric";
 import Cancer from "./Community-Team/Cancer";
+import { Link } from "react-router-dom";
 
 const Community = () => {
   const [team, setTeam] = useState("NF TEAM");
@@ -26,6 +27,10 @@ const Community = () => {
     setIsOpens(false);
   };
 
+  const underConstruction = () => {
+    document.querySelector("#UnderConst-wrapper").style.display = "flex";
+  };
+
   return (
     <section className="community-container">
       <h2 className="community-heading">We give power to you, the patient</h2>
@@ -40,23 +45,25 @@ const Community = () => {
             NF
             <p className="disease-before-content">iHealth</p>
           </h1>
-          <button>Hub</button>
+          <button>
+            <a href="#Information">Hub</a>
+          </button>
         </section>
         <section className="new-disease-card disease-purple">
           <h1>
             Cancer
             <p className="disease-before-content">iHealth</p>
+            <p>Hub</p>
           </h1>
-          <p>Hub</p>
-          <button>Coming soon</button>
+          <button onClick={underConstruction}>Coming soon</button>
         </section>
         <section className="new-disease-card disease-yellow">
           <h1>
             Geriatric
             <p className="disease-before-content">iHealth</p>
+            <p>Hub</p>
           </h1>
-          <p>Hub</p>
-          <button>Coming soon</button>
+          <button onClick={underConstruction}>Coming soon</button>
         </section>
       </aside>
 
