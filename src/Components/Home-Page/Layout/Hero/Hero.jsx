@@ -9,18 +9,31 @@ import PersonSearchOutlinedIcon from "@mui/icons-material/PersonSearchOutlined";
 const Hero = () => {
   return (
     <section className="hero-container">
-      <section className="hero-survey-banner SN-D-P-20">
-        Patients, your voice matters! Join us in shaping your NF treatment.{" "}
-        {/* Under Construction modal */}
-        <span
-          className="take-survey-span"
-          onClick={() => {
-            document.querySelector("#UnderConst-wrapper").style.display =
-              "flex";
-          }}
-        >
-          Take the NF Survey.
-        </span>
+      <section className="hero-survey-banner">
+        <p className="SN-D-P-20">
+          Patients, your voice matters! Join us in shaping your NF treatment.{" "}
+          <span
+            className="take-survey-span"
+            onClick={() => {
+              document.querySelector("#UnderConst-wrapper").style.display =
+                "flex";
+            }}
+          >
+            Take the NF Survey.
+          </span>
+        </p>
+        <p className="SN-D-P-20">
+          You are OUR hero, and we would love to hear your NF story.{" "}
+          <span
+            className="take-survey-span"
+            onClick={() => {
+              document.querySelector("#UnderConst-wrapper").style.display =
+                "flex";
+            }}
+          >
+            Submit your Story.
+          </span>
+        </p>
       </section>
       <div className="hero-container-inner">
         <div className="hero-heading-container">

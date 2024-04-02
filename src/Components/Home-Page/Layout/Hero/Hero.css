@@ -63,6 +63,8 @@
 .take-survey-span {
   text-decoration: underline;
   cursor: pointer;
+  color: rgba(3, 134, 208, 1);
+  font-weight: 700;
 }
 
 .hero-survey-banner {
@@ -70,6 +72,10 @@
   padding: 0.63rem 2rem;
   font-weight: bold;
   text-align: center;
+}
+
+.hero-survey-banner p:nth-child(1) {
+  padding-bottom: 1rem;
 }
 
 .provider-heading {

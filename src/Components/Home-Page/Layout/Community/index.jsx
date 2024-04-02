@@ -3,7 +3,9 @@ import { useState } from "react";
 import "./index.css";
 import Geriatric from "./Community-Team/Geriatric";
 import Cancer from "./Community-Team/Cancer";
-import { Link } from "react-router-dom";
+import CancerCard from "src/Assets/Images/cancer-card.png";
+import GeriatricCard from "src/Assets/Images/geriatric-card.png";
+import NfCard from "src/Assets/Images/nf-card.png";
 
 const Community = () => {
   const [team, setTeam] = useState("NF TEAM");
@@ -36,35 +38,19 @@ const Community = () => {
       <h2 className="community-heading">We give power to you, the patient</h2>
       <p className="community-description">
         Find all the information and resources you need to make informed
-        decisions about your health and live your best life.
+        decisions about your health and live your best life. Choose your area of
+        interest and take the next step in your wellness journey.
       </p>
-
       <aside>
-        <section className="new-disease-card disease-green">
-          <h1 className="large-disease-title">
-            NF
-            <p className="disease-before-content">iHealth</p>
-          </h1>
-          <button>
-            <a href="#Information">Hub</a>
-          </button>
-        </section>
-        <section className="new-disease-card disease-purple">
-          <h1>
-            Cancer
-            <p className="disease-before-content">iHealth</p>
-            <p>Hub</p>
-          </h1>
-          <button onClick={underConstruction}>Coming soon</button>
-        </section>
-        <section className="new-disease-card disease-yellow">
-          <h1>
-            Geriatric
-            <p className="disease-before-content">iHealth</p>
-            <p>Hub</p>
-          </h1>
-          <button onClick={underConstruction}>Coming soon</button>
-        </section>
+        <a href="#Information">
+          <img src={NfCard} alt="nf card" />
+        </a>
+        <img src={CancerCard} alt="cancer card" onClick={underConstruction} />
+        <img
+          src={GeriatricCard}
+          alt="geriatric card"
+          onClick={underConstruction}
+        />
       </aside>
 
       {/* <div className="community-teams">

@@ -15,6 +15,13 @@
   border-top-right-radius: 1.5rem;
 }
 
+.information-card-container
+  .information-card:nth-child(2)
+  .information-card-heading-block
+  .information-card-heading {
+  color: #07235b;
+}
+
 .information-card-icon-box {
   width: 50px;
   height: 50px;
@@ -39,8 +46,6 @@
 .information-card-listitem a:hover {
   text-decoration: underline; /* Adds an underline on individual link hover */
 }
-
-
 
 .information-card-icon {
   width: 100%;
