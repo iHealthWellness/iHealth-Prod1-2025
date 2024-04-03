@@ -18,7 +18,6 @@ const DataPage = [
     // Roles: "Data Analysts,Data Scientists,Data Engineers ",
     Names: [
       "Ayushi Malaviya",
-      "Boyu Chen",
       "Ebunoluwa Adejayan",
       "Onidajo Wale-Olayitan",
       "Rishitha Golla",
@@ -35,7 +34,7 @@ const DataPage = [
       "Kyle Welsh",
       "Mariam Abdulkareem",
       "Oluwafemi Nurudeen",
-      "Priyadharshini Thirukonda Mohanlal",
+      "Priyadharshini Mohanlal",
       "Sweta Sinha",
       "Valerie Bui",
     ],
@@ -87,18 +86,13 @@ const DataPage = [
     id: 8,
     TeamName: "Marketing and Public Relations ",
     // Roles: "Marketing Managers,PR Specialists, Communications Managers  ",
-    Names: [
-      "Abigail Ogbe",
-      "Rajandeep Dhariwal",
-      "Sean Banks",
-      "Shobana Rajendran",
-    ],
+    Names: ["Rajandeep Dhariwal", "Shobana Rajendran"],
   },
   {
     id: 9,
     TeamName: "Product Management",
     // Roles: "Product Managers, Product Owners  ",
-    Names: ["Hsuan Ouyang", "John Rucibigango", "Maiyi Huang"],
+    Names: ["Hsuan Ouyang", "John Rucibigango"],
   },
   {
     id: 10,
@@ -106,6 +100,7 @@ const DataPage = [
     // Roles: "Project Managers, Scrum Masters, Agile Coaches  ",
     Names: [
       "Anu Ramabhadran",
+      "Catherine Falardeau",
       "Folake Fadare",
       "Hana Javurkova",
       "Ishmeet Gill",
@@ -117,12 +112,7 @@ const DataPage = [
     id: 11,
     TeamName: "Quality Assurance ",
     // Roles: "QA Engineers, Testers, Quality Assurance Specialists  ",
-    Names: [
-      "Amjad Shahzad",
-      "Anastasiia Tkachuk",
-      "Anthony Uyah",
-      "Nedim, Hafizovic",
-    ],
+    Names: ["Amjad Shahzad", "Anthony Uyah"],
   },
   {
     id: 12,
@@ -134,7 +124,7 @@ const DataPage = [
     id: 13,
     TeamName: "Social Media ",
     // Roles: " Social Media Managers, Social Media Specialists, Community Managers ",
-    Names: ["Catherine Falardeau"],
+    Names: ["Shobana Rajendran"],
   },
 ];
 
