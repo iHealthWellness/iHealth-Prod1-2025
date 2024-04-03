@@ -50,15 +50,6 @@ const Hero = () => {
         <div className="Hero-Header">
           <img className="Teamss-image-tab" src={image2} alt="" />
 
-          {/* <div className="btn-header">
-                        <button className="Hero-btn">
-                            <p className="Hero-text">View Openings</p>
-                            <p className="Hero-sub-text">Volunteer from Anywhere</p>
-                        </button>
-
-
-
-                    </div> */}
         </div>
       </div>
 

@@ -172,7 +172,7 @@ const teamData = {
     },
     {
       id: 9,
-      name: "Mala Tudawe, MD",
+      name: "Olivia Begasse de Dhaem, MD",
       extendedBio: bio9,
       image: Image8b,
       link: "https://www.linkedin.com/in/lizzappi",
@@ -204,7 +204,7 @@ const teamData = {
 
     {
       id: 13,
-      name: "Michael Millenson",
+      name: "Natalie Aswad Boehm",
       extendedBio: bio13,
       image: Image12,
       link: "https://www.linkedin.com/in/lizzappi",
