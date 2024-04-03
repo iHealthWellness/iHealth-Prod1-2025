@@ -7,10 +7,11 @@ import Image3 from "src/Assets/Images/Joseph.png";
 import Image4 from "src/Assets/Images/Elizabeth.png";
 import Image5 from "src/Assets/Images/Marilyn.png";
 import Image8 from "src/Assets/Images/Chris.png";
-import Image8b from "src/Assets/Images/mala.png";
+import Image8b from "src/Assets/Images/olivia.png";
 import Image9 from "src/Assets/Images/hilda.png";
 import Image10 from "src/Assets/Images/mark.png";
 import Image11 from "src/Assets/Images/Michelle.png";
+import Image12 from "src/Assets/Images/Nathalie.png";
 import Image6 from "src/Assets/Images/Card.png";
 import Image7 from "src/Assets/Icons/plus.png";
 
@@ -126,6 +127,12 @@ const Board = () => {
     console.log("cicked card: " + teamData.executive[1]);
     setSelectedCard(teamData.executive[11]);
   };
+  const handleCardClick12 = () => {
+    console.log("cicked card: " + teamData.executive[1]);
+    setSelectedCard(teamData.executive[12]);
+  };
+  
+  
   const handlePopupClose = () => {
     console.log("clicked close");
     setSelectedCard(null);
@@ -162,7 +169,7 @@ const Board = () => {
                 </div>
               ))}
             </div>
-            <img src={roundedFrame} className="rounded-frame" />
+            {/* <img src={roundedFrame} className="rounded-frame" /> */}
             <img
               onClick={handlePopupClose}
               src={closeButton}
@@ -236,7 +243,7 @@ const Board = () => {
 
           <div className="Name-tab">
             <p>
-              Joseph Karcich, <br />
+              Joseph Karcich <br />
               Vice President
             </p>
           </div>
@@ -245,6 +252,37 @@ const Board = () => {
           </button>
         </div>
 
+        {/* <div className="board-image" onClick={handleCardClick3}>
+          <img src={Image2} alt="" />
+
+          <div className="Name-tab">
+            <p>
+              Matias Berisso <br />
+              Treasurer and Secretary
+            </p>
+          </div>
+          <button className="btn-board-tab">
+            <img src={Image7} />
+          </button>
+        </div> */}
+        <div className="board-image" onClick={handleCardClick10}>
+          <img src={Image10} alt="mark" />
+
+          <div className="Name-tab">
+            <p>Mark Huntzinger <br />
+            Vice President </p>
+          </div>
+          <button className="btn-board-tab">
+            <img src={Image7} />
+          </button>
+        </div>
+      </div>
+      <div
+        className={`board-directors-tab2  ${
+          isVisible.divThreeRef ? "slide-in" : ""
+        }`}
+        ref={divThreeRef}
+      >
         <div className="board-image" onClick={handleCardClick3}>
           <img src={Image2} alt="" />
 
@@ -342,7 +380,7 @@ const Board = () => {
           <img src={Image8b} alt="mala" />
 
           <div className="Name-tab">
-            <p>Mala Tudawe, MD</p>
+            <p>Olivia Begasse de Dhaem, MD</p>
           </div>
           <button className="btn-board-tab">
             <img src={Image7} />
@@ -366,7 +404,7 @@ const Board = () => {
         } `}
         ref={divFiveRef}
       >
-        <div className="board-image" onClick={handleCardClick10}>
+        {/* <div className="board-image" onClick={handleCardClick10}>
           <img src={Image10} alt="mark" />
 
           <div className="Name-tab">
@@ -375,7 +413,7 @@ const Board = () => {
           <button className="btn-board-tab">
             <img src={Image7} />
           </button>
-        </div>
+        </div> */}
         <div className="board-image" onClick={handleCardClick11}>
           <img src={Image11} alt="oliver" />
 
@@ -386,6 +424,20 @@ const Board = () => {
             <img src={Image7} />
           </button>
         </div>
+
+
+        <div className="board-image" onClick={handleCardClick12}>
+          <img src={Image12} alt="oliver" />
+
+          <div className="Name-tab">
+            <p>Natalie Aswad Boehm</p>
+          </div>
+          <button className="btn-board-tab">
+            <img src={Image7} />
+          </button>
+        </div>
+
+        
       </div>
     </div>
   );
