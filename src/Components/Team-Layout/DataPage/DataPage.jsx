@@ -1,10 +1,9 @@
 const DataPage = [
   {
-      id: 1,
-      TeamName: "Copywriting",
-      // Roles: "Content Writers, Copywriters, Technical Writers",
-      Names: ["Aurora Basnet"],
-
+    id: 1,
+    TeamName: "Copywriting",
+    // Roles: "Content Writers, Copywriters, Technical Writers",
+    Names: [],
   },
   {
     id: 1,
@@ -18,6 +17,7 @@ const DataPage = [
     // Roles: "Data Analysts,Data Scientists,Data Engineers ",
     Names: [
       "Ayushi Malaviya",
+      "Boyu Chen",
       "Ebunoluwa Adejayan",
       "Onidajo Wale-Olayitan",
       "Rishitha Golla",
@@ -34,6 +34,9 @@ const DataPage = [
       "Kyle Welsh",
       "Mariam Abdulkareem",
       "Oluwafemi Nurudeen",
+      "Priyadharshini Thirukonda Mohanlal",
+      "Sweta Sinha",
+      "Valerie Bui",
     ],
   },
   {
@@ -43,20 +46,22 @@ const DataPage = [
     Names: [
       "Amal Engulatov",
       "Abhirup Acharya",
+      "Archana Nitturi",
       "Bauket Fabrice",
+      "Brian Burroughs",
+      "Chris Cortese",
       "David Tevzadze",
       "Faizan Elahi",
       "Gabriel Xavier",
-      "Miguel Negron Garcia",
-      "Musyoka Philip",
-      "Nisha Fazululakhan",
-      "Saad Elmesaoudi",
+      "John H. Carmona",
+      "Jhansisridevi Mariappan",
+      "Sanjivan Kumar",
       "Oladimeji Stephen Ibitoye",
-      "Sauhard Aggarwal",
-      "Siddhant Ravindra Wadaskar",
+      "Pahul Sidhu",
       "Temitope Alabi",
+      "Ting Ting lin",
+      "Tracy Li",
       "Tyler Mason",
-      "Yunus Olgan",
     ],
   },
   {
@@ -69,7 +74,7 @@ const DataPage = [
     id: 6,
     TeamName: " Human Resources",
     // Roles: "HR Managers, HR Generalists, Talent Acquisition Specialists",
-    Names: ["Grace Godwin"],
+    Names: ["Suchita Khandelwal"],
   },
   {
     id: 7,
@@ -81,22 +86,18 @@ const DataPage = [
     id: 8,
     TeamName: "Marketing and Public Relations ",
     // Roles: "Marketing Managers,PR Specialists, Communications Managers  ",
-    Names: ["Abigail Ogbe", "Sean Banks"],
+    Names: [
+      "Abigail Ogbe",
+      "Rajandeep Dhariwal",
+      "Sean Banks",
+      "Shobana Rajendran",
+    ],
   },
   {
     id: 9,
     TeamName: "Product Management",
     // Roles: "Product Managers, Product Owners  ",
-    Names: [
-      "Ashley Garcia",
-      "Genesis Cardenas",
-      "Hsuan Ouyang",
-      "Ines Ben Hassine",
-      "John Rucibigango",
-      "Kathleen Davis",
-      "Maiyi Huang",
-      "Natsayi Nembaware",
-    ],
+    Names: ["Hsuan Ouyang", "John Rucibigango", "Maiyi Huang"],
   },
   {
     id: 10,
@@ -104,14 +105,11 @@ const DataPage = [
     // Roles: "Project Managers, Scrum Masters, Agile Coaches  ",
     Names: [
       "Anu Ramabhadran",
-      "Bindya Khilani",
       "Folake Fadare",
       "Hana Javurkova",
       "Ishmeet Gill",
-      "Prem Puttegowda",
-      "Olamide Oseni",
-      "Satyam Kishore",  
-      "Sarvani Vadali",  
+      "Pragya Sinha",
+      "Satyam Kishore",
     ],
   },
   {
@@ -119,10 +117,10 @@ const DataPage = [
     TeamName: "Quality Assurance ",
     // Roles: "QA Engineers, Testers, Quality Assurance Specialists  ",
     Names: [
+      "Amjad Shahzad",
       "Anastasiia Tkachuk",
       "Anthony Uyah",
-      "Bhavitha Keezhuridathil",
-      "Femi Gideon",
+      "Nedim, Hafizovic",
     ],
   },
   {
@@ -135,7 +133,7 @@ const DataPage = [
     id: 13,
     TeamName: "Social Media ",
     // Roles: " Social Media Managers, Social Media Specialists, Community Managers ",
-    Names: ["Catherine Falardeau", "Molly Burke"],
+    Names: ["Catherine Falardeau"],
   },
 ];
 
