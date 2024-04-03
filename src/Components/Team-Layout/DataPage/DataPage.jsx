@@ -1,10 +1,11 @@
 const DataPage = [
-  {
-    id: 1,
-    TeamName: "Copywriting",
-    // Roles: "Content Writers, Copywriters, Technical Writers",
-    Names: [],
-  },
+  //{
+  // id: 1,
+  // TeamName: "Copywriting",
+  //  Roles: "Content Writers, Copywriters, Technical Writers",
+  // Names: [],
+  //},
+
   {
     id: 1,
     TeamName: "Cybersecurity and Data Privacy",
