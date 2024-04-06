@@ -65,6 +65,11 @@
 }
 
 .community-container aside img,
+.community-container aside a img {
+  width: 200px;
+}
+
+.community-container aside img,
 .community-container aside a,
 .community-container aside a img {
   object-fit: contain;

@@ -14,7 +14,7 @@ const ServicesCard = ({ service }) => {
               "flex";
           }}
         >
-          Learn More &gt;
+          {/* Learn More &gt; */}
         </a>
       </div>
     </div>

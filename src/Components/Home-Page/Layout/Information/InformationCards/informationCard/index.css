@@ -15,6 +15,8 @@
   border-top-right-radius: 1.5rem;
 }
 
+
+
 .information-card-container
   .information-card:nth-child(2)
   .information-card-heading-block
@@ -78,6 +80,11 @@
 .information-card:hover .information-card-link,
 .information-card:hover .information-card-listitem-span {
   color: #fff;
+}
+
+.information-card-container .information-card:nth-child(2):hover .information-card-list,
+.information-card-container .information-card:nth-child(2):hover .information-card-link-block {
+  background-color: #94d4ff;
 }
 
 .information-card-listitem {

@@ -3,7 +3,7 @@
 }
 
 .benefit-card {
-  width: 100%;
+  width: 40%;
 }
 
 .benefit-flipcard {
@@ -73,6 +73,10 @@
 }
 
 @media screen and (max-width: 1024px) {
+  .benefit-card {
+    width: 100%;
+  }
+
   .benefit-card-heading {
     font-size: 1.5rem;
   }

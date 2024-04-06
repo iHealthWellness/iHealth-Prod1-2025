@@ -9,7 +9,7 @@ import PersonSearchOutlinedIcon from "@mui/icons-material/PersonSearchOutlined";
 const Hero = () => {
   return (
     <section className="hero-container">
-      <section className="hero-survey-banner">
+      {/* <section className="hero-survey-banner">
         <p className="SN-D-P-20">
           Patients, your voice matters! Join us in shaping your NF treatment.{" "}
           <span
@@ -34,7 +34,7 @@ const Hero = () => {
             Submit your Story.
           </span>
         </p>
-      </section>
+      </section> */}
       <div className="hero-container-inner">
         <div className="hero-heading-container">
           <h3 className="hero-heading-h3">
