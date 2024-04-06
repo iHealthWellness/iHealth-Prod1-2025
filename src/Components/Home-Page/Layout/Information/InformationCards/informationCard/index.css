@@ -15,8 +15,6 @@
   border-top-right-radius: 1.5rem;
 }
 
-
-
 .information-card-container
   .information-card:nth-child(2)
   .information-card-heading-block
@@ -82,9 +80,16 @@
   color: #fff;
 }
 
-.information-card-container .information-card:nth-child(2):hover .information-card-list,
-.information-card-container .information-card:nth-child(2):hover .information-card-link-block {
+.information-card-container
+  .information-card:nth-child(2):hover
+  .information-card-list,
+.information-card-container
+  .information-card:nth-child(2):hover
+  .information-card-link-block {
   background-color: #94d4ff;
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
+  border-bottom: none;
 }
 
 .information-card-listitem {
