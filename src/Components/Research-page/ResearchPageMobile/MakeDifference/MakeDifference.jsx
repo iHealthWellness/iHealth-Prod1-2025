@@ -1,7 +1,7 @@
 import styles from "./MakeDifference.module.css";
 import AccordionSection from "src/Components/UIComponents/AccordionSection/AccordionSection";
 
-function MakeDifference() {
+function MakeDifference({ toggleAccordion, activeAccordion }) {
   return (
     <article className={styles.mainSection}>
       <section>
@@ -20,6 +20,8 @@ function MakeDifference() {
             visibleContentStyle: styles.visibleContentStyle,
             hiddenContentStyle: styles.hiddenContentStyle,
           }}
+          isExpanded={activeAccordion === "mobTODAY"}
+          onToggle={() => toggleAccordion("mobTODAY")}
         />
       </section>
     </article>

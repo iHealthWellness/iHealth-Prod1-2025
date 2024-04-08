@@ -2,7 +2,7 @@ import AccordionSection from "src/Components/UIComponents/AccordionSection/Accor
 import Research2 from "/src/Assets/Images/Research-2.png";
 import styles from "./ResearchTools.module.css";
 
-function ResearchTools() {
+function ResearchTools({ toggleAccordion, activeAccordion }) {
   return (
     <article id="tools" className={styles.mainSection}>
       <header>
@@ -44,6 +44,8 @@ function ResearchTools() {
           hiddenContent={{
             p1: "Neurofibromatosis Research: The National Institutes of Health (NIH) is a renowned institution at the forefront of medical research. Their dedicated branch, the National Institute of Neurological Disorders and Stroke (NINDS), offers a comprehensive range of resources and updates on neurofibromatosis research. Visit their website to access grants, clinical trials, research publications, and patient support information: NIH - NINDS Neurofibromatosis Research",
           }}
+          isExpanded={activeAccordion === "mobNIH"}
+          onToggle={() => toggleAccordion("mobNIH")}
         />
         <AccordionSection
           title="PubMed"
@@ -56,6 +58,8 @@ function ResearchTools() {
           hiddenContent={{
             p1: "Neurofibromatosis Research Articles: PubMed is a widely recognized database that provides access to a vast collection of biomedical literature. It serves as a valuable resource for researchers and professionals seeking the latest neurofibromatosis research articles, reviews, and clinical studies. Explore PubMed's neurofibromatosis publications here: PubMed - Neurofibromatosis Research",
           }}
+          isExpanded={activeAccordion === "mobPUB"}
+          onToggle={() => toggleAccordion("mobPUB")}
         />
         <AccordionSection
           title="Neurofibromatosis Network"
@@ -68,6 +72,8 @@ function ResearchTools() {
           hiddenContent={{
             p1: "The Neurofibromatosis Network is a non-profit organization committed to supporting individuals and families affected by neurofibromatosis. Their website offers an extensive range of resources, including research updates, educational materials, patient support programs, and community forums. Visit the Neurofibromatosis Network's website for more information: Neurofibromatosis Network",
           }}
+          isExpanded={activeAccordion === "mobNN"}
+          onToggle={() => toggleAccordion("mobNN")}
         />
         <AccordionSection
           title="ClinicalTrails.gov"
@@ -80,6 +86,8 @@ function ResearchTools() {
           hiddenContent={{
             p1: "Neurofibromatosis Clinical Trials: ClinicalTrials.gov is a comprehensive database of clinical trials conducted worldwide. It provides valuable information on ongoing and upcoming neurofibromatosis-related trials. Access the latest clinical trials and research opportunities here: ClinicalTrials.gov - Neurofibromatosis",
           }}
+          isExpanded={activeAccordion === "mobGOV"}
+          onToggle={() => toggleAccordion("mobGOV")}
         />
       </section>
     </article>

@@ -3,7 +3,7 @@ import Research3 from "src/Assets/Images/Research-3.png";
 
 import styles from "./DoYouKnow.module.css";
 
-function DoYouKnow() {
+function DoYouKnow({ toggleAccordion, activeAccordion }) {
   return (
     <article className={styles.mainSection}>
       <section>
@@ -21,6 +21,8 @@ function DoYouKnow() {
             visibleContentStyle: styles.visibleContentStyle,
             hiddenContentStyle: styles.hiddenContentStyle,
           }}
+          isExpanded={activeAccordion === "mobKNOW"}
+          onToggle={() => toggleAccordion("mobKNOW")}
         />
       </section>
       <img src={Research3} alt="lab student working on the microscope" />

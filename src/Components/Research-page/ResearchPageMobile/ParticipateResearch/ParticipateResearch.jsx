@@ -3,7 +3,7 @@ import AccordionSection from "src/Components/UIComponents/AccordionSection/Accor
 import Research6 from "/src/Assets/Images/Research-6.png";
 import Research7 from "/src/Assets/Images/Research-7.png";
 
-function ParticipateResearch() {
+function ParticipateResearch({ toggleAccordion, activeAccordion }) {
   return (
     <article id="participate" className={styles.mainSection}>
       <header>
@@ -25,6 +25,8 @@ function ParticipateResearch() {
           customHiddenContentStyle: styles.customHiddenContentStyle,
           customAccordionContainer: styles.customAccordionContainer,
         }}
+        isExpanded={activeAccordion === "mobNF"}
+        onToggle={() => toggleAccordion("mobNF")}
       />
       <section className={styles.secondSection}>
         <AccordionSection
@@ -45,6 +47,8 @@ function ParticipateResearch() {
             p7: "4. Empowering the NF Community",
             p8: "Participating in research provides an opportunity to connect with others in the NF community. Through engagement with researchers, healthcare professionals, and fellow participants, you can find support, share experiences, and contribute to a network of understanding and empathy.",
           }}
+          isExpanded={activeAccordion === "mobPART"}
+          onToggle={() => toggleAccordion("mobPART")}
         />
         <AccordionSection
           title="How to Get Involved:"
@@ -71,6 +75,8 @@ function ParticipateResearch() {
             p7: "4. Consult with Healthcare Providers",
             p8: "Discuss your interest in participating in NF research with your healthcare provider or NF specialist. They can guide you, provide recommendations, and help connect you with relevant research opportunities.",
           }}
+          isExpanded={activeAccordion === "mobINVOLVED"}
+          onToggle={() => toggleAccordion("mobINVOLVED")}
         />
         <AccordionSection
           title="Important Considerations:"
@@ -98,6 +104,8 @@ function ParticipateResearch() {
             p8: "4. Travel and Expenses",
             p9: "Consider any associated travel or financial implications. Inquire about reimbursements or compensation available for your participation. Some studies may cover certain expenses related to your involvement.",
           }}
+          isExpanded={activeAccordion === "mobIMPORTANT"}
+          onToggle={() => toggleAccordion("mobIMPORTANT")}
         />
       </section>
     </article>

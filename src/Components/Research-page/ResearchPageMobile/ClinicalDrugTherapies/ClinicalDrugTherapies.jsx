@@ -2,7 +2,7 @@ import AccordionSection from "src/Components/UIComponents/AccordionSection/Accor
 import Research4 from "/src/Assets/Images/Research-4.png";
 import styles from "./ClinicalDrugTherapies.module.css";
 
-function ClinicalDrugTherapies() {
+function ClinicalDrugTherapies({ toggleAccordion, activeAccordion }) {
   return (
     <article id="clinical" className={styles.mainSection}>
       <header>
@@ -37,6 +37,8 @@ function ClinicalDrugTherapies() {
               </a>
             ),
           }}
+          isExpanded={activeAccordion === "mobTYPE"}
+          onToggle={() => toggleAccordion("mobTYPE")}
         />
         <AccordionSection
           title="Here is more information about MEK protein"
@@ -55,6 +57,8 @@ function ClinicalDrugTherapies() {
             paragraph3:
               "In the context of neurofibromatosis, the MEK protein plays a significant role in the development of neurofibromas, which are benign tumors that can arise in individuals with neurofibromatosis type 1 (NF1). Inhibiting the activity of MEK using drugs like Selumetinib has shown promise in reducing tumor growth and improving symptoms associated with NF1-related plexiform neurofibromas.",
           }}
+          isExpanded={activeAccordion === "mobMEK"}
+          onToggle={() => toggleAccordion("mobMEK")}
         />
         <AccordionSection
           title="Everolimus"
@@ -93,6 +97,8 @@ function ClinicalDrugTherapies() {
               </a>
             ),
           }}
+          isExpanded={activeAccordion === "mobEVE"}
+          onToggle={() => toggleAccordion("mobEVE")}
         />
         <AccordionSection
           title="Learn more about SEGAs"
@@ -114,6 +120,8 @@ function ClinicalDrugTherapies() {
             paragraph5:
               "Consulting with a knowledgeable medical professional is crucial to receive a comprehensive evaluation, accurate diagnosis, and personalized management plan based on the individual's specific condition and requirements.",
           }}
+          isExpanded={activeAccordion === "mobSEGA"}
+          onToggle={() => toggleAccordion("mobSEGA")}
         />
         <AccordionSection
           title="Peginterferon alfa-2b"
@@ -144,6 +152,8 @@ function ClinicalDrugTherapies() {
               </a>
             ),
           }}
+          isExpanded={activeAccordion === "mobALFA"}
+          onToggle={() => toggleAccordion("mobALFA")}
         />
       </section>
     </article>

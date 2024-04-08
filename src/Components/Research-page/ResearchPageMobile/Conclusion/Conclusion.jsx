@@ -2,7 +2,7 @@ import AccordionSection from "src/Components/UIComponents/AccordionSection/Accor
 import Research5 from "/src/Assets/Images/Research-5.png";
 import styles from "./Conclusion.module.css";
 
-function Conclusion() {
+function Conclusion({ toggleAccordion, activeAccordion }) {
   return (
     <article className={styles.mainSection}>
       <section>
@@ -21,6 +21,8 @@ function Conclusion() {
             visibleContentStyle: styles.visibleContentStyle,
             hiddenContentStyle: styles.hiddenContentStyle,
           }}
+          isExpanded={activeAccordion === "mobCONC"}
+          onToggle={() => toggleAccordion("mobCONC")}
         />
       </section>
       <img src={Research5} alt="worried patient talking to a doctor" />

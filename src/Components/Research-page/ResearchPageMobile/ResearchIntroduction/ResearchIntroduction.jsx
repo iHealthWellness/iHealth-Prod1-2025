@@ -2,7 +2,7 @@ import AccordionSection from "src/Components/UIComponents/AccordionSection/Accor
 import styles from "./ResearchIntroduction.module.css";
 import Research1 from "src/Assets/Images/Research-1.png";
 
-function ResearchIntroduction() {
+function ResearchIntroduction({ toggleAccordion, activeAccordion }) {
   return (
     <section className={styles.mainSection}>
       <header>
@@ -29,6 +29,8 @@ function ResearchIntroduction() {
             p3: "Join us in our journey to unravel the mysteries of Neurofibromatosis and work towards a brighter future for individuals and families affected by this challenging condition. Together, we can pave the way for new discoveries, improved treatments, and increased quality of life for NF patients worldwide.",
           }}
           buttonColor="blue"
+          isExpanded={activeAccordion === "mobINTRO"}
+          onToggle={() => toggleAccordion("mobINTRO")}
         />
       </section>
     </section>

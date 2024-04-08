@@ -8,19 +8,46 @@ import ClinicalDrugTherapies from "./ClinicalDrugTherapies/ClinicalDrugTherapies
 import Conclusion from "./Conclusion/Conclusion";
 import ParticipateResearch from "./ParticipateResearch/ParticipateResearch";
 import MakeDifference from "./MakeDifference/MakeDifference";
+import { useState } from "react";
 
 function ResearchPageMobile() {
+  const [activeAccordion, setActiveAccordion] = useState(null);
+
+  const toggleAccordion = (accordionID) => {
+    setActiveAccordion(activeAccordion === accordionID ? null : accordionID);
+  };
   return (
     <div className={styles.researchContainer}>
       <HeroMobile />
-      <ResearchIntroduction />
+      <ResearchIntroduction
+        toggleAccordion={toggleAccordion}
+        activeAccordion={activeAccordion}
+      />
       <ResearchNavigation />
-      <ResearchTools />
-      <DoYouKnow />
-      <ClinicalDrugTherapies />
-      <Conclusion />
-      <ParticipateResearch />
-      <MakeDifference />
+      <ResearchTools
+        toggleAccordion={toggleAccordion}
+        activeAccordion={activeAccordion}
+      />
+      <DoYouKnow
+        toggleAccordion={toggleAccordion}
+        activeAccordion={activeAccordion}
+      />
+      <ClinicalDrugTherapies
+        toggleAccordion={toggleAccordion}
+        activeAccordion={activeAccordion}
+      />
+      <Conclusion
+        toggleAccordion={toggleAccordion}
+        activeAccordion={activeAccordion}
+      />
+      <ParticipateResearch
+        toggleAccordion={toggleAccordion}
+        activeAccordion={activeAccordion}
+      />
+      <MakeDifference
+        toggleAccordion={toggleAccordion}
+        activeAccordion={activeAccordion}
+      />
     </div>
   );
 }
