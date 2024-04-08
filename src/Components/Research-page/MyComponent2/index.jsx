@@ -3,7 +3,7 @@ import Research4 from "src/Assets/Images/Research-4.png";
 import useSlideInAnimationRight from "src/hooks/useSlideInAnimationRight";
 import AccordionSection from "src/Components/UIComponents/AccordionSection/AccordionSection";
 
-const MyComponent2 = () => {
+const MyComponent2 = ({ toggleAccordion, activeAccordion }) => {
   useSlideInAnimationRight(styles.slideInText, styles.active);
 
   return (
@@ -46,6 +46,8 @@ const MyComponent2 = () => {
               hiddenContentStyle: styles.hiddenContentStyle,
               accordionContainer: styles.accordionContainer,
             }}
+            isExpanded={activeAccordion === "EVERO"}
+            onToggle={() => toggleAccordion("EVERO")}
           />
         </section>
       </div>

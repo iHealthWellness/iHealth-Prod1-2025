@@ -9,20 +9,39 @@ import Segas from "src/Components/Research-page/Segas";
 import Participate from "src/Components/Research-page/Participate";
 import Consideration from "src/Components/Research-page/Consideration";
 import styles from "./ResearchPageDesktop.module.css";
+import { useState } from "react";
 
 const ResearchPageDesktop = () => {
+  const [activeAccordion, setActiveAccordion] = useState(null);
+
+  const toggleAccordion = (accordionID) => {
+    setActiveAccordion(activeAccordion === accordionID ? null : accordionID);
+  };
+
   return (
     <div className={styles.researchPage}>
       <Hero />
       <Tools />
-      <MyComponent />
+      <MyComponent
+        toggleAccordion={toggleAccordion}
+        activeAccordion={activeAccordion}
+      />
       <Therapies />
       <Moreinfo />
-      <MyComponent2 />
+      <MyComponent2
+        toggleAccordion={toggleAccordion}
+        activeAccordion={activeAccordion}
+      />
       <Segas />
       <Participate />
-      <MyComponent3 />
-      <Consideration />
+      <MyComponent3
+        toggleAccordion={toggleAccordion}
+        activeAccordion={activeAccordion}
+      />
+      <Consideration
+        toggleAccordion={toggleAccordion}
+        activeAccordion={activeAccordion}
+      />
     </div>
   );
 };

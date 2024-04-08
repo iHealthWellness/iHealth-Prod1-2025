@@ -3,7 +3,7 @@ import Research2 from "src/Assets/Images/Research-2.png";
 import useSlideInAnimationRight from "src/hooks/useSlideInAnimationRight";
 import AccordionSection from "src/Components/UIComponents/AccordionSection/AccordionSection";
 
-const MyComponent = () => {
+const MyComponent = ({ toggleAccordion, activeAccordion }) => {
   useSlideInAnimationRight(styles.slideInText, styles.active);
   return (
     <section className={`${styles.slideInText} ${styles.sectionContainer}`}>
@@ -31,6 +31,8 @@ const MyComponent = () => {
             hiddenContentStyle: styles.hiddenContentStyle,
             customAccordionContainer: styles.customAccordionContainer,
           }}
+          isExpanded={activeAccordion === "NIH"}
+          onToggle={() => toggleAccordion("NIH")}
         />
         <AccordionSection
           title="2. PubMed"
@@ -46,6 +48,8 @@ const MyComponent = () => {
             visibleContentStyle: styles.visibleContentStyle,
             hiddenContentStyle: styles.hiddenContentStyle,
           }}
+          isExpanded={activeAccordion === "PUBMED"}
+          onToggle={() => toggleAccordion("PUBMED")}
         />
         <AccordionSection
           title="3. Neurofibromatosis Network"
@@ -62,6 +66,8 @@ const MyComponent = () => {
             hiddenContentStyle: styles.hiddenContentStyle,
             customAccordionContainer: styles.customAccordionContainer,
           }}
+          isExpanded={activeAccordion === "NFN"}
+          onToggle={() => toggleAccordion("NFN")}
         />
         <AccordionSection
           title="4. ClinicalTrials.gov"
@@ -78,6 +84,8 @@ const MyComponent = () => {
             hiddenContentStyle: styles.hiddenContentStyle,
             customAccordionContainer: styles.customAccordionContainer,
           }}
+          isExpanded={activeAccordion === "GOV"}
+          onToggle={() => toggleAccordion("GOV")}
         />
       </section>
       <section className={styles.bluePattern}>

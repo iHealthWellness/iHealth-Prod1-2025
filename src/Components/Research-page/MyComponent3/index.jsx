@@ -3,7 +3,7 @@ import Research6 from "src/Assets/Images/Research-6.png";
 import useSlideInAnimationRight from "src/hooks/useSlideInAnimationRight";
 import AccordionSection from "src/Components/UIComponents/AccordionSection/AccordionSection";
 
-const MyComponent3 = () => {
+const MyComponent3 = ({ toggleAccordion, activeAccordion }) => {
   useSlideInAnimationRight(styles.slideInText, styles.active);
 
   return (
@@ -32,6 +32,8 @@ const MyComponent3 = () => {
             hiddenContentStyle: styles.hiddenContentStyle,
             customAccordionContainer: styles.customAccordionContainer,
           }}
+          isExpanded={activeAccordion === "INFORMED"}
+          onToggle={() => toggleAccordion("INFORMED")}
         />
         <AccordionSection
           title="2. Explore Research Opportunities"
@@ -48,6 +50,8 @@ const MyComponent3 = () => {
             hiddenContentStyle: styles.hiddenContentStyle,
             customAccordionContainer: styles.customAccordionContainer,
           }}
+          isExpanded={activeAccordion === "EXPLORE"}
+          onToggle={() => toggleAccordion("EXPLORE")}
         />
         <AccordionSection
           title="3. Join Registries and Patient Databases"
@@ -64,11 +68,13 @@ const MyComponent3 = () => {
             hiddenContentStyle: styles.hiddenContentStyle,
             customAccordionContainer: styles.customAccordionContainer,
           }}
+          isExpanded={activeAccordion === "JOIN"}
+          onToggle={() => toggleAccordion("JOIN")}
         />
         <AccordionSection
           title="4. Consult with Healthcare Providers"
           visibleContent={{
-            p1: "Discuss your interest in participating in NF research with your healthcare provider or NF specialist."
+            p1: "Discuss your interest in participating in NF research with your healthcare provider or NF specialist.",
           }}
           hiddenContent={{
             p1: "They can guide you, provide recommendations, and help connect you with relevant research opportunities.",
@@ -80,6 +86,8 @@ const MyComponent3 = () => {
             hiddenContentStyle: styles.hiddenContentStyle,
             customAccordionContainer: styles.customAccordionContainer,
           }}
+          isExpanded={activeAccordion === "CONSULT"}
+          onToggle={() => toggleAccordion("CONSULT")}
         />
       </aside>
     </article>

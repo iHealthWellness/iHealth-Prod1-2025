@@ -1,7 +1,7 @@
-import React, { useState } from "react";
 import styles from "./AccordionSection.module.css";
 import BlueExpandIcon from "../BlueExpandIcon/BlueExpandIcon";
 import GreyExpandIcon from "../GreyExpandIcon/GreyExpandIcon";
+import React from "react";
 
 const AccordionSection = ({
   title,
@@ -10,8 +10,9 @@ const AccordionSection = ({
   buttonColor,
   className,
   image,
+  isExpanded,
+  onToggle,
 }) => {
-  const [isExpanded, setIsExpanded] = useState(false);
   const {
     titleStyle = "",
     visibleContentStyle = "",
@@ -19,9 +20,6 @@ const AccordionSection = ({
     customAccordionSection = "",
   } = className || {};
 
-  const toggleExpansion = () => {
-    setIsExpanded(!isExpanded);
-  };
   const formattedHiddenContent = Object.entries(hiddenContent).map(
     ([key, value]) =>
       React.isValidElement(value) ? value : <p key={key}>{value}</p>
@@ -37,7 +35,7 @@ const AccordionSection = ({
       className={`${styles.accordionSection} ${customAccordionSection} ${
         buttonColor === "grey" && isExpanded ? styles.greyButtonExpanded : ""
       }`}
-      onClick={toggleExpansion}
+      onClick={onToggle}
     >
       {buttonColor === "grey" ? (
         <aside className={styles.greyCircle}>

@@ -3,7 +3,7 @@ import Research7 from "src/Assets/Images/Research-7.png";
 import useSlideInAnimationRight from "src/hooks/useSlideInAnimationRight";
 import AccordionSection from "src/Components/UIComponents/AccordionSection/AccordionSection";
 
-const Consideration = () => {
+const Consideration = ({ toggleAccordion, activeAccordion }) => {
   useSlideInAnimationRight(styles.slideInText, styles.active);
 
   return (
@@ -33,8 +33,10 @@ const Consideration = () => {
               titleStyle: styles.titleStyle,
               hiddenContentStyle: styles.hiddenContentStyle,
               customAccordionContainer: styles.customAccordionContainer,
-              visibleContentStyle: styles.visibleContentStyle,  
+              visibleContentStyle: styles.visibleContentStyle,
             }}
+            isExpanded={activeAccordion === "ICF"}
+            onToggle={() => toggleAccordion("ICF")}
           />
           <AccordionSection
             title="2. Confidentiality and Privacy"
@@ -51,6 +53,8 @@ const Consideration = () => {
               customAccordionContainer: styles.customAccordionContainer,
               visibleContentStyle: styles.visibleContentStyle,
             }}
+            isExpanded={activeAccordion === "PRIVACY"}
+            onToggle={() => toggleAccordion("PRIVACY")}
           />
           <AccordionSection
             title="3. Time Commitment"
@@ -67,6 +71,8 @@ const Consideration = () => {
               customAccordionContainer: styles.customAccordionContainer,
               visibleContentStyle: styles.visibleContentStyle,
             }}
+            isExpanded={activeAccordion === "TIME"}
+            onToggle={() => toggleAccordion("TIME")}
           />
           <AccordionSection
             title="4. Travel and Expenses"
@@ -83,6 +89,8 @@ const Consideration = () => {
               customAccordionContainer: styles.customAccordionContainer,
               visibleContentStyle: styles.visibleContentStyle,
             }}
+            isExpanded={activeAccordion === "TRAVEL"}
+            onToggle={() => toggleAccordion("TRAVEL")}
           />
         </section>
       </section>
