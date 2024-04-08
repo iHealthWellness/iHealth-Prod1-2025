@@ -12,6 +12,11 @@
   align-items: center;
 }
 
+.nf-journey {
+  max-width: 100%;
+  object-fit: cover;
+}
+
 .information-card-container
   .information-card:nth-child(2)
   .information-card-heading-block {
@@ -42,7 +47,7 @@
   aspect-ratio: 1 / 1;
   position: absolute;
   z-index: 1;
-  top: 70%;
+  top: 75%;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -112,7 +117,6 @@
   }
   .information-header-heading-card {
     height: 30rem;
-    padding: 3rem;
   }
   .information-header-heading-card-inner {
     border-radius: 5px;
