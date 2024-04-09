@@ -8,17 +8,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 
 const It = () => {
-  const [accordion, setAccordion] = useState({
-    privacy: false,
-    sight: false,
-  });
-
   const [itVisible, setItVisible] = useState(false);
-
-  const toggleAccordion = (content) => (e) => {
-    setAccordion((prev) => ({ ...prev, [content]: !prev[content] }));
-  };
-
   const toggleIt = () => {
     setItVisible((prev) => !prev);
   };
@@ -27,18 +17,22 @@ const It = () => {
     <div className="layerTwo-tab">
       <div>
         <div className="flex-tab">
-          <h3 className="Text-header" onClick={toggleIt}>IT INFRASTRUCTURE</h3>
-          <BntTab
-            icon={itVisible ? minusbtn : plusbtn}
-            onClick={toggleIt}
-          />
+          <h3 className="Text-header" onClick={toggleIt}>
+            IT INFRASTRUCTURE
+          </h3>
+          <BntTab icon={itVisible ? minusbtn : plusbtn} onClick={toggleIt} />
         </div>
 
         <div className="job-body">
           {itVisible && (
             <div className="grid">
-              <Link className="grid-title link-text" to="https://app.dover.io/apply/2d71c19b-3348-4bae-bbc2-a5ea3d500bc7/ba904f04-004c-4d66-b9a3-5dddfb993e5a/?rs=15190316">Salesforce Architect (Cloud Health Implementation Expert)</Link>
-              <h2 className="grid-text" onClick={toggleAccordion("sight")}>Remote</h2>
+              <Link
+                className="grid-title link-text"
+                to="https://app.dover.io/apply/2d71c19b-3348-4bae-bbc2-a5ea3d500bc7/ba904f04-004c-4d66-b9a3-5dddfb993e5a/?rs=15190316"
+              >
+                Salesforce Architect (Cloud Health Implementation Expert)
+              </Link>
+              <h2 className="grid-text">Remote</h2>
             </div>
           )}
 

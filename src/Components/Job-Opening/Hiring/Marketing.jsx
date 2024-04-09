@@ -8,20 +8,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 
 const Marketing = () => {
-  const [accordion, setAccordion] = useState({
-    privacy: false,
-    opening: false,
-    illustrate: false,
-    appear: false,
-    prospect: false,
-  });
-
   const [marketVisible, setMarketVisible] = useState(false);
-
-  const toggleAccordion = (content) => (e) => {
-    setAccordion((prev) => ({ ...prev, [content]: !prev[content] }));
-  };
-
   const toggleMarket = () => {
     setMarketVisible((prev) => !prev);
   };
@@ -42,20 +29,27 @@ const Marketing = () => {
           <div className="job-body">
             {marketVisible && (
               <div className="grid">
-                <Link className="grid-title link-text" to="https://app.dover.io/apply/2d71c19b-3348-4bae-bbc2-a5ea3d500bc7/d7c640ff-badf-4212-b017-c41b2e2372f1/?rs=15190316">Graphic Design: Social Media Content Development</Link>
-                <h2 className="grid-text" onClick={toggleAccordion("illustrate")}>Remote</h2>
-          
+                <Link
+                  className="grid-title link-text"
+                  to="https://app.dover.io/apply/2d71c19b-3348-4bae-bbc2-a5ea3d500bc7/d7c640ff-badf-4212-b017-c41b2e2372f1/?rs=15190316"
+                >
+                  Graphic Design: Social Media Content Development
+                </Link>
+                <h2 className="grid-text">Remote</h2>
               </div>
             )}
             {marketVisible && <hr />}
-
           </div>
           <div className="job-body">
             {marketVisible && (
               <div className="grid">
-                <Link className="grid-title link-text" to="https://app.dover.io/apply/2d71c19b-3348-4bae-bbc2-a5ea3d500bc7/65f96ca1-3e64-4171-b4c2-c5f982df66e0/?rs=15190316">Marketing and Outreach</Link>
-                <h2 className="grid-text" onClick={toggleAccordion("opening")}>Remote</h2>
-         
+                <Link
+                  className="grid-title link-text"
+                  to="https://app.dover.io/apply/2d71c19b-3348-4bae-bbc2-a5ea3d500bc7/65f96ca1-3e64-4171-b4c2-c5f982df66e0/?rs=15190316"
+                >
+                  Marketing and Outreach
+                </Link>
+                <h2 className="grid-text">Remote</h2>
               </div>
             )}
 
@@ -65,50 +59,63 @@ const Marketing = () => {
           <div className="job-body">
             {marketVisible && (
               <div className="grid">
-                <Link className="grid-title link-text" to="https://app.dover.io/apply/2d71c19b-3348-4bae-bbc2-a5ea3d500bc7/81ab6de5-5b21-4629-98a6-58c98ee81140/?rs=15190316">Marketing Specialist</Link>
-                <h2 className="grid-text" onClick={toggleAccordion("illustrate")}>Remote</h2>
-          
+                <Link
+                  className="grid-title link-text"
+                  to="https://app.dover.io/apply/2d71c19b-3348-4bae-bbc2-a5ea3d500bc7/81ab6de5-5b21-4629-98a6-58c98ee81140/?rs=15190316"
+                >
+                  Marketing Specialist
+                </Link>
+                <h2 className="grid-text">Remote</h2>
               </div>
             )}
             {marketVisible && <hr />}
-
           </div>
 
           <div className="job-body">
             {marketVisible && (
               <div className="grid">
-                <Link className="grid-title link-text" to="https://app.dover.io/apply/2d71c19b-3348-4bae-bbc2-a5ea3d500bc7/81ab6de5-5b21-4629-98a6-58c98ee81140/?rs=15190316">Marketing Strategy Consultant</Link>
-                <h2 className="grid-text" onClick={toggleAccordion("appear")}>Remote</h2>
-          
-              </div>
-            )}
-
-            {marketVisible && <hr />}
-
-          </div>
-
-          <div className="job-body">
-            {marketVisible && (
-              <div className="grid">
-                <Link className="grid-title link-text" to="https://app.dover.io/apply/2d71c19b-3348-4bae-bbc2-a5ea3d500bc7/b6b37f2c-ee36-4b1e-9d68-cdaaa9e90de0/?rs=15190316">Social Media and Community Specialist</Link>
-                <h2 className="grid-text" onClick={toggleAccordion("prospect")}>Remote</h2>
-            
+                <Link
+                  className="grid-title link-text"
+                  to="https://app.dover.io/apply/2d71c19b-3348-4bae-bbc2-a5ea3d500bc7/81ab6de5-5b21-4629-98a6-58c98ee81140/?rs=15190316"
+                >
+                  Marketing Strategy Consultant
+                </Link>
+                <h2 className="grid-text">Remote</h2>
               </div>
             )}
 
             {marketVisible && <hr />}
           </div>
+
           <div className="job-body">
             {marketVisible && (
               <div className="grid">
-                <Link className="grid-title link-text" to="https://app.dover.io/apply/2d71c19b-3348-4bae-bbc2-a5ea3d500bc7/eae90aa0-293c-4489-9e7c-c918cff6791d/?rs=15190316">TikTok Content Development</Link>
-                <h2 className="grid-text" onClick={toggleAccordion("appear")}>Remote</h2>
-              
+                <Link
+                  className="grid-title link-text"
+                  to="https://app.dover.io/apply/2d71c19b-3348-4bae-bbc2-a5ea3d500bc7/b6b37f2c-ee36-4b1e-9d68-cdaaa9e90de0/?rs=15190316"
+                >
+                  Social Media and Community Specialist
+                </Link>
+                <h2 className="grid-text">Remote</h2>
               </div>
             )}
 
             {marketVisible && <hr />}
+          </div>
+          <div className="job-body">
+            {marketVisible && (
+              <div className="grid">
+                <Link
+                  className="grid-title link-text"
+                  to="https://app.dover.io/apply/2d71c19b-3348-4bae-bbc2-a5ea3d500bc7/eae90aa0-293c-4489-9e7c-c918cff6791d/?rs=15190316"
+                >
+                  TikTok Content Development
+                </Link>
+                <h2 className="grid-text">Remote</h2>
+              </div>
+            )}
 
+            {marketVisible && <hr />}
           </div>
         </div>
       </div>

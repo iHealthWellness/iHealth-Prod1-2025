@@ -1,33 +1,25 @@
 .openings-tab {
-  background-color: #DCE8F2;
-  ;
+  background-color: #dce8f2;
 }
 
-.layer-tab{
-  width:100%;
+.layer-tab {
+  width: 100%;
 }
-.layer-tab-one{
-
-  width:47%;
-  
-
+.layer-tab-one {
+  width: 47%;
 }
 
-.layer-tab-two{
-  width:47%;
-
+.layer-tab-two {
+  width: 47%;
 }
 
- .link-text {
+.link-text {
   text-decoration: underline;
-} 
-
+}
 
 .flex {
   display: flex;
-  gap:6%;
-  
-  
+  gap: 6%;
 }
 .flex-tab {
   display: flex;
@@ -39,7 +31,6 @@
   justify-content: space-between;
   padding: 10px 0 10px 0;
 }
-
 
 .Text-header {
   cursor: pointer;
@@ -53,13 +44,12 @@
 }
 .grid-title {
   width: 50%;
-  color: var(--SN-Primary-Headings-07235B, #07235B);
+  color: var(--SN-Primary-Headings-07235B, #07235b);
   font-family: Roboto;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 110%;  
-  /* border-style: dotted; */
+  line-height: 110%;
 }
 .grid-text {
   width: 35%;
@@ -69,64 +59,28 @@
   font-style: normal;
   font-weight: 400;
   line-height: 110%;
-  /* margin-left: 50%;  */
-  /* border-style: dotted; */
 }
 .job-body {
   margin-top: 20px;
   margin-bottom: 40px;
 }
-.description-title,
-.responsibilities-title,
-.qualifications-title,
-.skills-title,
-.note-title {
-  color: var(--SN-Primary-Headings-07235B, #07235b);
-  font-family: Roboto;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 143%;
-  padding: 20px 0 20px 0;
-}
-.description-text,
-.responsibilities-text,
-.qualifications-text,
-.skills-text,
-.note-text,
-.apply-text {
-  padding: 20px 0 20px 0;
-  color: var(--SN-Primary-Headings-07235B, #07235b);
-  font-family: Roboto;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 143%;
-  text-align: justify;
-}
 .text-tab-flow2 {
-  width: 100% !important; 
-  height: 100vh; 
-  
+  width: 100% !important;
+  height: 100vh;
 }
-
 .career-tab {
   padding-top: 50px;
 }
 
-
 /*RESPONSIVENESS*/
 
 @media screen and (min-width: 481px) and (max-width: 910px) {
-  .layer-tab-one{
-
-    width:100%;
-  
+  .layer-tab-one {
+    width: 100%;
   }
-  
-  .layer-tab-two{
-    width:100%;
-  
+
+  .layer-tab-two {
+    width: 100%;
   }
   .flex-tab {
     display: flex;
@@ -147,16 +101,16 @@
   .grid {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    justify-content: space-between; 
+    justify-content: space-between;
   }
   .grid-title {
     width: 40%;
-    color: var(--SN-Primary-Headings-07235B, #07235B);
+    color: var(--SN-Primary-Headings-07235B, #07235b);
     font-family: Roboto;
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
-    line-height: 110%;  
+    line-height: 110%;
   }
   .grid-text {
     width: 40%;
@@ -166,70 +120,21 @@
     font-style: normal;
     font-weight: 700;
     line-height: 120%;
-    margin-left: auto; 
+    margin-left: auto;
   }
   .flex {
     padding: 20px;
-   /* flex-wrap: wrap ; */
+    /* flex-wrap: wrap ; */
   }
-  
-/*  
-  .description-title {
-    color: var(--SN-Primary-Headings-07235B, #07235b);
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 120%;
-    padding: 20px 0 10px 0;
-  }
-  .description-text {
-    color: var(--SN-Primary-Headings-07235B, #07235b);
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 130%;
-    padding: 10px 0 10px 0;
-  }
-  .responsibilities-title,
-  .qualifications-title,
-  .skills-title,
-  .note-title {
-    color: var(--SN-Primary-Headings-07235B, #07235b);
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 120%;
-    padding: 10px 0 10px 0;
-  }
-  .responsibilities-text,
-  .qualifications-text,
-  .skills-text,
-  .note-text,
-  .apply-text {
-    color: var(--SN-Primary-Headings-07235B, #07235b);
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 130%;
-    padding: 10px 0 10px 0;
-  } */
 }
 
-
 @media screen and (max-width: 480px) {
-  .layer-tab-one{
-
-    width:100%;
-  
+  .layer-tab-one {
+    width: 100%;
   }
-  
-  .layer-tab-two{
-    width:100%;
-  
+
+  .layer-tab-two {
+    width: 100%;
   }
   .flex {
     flex-direction: column;
@@ -250,21 +155,21 @@
   .grid {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    justify-content: space-between; 
+    justify-content: space-between;
   }
 
   .grid-title {
     width: 50%;
-    color: var(--SN-Primary-Headings-07235B, #07235B);
+    color: var(--SN-Primary-Headings-07235B, #07235b);
     font-family: Roboto;
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
-    line-height: 110%;  
+    line-height: 110%;
   }
   .grid-text {
     width: 30%;
-    color: var(--SN-Primary-Headings-07235B, #07235B);
+    color: var(--SN-Primary-Headings-07235B, #07235b);
     font-family: Roboto;
     font-size: 16px;
     font-style: normal;
@@ -274,47 +179,4 @@
   .flex {
     padding: 20px;
   }
-  /* .description-title {
-    color: var(--SN-Primary-Headings-07235B, #07235b);
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 120%;
-    padding: 24px 0 10px 0;
-  }
-  .description-text {
-    color: var(--SN-Primary-Headings-07235B, #07235b);
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 130%;
-    padding: 20px 0 20px 0;
-  }
-  .responsibilities-title,
-  .qualifications-title,
-  .skills-title,
-  .note-title {
-    color: var(--SN-Primary-Headings-07235B, #07235b);
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 120%;
-    padding: 10px 0 10px 0;
-  }
-  .responsibilities-text,
-  .qualifications-text,
-  .skills-text,
-  .note-text,
-  .apply-text {
-    color: var(--SN-Primary-Headings-07235B, #07235b);
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 130%;
-    padding: 10px 0 10px 0;
-  } */
 }
