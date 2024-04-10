@@ -14,7 +14,7 @@
 
 .partner-heading {
   color: #062758;
-  padding: 1rem 0;
+  padding-bottom: 1rem;
   font-size: 1.5rem;
   font-weight: 600;
   line-height: 110%;
@@ -44,7 +44,7 @@
 
 .partner-heading-block aside {
   max-width: 40%;
-  padding: 5rem 0 3rem 09rem;
+  padding: 5rem 0 5rem 9rem;
 }
 
 .partner-heading {

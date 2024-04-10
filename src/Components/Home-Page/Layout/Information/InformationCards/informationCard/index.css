@@ -92,6 +92,26 @@
   border-bottom: none;
 }
 
+.information-card-container
+  .information-card:nth-child(2):hover
+  .information-card-link {
+  color: rgba(0, 45, 153, 0.5);
+}
+
+.information-card-container
+  .information-card:nth-child(2):hover
+  .information-card-list
+  .information-card-listitem
+  a,
+.information-card-container
+  .information-card:nth-child(2):hover
+  .information-card-listitem-span,
+.information-card-container
+  .information-card:nth-child(2):hover
+  .information-card-link {
+  color: rgba(6, 39, 88, 1);
+}
+
 .information-card-listitem {
   padding-bottom: 1rem;
   font-size: 1rem;
@@ -99,6 +119,9 @@
   line-height: 120%;
 }
 
+.information-card-container
+  .information-card:nth-child(2):hover
+  .information-card-listitem-span,
 .information-card-listitem-span {
   color: rgba(0, 45, 153, 0.5);
 }
