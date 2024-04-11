@@ -24,6 +24,8 @@ function ResearchTools({ toggleAccordion, activeAccordion }) {
           customHiddenContentStyle: styles.customHiddenContentStyle,
           customAccordionContainer: styles.customAccordionContainer,
         }}
+        isExpanded={activeAccordion === "mobNF"}
+        onToggle={() => toggleAccordion("mobNF")}
       />
       <section className={styles.secondSection}>
         <AccordionSection
