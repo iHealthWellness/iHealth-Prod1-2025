@@ -72,8 +72,14 @@
 }
 
 @media screen and (max-width: 480px) {
-  .lmc-container {
+  .how-it-works-container > .make-invisible {
     display: none;
+  }
+  .lmc-container {
+    width: auto;
+    height: auto;
+    padding: 1rem;
+    margin: 2rem auto;
   }
 }
 
