@@ -19,7 +19,7 @@ const index = () => {
       <Hero />
       <Statement />
       <Team />
-      <Finance />
+      <Finance /> 
       <Terms />
       <TotopBtn />
 

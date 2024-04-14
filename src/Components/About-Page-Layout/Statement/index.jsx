@@ -120,7 +120,8 @@ const Statement = () => {
                                 </div>
 
 
-                                <div className="text-outline-color-change"><h3>Social Responsibility</h3>
+                                <div className="text-outline-color-change">
+                                    <h3>Social Responsibility</h3>
                                     <p>We are committed to being a responsible and contributing member of
                                         society. As a global non-profit, we will prioritize our users' needs over profits and will invest our
                                         resources back into the community.
