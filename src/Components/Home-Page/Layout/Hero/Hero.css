@@ -3,12 +3,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 2rem;
 }
 
 .hero-container-inner {
   width: 90%;
-  padding: 2rem 0;
+  /* padding: 2rem 0; */
   padding-bottom: 0;
 }
 
@@ -17,6 +16,13 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+
+.take-survey-span a {
+  text-decoration: none;
+  cursor: pointer;
+  color: rgba(3, 134, 208, 1);
+  font-weight: 700;
 }
 
 .hero-heading-h3 {
@@ -75,9 +81,9 @@
   text-align: center;
 }
 
-.hero-survey-banner p:nth-child(1) {
+/* .hero-survey-banner p:nth-child(1) {
   padding-bottom: 1rem;
-}
+} */
 
 .provider-heading {
   margin-top: auto;

@@ -9,20 +9,12 @@ import PersonSearchOutlinedIcon from "@mui/icons-material/PersonSearchOutlined";
 const Hero = () => {
   return (
     <section className="hero-container">
-      {/* <section className="hero-survey-banner">
+      <section className="hero-survey-banner">
         <p className="SN-D-P-20">
-          Patients, your voice matters! Join us in shaping your NF treatment.{" "}
-          <span
-            className="take-survey-span"
-            onClick={() => {
-              document.querySelector("#UnderConst-wrapper").style.display =
-                "flex";
-            }}
-          >
-            Take the NF Survey.
-          </span>
+          Share your strength story for iHealth Wellness feature;{" "}
+          <span className="take-survey-span"><a href="https://forms.gle/QAiHQcgtvqfjFtYe6" target="_blank">submit here!</a></span>
         </p>
-        <p className="SN-D-P-20">
+        {/* <p className="SN-D-P-20">
           You are OUR hero, and we would love to hear your NF story.{" "}
           <span
             className="take-survey-span"
@@ -33,8 +25,9 @@ const Hero = () => {
           >
             Submit your Story.
           </span>
-        </p>
-      </section> */}
+        </p> */}
+        <a href="" target=""></a>
+      </section>
       <div className="hero-container-inner">
         <div className="hero-heading-container">
           <h3 className="hero-heading-h3">
