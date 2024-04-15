@@ -1,0 +1,52 @@
+.slideInText {
+  opacity: 0;
+  transform: translateX(50%);
+  transition: opacity 0.5s ease-in-out, transform 0.8s ease-in-out;
+}
+.slideInText.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.sectionContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.sectionContainer > aside:first-of-type {
+  margin: auto 0;
+}
+
+.image {
+  width: 100%;
+  background-size: cover;
+}
+
+.contentSection {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  counter-reset: sectionCounter;
+  justify-content: space-between;
+}
+
+.titleStyle {
+  color: var(--SN-Primary-Headings-07235B, #07235b);
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.visibleContentStyle,
+.hiddenContentStyle {
+  color: rgba(133, 142, 173, 1);
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 1024px) {
+  .visibleContentStyle,
+  .hiddenContentStyle {
+    font-size: 1rem;
+  }
+}

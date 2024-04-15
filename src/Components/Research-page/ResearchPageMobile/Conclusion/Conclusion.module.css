@@ -1,0 +1,32 @@
+@media screen and (max-width: 480px) {
+  .mainSection {
+    display: grid;
+    gap: 1rem;
+    grid-column: 1/-1;
+  }
+  .mainSection > section {
+    background-image: url("src/Assets/Images/Blue-Pattern.png");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 1.5rem 2rem 0.5rem 2rem;
+    border-radius: 1.25rem;
+    color: #fff;
+    margin-inline: 1rem;
+  }
+  .titleStyle {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 100%;
+  }
+  .hiddenContentStyle,
+  .visibleContentStyle {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 150%;
+  }
+
+  .mainSection img {
+    width: 100%;
+  }
+}

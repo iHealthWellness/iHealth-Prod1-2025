@@ -1,0 +1,97 @@
+:root{
+    --light-gray-color:#f0f7fd;
+    --dark-blue-color:#07235b;
+    --light-blue-colors:#0d99ff;
+    --dark-red-color:#c33418;
+}
+main {
+    min-height: 100vh;
+    background-color: var(--light-gray-color);
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    user-select: none;
+}
+.not-found {
+    text-align: center;
+    margin-top: 3rem;
+    transition: all .3s;
+
+}
+.not-found span {
+    margin-bottom: -2rem;
+    display: flex;
+    align-items: center;
+    font-size: 20rem;
+    color:var(--dark-blue-color);
+    font-weight: bold;
+    transition: all .3s;
+}
+.notFound-hearth{
+   width: 270px;
+   height: 270px;
+   transition: all 0.3s;
+}
+p.notFound-text{
+    margin-bottom: 3rem;
+    font-size:3rem;
+    font-weight: bold;
+    color: var(--dark-blue-color);
+    text-transform: capitalize;
+    transition: all .3s;
+
+}
+.back-home {
+    padding: 0.8rem 2rem;
+    background-color: var(--light-blue-colors);
+    color: var(--dark-blue-color);
+    cursor: pointer;
+    border: none;
+    border-radius: 3rem;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color .3s;
+}
+.back-home:hover {
+    color: var(--light-gray-color);
+}
+
+/*other error*/
+p.other-error{
+    margin-top: 4rem;
+    font-size: 3rem;
+    color: var(--dark-blue-color);
+}
+/*media*/
+@media (max-width: 600px) {
+    .notFound-hearth{
+        width: 200px;
+        height: 200px;
+     }
+    .not-found {
+        margin-top: 6rem;
+    }
+    .not-found span {
+        font-size: 14rem;
+    }
+    p.notFound-text{
+        font-size:2rem;        
+    }
+}
+
+@media (max-width: 350px) {
+    .notFound-hearth{
+        width: 100px;
+        height: 100px;
+    }
+    .not-found {
+        margin-top: 8rem;
+    }
+    .not-found span {
+        margin-bottom: 0rem;
+        font-size: 10rem;
+    }
+    p.notFound-text{
+        font-size:1.5rem;        
+    }
+}

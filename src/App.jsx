@@ -21,7 +21,6 @@ import LivingwithNf from "./Pages/Living-with-NF/index"
 import EEOTest from "./Pages/Term-of-use-EEO-test-page/index"
 // import Other from "./Pages/Other/index";
 
-
 function App() {
   const router = createBrowserRouter([
     {
@@ -49,11 +48,7 @@ function App() {
     <>
       <RouterProvider router={router} />
 
-
-
       {/* https://stackoverflow.com/questions/74297769/how-to-navigate-to-sections-with-id-as-well-as-pages-in-react-router-dom */}
-
-
     </>
   );
 }
