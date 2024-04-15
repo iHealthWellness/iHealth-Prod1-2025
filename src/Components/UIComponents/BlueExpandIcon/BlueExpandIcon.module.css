@@ -1,0 +1,56 @@
+@keyframes rotateToMinus {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+}
+
+@keyframes rotateToPlus {
+  from {
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+}
+
+.circleContainer {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  background-color: #0d99ff;
+  border-radius: 50%;
+  border: 1px solid #0d99ff;
+}
+
+.circleContainer::before,
+.circleContainer::after {
+  position: absolute;
+  content: "";
+  background-color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.circleContainer::after {
+  height: 70%;
+  width: 2px;
+  animation: rotateToMinus 0.5s forwards;
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.circleContainer::before {
+  height: 2px;
+  width: 70%;
+}
+
+.plusIcon::after {
+  animation: rotateToPlus 0.5s forwards;
+}
+
+.minusIcon::after {
+  animation: rotateToMinus 0.5s forwards;
+}

@@ -1,37 +1,24 @@
-import React from "react";
+import { useState, useEffect } from "react";
+import ResearchPageDesktop from "src/Components/Research-page/ResearchPageDesktop/ResearchPageDesktop";
+import ResearchPageMobile from "src/Components/Research-page/ResearchPageMobile/ResearchPageMobile";
 
-import Hero from "src/Components/Research-page/Hero";
-import MyComponent from "src/Components/Research-page/MyComponent";
-import MyComponent2 from "src/Components/Research-page/MyComponent2";
-import MyComponent3 from "src/Components/Research-page/MyComponent3";
-import Tools from "src/Components/Research-page/Research tools";
-import Therapies from "src/Components/Research-page/Therapies";
-import Moreinfo from "src/Components/Research-page/More-info";
-import Segas from "src/Components/Research-page/Segas";
-import Participate from "src/Components/Research-page/Participate";
-import Involvement from "src/Components/Research-page/Involvement";
-import Consideration from "src/Components/Research-page/Consideration";
-import TotopBtn from "src/Components/Research-page/TotopBtn";
+function index() {
+  const [isDesktop, setDesktop] = useState(window.innerWidth > 480);
 
-import"./index.css"
+  // Check if the screen is desktop or mobile
+  useEffect(() => {
+    const handleResize = () => {
+      setDesktop(window.innerWidth > 480);
+    };
+    window.addEventListener("resize", handleResize);
 
-const index = () => {
-  return (
-    <div className="research-page">
-      <Hero />
-      <Tools />
-      <MyComponent />
-      <Therapies />
-      <Moreinfo />
-      <MyComponent2 />
-      <Segas />
-      <Participate />
-      {/* <Involvement /> */}
-      <MyComponent3 />
-      <Consideration />
-      <TotopBtn /> 
-    </div>
-  );
-};
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  // Render conditionally based on screen size
+  return <>{isDesktop ? <ResearchPageDesktop /> : <ResearchPageMobile />}</>;
+}
 
 export default index;

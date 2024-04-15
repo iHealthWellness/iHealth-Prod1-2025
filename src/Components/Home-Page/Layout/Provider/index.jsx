@@ -7,6 +7,7 @@ import { Button } from "@mui/material";
 import PinDropIcon from "@mui/icons-material/PinDrop";
 import ProviderServices from "src/Services/provider";
 import { stateData } from "../../../../Constants/HomePage/StateData";
+import { stateData } from "../../../../Constants/HomePage/StateData";
 
 import "./index.css";
 import ProviderCheckbox from "./ProviderCheckbox";
@@ -34,9 +35,9 @@ const Provider = () => {
     setIsLoading(loading);
   };
 
+
   useEffect(() => {
     const fetchProviders = async () => {
-      // console.log( stateData.map(stateObj => Object.values(stateObj)[0]))
       const cache = {
         diseases: localStorage.getItem("diseases"),
         specialities: localStorage.getItem("specialities"),
@@ -56,16 +57,15 @@ const Provider = () => {
           (stateObj) => Object.values(stateObj)[0]
         );
         try {
-          const [diseaseRes, specialtyRes] = await Promise.all([
+          const [diseaseRes, specialtyRes, stateRes] = await Promise.all([
             ProviderServices.handleGetAllDisease(),
             ProviderServices.handleGetAllSpeciality(),
-            // ProviderServices.handleGetAllState(),
+            ProviderServices.handleGetAllState(),
           ]);
 
           setDiseases(diseaseRes.data);
           setSpecialities(specialtyRes.data);
-          // setStates(stateRes.data);
-          setStates(stateOptions);
+          setStates(stateRes.data);
 
           // Cache the data
           localStorage.setItem("diseases", JSON.stringify(diseaseRes.data));
@@ -82,6 +82,7 @@ const Provider = () => {
         }
       }
     };
+
 
     fetchProviders();
   }, []);

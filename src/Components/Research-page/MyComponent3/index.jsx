@@ -1,202 +1,82 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-import React, { useState, useEffect, useRef } from "react";
-import "./MyComponent3.css";
-import Close from "src/Assets/Icons/minus.png";
-import Open from "src/Assets/Icons/plus.png";
+import styles from "./index.module.css";
 import Research6 from "src/Assets/Images/Research-6.png";
-
-const Section = ({ title, content, summary }) => {
-  const [expanded, setExpanded] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
-
-  const toggleExpanded = () => {
-    setExpanded(!expanded);
-  };
-
-  const checkIfMobile = () => {
-    setIsMobile(window.innerWidth < 768); // threshold to check if mobile screen
-  };
-
-  // Event listener to update the isMobile state when the window is resized
-  useEffect(() => {
-    checkIfMobile();
-    window.addEventListener('resize', checkIfMobile);
-
-    // Cleanup the event listener on component unmount
-    return () => {
-      window.removeEventListener('resize', checkIfMobile);
-    };
-  }, []);
-
-  return (
-    <div className={`section ${expanded ? "expanded" : ""}`}>
-      <div className="titleContainer">
-        <h2 className={isMobile ? "titleInline" : ""}>{title}</h2>
-        {isMobile && !expanded && (
-          <div
-            className="button"
-            onClick={toggleExpanded}
-            role="button"
-            tabIndex={0}
-          >
-            <img
-              src={Open}
-              alt="Read More"
-            />
-          </div>
-        )}
-      </div>
-
-      {!isMobile && <p className="summary">
-        {summary}
-        {!expanded && (
-          <div
-            className="button"
-            onClick={toggleExpanded}
-            role="button"
-            tabIndex={0}
-          >
-            <img
-              src={Open}
-              alt="Read More"
-            />
-          </div>
-        )}
-      </p>}
-
-      <div className="fullContent">
-        {expanded && (
-          <>
-            <p>{isMobile && summary}</p>
-            <p>{content}</p>
-            <div
-              className="button"
-              onClick={toggleExpanded}
-              role="button"
-              tabIndex={0}
-            >
-              <img
-                src={Close}
-                alt="Read Less"
-              />
-            </div>
-          </>
-        )}
-      </div>
-
-      
-    </div>
-  );
-};
-
-
+import useSlideInAnimationRight from "src/hooks/useSlideInAnimationRight";
+import AccordionSection from "src/Components/UIComponents/AccordionSection/AccordionSection";
 
 const MyComponent3 = () => {
-  const sectionRefs = useRef([]);
-
-  const debounce = (func, wait) => {
-    let timeout;
-    return function executedFunction(...args) {
-      const later = () => {
-        clearTimeout(timeout);
-        func(...args);
-      };
-      clearTimeout(timeout);
-      timeout = setTimeout(later, wait);
-    };
-  };
-
-  const handleScroll = () => {
-    sectionRefs.current.forEach((ref) => {
-      if (ref) {
-        const slideInAt =
-          window.scrollY +
-          window.innerHeight -
-          ref.offsetHeight / 2;
-        const elementBottom = ref.offsetTop + ref.offsetHeight;
-        const isHalfShown = slideInAt > ref.offsetTop;
-        const isNotScrolledPast = window.scrollY < elementBottom;
-
-        if (isHalfShown && isNotScrolledPast) {
-          ref.classList.add("active");
-        } else {
-          ref.classList.remove("active");
-        }
-      }
-    });
-  };
-
-  useEffect(() => {
-    const debouncedHandleScroll = debounce(handleScroll, 50);
-
-    window.addEventListener("scroll", debouncedHandleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", debouncedHandleScroll);
-    };
-  }, []);
+  useSlideInAnimationRight(styles.slideInText, styles.active);
 
   return (
-    <div>
-      <div className="container slide-in" ref={(el) => (sectionRefs.current[0] = el)}>
-        <div className="photo">
-        <img src={Research6} alt="Display" />
-        </div>
-        <div className="textSections active">
-        <Section
-            title="1.Stay Informed"
-            summary="Keep yourself updated on the latest NF research by following reputable NF organizations, medical journals, and research institutions."
-            content="They often share information about ongoing studies and clinical trials.            "
-          />
-          <Section
-            title="2.Explore Research Opportunities"
-            summary="Investigate local hospitals, universities, and research centers with expertise in NF."
-            content="These institutions often conduct research studies and may be actively seeking participants. Reach out to them and inquire about ongoing studies or upcoming opportunities."
-          />
-          <Section
-            title="3.Join Registries and Patient Databases"
-            summary="Consider joining NF registries or patient databases."
-            content="These resources collect valuable information from individuals with NF, enabling researchers to identify potential participants for specific studies or trials."
-          />
-          <Section
-            title="4.Consult with Healthcare Providersv"
-            summary="Discuss your interest in participating in NF research with your healthcare provider or NF specialist."
-            content="They can guide you, provide recommendations, and help connect you with relevant research opportunities."
-          />
-        </div>
-      </div>
-      {/* <section
-        id="tools"
-        className="research-tools"
-        ref={(el) => (sectionRefs.current[1] = el)}
-      >
-        <div className="reminder">
-          <h2 className="reminder1">Do you know?</h2>
-          <p className="reminder2">
-            These resources can serve as valuable tools for researchers and
-            individuals interested in NF research. It's important to explore
-            specific databases, funding opportunities, and networks relevant to
-            your research interests or goals. Additionally, staying up-to-date
-            with the latest research publications and attending conferences or
-            scientific meetings can further enhance knowledge and collaboration
-            in the field of NF research.
-          </p>
-        </div>
-      </section> */}
-    </div>
+    <article className={`${styles.slideInText} ${styles.sectionContainer}`}>
+      <aside>
+        <img
+          className={styles.image}
+          src={Research6}
+          alt="researchers"
+          loading="lazy"
+        />
+      </aside>
+      <aside className={styles.contentSection}>
+        <AccordionSection
+          title="1. Stay Informed"
+          hiddenContent={{
+            p1: "Keep yourself updated on the latest NF research by following reputable NF organizations, medical journals, and research institutions. They often share information about ongoing studies and clinical trials.",
+          }}
+          buttonColor="blue"
+          className={{
+            titleStyle: styles.titleStyle,
+            visibleContentStyle: styles.visibleContentStyle,
+            hiddenContentStyle: styles.hiddenContentStyle,
+            customAccordionContainer: styles.customAccordionContainer,
+          }}
+        />
+        <AccordionSection
+          title="2. Explore Research Opportunities"
+          // visibleContent={{
+          //   p1: "Investigate local hospitals, universities, and research centers with expertise in NF.",
+          // }}
+          hiddenContent={{
+            p1: "Investigate local hospitals, universities, and research centers with expertise in NF. These institutions often conduct research studies and may be actively seeking participants. Reach out to them and inquire about ongoing studies or upcoming opportunities.",
+          }}
+          buttonColor="blue"
+          className={{
+            titleStyle: styles.titleStyle,
+            visibleContentStyle: styles.visibleContentStyle,
+            hiddenContentStyle: styles.hiddenContentStyle,
+            customAccordionContainer: styles.customAccordionContainer,
+          }}
+        />
+        <AccordionSection
+          title="3. Join Registries and Patient Databases"
+          // visibleContent={{
+          //   p1: "Consider joining NF registries or patient databases.",
+          // }}
+          hiddenContent={{
+            p1: "Consider joining NF registries or patient databases. These resources collect valuable information from individuals with NF, enabling researchers to identify potential participants for specific studies or trials.",
+          }}
+          buttonColor="blue"
+          className={{
+            titleStyle: styles.titleStyle,
+            visibleContentStyle: styles.visibleContentStyle,
+            hiddenContentStyle: styles.hiddenContentStyle,
+            customAccordionContainer: styles.customAccordionContainer,
+          }}
+        />
+        <AccordionSection
+          title="4. Consult with Healthcare Providers"
+          hiddenContent={{
+            p1: "Discuss your interest in participating in NF research with your healthcare provider or NF specialist. They can guide you, provide recommendations, and help connect you with relevant research opportunities.",
+          }}
+          buttonColor="blue"
+          className={{
+            titleStyle: styles.titleStyle,
+            visibleContentStyle: styles.visibleContentStyle,
+            hiddenContentStyle: styles.hiddenContentStyle,
+            customAccordionContainer: styles.customAccordionContainer,
+          }}
+        />
+      </aside>
+    </article>
   );
 };
 

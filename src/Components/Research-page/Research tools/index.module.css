@@ -1,0 +1,36 @@
+.slideInText {
+  opacity: 0;
+  transform: translateX(50%);
+  transition: opacity 0.5s ease-in-out, transform 0.8s ease-in-out;
+}
+.slideInText.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.mainSection {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: var(--SN-Primary-Headings-07235B, #07235b);
+}
+
+.mainSection section {
+  text-align: justify;
+}
+
+.title {
+  text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .title h1 {
+    font-size: 2.25rem;
+  }
+  .title h2 {
+    font-size: 1.87rem;
+  }
+  .mainSection section {
+    font-size: 1rem;
+  }
+}

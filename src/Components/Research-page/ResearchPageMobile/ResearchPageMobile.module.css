@@ -1,0 +1,13 @@
+@media screen and (max-width: 480px) {
+  .researchContainer {
+    display: grid;
+    grid-template-columns: 1rem 1fr 1rem;
+    background-color: #f0f7fd;
+    row-gap: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .researchContainer > * {
+    grid-column: 2;
+  }
+}
