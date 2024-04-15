@@ -14,7 +14,7 @@ const LearnMoreCard = ({ isVisible }) => {
       }`}
     >
       <a onClick={underConstruction} className="lmc-button">
-        Learn more &gt;
+        <img src={step5Image} alt="an image" />
       </a>
     </div>
   );

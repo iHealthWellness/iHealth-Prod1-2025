@@ -152,6 +152,7 @@
   .hero-heading-container {
     width: 50%;
     justify-content: center;
+    margin-top: 5rem;
   }
 
   .hero-heading-h3 {

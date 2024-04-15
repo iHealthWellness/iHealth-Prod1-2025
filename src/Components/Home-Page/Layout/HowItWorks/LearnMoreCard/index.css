@@ -31,6 +31,11 @@
   line-height: 143%;
 }
 
+.lmc-button img {
+  width: 100%;
+  border-radius: 1.5rem;
+}
+
 /* iPad Screen Sizes: 769px to 1024px */
 
 /* Small Screens (phones, etc.): Max width up to 768px */
@@ -76,10 +81,7 @@
     display: none;
   }
   .lmc-container {
-    width: auto;
-    height: auto;
-    padding: 1rem;
-    margin: 2rem auto;
+    display: none;
   }
 }
 
