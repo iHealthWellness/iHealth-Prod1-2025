@@ -5,7 +5,7 @@ const InformationCard = ({ team }) => {
   const { icon, heading, content, detailPath } = team;
 
   const handleOnClick = (e, path) => {
-    if (["Education"].includes(heading)) {
+    if (heading.includes("Education")) {
       e.preventDefault();
       document.querySelector("#UnderConst-wrapper").style.display = "flex";
       return;
@@ -35,14 +35,14 @@ const InformationCard = ({ team }) => {
         {content.map((c) => (
           <li className="information-card-listitem" key={c.text}>
             <span className="information-card-listitem-span">&#10004; </span>
-            {heading === "Education" ? (
+            {heading.includes("Education") ? (
               <a href={c.path} onClick={(e) => handleOnClick(e, c.path)}>
                 {c.text}
               </a>
-              ):(
-            <HashLink smooth to={c.path}>
-              {c.text}
-            </HashLink>
+            ) : (
+              <HashLink smooth to={c.path}>
+                {c.text}
+              </HashLink>
             )}
           </li>
         ))}

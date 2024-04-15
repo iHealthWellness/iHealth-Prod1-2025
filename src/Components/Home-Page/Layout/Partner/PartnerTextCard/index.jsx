@@ -51,7 +51,7 @@ const PartnerTextCard = ({ partner }) => {
           document.querySelector("#UnderConst-wrapper").style.display = "flex";
         }}
       >
-        Partner with us
+        Get Started
       </a>
     </div>
   );

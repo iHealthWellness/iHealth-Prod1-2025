@@ -43,17 +43,18 @@ const Provider = () => {
         states: localStorage.getItem("states"),
       };
 
-      
       if (cache.diseases && cache.specialities && cache.states) {
         // Data is available in cache
         setDiseases(JSON.parse(cache.diseases));
         setSpecialities(JSON.parse(cache.specialities));
-        setStates(((cache.states).split(",")));
+        setStates(cache.states.split(","));
       } else {
         // Data needs to be fetched
-        setIsLoading(true);     
+        setIsLoading(true);
         // Extract state names (full names) from stateData
-        const stateOptions = stateData.map(stateObj => Object.values(stateObj)[0]);
+        const stateOptions = stateData.map(
+          (stateObj) => Object.values(stateObj)[0]
+        );
         try {
           const [diseaseRes, specialtyRes] = await Promise.all([
             ProviderServices.handleGetAllDisease(),
@@ -68,7 +69,10 @@ const Provider = () => {
 
           // Cache the data
           localStorage.setItem("diseases", JSON.stringify(diseaseRes.data));
-          localStorage.setItem("specialities",JSON.stringify(specialtyRes.data));
+          localStorage.setItem(
+            "specialities",
+            JSON.stringify(specialtyRes.data)
+          );
           // localStorage.setItem("states", JSON.stringify(stateRes.data));
           localStorage.setItem("states", stateOptions);
         } catch (e) {

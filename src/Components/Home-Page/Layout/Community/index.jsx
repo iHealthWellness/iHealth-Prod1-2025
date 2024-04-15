@@ -3,6 +3,9 @@ import { useState } from "react";
 import "./index.css";
 import Geriatric from "./Community-Team/Geriatric";
 import Cancer from "./Community-Team/Cancer";
+import CancerCard from "src/Assets/Images/cancer-card.png";
+import GeriatricCard from "src/Assets/Images/geriatric-card.png";
+import NfCard from "src/Assets/Images/nf-card.png";
 
 const Community = () => {
   const [team, setTeam] = useState("NF TEAM");
@@ -26,16 +29,31 @@ const Community = () => {
     setIsOpens(false);
   };
 
+  const underConstruction = () => {
+    document.querySelector("#UnderConst-wrapper").style.display = "flex";
+  };
+
   return (
     <section className="community-container">
-      <h2 className="community-heading">Empowering Health and Wellness</h2>
+      <h2 className="community-heading">We give power to you, the patient</h2>
       <p className="community-description">
-        Empower yourself with the information you need to make informed
-        decisions and lead a healthier, happier life. Choose your area of
-        interest and embark on a journey towards improved well-being.
+        Find all the information and resources you need to make informed
+        decisions about your health and live your best life. Choose your area of
+        interest and take the next step in your wellness journey.
       </p>
+      <aside>
+        <a href="#Information">
+          <img src={NfCard} alt="nf card" />
+        </a>
+        <img src={CancerCard} alt="cancer card" onClick={underConstruction} />
+        <img
+          src={GeriatricCard}
+          alt="geriatric card"
+          onClick={underConstruction}
+        />
+      </aside>
 
-      <div className="community-teams">
+      {/* <div className="community-teams">
         <button
           onClick={() => {
             setTeam("NF TEAM");
@@ -82,7 +100,7 @@ const Community = () => {
         >
           Cancer Hub <p className="coming-soon-p">(Coming soon)</p>
         </button>
-      </div>
+      </div> */}
       {/* MODAL POPUP FOR GERIATRIC TEAM */}
 
       <div>{isOpen && <Geriatric closeModal={closeModal} />}</div>

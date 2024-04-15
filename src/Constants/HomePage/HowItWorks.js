@@ -7,32 +7,32 @@ import step5Image from "src/Assets/Icons/step-5-highly-coordinated-health-and-we
 const HowItWorksSteps = [
   {
     image: step1Image,
-    title: "Health and Wellness Provider Lookup",
+    title: "Use Our Provider Lookup",
     content:
-      "Enter your search criteria, browse results, contact the provider.",
+      "Enter your search criteria, browse results, and contact providers directly.",
   },
   {
     image: step2Image,
-    title: "Sign up for free today",
-    content: "In just 2-3 minutes, sign up/ opt-in for membership",
+    title: "Sign Up for Free Today",
+    content: "Sign up in just 2-3 minutes and opt-in for community membership. ",
   },
   {
     image: step3Image,
-    title: "AI for the Appointments",
+    title: "Schedule Appointments",
     content:
-      "By using APIs to “sync” calendars across various platforms, patients see available appointment slots and can book appointments in real time.",
+      "View calendar openings and book appointments in real time.",
   },
   {
     image: step4Image,
-    title: "Electronic Health Records (EHR) integration ",
+    title: "View a Complete Health History",
     content:
-      "Provide patients with easy access to their health information, while also enabling healthcare providers to have a more complete view of a patient's health history.",
+      "Save time collecting and sharing essential information.",
   },
   {
     image: step5Image,
-    title: "Making New Friends",
+    title: "Join the Discussion",
     content:
-      "The community portal will help patients network with others living with the same condition to support, learn, inspire, feel a sense of fellowship, safety and belonging",
+      "Introduce yourself to the community. Share as little, or as much, about your health journey and the support you're looking for.",
   },
 ];
 

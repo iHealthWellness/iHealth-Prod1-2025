@@ -3,10 +3,18 @@
   display: none;
 }
 
+.partner-heading-block {
+  width: 100%;
+  max-width: 1216px;
+  background-image: url("src/Assets/Images/partner-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
 .partner-heading {
   color: #062758;
-  text-align: center;
-  padding: 2rem 0;
+  padding-bottom: 1rem;
   font-size: 1.5rem;
   font-weight: 600;
   line-height: 110%;
@@ -14,7 +22,15 @@
 
 .partner-content-block {
   width: 100%;
-  background-color: #062758;
+  background-color: rgb(148, 249, 210);
+}
+
+.first-block {
+  background-color: rgb(148, 249, 210);
+}
+
+.second-block {
+  background-color: rgb(253, 189, 177);
 }
 
 .partner-content-block.tablet {
@@ -25,19 +41,28 @@
   width: 100%;
   display: block;
 }
-/* Tablet view */
-@media only screen and (min-width: 480px) and (max-width: 1023px) {
-  .partner-container {
-    padding-top: 5rem;
-  }
 
-  .partner-heading {
-    font-size:2.25rem;
-    line-height:120%;
-    font-weight:700;
-    background-color: #062758;
-    color: #fff;
-    padding: 5rem;
+.partner-heading-block aside {
+  max-width: 40%;
+  padding: 5rem 0 5rem 9rem;
+}
+
+.partner-heading {
+  font-size: 3rem;
+  line-height: 143%;
+  font-weight: 400;
+  color: #fff;
+}
+
+.partner-paragraph {
+  font-size: 1.5rem;
+  color: #fff;
+}
+/* Tablet view */
+@media only screen and (min-width: 480px) and (max-width: 1024px) {
+  .partner-heading-block aside {
+    max-width: 100%;
+    padding: 4rem 0 4rem 4rem;
   }
 
   .partner-content-block.mobile {
@@ -47,18 +72,13 @@
   .partner-content-block.tablet {
     display: block;
   }
-
-  .partnership-img {
-    display: block;
-    width: 100%;
-    height: 288px;
-    object-fit: cover;
-  }
 }
 /* Desktop view */
 @media only screen and (min-width: 1024px) {
+  .partner-heading-block {
+    margin-bottom: 1rem;
+  }
   .partner-container {
-    padding-top: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -80,38 +100,25 @@
     flex-direction: row-reverse;
   }
 
-  .partner-heading-block {
-    position: relative;
-    width: 100%;
-    max-width: 1216px;
-  }
-
   .partnership-img {
     display: block;
-  }
-
-  .partner-heading {
-    font-size:1.5rem;
-    line-height:143%;
-    font-weight:400;
-    background-color: #062758;
-    color: #fff;
-    width: 436px;
-    height: 261px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: left;
-    padding: 1rem;
-    position: absolute;
-    z-index: 1;
-    left: 5rem;
-    bottom: 1rem;
   }
 
   .partnership-img {
     width: 100%;
     height: 416px;
     object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .partner-heading {
+    font-size: 2.25rem;
+    font-weight: 600;
+  }
+  .partner-heading-block aside {
+    padding: 3rem 1rem;
+    text-align: center;
+    max-width: 100%;
   }
 }
