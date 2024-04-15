@@ -16,7 +16,8 @@ import RootLayout from "./Pages/Root";
 import Other from "./Pages/Other/index";
 import Team from "./Pages/Our-Team";
 import Termsofuse from "./Pages/Terms-of-use";
-import Jobs from "./Pages/Jobs-opening/jobs.jsx";
+//import Jobs from "./Pages/Jobs-opening/jobs.jsx";
+import Jobs from "./Pages/Job-Openings/Jobs";
 import LivingwithNf from "./Pages/Living-with-NF/index"
 import EEOTest from "./Pages/Term-of-use-EEO-test-page/index"
 // import Other from "./Pages/Other/index";
@@ -38,6 +39,7 @@ function App() {
         { path: "/other", element: <Other /> },
         { path: "/terms-of-use", element: <Termsofuse /> },
         { path: "/eeotest", element: <EEOTest /> },
+       // { path: "/job-openings", element: <Jobs/>},
         { path: "/job-openings", element: <Jobs/>},
         { path: "/livingwith-nf", element: <LivingwithNf/>}
         // { path: "*", element: <Other /> },
