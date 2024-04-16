@@ -25,12 +25,9 @@ const Header = () => {
 
           <h1 className="openings-title-h1">Career Opportunities</h1>
           <h3 className="openings-title-h3">
-          <Link
-          className="grid-title link-text"
-                to="/eeotest"
-              >
-                 Equal Employment Opportunity (EEO) Policy
-              </Link>
+            <Link className="grid-title link-text" to="/eeotest">
+              Equal Employment Opportunity (EEO) Policy
+            </Link>
           </h3>
         </div>
       </div>
