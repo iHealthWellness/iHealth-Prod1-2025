@@ -10,9 +10,9 @@ const Hero = () => {
   return (
     <section className="hero-container">
       <section className="hero-survey-banner">
-        <p className="SN-D-P-20">
-          Share your strength story for iHealth Wellness feature;{" "}
-          <span className="take-survey-span"><a href="https://forms.gle/QAiHQcgtvqfjFtYe6" target="_blank">submit here!</a></span>
+        <p className="SN-D-T-M-P-16">
+          You are OUR hero, and we would love to hear your NF story. {" "}
+          <span className="take-survey-span"><a href="https://forms.gle/QAiHQcgtvqfjFtYe6" target="_blank">Submit your Story.</a></span>
         </p>
         {/* <p className="SN-D-P-20">
           You are OUR hero, and we would love to hear your NF story.{" "}
@@ -26,8 +26,12 @@ const Hero = () => {
             Submit your Story.
           </span>
         </p> */}
-        <a href="" target=""></a>
       </section>
+        <aside className="second-banner SN-D-T-M-P-16">
+          <div className="blue-banner"></div>
+          <p>We're a community-based organization offering health-related programs free to patients!</p>
+          <div className="blue-banner"></div>
+        </aside>
       <div className="hero-container-inner">
         <div className="hero-heading-container">
           <h3 className="hero-heading-h3">
