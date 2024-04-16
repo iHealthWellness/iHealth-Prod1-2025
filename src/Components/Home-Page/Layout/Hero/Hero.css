@@ -90,6 +90,42 @@
   padding-bottom: 1rem;
 }
 
+.second-banner {
+  background-color: #d1ecff;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.second-banner > div:first-child {
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+.second-banner > div:last-child {
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.blue-banner {
+  background-color: #07235b;
+  width: 15%;
+  height: 2rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .second-banner > div {
+    display: none;
+  }
+
+  .second-banner {
+    justify-content: center;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+  }
+}
+
 @media only screen and (max-width: 480px) {
   .hero-survey-banner {
     font-size: 1rem;
