@@ -1,0 +1,129 @@
+:root{
+  --light-gray-color:#f0f7fd;
+  --gray-color:#f7f7f74d;
+  --dark-blue-color:#07235b;
+  --light-blue-colors:#0d99ff;
+  --dark-red-color:#c33418;
+  --secondary-color: #858ead;
+}
+
+.store-singleProduct{
+  position: relative;
+  background-color: var(--light-gray-color);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem;
+  scroll-snap-align: start;
+}
+div.store-singleProducts-container{
+  width: 98%;
+  max-width: 1216px;
+  padding: 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.store-singleProducts-container .breadcrumb{
+  padding: 0.8rem 1.3rem;
+  list-style: none;
+  margin-top: 1.5rem;
+}
+    
+.store-singleProducts-container  .breadcrumb-item{
+  display: inline;
+  font-size: 1.1rem;
+}
+.store-singleProducts-container  .breadcrumb-item span{
+  color: var(--dark-blue-color);
+}
+
+.store-singleProducts-container .breadcrumb li+li:before{
+  padding: 0.5rem;
+  content: ">";
+  color: var(--dark-blue-color);
+}
+
+.store-singleProducts-info-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem 0.8rem;
+
+}
+.store-singleProducts-info-container img{
+  max-width: 400px;
+  max-height: 350px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.store-singleProducts-info h1{
+  font-size: 1.4rem;
+  text-wrap: wrap;
+  font-weight: bold;
+  color: var(--dark-blue-color);
+}
+.store-singleProducts-info p.dollarsAmount{
+  font-size: 1.4rem;
+  color: var(--secondary-color);
+  margin: 1rem 0rem;
+}
+.store-singleProducts-info p.description{
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  color: var(--dark-blue-color);
+  margin-bottom: 1rem;
+}
+.store-singleProducts-amount{
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.store-singleProducts-amount h4{
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--dark-blue-color);
+  text-transform: capitalize;
+  
+}
+.store-singleProducts-amount select{
+    width: 80%;
+    padding: 0.8rem 1.5rem;
+    margin-bottom: 2rem;
+    outline: none;
+    border-radius: 0.8rem;
+    border: none;
+    color: var(--dark-blue-color);
+    font-size: 1.3rem;
+    background-color: white;
+    box-shadow: 1px 1px 4px var(--secondary-color);
+}
+.store-singleProducts-cartBtn button{
+    padding: 1rem 1.8rem;
+    border: none;
+    margin-bottom: 2rem;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    color: var(--light-gray-color);
+    background-color: var(--dark-blue-color);
+    font-size: 1.2rem;
+    transition: all 0.3s;
+    text-align: center;
+}
+@media (min-width:800px) {
+  .store-singleProducts-info-container{
+    flex-direction: row;
+    margin: 3rem 1rem;
+  }
+  .store-singleProducts-info {
+    padding: 2rem;
+  }
+  
+}

@@ -1,5 +1,5 @@
 import "./index.css";
-import joinVideo from 'src/Assets/Images/Join2.mp4';
+import joinVideo from "src/Assets/Images/Join2.mp4";
 
 const Team = () => {
   return (
@@ -9,15 +9,15 @@ const Team = () => {
       </h2>
 
       <h3 className="team-heading-h3 desktop">
-        As a community member, you'll come together with others living with your
-        condition to support each other, learn from each other, inspire each
-        other, to feel a sense of fellowship, safety and belonging together.
+        Meet others who understand what it's like living with your condition. As
+        a community member, you'll come together in a safe space to support,
+        learn from, and inspire each other.
       </h3>
 
       <div className="team-bottom-block">
         <div className="team-video-card">
           <video autoPlay muted loop playsInline className="team-video">
-            <source src={joinVideo} type="video/mp4"  />
+            <source src={joinVideo} type="video/mp4" />
           </video>
         </div>
 
@@ -29,11 +29,13 @@ const Team = () => {
             together.
           </p>
           <div className="team-join-card-inner">
-            <h2 className="team-join-heading">Join NF Community</h2>
+            <h2 className="team-join-heading">
+              Join your iHealth360 Community Hub
+            </h2>
             <p className="team-join-slogan">
-              Connect with other people. Share your story.
+              Connect with others who understand and share your story.Join the
+              conversation today.
             </p>
-            <p className="team-join-slogan">Join the discussion today.</p>
             <a
               className="team-join-btn"
               onClick={() => {

@@ -31,6 +31,10 @@
   object-fit: cover;
 }
 
+.partner-img-stack-top {
+  object-position: center right;
+}
+
 @media only screen and (min-width: 1024px) {
   .partner-img-container {
     width: 50%;

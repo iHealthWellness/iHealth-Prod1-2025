@@ -6,6 +6,7 @@ import PersonSearchOutlinedIcon from "@mui/icons-material/PersonSearchOutlined";
 import { Button } from "@mui/material";
 import PinDropIcon from "@mui/icons-material/PinDrop";
 import ProviderServices from "src/Services/provider";
+import { stateData } from "../../../../Constants/HomePage/StateData";
 
 import "./index.css";
 import ProviderCheckbox from "./ProviderCheckbox";
@@ -20,6 +21,7 @@ const Provider = () => {
   const [stateValue, setStateValue] = useState("");
   const [acceptingNewPatients, setAcceptingNewPatients] = useState(false);
   const [treatsChildren, setTreatsChildren] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   const GetLocationInfo = () => {
     navigator.geolocation.getCurrentPosition(
@@ -28,20 +30,57 @@ const Provider = () => {
     );
   };
 
+  const handleLoading = (loading) => {
+    setIsLoading(loading);
+  };
+
   useEffect(() => {
     const fetchProviders = async () => {
-      try {
-        const diseaseRes = await ProviderServices.handleGetAllDisease();
-        const specialtyRes = await ProviderServices.handleGetAllSpeciality();
-        const stateRes = await ProviderServices.handleGetAllState();
+      const cache = {
+        diseases: localStorage.getItem("diseases"),
+        specialities: localStorage.getItem("specialities"),
+        states: localStorage.getItem("states"),
+      };
 
-        setDiseases(diseaseRes.data);
-        setStates(stateRes.data);
-        setSpecialities(specialtyRes.data);
-      } catch (e) {
-        console.log(e);
+      if (cache.diseases && cache.specialities && cache.states) {
+        // Data is available in cache
+        setDiseases(JSON.parse(cache.diseases));
+        setSpecialities(JSON.parse(cache.specialities));
+        setStates(cache.states.split(","));
+      } else {
+        // Data needs to be fetched
+        setIsLoading(true);
+        // Extract state names (full names) from stateData
+        const stateOptions = stateData.map(
+          (stateObj) => Object.values(stateObj)[0]
+        );
+        try {
+          const [diseaseRes, specialtyRes, stateRes] = await Promise.all([
+            ProviderServices.handleGetAllDisease(),
+            ProviderServices.handleGetAllSpeciality(),
+            ProviderServices.handleGetAllState(),
+          ]);
+
+          setDiseases(diseaseRes.data);
+          setSpecialities(specialtyRes.data);
+          setStates(stateRes.data);
+
+          // Cache the data
+          localStorage.setItem("diseases", JSON.stringify(diseaseRes.data));
+          localStorage.setItem(
+            "specialities",
+            JSON.stringify(specialtyRes.data)
+          );
+          // localStorage.setItem("states", JSON.stringify(stateRes.data));
+          localStorage.setItem("states", stateOptions);
+        } catch (e) {
+          console.log(e);
+        } finally {
+          setIsLoading(false);
+        }
       }
     };
+
     fetchProviders();
   }, []);
 
@@ -78,6 +117,7 @@ const Provider = () => {
                 label="Disease"
                 value={diseaseValue}
                 onInputChange={setDiseaseValue}
+                loading={isLoading}
               />
               {/* <ProviderCheckbox
                 label="Accepting New Patients"
@@ -91,6 +131,7 @@ const Provider = () => {
                 label="Specialties"
                 value={specialtyValue}
                 onInputChange={setSpecialtyValue}
+                loading={isLoading}
               />
               {/* <ProviderCheckbox
                 label="Treats Children"
@@ -104,6 +145,7 @@ const Provider = () => {
                 label="State"
                 value={stateValue}
                 onInputChange={setStateValue}
+                loading={isLoading}
               />
               <Button
                 variant="text"

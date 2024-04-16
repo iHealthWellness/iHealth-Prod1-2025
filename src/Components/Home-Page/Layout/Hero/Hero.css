@@ -7,7 +7,7 @@
 
 .hero-container-inner {
   width: 90%;
-  padding: 2rem 0;
+  /* padding: 2rem 0; */
   padding-bottom: 0;
 }
 
@@ -16,6 +16,13 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+
+.take-survey-span a {
+  text-decoration: none;
+  cursor: pointer;
+  color: rgba(3, 134, 208, 1);
+  font-weight: 700;
 }
 
 .hero-heading-h3 {
@@ -60,7 +67,47 @@
   display: block;
 }
 
-@media only screen and (min-width: 480px) and (max-width: 1023px) {
+.take-survey-span {
+  text-decoration: underline;
+  cursor: pointer;
+  color: rgba(3, 134, 208, 1);
+  font-weight: 700;
+}
+
+.hero-survey-banner {
+  background-color: rgb(148, 212, 255);
+  padding: 0.63rem 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* .hero-survey-banner p:nth-child(1) {
+  padding-bottom: 1rem;
+} */
+
+.provider-heading {
+  margin-top: auto;
+  padding-bottom: 1rem;
+}
+
+@media only screen and (max-width: 480px) {
+  .hero-survey-banner {
+    font-size: 1rem;
+  }
+  .hero-container-inner h2.provider-heading {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 1024px) {
+  .hero-container-inner h2.provider-heading {
+    display: none;
+  }
+
+  .hero-survey-banner {
+    font-size: 1.2rem;
+  }
+
   .hero-heading-h3 {
     font-size: 1.5rem;
     font-weight: 400;
@@ -105,11 +152,13 @@
   .hero-container-inner {
     display: flex;
     max-width: 1216px;
+    justify-content: space-between;
   }
 
   .hero-heading-container {
-    width: 60%;
+    width: 50%;
     justify-content: center;
+    margin-top: 5rem;
   }
 
   .hero-heading-h3 {
@@ -138,7 +187,7 @@
 
   .hero-heading-h4 {
     color: #07235b;
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 700;
     line-height: 120%;
   }

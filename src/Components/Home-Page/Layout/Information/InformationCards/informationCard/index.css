@@ -15,6 +15,13 @@
   border-top-right-radius: 1.5rem;
 }
 
+.information-card-container
+  .information-card:nth-child(2)
+  .information-card-heading-block
+  .information-card-heading {
+  color: #07235b;
+}
+
 .information-card-icon-box {
   width: 50px;
   height: 50px;
@@ -39,8 +46,6 @@
 .information-card-listitem a:hover {
   text-decoration: underline; /* Adds an underline on individual link hover */
 }
-
-
 
 .information-card-icon {
   width: 100%;
@@ -75,6 +80,38 @@
   color: #fff;
 }
 
+.information-card-container
+  .information-card:nth-child(2):hover
+  .information-card-list,
+.information-card-container
+  .information-card:nth-child(2):hover
+  .information-card-link-block {
+  background-color: #94d4ff;
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
+  border-bottom: none;
+}
+
+.information-card-container
+  .information-card:nth-child(2):hover
+  .information-card-link {
+  color: rgba(0, 45, 153, 0.5);
+}
+
+.information-card-container
+  .information-card:nth-child(2):hover
+  .information-card-list
+  .information-card-listitem
+  a,
+.information-card-container
+  .information-card:nth-child(2):hover
+  .information-card-listitem-span,
+.information-card-container
+  .information-card:nth-child(2):hover
+  .information-card-link {
+  color: rgba(6, 39, 88, 1);
+}
+
 .information-card-listitem {
   padding-bottom: 1rem;
   font-size: 1rem;
@@ -82,6 +119,9 @@
   line-height: 120%;
 }
 
+.information-card-container
+  .information-card:nth-child(2):hover
+  .information-card-listitem-span,
 .information-card-listitem-span {
   color: rgba(0, 45, 153, 0.5);
 }

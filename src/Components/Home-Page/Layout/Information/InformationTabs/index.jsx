@@ -25,7 +25,6 @@ const InformationTabs = () => {
         ))}
       </div> */}
 
-
     </div>
   );
 };

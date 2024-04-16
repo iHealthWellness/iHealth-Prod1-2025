@@ -3,7 +3,6 @@ import React from "react";
 import { NavLink, Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
-
 //Import Styles
 import "./Navbar.css";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
@@ -17,8 +16,6 @@ import NavDropdownButton from "./NavDropdown";
 import Login from "../UserAuthentication/Login/Login";
 import UnderConstruction from "src/Components/Under-Construction/UnderConstruction";
 import ToTopBtn from "src/Components/About-Page-Layout/TotopBtn";
-
-
 
 /* 
   ===========================================================
@@ -96,16 +93,13 @@ const MenuList = () => {
         },
       ],
     },
-    
+
     // {
-      
+
     //   title: "Stories of Strength",
     //   url: "/services",
     //   className: "nav-services" ,
-      
-      
-      
-      
+
     //   subMenu: [
     //     {
     //       title: "Share Your Story",
@@ -125,14 +119,17 @@ const MenuList = () => {
     //     },
     //   ],
     // },
-    {
-      title: "Stories of Strength",
-      url: "/",
-      className: "nav-services",
-      onClick: () => {
-        document.querySelector("#UnderConst-wrapper").style.display = "flex";
-      }
-    },
+
+    //BUG: STORIES OF STRENGHT COMMENTED BY DAVID T. 04/06/2024
+
+    // {
+    //   title: "Stories of Strength",
+    //   url: "/",
+    //   className: "nav-services",
+    //   onClick: () => {
+    //     document.querySelector("#UnderConst-wrapper").style.display = "flex";
+    //   }
+    // },
 
     {
       title: "Ways to Give",
@@ -165,6 +162,10 @@ const MenuList = () => {
         },
       ],
     },
+    {
+      title: "Store",
+      url: "/store",
+    },
   ];
 
   return (
@@ -173,10 +174,10 @@ const MenuList = () => {
         <li className="nav-links-listitem nav-dropdown" key={menu.title}>
           <NavLink
             to={menu.url}
-            className={({ isActive }) => (
-              `nav-links ${menu.className}` + 
+            className={({ isActive }) =>
+              `nav-links ${menu.className}` +
               (isActive ? `nav-links actives ${menu.className}` : "")
-            )}
+            }
             onClick={menu.onClick ? menu.onClick : null}
           >
             {menu.title}
@@ -201,22 +202,51 @@ const MenuList = () => {
 const SignUpSignIn = () => {
   return (
     <li className="nav-links-listitem nav-dropdown">
-      <NavLink  className="nav-links nav-signin" >
-        <AccountCircleIcon className="circle-icon"  sx={{ fontSize: 32, marginLeft: 0 }} sm={{ fontSize: 48 }} />
-        
-        <a onClick={() => {document.querySelector("#UnderConst-wrapper").style.display = "flex";}} href="#">
-        <span className="nav-signin-span">Sign In or Sign Up</span>
+      <NavLink className="nav-links nav-signin">
+        <AccountCircleIcon
+          className="circle-icon"
+          sx={{ fontSize: 32, marginLeft: 0 }}
+          sm={{ fontSize: 48 }}
+        />
+
+        <a
+          onClick={() => {
+            document.querySelector("#UnderConst-wrapper").style.display =
+              "flex";
+          }}
+          href="#"
+        >
+          <span className="nav-signin-span">Sign In or Sign Up</span>
         </a>
       </NavLink>
       <div className="nav-dropdown-content ">
         {/* <a onClick={() => {document.querySelector("#Login-Main-Container").style.display = "flex";}} href="#"> */}
-        <a onClick={() => {document.querySelector("#UnderConst-wrapper").style.display = "flex";}} href="#">
+        <a
+          onClick={() => {
+            document.querySelector("#UnderConst-wrapper").style.display =
+              "flex";
+          }}
+          href="#"
+        >
           Sign In
         </a>
-        <a onClick={() => {document.querySelector("#UnderConst-wrapper").style.display = "flex";}} href="#">
+        <a
+          onClick={() => {
+            document.querySelector("#UnderConst-wrapper").style.display =
+              "flex";
+          }}
+          href="#"
+        >
           Sign Up Now
         </a>
-        <a id="12" onClick={() => {document.querySelector("#UnderConst-wrapper").style.display = "flex";}} href="#">
+        <a
+          id="12"
+          onClick={() => {
+            document.querySelector("#UnderConst-wrapper").style.display =
+              "flex";
+          }}
+          href="#"
+        >
           Donate as Guest
         </a>
       </div>
@@ -230,43 +260,41 @@ const Navbar = () => {
 
   return (
     <>
-    <nav className="nav-container">
-      <div className="nav-inner-container">
-        <NavDropdownButton />
-        <div className="nav-links-container">
-          {/* NavLogo */}
-          <NavLogo />
+      <nav className="nav-container">
+        <div className="nav-inner-container">
+          <NavDropdownButton />
+          <div className="nav-links-container">
+            {/* NavLogo */}
+            <NavLogo />
 
-          <div className="nav-links-block">
-            {/* Menu List*/}
-            <MenuList />
+            <div className="nav-links-block">
+              {/* Menu List*/}
+              <MenuList />
 
-            <ul className="nav-links-list">
-              {/* SignIn & Signup */}
-              <SignUpSignIn />
+              <ul className="nav-links-list">
+                {/* SignIn & Signup */}
+                <SignUpSignIn />
 
-              {/* Donate Link */}
-              <li className="nav-links-listitem">
-                <NavLink to="/donate" className="nav-links nav-donate">
-                  Donate
-                </NavLink>
-              </li>
-            </ul>
+                {/* Donate Link */}
+                <li className="nav-links-listitem">
+                  <NavLink to="/donate" className="nav-links nav-donate">
+                    Donate
+                  </NavLink>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
+      </nav>
 
-    {/* Login Component ** This component should be executed here So that from all components can be reachable !!! */}
-    <Login />
+      {/* Login Component ** This component should be executed here So that from all components can be reachable !!! */}
+      <Login />
 
-    {/* Coming Soon/Under Construction Component ** This component should be executed here So that from all components can be reachable !!! */}
-    <UnderConstruction />
-    
-    {/* This component for Go To top of the page button  */}
-    <ToTopBtn />
+      {/* Coming Soon/Under Construction Component ** This component should be executed here So that from all components can be reachable !!! */}
+      <UnderConstruction />
 
-
+      {/* This component for Go To top of the page button  */}
+      <ToTopBtn />
     </>
   );
 };

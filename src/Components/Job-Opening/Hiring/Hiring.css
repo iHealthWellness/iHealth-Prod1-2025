@@ -1,0 +1,182 @@
+.openings-tab {
+  background-color: #dce8f2;
+}
+
+.layer-tab {
+  width: 100%;
+}
+.layer-tab-one {
+  width: 47%;
+}
+
+.layer-tab-two {
+  width: 47%;
+}
+
+.link-text {
+  text-decoration: underline;
+}
+
+.flex {
+  display: flex;
+  gap: 6%;
+}
+.flex-tab {
+  display: flex;
+  margin-bottom: 20px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  justify-content: space-between;
+  padding: 10px 0 10px 0;
+}
+
+.Text-header {
+  cursor: pointer;
+  width: 100%;
+  color: var(--SN-Primary-Headings-07235B, #07235b);
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 143%;
+}
+.grid-title {
+  width: 50%;
+  color: var(--SN-Primary-Headings-07235B, #07235b);
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+}
+.grid-text {
+  width: 35%;
+  color: var(--SN-Primary-Headings-07235B, #07235b);
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+}
+.job-body {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.text-tab-flow2 {
+  width: 100% !important;
+  height: 100vh;
+}
+.career-tab {
+  padding-top: 50px;
+}
+
+/*RESPONSIVENESS*/
+
+@media screen and (min-width: 481px) and (max-width: 910px) {
+  .layer-tab-one {
+    width: 100%;
+  }
+
+  .layer-tab-two {
+    width: 100%;
+  }
+  .flex-tab {
+    display: flex;
+    gap: 0;
+  }
+  .Text-header {
+    width: 100%;
+    color: var(--SN-Primary-Headings-07235B, #07235b);
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 143%;
+  }
+  .flex {
+    flex-direction: column;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    justify-content: space-between;
+  }
+  .grid-title {
+    width: 40%;
+    color: var(--SN-Primary-Headings-07235B, #07235b);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+  }
+  .grid-text {
+    width: 40%;
+    color: var(--SN-Primary-Headings-07235B, #07235b);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    margin-left: auto;
+  }
+  .flex {
+    padding: 20px;
+    /* flex-wrap: wrap ; */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .layer-tab-one {
+    width: 100%;
+  }
+
+  .layer-tab-two {
+    width: 100%;
+  }
+  .flex {
+    flex-direction: column;
+  }
+  .flex-tab {
+    display: flex;
+    gap: 0;
+  }
+  .Text-header {
+    width: 100%;
+    color: var(--SN-Primary-Headings-07235B, #07235b);
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 143%;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    justify-content: space-between;
+  }
+
+  .grid-title {
+    width: 50%;
+    color: var(--SN-Primary-Headings-07235B, #07235b);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+  }
+  .grid-text {
+    width: 30%;
+    color: var(--SN-Primary-Headings-07235B, #07235b);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+  }
+  .flex {
+    padding: 20px;
+  }
+}

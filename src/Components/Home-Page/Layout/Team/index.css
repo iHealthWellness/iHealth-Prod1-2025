@@ -78,7 +78,7 @@
   cursor: pointer;
 }
 /*tablet view */
-@media only screen and (min-width: 480px) and (max-width: 1023px) {
+@media only screen and (min-width: 480px) and (max-width: 1024px) {
   .team-join-card {
     display: flex;
     flex-direction: column;

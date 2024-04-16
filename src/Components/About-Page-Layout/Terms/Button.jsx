@@ -5,7 +5,7 @@ const Button = ({ type, icon, onClick, className }) => {
 
     return (
 
-        <button type={type} className={clsx('button', className)} onClick={onClick}>
+        <button type={type} className={clsx('terms-button', className)} onClick={onClick}>
             <img src={icon} alt="Toogle" />
         </button>
     )

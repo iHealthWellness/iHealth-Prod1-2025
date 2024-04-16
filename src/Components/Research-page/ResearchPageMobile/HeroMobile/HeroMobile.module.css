@@ -1,0 +1,21 @@
+@media screen and (max-width: 480px) {
+  .mainSection {
+    background-color: #fff;
+    grid-column: 1/ -1;
+    padding: 1rem;
+  }
+  .mainSection header {
+    display: grid;
+    gap: 0.5rem;
+  }
+
+  .mainSection header h1 {
+    color: var(--SN-Primary-Headings-07235B, #07235b);
+  }
+  .mainSection header h2 {
+    color: rgba(13, 153, 255, 1);
+  }
+  .afterBreak {
+    display: block;
+  }
+}

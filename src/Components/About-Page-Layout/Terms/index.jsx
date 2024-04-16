@@ -41,10 +41,10 @@ const Terms = () => {
         <div className="terms-textlayout">
 
           <p>
-            We connect patients with complex diseases to high-quality medical
-            and wellness providers and resources through an integrated platform,
-            empowering patients to take charge of their health while fostering
-            collaboration among all stakeholders to improve healthcare outcomes.
+          Welcome to our website!  We connect patients with complex diseases to high-quality
+          medical and wellness providers and resources through an integrated platform, 
+          empowering patients to take charge of their health while fostering collaboration 
+          among all stakeholders to improve healthcare outcomes.
           </p><br />
 
           <p>
@@ -93,7 +93,9 @@ const Terms = () => {
                   Protecting your privacy is important to us. This Privacy Policy
                   outlines how we collect, use, and protect your personal information
                   when you use our website. By using our website, you agree to the
-                  terms of this Privacy Policy. We collect personal information such
+                  terms of this Privacy Policy. 
+                  
+                  We collect personal information such
                   as your name and email address when you sign up for our services. We
                   use this information to provide you with the services you have
                   requested and to communicate with you about our services. We do not
@@ -109,6 +111,10 @@ const Terms = () => {
                   third-party services, such as Google Analytics, to analyze website
                   traffic and usage. These third-party services may collect and use
                   your information in accordance with their own privacy policies.
+
+                  iHealth and Wellness reserves the right to change this policy whenever 
+                  deemed necessary and without prior notification. Should changes be made, 
+                  they will be posted on this Privacy Notice with the date of revision.
                 </p>
               </div>)}
 
@@ -176,13 +182,14 @@ const Terms = () => {
             </div>
 
             {showContent.disclaimer && (<div>
-              <p onClick={toggleContentVisible('disclaimer')}>The information provided may come from different sources, including but
-                not limited to information published on the open web and public datasets, to enhance and improve our services, products,
-                and user experience. This data may include publicly available information such as user-generated content, publicly shared
-                social media posts, government records, and other publicly accessible data. We will use such public data in accordance with
-                our Privacy Policy, and we will make reasonable efforts to ensure that the data collected from public sources is accurate,
-                relevant, and up-to-date. The ongoing utilization of our services constitutes your clear and unambiguous agreement to
-                the gathering and utilization of data from publicly accessible sources."</p>
+              <p onClick={toggleContentVisible('disclaimer')}>
+              The information provided on this website is for informational purposes only and is not intended to be a substitute for professional medical advice,
+               diagnosis, or treatment. The website owner does not endorse or recommend any specific healthcare provider listed on the site, and is not responsible
+                for the quality or performance of any healthcare provider listed on the site. The website owner does not guarantee the accuracy, completeness,
+                 or timeliness of the information provided on the site. Users are encouraged to verify the credentials and qualifications of any healthcare
+                  provider listed on the site before making an appointment. By using this website, users agree to hold the website owner harmless from any claims
+                   or damages arising from the use of the information provided on the site.
+              </p>
             </div>)}
 
           </div>
@@ -269,8 +276,7 @@ const Terms = () => {
                   relationship.ANY ARBITRATION UNDER THESE TERMS WILL ONLY BE ON AN INDIVIDUAL BASIS; CLASS ARBITRATIONS, CLASS ACTIONS, REPRESENTATIVE ACTIONS, AND CONSOLIDATION WITH OTHER ARBITRATIONS ARE NOT PERMITTED. YOU WAIVE ANY RIGHT TO HAVE YOUR CASE DECIDED BY A JURY AND YOU WAIVE ANY RIGHT TO PARTICIPATE IN A CLASS ACTION AGAINST iHEALTH AND WELLNESS (THE “ORGANIZATION”).
                   If any provision of this arbitration agreement is found unenforceable, the unenforceable provision will be severed, and the remaining arbitration terms will be enforced (but in no case will there be a class or representative arbitration). Before an arbitration is commenced, you or iHealth and Wellness (the “Organization”) must first send to the other party a written Notice (“Notice”).
                   Any Notice to iHealth and Wellness (the “Organization”) should
-                  be sent by email to onehealthconnectapp@gmail.com AND certified mail to: iHealth and Wellness Foundation,
-                  Inc., 115 Broadway St. Fl 5,New York,NY 10006, USA. Any Notice sent to you will be sent to the address on file for your account.
+                  be sent by email to  legal-team@ihealthwellness.one AND certified mail to: iHealth and Wellness Foundation, Inc. - C/O GOOD COUNSEL SERVICES, INC. 106 West 32nd Street, 2nd Floor, Office 138 New York, NY 10001, United States. Any Notice sent to you will be sent to the address on file for your account.
                   The Notice must: (i) include your name and account number; (ii) describe the nature and basis of the Dispute; and (iii) set forth the specific relief sought. Both parties agree that they will attempt to resolve a dispute through an informal negotiation within thirty (30) days from the date the Notice is sent. After that thirty (30) day period and not before, either party may commence arbitration.
                   If we are not able to resolve the Dispute by informal negotiation or, as provided below, in a small claims court, all Disputes will
                   be resolved finally and exclusively by binding individual arbitration with a single arbitrator (the “Arbitrator”) administered
@@ -290,7 +296,7 @@ const Terms = () => {
           <div className="Binding-tab">
             <h2>LIMITATION OF LIABILITY</h2>
 
-            <p>NEITHER iHEALTH AND WELLNESS (THE “ORGANIZATION”) NOR ANY OTHER PARTY INVOLVED IN CREATING, PRODUCING, OR DELIVERING THE SERVICES WILL BE LIABLE FOR ANY INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES, INCLUDING LOST PROFITS, LOSS OF DATA OR GOODWILL, SERVICE INTERRUPTION, COMPUTER DAMAGE OR SYSTEM FAILURE OR THE COST OF SUBSTITUTE SERVICES ARISING OUT OF OR IN CONNECTION WITH THESE TERMS OR FROM THE USE OF OR INABILITY TO USE THE SERVICES, WHETHER BASED ON
+            <p>NEITHER iHEALTH AND WELLNESS (THE “ORGANIZATION”) NOR ANY OTHER PARTY (AND THE HEIRS, EXECUTORS AND ADMINISTRATORS OF SUCH PERSON) INVOLVED IN CREATING, PRODUCING, OR DELIVERING THE SERVICES WILL BE LIABLE FOR ANY INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES, INCLUDING LOST PROFITS, LOSS OF DATA OR GOODWILL, SERVICE INTERRUPTION, COMPUTER DAMAGE OR SYSTEM FAILURE OR THE COST OF SUBSTITUTE SERVICES ARISING OUT OF OR IN CONNECTION WITH THESE TERMS OR FROM THE USE OF OR INABILITY TO USE THE SERVICES, WHETHER BASED ON
               WARRANTY, CONTRACT, TORT (INCLUDING NEGLIGENCE), PRODUCT LIABILITY OR ANY OTHER LEGAL THEORY, AND WHETHER OR NOT iHEALTH AND WELLNESS (THE “ORGANIZATION”) HAS BEEN INFORMED OF THE POSSIBILITY OF SUCH DAMAGE, EVEN IF A LIMITED REMEDY SET FORTH HEREIN IS FOUND TO HAVE FAILED OF ITS ESSENTIAL PURPOSE. SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES, SO THE ABOVE LIMITATION MAY NOT APPLY TO YOU.
 
               IN NO EVENT WILL iHEALTH AND WELLNESS (THE “ORGANIZATION”)’S TOTAL LIABILITY ARISING OUT OF OR IN CONNECTION WITH THESE TERMS OR FROM THE USE OF OR INABILITY TO USE THE SERVICES OR CONTENT EXCEED THE AMOUNTS YOU HAVE PAID TO iHEALTH AND WELLNESS (THE “ORGANIZATION”) FOR USE OF THE SERVICES OR CONTENT OR ONE HUNDRED DOLLARS ($100), IF YOU HAVE NOT HAD ANY PAYMENT OBLIGATIONS TO iHEALTH AND WELLNESS (THE “ORGANIZATION”), AS APPLICABLE. THE EXCLUSIONS AND LIMITATIONS OF DAMAGES SET FORTH ABOVE ARE FUNDAMENTAL ELEMENTS OF THE BASIS OF THE BARGAIN BETWEEN iHEALTH AND WELLNESS (THE “ORGANIZATION”) AND YOU.

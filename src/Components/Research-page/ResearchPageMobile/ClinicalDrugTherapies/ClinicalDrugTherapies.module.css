@@ -1,0 +1,59 @@
+@media screen and (max-width: 480px) {
+  .mainSection {
+    color: var(--SN-Primary-Headings-07235B, #07235b);
+    padding: 1rem;
+    display: grid;
+    gap: 1rem;
+  }
+
+  .mainSection header :nth-child(1) {
+    padding-bottom: 0.5rem;
+  }
+
+  .afterBreak {
+    display: block;
+  }
+
+  .visibleContentStyle,
+  .hiddenContentStyle p,
+  .hiddenContentStyle a {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .hiddenContentStyle a {
+    color: var(--SN-Primary-Headings-07235B, #07235b);
+    text-decoration: none;
+    text-align: justify;
+    overflow: hidden;
+  }
+
+  .secondSection {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .accordionImg {
+    width: 100%;
+  }
+
+  .titleStyle {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 120%;
+    max-width: 80%;
+  }
+  .customAccordionSection {
+    border: 0.06rem solid rgb(217, 217, 217);
+    border-radius: 1rem;
+    background-color: rgb(230, 238, 245);
+    box-shadow: 0rem 0.13rem 0.25rem -0.13rem rgba(0, 0, 0, 0.1),
+      0rem 0.25rem 0.38rem -0.06rem rgba(0, 0, 0, 0.1);
+    padding: 1rem 01rem 0 1rem;
+  }
+
+  .customAccordionContainer {
+    padding-block: 1rem;
+  }
+}

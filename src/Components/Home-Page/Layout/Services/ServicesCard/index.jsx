@@ -7,7 +7,7 @@ const ServicesCard = ({ service }) => {
       <div className="services-hover">
         <h3 className="services-card-heading">{service.title}</h3>
         <p className="services-card-content">{service.content}</p>
-        <a
+        {/* <a
           className="services-link"
           onClick={() => {
             document.querySelector("#UnderConst-wrapper").style.display =
@@ -15,7 +15,7 @@ const ServicesCard = ({ service }) => {
           }}
         >
           Learn More &gt;
-        </a>
+        </a> */}
       </div>
     </div>
   );

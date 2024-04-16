@@ -11,7 +11,7 @@ import Massage from "src/Assets/Images/partner-massage.jpg";
 import ElectronicHealthRecord from "src/Assets/Images/partner-electronic-health-record.jpg";
 import Female from "src/Assets/Images/partner-female.jpg";
 import Spa from "src/Assets/Images/partner-spa.jpg";
-import Partnership from "src/Assets/Images/partner-partnership.jpg";
+import Partnership from "src/Assets/Images/partner-background.jpg";
 
 import "./index.css";
 import PartnerImageContainer from "./PartnerImageContainer";
@@ -20,18 +20,20 @@ const Partner = () => {
   return (
     <section id="Home-page-partner-container" className="partner-container">
       <div className="partner-heading-block">
-        <h2 className="partner-heading">
-          Discover Our Innovative Solutions for Medical and Wellness Practices,
-          Providers, and Health Systems
-        </h2>
-        <img
-          className="partnership-img"
-          src={Partnership}
-          alt="partnership image"
-        ></img>
+        <aside>
+          <h2 className="partner-heading">Partner with us</h2>
+          <p className="partner-paragraph">
+            We're building a home for the care of complex conditions
+          </p>
+        </aside>
       </div>
 
       <div className="partner-content-block mobile">
+        <div className="partner-img-block"></div>
+
+        <PartnerTextCard partner={Partners[0]} />
+      </div>
+      <div className="partner-content-block mobile second-block">
         <div className="partner-img-block">
           <img
             className="partner-mobile-img"
@@ -39,24 +41,13 @@ const Partner = () => {
             alt="female image"
           ></img>
         </div>
-
-        <PartnerTextCard partner={Partners[0]} />
-      </div>
-      <div className="partner-content-block mobile">
-        <div className="partner-img-block">
-          <img
-            className="partner-mobile-img"
-            src={ElectronicHealthRecord}
-            alt="female image"
-          ></img>
-        </div>
         <PartnerTextCard partner={Partners[1]} />
       </div>
       <div className="partner-content-block mobile">
-        <img className="partner-mobile-img" src={Baby} alt="baby image"></img>
+        <img className="partner-mobile-img" src={Heart} alt="heart"></img>
       </div>
 
-      <div className="partner-content-block tablet desktop">
+      <div className="partner-content-block tablet desktop first-block">
         <PartnerTextCard partner={Partners[0]} />
         <PartnerImageContainer
           leftImg={Female}
@@ -65,7 +56,7 @@ const Partner = () => {
         />
       </div>
 
-      <div className="partner-content-block tablet desktop desktop-reverse">
+      <div className="partner-content-block tablet desktop desktop-reverse second-block">
         <PartnerTextCard partner={Partners[1]} />
         <PartnerImageContainer
           leftImg={Heart}

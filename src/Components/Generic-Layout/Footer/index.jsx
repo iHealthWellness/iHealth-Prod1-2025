@@ -67,7 +67,7 @@ const Footer = () => {
             <p className="footer-address-heading">
               iHealth and Wellness Foundation, Inc.
             </p>
-            <p className="footer-address">106 West 32nd Street, 2nd Floor, Office 138, New York, NY 10001</p>
+            <p className="footer-address">New York, NY. USA.</p>
           </div>
           <div className="footer-subscribe-block">
             <p className="footer-subscribe-heading">STAY INFORMED:</p>
@@ -93,12 +93,13 @@ const Footer = () => {
                 return (
                   <a
                     className="footer-follow-link"
-                    // href={ele.url}
-                    onClick={() => {
-                      document.querySelector(
-                        "#UnderConst-wrapper"
-                      ).style.display = "flex";
-                    }}
+                    target="_blank"
+                    href={ele.url}
+                    // onClick={() => {
+                    //   document.querySelector(
+                    //     "#UnderConst-wrapper"
+                    //   ).style.display = "flex";
+                    // }}
                     key={`social-icon-${idx}`}
                   >
                     <img
@@ -120,10 +121,19 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-bottom">
-        <p className="footer-terms-right SN-M-P-16">
-          @2023 iHealth and Wellness Foundation, Inc. All rights reserved
-        </p>
 
+        <div className="footer-terms-center SN-M-P-16">
+          <div className="footer-terms">
+            <span>
+            Copyright © 2024 iHealth and Wellness Foundation, Inc. All rights reserved. iHealth and Wellness Foundation, Inc. is a 501 (c)(3) non-profit recognized by the IRS.
+            </span>
+            <span>
+              Tax ID Number: 93-1567099
+            </span>
+          </div>
+        </div>
+
+        <div className="language-select-cont">
         <Select
           value={selectedLanguage}
           onChange={handleChange}
@@ -144,7 +154,7 @@ const Footer = () => {
               color: "white",
             },
             "@media (max-width: 768px)": {
-              minWidth: "100px", // Adjust as needed
+              minWidth: "50px", // Adjust as needed
             },
             "@media (max-width: 576px)": {
               minWidth: "80px",
@@ -208,6 +218,7 @@ const Footer = () => {
             Deutsch
           </MenuItem>
         </Select>
+      </div>
       </div>
     </footer>
   );

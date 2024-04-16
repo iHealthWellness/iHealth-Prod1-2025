@@ -1,0 +1,22 @@
+.understandingnf-heading {
+  justify-self: start;
+  padding: 1.5rem;
+  color: #07235b;
+}
+
+.understandingnf-heading > p {
+  text-align: justify;
+}
+
+.understandingnf-heading h1 {
+  padding-bottom: 0.6rem;
+}
+
+@media screen and (max-width: 479px) {
+  .understandingnf-heading > * {
+    font-size: 1rem;
+  }
+  .understandingnf-heading {
+    padding: 0;
+  }
+}
