@@ -8,6 +8,10 @@
   transform: translateX(0);
 }
 
+.researchTitle h1 {
+  font-weight: 500;
+}
+
 .sectionContainer {
   display: grid;
   grid-template-columns: 1fr 1fr;
