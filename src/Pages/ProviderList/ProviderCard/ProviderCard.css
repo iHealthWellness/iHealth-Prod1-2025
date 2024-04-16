@@ -1,0 +1,244 @@
+.provider-card {
+  position: relative;
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px solid #8B9094;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  margin-right: 20px;
+  margin-bottom: -90px;
+}
+
+.provider-photo img {
+  display: flex;
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  object-position: center;
+  margin-top: -130%;
+}
+
+.provider-info {
+  flex-grow: 1;
+  padding-left: 30px;
+}
+
+.provider-hospital {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #000000;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-weight: 400;
+  line-height: 22.88px;
+}
+
+.provider-name {
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 33px;
+  text-align: left;
+  margin-bottom: 5px;
+  color: #07235B;
+}
+
+.provider-rating .stars {
+  color: gold;
+  font-size: 1em;
+}
+
+.provider-status .accepting-new {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+  padding: 2px 0px;
+  margin-right: 10px;
+}
+
+.provider-specialty {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #07235B;
+  /* border: 1px solid #8B9094; */
+  padding-bottom: 20px ;
+  display: flex;
+  /* align-items: center; */
+  max-width: 1000px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin-left: -120px;
+}
+
+.provider-specialty-title {
+  font-family: 'Arial', sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #07235B;
+  margin-left: -120px;
+  margin-top: 20px;
+
+}
+
+.Education {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 5px;
+  color: #07235B;
+}
+
+.provider-address {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+  color: #000000;
+  padding: 8px 2px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.provider-address .distance {
+  font-weight: 500;
+  margin-right: 5px;
+}
+
+.provider-contact .provider-phone {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border-radius: 20px;
+  background: #07235B;
+  color: #ffffff;
+  padding: 12px 35px;
+  text-decoration: none;
+}
+
+.provider-footer {
+  font-size: 0.8em;
+  color: #666666;
+  margin-top: 20px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 5px;
+  margin-right: 20px;
+}
+@media (max-width: 768px) {
+  .provider-card {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    width: auto;
+  }
+
+  .provider-photo img {
+    margin-top: 0;
+    width: 70px;
+    height: 70px;
+    margin-left: 110px;
+  }
+
+  .provider-info {
+    padding-top: 20px;
+  }
+
+  .provider-specialty,
+  .provider-specialty-title {
+    padding-left: 5px;
+  }
+
+  .provider-contact .provider-phone {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 60px;
+    width: 100%;
+    text-align: center;
+    padding: 10px 20px;
+  }
+
+  .provider-footer {
+    position: relative;
+    margin-top: 40px;
+    width: 100%;
+    margin-left: 60px;
+  }
+
+  .provider-specialty {
+    margin-left: 0;
+    padding: 0 10px;
+    word-wrap: break-word;
+  }
+
+  .provider-specialty-title {
+    margin-left: 0;
+    padding: 0 10px;
+    word-wrap: break-word;
+  }
+}
+
+@media (max-width: 480px) {
+  .provider-card {
+    margin: 10px;
+  }
+
+  .provider-specialty {
+    max-width: 100%;
+    overflow-wrap: break-word;
+  }
+
+  .provider-name,
+  .provider-hospital,
+  .provider-specialty,
+  .provider-address,
+  .provider-status .accepting-new,
+  .provider-specialty-title,
+  .Education,
+  .provider-contact .provider-phone {
+    font-size: 16px;
+  }
+
+  .provider-rating .stars {
+    font-size: 0.9em;
+  }
+
+  .provider-specialty {
+    flex-direction: column;
+    margin-left: 0;
+    padding-left: 5px;
+  }
+
+  .provider-specialty-title, 
+  .provider-address, 
+  .provider-status .accepting-new, 
+  .Education {
+    padding-left: 5px;
+  }
+}
+
+@media screen and (max-width: 428px) and (aspect-ratio: 19.5/9) {
+  .provider-card {
+    margin-right: 10px;
+    margin-left: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+  }
+
+  .provider-photo img {
+    width: 80px;
+    height: 80px;
+  }
+}
+

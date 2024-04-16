@@ -16,6 +16,8 @@ import RootLayout from "./Pages/Root";
 import Other from "./Pages/Other/index";
 import Team from "./Pages/Our-Team";
 import Termsofuse from "./Pages/Terms-of-use";
+import ProviderList from "./Pages/ProviderList/ProviderList.jsx";
+
 //import Jobs from "./Pages/Jobs-opening/jobs.jsx";
 import Jobs from "./Pages/Job-Openings/Jobs";
 import LivingwithNf from "./Pages/Living-with-NF/index"
@@ -30,6 +32,7 @@ function App() {
       children: [
         { index: true, element: <Home /> },
         { path: "/services", element: <Services /> },
+        { path: "/ProviderList", element: <ProviderList /> },
         { path: "/about-us", element: <Aboutus /> },
         { path: "/research", element: <Research /> },
         { path: "/sign-in", element: <Signin /> },

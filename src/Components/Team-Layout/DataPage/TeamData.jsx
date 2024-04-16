@@ -7,10 +7,11 @@ import Image4 from "src/Assets/Images/Elizabeth.png";
 import Image5 from "src/Assets/Images/Marilyn.png";
 import Image6 from "src/Assets/Images/Card.png";
 import Image7 from "src/Assets/Images/Chris.png";
-import Image8b from "src/Assets/Images/mala.png";
+import Image8b from "src/Assets/Images/olivia.png";
 import Image9 from "src/Assets/Images/hilda.png";
 import Image10 from "src/Assets/Images/mark.png";
 import Image11 from "src/Assets/Images/Michelle.png";
+import Image12 from "src/Assets/Images/Nathalie.png";
 
 const sasikaBio = `Sasika is the founder, Chief Executive Officer (CEO), and Chief Technology Officer (CTO) of iHealth and Wellness Foundation, Inc. --A former Wall Street technologist, she revolutionized enterprise-level web solutions at Prudential Financial, supporting Fixed Income Trading systems & Compliance systems, and PruFN.com with 20 million annual unique visitors. Now, she's disrupting healthcare technology. --At Aetna (a CVS Health Company), Sasika led the implementation of a powerful and interactive claims-driven Personal Health Record (PHR) system, serving 29.9 million individuals. This innovative solution provided members a comprehensive view of their health by integrating detailed, claims-driven information gathered across the health care spectrum - such as physician office, lab, diagnostic treatment and prescriptions. --Passionate about leveraging technology for better healthcare, Sasika established iHealth and Wellness Foundation, Inc. to improve the lives of individuals with complex diseases. Under her leadership, the foundation develops a platform that integrates with major Electronic Health Record (EHR) systems, while offering medical and wellness provider lookup, social networking, and patient advocacy services.--Sasika's contributions have earned her numerous awards in the tech industry and philanthropy, highlighting her dedication to improving lives through innovation. With a unique blend of expertise in technology and a deep understanding of the healthcare landscape, Sasika is dedicated to advancing medical and wellness care through disruptive and innovative solutions. Her visionary approach and commitment to improving lives make her a driving force behind the iHealth and Wellness Foundation's mission.--You'll often find Sasika indulging in her passions for hiking and cycling. Exploring new destinations and immersing herself in live music are also among her favorite pastimes.`;
 
@@ -68,12 +69,7 @@ As a security practitioner, Christophe is focused on helping businesses tackle t
 Christophe holds a Master of Science in Information Technology, Information Assurance, and Cybersecurity, a graduate certificate in Information Systems, and a bachelor's degree in Business Administration/Information Systems from Walden University. These include industry certifications like the CISSP, GSLC, AWS Security Specialization, and more.`;
 const bio9 = ` 
  	
-Dr. Mala Tudawe has an extensive background in medicine and is currently the Head of Haematology at Durdans Hospital Colombo, Sri Lanka. Here she has contributed greatly to advances in hematology diagnostics and treatment. Dr. Tudawe pioneered adult hemophilia care and total testing and treatment, bone marrow procedures, adult special hematology clinics, thrombophilia testing and treatment, full range testing of hemolytic anemia and treatment, and treatment of non-malignant chronic hematology disorders.
--- 
-Her impressive medical background includes Head of Department of Pathology at the National Hospital Sri Lanka (1997-2010), President of Sri Lanka college of Haematologists (2002-2003, 2008) and College of Pathologists of Sri Lanka (2010-2011), and Chairperson for Haematology- Sri Lanka Accreditation Board (2003-to date). 
-In addition to Dr. Tudawe’s professional career, she is also an avid philanthropist. She is involved in the Sri Lanka Medical association, WIN (Women in Need), consultant for the Sri Lanka army and police hospitals, and chairperson for ZISVAW (Zonta International Strategies for violence against women).
---
-Dr. Tudawe is an active member in the medical research field where she has published more than 40 articles as conference proceedings. She also has more than 20 articles published in the SL journal of Haematology, WHO publications, Journal of General Dental Practitioners, and Ceylon Medical Journal. Additionally, she has created more than 40 case presentations at medical conferences and academic sessions. She has special interests in hemostasis and thrombosis investigations, treatment, and management where she will continue to make an impact in the medical field.`;
+Dr. Olivia Begasse de Dhaem is a board-certified Neurologist and Headache Specialist. In addition to her clinical work, she is passionate about patient advocacy. She is Vice-Chair of the Global Patient Advocacy Coalition (GPAC), a member of the American Headache Society Advocacy Committee, and a member of the board of the Alliance for Headache Disorders Advocacy (AHDA). She is also Executive Editor of the Pain Medicine journal. She is a member of the International Headache Society Education Committee and is also on the committee for the organization of the Education in Headache for Healthcare Professionals in Africa (EHHPA). She is Co-Editor of the Oxford University Press pain series book “Headache What Do I Do Now.” She has given national and international talks on the topic of headache disorders in the workplace and is passionate about finding ways to support people with neurological diseases in the workforce.`;
 
 const bio10 = `Dalia Heci is a legal expert with extensive knowledge in international regulatory compliance.
 --
@@ -100,6 +96,22 @@ At Clorox, she created and built Clorox Disinfecting Wipes from an idea to a $10
 A versatile leader, Michelle specializes in helping purpose-driven organizations unlock new possibilities. In her roles as a fractional CMO, she has helped both online marketplaces and health and wellness organizations of all sizes grow exponentially. Michelle earned her B.S. in Economics from The Wharton School of the University of Pennsylvania and her M.B.A. from the Kellogg Graduate School of Management. 
 
 `;
+
+const bio13 = ` 
+ 	
+ 
+ 	
+Natalie Boehm is a strategic consultant, disability activist, and author who is passionate about creating change. With years of experience in advocacy work, nonprofit, and organizational leadership, Natalie brings a unique blend of skills and knowledge to her role as the president of The Defeating Epilepsy Foundation.
+
+Natalie has dedicated her work to those who are battling chronic illnesses to make sure they get the care they need and have a good quality of life. Natalie has battled epilepsy for the majority of her life and has experienced firsthand the challenges of navigating the healthcare and health insurance industries. 
+
+Throughout her career, Natalie has demonstrated a strong commitment to the mission and vision of her organization, continuously challenging herself to create positive change for those in need. Natalie understands the importance of collaboration, working to bring organizations together to create positive change. 
+
+Natalie wants the next generation of people with chronic illness not to experience the stigma that many from her generation have faced. She is focused on making sure that patients with chronic illnesses are treated with the dignity and respect they deserve despite their challenges.  
+
+
+`;
+
 const teamData = {
   executive: [
     {
@@ -160,7 +172,7 @@ const teamData = {
     },
     {
       id: 9,
-      name: "Mala Tudawe, MD",
+      name: "Olivia Begasse de Dhaem, MD",
       extendedBio: bio9,
       image: Image8b,
       link: "https://www.linkedin.com/in/lizzappi",
@@ -179,11 +191,22 @@ const teamData = {
       image: Image10,
       link: "https://www.linkedin.com/in/lizzappi",
     },
+
+    
     {
       id: 12,
       name: "Michelle Waldgeir",
       extendedBio: bio12,
       image: Image11,
+      link: "https://www.linkedin.com/in/lizzappi",
+    },
+
+
+    {
+      id: 13,
+      name: "Natalie Aswad Boehm",
+      extendedBio: bio13,
+      image: Image12,
       link: "https://www.linkedin.com/in/lizzappi",
     },
   ],

@@ -485,6 +485,7 @@ br{
 
     /* Adjust other styles as needed for mobile view */
 }
+
 @media only screen and (width: 280px) and (height: 653px){
 .container {
     margin: 0 auto;
@@ -654,3 +655,4 @@ br{
         height: auto;
     }
 }
+
