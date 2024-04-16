@@ -7,6 +7,10 @@ const MyComponent3 = ({ toggleAccordion, activeAccordion }) => {
   useSlideInAnimationRight(styles.slideInText, styles.active);
 
   return (
+    <>
+    <div className={styles.researchTitle}>
+      <h1 className="SN-D-H3-24">Stay Informed: Latest NF Research Updates and Insights</h1>
+    </div>
     <article className={`${styles.slideInText} ${styles.sectionContainer}`}>
       <aside>
         <img
@@ -91,6 +95,7 @@ const MyComponent3 = ({ toggleAccordion, activeAccordion }) => {
         />
       </aside>
     </article>
+    </>
   );
 };
 
