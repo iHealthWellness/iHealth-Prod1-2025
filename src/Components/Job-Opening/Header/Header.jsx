@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 import "./Header.css";
 import icon from "src/Assets/Images/Hiring.jpg";
 
@@ -25,8 +25,12 @@ const Header = () => {
 
           <h1 className="openings-title-h1">Career Opportunities</h1>
           <h3 className="openings-title-h3">
-            For any questions, please contact HR at{" "}
-            <span className="openings-span">hr-team@ihealthwellness.one</span>
+          <Link
+          className="grid-title link-text"
+                to="/eeotest"
+              >
+                 Equal Employment Opportunity (EEO) Policy
+              </Link>
           </h3>
         </div>
       </div>
