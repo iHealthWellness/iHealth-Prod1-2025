@@ -19,9 +19,6 @@
   gap: 2rem;
 }
 
-.sectionContainer > aside:first-of-type {
-  margin: auto 0;
-}
 
 .image {
   width: 100%;
