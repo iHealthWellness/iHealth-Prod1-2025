@@ -90,9 +90,11 @@
   font-style: normal;
   font-weight: 400;
   line-height: 110%;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
-.openings-span {
+/* .openings-span {
   color: #07235b;
   font-family: Roboto;
   font-size: 24px;
@@ -101,7 +103,7 @@
   line-height: 110%;
   text-decoration-line: underline;
   cursor: pointer;
-}
+} */
 
 /*RESPONSIVENESS*/
 
