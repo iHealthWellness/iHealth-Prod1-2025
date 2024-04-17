@@ -14,10 +14,6 @@
   gap: 2rem;
 }
 
-.sectionContainer > section:first-of-type {
-  margin: auto 0;
-}
-
 .image {
   width: 100%;
   background-size: cover;
