@@ -31,7 +31,7 @@
     color: #858EAD;
     margin-top: 5px;
     margin-bottom: 30px;
-    text-align: left; 
+    text-align: justify; 
 
 }
 
@@ -563,9 +563,20 @@
     left: 50%;
     transform: translate(-50%, -50%);
     padding-top: 100px;
+    padding-bottom: 30px;
   }
 
   @media only screen and (max-width: 414px) { 
+
+    .close-btn-2 {
+        width: 8vw; 
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding-top: 100px;
+      }
+  }
+  @media only screen and (max-width: 430px) { 
 
     .close-btn-2 {
         width: 8vw; 
