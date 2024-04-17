@@ -32,6 +32,10 @@
   padding-bottom: 1rem;
 }
 
+.mainSection section header h3 {
+  padding-bottom: 1rem;
+}
+
 .mainSection section header h3,
 .titleStyle {
   color: var(--SN-Primary-Headings-07235B, #07235b);
