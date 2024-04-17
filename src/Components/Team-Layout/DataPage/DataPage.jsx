@@ -74,12 +74,12 @@ const DataPage = [
     // Roles: "General Counsel, Compliance Officer,Legal Counsel,Regulatory Affairs  Manager,Risk and Compliance Analyst,Privacy Officer, Ethics Officer, Contract Manager,Intellectual Property (IP) Manager,Compliance Training Specialist  ",
     Names: ["Dalia Hechi"],
   },
-  {
-    id: 8,
-    TeamName: "Marketing and Public Relations ",
-    // Roles: "Marketing Managers,PR Specialists, Communications Managers  ",
-    Names: ["Rajandeep Dhariwal", "Shobana Rajendran"],
-  },
+  //{
+  //id: 8,
+  //TeamName: "Marketing and Public Relations ",
+  // Roles: "Marketing Managers,PR Specialists, Communications Managers  ",
+  // Names: ["Rajandeep Dhariwal", ],
+  //},
   {
     id: 9,
     TeamName: "Product Management",
