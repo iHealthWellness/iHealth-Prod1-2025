@@ -499,10 +499,6 @@
     z-index: 2; 
 }
 
-.close-btn:hover,
-.close-btn-2:hover {
-    background-color: #B7B7B766;
-}
 
 .popup-img {
     width: 50%;
@@ -529,7 +525,8 @@
         font-size: 20px; 
     }
     .close-btn-2{
-        margin-top: 20px;
+        margin-top: 10px;
+        padding-bottom: 25px;
     }
     .close-btn,
     .close-btn-2 {
@@ -561,7 +558,7 @@
   }
   
   .close-btn-2 {
-    width: 4vw; /* Use viewport width instead of height */
+    width: 7vw; /* Use viewport width instead of height */
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
