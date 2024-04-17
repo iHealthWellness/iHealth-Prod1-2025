@@ -558,9 +558,20 @@
   }
   
   .close-btn-2 {
-    width: 7vw; /* Use viewport width instead of height */
+    width: 2vw; 
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
     padding-top: 100px;
+  }
+
+  @media only screen and (max-width: 414px) { 
+
+    .close-btn-2 {
+        width: 8vw; 
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding-top: 100px;
+      }
   }
