@@ -99,6 +99,31 @@
   align-items: center;
 }
 
+@keyframes slideText {
+  0% {
+    transform: translateX(-70vw);
+  }
+  100% {
+    transform: translateX(70vw);
+  }
+}
+
+/* @keyframes slideText {
+  0% {
+    right: 100%;
+  }
+  100% {
+    right: -100%;
+  }
+} */
+
+.second-banner p {
+  overflow: hidden;
+  display: block;
+  position: relative;
+  animation: slideText 20s linear infinite;
+}
+
 .second-banner > div:first-child {
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
@@ -115,6 +140,14 @@
 }
 
 @media only screen and (max-width: 1024px) {
+  @keyframes slideText {
+    0% {
+      transform: translateX(-100vw);
+    }
+    100% {
+      transform: translateX(100vw);
+    }
+  }
   .second-banner > div {
     display: none;
   }

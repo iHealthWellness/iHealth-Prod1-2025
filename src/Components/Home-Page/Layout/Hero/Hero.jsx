@@ -5,8 +5,44 @@ import "./Hero.css";
 import HeroMobile from "src/Assets/Images/hero-5x.png";
 import HandshakeOutlinedIcon from "@mui/icons-material/HandshakeOutlined";
 import PersonSearchOutlinedIcon from "@mui/icons-material/PersonSearchOutlined";
+import { useEffect } from "react";
 
 const Hero = () => {
+  const text =
+    "We're a community-based organization offering health-related programs free to patients!";
+  const letterElements = text.split("").map((letter, index) => (
+    <span key={index} className="letter">
+      {letter}
+    </span>
+  ));
+
+  useEffect(() => {
+    const checkOverlap = () => {
+      const letters = document.querySelectorAll(".letter");
+      letters.forEach((letter) => {
+        const letterRect = letter.getBoundingClientRect();
+        const leftDiv = document
+          .querySelector(".blue-banner:first-child")
+          .getBoundingClientRect();
+        const rightDiv = document
+          .querySelector(".blue-banner:last-child")
+          .getBoundingClientRect();
+
+        if (
+          (letterRect.right > leftDiv.left &&
+            letterRect.left < leftDiv.right) ||
+          (letterRect.right > rightDiv.left && letterRect.left < rightDiv.right)
+        ) {
+          letter.style.color = "white";
+        } else {
+          letter.style.color = "black";
+        }
+      });
+    };
+
+    const interval = setInterval(checkOverlap, 50);
+    return () => clearInterval(interval);
+  }, []);
   return (
     <section className="hero-container">
       <section className="hero-survey-banner">
@@ -33,10 +69,7 @@ const Hero = () => {
       </section>
       <aside className="second-banner SN-D-T-M-P-16">
         <div className="blue-banner"></div>
-        <p>
-          We're a community-based 501(c)(3) organization offering health-related
-          programs free to patients!
-        </p>
+        <p>{letterElements}</p>
         <div className="blue-banner"></div>
       </aside>
       <div className="hero-container-inner">
