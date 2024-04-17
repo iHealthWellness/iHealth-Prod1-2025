@@ -25,8 +25,7 @@ const Header = () => {
 
           <h1 className="openings-title-h1">Career Opportunities</h1>
           <h3 className="openings-title-h3">
-            To apply for any open position, please contact HR at{" "}
-            <span className="openings-span">hr-team@ihealthwellness.one</span>
+          Equal Employment Opportunity (EEO) Policy
           </h3>
         </div>
       </div>
