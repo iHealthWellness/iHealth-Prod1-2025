@@ -4,7 +4,6 @@ import icon from "src/Assets/Images/Hiring.jpg";
 import styles from "../EEO/EEO.module.css";
 
 /*EEO Inner content logic*/
-import stylesEEOContent from "src/Components/Terms-of-use/EEOModal/EEO.module.css";
 import plusIcon from "src/Assets/Icons/plus.png";
 import minusIcon from "src/Assets/Icons/minus.png";
 import closeIcon from "src/Assets/Images/close-button-2.png";
@@ -86,26 +85,26 @@ const Header = () => {
                   isModalOpen ? styles.containerModalopen : styles.container
                 }
               >
-                <div className={stylesEEOContent.modal}>
+                <div className={styles.modal}>
                   <img
-                    className={stylesEEOContent.closeIcon}
+                    className={styles.closeIcon}
                     src={closeIcon}
                     onClick={toggleModal}
                     alt=""
                   />
-                  <div className={stylesEEOContent.header}>
+                  <div className={styles.header}>
                     <img className={styles.logo} src={logo} alt="" />
-                    <h1 className={stylesEEOContent.foundationName}>
+                    <h1 className={styles.foundationName}>
                       iHealth and Wellness Foundation, Inc.
                     </h1>
-                    <h2 className={stylesEEOContent.subheader}>
+                    <h2 className={styles.subheader}>
                       Equal Opportunity Policy
                     </h2>
-                    <p className={stylesEEOContent.date}>
+                    <p className={styles.date}>
                       Effective: May 23, 2023
                     </p>
                   </div>
-                  <div className={stylesEEOContent.mainParagraph}>
+                  <div className={styles.mainParagraph}>
                     <p>
                       This EEO Policy applies to all volunteers and participants
                       involved with iHealth and Wellness Foundation, Inc.
@@ -121,15 +120,15 @@ const Header = () => {
                       perspectives that volunteers bring to our mission.
                     </p>
                   </div>
-                  <div className={stylesEEOContent.sectionsContainer}>
+                  <div className={styles.sectionsContainer}>
                     {sections.map((section) => (
-                      <div key={section} className={stylesEEOContent.section}>
-                        <div className={stylesEEOContent.sectionTitleContainer}>
-                          <h3 className={stylesEEOContent.sectionTitle}>
+                      <div key={section} className={styles.section}>
+                        <div className={styles.sectionTitleContainer}>
+                          <h3 className={styles.sectionTitle}>
                             {section}
                           </h3>
                           <button
-                            className={stylesEEOContent.toggleButton}
+                            className={styles.toggleButton}
                             onClick={() => toggleSection(section)}
                           >
                             <img
@@ -139,7 +138,7 @@ const Header = () => {
                           </button>
                         </div>
                         {openSections[section] && (
-                          <p className={stylesEEOContent.sectionContent}>
+                          <p className={styles.sectionContent}>
                             {sectionsParagraph[section]}
                           </p>
                         )}
@@ -147,7 +146,7 @@ const Header = () => {
                     ))}
                   </div>
                   <button
-                    className={stylesEEOContent.closeButton}
+                    className={styles.closeButton}
                     onClick={toggleModal}
                   >
                     Close
