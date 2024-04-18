@@ -5,14 +5,54 @@ import "./Hero.css";
 import HeroMobile from "src/Assets/Images/hero-5x.png";
 import HandshakeOutlinedIcon from "@mui/icons-material/HandshakeOutlined";
 import PersonSearchOutlinedIcon from "@mui/icons-material/PersonSearchOutlined";
+import { useEffect } from "react";
 
 const Hero = () => {
+  const text =
+    "We're a community-based organization offering health-related programs free to patients!";
+  const letterElements = text.split("").map((letter, index) => (
+    <span key={index} className="letter">
+      {letter}
+    </span>
+  ));
+
+  useEffect(() => {
+    const checkOverlap = () => {
+      const letters = document.querySelectorAll(".letter");
+      letters.forEach((letter) => {
+        const letterRect = letter.getBoundingClientRect();
+        const leftDiv = document
+          .querySelector(".blue-banner:first-child")
+          .getBoundingClientRect();
+        const rightDiv = document
+          .querySelector(".blue-banner:last-child")
+          .getBoundingClientRect();
+
+        if (
+          (letterRect.right > leftDiv.left &&
+            letterRect.left < leftDiv.right) ||
+          (letterRect.right > rightDiv.left && letterRect.left < rightDiv.right)
+        ) {
+          letter.style.color = "white";
+        } else {
+          letter.style.color = "black";
+        }
+      });
+    };
+
+    const interval = setInterval(checkOverlap, 50);
+    return () => clearInterval(interval);
+  }, []);
   return (
     <section className="hero-container">
       <section className="hero-survey-banner">
         <p className="SN-D-T-M-P-16">
-          You are OUR hero, and we would love to hear your NF story. {" "}
-          <span className="take-survey-span"><a href="https://forms.gle/QAiHQcgtvqfjFtYe6" target="_blank">Submit your Story.</a></span>
+          You are OUR hero, and we would love to hear your NF story.{" "}
+          <span className="take-survey-span">
+            <a href="https://forms.gle/QAiHQcgtvqfjFtYe6" target="_blank">
+              Submit your Story.
+            </a>
+          </span>
         </p>
         {/* <p className="SN-D-P-20">
           You are OUR hero, and we would love to hear your NF story.{" "}
@@ -27,11 +67,11 @@ const Hero = () => {
           </span>
         </p> */}
       </section>
-        <aside className="second-banner SN-D-T-M-P-16">
-          <div className="blue-banner"></div>
-          <p>We're a community-based organization offering health-related programs free to patients!</p>
-          <div className="blue-banner"></div>
-        </aside>
+      <aside className="second-banner">
+        <div className="blue-banner"></div>
+        <p>{letterElements}</p>
+        <div className="blue-banner"></div>
+      </aside>
       <div className="hero-container-inner">
         <div className="hero-heading-container">
           <h3 className="hero-heading-h3">
