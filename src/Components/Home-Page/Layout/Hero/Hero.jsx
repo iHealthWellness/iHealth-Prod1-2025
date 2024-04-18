@@ -67,7 +67,7 @@ const Hero = () => {
           </span>
         </p> */}
       </section>
-      <aside className="second-banner SN-D-T-M-P-16">
+      <aside className="second-banner">
         <div className="blue-banner"></div>
         <p>{letterElements}</p>
         <div className="blue-banner"></div>
