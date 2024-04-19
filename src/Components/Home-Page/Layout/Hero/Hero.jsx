@@ -9,7 +9,7 @@ import { useEffect } from "react";
 
 const Hero = () => {
   const text =
-    "We're a community-based organization offering health-related programs free to patients!";
+    "We're a community-based 501c3 organization offering health-related programs free to patients!";
   const letterElements = text.split("").map((letter, index) => (
     <span key={index} className="letter">
       {letter}
