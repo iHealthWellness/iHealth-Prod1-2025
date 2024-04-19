@@ -126,9 +126,9 @@ const MenuList = () => {
     //   title: "Stories of Strength",
     //   url: "/",
     //   className: "nav-services",
-    //   onClick: () => {
-    //     document.querySelector("#UnderConst-wrapper").style.display = "flex";
-    //   }
+    // onClick: () => {
+    //   document.querySelector("#UnderConst-wrapper").style.display = "flex";
+    // }
     // },
 
     {
@@ -165,6 +165,10 @@ const MenuList = () => {
     {
       title: "Store",
       url: "/store",
+      onClick: (event) => {
+        event.preventDefault();
+        document.querySelector("#UnderConst-wrapper").style.display = "flex";
+      },
     },
   ];
 

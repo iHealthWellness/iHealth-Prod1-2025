@@ -60,15 +60,15 @@ const menuItems = [
       },
     ],
   },
-  {
-    title: "Stories of Strength",
-    url: "/",
-    onClick: (event) => {
-      event.preventDefault();
-      document.querySelector("#UnderConst-wrapper").style.display = "flex";
-    },
-  },  
-  
+  // {
+  //   title: "Stories of Strength",
+  //   url: "/",
+  //   onClick: (event) => {
+  //     event.preventDefault();
+  //     document.querySelector("#UnderConst-wrapper").style.display = "flex";
+  //   },
+  // },
+
   // {
   //   title: "Stories of Strength",
   //   url: "/services",
@@ -92,8 +92,6 @@ const menuItems = [
   //       url: "/services/#",
   //     },
   //   ],
-
-
 
   {
     title: "Ways to Give",
@@ -128,7 +126,13 @@ const menuItems = [
   },
 ];
 
-const MenuItems = ({ items, menuId, activeId, setActiveId, handleShowMenu }) => {
+const MenuItems = ({
+  items,
+  menuId,
+  activeId,
+  setActiveId,
+  handleShowMenu,
+}) => {
   const [showSubMenu, setSubMenu] = useState(false);
 
   function handleMenu(menuId) {
@@ -137,20 +141,36 @@ const MenuItems = ({ items, menuId, activeId, setActiveId, handleShowMenu }) => 
   }
 
   return (
-    <li className="nav-dropdown-links-listitem" onClick={(e) => {
+    <li
+      className="nav-dropdown-links-listitem"
+      onClick={(e) => {
         handleMenu(menuId);
         if (items.onClick) {
           items.onClick(e);
         }
       }}
     >
-      <NavLink to={items.url} className={({ isActive }) => ("nav-dropdown-links" + (isActive ? " nav-dropdown-links border" : ""))}>
+      <NavLink
+        to={items.url}
+        className={({ isActive }) =>
+          "nav-dropdown-links" + (isActive ? " nav-dropdown-links border" : "")
+        }
+      >
         {items.title}
       </NavLink>
       {items.submenu && showSubMenu && activeId === menuId ? (
-        <div className={showSubMenu ? `nav-dropdown-contents` : `nav-dropdown-hidden`}>
+        <div
+          className={
+            showSubMenu ? `nav-dropdown-contents` : `nav-dropdown-hidden`
+          }
+        >
           {items.submenu.map((sub) => (
-            <HashLink className="items" to={sub.url} key={sub.title} onClick={handleShowMenu}>
+            <HashLink
+              className="items"
+              to={sub.url}
+              key={sub.title}
+              onClick={handleShowMenu}
+            >
               {sub.title}
             </HashLink>
           ))}
@@ -187,7 +207,11 @@ const NavDropdownButton = () => {
   return (
     <div className="nav-dropdown-container" ref={menuRef}>
       <button className="nav-dropdown-menu-button" onClick={handleShowMenu}>
-        <img className="nav-dropdown-menu-icon" src={dropdownIcon} alt="dropdown icon"></img>
+        <img
+          className="nav-dropdown-menu-icon"
+          src={dropdownIcon}
+          alt="dropdown icon"
+        ></img>
       </button>
       {showMenu && (
         <ul className="nav-dropdown-links-list">
@@ -208,7 +232,6 @@ const NavDropdownButton = () => {
 };
 
 export default NavDropdownButton;
-
 
 // Old Codebase
 /*
