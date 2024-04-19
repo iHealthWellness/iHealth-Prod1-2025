@@ -8,7 +8,6 @@ const Information = () => {
   return (
     <section id="Information" className="information-container">
       <InformationHeader />
-      <div className="information-divider"></div>
       <InformationTabs />
       <InformationCards />
     </section>
