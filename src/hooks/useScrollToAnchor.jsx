@@ -12,7 +12,7 @@ function useScrollToAnchor() {
       if (element) {
         setTimeout(
           () => element.scrollIntoView({ behavior: "smooth", block: "start" }),
-          300
+          800
         );
       }
     }
