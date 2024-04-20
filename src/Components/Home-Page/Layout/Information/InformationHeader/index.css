@@ -63,11 +63,12 @@
 @media only screen and (min-width: 1024px) {
   .information-header {
     max-width: 1216px;
-    max-height: 620px;
+    max-height: 320px;
   }
 
   .information-header-heading-card {
-    width: 65%;
+    width: 50%;
+    left: 20%;
     max-width: 800px;
     height: 520px;
     position: relative;
@@ -86,12 +87,12 @@
   }
 
   .information-header-img {
-    width: 50%;
-    height: 80%;
+    width: 40%;
+    height: 90%;
     object-fit: cover;
     left: auto;
-    top: 15%;
-    right: 10%;
+    top: 20%;
+    right: 20%;
     transform: none;
   }
 }
