@@ -31,12 +31,10 @@ const Team = () => {
           </p>
           <div className="team-join-card-inner">
             <img src={iHealth360Logo} alt="ihealth360 logo" />
-            <h2 className="team-join-heading SN-D-H2-36">
-              Join your iHealth360 Community Hub
-            </h2>
-            <p className="team-join-slogan">
-              Connect with other people. Share your story. <br />
-              Join the conversation today.
+            <h2 className="team-join-slogan">Empowering Health Together</h2>
+            <p className="team-join-heading SN-D-H2-36">
+              Find Your <br />
+              Community
             </p>
             <a
               className="team-join-btn"
