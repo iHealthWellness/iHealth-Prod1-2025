@@ -17,10 +17,37 @@ import "./index.css";
 import PartnerImageContainer from "./PartnerImageContainer";
 
 const Partner = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  const asideRef = useRef(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const div = asideRef.current;
+      if (div) {
+        const rect = div.getBoundingClientRect();
+        const windowHeight =
+          window.innerHeight || document.documentElement.clientHeight;
+        const midPoint = (rect.top + rect.bottom) / 2;
+
+        if (midPoint >= 0 && midPoint <= windowHeight) {
+          setIsVisible(true);
+        } else {
+          setIsVisible(false);
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll();
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <section id="Home-page-partner-container" className="partner-container">
       <div className="partner-heading-block">
-        <aside>
+        <aside ref={asideRef} className={isVisible ? "fade-in-section" : ""}>
           <h2 className="partner-heading">Partner with us</h2>
           <p className="partner-paragraph">
             We're building a home for the care of complex conditions

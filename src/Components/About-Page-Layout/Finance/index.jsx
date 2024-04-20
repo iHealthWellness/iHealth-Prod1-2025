@@ -88,42 +88,43 @@ const Finance = () => {
                 ref={divRef}>
                 <div className="grid-outline">
                     <div className="grid">
-                        <img src={img6} className="grid1" alt="tag1" />
-                        <p className="grid2">Donation</p>
+                        {/* <img src={img6} className="grid1" alt="tag1" /> */}
+                        <p className="grid2">1. Donation</p>
                     </div>
                     <div className="grid">
-                        <img src={img7} className="grid1" alt="tag2" />
-                        <p className="grid2">Licensing Fees</p>
+                        {/* <img src={img7} className="grid1" alt="tag2" /> */}
+                        <p className="grid2">2. Licensing Fees</p>
                     </div>
                     <div className="grid">
-                        <img src={img8} className="grid1" alt="tag3" />
-                        <p className="grid2">Research Partnerships</p>
+                        {/* <img src={img8} className="grid1" alt="tag3" /> */}
+                        <p className="grid2">3. Research Partnerships</p>
                     </div>
                     <div className="grid">
-                        <img src={img9} className="grid1" alt="tag4" />
-                        <p className="grid2">Data Analytics</p>
+                        {/* <img src={img9} className="grid1" alt="tag4" /> */}
+                        <p className="grid2">4. Data Analytics</p>
                     </div>
                     <div className="grid">
-                        <img src={img10} className="grid1" alt="tag5" />
-                        <p className="grid2">Consulting Services</p>
+                        {/* <img src={img10} className="grid1" alt="tag5" /> */}
+                        <p className="grid2">5. Consulting Services</p>
                     </div>
                     <div className="grid">
-                        <img src={img11} className="grid1" alt="tag6" />
-                        <p className="grid2">Advertising and Sponsorship</p>
+                        {/* <img src={img11} className="grid1" alt="tag6" /> */}
+                        <p className="grid2">6. Advertising and Sponsorship</p>
                     </div>
                     <div className="grid">
-                        <img src={img12} className="grid1" alt="tag7" />
-                        <p className="grid2">Patient Advocacy Services</p>
+                        {/* <img src={img12} className="grid1" alt="tag7" /> */}
+                        <p className="grid2">7. Patient Advocacy Services</p>
                     </div>
                     <div className="grid">
-                        <img src={img13} className="grid1" alt="tag8" />
-                        <p className="grid2">Subscription Fees</p>
+                        {/* <img src={img13} className="grid1" alt="tag8" /> */}
+                        <p className="grid2">8. Subscription Fees</p>
                     </div>
                     <div className="grid">
-                        <img src={img14} className="grid1" alt="tag9" />
-                        <p className="grid2">Booking Fees</p>
+                        {/* <img src={img14} className="grid1" alt="tag9" /> */}
+                        <p className="grid2">9. Booking Fees</p>
                     </div>
                 </div>
+                {/*  Image Temporarily removed from the mob version */}
                 <div className="grid-analysis">
                     <img src={img5} alt="bar-chart" />
                 </div>

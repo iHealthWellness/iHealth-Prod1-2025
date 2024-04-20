@@ -86,7 +86,7 @@
     transition: opacity 0.5s ease-in-out, transform 0.8s ease-in-out; 
     overflow-x: hidden;
     margin-bottom: 20px;
-
+    padding-left: 2.5rem;
 }
 
 
@@ -135,6 +135,8 @@
     max-width: 652px; 
     height: auto; 
     border-radius: 20px;
+    position: relative;
+    right: -4rem;
 }
 
 /* For medium-sized screens like tablets */
@@ -266,6 +268,12 @@
         
 /*  Responsiveness mobile view  */
 @media only screen and (max-width:414px){
+
+    /* Temp solution */
+
+    .grid-analysis {
+        display: none;
+    }
 
     .financial-analysis-tab{
         

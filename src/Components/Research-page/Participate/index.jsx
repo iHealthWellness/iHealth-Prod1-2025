@@ -10,8 +10,8 @@ const section6 = () => {
       id="participate"
       className={`${styles.slideInText} ${styles.mainSection}`}
     >
-      <header className="SN-D-H2-36">
-        <h3>
+      <header>
+        <h3 className="SN-D-H2-36">
           Participate in Research for Neurofibromatosis: Making a Difference
         </h3>
       </header>
