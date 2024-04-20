@@ -8,29 +8,15 @@ import GeriatricCard from "src/Assets/Images/geriatric-card.png";
 import NfCard from "src/Assets/Images/nf-card.png";
 
 const Community = () => {
-  const [team, setTeam] = useState("NF TEAM");
+  const [openModal, setOpenModal] = useState(null);
 
-  // Geriatric disesea team modal popup js
-
-  const toggleModal = () => {
-    setIsOpen(!isOpen);
+  const handleOpenModal = (modalName) => {
+    setOpenModal(modalName);
   };
-  const [isOpen, setIsOpen] = useState(false);
-
-  // Cancer team modal popup js
-
-  const toggleModal1 = () => {
-    setIsOpens(!isOpens);
-  };
-  const [isOpens, setIsOpens] = useState(false);
 
   const closeModal = () => {
-    setIsOpen(false);
-    setIsOpens(false);
-  };
-
-  const underConstruction = () => {
-    document.querySelector("#UnderConst-wrapper").style.display = "flex";
+    setOpenModal(null);
+    setOpenModal(null);
   };
 
   return (
@@ -45,11 +31,15 @@ const Community = () => {
         <a href="#Information">
           <img src={NfCard} alt="nf card" />
         </a>
-        <img src={CancerCard} alt="cancer card" onClick={underConstruction} />
+        <img
+          src={CancerCard}
+          alt="cancer card"
+          // onClick={() => handleOpenModal("Cancer")}
+        />
         <img
           src={GeriatricCard}
           alt="geriatric card"
-          onClick={underConstruction}
+          // onClick={() => handleOpenModal("Geriatric")}
         />
       </aside>
 
@@ -101,13 +91,8 @@ const Community = () => {
           Cancer Hub <p className="coming-soon-p">(Coming soon)</p>
         </button>
       </div> */}
-      {/* MODAL POPUP FOR GERIATRIC TEAM */}
-
-      <div>{isOpen && <Geriatric closeModal={closeModal} />}</div>
-
-      {/* MODAL POPUP FOR CANCER TEAM */}
-
-      <div>{isOpens && <Cancer closeModal={closeModal} />}</div>
+      {openModal === "Geriatric" && <Geriatric closeModal={closeModal} />}
+      {openModal === "Cancer" && <Cancer closeModal={closeModal} />}
     </section>
   );
 };
