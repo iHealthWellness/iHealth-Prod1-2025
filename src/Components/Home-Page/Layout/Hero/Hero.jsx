@@ -83,8 +83,7 @@ const Hero = () => {
             For Patients with Complex Diseases
           </h2>
           <h4 className="hero-heading-h4">
-            We believe the care of complex conditions should be simpler for
-            everyone
+            Simplifying the Care of Complex Diseases for All
           </h4>
           <h2 className="provider-heading">
             <PersonSearchOutlinedIcon
