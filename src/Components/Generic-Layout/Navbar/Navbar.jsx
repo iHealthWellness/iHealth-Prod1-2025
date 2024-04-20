@@ -162,14 +162,14 @@ const MenuList = () => {
         },
       ],
     },
-    {
-      title: "Store",
-      url: "/store",
-      onClick: (event) => {
-        event.preventDefault();
-        document.querySelector("#UnderConst-wrapper").style.display = "flex";
-      },
-    },
+    // {
+    //   title: "Store",
+    //   url: "/store",
+    //   onClick: (event) => {
+    //     event.preventDefault();
+    //     document.querySelector("#UnderConst-wrapper").style.display = "flex";
+    //   },
+    // },
   ];
 
   return (
