@@ -33,12 +33,12 @@ const Community = () => {
         <img
           src={CancerCard}
           alt="cancer card"
-          onClick={() => handleOpenModal("Cancer")}
+          // onClick={() => handleOpenModal("Cancer")}
         />
         <img
           src={GeriatricCard}
           alt="geriatric card"
-          onClick={() => handleOpenModal("Geriatric")}
+          // onClick={() => handleOpenModal("Geriatric")}
         />
       </aside>
 
