@@ -16,6 +16,7 @@ const Community = () => {
 
   const closeModal = () => {
     setOpenModal(null);
+    setOpenModal(null);
   };
 
   return (
