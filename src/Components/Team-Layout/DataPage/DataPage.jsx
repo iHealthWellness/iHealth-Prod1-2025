@@ -34,7 +34,7 @@ const DataPage = [
   },
   {
     id: 4,
-    TeamName: "Development",
+    TeamName: "Engineering",
     // Roles: " Software Engineers, Full-Stack Developers,Backend Developers,Frontend Developers, DevOps Engineers,Mobile App Developers ",
     Names: [
       "Amal Engulatov",
