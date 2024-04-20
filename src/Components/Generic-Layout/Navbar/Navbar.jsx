@@ -16,6 +16,7 @@ import NavDropdownButton from "./NavDropdown";
 import Login from "../UserAuthentication/Login/Login";
 import UnderConstruction from "src/Components/Under-Construction/UnderConstruction";
 import ToTopBtn from "src/Components/About-Page-Layout/TotopBtn";
+import useScrollToAnchor from "src/hooks/useScrollToAnchor";
 
 /* 
   ===========================================================
@@ -261,7 +262,7 @@ const SignUpSignIn = () => {
 // Main Component
 const Navbar = () => {
   // Menu Lists
-
+  useScrollToAnchor();
   return (
     <>
       <nav className="nav-container">
