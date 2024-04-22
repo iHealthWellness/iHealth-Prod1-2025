@@ -104,7 +104,7 @@ const DataPage = [
     id: 11,
     TeamName: "Quality Assurance ",
     // Roles: "QA Engineers, Testers, Quality Assurance Specialists  ",
-    Names: ["Amjad Shahzad", "Anthony Uyah"],
+    Names: ["Amjad Shahzad", "Anthony Uyah", "Emma Casarez"],
   },
   {
     id: 12,
