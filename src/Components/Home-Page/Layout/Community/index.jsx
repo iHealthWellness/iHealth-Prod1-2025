@@ -29,7 +29,7 @@ const Community = () => {
       </p>
       <aside>
         <a href="#Information">
-          <img src={NfCard} alt="nf card" />
+          <img className="nf-first-image" src={NfCard} alt="nf card" />
         </a>
         <img
           src={CancerCard}
