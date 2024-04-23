@@ -75,7 +75,7 @@
 .openings-title-h1 {
   color: var(--SN-Primary-Headings-07235B, #07235b);
   font-family: Roboto;
-  font-size: 48px;
+  font-size: 2.25rem; 
   font-style: normal;
   font-weight: 600;
   line-height: 110%;
@@ -90,9 +90,11 @@
   font-style: normal;
   font-weight: 400;
   line-height: 110%;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
-.openings-span {
+/* .openings-span {
   color: #07235b;
   font-family: Roboto;
   font-size: 24px;
@@ -101,7 +103,7 @@
   line-height: 110%;
   text-decoration-line: underline;
   cursor: pointer;
-}
+} */
 
 /*RESPONSIVENESS*/
 

@@ -13,10 +13,10 @@ const section1 = () => {
         />
       </header>
       <section className={styles.heroTitle}>
-        <h2 className="SN-D-H2-36">
+        <h2 className="SN-M-H2-24">
           Unraveling the Mysteries of Neurofibromatosis
         </h2>
-        <h1 className="SN-D-H1-48">Advancing Research for a Brighter Future</h1>
+        <h1 className="SN-D-H2-36">Advancing Research for a Brighter Future</h1>
       </section>
       <main className={styles.Introduction}>
         <h3 className="SN-D-H2-36">Introduction</h3>

@@ -8,15 +8,17 @@
   transform: translateX(0);
 }
 
+.researchTitle h1 {
+  font-weight: 500;
+  padding-bottom: 1rem;
+}
+
 .sectionContainer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
 }
 
-.sectionContainer > aside:first-of-type {
-  margin: auto 0;
-}
 
 .image {
   width: 100%;

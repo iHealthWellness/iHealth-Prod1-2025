@@ -26,7 +26,14 @@
 .mainSection aside img {
   width: 100%;
   object-fit: cover;
-  margin: auto;
+}
+
+.mainSection section header h3 {
+  padding-bottom: 1rem;
+}
+
+.mainSection section header h3 {
+  padding-bottom: 1rem;
 }
 
 .mainSection section header h3,

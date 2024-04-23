@@ -16,6 +16,7 @@ import NavDropdownButton from "./NavDropdown";
 import Login from "../UserAuthentication/Login/Login";
 import UnderConstruction from "src/Components/Under-Construction/UnderConstruction";
 import ToTopBtn from "src/Components/About-Page-Layout/TotopBtn";
+import useScrollToAnchor from "src/hooks/useScrollToAnchor";
 
 /* 
   ===========================================================
@@ -126,9 +127,9 @@ const MenuList = () => {
     //   title: "Stories of Strength",
     //   url: "/",
     //   className: "nav-services",
-    //   onClick: () => {
-    //     document.querySelector("#UnderConst-wrapper").style.display = "flex";
-    //   }
+    // onClick: () => {
+    //   document.querySelector("#UnderConst-wrapper").style.display = "flex";
+    // }
     // },
 
     {
@@ -162,10 +163,14 @@ const MenuList = () => {
         },
       ],
     },
-    {
-      title: "Store",
-      url: "/store",
-    },
+    // {
+    //   title: "Store",
+    //   url: "/store",
+    //   onClick: (event) => {
+    //     event.preventDefault();
+    //     document.querySelector("#UnderConst-wrapper").style.display = "flex";
+    //   },
+    // },
   ];
 
   return (
@@ -257,7 +262,7 @@ const SignUpSignIn = () => {
 // Main Component
 const Navbar = () => {
   // Menu Lists
-
+  useScrollToAnchor();
   return (
     <>
       <nav className="nav-container">

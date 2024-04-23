@@ -1,5 +1,6 @@
 import "./index.css";
 import joinVideo from "src/Assets/Images/Join2.mp4";
+import iHealth360Logo from "src/Assets/Images/ihealth360.png";
 
 const Team = () => {
   return (
@@ -29,12 +30,11 @@ const Team = () => {
             together.
           </p>
           <div className="team-join-card-inner">
-            <h2 className="team-join-heading">
-              Join your iHealth360 Community Hub
-            </h2>
-            <p className="team-join-slogan">
-              Connect with others who understand and share your story.Join the
-              conversation today.
+            <img src={iHealth360Logo} alt="ihealth360 logo" />
+            <h2 className="team-join-slogan">Empowering Health Together</h2>
+            <p className="team-join-heading SN-D-H2-36">
+              Find Your <br />
+              Community
             </p>
             <a
               className="team-join-btn"

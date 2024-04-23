@@ -6,7 +6,7 @@
   align-items: center;
   gap: 1rem;
   color: #ffffff;
-  padding: 2.5rem 0;
+  padding: 2.5rem;
 }
 
 .community-heading {
@@ -67,6 +67,7 @@
 .community-container aside img,
 .community-container aside a img {
   width: 200px;
+  cursor: pointer;
 }
 
 .community-container aside img,
@@ -85,7 +86,6 @@
 
   .community-container {
     padding: 2rem;
-    padding-bottom: 0;
   }
 
   .community-heading {
@@ -175,7 +175,5 @@
     gap: 1rem;
   }
 
-  .community-container {
-    padding-bottom: 0;
-  }
+  
 }
