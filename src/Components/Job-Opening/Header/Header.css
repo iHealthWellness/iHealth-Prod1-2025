@@ -56,21 +56,16 @@
   font-style: normal;
   font-weight: 600;
   line-height: 110%;
-  align-self: stretch;
+  margin-right: 160%;
+  /* align-self: stretch; */
 }
 
 .openings-titles {
   margin-top: 100px;
 }
-.openings-title-h2 {
-  color: var(--SN-Primary-Headings-07235B, #07235b);
-  margin-top: -40px;
-  font-family: Roboto;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 143%;
-  margin-bottom: 10px;
+.headings{
+  text-align: left;
+  margin-right: auto;
 }
 .openings-title-h1 {
   color: var(--SN-Primary-Headings-07235B, #07235b);
@@ -79,19 +74,29 @@
   font-style: normal;
   font-weight: 600;
   line-height: 110%;
-  align-self: stretch;
   margin-bottom: 30px;
+  width: 400px; 
+}
+
+.openings-title-h2 {
+  color: var(--SN-Primary-Headings-07235B, #07235b);
+  font-family: Roboto;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: 10px;
 }
 
 .openings-title-h3 {
   color: #07235b;
   font-family: Roboto;
-  font-size: 24px;
+  font-size: 1.15rem;
   font-style: normal;
   font-weight: 400;
   line-height: 110%;
   text-decoration: underline;
   cursor: pointer;
+  margin-top: -20px;
 }
 
 /* .openings-span {
