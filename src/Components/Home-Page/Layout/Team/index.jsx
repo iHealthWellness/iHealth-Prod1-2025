@@ -43,7 +43,7 @@ const Team = () => {
                   "flex";
               }}
             >
-              Join
+              Learn More
             </a>
           </div>
         </div>
