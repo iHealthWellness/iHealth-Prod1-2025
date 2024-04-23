@@ -36,6 +36,9 @@ function LanguageBar() {
             minWidth: "80px",
             fontSize: "0.8rem",
           },
+          "& .MuiSelect-select": {
+            padding: 0,
+          },
         }}
       >
         <MenuItem
