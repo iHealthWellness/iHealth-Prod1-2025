@@ -113,18 +113,14 @@ const Footer = () => {
       </div>
       <div className="footer-bottom">
         <div className="footer-terms-center SN-M-P-16">
-          <div className="footer-terms">
-            <span>
-              Copyright © 2024 iHealth and Wellness Foundation, Inc. All rights
-              reserved. iHealth and Wellness Foundation, Inc. is a 501 (c)(3)
-              non-profit recognized by the IRS.
-            </span>
-            <span>Tax ID Number: 93-1567099</span>
+          <p className="footer-terms">
+            @2023 iHealth and Wellness Foundation, Inc. All rights reserved.
+            iHealth and Wellness Foundation is a 501(c)(3) Nonprofit
+            Organization. EIN: 93-1567099
+          </p>
+          <div className="language-select-cont">
+            <LanguageBar />
           </div>
-        </div>
-
-        <div className="language-select-cont">
-          <LanguageBar />
         </div>
       </div>
     </footer>
