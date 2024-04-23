@@ -31,11 +31,6 @@ const Team = () => {
           </p>
           <div className="team-join-card-inner">
             <img src={iHealth360Logo} alt="ihealth360 logo" />
-            <h2 className="team-join-slogan">Empowering Health Together</h2>
-            <p className="team-join-heading SN-D-H2-36">
-              Find Your <br />
-              Community
-            </p>
             <a
               className="team-join-btn"
               onClick={() => {
@@ -43,7 +38,7 @@ const Team = () => {
                   "flex";
               }}
             >
-              Learn More
+              Find Your Community
             </a>
           </div>
         </div>

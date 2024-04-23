@@ -46,7 +46,12 @@ const Partner = () => {
   }, []);
   return (
     <section id="Home-page-partner-container" className="partner-container">
-      <div className="partner-heading-block">
+      <div
+        ref={asideRef}
+        className={`partner-heading-block ${
+          isVisible ? "fade-in-section" : ""
+        }`}
+      >
         <aside ref={asideRef} className={isVisible ? "fade-in-section" : ""}>
           <h2 className="partner-heading">Partner with us</h2>
           <p className="partner-paragraph">
