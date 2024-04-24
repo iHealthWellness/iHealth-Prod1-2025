@@ -80,6 +80,30 @@
     padding-bottom: 3rem;
   }
 
+  .provider-form-field {
+    max-height: 200px;
+  }
+
+  .provider-form-field div div div > div:nth-child(2) {
+    padding: 2px;
+  }
+
+  .provider-form-field div div div > div {
+    top: calc(50% - 15px);
+  }
+
+  .provider-form-field div div div > label {
+    top: -5px;
+  }
+
+  .provider-form-field:nth-child(2) {
+    width: 300px;
+  }
+
+  .provider-form-field:nth-child(3) {
+    max-width: 200px;
+  }
+
   .provider-inner-container {
     width: 90%;
     max-width: 1216px;

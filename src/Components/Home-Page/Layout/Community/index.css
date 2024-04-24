@@ -20,11 +20,13 @@
 
 .community-container aside a {
   align-self: flex-start;
+  width: 200px;
+  height: 200px;
 }
 
 .community-container aside a .nf-first-image {
   object-fit: fill;
-  height: 200px;
+  height: 100%;
 }
 
 .community-description {
