@@ -6,6 +6,7 @@ import FooterLinkCard from "./FooterLinkCard";
 import SocialMedia from "src/Constants/HomePage/SocialMedia.js";
 import FooterLink from "src/Constants/FooterLink.js";
 import LanguageBar from "./LanguageBar/LanguageBar";
+import SasikaQuote from "src/Assets/Images/sasika-quote.png";
 import "./index.css";
 
 const Footer = () => {
@@ -106,6 +107,9 @@ const Footer = () => {
             <FooterLinkCard linkCard={ele} key={`footer-link-${idx}`} />
           ))}
         </div>
+        <div className="sasika-quote">
+          <img src={SasikaQuote} alt="quote from CEO/CTO" />
+        </div>
       </div>
       <div className="footer-bottom">
         <div className="footer-terms-center SN-M-P-16">
@@ -114,10 +118,10 @@ const Footer = () => {
             iHealth and Wellness Foundation is a 501(c)(3) Nonprofit
             Organization. EIN: 93-1567099
           </p>
+        </div>
           <div className="language-select-cont">
             <LanguageBar />
           </div>
-        </div>
       </div>
     </footer>
   );

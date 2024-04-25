@@ -1,10 +1,18 @@
 .footer-container {
   width: 100%;
-  background-color: #f6f8f7;
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
   scroll-snap-align: start;
+}
+
+.footer-subscribe-input::placeholder {
+  color: rgba(163, 170, 194, 1);
+}
+
+.footer-subscribe-btn {
+  letter-spacing: 1px;
 }
 
 .footer-top {
@@ -12,7 +20,7 @@
   flex-direction: column-reverse;
   align-items: center;
   gap: 2rem;
-  padding-bottom: 2rem;
+  padding: 2rem 0;
 }
 
 .footer-contact {
@@ -61,6 +69,10 @@
   gap: 0.5rem;
 }
 
+.footer-subscribe-bar form input {
+  margin-right: 0.5rem;
+}
+
 .footer-subscribe-input {
   padding: 0.5rem;
   border: 1px solid #ccc;
@@ -103,11 +115,10 @@
 }
 
 .footer-terms-center {
-  width: 100%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   gap: 1rem;
   font-size: 1rem;
   padding: 0.25rem;
@@ -125,7 +136,10 @@
 .language-select-cont {
   position: absolute;
   right: 1rem;
-  /* padding-bottom: 3rem; */
+}
+
+.sasika-quote img {
+  width: 100%;
 }
 
 @media only screen and (width: 280px) and (height: 653px) {
@@ -140,25 +154,71 @@
   }
 }
 
-@media only screen and (max-width: 375px) and (height: 667px) {
+@media only screen and (min-width: 275px) and (max-width: 590px) {
   .language-select-cont {
     padding-top: 2rem;
   }
-}
 
-@media only screen and (max-width: 430px) and (max-height: 932px) {
-  .language-select-cont {
-    padding-top: 2rem;
+  .footer-links-block {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .sasika-quote {
+    padding-inline: 1rem;
+  }
+
+  .footer-subscribe-bar {
+    display: block;
+  }
+
+  .footer-subscribe-bar form {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-terms-center {
+    width: 70%;
   }
 }
 
-@media only screen and (min-width: 480px) and (max-width: 1260px) {
+@media only screen and (min-width: 590px) and (max-width: 1260px) {
+  .footer-terms-center {
+    width: 85%;
+  }
+
+  .footer-top {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: flex-start;
+    justify-content: space-evenly;
+  }
+
+  .footer-address-block,
+  .footer-subscribe-block {
+    text-align: left;
+    align-items: flex-start;
+  }
+
   .footer-container {
     background-color: #fff;
   }
 
   .footer-links-block {
+    grid-column: 1 / -1;
     display: flex;
+    justify-content: space-evenly;
+  }
+
+  .footer-contact {
+    grid-row: 2;
+    width: auto;
+    padding-top: 0;
+  }
+
+  .sasika-quote {
+    grid-row: 2;
   }
 }
 
@@ -172,9 +232,10 @@
     max-width: 1216px;
     flex-direction: row;
     justify-content: space-between;
-    gap: 0;
+    gap: 2rem;
     background-color: #fff;
-    padding-bottom: 2rem;
+    padding: 2rem 0;
+    align-items: flex-start;
   }
 
   .footer-contact {
@@ -195,7 +256,7 @@
   }
 
   .footer-address-heading {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 600;
     line-height: 110%;
     white-space: nowrap;
@@ -206,12 +267,12 @@
     font-size: 1rem;
     font-weight: 500;
     line-height: 120%;
-    /* margin-top: 2rem; */
   }
 
   .footer-links-block {
     flex-basis: 1;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     padding-bottom: 1rem;
   }
@@ -234,173 +295,3 @@
     align-items: center;
   }
 }
-
-/* .language-select-cont{
-  padding-top: 4.5rem;
-} */
-
-/* .footer-address-block {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  padding: 1rem;
-  text-align: center;
-} */
-
-/*
-
-.footer-top {
-  width: 80%;
-  max-width: 1000px;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 2rem;
-  gap: 1rem;
-}
-
-.footer-top-left,
-.footer-address-block,
-.footer-contact-block,
-.footer-social-media-block {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.footer-address-block,
-.footer-contact-block {
-  padding-bottom: 1rem;
-}
-
-.footer-address {
-  line-height: 1.5;
-}
-
-.footer-address span {
-  display: inline-block;
-}
-
-.footer-contact-subscribe-block {
-  display: flex;
-  gap: 0.5rem;
-}
-
-.footer-contact-title {
-  font-size: 1rem;
-  font-weight: 500;
-}
-
-
-
-.footer-social-media-title {
-  font-size: 1rem;
-  font-weight: 500;
-}
-
-.footer-social-media-icon-block {
-  display: flex;
-  gap: 0.5rem;
-}
-
-.footer-social-media-icon {
-  display: inline-block;
-  width: fit-content;
-}
-
-.footer-social-media-icon img {
-  width: 40px;
-  height: 40px;
-}
-
-.footer-top-right {
-  display: flex;
-  gap: 1rem;
-  padding-top: 3rem;
-}
-
-.footer-bottom {
-  width: 100%;
-  background-color: #07235b;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.footer-bottom-inner {
-  width: 80%;
-  max-width: 1000px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.footer-terms-right-content {
-  font-weight: 500;
-}
-
-.footer-language-block {
-  width: 128px;
-} */
-
-/* @media only screen and (max-width: 575px) {
-  .footer-top {
-    width: 100%;
-    padding: 1.5rem 10%;
-    flex-direction: column-reverse;
-    align-items: center;
-    gap: 1.5rem;
-  }
-
-  .footer-top-right {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .footer-address-block,
-  .footer-contact-block,
-  .footer-social-media-block {
-    gap: 0.5rem;
-  }
-
-  .footer-address-block h3 {
-    font-size: 1rem;
-  }
-
-  .footer-address span {
-    line-height: 1.5;
-  }
-
-  .footer-address {
-    font-size: 0.8rem;
-    line-height: 1.2;
-  }
-
-  .footer-contact-title,
-  .footer-social-media-title {
-    font-size: 0.8rem;
-  }
-
-  .footer-social-media-icon img {
-    width: 24px;
-    height: 24px;
-  }
-
-  .footer-terms-right-content {
-    font-size: 0.7rem;
-  }
-} */
-
-/* @media only screen and (min-width: 576px) and (max-width: 1023px) {
-  .footer-top {
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-  }
-  .footer-top-right {
-    width: 100%;
-    justify-content: space-between;
-  }
-} */
