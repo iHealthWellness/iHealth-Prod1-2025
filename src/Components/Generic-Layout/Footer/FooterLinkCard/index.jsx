@@ -1,35 +1,28 @@
 import { HashLink } from "react-router-hash-link";
-import "./index.css";
+import styles from "./index.module.css";
 
 const FooterLinkCard = ({ linkCard }) => {
   const { category, links } = linkCard;
 
   return (
-    <div className="footer-links-card">
-      <p className="footer-links-category">{category}</p>
-      <div className="footer-links">
+    <div className={styles.footerLinksCard}>
+      <p className={styles.footerLinksCategory}>{category}</p>
+      <div className={styles.footerLinks}>
         {links.map((link) => {
-          {
-            /* This block of code for Volunteer Link in the footer After the related page/section implemented, We dont need this block of code */
-          }
           if (link.title == "Volunteer") {
             return (
               <a
-              className="footer-link"
-              key={link.title}
-              href="/job-openings"
+                className={styles.footerLink}
+                key={link.title}
+                href="/job-openings"
               >
                 {link.title}
               </a>
             );
           }
-          {
-            /* This block of code for Volunteer Link in the footer After the related page/section implemented, We dont need this block of code */
-          }
-
           return (
             <HashLink
-              className="footer-link"
+              className={styles.footerLink}
               to={link.path}
               key={`footer-links-${link.title}`}
             >

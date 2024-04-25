@@ -50,6 +50,7 @@ const Footer = () => {
         setSubscribeStatus("Error sending data");
       });
   };
+
   return (
     <footer className="footer-container">
       <div className="footer-top">
@@ -86,11 +87,6 @@ const Footer = () => {
                     className="footer-follow-link"
                     target="_blank"
                     href={ele.url}
-                    // onClick={() => {
-                    //   document.querySelector(
-                    //     "#UnderConst-wrapper"
-                    //   ).style.display = "flex";
-                    // }}
                     key={`social-icon-${idx}`}
                   >
                     <img

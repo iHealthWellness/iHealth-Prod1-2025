@@ -12,7 +12,7 @@
   flex-direction: column-reverse;
   align-items: center;
   gap: 2rem;
-  padding: 2rem 0;
+  padding-bottom: 2rem;
 }
 
 .footer-contact {
@@ -174,7 +174,7 @@
     justify-content: space-between;
     gap: 0;
     background-color: #fff;
-    padding: 2rem 0;
+    padding-bottom: 2rem;
   }
 
   .footer-contact {
