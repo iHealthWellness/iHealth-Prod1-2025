@@ -72,6 +72,16 @@
 
 @media screen and (max-width: 768px) {
   .filter-panel {
+    display: flex;
+    flex-direction: column;
+    width: 105%;
+    padding: 10px;
+    background-color: #07235B;
+    margin-top: 10px;
+    margin-bottom: -10px;
+  }
+  
+  .filter-panel {
     padding: 8px;
 
   }
