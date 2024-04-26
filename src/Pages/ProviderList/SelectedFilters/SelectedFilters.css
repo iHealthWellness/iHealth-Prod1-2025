@@ -129,24 +129,32 @@ input[type="radio"] {
   }
 }
 
+
+
+
+
+
+
 @media (max-width: 480px) {
   .selected-filters1 {
     width: 360px;
     height: auto;
-    margin: 15px auto;
+    margin: 5px auto;
   }
   .selected-filters1 {
     background: linear-gradient(to bottom, #07235B 30%, white 30%);  }
 
   .filter-chip1 {
     width: auto;
+    height: 35px;
+    font-size: 12px;
   }
 
   .filter-section1 h2,
 .filter-section1 h3 {
   color: #07235B;
-  font-size: 15px;
-  margin-bottom: 10px; 
+  font-size: 12px;
+  margin-bottom: 3px; 
 }
 .apply-button1 {
   width: 100%;
@@ -159,6 +167,21 @@ input[type="radio"] {
   margin-top: 10px; 
   transition: background-color 0.3s;
 }
+
+.divider-line {
+  height: 1px;
+  background-color: #07235B;
+  margin: 10px 0; 
+  width: calc(100% + 0px); 
+  margin-left: 0px; 
+}
+
+
+.label-style {
+  font-size: 12px;
+  margin: 5px 0; 
+}
+
 }
 
 
