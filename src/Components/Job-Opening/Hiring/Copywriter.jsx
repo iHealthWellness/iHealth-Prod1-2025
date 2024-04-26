@@ -1,8 +1,8 @@
 import React from "react";
 import "./Hiring.css";
 import { BntTab } from "./ButtonTab";
-import plusbtn from "src/Assets/Icons/plus.png";
-import minusbtn from "src/Assets/Icons/minus.png";
+import plusbtn from "src/Assets/Icons/plus-circle.png";
+import minusbtn from "src/Assets/Icons/minus-circle.png";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 

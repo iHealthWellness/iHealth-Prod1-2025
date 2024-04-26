@@ -4,8 +4,8 @@ import icon from "src/Assets/Images/Hiring.jpg";
 import styles from "../EEO/EEO.module.css";
 
 /*EEO Inner content logic*/
-import plusIcon from "src/Assets/Icons/plus.png";
-import minusIcon from "src/Assets/Icons/minus.png";
+import plusIcon from "src/Assets/Icons/plus-circle.png";
+import minusIcon from "src/Assets/Icons/minus-circle.png";
 import closeIcon from "src/Assets/Images/close-button-2.png";
 import logo from "src/Assets/Images/logo1.svg";
 const sections = [
@@ -63,14 +63,14 @@ const Header = () => {
                     <h1 className="openings-side-h1">
                         Welcome to our Career Opportunities Page!
                     </h1>
+                    
                 </div> */}
       </div>
 
       <div className="openings-titles container">
-        <div className="openings-title">
-          <h2 className="openings-title-h2">Volunteer From Anywhere</h2>
-
-          <h1 className="openings-title-h1">Career Opportunities</h1>
+        <div className="headings">
+          <h2 className="openings-title-h2" >Volunteer From Anywhere</h2>
+          <h1 className="openings-title-h1" >Career Opportunities</h1>
           <h3 className="openings-title-h3" onClick={toggleModal}>
             Equal Employment Opportunity (EEO) Policy
           </h3>
