@@ -29,13 +29,14 @@ const Hero = () => {
           .getBoundingClientRect();
 
         if (
-          (letterRect.right > leftDiv.left &&
-            letterRect.left < leftDiv.right) ||
-          (letterRect.right > rightDiv.left && letterRect.left < rightDiv.right)
+          (letterRect.right >= leftDiv.left &&
+            letterRect.left <= leftDiv.right) ||
+          (letterRect.right >= rightDiv.left &&
+            letterRect.left <= rightDiv.right)
         ) {
-          letter.style.color = "white";
-        } else {
           letter.style.color = "black";
+        } else {
+          letter.style.color = "white";
         }
       });
     };
