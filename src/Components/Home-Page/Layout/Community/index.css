@@ -24,11 +24,6 @@
   height: 200px;
 }
 
-.community-container aside a .nf-first-image {
-  object-fit: fill;
-  height: 100%;
-}
-
 .community-description {
   width: 95%;
   text-align: center;
@@ -73,6 +68,10 @@
   display: flex;
   align-items: center;
   gap: 3rem;
+}
+.community-container aside a {
+  display: flex;
+  align-items: center;
 }
 
 .community-container aside img,
