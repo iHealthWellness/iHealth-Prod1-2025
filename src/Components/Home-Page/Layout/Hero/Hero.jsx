@@ -86,19 +86,6 @@ const Hero = () => {
           <h4 className="hero-heading-h4">
             Simplifying the Care of Complex Diseases for All
           </h4>
-          <h2 className="provider-heading">
-            <PersonSearchOutlinedIcon
-              sx={{
-                "@media (min-width: 480px)": {
-                  fontSize: "4rem",
-                },
-                "@media (min-width: 1024px)": {
-                  fontSize: "2rem",
-                },
-              }}
-            />
-            Search & Find a Medical or Wellness Provider
-          </h2>
         </div>
         <div className="hero-image-container">
           <img
