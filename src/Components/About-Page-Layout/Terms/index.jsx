@@ -361,13 +361,13 @@ const Terms = () => {
                     “Organization”) should be sent by email to
                     legal-team@ihealthwellness.one AND certified mail to:
                     iHealth and Wellness Foundation, Inc. - C/O Karcich. 2744
-                    Hylan Blvd, Suite #175, New York, NY 10306, United States.
-                    Any Notice sent to you will be sent to the address on file
-                    for your account. The Notice must: (i) include your name and
-                    account number; (ii) describe the nature and basis of the
-                    Dispute; and (iii) set forth the specific relief sought.
-                    Both parties agree that they will attempt to resolve a
-                    dispute through an informal negotiation within thirty (30)
+                    Hylan Blvd, Suite #175, Staten Island, NY 10306, United
+                    States. Any Notice sent to you will be sent to the address
+                    on file for your account. The Notice must: (i) include your
+                    name and account number; (ii) describe the nature and basis
+                    of the Dispute; and (iii) set forth the specific relief
+                    sought. Both parties agree that they will attempt to resolve
+                    a dispute through an informal negotiation within thirty (30)
                     days from the date the Notice is sent. After that thirty
                     (30) day period and not before, either party may commence
                     arbitration. If we are not able to resolve the Dispute by
