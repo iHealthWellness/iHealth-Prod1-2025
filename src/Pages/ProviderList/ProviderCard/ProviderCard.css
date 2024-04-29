@@ -211,21 +211,25 @@
     font-size: 16px;
   }
 
+  .provider-name {
+    text-align: center;
+  }
+
   .provider-rating .stars {
     font-size: 0.9em;
   }
 
   .provider-specialty {
-    flex-direction: column;
+    flex-direction:column;
     margin-left: 0;
-    padding-left: 5px;
+    padding-left: 0;
   }
 
   .provider-specialty-title, 
   .provider-address, 
   .provider-status .accepting-new, 
   .Education {
-    padding-left: 5px;
+    padding-left: 0;
   }
 }
 
