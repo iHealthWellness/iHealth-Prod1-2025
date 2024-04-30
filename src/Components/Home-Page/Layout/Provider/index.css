@@ -122,7 +122,6 @@
     width: 90%;
     flex-direction: row;
     align-items: flex-start;
-    justify-content: space-between;
     gap: 0;
   }
 

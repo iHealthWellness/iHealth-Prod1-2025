@@ -27,14 +27,14 @@ function ButtonsSearchDonate() {
         />
       </button>
 
-      <Link
+      {/* <Link
         onClick={() => {
           document.querySelector("#UnderConst-wrapper").style.display = "flex";
         }}
         className="provider-btn donate"
       >
         Donate Now
-      </Link>
+      </Link> */}
     </div>
   );
 }
