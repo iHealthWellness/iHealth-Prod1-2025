@@ -18,6 +18,12 @@
   line-height: 110%;
 }
 
+.community-container aside a {
+  align-self: flex-start;
+  width: 200px;
+  height: 200px;
+}
+
 .community-description {
   width: 95%;
   text-align: center;
@@ -63,6 +69,10 @@
   align-items: center;
   gap: 3rem;
 }
+.community-container aside a {
+  display: flex;
+  align-items: center;
+}
 
 .community-container aside img,
 .community-container aside a img {
@@ -84,8 +94,12 @@
     gap: 1rem;
   }
 
+  .community-container aside a {
+    align-items: end;
+  }
+
   .community-container {
-    padding: 2rem;
+    padding: 2rem 2rem 3rem;
   }
 
   .community-heading {
@@ -97,6 +111,7 @@
     font-size: 1.5rem;
     font-weight: 400;
     line-height: 143%;
+    padding-bottom: 0;
   }
 
   .community-teams {
@@ -174,6 +189,13 @@
     align-items: center;
     gap: 1rem;
   }
-
-  
+  .community-container aside a {
+    align-items: end;
+  }
+  .community-container {
+    padding: 2rem 2rem 3rem;
+  }
+  .community-description {
+    padding-bottom: 0;
+  }
 }
