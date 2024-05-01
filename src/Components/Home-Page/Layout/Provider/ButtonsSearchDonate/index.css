@@ -17,7 +17,6 @@
   color: #ffffff;
   text-decoration: none;
   cursor: pointer;
-  margin-left: 1rem;
 }
 
 .provider-btn.search {
@@ -41,5 +40,6 @@
   }
   .provider-btn {
     width: auto;
+    margin-left: 1rem;
   }
 }
