@@ -75,7 +75,7 @@
   }
 
   .partner-text-subheading {
-    font-size: 1.875rem;
+    font-size: 1.5rem;
     font-weight: 600;
     line-height: 110%;
   }
@@ -99,7 +99,7 @@
 
 @media screen and (max-width: 480px) {
   .partner-text-heading {
-    font-size: 1.5rem;
+    font-size: 2.25rem;
   }
 
   .partner-link {
