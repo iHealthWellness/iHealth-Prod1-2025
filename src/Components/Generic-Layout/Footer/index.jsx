@@ -1,26 +1,18 @@
 import React, { useState } from "react";
+import { BASE_URL } from "../../../environment/config";
+import axios from "axios";
 
 import FooterLinkCard from "./FooterLinkCard";
-
-import { Select, MenuItem } from "@mui/material";
-import MailOutlineIcon from "@mui/icons-material/MailOutline";
-
 import SocialMedia from "src/Constants/HomePage/SocialMedia.js";
 import FooterLink from "src/Constants/FooterLink.js";
-
+import LanguageBar from "./LanguageBar/LanguageBar";
+import SasikaQuote from "src/Assets/Images/sasika-quote.png";
 import "./index.css";
-import axios from "axios";
-import { BASE_URL } from '../../../environment/config';
 
 const Footer = () => {
-  const [selectedLanguage, setSelectedLanguage] = useState("en");
   const [email, setEmail] = useState("");
   const [loading, setLoading] = useState(false);
   const [subscribeStatus, setSubscribeStatus] = useState("");
-
-  const handleChange = (event) => {
-    setSelectedLanguage(event.target.value);
-  };
 
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
@@ -59,6 +51,7 @@ const Footer = () => {
         setSubscribeStatus("Error sending data");
       });
   };
+
   return (
     <footer className="footer-container">
       <div className="footer-top">
@@ -72,19 +65,19 @@ const Footer = () => {
           <div className="footer-subscribe-block">
             <p className="footer-subscribe-heading">STAY INFORMED:</p>
             <div className="footer-subscribe-bar">
-          <form onSubmit={handleSubmit}>
-            <input
-              className="footer-subscribe-input"
-              placeholder="Your email here"
-              value={email}
-              onChange={handleEmailChange}
-            />
-            <button className="footer-subscribe-btn" type="submit">
-              {loading ? "Loading..." : subscribeStatus || "Subscribe"}
-            </button>
-          </form>
-          {loading && <div className="loading-spinner"></div>}
-        </div>
+              <form onSubmit={handleSubmit}>
+                <input
+                  className="footer-subscribe-input"
+                  placeholder="Your email here"
+                  value={email}
+                  onChange={handleEmailChange}
+                />
+                <button className="footer-subscribe-btn" type="submit">
+                  {loading ? "Loading..." : subscribeStatus || "Subscribe"}
+                </button>
+              </form>
+              {loading && <div className="loading-spinner"></div>}
+            </div>
           </div>
           <div className="footer-follow-block">
             <p className="footer-follow-heading">FOLLOW US:</p>
@@ -95,11 +88,6 @@ const Footer = () => {
                     className="footer-follow-link"
                     target="_blank"
                     href={ele.url}
-                    // onClick={() => {
-                    //   document.querySelector(
-                    //     "#UnderConst-wrapper"
-                    //   ).style.display = "flex";
-                    // }}
                     key={`social-icon-${idx}`}
                   >
                     <img
@@ -119,106 +107,21 @@ const Footer = () => {
             <FooterLinkCard linkCard={ele} key={`footer-link-${idx}`} />
           ))}
         </div>
+        <div className="sasika-quote">
+          <img src={SasikaQuote} alt="quote from CEO/CTO" />
+        </div>
       </div>
       <div className="footer-bottom">
-
         <div className="footer-terms-center SN-M-P-16">
-          <div className="footer-terms">
-            <span>
-            Copyright © 2024 iHealth and Wellness Foundation, Inc. All rights reserved. iHealth and Wellness Foundation, Inc. is a 501 (c)(3) non-profit recognized by the IRS.
-            </span>
-            <span>
-              Tax ID Number: 93-1567099
-            </span>
-          </div>
+          <p className="footer-terms">
+            @2023 iHealth and Wellness Foundation, Inc. All rights reserved.
+            iHealth and Wellness Foundation is a 501(c)(3) Nonprofit
+            Organization. EIN: 93-1567099
+          </p>
         </div>
-
-        <div className="language-select-cont">
-        <Select
-          value={selectedLanguage}
-          onChange={handleChange}
-          sx={{
-            color: "white",
-            border: 0,
-            outline: 0,
-            ".MuiOutlinedInput-notchedOutline": {
-              borderColor: "rgba(228, 219, 233, 0)",
-            },
-            "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
-              borderColor: "rgba(228, 219, 233, 00)",
-            },
-            "&:hover .MuiOutlinedInput-notchedOutline": {
-              borderColor: "rgba(228, 219, 233, 0)",
-            },
-            "& .MuiSelect-icon": {
-              color: "white",
-            },
-            "@media (max-width: 768px)": {
-              minWidth: "50px", // Adjust as needed
-            },
-            "@media (max-width: 576px)": {
-              minWidth: "80px",
-              fontSize: "0.8rem",
-            },
-          }}
-        >
-          <MenuItem
-            value="en"
-            sx={{
-              "@media (max-width: 576px)": {
-                minWidth: "80px",
-                fontSize: "0.8rem",
-              },
-            }}
-          >
-            English
-          </MenuItem>
-          <MenuItem
-            value="cn"
-            sx={{
-              "@media (max-width: 576px)": {
-                minWidth: "80px",
-                fontSize: "0.8rem",
-              },
-            }}
-          >
-            Chinese
-          </MenuItem>
-          <MenuItem
-            value="fr"
-            sx={{
-              "@media (max-width: 576px)": {
-                minWidth: "80px",
-                fontSize: "0.8rem",
-              },
-            }}
-          >
-            Français
-          </MenuItem>
-          <MenuItem
-            value="es"
-            sx={{
-              "@media (max-width: 576px)": {
-                minWidth: "80px",
-                fontSize: "0.8rem",
-              },
-            }}
-          >
-            Español
-          </MenuItem>
-          <MenuItem
-            value="de"
-            sx={{
-              "@media (max-width: 576px)": {
-                minWidth: "80px",
-                fontSize: "0.8rem",
-              },
-            }}
-          >
-            Deutsch
-          </MenuItem>
-        </Select>
-      </div>
+          <div className="language-select-cont">
+            <LanguageBar />
+          </div>
       </div>
     </footer>
   );

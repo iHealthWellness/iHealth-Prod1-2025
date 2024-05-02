@@ -5,6 +5,11 @@
   font-family: "Roboto", sans-serif;
 }
 
+/* Language bar in the footer causes the whole page to move to the left. Setting it to 0 with !important fixes it. Contact David Tevzadze if you have any issues with this! */
+body {
+  padding-right: 0 !important;
+}
+
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
