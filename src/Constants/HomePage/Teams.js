@@ -34,19 +34,6 @@ const Teams = [
   },
   {
     icon: {
-      src: personsImage,
-      alt: "Group icon",
-    },
-    heading: "Research",
-    content: [
-      { text: "Research Tools & Resources", path: "/research/#tools" },
-      { text: "Clinical Drug Therapies", path: "/research/#clinical" },
-      { text: "Participate in Research", path: "/research/#participate" },
-    ],
-    detailPath: "/research",
-  },
-  {
-    icon: {
       src: educationImage,
       alt: "Education icon",
     },
