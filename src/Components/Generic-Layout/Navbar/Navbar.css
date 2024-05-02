@@ -6,7 +6,7 @@
   padding: 0.5rem 0;
   background-color: #07235b;
   position: relative;
-  scroll-snap-align: start;
+  /* scroll-snap-align: start; */
 }
 
 .nav-inner-container {
@@ -80,7 +80,6 @@
   background-color: #0d99ff;
   display: block;
 }
-
 
 .nav-dropdown-content a {
   color: #ffff;
