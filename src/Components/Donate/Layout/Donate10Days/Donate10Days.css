@@ -8,9 +8,17 @@
   /* scroll-snap-align: start; */
 }
 
+@media only screen and (min-width: 1024px) {
+  #Donate10Days-Main-Container {
+    margin-top: -15rem;
+    margin-bottom: -9rem;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   #Donate10Days-Main-Container {
     transform: scale3d(0.8, 1, 1);
+    margin-top: -5rem;
   }
 }
 
@@ -18,6 +26,7 @@
 @media only screen and (max-width: 576px) {
   #Donate10Days-Main-Container {
     transform: scale3d(0.8, 1, 1);
+    margin-top: -5rem;
   }
 }
 

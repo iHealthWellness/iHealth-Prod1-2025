@@ -1,7 +1,7 @@
 #Donate-Top-Wrapper {
   display: flex;
   flex-direction: column;
-  margin-bottom: 5rem;
+  /* margin-bottom: 5rem; */
   place-items: center;
   /* scroll-snap-align: start; */
 }

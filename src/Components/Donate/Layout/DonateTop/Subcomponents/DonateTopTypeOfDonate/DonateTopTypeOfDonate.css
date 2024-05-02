@@ -1,9 +1,15 @@
 #Donate-Top-TypeOfDonate {
   display: flex;
   flex-direction: column;
-  padding: 4rem 0rem 0 0rem;
+  /* padding: 4rem 0rem 0 0rem; */
   scale: 0.7;
   /* scroll-snap-align: center; */
+}
+
+@media only screen and (min-width: 1024px) {
+  #Donate-Top-TypeOfDonate {
+    margin-top: -4rem;
+  }
 }
 
 @media only screen and (max-width: 768px) {

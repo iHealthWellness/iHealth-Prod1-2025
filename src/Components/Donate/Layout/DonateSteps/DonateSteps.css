@@ -5,9 +5,16 @@
   /* scroll-snap-align: center; */
 }
 
+@media only screen and (min-width: 1024px) {
+  #Donate-Steps-Wrapper {
+    margin-top: -15rem;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   #Donate-Steps-Wrapper {
     transform: scale3d(0.8, 1, 1);
+    margin-top: -5rem;
   }
 }
 
@@ -15,6 +22,7 @@
 @media only screen and (max-width: 576px) {
   #Donate-Steps-Wrapper {
     transform: scale3d(0.8, 1, 1);
+    margin-top: -5rem;
   }
 }
 
