@@ -1,5 +1,5 @@
 .information-tab-container {
-  background-color: #f6f8f7;
+  /* background-color: #f6f8f7; */
   padding: 1rem;
 }
 
@@ -88,7 +88,7 @@
   }
 
   .information-tab.focus::after {
-    content: "";
+    content: '';
     position: absolute;
     width: 0;
     height: 0;
