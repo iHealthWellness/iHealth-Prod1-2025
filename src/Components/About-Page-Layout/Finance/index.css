@@ -106,17 +106,10 @@
   font-weight: 400;
   line-height: 23px;
   letter-spacing: 0.02em;
-  text-align: justify;
-
+  text-align: left;
   color: #00325d;
   padding: 9px;
   flex-grow: 1; /* Allows the text to grow if there's available space */
-}
-
-@media screen and (max-width: 480px) {
-  .grid2 {
-    text-align: left;
-  }
 }
 
 .grid-analysis img {
@@ -172,6 +165,7 @@
 .analysis-img {
   margin-top: 20px;
   width: 90%;
+  max-height: 330px;
 }
 .chart-analysis-tab.slide-in,
 .trans-outline.slide-in {
