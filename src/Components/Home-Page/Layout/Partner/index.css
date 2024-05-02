@@ -14,7 +14,6 @@
 
 .partner-heading {
   color: #062758;
-  padding-bottom: 1rem;
   font-size: 2.5rem;
   font-weight: 600;
   line-height: 110%;
@@ -72,11 +71,19 @@
 }
 
 .partner-paragraph {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   color: #fff;
+  width: 90vw;
 }
+// add for mobile view
+/* @media only screen and (min-width: 480px) {
+  .partner-paragraph {
+    font-size: 1.25rem;
+    width: 90vw;
+  }
+} */
 /* Tablet view */
-@media only screen and (min-width: 480px) and (max-width: 1024px) {
+@media only screen and (min-width: 480px) {
   .partner-heading-block aside {
     max-width: 100%;
     padding: 4rem 0 4rem 4rem;
@@ -94,6 +101,11 @@
 @media only screen and (min-width: 1024px) {
   .partner-heading-block {
     margin-bottom: 1rem;
+  }
+  .partner-paragraph {
+    font-size: 1.25rem;
+    color: #fff;
+    width: 100vw;
   }
   .partner-container {
     display: flex;
@@ -130,7 +142,7 @@
 
 @media screen and (max-width: 480px) {
   .partner-heading {
-    font-size: 2.25rem;
+    font-size: 1.875rem;
     font-weight: 600;
   }
   .partner-heading-block aside {
