@@ -3,10 +3,9 @@
   width: 90%;
 }
 .openings-container {
-  background-color: #DCE8F2;
-  ;
+  background-color: #dce8f2;
 }
-.openings-tab{
+.openings-tab {
   position: relative;
 }
 .openings-img {
@@ -23,7 +22,7 @@
   width: 260px;
   height: 350px;
   padding: 40px;
-  flex-direction: column; 
+  flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   gap: 20px;
@@ -63,19 +62,20 @@
 .openings-titles {
   margin-top: 100px;
 }
-.headings{
+.headings {
   text-align: left;
   margin-right: auto;
 }
 .openings-title-h1 {
   color: var(--SN-Primary-Headings-07235B, #07235b);
   font-family: Roboto;
-  font-size: 2.25rem; 
+  font-size: 2.25rem;
   font-style: normal;
   font-weight: 600;
   line-height: 110%;
   margin-bottom: 30px;
-  width: 400px; 
+  width: 400px;
+  max-width: 90vw;
 }
 
 .openings-title-h2 {
@@ -117,10 +117,9 @@
     align-self: stretch;
   }
   .openings-img {
-      width: 100%;
-      height: 350px;
-      padding: 10px 0 0 0;
-    
+    width: 100%;
+    height: 350px;
+    padding: 10px 0 0 0;
   }
   .openings-side {
     display: flex;
