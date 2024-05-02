@@ -1,0 +1,38 @@
+.nav-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1.19rem;
+  flex-shrink: 0;
+  height: 100%;
+}
+
+.survey-page-arrow {
+  display: none;
+  cursor: pointer;
+}
+
+.nav-section-none {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-section {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .survey-page-arrow {
+    display: block;
+  }
+
+  .survey-page-arrow svg {
+    color: var(--SN-Primary-Headings-07235B, #07235b);
+    padding: 0;
+  }
+
+  .nav-section .survey-page-arrow svg.disabled {
+    color: grey; /* Disabled color */
+  }
+}

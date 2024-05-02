@@ -1,0 +1,57 @@
+.congratulatory-message {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--SN-Primary-Headings-07235B, #07235b);
+  gap: 1.75rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.submission-page-main {
+  text-align: center;
+}
+
+.submission-page-main > p {
+  padding: 0.3rem;
+}
+
+.congratulatory-message .survey-close-btn {
+  margin-right: 2rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .congratulatory-message {
+    display: grid;
+    place-items: center;
+    gap: 2rem;
+    text-align: center;
+    margin: 2rem 0;
+  }
+
+  .congratulatory-message h2 {
+    font-size: 1.5rem;
+  }
+
+  .congratulatory-message p {
+    font-size: 1rem;
+  }
+  .congratulatory-message .survey-close-btn {
+    margin: 1rem 1rem;
+  }
+  .submission-page-main > p {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .congratulatory-message > button .survey-close-btn {
+    top: -3rem;
+    right: -1rem;
+  }
+  .survey-close-btn {
+    width: 1.5rem;
+  }
+}

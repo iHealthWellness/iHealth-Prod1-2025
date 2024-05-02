@@ -34,6 +34,19 @@ const Teams = [
   },
   {
     icon: {
+      src: personsImage,
+      alt: "Group icon",
+    },
+    heading: "Research",
+    content: [
+      { text: "Research Tools & Resources", path: "/research/#tools" },
+      { text: "Clinical Drug Therapies", path: "/research/#clinical" },
+      { text: "Participate in Research", path: "/research/#participate" },
+    ],
+    detailPath: "/research",
+  },
+  {
+    icon: {
       src: educationImage,
       alt: "Education icon",
     },
@@ -42,6 +55,7 @@ const Teams = [
       { text: "For Patients", path: "/understanding-condition" },
       { text: "For Caregivers", path: "/workshops" },
       { text: "For Providers", path: "/conferences-workshops" },
+      { text: "For Caregivers", path: "/workshops" },
     ],
     detailPath: "#Information",
   },

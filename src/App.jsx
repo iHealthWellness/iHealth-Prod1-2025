@@ -22,6 +22,7 @@ import ProviderList from "./Pages/ProviderList/ProviderList.jsx";
 import Jobs from "./Pages/Job-Openings/Jobs";
 import LivingwithNf from "./Pages/Living-with-NF/index"
 import EEOTest from "./Pages/Term-of-use-EEO-test-page/index"
+import SurveyForm from "./Pages/Survey/index";
 // import Other from "./Pages/Other/index";
 
 function App() {
@@ -44,11 +45,13 @@ function App() {
         { path: "/eeotest", element: <EEOTest /> },
        // { path: "/job-openings", element: <Jobs/>},
         { path: "/job-openings", element: <Jobs/>},
-        { path: "/livingwith-nf", element: <LivingwithNf/>}
+        { path: "/livingwith-nf", element: <LivingwithNf/>},
+        { path: "/nf-survey", element: <SurveyForm /> },
         // { path: "*", element: <Other /> },
       ],
     },
   ]);
+
   return (
     <>
       <RouterProvider router={router} />

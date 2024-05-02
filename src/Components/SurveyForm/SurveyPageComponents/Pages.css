@@ -1,0 +1,130 @@
+/* Css for PageOne.jsx and RestPages.jsx */
+
+.form-input-container {
+  position: relative;
+}
+
+.main-section .nav-content-section form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: baseline;
+  gap: 2.2rem;
+  min-height: 10vh;
+}
+
+.radio-options-container label {
+  margin: 0.56rem 1.56rem 0 0rem;
+}
+
+.form-input-container > label {
+  position: relative;
+}
+
+.form-input-container > label::before,
+.survey-required-section label::before {
+  position: absolute;
+  content: url("src/Assets/Icons/survey-label-icon.svg");
+  left: -1.1rem;
+}
+
+.form-input-container select {
+  text-align: center;
+}
+
+.survey-required-section select {
+  text-align: center;
+}
+
+.survey-required-section label:first-child {
+  color: var(--SN--Light-Blue, #0d99ff);
+}
+
+.survey-required-section label,
+form .form-input-container label.required {
+  position: relative;
+}
+
+.survey-required-section input {
+  width: 80%;
+}
+
+.survey-required-section select {
+  width: 20%;
+}
+
+.survey-required-section input,
+.survey-required-section select {
+  padding: 0.6rem 0.75rem;
+  border-radius: 0.375rem;
+  border: var(--Devices, 2px) solid var(--Neutral-100, #d9d9d9);
+  background: var(--Shade-White, #fff);
+}
+
+.survey-required-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-direction: column;
+  width: 100%;
+}
+
+.radio-options-container {
+  padding-top: 0.56rem;
+  display: flex;
+  flex-wrap: wrap;
+  color: var(--SN-Primary-Headings-07235B, #07235b);
+}
+
+form .form-input-container > label {
+  color: var(--SN-Primary-Headings-07235B, #07235b);
+}
+
+.radio-options-container label input {
+  margin: 0 0.6rem 0.7rem 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .survey-required-section input {
+    width: 50%;
+    min-width: 200px;
+  }
+  .survey-required-section select {
+    width: 30%;
+    min-width: 100px;
+  }
+}
+
+@media screen and (max-width: 605px) {
+  .radio-options-container {
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 1.5rem;
+  }
+  .radio-options-container label {
+    margin: 0;
+    position: relative;
+  }
+  .radio-options-container label img {
+    position: absolute;
+    bottom: 20%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .survey-required-section > *,
+  .form-input-container > * {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .survey-required-section input {
+    width: 50%;
+    min-width: 200px;
+  }
+  .survey-required-section select {
+    width: 30%;
+    min-width: 100px;
+  }
+}
