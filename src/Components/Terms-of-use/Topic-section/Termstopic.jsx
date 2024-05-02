@@ -405,9 +405,8 @@ const Termstopic = () => {
                 Notice (“Notice”). Any Notice to iHealth and Wellness (the
                 “Organization”) should be sent by email to
                 legal-team@ihealthwellness.one AND certified mail to: iHealth and
-                Wellness Foundation, Inc. - C/O GOOD COUNSEL SERVICES, INC. 106
-                West 32nd Street, 2nd Floor, Office 138 New York, NY 10001,
-                United States. Any Notice sent to you will be sent to the address
+                Wellness Foundation, Inc. - C/O Karcich. 2744 Hylan Blvd, Suite #175, 
+                Staten Island, NY 10306, United States Any Notice sent to you will be sent to the address
                 on file for your account. The Notice must: (i) include your name
                 and account number; (ii) describe the nature and basis of the
                 Dispute; and (iii) set forth the specific relief sought. Both

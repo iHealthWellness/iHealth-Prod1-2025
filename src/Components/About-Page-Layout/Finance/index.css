@@ -113,6 +113,12 @@
   flex-grow: 1; /* Allows the text to grow if there's available space */
 }
 
+@media screen and (max-width: 480px) {
+  .grid2 {
+    text-align: left;
+  }
+}
+
 .grid-analysis img {
   margin-top: 5px;
   width: 65%;
