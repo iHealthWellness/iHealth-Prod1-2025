@@ -101,17 +101,16 @@
 }
 
 @keyframes slideText {
-  0%,
-  25% {
+  0% {
     transform: translateX(0);
   }
-  65% {
+  35% {
     transform: translateX(70vw);
   }
-  65.01% {
+  35.01% {
     transform: translateX(-70vw);
   }
-  100% {
+  65%, 100% {
     transform: translateX(0);
   }
 }
@@ -120,7 +119,7 @@
   overflow: hidden;
   display: block;
   position: relative;
-  animation: slideText 20s linear infinite;
+  animation: slideText 26s linear infinite;
 }
 
 .letter {
@@ -146,17 +145,16 @@
 
 @media only screen and (max-width: 1024px) {
   @keyframes slideText {
-    0%,
-    25% {
+    0% {
       transform: translateX(0);
     }
-    65% {
+    35% {
       transform: translateX(100vw);
     }
-    65.01% {
+    35.01% {
       transform: translateX(-100vw);
     }
-    100% {
+    65%, 100% {
       transform: translateX(0);
     }
   }
@@ -171,13 +169,13 @@
   }
 
   .second-banner p {
-    animation: slideText 14s linear infinite;
+    animation: slideText 18s linear infinite;
   }
 }
 
 @media only screen and (max-width: 480px) {
   .second-banner p {
-    animation: slideText 10s linear infinite;
+    animation: slideText 15s linear infinite;
   }
   .hero-survey-banner {
     font-size: 1rem;
