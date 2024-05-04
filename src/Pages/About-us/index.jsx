@@ -10,8 +10,8 @@ const index = () => {
     <main className={styles.aboutUs}>
       <Hero />
       <Statement />
-      {/* <Team /> */}
-      {/* <Finance /> */}
+      <Team />
+      <Finance />
       {/* <Terms /> */}
     </main>
   );
