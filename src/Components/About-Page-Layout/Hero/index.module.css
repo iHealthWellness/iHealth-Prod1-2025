@@ -5,11 +5,12 @@
 
 .heroImage img {
   max-width: 100%;
-  padding: 1rem 2rem 2rem;
+  padding: 1rem 0 2rem;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1024px) {
   .heroImage img {
-    padding: 0;
+    width: 100%;
+    padding: 1rem 0;
   }
 }

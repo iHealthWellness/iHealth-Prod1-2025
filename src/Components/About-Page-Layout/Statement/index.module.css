@@ -20,6 +20,7 @@
 .statementContainer section img {
   width: 100%;
   object-fit: cover;
+  border-radius: 2rem 2rem 0 0;
 }
 
 .statementContainer section article {
@@ -81,4 +82,42 @@ aside.hoverEffect:hover p,
   background-color: #07235b;
   color: #fff;
   border-radius: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .statementContainer {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .statementContainer section {
+    max-width: 100%;
+  }
+
+  .statementContainer section:nth-child(1),
+  .statementContainer section:nth-child(3) {
+    margin-top: 0;
+  }
+
+  .statementContainer section img {
+    max-height: 349px;
+    object-fit: cover;
+    object-position: center top;
+  }
+
+  .statementContainer section article {
+    gap: 1rem;
+  }
+
+  .statementContainer section article p,
+  .statementContainer section article aside p {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .statementContainer section article p,
+  .statementContainer section article aside p {
+    font-size: 18px;
+  }
 }

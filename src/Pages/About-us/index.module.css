@@ -4,3 +4,17 @@
   place-items: center;
   grid-template-columns: 10% 1fr 10%;
 }
+
+@media screen and (max-width: 768px) {
+  .aboutUs {
+    grid-template-columns: 1fr;
+    padding-inline: 2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .aboutUs {
+    padding-inline: 1rem;
+  }
+  
+}
