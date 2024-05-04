@@ -1,0 +1,14 @@
+.mainContainer {
+  grid-column: 2;
+}
+
+.mainContainer img {
+  width: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1024px) {
+  .mainContainer {
+    grid-column: 1 / -1;
+  }
+}
