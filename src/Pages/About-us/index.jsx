@@ -7,28 +7,16 @@ import Terms from "src/Components/About-Page-Layout/Terms";
 import Team from "src/Components/About-Page-Layout/Team/Team";
 import TotopBtn from "src/Components/About-Page-Layout/TotopBtn";
 
-
-
-
-
-
-
 const index = () => {
   return (
     <>
       <Hero />
-      <Statement />
-      <Team />
-      <Finance /> 
-      <Terms />
-      <TotopBtn />
-
-
-
+      {/* <Statement /> */}
+      {/* <Team />
+      <Finance />
+      <Terms /> */}
     </>
-
-  )
-
+  );
 };
 
 export default index;
