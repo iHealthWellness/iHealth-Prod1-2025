@@ -1,0 +1,6 @@
+.aboutUs {
+  background-color: #f2f8fd;
+  display: grid;
+  place-items: center;
+  grid-template-columns: 10% 1fr 10%;
+}

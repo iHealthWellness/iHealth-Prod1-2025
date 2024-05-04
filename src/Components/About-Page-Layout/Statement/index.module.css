@@ -1,0 +1,84 @@
+.statementContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  grid-column: 2;
+  justify-items: center;
+  padding-bottom: 2rem;
+}
+
+.statementContainer section {
+  text-align: center;
+  max-width: 381px;
+}
+
+.statementContainer section:nth-child(1),
+.statementContainer section:nth-child(3) {
+  margin-top: 6rem;
+}
+
+.statementContainer section img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.statementContainer section article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  text-align: justify;
+  border-radius: 0 0 1rem 1rem;
+  background-color: #fff;
+  padding: 1rem;
+}
+
+.statementContainer section article aside h2 {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.statementContainer section article > p {
+  padding: 1rem;
+}
+
+.statementContainer section article aside > p,
+.statementContainer section article > p,
+.statementContainer section article aside h2 {
+  color: #07235b;
+}
+
+.statementContainer section article aside.blueParagraph {
+  color: #fff;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.statementContainer section article p.blueParagraph {
+  color: #fff;
+  border-radius: 1rem;
+}
+
+.statementContainer section article p.blueParagraph,
+.statementContainer section article aside.blueParagraph {
+  background-color: #07235b;
+}
+
+.statementContainer section article p.blueParagraph,
+.statementContainer section article aside.blueParagraph h2,
+.statementContainer section article aside.blueParagraph p {
+  color: #fff;
+}
+
+.hoverEffect {
+  padding: 1rem;
+}
+
+aside.hoverEffect:hover,
+aside.hoverEffect:hover h2,
+aside.hoverEffect:hover p,
+.statementContainer section article p:hover {
+  background-color: #07235b;
+  color: #fff;
+  border-radius: 1rem;
+}
