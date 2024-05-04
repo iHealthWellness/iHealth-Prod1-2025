@@ -1,20 +1,12 @@
-import { useState } from "react";
-import "./index.css";
-
-import img from "src/Assets/Images/business-meeting3.png";
+import AboutUs from "src/Assets/Images/business-meeting3.png";
+import styles from "./index.module.css";
 
 const Hero = () => {
-
-
-    return (
-        <section  id="Hero" className="Hero-image">
-            <div className="container"> 
-                <div className="image-page">
-                    <img src={img} className="img-holder" alt="meeting" />
-                </div>
-            </div>
-        </section>
-    )
+  return (
+    <header id="Hero" className={styles.heroImage}>
+      <img src={AboutUs} alt="meeting" />
+    </header>
+  );
 };
 
 export default Hero;

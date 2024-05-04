@@ -1,0 +1,14 @@
+.heroImage {
+  text-align: center;
+}
+
+.heroImage img {
+  max-width: 100%;
+  padding: 1rem 2rem;
+}
+
+@media screen and (max-width: 480px) {
+  .heroImage img {
+    padding: 0;
+  }
+}
