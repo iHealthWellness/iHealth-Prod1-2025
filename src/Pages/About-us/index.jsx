@@ -11,8 +11,8 @@ const index = () => {
       <Hero />
       <Statement />
       <Team />
-      <Finance />
-      {/* <Terms /> */}
+      {/* <Finance /> */}
+      <Terms />
     </main>
   );
 };
