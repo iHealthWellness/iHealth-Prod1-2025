@@ -185,16 +185,23 @@
     min-width: 31dvw;
     }
 
-    #Donate-Top-Donate-Now > div:last-child > div:first-child > div:nth-child(2) > p 
+    #Donate-Top-Donate-Now > div:last-child > div:first-child > div:nth-child(2) >#donate-today 
     {
-        font-size: 4.2dvw;
+        font-size: 1.5rem;
+    }
+
+    #Donate-Top-Donate-Now > div:last-child > div:first-child > div:nth-child(2) > p
+    {
+        font-size: 1.25rem;
     }
     
     #Donate-Top-Donate-Now > div:last-child > div:first-child > div:nth-child(2) > button
     {
         height: 2dvw;
-        padding: 0.5rem;
-        font-size: 1.7dvw;
+        padding: 0.5rem 0.5rem 1rem 0.5rem;
+        font-size: 1rem;
+        width: 110px;
+        margin-left: -30px;
     }
 }
 

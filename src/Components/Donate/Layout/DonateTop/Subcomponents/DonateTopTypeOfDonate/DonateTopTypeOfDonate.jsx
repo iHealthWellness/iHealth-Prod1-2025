@@ -29,18 +29,18 @@ function DonateTopTypeOfDonate()
         <div id='Donate-Top-TypeOfDonate'>
             <div>
                 <div>
-                    <h2>Support Patients with Complex <br/> Diseases: <span> Making a Difference Together</span> </h2>
+                    <h2>Support Patients with Complex Diseases: <span> Making a Difference Together</span> </h2>
                 </div>
                 <div>
                     <p>
-                        We are dedicated to revolutionizing healthcare and <br/> empowering individuals to lead healthier lives.
+                        We are dedicated to revolutionizing healthcare and empowering individuals to lead healthier lives.
                     </p>
                     <p>
                         Join us in making a profound impact by donating today. Your contribution will drive groundbreaking initiatives, promote preventive care, 
                         and provide access to essential resources.
                     </p>
                     <p>
-                        Together, we can transform lives and build a brighter,<br/> healthier future for all.
+                        Together, we can transform lives and build a brighter,healthier future for all.
                     </p>
                 </div>
             </div>

@@ -42,7 +42,7 @@ function DonateTopDonateNow()
                         <p>Share the <br/>
                         Love, Make a <br/>
                         Difference:</p>
-                        <p>Donate Today!</p>
+                        <p id="donate-today">Donate Today!</p>
                         <button onClick={() => {document.querySelector("#UnderConst-wrapper").style.display ="flex";}} >Donate Online</button>
                     </div>
                 </div>

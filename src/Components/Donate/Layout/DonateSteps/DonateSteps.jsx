@@ -36,7 +36,8 @@ function DonateSteps()
         <div id='Donate-Steps-Wrapper' ref={rootElm}>
             
             <div>
-                <h3>Unite, Fundraise, Transform: Making an Impact Together</h3>
+            <h3>Unite, Fundraise, Transform:<span> Making an Impact Together</span> </h3>
+
                 <p>Unleash the Power of our Initiatives with Tailored Fundraising Resources and Social Media Sharing!</p>
             </div>
             <div>
