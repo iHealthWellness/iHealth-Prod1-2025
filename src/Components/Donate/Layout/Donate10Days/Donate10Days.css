@@ -55,10 +55,11 @@
   color: #0d99ff;
   font-family: Roboto;
   padding: 0 0 3rem 0;
-  font-size: 2.25rem;
+  font-size: 1.5rem;
   font-style: normal;
-  font-weight: 600;
   line-height: 110%;
+  text-align: left;
+  font-weight: 400;
 }
 
 /* Set Css rules for continer of text content as articles */
