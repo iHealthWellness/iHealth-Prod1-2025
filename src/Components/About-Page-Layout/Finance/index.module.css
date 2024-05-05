@@ -1,6 +1,13 @@
 .financeContainer {
-  grid-column: 2;
+  grid-column: 1/-1;
   background-color: #fff;
+  display: grid;
+  justify-items: center;
+  gap: 2rem;
+}
+
+.financeContainer > * {
+  max-width: 76%;
 }
 
 .financeContainer header {
@@ -9,7 +16,7 @@
 
 .financeContainer header > div {
   position: relative;
-  max-width: 50%;
+  min-width: 50%;
   background-color: #07235b;
 }
 
@@ -43,14 +50,74 @@
   font-size: 2rem;
 }
 
+.chartSection {
+  display: flex;
+  justify-content: space-between;
+}
+
+section.chartSection {
+  width: 100%;
+}
+
+.chartSection div img {
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.chartSection summary {
+  max-width: 40%;
+  display: grid;
+  place-items: center;
+  gap: 1rem;
+}
+
+.chartSection summary img {
+  width: 100%;
+  height: 100%;
+}
+
+.chartSection div {
+  max-width: 50%;
+}
+
+.chartSection aside {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: #00325d;
+  padding-left: 2rem;
+  counter-reset: section-counter;
+}
+
+.chartSection aside p {
+  position: relative;
+}
+
+.chartSection aside p::before {
+  counter-increment: section-counter;
+  content: counter(section-counter);
+  position: absolute;
+  left: -1.8rem;
+  color: #fff;
+  background-color: rgba(133, 142, 173, 1);
+  padding: 0 0.3rem;
+  border-radius: 0 0 4px 4px;
+  font-size: 20px;
+}
+
 @media screen and (max-width: 1024px) {
-  .financeContainer {
-    width: 100%;
-    grid-column: 1 / -1;
+  .financeContainer > * {
+    max-width: 100%;
   }
 
   .financeContainer header {
     flex-direction: column;
+    width: 100%;
+  }
+
+  .financeContainer header img {
+    object-fit: cover;
   }
 
   .financeContainer header > div {
@@ -64,5 +131,17 @@
 
   .financeContainer header aside {
     min-height: 15vh;
+  }
+
+  .chartSection {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .chartSection summary,
+  .chartSection div {
+    max-width: 90%;
   }
 }

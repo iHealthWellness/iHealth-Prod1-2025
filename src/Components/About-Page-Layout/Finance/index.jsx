@@ -1,23 +1,12 @@
-import { useState, useRef, useEffect } from "react";
-
 import financialTransparency from "src/Assets/Images/finance.png";
-import img5 from "src/Assets/Images/bar.png";
-// import img6 from "src/Assets/Icons/Vector1.png";
-// import img7 from "src/Assets/Icons/Vector2.png";
-// import img8 from "src/Assets/Icons/Vector3.png";
-// import img9 from "src/Assets/Icons/Vector4.png";
-// import img10 from "src/Assets/Icons/Vector5.png";
-// import img11 from "src/Assets/Icons/Vector6.png";
-// import img12 from "src/Assets/Icons/Vector7.png";
-// import img13 from "src/Assets/Icons/Vector8.png";
-// import img14 from "src/Assets/Icons/Vector9.png";
-import img17 from "src/Assets/Images/pie-chart2.png";
-import img18 from "src/Assets/Images/pie-chart3.png";
+import barChart from "src/Assets/Images/bar.png";
+import expensesChart from "src/Assets/Images/pie-chart2.png";
+import projectedRevenue from "src/Assets/Images/pie-chart3.png";
 import styles from "./index.module.css";
 
 const Finance = () => {
   return (
-    <section id="Finance" className={styles.financeContainer}>
+    <main id="Finance" className={styles.financeContainer}>
       <header>
         <div>
           <img src={financialTransparency} alt="financial image" />
@@ -30,7 +19,33 @@ const Finance = () => {
           </p>
         </aside>
       </header>
-    </section>
+      <section className={styles.chartSection}>
+        <aside className="SN-D-H3-24">
+          <p>Donation</p>
+          <p>Licensing Fees</p>
+          <p>Research Partnerships</p>
+          <p>Data Analytics</p>
+          <p>Consulting Services</p>
+          <p>Advertising and Sponsorship</p>
+          <p>Patient Advocacy Services</p>
+          <p>Subscription Fees</p>
+          <p>Booking Fees</p>
+        </aside>
+        <div>
+          <img src={barChart} alt="statistical chart" />
+        </div>
+      </section>
+      <section className={styles.chartSection}>
+        <summary>
+          <h2>Expenses</h2>
+          <img src={expensesChart} alt="expenses chart" />
+        </summary>
+        <summary>
+          <h2>Projected Revenue Streams</h2>
+          <img src={projectedRevenue} alt="projected revenue streams" />
+        </summary>
+      </section>
+    </main>
   );
 };
 export default Finance;

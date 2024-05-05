@@ -8,13 +8,7 @@
 
 @media screen and (max-width: 768px) {
   .aboutUs {
-    grid-template-columns: 2rem 1fr 2rem;
-    gap: 1rem;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .aboutUs {
     grid-template-columns: 1rem 1fr 1rem;
+    gap: 1rem;
   }
 }
