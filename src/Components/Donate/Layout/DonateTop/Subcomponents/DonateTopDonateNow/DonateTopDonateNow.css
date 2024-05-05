@@ -130,6 +130,15 @@
 /* ==================== Set Css rules for DonateTopDonateNow`s component`s second div as wrapper ==================== */
 
 
+#Donate-Top-Donate-Now > div:last-child > div:first-child > div:nth-child(2) >#donate-today 
+{
+    font-size: 2.25rem;
+}
+
+#Donate-Top-Donate-Now > div:last-child > div:first-child > div:nth-child(2) > p
+{
+    font-size: 1.5rem;
+}
 
 
 /* ============================================ Responsıve Css Rules ============================================ */
