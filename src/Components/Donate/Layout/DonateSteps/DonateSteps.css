@@ -50,7 +50,8 @@
 
 /* Set Css rules for Header text wrapper div`s p element */
 #Donate-Steps-Wrapper > div:first-child > p {
-  color: #0d99ff;
+  color: #fff;
+  padding: 0 7rem;
   font-family: Roboto;
   font-size: 1.5rem;
   font-style: normal;

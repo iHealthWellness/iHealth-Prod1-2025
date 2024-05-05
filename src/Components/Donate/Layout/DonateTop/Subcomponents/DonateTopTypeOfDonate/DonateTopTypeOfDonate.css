@@ -23,7 +23,8 @@
 @media only screen and (max-width: 576px) {
   #Donate-Top-TypeOfDonate {
     padding: 0 0 0 12px;
-    scale: 0.8;
+    scale: 0.85;
+    text-align: center;
   }
 }
 /* ==================== Set Css rules for TypeOfDonate component`s text section ==================== */
@@ -33,9 +34,9 @@
   border-radius: 2.5rem;
   background-color: #07235b;
   display: flex;
-  flex-direction: row;
-  padding: 2rem 1.5rem 7rem 1.5rem;
-  gap: 5rem;
+  flex-direction: column;
+  padding: 3rem 1.5rem 7rem 1.5rem;
+  gap: 1rem;
   max-width: 95vw;
 }
 
@@ -85,7 +86,47 @@
   font-weight: 400;
   line-height: 143%;
   padding-bottom: 2rem;
+  text-align: justify;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+@media only screen and (max-width: 576px) {
+#Donate-Top-TypeOfDonate > div:first-child > div:last-child > p {
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 1.25rem;
+  }
+  #Donate-Top-TypeOfDonate > div:first-child > div:first-child > h2{
+    font-size: 1.875rem;
+    padding: 0px;
+    text-align: left;
+  }
+  #Donate-Steps-Wrapper > div:first-child > h3{
+    font-size: 1.875rem !important;
+    padding: 0 0 0 1.25rem !important;
+    text-align: left !important;
+  
+  }
+  #Donate-Steps-Wrapper > div:first-child > h3 > span {
+    font-size: 1.5rem;
+    color: #0d99ff;
+    display: block !important;
+    text-align: left !important;
+  }
+  #Donate-Steps-Wrapper > div:first-child > p{
+    font-size: 1.25rem !important;
+    padding: 1rem 1.25rem !important;
+    text-align: justify !important;
+    font-color: #fff;
+  }
+}
+
+#Donate-Steps-Wrapper > div:first-child > h3 >span {
+  font-size:1.5rem;
+  color: #0d99ff;
   text-align: center;
+  font-weight: 400;
 }
 
 /* ==================== Set Css rules for TypeOfDonate component`s text section ==================== */
@@ -168,6 +209,7 @@
 @media only screen and (max-width: 1300px) {
   #Donate-Top-TypeOfDonate > div:first-child > div:first-child {
     flex: 20 1 auto;
+    padding: 1rem 0 2rem 0;
   }
 
   #Donate-Top-TypeOfDonate > div:last-child > * {

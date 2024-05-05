@@ -48,15 +48,18 @@
   font-style: normal;
   font-weight: 600;
   line-height: 110%; /* 2.475rem */
+  padding-top: 3rem;
 }
 
 #Donate10Days-Main-Container > div:first-child > p {
   color: #0d99ff;
   font-family: Roboto;
-  font-size: 2.25rem;
+  padding: 0 0 3rem 0;
+  font-size: 1.5rem;
   font-style: normal;
-  font-weight: 600;
   line-height: 110%;
+  text-align: left;
+  font-weight: 400;
 }
 
 /* Set Css rules for continer of text content as articles */
@@ -132,12 +135,21 @@
   }
 
   #Donate10Days-Main-Container > div:first-child > h3 {
-    font-size: 9.3dvw;
+    font-size: 1.875rem;
+    text-align: left;
+  }
+  #Donate10Days-Main-Container > div:first-child > h3 > #fast-track{
+    display: none;
+  }
+  #Donate10Days-Main-Container > div:first-child {
+    padding: 0 2rem 5rem 2rem;
   }
 
   #Donate10Days-Main-Container > div:first-child > p {
-    font-size: 10dvw;
-    text-align: center;
+    font-size: 1.5rem;
+    text-align: left;
+    margin-left: -45px !important;
+    font-weight: 400;
   }
 
   #Donate10Days-Main-Container > div:last-child > article > h4 {
