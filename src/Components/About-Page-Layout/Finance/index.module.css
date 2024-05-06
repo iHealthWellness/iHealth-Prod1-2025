@@ -154,5 +154,10 @@ section.chartSection {
   .chartSection summary,
   .chartSection div {
     max-width: 90%;
+    text-align: center;
+  }
+
+  .chartSection div img {
+    max-width: 80%;
   }
 }
