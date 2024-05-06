@@ -126,7 +126,8 @@ section.chartSection {
   }
 
   .financeContainer header > div h3 {
-    top: 50%;
+    top: 60%;
+    left: 5%;
   }
 
   .financeContainer header aside {
