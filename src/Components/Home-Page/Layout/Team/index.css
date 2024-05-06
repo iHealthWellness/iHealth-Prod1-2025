@@ -147,14 +147,15 @@
   }
 
   .team-heading-h2 {
-    font-size: 1.5rem;
+    font-size: 2.25rem;
     font-weight: 700;
     line-height: 120%;
   }
 
   .team-heading-h2 span {
-    font-size: 2.25rem;
+    font-size: 1.5rem;
     font-weight: 700;
+    color: #0d99ff;
     line-height: 120%;
   }
 

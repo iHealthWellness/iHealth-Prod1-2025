@@ -14,9 +14,13 @@
 
 .how-it-works-heading {
   color: #062758;
-  font-size: 1.5rem;
+  font-size: 1.875rem;
   font-weight: 600;
   line-height: 110%;
+}
+
+.services-heading{
+  font-size: 1.875rem;
 }
 
 .how-it-works-cards {
