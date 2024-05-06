@@ -11,6 +11,9 @@
   .mainSection header :nth-child(1) {
     padding-bottom: 0.5rem;
   }
+  #participate-neurofibromatosis {
+    font-size: 1.875rem !important;
+  }
 
   .afterBreak {
     display: block;

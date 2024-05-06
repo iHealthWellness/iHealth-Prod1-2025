@@ -30,6 +30,17 @@ html {
   line-height: 110%;
 }
 
+#empowering-patients, #making-a-difference, #making-a-diff{
+  color: #0d99ff;
+}
+#making-a-difference{
+  font-size: 1.5rem;
+}
+
+#participate-neurofibromatosis{
+  font-size: 1.875rem;
+}
+
 .SN-M-H3-20 {
   font-size: 1.25rem;
   font-weight: 400;
