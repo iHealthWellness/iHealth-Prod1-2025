@@ -6,7 +6,7 @@ const Team = () => {
   return (
     <section id="Home-page-team-container" className="team-container">
       <h2 className="team-heading-h2">
-        Join Your Community:&nbsp; <span>Stronger Together</span> 
+        Join Your Community: <span>Stronger Together</span> 
       </h2>
 
       <h3 className="team-heading-h3 desktop">

@@ -34,7 +34,7 @@ const Services = () => {
   return (
     <section className="services-container">
       <h2 className="services-heading">
-        We believe patients deserve better services
+        We Believe Patients Deserve Better Services
       </h2>
 
       <div
