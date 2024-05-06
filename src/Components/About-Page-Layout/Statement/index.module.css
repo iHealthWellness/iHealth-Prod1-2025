@@ -1,3 +1,20 @@
+.slideInTextFromLeft {
+  opacity: 0;
+  transform: translateX(-70%);
+  transition: opacity 0.5s ease-in-out, transform 0.8s ease-in-out;
+}
+.slideInTextFromLeft.activeLeft,
+.slideInTextFromRight.activeRight {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.slideInTextFromRight {
+  opacity: 0;
+  transform: translateX(70%);
+  transition: opacity 0.5s ease-in-out, transform 0.8s ease-in-out;
+}
+
 .statementContainer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

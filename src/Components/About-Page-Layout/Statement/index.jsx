@@ -1,16 +1,21 @@
-import styles from "./index.module.css";
-
 import ourMission from "src/Assets/Images/mission.png";
 import coreValues from "src/Assets/Images/value.png";
 import ourVision from "src/Assets/Images/vision.png";
+import useSlideInAnimationRight from "src/hooks/useSlideInAnimationRight";
+
+import styles from "./index.module.css";
 
 const Statement = () => {
+
+  useSlideInAnimationRight(styles.slideInTextFromLeft, styles.activeLeft);
+  useSlideInAnimationRight(styles.slideInTextFromRight, styles.activeRight);
+
   return (
     <section id="Statement" className={styles.statementContainer}>
       {/* Left part */}
       <section>
         <img src={ourMission} alt="our mission" />
-        <article className="SN-D-P-20">
+        <article className={`SN-D-P-20 ${styles.slideInTextFromLeft}`}>
           <p>
             To improve the quality of life for patients with complex diseases by
             enhancing healthcare access, fostering social connections,
@@ -89,7 +94,7 @@ const Statement = () => {
       {/* Right part */}
       <section>
         <img src={ourVision} alt="our vision" />
-        <article className="SN-D-P-20">
+        <article className={`SN-D-P-20 ${styles.slideInTextFromRight}`}>
           <p>
             Our aim is to empower patients to take control of their health,
             collaborate with healthcare providers, and improve the quality of

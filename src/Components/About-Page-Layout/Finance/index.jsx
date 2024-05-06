@@ -2,9 +2,12 @@ import financialTransparency from "src/Assets/Images/finance.png";
 import barChart from "src/Assets/Images/bar.png";
 import expensesChart from "src/Assets/Images/pie-chart2.png";
 import projectedRevenue from "src/Assets/Images/pie-chart3.png";
+import useSlideInAnimationRight from "src/hooks/useSlideInAnimationRight";
 import styles from "./index.module.css";
 
 const Finance = () => {
+  useSlideInAnimationRight(styles.slideInText, styles.active);
+
   return (
     <main id="Finance" className={styles.financeContainer}>
       <header>
@@ -19,7 +22,7 @@ const Finance = () => {
           </p>
         </aside>
       </header>
-      <section className={styles.chartSection}>
+      <section className={`${styles.chartSection} ${styles.slideInText}`}>
         <aside className="SN-D-H3-24">
           <p>Donation</p>
           <p>Licensing Fees</p>
@@ -35,7 +38,7 @@ const Finance = () => {
           <img src={barChart} alt="statistical chart" />
         </div>
       </section>
-      <section className={styles.chartSection}>
+      <section className={`${styles.chartSection} ${styles.slideInText}`}>
         <summary>
           <h2>Expenses</h2>
           <img src={expensesChart} alt="expenses chart" />

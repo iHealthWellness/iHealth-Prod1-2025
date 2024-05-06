@@ -1,3 +1,13 @@
+.slideInText {
+  opacity: 0;
+  transform: translateX(70%);
+  transition: opacity 0.5s ease-in-out, transform 0.8s ease-in-out;
+}
+.slideInText.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 .financeContainer {
   grid-column: 1/-1;
   background-color: #fff;
