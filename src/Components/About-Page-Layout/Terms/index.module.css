@@ -69,4 +69,8 @@
   .termsContainer header h2:last-child {
     font-size: 22px;
   }
+
+  .termsAccordion .customAccordionSection aside {
+    bottom: auto;
+  }
 }

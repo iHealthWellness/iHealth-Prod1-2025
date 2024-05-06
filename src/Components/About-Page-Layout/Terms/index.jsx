@@ -75,6 +75,7 @@ const Terms = () => {
             buttonColor="blue"
             className={{
               titleStyle: styles.titleStyle,
+              customAccordionSection: styles.customAccordionSection,
             }}
             isExpanded={activeAccordion === "CORRECTION"}
             onToggle={() => toggleAccordion("CORRECTION")}
@@ -87,6 +88,7 @@ const Terms = () => {
             buttonColor="blue"
             className={{
               titleStyle: styles.titleStyle,
+              customAccordionSection: styles.customAccordionSection,
             }}
             isExpanded={activeAccordion === "thirdPARTY"}
             onToggle={() => toggleAccordion("thirdPARTY")}
@@ -99,6 +101,7 @@ const Terms = () => {
             buttonColor="blue"
             className={{
               titleStyle: styles.titleStyle,
+              customAccordionSection: styles.customAccordionSection,
             }}
             isExpanded={activeAccordion === "TERMINATION"}
             onToggle={() => toggleAccordion("TERMINATION")}
@@ -111,6 +114,7 @@ const Terms = () => {
             buttonColor="blue"
             className={{
               titleStyle: styles.titleStyle,
+              customAccordionSection: styles.customAccordionSection,
             }}
             isExpanded={activeAccordion === "DISCLAIMER"}
             onToggle={() => toggleAccordion("DISCLAIMER")}
@@ -123,6 +127,7 @@ const Terms = () => {
             buttonColor="blue"
             className={{
               titleStyle: styles.titleStyle,
+              customAccordionSection: styles.customAccordionSection,
             }}
             isExpanded={activeAccordion === "INDEMNITY"}
             onToggle={() => toggleAccordion("INDEMNITY")}
@@ -135,6 +140,7 @@ const Terms = () => {
             buttonColor="blue"
             className={{
               titleStyle: styles.titleStyle,
+              customAccordionSection: styles.customAccordionSection,
             }}
             isExpanded={activeAccordion === "useOFSERVICE"}
             onToggle={() => toggleAccordion("useOFSERVICE")}
@@ -147,6 +153,7 @@ const Terms = () => {
             buttonColor="blue"
             className={{
               titleStyle: styles.titleStyle,
+              customAccordionSection: styles.customAccordionSection,
             }}
             isExpanded={activeAccordion === "BINDING"}
             onToggle={() => toggleAccordion("BINDING")}
