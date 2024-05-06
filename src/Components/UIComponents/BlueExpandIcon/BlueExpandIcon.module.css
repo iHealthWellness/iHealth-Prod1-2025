@@ -37,13 +37,13 @@
 
 .circleContainer::after {
   height: 70%;
-  width: 2px;
+  width: 8%;
   animation: rotateToMinus 0.5s forwards;
   transform: translate(-50%, -50%) rotate(0deg);
 }
 
 .circleContainer::before {
-  height: 2px;
+  height: 8%;
   width: 70%;
 }
 
