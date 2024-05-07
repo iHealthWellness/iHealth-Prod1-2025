@@ -44,10 +44,17 @@ const index = () => {
           solutions. Your active involvement is the key to a healthier tomorrow
           for both yourself and the broader community.
         </p>
-        <button className="main-btn" onClick={() => setOpenModal(true)}>
+        {/* onClick={() => setOpenModal(true)} */}
+        <button
+          className="main-btn"
+          onClick={() => {
+            document.querySelector("#UnderConst-wrapper").style.display =
+              "flex";
+          }}
+        >
           Start Survey
         </button>
-        <SurveyForm open={openModal} toggleModal={toggleModal} />
+        {/* <SurveyForm open={openModal} toggleModal={toggleModal} /> */}
       </main>
       <SurveyInformationCard />
     </div>
