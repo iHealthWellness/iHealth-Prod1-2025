@@ -6,7 +6,6 @@ import useSlideInAnimationRight from "src/hooks/useSlideInAnimationRight";
 import styles from "./index.module.css";
 
 const Statement = () => {
-
   useSlideInAnimationRight(styles.slideInTextFromLeft, styles.activeLeft);
   useSlideInAnimationRight(styles.slideInTextFromRight, styles.activeRight);
 
@@ -17,10 +16,12 @@ const Statement = () => {
         <img src={ourMission} alt="our mission" />
         <article className={`SN-D-P-20 ${styles.slideInTextFromLeft}`}>
           <p>
-            To improve the quality of life for patients with complex diseases by
+            Improving the quality of life for patients with complex diseases by
             enhancing healthcare access, fostering social connections,
             championing patient advocacy, advancing EHR, and promoting overall
-            well-being.
+            well-being. Our goal is to create a world where every person,
+            regardless of their health challenges, can thrive and enjoy a
+            healthy, vibrant life.
           </p>
           <p className={styles.blueParagraph}>
             By converging empathy with advancement, we aspire to shape a
