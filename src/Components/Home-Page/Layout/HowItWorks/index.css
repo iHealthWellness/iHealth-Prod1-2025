@@ -14,9 +14,13 @@
 
 .how-it-works-heading {
   color: #062758;
-  font-size: 1.8rem;
+  font-size: 1.875rem;
   font-weight: 600;
   line-height: 110%;
+}
+
+.services-heading{
+  font-size: 1.875rem;
 }
 
 .how-it-works-cards {
@@ -50,7 +54,7 @@
   }
 
   .how-it-works-heading {
-    font-size: 3rem;
+    font-size: 2.25rem;
     font-weight: 700;
     line-height: 120%;
     padding-bottom: 5rem;
@@ -67,8 +71,6 @@
   }
 }
 
-
-
 .how-it-works-learn-more-box .how-it-works-button-label {
   text-decoration: underline; /* gives the Learn More a visual cue that it's clickable */
 }
@@ -76,8 +78,6 @@
 .how-it-works-learn-more-box:hover .how-it-works-button-label {
   color: #2947a9; /* change the color on hover for better UX */
 }
-
-
 
 /* .how-it-works-benefit-container {
   width: 1000px;

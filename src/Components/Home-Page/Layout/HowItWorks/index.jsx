@@ -34,7 +34,7 @@ const HowItWorks = () => {
   }, []);
   return (
     <section className="how-it-works-container">
-      <h2 className="how-it-works-heading">Getting started is easy</h2>
+      <h2 className="how-it-works-heading">Getting Started is Easy</h2>
       <div className="how-it-works-cards" ref={divRef}>
         {HowItWorksSteps.map((step, idx) => (
           <HowItWorksCard

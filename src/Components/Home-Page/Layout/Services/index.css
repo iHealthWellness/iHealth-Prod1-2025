@@ -12,6 +12,7 @@
   font-weight: 600;
   line-height: 110%;
   text-align: center;
+  padding: 0 2.25rem;
 }
 
 .services-inner {
@@ -43,7 +44,7 @@
 
 @media only screen and (min-width: 1024px) {
   .services-heading {
-    font-size: 3rem;
+    font-size: 2.25rem;
     font-weight: 700;
     line-height: 120%;
     padding-bottom: 2rem;

@@ -298,7 +298,7 @@ const Board = () => {
         </div>
       </div>
 
-      <div id="Board" className="page-holder">
+      <div id="Advisory" className="page-holder">
         {/* <div className={`teamboard-tab ${isVisible.divRef ? "slide-in" : ""}`}
                     ref={divRef}> */}
 

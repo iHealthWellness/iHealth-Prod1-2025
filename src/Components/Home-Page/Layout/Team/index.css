@@ -51,7 +51,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  gap: 0px;
   text-align: center;
   border-radius: 1.5rem;
 }
@@ -78,7 +78,7 @@
 @media only screen and (min-width: 480px) and (max-width: 1024px) {
   .team-join-card {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
     border: none;
   }
@@ -101,12 +101,12 @@
     line-height: 120%;
   }
   .team-heading-h2 span {
-    font-size: 1.5rem;
+    font-size: 2.25rem;
     font-weight: 400;
     line-height: 143%;
   }
   .team-heading-h2 {
-    font-size: 2.25rem;
+    font-size: 1.5rem;
     font-weight: 700;
     line-height: 120%;
   }
@@ -147,8 +147,15 @@
   }
 
   .team-heading-h2 {
-    font-size: 3rem;
+    font-size: 2.25rem;
     font-weight: 700;
+    line-height: 120%;
+  }
+
+  .team-heading-h2 span {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #0d99ff;
     line-height: 120%;
   }
 
@@ -191,7 +198,7 @@
   }
 
   .team-join-card::before {
-    content: "";
+    content: '';
     background-color: #07235b;
     width: 110%;
     height: 90%;
@@ -244,7 +251,7 @@
   .team-join-card-inner {
     width: 80%;
     border: 2px solid #07235b;
-    padding: 1rem 0;
+    padding: 0 0 1rem 0;
   }
   .team-join-heading {
     font-size: 1.5rem;

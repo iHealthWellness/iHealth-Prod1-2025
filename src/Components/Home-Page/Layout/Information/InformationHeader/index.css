@@ -99,9 +99,13 @@
 
 @media screen and (max-width: 480px) {
   .information-header-img {
-    width: 16rem;
-    top: 50%;
+    width: 16.1rem;
+    top: 38%;
   }
+  .information-tab-container {
+    padding: 0px !important;
+  }
+
   .information-header-heading-card {
     height: 30rem;
     text-align: center;

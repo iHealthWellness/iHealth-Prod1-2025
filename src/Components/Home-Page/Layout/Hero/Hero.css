@@ -15,7 +15,8 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 12px;
+  margin-top: 40px;
 }
 
 .take-survey-span a {
@@ -30,7 +31,7 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 100%;
 }
@@ -44,7 +45,7 @@
 
 .hero-heading-h2 {
   color: #c33418;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 600;
   line-height: 110%;
 }
@@ -196,7 +197,7 @@
   }
 
   .hero-heading-h3 {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 100%;
   }
@@ -208,9 +209,10 @@
   }
 
   .hero-heading-h2 {
-    font-size: 1.875rem;
+    font-size: 1.5rem;
     font-weight: 600;
     line-height: 110%;
+    /* margin-top: 30rem; */
   }
 
   .hero-heading-h4 {
@@ -222,7 +224,7 @@
 
   .hero-container-inner {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
   }
 
   .hero-image-container {
@@ -274,7 +276,7 @@
 
   .hero-heading-h4 {
     color: #07235b;
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-weight: 700;
     line-height: 120%;
   }

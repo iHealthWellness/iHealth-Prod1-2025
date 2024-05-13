@@ -7,7 +7,11 @@
   }
 
   .mainSection header :nth-child(1) {
-    padding-bottom: 0.5rem;
+    padding-bottom: 1.5rem;
+  }
+  
+  #making-a-diff {
+    font-size: 1.5rem;
   }
 
   .afterBreak {

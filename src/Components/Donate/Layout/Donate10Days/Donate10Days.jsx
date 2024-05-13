@@ -29,7 +29,7 @@ function Donate10Days()
     <>
         <div id='Donate10Days-Main-Container' ref={rootElm}>
             <div>
-                <h3>Fast Track to Wellness – Raise $500 in 10 Days</h3>
+                <h3><span id="fast-track">Fast Track to Wellness – </span>Raise $500 in 10 Days</h3>
                 <p>Transform your Futures!</p>
             </div>
             <div>
