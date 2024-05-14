@@ -7,8 +7,8 @@ function ResearchTools({ toggleAccordion, activeAccordion }) {
     <article id="tools" className={styles.mainSection}>
       <header>
         <h2 className="SN-M-H2-24">Empowering Patients and Professionals:</h2>
-        <h2 className="SN-M-H2-24">
-          Neurofibromatosis Research Tools and Resources
+        <h2 style={{ color: '#0d99ff' }}>
+    Neurofibromatosis Research Tools and Resources
         </h2>
       </header>
       <AccordionSection
