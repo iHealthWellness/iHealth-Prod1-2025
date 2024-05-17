@@ -3,7 +3,7 @@ import React from "react";
 
 function index({ openExternalLink }) {
   return (
-    <div id="signup-reg" className="signup-container nf-registery-signup">
+    <div id="signup-reg" className="animated-text signup-container nf-registery-signup">
       <div className="enroll-content1">
         <h1 className="signup-heading SN-D-H2-36 ">NF Registry: <span className='light-blue-font'>Sign-Up</span></h1>
 
