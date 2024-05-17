@@ -26,7 +26,7 @@ function SurveyInformationCard() {
     return (
       <div key={index} className="card-container">
         <h2 className="card-header">
-          <span className="SN-D-H1-48 part-1">{part1}</span>
+          <span className="SN-D-H1-48 part-1 survey-today">{part1}</span>
           <span className="SN-D-H3-24 part-2">{part2}</span>
         </h2>
         <div className="content-section">

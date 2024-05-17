@@ -17,27 +17,27 @@ const index = () => {
       <section className="hero">
         <header className="img-section">
           <div className="hero-content">
-            <video autoPlay muted loop playsInline className="second-img">
+            <video autoPlay muted loop playsInline className="second-img justify-self-right">
               <source src={surveyVideo} type="video/mp4" />
             </video>
-            <h2 className="SN-D-H3-36 visib prt-1">
+            <h2 className="SN-D-H3-24 visib prt-1 advance-max-width">
               Advance Understanding and Help Others
-              <p className="SN-D-H1-48 after-break">
-                Survey Today, Thrive Tomorrow!
+              <p className="SN-D-H3-36 after-break survey-today">
+              Join a Clinical Trial to Benefit Yourself and Your Community
               </p>
             </h2>
-            <h2 className="SN-D-H2-36 invis prt-1">
-              Find Your Match:
-              <p className="SN-D-H1-48 after-break">Change the Future</p>
-            </h2>
+            {/* <h2 className="SN-D-H2-36 invis prt-1"> */}
+              {/* <span className='survey-now'>Survey Today</span> <p> Thrive Tomorrow!</p> */}
+              {/* <p className="SN-D-H1-48 after-break">Change the Future</p> */}
+            {/* </h2> */}
           </div>
         </header>
       </section>
       <main>
-        <h2 className="SN-D-H2-36 prt-1">
+        <h2 className="SN-D-H2-36 prt-1 join-a-clinical-trial">
           Join a Clinical Trial to Benefit Yourself and Your Community
         </h2>
-        <p className="SN-D-H3-24 prt-2">
+        <p className="SN-D-H3-24 prt-2 clinical-trial-hidden text-align-justify">
           Completing the survey is just the beginning; the real empowerment lies
           in participating in active clinical trials. By doing so, you become an
           integral part of the collective effort to shape innovative healthcare
