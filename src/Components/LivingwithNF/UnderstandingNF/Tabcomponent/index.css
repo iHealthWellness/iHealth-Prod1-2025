@@ -14,6 +14,10 @@
   background-color: transparent;
 }
 
+.headache-image{
+  height: 20rem;
+}
+
 .rotate-flip-horizontal{
   transform: scaleX(-1);
 }
@@ -45,6 +49,12 @@
   animation-name: slideInFromRight;
   animation-duration: 1s; /* Duration of the animation */
   animation-fill-mode: forwards; /* Ensures the element remains visible after animation */
+}
+
+@media screen and (min-width: 1024px) {
+.custom-tabs .MuiTabs-flexContainer {
+  padding: 0 11.5rem !important;
+}
 }
 
 @media screen and (min-width: 480px) and (max-width: 1023px) {

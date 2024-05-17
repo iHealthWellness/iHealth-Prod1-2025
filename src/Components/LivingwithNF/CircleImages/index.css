@@ -19,6 +19,12 @@
   border-radius: 0.5rem;
 }
 
+.clinical-trials{
+  font-size: 1.5rem;
+  padding-top: 0.5rem;
+  color: #0d99ff;
+}
+
 .img-txt{
   cursor:pointer;
   
@@ -46,13 +52,26 @@
     width: 10rem;
     height: 10rem;
   }
+
+  .clinical-trials{
+    padding-top: 0rem;
+  }
 }
+#left-margin-fix,.undestanding-nf{
+  font-weight: 600;
+}
+
 
 @media screen and (max-width: 480px) {
   .main-circle-container {
     grid-template-columns: 1fr;
     gap: 0;
   }
+
+  #left-margin-fix{
+    margin-left: -30px;
+  }
+
 
   .circle-img.SN-T-H2-30 {
     line-height: 80%;

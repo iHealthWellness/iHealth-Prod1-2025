@@ -42,6 +42,7 @@ const Teams = [
       { text: "For Patients", path: "/understanding-condition" },
       { text: "For Caregivers", path: "/workshops" },
       { text: "For Providers", path: "/conferences-workshops" },
+      { text: "For Caregivers", path: "/workshops" },
     ],
     detailPath: "#Information",
   },

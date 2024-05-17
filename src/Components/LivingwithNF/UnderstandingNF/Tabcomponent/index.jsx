@@ -120,7 +120,7 @@ function index() {
         </Box>
         <CustomTabPanel value={value} index={0}>
           <div className="tab-text">
-            <img loading="lazy" className="tab-image rotate-flip-horizontal" src={Headache} />
+            <img loading="lazy" className="tab-image rotate-flip-horizontal headache-image" src={Headache} />
             <div className="SN-D-P-20">
               NF1 is the most common type of neurofibromatosis, affecting about
               1 in 3,000 people worldwide. It is caused by mutations in the NF1
@@ -133,7 +133,7 @@ function index() {
         </CustomTabPanel>
         <CustomTabPanel value={value} index={1}>
           <div className="tab-text">
-            <img loading="lazy" className="tab-image" src={Lab} />
+            <img loading="lazy" className="tab-image headache-image" src={Lab} />
             <div className="SN-D-P-20">
               NF2 is rarer than NF1, occurring in approximately 1 in 25,000
               births. This type is characterized by the development of tumors on
@@ -146,7 +146,7 @@ function index() {
         </CustomTabPanel>
         <CustomTabPanel value={value} index={2}>
           <div className="tab-text">
-            <img loading="lazy" className="tab-image" src={Neuron} />
+            <img loading="lazy" className="tab-image headache-image" src={Neuron} />
             <div className="SN-D-P-20">
               Schwannomatosis (SWN) is the least common type of
               neurofibromatosis. Unlike NF1 and NF2, Schwannomatosis only
