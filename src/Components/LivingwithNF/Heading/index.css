@@ -29,9 +29,9 @@
   .understanding-nf-container .heading-container h1 {
     font-size: 2.25rem;
   }
-  .understanding-nf-container .heading-container p {
+  /* .understanding-nf-container .heading-container p {
     font-size: 1rem;
-  }
+  } */
 }
 
 @media screen and (max-width: 632px) {

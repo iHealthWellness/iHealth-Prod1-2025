@@ -31,7 +31,7 @@ function index() {
       <div className="cause-container">
         <img loading="lazy" className="doc-img" src={doctor} />
         <div ref={textRef}>
-          <h1 className="SN-D-H2-36">Causes and Genetic Aspects:</h1>
+          <h1 className="SN-D-H2-36">Causes and Genetic Aspects</h1>
           <div className="SN-D-P-20">
             <p>
               The primary cause of neurofibromatosis is genetic mutations. NF1,
