@@ -1,0 +1,16 @@
+.heroImage {
+  text-align: center;
+  grid-column: 2;
+}
+
+.heroImage img {
+  max-width: 100%;
+  padding: 1rem 0 2rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .heroImage img {
+    width: 100%;
+    padding: 1rem 0;
+  }
+}
