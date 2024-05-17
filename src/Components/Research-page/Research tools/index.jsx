@@ -10,8 +10,8 @@ const Section2 = () => {
       className={`${styles.slideInText} ${styles.mainSection}`}
     >
       <header className={styles.title}>
-        <h2 className="SN-M-H2-24" id='empowering-patients'>Empowering Patients and Professionals</h2>
-        <h1 className="SN-T-H1-36">
+        <h2 className="SN-M-H2-24" style={{ fontSize: '36px' }} id='empowering-patients'>Empowering Patients and Professionals</h2>
+        <h1 className="SN-T-H1-36" >
           Neurofibromatosis Research Tools and Resources
         </h1>
       </header>
@@ -26,7 +26,7 @@ const Section2 = () => {
           neurofibromatosis research.
         </p>
       </section>
-    </section>
+    </section> 
   );
 };
 

@@ -131,6 +131,14 @@ const Board = () => {
     console.log("cicked card: " + teamData.executive[1]);
     setSelectedCard(teamData.executive[12]);
   };
+  const handleCardClick13 = () => {
+    console.log("cicked card: " + teamData.executive[1]);
+    setSelectedCard(teamData.executive[13]);
+  };
+  const handleCardClick14 = () => {
+    console.log("cicked card: " + teamData.executive[1]);
+    setSelectedCard(teamData.executive[14]);
+  };
   
   
   const handlePopupClose = () => {
@@ -431,6 +439,53 @@ const Board = () => {
 
           <div className="Name-tab">
             <p>Natalie Aswad Boehm</p>
+          </div>
+          <button className="btn-board-tab">
+            <img src={Image7} />
+          </button>
+        </div>
+
+        
+
+
+
+
+
+
+      </div>
+      <div
+        className={`board-directors-tab3 ${
+          isVisible.divFiveRef ? "slide-in" : ""
+        } `}
+        ref={divFiveRef}
+      >
+        {/* <div className="board-image" onClick={handleCardClick10}>
+          <img src={Image10} alt="mark" />
+
+          <div className="Name-tab">
+            <p>Mark Huntzinger </p>
+          </div>
+          <button className="btn-board-tab">
+            <img src={Image7} />
+          </button>
+        </div> */}
+        <div className="board-image" onClick={handleCardClick13}>
+          <img src={Image11} alt="oliver" />
+
+          <div className="Name-tab">
+            <p>Rebecca Brown, MD PhD</p>
+          </div>
+          <button className="btn-board-tab">
+            <img src={Image7} />
+          </button>
+        </div>
+
+
+        <div className="board-image" onClick={handleCardClick14}>
+          <img src={Image12} alt="oliver" />
+
+          <div className="Name-tab">
+            <p>Oladimeji Ibitoye</p>
           </div>
           <button className="btn-board-tab">
             <img src={Image7} />

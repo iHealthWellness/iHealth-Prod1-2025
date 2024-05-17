@@ -11,9 +11,9 @@ const section6 = () => {
       className={`${styles.slideInText} ${styles.mainSection}`}
     >
       <header>
-        <h3 className="SN-D-H2-36">
-          Participate in Research for Neurofibromatosis:<span id='making-a-difference'> Making a Difference</span>
-        </h3>
+       <h3 className="SN-D-H2-36">
+    Participate in Research for Neurofibromatosis:<span id="making-a-difference" style={{ fontSize: '36px' }}> Making a Difference</span>
+      </h3>
       </header>
       <aside className="SN-D-P-20">
         <p>

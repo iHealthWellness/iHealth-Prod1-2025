@@ -12,9 +12,10 @@ const FilterPanel = () => {
       </div>
       <div className="filter-buttons">
         <button className="filter-button">Disease Type<FontAwesomeIcon icon={faChevronDown} className="icon-chevron-down" /></button>
-        <button className="filter-button">Gender<FontAwesomeIcon icon={faChevronDown} className="icon-chevron-down" /></button>
         <button className="filter-button">Practice<FontAwesomeIcon icon={faChevronDown} className="icon-chevron-down" /></button>
+        <button className="filter-button">Zip Code<FontAwesomeIcon icon={faChevronDown} className="icon-chevron-down" /></button>
         <button className="filter-button">Language<FontAwesomeIcon icon={faChevronDown} className="icon-chevron-down" /></button>
+        <button className="filter-button">Practice<FontAwesomeIcon icon={faChevronDown} className="icon-chevron-down" /></button>
       </div>
     </div>
   );

@@ -15,35 +15,20 @@ const SelectedFilters1 = () => {
             NF 1
           </div>
           <div className="filter-chip1">
-          NY
+          Clinical
           </div>
           <div className="filter-chip1">
-          00501
+          NY
           </div>
         </div>
       </div>
       </div>
 
       <div className="filter-section1">
-        <h3>Age</h3>
-        <label> 
-          <input type="radio" name="provider1" value="all" /> All ages
-        </label>
-        <label> 
-          <input type="radio" name="provider1" value="all" /> &lt;2
-        </label>
-        <label>
-          <input type="radio" name="provider1" value="adults" /> 3-12
-        </label>
-        <label>
-          <input type="radio" name="provider1" value="adults" /> 13-18
-        </label>
-        <label>
-          <input type="radio" name="provider1" value="adults" /> 19-64
-        </label>
-        <label>
-          <input type="radio" name="provider1" value="adults" /> +65
-        </label>
+        <h3>Facility Type</h3>
+        <div className="filter-chip1">
+          
+          </div>
       </div>
       <hr className="divider-line" />
 
