@@ -12,6 +12,8 @@ import Image9 from "src/Assets/Images/hilda.png";
 import Image10 from "src/Assets/Images/mark.png";
 import Image11 from "src/Assets/Images/Michelle.png";
 import Image12 from "src/Assets/Images/Nathalie.png";
+import Image13 from "src/Assets/Images/Rebacca.png";
+import Image14 from "src/Assets/Images/Ola.png";
 import Image6 from "src/Assets/Images/Card.png";
 import Image7 from "src/Assets/Icons/plus.png";
 
@@ -366,17 +368,22 @@ const Board = () => {
             <img src={Image7} />
           </button>
         </div>
-        <div className="board-image" onClick={handleCardClick7}>
-          <img src={Image8} alt="" />
+
+
+
+
+        <div className="board-image" onClick={handleCardClick12}>
+          <img src={Image12} alt="oliver" />
 
           <div className="Name-tab">
-            {/*             <p>Christophe Foulon, CISSP, GSLC, AWS Security</p> */}
-            <p>Christophe Foulon, CISSP</p>
+            <p>Natalie Aswad Boehm</p>
           </div>
           <button className="btn-board-tab">
             <img src={Image7} />
           </button>
         </div>
+
+
       </div>
       <div
         className={`board-directors-tab3 ${
@@ -394,16 +401,20 @@ const Board = () => {
             <img src={Image7} />
           </button>
         </div>
-        <div className="board-image" onClick={handleCardClick9}>
-          <img src={Image9} alt="dalia" />
+
+        <div className="board-image" onClick={handleCardClick13}>
+          <img src={Image13} alt="oliver" />
 
           <div className="Name-tab">
-            <p>Dalia Heci, LLM</p>
+            <p>Rebecca Brown, MD PhD</p>
           </div>
           <button className="btn-board-tab">
             <img src={Image7} />
           </button>
         </div>
+
+
+
       </div>
 
       <div
@@ -422,28 +433,29 @@ const Board = () => {
             <img src={Image7} />
           </button>
         </div> */}
-        <div className="board-image" onClick={handleCardClick11}>
-          <img src={Image11} alt="oliver" />
+
+        <div className="board-image" onClick={handleCardClick7}>
+          <img src={Image8} alt="" />
 
           <div className="Name-tab">
-            <p>Michelle Waldgeir</p>
+            {/*             <p>Christophe Foulon, CISSP, GSLC, AWS Security</p> */}
+            <p>Christophe Foulon, CISSP</p>
+          </div>
+          <button className="btn-board-tab">
+            <img src={Image7} />
+          </button>
+        </div>
+        <div className="board-image" onClick={handleCardClick14}>
+          <img src={Image14} alt="oliver" />
+
+          <div className="Name-tab">
+            <p>Oladimeji Ibitoye</p>
           </div>
           <button className="btn-board-tab">
             <img src={Image7} />
           </button>
         </div>
 
-
-        <div className="board-image" onClick={handleCardClick12}>
-          <img src={Image12} alt="oliver" />
-
-          <div className="Name-tab">
-            <p>Natalie Aswad Boehm</p>
-          </div>
-          <button className="btn-board-tab">
-            <img src={Image7} />
-          </button>
-        </div>
 
         
 
@@ -469,28 +481,30 @@ const Board = () => {
             <img src={Image7} />
           </button>
         </div> */}
-        <div className="board-image" onClick={handleCardClick13}>
+
+<div className="board-image" onClick={handleCardClick11}>
           <img src={Image11} alt="oliver" />
 
           <div className="Name-tab">
-            <p>Rebecca Brown, MD PhD</p>
+            <p>Michelle Waldgeir</p>
           </div>
           <button className="btn-board-tab">
             <img src={Image7} />
           </button>
         </div>
 
-
-        <div className="board-image" onClick={handleCardClick14}>
-          <img src={Image12} alt="oliver" />
+<div className="board-image" onClick={handleCardClick9}>
+          <img src={Image9} alt="dalia" />
 
           <div className="Name-tab">
-            <p>Oladimeji Ibitoye</p>
+            <p>Dalia Heci, LLM</p>
           </div>
           <button className="btn-board-tab">
             <img src={Image7} />
           </button>
         </div>
+
+
 
         
       </div>

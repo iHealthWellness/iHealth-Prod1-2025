@@ -12,6 +12,8 @@ import Image9 from "src/Assets/Images/hilda.png";
 import Image10 from "src/Assets/Images/mark.png";
 import Image11 from "src/Assets/Images/Michelle.png";
 import Image12 from "src/Assets/Images/Nathalie.png";
+import Image13 from "src/Assets/Images/Rebacca.png";
+import Image14 from "src/Assets/Images/Ola.png";
 
 const sasikaBio = `Sasika is the founder, Chief Executive Officer (CEO), and Chief Technology Officer (CTO) of iHealth and Wellness Foundation, Inc. --A former Wall Street technologist, she revolutionized enterprise-level web solutions at Prudential Financial, supporting Fixed Income Trading systems & Compliance systems, and PruFN.com with 20 million annual unique visitors. Now, she's disrupting healthcare technology. --At Aetna (a CVS Health Company), Sasika led the implementation of a powerful and interactive claims-driven Personal Health Record (PHR) system, serving 29.9 million individuals. This innovative solution provided members a comprehensive view of their health by integrating detailed, claims-driven information gathered across the health care spectrum - such as physician office, lab, diagnostic treatment and prescriptions. --Passionate about leveraging technology for better healthcare, Sasika established iHealth and Wellness Foundation, Inc. to improve the lives of individuals with complex diseases. Under her leadership, the foundation develops a platform that integrates with major Electronic Health Record (EHR) systems, while offering medical and wellness provider lookup, social networking, and patient advocacy services.--Sasika's contributions have earned her numerous awards in the tech industry and philanthropy, highlighting her dedication to improving lives through innovation. With a unique blend of expertise in technology and a deep understanding of the healthcare landscape, Sasika is dedicated to advancing medical and wellness care through disruptive and innovative solutions. Her visionary approach and commitment to improving lives make her a driving force behind the iHealth and Wellness Foundation's mission.--You'll often find Sasika indulging in her passions for hiking and cycling. Exploring new destinations and immersing herself in live music are also among her favorite pastimes.`;
 
@@ -253,7 +255,7 @@ const teamData = {
       id: 14,
       name: "Rebecca Brown, MD PhD ",
       extendedBio: bio14,
-      image: Image11,
+      image: Image13,
       link: "https://www.linkedin.com/in/lizzappi",
     },
 
@@ -262,7 +264,7 @@ const teamData = {
       id: 15,
       name: "Oladimeji Ibitoye",
       extendedBio: bio15,
-      image: Image12,
+      image: Image14,
       link: "https://www.linkedin.com/in/lizzappi",
     },
   ],
