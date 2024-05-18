@@ -60,7 +60,7 @@ const Footer = () => {
             <p className="footer-address-heading">
               iHealth and Wellness Foundation, Inc.
             </p>
-            <p className="footer-address">New York, NY. USA.</p>
+            <p className="footer-address">New York, NY, USA.</p>
           </div>
           <div className="footer-subscribe-block">
             <p className="footer-subscribe-heading">STAY INFORMED:</p>
@@ -119,9 +119,9 @@ const Footer = () => {
             Organization. EIN: 93-1567099
           </p>
         </div>
-          <div className="language-select-cont">
-            <LanguageBar />
-          </div>
+        <div className="language-select-cont">
+          <LanguageBar />
+        </div>
       </div>
     </footer>
   );
