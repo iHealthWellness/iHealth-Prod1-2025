@@ -3,6 +3,17 @@ import { useState } from "react";
 import SurveyInformationCard from "../../Components/Home-Page/Layout/Information/InformationCards/SurveyInformationCard/index.jsx";
 import SurveyForm from "../../Components/SurveyForm/SurveyForm.jsx";
 import surveyVideo from "src/Assets/Images/survey-video.mp4";
+import GreyCards from "src/Components/UIComponents/GreyCards/GreyCards.jsx";
+
+//icons
+import nanoTech from "src/Assets/Icons/nano-tech.svg";
+import labMicroscope from "src/Assets/Icons/lab-micro.svg";
+import icuIcon from "src/Assets/Icons/icu-icon.svg";
+import giveGift from "src/Assets/Icons/give-gift.svg";
+import megaPhone from "src/Assets/Icons/megaphone.svg";
+import donateBlood from "src/Assets/Icons/donate-blood.svg";
+import teamGroup from "src/Assets/Icons/team-group.svg";
+
 import "./index.css";
 
 const index = () => {
@@ -61,6 +72,13 @@ const index = () => {
           Start Survey
         </button>
         {/* <SurveyForm open={openModal} toggleModal={toggleModal} /> */}
+        <h3>Why should you participate in a clinical trial?</h3>
+        <GreyCards>
+          <div>
+            <img src={giveGift} alt="nano tech icon" />
+            <p>Access to <span>Cutting-Edge</span> Treatments</p>
+          </div>
+        </GreyCards>
       </main>
       <SurveyInformationCard />
     </div>
