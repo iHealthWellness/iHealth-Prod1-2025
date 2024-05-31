@@ -19,7 +19,7 @@ const Benefits = [
     image: smileImg,
     title: "We help providers too",
     summary:
-      "Caring for patients with complex conditions should not be complicated. Personalized to each patient’s condition, our all-in-one platform grows their support system and provides the resources and tools patients need to take control of their own health journey",
+      "Caring for patients with complex conditions should not be complicated. Personalized to each patient’s condition, our all-in-one platform grows their support system and provides the resources and tools patients need to take control of their own health journey.",
     details: [
       "Connect with the right new patients",
       "See more engaged and informed patients",
