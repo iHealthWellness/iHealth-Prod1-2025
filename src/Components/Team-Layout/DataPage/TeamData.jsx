@@ -148,7 +148,7 @@ Oladimeji Ibitoye is a seasoned back-end developer with over 4 years of experien
 --
 At Revent Technologies in Lagos, Nigeria, Oladimeji serves as a Senior Backend Developer and Technical Lead, spearheading the development of a Retail Core Banking Solution. His leadership ensures code quality, while his contributions to API development and documentation meet client requirements. Collaborating seamlessly with frontend developers, he enhances integration and consistency, leveraging AWS S3 for file handling, Jest for testing and other backend tools.  Previously, he's contributed to various ventures, including building apps for SMEs for Strich, and collaborating on projects like Zapi, an AI API Marketplace.
 --
-Oladimeji's educational background includes a Bachelor of Science in Civil Engineering from Obafemi Awolowo University, Ile-Ife. With a passion for scalability, performance, and user experience, Oladimeji seeks opportunities to contribute his expertise to challenging projects globally.  
+Oladimeji's educational background includes a Bachelor of Science in Civil Engineering from Obafemi Awolowo University, Ile-Ife.  
 
 
 
