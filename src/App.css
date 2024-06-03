@@ -147,3 +147,46 @@ html {
 .App {
   scroll-behavior: smooth;
 }
+
+
+/* HOMEPAGE: New Typography */
+
+/* #region Desktop */
+
+.SN-D-Home-H1-48 {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 120%;
+}
+
+.SN-D-Home-H2-32 {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 110%;
+}
+
+.SN-D-Home-H3-24 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 143%;
+}
+
+.SN-D-P-20 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.SN-D-T-M-B-16 {
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 120%;
+}
+
+.SN-D-T-M-P-16 {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 143%;
+}
+
+/* #endregion */
