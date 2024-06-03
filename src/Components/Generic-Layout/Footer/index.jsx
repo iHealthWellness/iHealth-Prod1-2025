@@ -57,13 +57,15 @@ const Footer = () => {
       <div className="footer-top">
         <div className="footer-contact">
           <div className="footer-address-block">
-            <p className="footer-address-heading">
+            <p className="footer-address-heading SN-D-T-M-B-16">
               iHealth and Wellness Foundation, Inc.
             </p>
-            <p className="footer-address">New York, NY, USA.</p>
+            <p className="footer-address SN-D-T-M-P-16">New York, NY, USA.</p>
           </div>
           <div className="footer-subscribe-block">
-            <p className="footer-subscribe-heading">STAY INFORMED:</p>
+            <p className="footer-subscribe-heading SN-D-T-M-P-16">
+              STAY INFORMED:
+            </p>
             <div className="footer-subscribe-bar">
               <form onSubmit={handleSubmit}>
                 <input
@@ -72,7 +74,7 @@ const Footer = () => {
                   value={email}
                   onChange={handleEmailChange}
                 />
-                <button className="footer-subscribe-btn" type="submit">
+                <button className="footer-subscribe-btn " type="submit">
                   {loading ? "Loading..." : subscribeStatus || "Subscribe"}
                 </button>
               </form>
@@ -80,7 +82,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="footer-follow-block">
-            <p className="footer-follow-heading">FOLLOW US:</p>
+            <p className="footer-follow-heading SN-D-T-M-P-16">FOLLOW US:</p>
             <div className="footer-follow-icons">
               {SocialMedia.map((ele, idx) => {
                 return (

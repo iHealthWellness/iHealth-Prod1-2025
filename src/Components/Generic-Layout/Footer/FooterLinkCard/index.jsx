@@ -6,13 +6,13 @@ const FooterLinkCard = ({ linkCard }) => {
 
   return (
     <div className={styles.footerLinksCard}>
-      <p className={styles.footerLinksCategory}>{category}</p>
-      <div className={styles.footerLinks}>
+      <p className="SN-D-T-M-B-16">{category}</p>
+      <div className={`SN-D-T-M-P-16 ${styles.footerLinks}`}>
         {links.map((link) => {
           if (link.title == "Volunteer") {
             return (
               <a
-                className={styles.footerLink}
+                className={`SN-D-T-M-P-16 ${styles.footerLink}`}
                 key={link.title}
                 href="/job-openings"
               >
@@ -22,7 +22,7 @@ const FooterLinkCard = ({ linkCard }) => {
           }
           return (
             <HashLink
-              className={styles.footerLink}
+              className={`SN-D-T-M-P-16 ${styles.footerLink}`}
               to={link.path}
               key={`footer-links-${link.title}`}
             >

@@ -151,6 +151,7 @@ const Provider = () => {
                 variant="text"
                 startIcon={<PinDropIcon style={{ marginBottom: "5px" }} />}
                 style={{ color: "#07235B" }}
+                className="SN-D-T-M-P-16"
                 sx={{
                   paddingTop: "9px",
                   "@media (max-width: 1023px)": {
