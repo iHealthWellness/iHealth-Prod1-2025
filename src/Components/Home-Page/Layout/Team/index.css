@@ -11,9 +11,6 @@
   width: 95%;
   padding-bottom: 1rem;
   color: #07235b;
-  font-size: 1.5rem;
-  font-weight: 600;
-  line-height: 110%;
 }
 
 .team-heading-h3.desktop {
@@ -101,14 +98,9 @@
     line-height: 120%;
   }
   .team-heading-h2 span {
-    font-size: 2.25rem;
-    font-weight: 400;
-    line-height: 143%;
-  }
-  .team-heading-h2 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    line-height: 120%;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
   }
 
   .team-join-slogan {
@@ -146,23 +138,14 @@
     max-width: 1216px;
   }
 
-  .team-heading-h2 {
-    font-size: 2.25rem;
-    font-weight: 700;
-    line-height: 120%;
-  }
-
   .team-heading-h2 span {
-    font-size: 2.25rem;
-    font-weight: 700;
+    font-size: inherit;
+    font-weight: inherit;
     color: #0d99ff;
-    line-height: 120%;
+    line-height: inherit;
   }
 
   .team-heading-h3 {
-    font-size: 1.5rem;
-    font-weight: 400;
-    line-height: 143%;
     padding-bottom: 3rem;
   }
 
@@ -198,7 +181,7 @@
   }
 
   .team-join-card::before {
-    content: '';
+    content: "";
     background-color: #07235b;
     width: 110%;
     height: 90%;

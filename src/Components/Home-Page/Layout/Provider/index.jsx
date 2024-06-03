@@ -96,7 +96,7 @@ const Provider = () => {
   return (
     <section id="Home-Page-provider-container" className="provider-container">
       <div className="provider-inner-container">
-        <h2 className="provider-heading">
+        <h2 className="provider-heading SN-D-Home-H3-24">
           <PersonSearchOutlinedIcon
             sx={{
               "@media (min-width: 480px)": {
