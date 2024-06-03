@@ -8,7 +8,7 @@ import NfJourney from "src/Assets/Images/nfjourney-banner.png";
 const InformationHeader = () => {
   return (
     <div className="information-header">
-      <div className="information-header-heading-card">
+      <div className="information-header-heading-card ">
         <img src={NfJourney} alt="nf journey banner" className="nf-journey" />
       </div>
       <img

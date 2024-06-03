@@ -6,7 +6,7 @@
 .partner-heading-block {
   width: 100%;
   max-width: 1216px;
-  background-image: url('src/Assets/Images/partner-background.jpg');
+  background-image: url("src/Assets/Images/partner-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -14,9 +14,6 @@
 
 .partner-heading {
   color: #062758;
-  font-size: 2.5rem;
-  font-weight: 600;
-  line-height: 110%;
 }
 
 .partner-content-block {
@@ -64,18 +61,14 @@
 }
 
 .partner-heading {
-  font-size: 2.25rem;
-  line-height: 143%;
-  font-weight: 400;
   color: #fff;
 }
 
 .partner-paragraph {
-  font-size: 1.25rem;
   color: #fff;
   width: 90vw;
 }
-// add for mobile view
+/* // add for mobile view */
 /* @media only screen and (min-width: 480px) {
   .partner-paragraph {
     font-size: 1.25rem;
@@ -97,13 +90,13 @@
     display: block;
   }
 }
+
 /* Desktop view */
 @media only screen and (min-width: 1024px) {
   .partner-heading-block {
     margin-bottom: 1rem;
   }
   .partner-paragraph {
-    font-size: 1.25rem;
     color: #fff;
     width: 100vw;
   }
@@ -141,10 +134,6 @@
 }
 
 @media screen and (max-width: 480px) {
-  .partner-heading {
-    font-size: 1.875rem;
-    font-weight: 600;
-  }
   .partner-heading-block aside {
     padding: 3rem 1rem;
     text-align: center;

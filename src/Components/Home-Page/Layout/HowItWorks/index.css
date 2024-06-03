@@ -14,9 +14,6 @@
 
 .how-it-works-heading {
   color: #062758;
-  font-size: 1.875rem;
-  font-weight: 600;
-  line-height: 110%;
 }
 
 
@@ -29,9 +26,6 @@
 
 @media only screen and (min-width: 480px) and (max-width: 1024px) {
   .how-it-works-heading {
-    font-size: 2.25rem;
-    font-weight: 700;
-    line-height: 120%;
     padding: 5rem 0;
   }
 
@@ -51,9 +45,6 @@
   }
 
   .how-it-works-heading {
-    font-size: 2.25rem;
-    font-weight: 700;
-    line-height: 120%;
     padding-bottom: 5rem;
   }
 

@@ -29,18 +29,20 @@ const PartnerTextCard = ({ partner }) => {
       className={`partner-text-card ${slideIn ? "slide-in" : ""}`}
       ref={slideInRef}
     >
-      <h3 className="partner-text-heading">{heading}</h3>
-      <h2 className="partner-text-subheading">{subheading}</h2>
+      <h3 className="partner-text-heading SN-D-Home-H2-32">{heading}</h3>
+      <h2 className="partner-text-subheading SN-D-Home-H3-24">{subheading}</h2>
       {content &&
         content.map((text) => (
-          <p key={text} className="partner-text">
+          <p key={text} className="partner-text SN-D-P-20">
             {text}
           </p>
         ))}
       {list &&
         list.map((item) => (
-          <p key={item} className="partner-text partner-text-list">
-            <span className="partner-text partner-text-span">&#10004; </span>
+          <p key={item} className="partner-text SN-D-P-20 partner-text-list">
+            <span className="partner-text SN-D-P-20 partner-text-span">
+              &#10004;{" "}
+            </span>
             {item}
           </p>
         ))}

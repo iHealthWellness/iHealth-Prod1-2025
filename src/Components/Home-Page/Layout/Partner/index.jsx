@@ -44,8 +44,8 @@ const Partner = () => {
         className={`partner-heading-block ${slideIn ? "fade-in-section" : ""}`}
       >
         <aside ref={slideInRef} className={slideIn ? "fade-in-section" : ""}>
-          <h2 className="partner-heading">Partner with us</h2>
-          <p className="partner-paragraph">
+          <h2 className="partner-heading SN-D-Home-H2-32">Partner with us</h2>
+          <p className="partner-paragraph SN-D-P-20">
             We're building a home for the care of complex conditions
           </p>
         </aside>

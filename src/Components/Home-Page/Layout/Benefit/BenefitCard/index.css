@@ -56,9 +56,6 @@
 }
 
 .benefit-flipcard-summary {
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 120%;
   margin-top: -15px;
 }
 
@@ -66,24 +63,9 @@
   padding: 1rem;
 }
 
-.benefit-flipcard-listitem {
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 120%;
-}
-
 @media screen and (max-width: 1024px) {
   .benefit-card {
     width: 100%;
-  }
-
-  .benefit-card-heading {
-    font-size: 1.5rem;
-  }
-
-  .benefit-flipcard-listitem,
-  .benefit-flipcard-summary {
-    font-size: 1.25rem;
   }
 
   .benefit-container {
@@ -99,10 +81,6 @@
   .benefit-heading {
     color: rgb(6, 39, 88);
     font-size: 1.875;
-  }
-  .benefit-flipcard-listitem,
-  .benefit-flipcard-summary {
-    font-size: 1rem;
   }
 }
 

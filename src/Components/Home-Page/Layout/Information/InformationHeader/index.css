@@ -23,9 +23,6 @@
 
 .information-header-heading {
   color: #ffffff;
-  font-size: 1.5rem;
-  font-weight: 600;
-  line-height: 110%;
 }
 
 .information-header-img {
@@ -52,12 +49,6 @@
   .information-header-heading-card-inner {
     height: 100%;
   }
-
-  .information-header-heading {
-    font-size: 1.875rem;
-    font-weight: 600;
-    line-height: 110%;
-  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -78,12 +69,6 @@
   .information-header-heading-card-inner {
     height: 100%;
     padding: 2rem;
-  }
-
-  .information-header-heading {
-    font-size: 3rem;
-    font-weight: 700;
-    line-height: 120%;
   }
 
   .information-header-img {
