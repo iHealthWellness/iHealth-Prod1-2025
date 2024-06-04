@@ -75,8 +75,46 @@ const index = () => {
         <h3>Why should you participate in a clinical trial?</h3>
         <GreyCards>
           <div>
-            <img src={giveGift} alt="nano tech icon" />
-            <p>Access to <span>Cutting-Edge</span> Treatments</p>
+            <img src={nanoTech} alt="nano tech icon" />
+            <p>
+              Access to <span>Cutting-Edge</span> Treatments
+            </p>
+          </div>
+          <div>
+            <img src={labMicroscope} alt="lab microscope icon" />
+            <p>
+              Contribution to <span>Medical Advancement</span>
+            </p>
+          </div>
+          <div>
+            <img src={icuIcon} alt="ICU icon" />
+            <p>
+              Close Monitoring and <span>Care</span>
+            </p>
+          </div>
+          <div>
+            <img src={giveGift} alt="a gift icon" />
+            <p>
+              Contribution to <span>Other Patients</span>
+            </p>
+          </div>
+          <div>
+            <img src={megaPhone} alt="megaphone" />
+            <p>
+              Empowerment and <span>Advocacy</span>
+            </p>
+          </div>
+          <div>
+            <img src={donateBlood} alt="donate blood icon" />
+            <p>
+              Support and <span>Community</span>
+            </p>
+          </div>
+          <div>
+            <img src={teamGroup} alt="team group icon" />
+            <p>
+              Altruism and <span>Giving Back</span>
+            </p>
           </div>
         </GreyCards>
       </main>
