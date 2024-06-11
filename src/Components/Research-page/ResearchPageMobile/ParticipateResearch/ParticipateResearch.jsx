@@ -7,9 +7,9 @@ function ParticipateResearch({ toggleAccordion, activeAccordion }) {
   return (
     <article id="participate" className={styles.mainSection}>
       <header>
-        <h2 className="SN-M-H2-24">
-          <span id='participate-neurofibromatosis'>Participate in Research for Neurofibromatosis:</span>
-          <span id='making-a-diff' className={styles.afterBreak}> Make a Difference</span>
+        <h2 className="D-H2-30">
+          <span>Participate in Research for Neurofibromatosis:</span>
+          <span className={styles.afterBreak}> Make a Difference</span>
         </h2>
       </header>
       <AccordionSection

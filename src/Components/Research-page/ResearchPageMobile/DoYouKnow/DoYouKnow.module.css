@@ -13,15 +13,14 @@
     color: #fff;
   }
   .titleStyle {
-    font-size: 1.25rem;
-    font-weight: 400;
-    line-height: 100%;
+    font-size: 1rem;
+    font-weight: 500;
   }
   .hiddenContentStyle,
   .visibleContentStyle {
     font-size: 1rem;
     font-weight: 400;
-    line-height: 150%;
+    line-height: 143%;
   }
   .mainSection img {
     width: 100%;

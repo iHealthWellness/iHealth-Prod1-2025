@@ -15,15 +15,15 @@
     margin-inline: 1rem;
   }
   .titleStyle {
-    font-size: 1.25rem;
-    font-weight: 400;
-    line-height: 100%;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 120%;
   }
   .hiddenContentStyle,
   .visibleContentStyle {
     font-size: 1rem;
     font-weight: 400;
-    line-height: 150%;
+    line-height: 143%;
   }
 
   .mainSection img {

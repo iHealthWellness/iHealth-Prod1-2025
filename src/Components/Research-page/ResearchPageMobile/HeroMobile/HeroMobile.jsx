@@ -4,11 +4,11 @@ function HeroMobile() {
   return (
     <section className={styles.mainSection}>
       <header>
-        <h2 className="SN-M-H3-20">
+        <h2 className="D-H3-24">
           Unraveling the Mysteries of{" "}
           <span className={styles.afterBreak}>Neurofibromatosis:</span>
         </h2>
-        <h1 className="SN-M-H1-30">Advancing Research for a brighter Future</h1>
+        <h1 className="D-H1-32">Advancing Research for a brighter Future</h1>
       </header>
     </section>
   );

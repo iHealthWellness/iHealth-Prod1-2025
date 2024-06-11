@@ -4,9 +4,9 @@ function ResearchNavigation() {
   return (
     <nav className={styles.mainSection}>
       <header>
-        <h2 className="SN-M-H2-24">In this page</h2>
+        <h2 className="D-H2-30">In this page</h2>
       </header>
-      <div className={`SN-M-H3-20 ${styles.navSection}`}>
+      <div className={`D-H3-24 ${styles.navSection}`}>
         <section>
           <a href="#tools">
             Neurofibromatosis{" "}
