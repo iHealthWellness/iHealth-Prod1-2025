@@ -45,6 +45,12 @@
   color: var(--SN-Primary-Headings-07235B, #07235b);
 }
 
+.mainSection section span {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 150%;
+}
+
 .mainSection section p {
   color: rgba(133, 142, 173, 1);
   text-align: justify;
@@ -52,7 +58,7 @@
 
 .mainSection section span,
 .mainSection section h3 {
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .mainSection header h3 span#making-a-difference {

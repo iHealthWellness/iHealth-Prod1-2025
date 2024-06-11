@@ -13,7 +13,7 @@ const section1 = () => {
         />
       </header>
       <section className={styles.heroTitle}>
-        <h2 className="D-H2-30">
+        <h2 className="D-H3-24">
           Unraveling the Mysteries of Neurofibromatosis
         </h2>
         <h1 className="D-H1-32">Advancing Research for a Brighter Future</h1>
