@@ -19,7 +19,6 @@
   gap: 2rem;
 }
 
-
 .image {
   width: 100%;
   background-size: cover;
@@ -35,20 +34,19 @@
 
 .titleStyle {
   color: var(--SN-Primary-Headings-07235B, #07235b);
-  font-size: 1.25rem;
-  font-weight: 500;
+  font-size: 1.5rem;
+  font-weight: 400;
 }
 
 .visibleContentStyle,
 .hiddenContentStyle {
   color: rgba(133, 142, 173, 1);
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 400;
 }
 
 @media screen and (max-width: 1024px) {
-  .visibleContentStyle,
-  .hiddenContentStyle {
-    font-size: 1rem;
+  .titleStyle {
+    font-size: 1.125rem;
   }
 }

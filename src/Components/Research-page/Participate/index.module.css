@@ -52,7 +52,11 @@
 
 .mainSection section span,
 .mainSection section h3 {
-  font-weight: 500;
+  font-weight: 600;
+}
+
+.mainSection header h3 span#making-a-difference {
+  font-size: inherit;
 }
 
 @media screen and (max-width: 1024px) {
@@ -62,8 +66,5 @@
   .mainSection aside,
   .mainSection section p {
     font-size: 1rem;
-  }
-  .mainSection section p span {
-    font-size: 1.25rem;
   }
 }

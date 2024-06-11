@@ -12,7 +12,7 @@ const Consideration = ({ toggleAccordion, activeAccordion }) => {
       className={`${styles.slideInText} ${styles.mainSection}`}
     >
       <section>
-        <header className="SN-D-P-20">
+        <header className="D-P-20">
           <h3>Important Considerations:</h3>
           <p>
             Before participating in any research study, it's essential to
@@ -94,7 +94,7 @@ const Consideration = ({ toggleAccordion, activeAccordion }) => {
           />
         </section>
       </section>
-      <aside className="SN-D-P-20">
+      <aside>
         <img
           src={Research7}
           alt="doctor and patient interaction"
@@ -102,15 +102,15 @@ const Consideration = ({ toggleAccordion, activeAccordion }) => {
         />
       </aside>
       <summary className={styles.bluePattern}>
-        <header className="SN-D-H3-24">Make a Difference Today</header>
-        <p className="SN-D-P-20">
+        <header className="D-H3-24">Make a Difference Today</header>
+        <p className="D-T-M-P-16">
           Your participation in NF research is invaluable. By contributing your
           time, knowledge, and experiences, you actively contribute to advancing
           the understanding and treatment of NF. Together, we can make a
           difference in the lives of individuals affected by this complex
           condition.
         </p>
-        <p className="SN-D-P-20">
+        <p className="D-T-M-P-16">
           Take the first step today and explore the research opportunities
           available to you. Your involvement matters, and by participating, you
           play an integral role in shaping a brighter future for those living

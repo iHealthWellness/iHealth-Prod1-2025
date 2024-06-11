@@ -13,14 +13,14 @@ const section1 = () => {
         />
       </header>
       <section className={styles.heroTitle}>
-        <h2 className="SN-M-H2-24">
+        <h2 className="D-H2-30">
           Unraveling the Mysteries of Neurofibromatosis
         </h2>
-        <h1 className="SN-D-H2-36">Advancing Research for a Brighter Future</h1>
+        <h1 className="D-H1-32">Advancing Research for a Brighter Future</h1>
       </section>
       <main className={styles.Introduction}>
-        <h3 className="SN-D-H2-36">Introduction</h3>
-        <section className="SN-D-P-20">
+        <h3 className="D-H3-24">Introduction</h3>
+        <section className="D-T-M-P-16">
           <p>
             Welcome to the Neurofibromatosis Research Homepage, dedicated to
             shedding light on the complexities of Neurofibromatosis (NF) and

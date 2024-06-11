@@ -37,7 +37,7 @@
 .visibleContentStyle,
 .hiddenContentStyle,
 .hiddenContentStyle a {
-  font-size: 1.25rem;
+  font-size: 1rem;
   color: var(--SN-Primary-Headings-07235B, #07235b);
 }
 
@@ -49,11 +49,7 @@
   .sectionContainer {
     gap: 1rem;
   }
-  .visibleContentStyle,
-  .hiddenContentStyle,
-  .hiddenContentStyle a {
-    font-size: 1rem;
-  }
+
   .sectionContainer {
     gap: 1rem 2rem;
   }

@@ -9,7 +9,7 @@ const MyComponent3 = ({ toggleAccordion, activeAccordion }) => {
   return (
     <>
       <div className={styles.researchTitle}>
-        <h1 className="SN-D-H3-24">
+        <h1 className="D-H3-24">
           Stay Informed: Latest NF Research Updates and Insights
         </h1>
         <article className={`${styles.slideInText} ${styles.sectionContainer}`}>

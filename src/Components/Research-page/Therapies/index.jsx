@@ -10,18 +10,18 @@ const Section3 = () => {
       className={`${styles.slideInText} ${styles.mainSection}`}
     >
       <header>
-        <h2 className="SN-T-H1-36">Clinical Drug Therapies</h2>
+        <h2 className="D-H1-32">Clinical Drug Therapies</h2>
       </header>
       <section>
-        <h3 className="SN-D-H3-24">
+        <h3 className="D-H3-24">
           Neurofibromatosis (NF) and its related symptoms are often managed
           using various clinical drug therapies. The following examples
           highlight some of the treatment options available:
         </h3>
-        <h2 className="SN-D-H3-24">
+        <h2 className="D-H3-24">
           Selumetinib for Children With Neurofibromatosis Type 1
         </h2>
-        <p className="SN-D-P-20">
+        <p className="D-T-M-P-16">
           Selumetinib is a highly promising drug utilized in the treatment of
           NF1-related plexiform neurofibromas, both in children and adults. By
           inhibiting the activity of the MEK protein, which plays a crucial role
@@ -37,7 +37,7 @@ const Section3 = () => {
           href="https://jamanetwork.com/journals/jama/article-abstract/2766145"
           target="_blank"
           rel="noopener noreferrer"
-          className="SN-D-P-20"
+          className="D-T-M-P-16"
         >
           Source: https://jamanetwork.com/journals/jama/article-abstract/2766145
         </a>

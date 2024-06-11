@@ -33,7 +33,7 @@ const MyComponent2 = ({ toggleAccordion, activeAccordion }) => {
                   href="https://cdmrp.health.mil/nfrp/clinical_trials/nf1"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="SN-D-P-20"
+                  className="D-T-M-P-16"
                 >
                   Source: https://cdmrp.health.mil/nfrp/clinical_trials/nf1
                 </a>
