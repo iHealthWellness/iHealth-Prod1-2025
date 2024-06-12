@@ -124,16 +124,4 @@ aside.hoverEffect:hover p,
   .statementContainer section article {
     gap: 1rem;
   }
-
-  .statementContainer section article p,
-  .statementContainer section article aside p {
-    font-size: 24px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .statementContainer section article p,
-  .statementContainer section article aside p {
-    font-size: 18px;
-  }
 }
