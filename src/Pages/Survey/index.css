@@ -6,7 +6,7 @@
 body {
   padding-right: 0 !important;
 }
-.advance-max-width{
+.advance-max-width {
   width: 50vw;
 }
 .hero {
@@ -73,8 +73,6 @@ body {
 }
 
 .after-break {
-  font-size: 2.25rem;
-  font-weight: 700;
   line-height: 120%;
 }
 
@@ -88,7 +86,7 @@ body {
   padding: 0 9rem;
 }
 
-.text-align-justify{
+.text-align-justify {
   text-align: justify;
 }
 
@@ -97,9 +95,9 @@ body {
   grid-row: 1;
 }
 
-.join-a-clinical-trial{
+.join-a-clinical-trial {
   display: none;
-  padding-top: 6.37rem!important;
+  padding-top: 6.37rem !important;
 }
 
 .prt-1,
@@ -113,11 +111,6 @@ body {
   color: var(--SN-Primary-Headings-07235B, #07235b);
 }
 
-.prt-2 {
-  line-height: 143%;
-  font-size: 1.25rem;
-}
-
 .hero-content .prt-1 {
   padding: 0;
 }
@@ -129,26 +122,20 @@ body {
   border-radius: 0.63rem;
   background-color: #0d99ff;
   color: var(--SN-White-FFFFFF, var(--Shade-White, #fff));
-  font-weight: 400;
   line-height: 120%;
-  font-size: 1.25rem;
   margin: 3rem 0 0 0;
   border: 2px solid #fff;
 }
 
 .survey-main-container main h3 {
-  font-size: 1.5rem;
-  font-weight: 400;
   color: rgba(7, 35, 91, 1);
-  padding-block:  1.5rem;
+  padding-block: 1.5rem;
 }
 
 button {
   cursor: pointer;
 }
-.survey-today{
-  font-weight: 600;
-}
+
 .main-btn:hover,
 .main-btn:active {
   color: var(--SN-Primary-Headings-07235B, #07235b);
@@ -163,9 +150,8 @@ button {
   color: var(--SN-Primary-Headings-07235B, #07235b);
 }
 
-
-.justify-self-right{
-  justify-self: right!important;
+.justify-self-right {
+  justify-self: right !important;
 }
 
 @media screen and (max-width: 1024px) {
@@ -198,55 +184,41 @@ button {
   }
 
   .hero-content .after-break {
-    font-size: 3rem;
     color: #fff;
   }
 
   .advance-max-width {
     width: 90vw;
   }
-  .hero{
+  .hero {
     background-color: white;
-  }
-  
-  .survey-today{
-    font-size: 1.875rem !important;
   }
 
   .hero-content .prt-1 {
-    font-size: 2rem;
     padding: 1.5rem;
     border-radius: 1rem;
     background-color: rgb(7, 35, 91);
     color: #fff;
     text-align: center;
   }
-  .hero-content .prt-1 .survey-now{
-    font-size: 1.25rem;
-  }
 
-  .join-a-clinical-trial{
+  .join-a-clinical-trial {
     display: none;
-    padding-top: 1.5rem!important;
+    padding-top: 1.5rem !important;
   }
-  .clinical-trial-hidden{
-    padding-top: 0!important;
+  .clinical-trial-hidden {
+    padding-top: 0 !important;
   }
 
-  .main-btn{
+  .main-btn {
     margin: 1.5rem 0 2.5rem 0;
-    width:90vw;
+    width: 90vw;
   }
 
   .prt-1,
   .after-break {
-    font-size: 2.25rem;
     text-align: center;
     padding-top: 1rem;
-  }
-
-  main .prt-1 {
-    font-size: 1.875rem;
   }
 }
 
@@ -265,12 +237,12 @@ button {
     gap: 1.5rem;
   }
 
-  .join-a-clinical-trial{
+  .join-a-clinical-trial {
     display: block;
-    padding-top: 0.2rem!important;
+    padding-top: 0.2rem !important;
   }
-  .clinical-trial-hidden{
-    padding-top:1rem!important;
+  .clinical-trial-hidden {
+    padding-top: 1rem !important;
   }
 
   .invis {
@@ -287,11 +259,6 @@ button {
     display: none;
   }
 
-  .hero-content .after-break,
-  .hero-content .prt-1 {
-    font-size: 1.9rem;
-  }
-
   .second-img {
     width: 100%;
     border-radius: 1rem;
@@ -301,11 +268,7 @@ button {
     padding-block: 1.5rem;
   }
 
-  main .prt-1 {
-    font-size: 1.5rem;
-  }
   main .prt-2 {
-    font-size: 1.25rem;
     text-align: justify;
     padding-inline: 1rem;
     padding-top: 1rem;

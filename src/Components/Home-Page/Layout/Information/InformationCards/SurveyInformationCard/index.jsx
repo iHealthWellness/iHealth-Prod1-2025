@@ -26,8 +26,8 @@ function SurveyInformationCard() {
     return (
       <div key={index} className="card-container">
         <h2 className="card-header">
-          <span className="SN-D-H1-48 part-1 survey-today">{part1}</span>
-          <span className="SN-D-H3-24 part-2">{part2}</span>
+          <span className="D-H1-32 part-1 survey-today">{part1}</span>
+          <span className="D-H3-24 part-2">{part2}</span>
         </h2>
         <div className="content-section">
           <div className="images-container">
@@ -41,10 +41,10 @@ function SurveyInformationCard() {
               />
             ))}
           </div>
-          <p className="SN-D-T-M-P-16">{text}</p>
+          <p className="D-T-M-P-16">{text}</p>
           <div className="btn-container">
             <button
-              className="SN-D-T-M-B-16"
+              className="D-T-M-P-B-16"
               onClick={(e) => handleNavigate(e, path)}
             >
               {buttonText}
