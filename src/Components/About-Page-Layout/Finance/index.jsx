@@ -13,17 +13,17 @@ const Finance = () => {
       <header>
         <div>
           <img src={financialTransparency} alt="financial image" />
-          <h3>Financial Transparency</h3>
+          <h3 className="D-H2-30">Financial Transparency</h3>
         </div>
         <aside>
-          <h2>Revenue Generation</h2>
-          <p className="SN-D-P-20">
+          <h2 className="D-H2-30">Revenue Generation</h2>
+          <p className="D-P-20">
             Our revenue is generated through the following business activities.
           </p>
         </aside>
       </header>
       <section className={`${styles.chartSection} ${styles.slideInText}`}>
-        <aside className="SN-D-H3-24">
+        <aside className="D-H3-24">
           <p>Donation</p>
           <p>Licensing Fees</p>
           <p>Research Partnerships</p>

@@ -14,7 +14,7 @@ const Statement = () => {
       {/* Left part */}
       <section>
         <img src={ourMission} alt="our mission" />
-        <article className={`SN-D-P-20 ${styles.slideInTextFromLeft}`}>
+        <article className={`D-P-20 ${styles.slideInTextFromLeft}`}>
           <p>
             Improving the quality of life for patients with complex diseases by
             enhancing healthcare access, fostering social connections,
@@ -35,9 +35,9 @@ const Statement = () => {
       {/* Center part */}
       <section>
         <img src={coreValues} alt="core values" />
-        <article className="SN-D-P-20">
+        <article className="D-P-20">
           <aside className={styles.hoverEffect}>
-            <h2 className="SN-M-H2-24">Patient-Centered Care</h2>
+            <h2 className="D-H3-24">Patient-Centered Care</h2>
             <p>
               We are committed to providing our users with the highest level of
               patient-centered care, respecting their individual needs, and
@@ -46,7 +46,7 @@ const Statement = () => {
             </p>
           </aside>
           <aside className={styles.hoverEffect}>
-            <h2 className="SN-M-H2-24">Innovation</h2>
+            <h2 className="D-H3-24">Innovation</h2>
             <p>
               We believe in innovation and continuous improvement to provide the
               most comprehensive and reliable resources to our users. We will
@@ -55,7 +55,7 @@ const Statement = () => {
             </p>
           </aside>
           <aside className={styles.blueParagraph}>
-            <h2 className="SN-M-H2-24">Integrity</h2>
+            <h2 className="D-H3-24">Integrity</h2>
             <p>
               We hold ourselves to the highest ethical standards and are
               dedicated to providing our users with accurate and reliable
@@ -64,7 +64,7 @@ const Statement = () => {
             </p>
           </aside>
           <aside className={styles.hoverEffect}>
-            <h2 className="SN-M-H2-24">Social Responsibility</h2>
+            <h2 className="D-H3-24">Social Responsibility</h2>
             <p>
               We are committed to being a responsible and contributing member of
               society. As a global non-profit, we will prioritize our users'
@@ -73,7 +73,7 @@ const Statement = () => {
             </p>
           </aside>
           <aside className={styles.blueParagraph}>
-            <h2 className="SN-M-H2-24">Collaboration</h2>
+            <h2 className="D-H3-24">Collaboration</h2>
             <p>
               We understand that complex diseases require a collaborative
               approach, and we strive to foster partnerships with healthcare
@@ -82,7 +82,7 @@ const Statement = () => {
             </p>
           </aside>
           <aside className={styles.hoverEffect}>
-            <h2 className="SN-M-H2-24">Professionalism</h2>
+            <h2 className="D-H3-24">Professionalism</h2>
             <p>
               We pride ourselves on maintaining a professional and respectful
               environment for our users, partners, and employees. We will always
@@ -95,7 +95,7 @@ const Statement = () => {
       {/* Right part */}
       <section>
         <img src={ourVision} alt="our vision" />
-        <article className={`SN-D-P-20 ${styles.slideInTextFromRight}`}>
+        <article className={`D-P-20 ${styles.slideInTextFromRight}`}>
           <p>
             Our aim is to empower patients to take control of their health,
             collaborate with healthcare providers, and improve the quality of
