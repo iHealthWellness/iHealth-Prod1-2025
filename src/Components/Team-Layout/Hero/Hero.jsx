@@ -49,27 +49,19 @@ const Hero = () => {
       <div className="container">
         <div className="Hero-Header">
           <img className="Teamss-image-tab" src={image2} alt="" />
-
         </div>
       </div>
 
       <div className="tab-holder-tab">
-
-
-
-
         <div class="team-banner">
-          <a href="/job-openings" class="team-link">
+          <a href="/job-openings" class="team-link D-H3-24">
             Join Our Team
           </a>
         </div>
 
-
-
-
         <div className="text-tab-tab">
           {/* <img className="text-tab-image" src={image} /> */}
-          <h2 className={`text-team ${isVisible.divRef}`} ref={divRef}>
+          <h2 className={`text-team D-H3-24 ${isVisible.divRef}`} ref={divRef}>
             Our team comprises dedicated individuals who bring diverse expertise
             and a shared commitment to our mission.{" "}
           </h2>
@@ -77,7 +69,7 @@ const Hero = () => {
 
         <div className="text-tab-tab">
           <div className="team-highlight-tab ">
-            <h3 className={`team-highlight`} ref={divTwoRef}>
+            <h3 className={`team-highlight D-P-20`} ref={divTwoRef}>
               Our organization deeply appreciates the unwavering dedication of
               our Volunteers, Advisors, and Board Members. Their selfless
               contributions are indispensable in helping us fulfill our mission.
