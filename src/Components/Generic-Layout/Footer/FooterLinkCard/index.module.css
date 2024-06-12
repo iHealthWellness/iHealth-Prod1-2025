@@ -30,9 +30,12 @@
   cursor: pointer;
 }
 
-@media only screen and (min-width: 480px) and (max-width: 1023px) {
+@media only screen and (min-width: 480px) and (max-width: 1260px) {
   .footerLink {
     text-align: center;
+  }
+  .footerLinksCard {
+    padding: 0 0 1rem;
   }
 }
 
