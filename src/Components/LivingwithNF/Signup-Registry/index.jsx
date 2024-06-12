@@ -3,15 +3,20 @@ import React from "react";
 
 function index({ openExternalLink }) {
   return (
-    <div id="signup-reg" className="animated-text signup-container nf-registery-signup">
+    <div
+      id="signup-reg"
+      className="animated-text signup-container nf-registery-signup"
+    >
       <div className="enroll-content1">
-        <h1 className="signup-heading SN-D-H2-36 ">NF Registry: <span className='light-blue-font'>Sign-Up</span></h1>
+        <h1 className="signup-heading D-H2-30">
+          NF Registry: <span className="light-blue-font">Sign-Up</span>
+        </h1>
 
-        <button className="nf-btn SN-D-T-M-B-16" onClick={openExternalLink}>
+        <button className="nf-btn D-T-M-P-16" onClick={openExternalLink}>
           Sign-Up for Registry
         </button>
       </div>
-      <div className="enroll-content2 SN-D-P-20">
+      <div className="enroll-content2 D-P-20">
         <p>
           The NF Registry is a comprehensive database that includes individuals
           meeting the diagnostic criteria for any of the three NF conditions.

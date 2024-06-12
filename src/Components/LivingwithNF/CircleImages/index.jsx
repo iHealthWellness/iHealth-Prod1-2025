@@ -18,28 +18,31 @@ function index({ openExternalLink }) {
         style={{ color: "inherit", textDecoration: "none" }}
         to="#understand-nf"
       >
-        <div className="circle-img SN-T-H3-24">
+        <div className="circle-img D-H3-24">
           <div className="inside-circle-container">
             <img className="image" src={NF1} />
             <p className="img-txt undestanding-nf">
-              Understanding NF <p className='clinical-trials'>&nbsp;</p>
+              Understanding NF <p className="clinical-trials">&nbsp;</p>
             </p>
           </div>
         </div>
       </Link>
-        <div className="circle-img SN-T-H3-24">
-          <div className="inside-circle-container">
-            <img className="image" src={NF2} onClick={(e)=>handleClick(e)}/>
-            <p className="img-txt" id='left-margin-fix'>
-              Survey Now <p className='clinical-trials' onClick={(e)=>handleClick(e)}>Clinical Trials</p>
+      <div className="circle-img D-H3-24">
+        <div className="inside-circle-container">
+          <img className="image" src={NF2} onClick={(e) => handleClick(e)} />
+          <p className="img-txt" id="left-margin-fix">
+            Survey Now{" "}
+            <p className="clinical-trials" onClick={(e) => handleClick(e)}>
+              Clinical Trials
             </p>
-          </div>
+          </p>
         </div>
-      <div className="circle-img SN-T-H3-24">
+      </div>
+      <div className="circle-img D-H3-24">
         <div onClick={openExternalLink} className="inside-circle-container">
           <img className="image" src={NF3} />
-          <p className="img-txt" id='left-margin-fix'>
-          NF Registry<p className='clinical-trials'>Sign-Up</p>
+          <p className="img-txt" id="left-margin-fix">
+            NF Registry<p className="clinical-trials">Sign-Up</p>
           </p>
         </div>
       </div>

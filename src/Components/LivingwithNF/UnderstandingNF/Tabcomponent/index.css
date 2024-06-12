@@ -14,11 +14,11 @@
   background-color: transparent;
 }
 
-.headache-image{
+.headache-image {
   height: 20rem;
 }
 
-.rotate-flip-horizontal{
+.rotate-flip-horizontal {
   transform: scaleX(-1);
 }
 
@@ -52,9 +52,9 @@
 }
 
 @media screen and (min-width: 1024px) {
-.custom-tabs .MuiTabs-flexContainer {
-  padding: 0 11.5rem !important;
-}
+  .custom-tabs .MuiTabs-flexContainer {
+    padding: 0 11.5rem !important;
+  }
 }
 
 @media screen and (min-width: 480px) and (max-width: 1023px) {
@@ -66,12 +66,6 @@
   .tab-text {
     gap: 1.5rem;
   }
-  .tab-text > div {
-    font-size: 1rem;
-  }
-  .custom-tabs .MuiTab-root {
-    font-size: 1rem;
-  }
 }
 
 @media screen and (max-width: 663px) {
@@ -79,19 +73,9 @@
     max-width: 14.4rem;
     height: 14rem;
   }
-  .tab-text > div {
-    font-size: 1rem;
-  }
-  .custom-tabs .MuiTab-root {
-    font-size: 1rem;
-  }
 }
 
 @media screen and (max-width: 480px) {
-  .custom-tabs .MuiTab-root {
-    font-size: 1rem;
-  }
-
   .main-tab-container .MuiBox-root {
     padding: 2rem 0 0 0;
   }
