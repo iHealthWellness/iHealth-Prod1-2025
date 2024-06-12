@@ -1,6 +1,6 @@
 .outer-card-container {
   display: flex;
-  justify-content: stretch;
+  justify-content: center;
   align-items: stretch;
   background: var(--Purple-25, #f7f6f9);
   gap: 9.56rem;
