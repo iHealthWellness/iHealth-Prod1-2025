@@ -105,7 +105,6 @@
 {
     color: #000;
     font-family: Roboto;
-    font-size: 2.2dvw;
     font-style: normal;
     font-weight: 600;
     line-height: 110%; 
@@ -124,22 +123,6 @@
     border-radius: 10px;
     cursor: pointer;
 }
-
-
-
-/* ==================== Set Css rules for DonateTopDonateNow`s component`s second div as wrapper ==================== */
-
-
-#Donate-Top-Donate-Now > div:last-child > div:first-child > div:nth-child(2) >#donate-today 
-{
-    font-size: 2.25rem;
-}
-
-#Donate-Top-Donate-Now > div:last-child > div:first-child > div:nth-child(2) > p
-{
-    font-size: 1.5rem;
-}
-
 
 /* ============================================ Responsıve Css Rules ============================================ */
 @media only screen and (max-width: 911px) 
@@ -194,21 +177,12 @@
     min-width: 31dvw;
     }
 
-    #Donate-Top-Donate-Now > div:last-child > div:first-child > div:nth-child(2) >#donate-today 
-    {
-        font-size: 1.5rem;
-    }
-
-    #Donate-Top-Donate-Now > div:last-child > div:first-child > div:nth-child(2) > p
-    {
-        font-size: 1.25rem;
-    }
+   
     
     #Donate-Top-Donate-Now > div:last-child > div:first-child > div:nth-child(2) > button
     {
         height: 2dvw;
         padding: 0.5rem 0.5rem 1rem 0.5rem;
-        font-size: 1rem;
         width: 110px;
         margin-left: -30px;
     }

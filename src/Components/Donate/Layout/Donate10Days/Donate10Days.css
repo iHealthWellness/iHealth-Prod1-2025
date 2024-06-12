@@ -44,9 +44,7 @@
   color: #fff;
   text-align: center;
   font-family: Roboto;
-  font-size: 2.25rem;
   font-style: normal;
-  font-weight: 600;
   line-height: 110%; /* 2.475rem */
   padding-top: 3rem;
 }
@@ -55,7 +53,6 @@
   color: #0d99ff;
   font-family: Roboto;
   padding: 0 0 3rem 0;
-  font-size: 1.5rem;
   font-style: normal;
   line-height: 110%;
   text-align: left;
@@ -87,16 +84,13 @@
   color: #000;
   text-align: center;
   font-family: Roboto;
-  font-size: 1.5rem;
   font-style: normal;
-  font-weight: 600;
   line-height: 110%; /* 1.65rem */
 }
 
 #Donate10Days-Main-Container > div:last-child > article > p {
   color: #8b9094;
   font-family: Roboto;
-  font-size: 1.5rem;
   font-style: normal;
   font-weight: 400;
   line-height: 143%;
@@ -114,16 +108,6 @@
   }
 }
 
-@media only screen and (max-width: 600px) {
-  #Donate10Days-Main-Container > div:last-child > article > h4 {
-    font-size: 4dvw;
-  }
-
-  #Donate10Days-Main-Container > div:last-child > article > p {
-    font-size: 3.1dvw;
-  }
-}
-
 @media only screen and (max-width: 479px) {
   #Donate10Days-Main-Container > div:last-child {
     flex-direction: column;
@@ -135,10 +119,9 @@
   }
 
   #Donate10Days-Main-Container > div:first-child > h3 {
-    font-size: 1.875rem;
     text-align: left;
   }
-  #Donate10Days-Main-Container > div:first-child > h3 > #fast-track{
+  #Donate10Days-Main-Container > div:first-child > h3 > #fast-track {
     display: none;
   }
   #Donate10Days-Main-Container > div:first-child {
@@ -146,17 +129,8 @@
   }
 
   #Donate10Days-Main-Container > div:first-child > p {
-    font-size: 1.5rem;
     text-align: left;
     margin-left: -45px !important;
     font-weight: 400;
-  }
-
-  #Donate10Days-Main-Container > div:last-child > article > h4 {
-    font-size: 5dvw;
-  }
-
-  #Donate10Days-Main-Container > div:last-child > article > p {
-    font-size: 4.1dvw;
   }
 }
