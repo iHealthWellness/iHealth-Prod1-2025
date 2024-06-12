@@ -13,7 +13,7 @@ const Consideration = ({ toggleAccordion, activeAccordion }) => {
     >
       <section>
         <header className="D-P-20">
-          <h3>Important Considerations:</h3>
+          <h3 className="D-H3-24">Important Considerations:</h3>
           <p>
             Before participating in any research study, it's essential to
             consider the following:
