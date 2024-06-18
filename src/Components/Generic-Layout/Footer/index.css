@@ -70,7 +70,7 @@
 }
 
 .footer-subscribe-bar form input {
-  margin-right: 0.5rem;
+  margin-right: 1rem;
 }
 
 .footer-subscribe-input {
@@ -154,7 +154,7 @@
   }
 }
 
-@media only screen and (min-width: 275px) and (max-width: 590px) {
+@media only screen and (min-width: 275px) and (max-width: 635px) {
   .language-select-cont {
     padding-top: 2rem;
   }
