@@ -135,7 +135,7 @@ html {
 
 .SN-D-Home-H1-48 {
   font-size: 3rem;
-  font-weight: bold;
+  font-weight: 400;
   line-height: 120%;
 }
 
@@ -172,7 +172,7 @@ html {
 @media screen and (max-width: 1024px) {
   .SN-D-Home-H1-48 {
     font-size: 2.25rem;
-    font-weight: bold;
+    font-weight: 400;
     line-height: 120%;
   }
 
@@ -192,7 +192,7 @@ html {
 @media screen and (max-width: 480px) {
   .SN-D-Home-H1-48 {
     font-size: 1.875rem;
-    font-weight: bold;
+    font-weight: 400;
     line-height: 120%;
   }
 
