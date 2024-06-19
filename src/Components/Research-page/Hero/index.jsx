@@ -19,8 +19,8 @@ const section1 = () => {
         <h1 className="D-H1-32">Advancing Research for a Brighter Future</h1>
       </section>
       <main className={styles.Introduction}>
-        <h3 className="D-H3-24">Introduction</h3>
-        <section className="D-T-M-P-16">
+        <h3 className="D-H1-32">Introduction</h3>
+        <section className="D-P-20">
           <p>
             Welcome to the Neurofibromatosis Research Homepage, dedicated to
             shedding light on the complexities of Neurofibromatosis (NF) and

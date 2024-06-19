@@ -9,7 +9,7 @@
 }
 
 .researchTitle h1 {
-  font-weight: 500;
+  font-weight: 400;
   padding-bottom: 1rem;
 }
 
@@ -41,8 +41,9 @@
 .visibleContentStyle,
 .hiddenContentStyle {
   color: rgba(133, 142, 173, 1);
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-weight: 400;
+  line-height: 150%;
 }
 
 @media screen and (max-width: 1024px) {

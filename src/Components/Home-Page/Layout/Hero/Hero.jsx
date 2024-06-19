@@ -47,7 +47,7 @@ const Hero = () => {
   return (
     <section className="hero-container">
       <section className="hero-survey-banner">
-        <p className="SN-D-T-M-P-16">
+        <p className="SN-D-P-20">
           You are OUR hero, and we would love to hear your NF story.{" "}
           <span className="take-survey-span">
             <a href="https://forms.gle/QAiHQcgtvqfjFtYe6" target="_blank">

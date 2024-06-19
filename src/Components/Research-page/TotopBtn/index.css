@@ -8,7 +8,7 @@
   border-radius: 50%;
   background-color: #0d99ff;
   /* #0d99ff */
-  color: #FFFF;
+  color: #ffff;
   /* #07235b */
   display: flex;
   flex-direction: column;
@@ -17,7 +17,7 @@
   cursor: pointer;
   opacity: 0;
   transition: opacity 0.3s;
-  font-weight: 600;
+  font-weight: 400;
   width: 64px;
   height: 64px;
   padding: 16px;

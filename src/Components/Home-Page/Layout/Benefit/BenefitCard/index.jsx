@@ -69,12 +69,12 @@ const BenefitCard = ({ benefit }) => {
             <img className="benefit-img" src={benefit.image}></img>
           </div>
           <div className="benefit-flipcard-back">
-            <p className="benefit-flipcard-summary SN-D-T-M-P-16">
+            <p className="benefit-flipcard-summary SN-D-P-20">
               {benefit.summary}
             </p>
-            <ol className="benefit-flipcard-list SN-D-T-M-P-16">
+            <ol className="benefit-flipcard-list SN-D-P-20">
               {benefit.details.map((detail) => (
-                <li className="SN-D-T-M-P-16" key={detail}>
+                <li className="SN-D-P-20" key={detail}>
                   {detail}
                 </li>
               ))}

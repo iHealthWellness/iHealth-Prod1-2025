@@ -10,14 +10,14 @@ const Section2 = () => {
       className={`${styles.slideInText} ${styles.mainSection}`}
     >
       <header className={styles.title}>
-        <h2 className="D-H2-30" id="empowering-patients">
+        <h2 className="D-H3-24" id="empowering-patients">
           Empowering Patients and Professionals
         </h2>
         <h1 className="D-H1-32">
           Neurofibromatosis Research Tools and Resources
         </h1>
       </header>
-      <section className="D-T-M-P-16">
+      <section className="D-P-20">
         <p>
           Neurofibromatosis (NF) is a complex genetic disorder that requires
           ongoing research and collaboration among patients, healthcare

@@ -1,6 +1,6 @@
 /* Font family style */
 .modal {
-  font-family: 'Work Sans';
+  font-family: "Work Sans";
   font-style: normal;
 }
 
@@ -9,7 +9,7 @@
 .close {
   display: flex;
   flex-direction: row;
-  color: #A3AAC2;
+  color: #a3aac2;
   margin-left: 96%;
   padding-top: 5px;
   font-size: 25px;
@@ -44,8 +44,8 @@
 .mod1 {
   width: 700px;
   border-radius: 20px;
-  background-color: #F8FAFC;
-  border: 1px solid #07235B;
+  background-color: #f8fafc;
+  border: 1px solid #07235b;
 }
 
 /* The bottom ellipse styling */
@@ -65,12 +65,12 @@
 
 .modal {
   height: 260px;
-  background-color: #F8FAFC;
+  background-color: #f8fafc;
   border: none;
 }
 
 .Login_down {
-  background-color: #07235B;
+  background-color: #07235b;
   height: 180px;
   /* width: 100%; */
   border-bottom-left-radius: 20px;
@@ -78,28 +78,27 @@
   margin-top: -170px;
 }
 
-
 /* css styling for the form header */
 
 .gdt-head {
   text-align: center;
 }
 
-.gdt__p{
+.gdt__p {
   font-size: 15px;
-  color: #C33418;
+  color: #c33418;
   font-weight: 400;
 }
 
 .gdt-head h1 {
-  color: #07235B;
+  color: #07235b;
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .pxp1 {
   text-align: center;
-  color: #0D99FF;
+  color: #0d99ff;
   margin-top: 5px;
   margin-bottom: 5px;
   padding: 0 17%;
@@ -114,12 +113,12 @@
   margin: auto;
 }
 
-.progressbar__img{
+.progressbar__img {
   /* width: 80%; */
   height: 17px;
 }
 
-.progressbar__img1{
+.progressbar__img1 {
   height: 17px;
   margin: 10px 0;
 }
@@ -143,10 +142,10 @@
 .input__field {
   width: 100%;
   padding: 6px;
-  border: 1px solid #E0E3EB;
+  border: 1px solid #e0e3eb;
   border-radius: 4px;
   background-color: #ffffff;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .input__label {
@@ -198,20 +197,19 @@
   /* color: #ffffff; */
 }
 
-.input__field:disabled{
+.input__field:disabled {
   background-color: #ffffff94;
 }
 
-
-.input:-internal-autofill-selected{
-  background-color: #0D99FF;
+.input:-internal-autofill-selected {
+  background-color: #0d99ff;
 }
 
 .textarea__field {
   width: 100%;
   height: 60px;
   padding: 10px;
-  border:  1.5px solid #E0E3EB;
+  border: 1.5px solid #e0e3eb;
   border-radius: 0px;
   background-color: #ffffff;
   resize: none;
@@ -255,10 +253,10 @@
   font-weight: 200;
   padding: 5px 14px;
   width: 252.84px;
-  background: #0D99FF;
+  background: #0d99ff;
   border-radius: 20px;
   color: #ffffff;
-  border: 1px solid #0D99FF;
+  border: 1px solid #0d99ff;
   z-index: 1;
 }
 
@@ -269,22 +267,22 @@
 
 /* ON INPUT FIELD PLACEHOLDER IS SET TO DISPLAY OF NONE */
 
-.input__field:focus~.input__label,
-.input__field:not(:placeholder-shown)~.input__label {
+.input__field:focus ~ .input__label,
+.input__field:not(:placeholder-shown) ~ .input__label {
   z-index: -1;
 }
 
-.input__field:focus~.input__labelx,
-.input__field:not(:placeholder-shown)~.input__labelx {
+.input__field:focus ~ .input__labelx,
+.input__field:not(:placeholder-shown) ~ .input__labelx {
   z-index: -1;
 }
 
-.textarea__field:focus~.textarea__label,
-.textarea__field:not(:placeholder-shown)~.textarea__label {
+.textarea__field:focus ~ .textarea__label,
+.textarea__field:not(:placeholder-shown) ~ .textarea__label {
   z-index: -1;
 }
 
-.hidden-label{
+.hidden-label {
   display: none;
 }
 
@@ -293,22 +291,22 @@
 } */
 
 /* CONDITION DROPDOWN STYLING */
-.custom-select  {
+.custom-select {
   color: #ffffff;
 }
 
-.select-selected img{
+.select-selected img {
   float: right;
   margin: 6px 0;
 }
 
-.select-items{
+.select-items {
   position: absolute;
   top: 0;
   left: 0;
   background-color: #ffffff;
-    max-height: 150px;
-    width: 100%;
+  max-height: 150px;
+  width: 100%;
   color: black;
   font-size: 15px;
   overflow-y: auto;
@@ -325,7 +323,7 @@
 
 /* Highlight the dropdown options on hover */
 .select-items div:hover {
-  background-color: #0D99FF; 
+  background-color: #0d99ff;
   cursor: pointer;
   color: #ffffff;
 }
@@ -333,18 +331,18 @@
 /* Highlight the selected dropdown option*/
 .same-as-selected {
   background-color: #e0e0e0;
-  color: #000000; 
+  color: #000000;
 }
 
 /* Track */
 .select-items::-webkit-scrollbar {
-  width: 5px; 
+  width: 5px;
 }
 
 /* Handle */
 .select-items::-webkit-scrollbar-thumb {
-  background-color: #07235B;
-  border-radius: 6px; 
+  background-color: #07235b;
+  border-radius: 6px;
 }
 
 /* Track on hover
@@ -361,8 +359,6 @@ Button (up and down arrows)
 select::-webkit-scrollbar-button {
   display: none; 
 } */
-
-
 
 /* input validation message styling */
 .error-msg {
@@ -406,9 +402,6 @@ select::-webkit-scrollbar-button {
   z-index: 100;
 }
 
-
-
-
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -419,21 +412,15 @@ select::-webkit-scrollbar-button {
   }
 }
 
-
-
-
-
-
 @media screen and (max-width: 768px) {
-
-  .xxx-img{
+  .xxx-img {
     height: 137px;
   }
   .form__content {
     margin: 5px 5% 0 5%;
   }
 
-  .btnx button{
+  .btnx button {
     top: 87px;
   }
 
@@ -453,10 +440,7 @@ select::-webkit-scrollbar-button {
   }
 }
 
-
-
 @media only screen and (max-width: 280px) {
-
   .mod1 {
     margin: 0;
     border-radius: 0;
@@ -464,11 +448,11 @@ select::-webkit-scrollbar-button {
     border-bottom-right-radius: 20px;
   }
 
-  .gdt__p1{
+  .gdt__p1 {
     margin-top: 20px;
   }
 
-  .progressbar__img1{
+  .progressbar__img1 {
     width: 50%;
     height: 10px;
     margin: 35px 0;
@@ -500,7 +484,6 @@ select::-webkit-scrollbar-button {
   }
 }
 
-
 @media only screen and (min-width: 290px) and (max-width: 360px) {
   .mod1 {
     margin: 0;
@@ -517,8 +500,6 @@ select::-webkit-scrollbar-button {
     height: 200px;
     width: 100%;
   }
-
-
 }
 
 @media only screen and (min-width: 370px) and (max-width: 380px) {
@@ -537,7 +518,6 @@ select::-webkit-scrollbar-button {
     height: 200px;
     width: 100%;
   }
-
 }
 
 @media only screen and (min-width: 381px) and (max-width: 395px) {
@@ -552,7 +532,6 @@ select::-webkit-scrollbar-button {
     height: 200px;
     width: 100%;
   }
-
 }
 
 @media only screen and (min-width: 395px) and (max-width: 415px) {
@@ -571,18 +550,14 @@ select::-webkit-scrollbar-button {
     height: 200px;
     width: 100%;
   }
-
 }
-
 
 /* SURFACE PRO STYLING */
 
 @media only screen and (min-width: 520px) and (max-width: 590px) {
-
   .mod1 {
     margin: 0 0%;
   }
-
 
   .close {
     margin-left: 92%;
@@ -603,17 +578,15 @@ select::-webkit-scrollbar-button {
   }
 }
 
-
 /* Mobile styling */
 
 /* Adjustments for smaller screens */
 @media (max-width: 767px) {
   .mod1 {
     width: 90vw;
-    margin: 30px 5% ;
+    margin: 30px 5%;
     border-radius: 20px;
   }
-
 
   .close {
     margin-left: 92%;
@@ -628,13 +601,13 @@ select::-webkit-scrollbar-button {
     padding: 0 10%;
   }
 
-  .progressbar__img{
+  .progressbar__img {
     width: 50%;
     height: 10px;
     margin-bottom: 5px;
   }
 
-  .progressbar__img1{
+  .progressbar__img1 {
     width: 50%;
     height: 10px;
     margin: 10px 0;
@@ -661,7 +634,6 @@ select::-webkit-scrollbar-button {
 /* MINI TABLET STYLING */
 
 @media only screen and (min-width: 768px) and (max-width: 810px) {
-
   .mod1 {
     width: 70vw;
     margin: 30px 15%;
@@ -676,13 +648,13 @@ select::-webkit-scrollbar-button {
     width: 100%;
   }
 
-  .progressbar__img{
+  .progressbar__img {
     width: 50%;
     height: 10px;
     margin-bottom: 5px;
   }
 
-  .progressbar__img1{
+  .progressbar__img1 {
     width: 50%;
     height: 10px;
     margin: 10px 0;
@@ -692,19 +664,19 @@ select::-webkit-scrollbar-button {
     left: 23.5%;
   }
 
-  .jct-holder{
+  .jct-holder {
     top: 28px;
   }
 
-  .xxx{
+  .xxx {
     height: 160px;
   }
 
-  .xxx img{
+  .xxx img {
     height: auto;
   }
 
-  .btnx button{
+  .btnx button {
     top: 110px;
   }
 
@@ -713,13 +685,12 @@ select::-webkit-scrollbar-button {
     top: 130px;
     left: 0;
     height: 47px;
-}
+  }
 }
 
 /* IPAD STYLING */
 
 @media only screen and (min-width: 810px) and (max-width: 830px) {
-
   .mod1 {
     width: 70vw;
     margin: 30px 15%;
@@ -733,7 +704,6 @@ select::-webkit-scrollbar-button {
     height: 200px;
     width: 100%;
   }
-
 
   .loader {
     position: absolute;
@@ -754,12 +724,10 @@ select::-webkit-scrollbar-button {
 /* SURFACE PRO STYLING */
 
 @media only screen and (min-width: 820px) and (max-width: 912px) {
-
   .mod1 {
     width: 70vw;
     margin: 30px 15%;
   }
-
 
   .close {
     margin-left: 92%;
@@ -777,13 +745,11 @@ select::-webkit-scrollbar-button {
 
 /* NEST HUB SCREEN STYLING */
 
- @media only screen and (min-width: 1020px) and (max-width: 1024px) {
-
+@media only screen and (min-width: 1020px) and (max-width: 1024px) {
   .mod1 {
     width: 70vw;
     margin: 5px 15%;
   }
-
 
   .close {
     font-size: 40px;
@@ -794,13 +760,12 @@ select::-webkit-scrollbar-button {
     width: 100%;
   }
 
-  .btnx button{
+  .btnx button {
     width: 230px;
     padding: 5px 14px;
     /* margin-top: 140px; */
   }
-
-} 
+}
 
 /* NEST HUB PRO SCREEN STYLING */
 
@@ -834,9 +799,8 @@ select::-webkit-scrollbar-button {
 /* MINI DESKTOP SCREEN STYLING */
 
 @media only screen and (min-width: 1028px) and (max-width: 1035px) {
-
-/* input validation message styling */
-.error-msg {
-  left: 24%;
-}
+  /* input validation message styling */
+  .error-msg {
+    left: 24%;
+  }
 }

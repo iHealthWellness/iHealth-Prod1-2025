@@ -44,7 +44,7 @@ const index = () => {
               </p>
             </h2>
             {/* <h2 className="SN-D-H2-36 invis prt-1"> */}
-            {/* <span className='survey-now'>Survey Today</span> <p className="D-T-M-P-16"> Thrive Tomorrow!</p> */}
+            {/* <span className='survey-now'>Survey Today</span> <p className="D-P-20"> Thrive Tomorrow!</p> */}
             {/* <p className="SN-D-H1-48 after-break">Change the Future</p> */}
             {/* </h2> */}
           </div>
@@ -63,7 +63,7 @@ const index = () => {
         </p>
         {/* onClick={() => setOpenModal(true)} */}
         <button
-          className="main-btn D-T-M-P-16"
+          className="main-btn D-P-20"
           onClick={() => {
             document.querySelector("#UnderConst-wrapper").style.display =
               "flex";
@@ -78,46 +78,45 @@ const index = () => {
         <GreyCards>
           <div>
             <img src={nanoTech} alt="nano tech icon" />
-            <p className="D-T-M-P-16">
-              Access to <span className="D-T-M-P-16">Cutting-Edge</span>{" "}
-              Treatments
+            <p className="D-P-20">
+              Access to <span className="D-P-20">Cutting-Edge</span> Treatments
             </p>
           </div>
           <div>
             <img src={labMicroscope} alt="lab microscope icon" />
-            <p className="D-T-M-P-16">
+            <p className="D-P-20">
               Contribution to{" "}
-              <span className="D-T-M-P-16">Medical Advancement</span>
+              <span className="D-P-20">Medical Advancement</span>
             </p>
           </div>
           <div>
             <img src={icuIcon} alt="ICU icon" />
-            <p className="D-T-M-P-16">
-              Close Monitoring and <span className="D-T-M-P-16">Care</span>
+            <p className="D-P-20">
+              Close Monitoring and <span className="D-P-20">Care</span>
             </p>
           </div>
           <div>
             <img src={giveGift} alt="a gift icon" />
-            <p className="D-T-M-P-16">
-              Contribution to <span className="D-T-M-P-16">Other Patients</span>
+            <p className="D-P-20">
+              Contribution to <span className="D-P-20">Other Patients</span>
             </p>
           </div>
           <div>
             <img src={megaPhone} alt="megaphone" />
-            <p className="D-T-M-P-16">
-              Empowerment and <span className="D-T-M-P-16">Advocacy</span>
+            <p className="D-P-20">
+              Empowerment and <span className="D-P-20">Advocacy</span>
             </p>
           </div>
           <div>
             <img src={donateBlood} alt="donate blood icon" />
-            <p className="D-T-M-P-16">
-              Support and <span className="D-T-M-P-16">Community</span>
+            <p className="D-P-20">
+              Support and <span className="D-P-20">Community</span>
             </p>
           </div>
           <div>
             <img src={teamGroup} alt="team group icon" />
-            <p className="D-T-M-P-16">
-              Altruism and <span className="D-T-M-P-16">Giving Back</span>
+            <p className="D-P-20">
+              Altruism and <span className="D-P-20">Giving Back</span>
             </p>
           </div>
         </GreyCards>

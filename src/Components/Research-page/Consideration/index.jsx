@@ -103,14 +103,14 @@ const Consideration = ({ toggleAccordion, activeAccordion }) => {
       </aside>
       <summary className={styles.bluePattern}>
         <header className="D-H3-24">Make a Difference Today</header>
-        <p className="D-T-M-P-16">
+        <p className="D-P-20">
           Your participation in NF research is invaluable. By contributing your
           time, knowledge, and experiences, you actively contribute to advancing
           the understanding and treatment of NF. Together, we can make a
           difference in the lives of individuals affected by this complex
           condition.
         </p>
-        <p className="D-T-M-P-16">
+        <p className="D-P-20">
           Take the first step today and explore the research opportunities
           available to you. Your involvement matters, and by participating, you
           play an integral role in shaping a brighter future for those living

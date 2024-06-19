@@ -21,7 +21,7 @@ const Section3 = () => {
         <h2 className="D-H3-24">
           Selumetinib for Children With Neurofibromatosis Type 1
         </h2>
-        <p className="D-T-M-P-16">
+        <p className="D-P-20">
           Selumetinib is a highly promising drug utilized in the treatment of
           NF1-related plexiform neurofibromas, both in children and adults. By
           inhibiting the activity of the MEK protein, which plays a crucial role
@@ -37,7 +37,7 @@ const Section3 = () => {
           href="https://jamanetwork.com/journals/jama/article-abstract/2766145"
           target="_blank"
           rel="noopener noreferrer"
-          className="D-T-M-P-16"
+          className="D-P-20"
         >
           Source: https://jamanetwork.com/journals/jama/article-abstract/2766145
         </a>

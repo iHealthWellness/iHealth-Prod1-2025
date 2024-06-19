@@ -20,7 +20,7 @@ function SurveyDisclaimer({ handleNextPage, handleClose, disabled }) {
         <h1 className="SN-D-P-20">DISCLAIMER</h1>
       </div>
       <div className="main-content-section">
-        <div className="disc-content-section SN-D-T-M-P-16">
+        <div className="disc-content-section SN-D-P-20">
           <p>
             Participating in the clinical trial facilitated by iHealth Wellness
             Foundation, Inc involves the collection of personal information,

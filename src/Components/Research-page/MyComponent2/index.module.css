@@ -37,7 +37,9 @@
 .visibleContentStyle,
 .hiddenContentStyle,
 .hiddenContentStyle a {
-  font-size: 1rem;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 150%;
   color: var(--SN-Primary-Headings-07235B, #07235b);
 }
 

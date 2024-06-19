@@ -5,7 +5,7 @@
 
 .information-tab-heading {
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 110%;
 }
 
@@ -63,7 +63,7 @@
   .information-tab-heading {
     padding-bottom: 2rem;
     font-size: 2rem;
-    font-weight: 600;
+    font-weight: 400;
     line-height: 110%;
   }
 
@@ -88,7 +88,7 @@
   }
 
   .information-tab.focus::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 0;
     height: 0;

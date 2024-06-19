@@ -42,7 +42,7 @@ div.store-singleProducts-container {
 
 .store-singleProducts-container .breadcrumb li + li:before {
   padding: 0.5rem;
-  content: '>';
+  content: ">";
   color: var(--dark-blue-color);
 }
 
@@ -87,7 +87,7 @@ div.store-singleProducts-container {
 
 .store-singleProducts-amount h4 {
   font-size: 1.3rem;
-  font-weight: 600;
+  font-weight: 400;
   color: var(--dark-blue-color);
   text-transform: capitalize;
 }

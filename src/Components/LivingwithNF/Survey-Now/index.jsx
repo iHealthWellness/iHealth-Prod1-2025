@@ -22,7 +22,7 @@ function index({ underConstruction }) {
           your match in the world of clinical trials!
         </p>
         {/* navigate to "/nf-registry" */}
-        <button className="nf-btn D-T-M-P-16" onClick={handleClick}>
+        <button className="nf-btn D-P-20" onClick={handleClick}>
           Take the survey!
         </button>
       </div>

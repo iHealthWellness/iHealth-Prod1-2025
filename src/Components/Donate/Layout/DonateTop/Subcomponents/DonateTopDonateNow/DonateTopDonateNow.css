@@ -1,227 +1,189 @@
 /* Set Css rules for DonateTopDonateNow`s component`s main div  */
-#Donate-Top-Donate-Now
-{
-    display: flex;
-    flex-direction: row;
-    padding: 2rem 0 0 0;
-    gap: 5rem;
-    place-items:center;
-    max-width: 77dvw;
+#Donate-Top-Donate-Now {
+  display: flex;
+  flex-direction: row;
+  padding: 2rem 0 0 0;
+  gap: 5rem;
+  place-items: center;
+  max-width: 77dvw;
 }
-
-
-
 
 /* ==================== Set Css rules for DonateTopDonateNow`s component`s first div for 3 pictures wrapper div ==================== */
-#Donate-Top-Donate-Now > div:first-child
-{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    min-width: 53%;
-    animation: sldLeftRight  2s ease-in-out; 
+#Donate-Top-Donate-Now > div:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-width: 53%;
+  animation: sldLeftRight 2s ease-in-out;
 }
-
 
 /* Set Css rules for DonateTopDonateNow`s component`s first image as Donate colorful letters */
-#Donate-Top-Donate-Now > div:first-child > img
-{
-    border-radius: 20px;
+#Donate-Top-Donate-Now > div:first-child > img {
+  border-radius: 20px;
 }
-
-
 
 /* Set Css rules for DonateTopDonateNow`s component`s 2 images` wrapper div comes after first image */
-#Donate-Top-Donate-Now > div:first-child > div
-{
-    display: flex;
-    flex-direction: row;
-    width: Calc(50% - 0.5rem);
-    gap: 1rem;
+#Donate-Top-Donate-Now > div:first-child > div {
+  display: flex;
+  flex-direction: row;
+  width: Calc(50% - 0.5rem);
+  gap: 1rem;
 }
 
-
 /* Set Css rules for DonateTopDonateNow`s component`s 2nd picture under the image of Donate colorful letters  */
-#Donate-Top-Donate-Now > div:first-child > div > img:first-child
-{
-    object-fit: cover;
-    border-bottom-left-radius: 31px;
+#Donate-Top-Donate-Now > div:first-child > div > img:first-child {
+  object-fit: cover;
+  border-bottom-left-radius: 31px;
 }
 
 /* Set Css rules for DonateTopDonateNow`s component`s 3rd picture under the image of Donate colorful letters  */
-#Donate-Top-Donate-Now > div:first-child > div > img:last-child
-{
-    object-fit: cover;
-    border-bottom-right-radius: 31px;
+#Donate-Top-Donate-Now > div:first-child > div > img:last-child {
+  object-fit: cover;
+  border-bottom-right-radius: 31px;
 }
 
 /* ==================== Set Css rules for DonateTopDonateNow`s component`s div for 3 pictures wrapper div ==================== */
 
-
-
-
 /* ==================== Set Css rules for DonateTopDonateNow`s component`s second div as wrapper ==================== */
 
-#Donate-Top-Donate-Now > div:last-child
-{
-    display: flex;
-    flex-direction: row;
-    animation: sldRightLeft 2s ease-in-out;
-    
+#Donate-Top-Donate-Now > div:last-child {
+  display: flex;
+  flex-direction: row;
+  animation: sldRightLeft 2s ease-in-out;
 }
 
-#Donate-Top-Donate-Now > div:last-child > div:first-child 
-{
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    place-content: center;
+#Donate-Top-Donate-Now > div:last-child > div:first-child {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  place-content: center;
 }
 
 /* Set Css rules for DonateTopDonateNow`s component`s down part`s picture of sick little kid */
-#Donate-Top-Donate-Now > div:last-child > div:first-child > img
-{
-    border-radius: 1.875rem;
-    aspect-ratio: 6/12;
-    width: 62%;
-    object-fit: cover;
-    min-width: 15dvw;/* This one is required for new small picture */
+#Donate-Top-Donate-Now > div:last-child > div:first-child > img {
+  border-radius: 1.875rem;
+  aspect-ratio: 6/12;
+  width: 62%;
+  object-fit: cover;
+  min-width: 15dvw; /* This one is required for new small picture */
 }
-
 
 /* Set Css rules for DonateTopDonateNow`s component`s down part`s wrapper div for all pragraph and button */
-#Donate-Top-Donate-Now > div:last-child > div:first-child > div:nth-child(2)
-{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    place-content: center;
-    gap: 3dvw;
-    min-width: 15dvw;
+#Donate-Top-Donate-Now > div:last-child > div:first-child > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  place-content: center;
+  gap: 3dvw;
+  min-width: 15dvw;
 }
 
-
-#Donate-Top-Donate-Now > div:last-child > div:first-child > div:nth-child(2) > p
-{
-    color: #000;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 110%; 
-    align-self: flex-start;
+#Donate-Top-Donate-Now
+  > div:last-child
+  > div:first-child
+  > div:nth-child(2)
+  > p {
+  color: #000;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+  align-self: flex-start;
 }
 
-#Donate-Top-Donate-Now > div:last-child > div:first-child > div:nth-child(2) > button
-{
-    all: unset;
-    width: 11dvw;
-    height: 3dvw;
-    background-color: #0D99FF;
-    text-align: center;
-    color: #fff;
-    font-weight: 600;
-    border-radius: 10px;
-    cursor: pointer;
+#Donate-Top-Donate-Now
+  > div:last-child
+  > div:first-child
+  > div:nth-child(2)
+  > button {
+  all: unset;
+  width: 11dvw;
+  height: 3dvw;
+  background-color: #0d99ff;
+  text-align: center;
+  color: #fff;
+  font-weight: 400;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 /* ============================================ Responsıve Css Rules ============================================ */
-@media only screen and (max-width: 911px) 
-{
-    #Donate-Top-Donate-Now 
-    {
-        flex-direction: column;
-        padding: 0;
-        gap: 0;
-    }
+@media only screen and (max-width: 911px) {
+  #Donate-Top-Donate-Now {
+    flex-direction: column;
+    padding: 0;
+    gap: 0;
+  }
 
-    /* ==================== Set Css rules for DonateTopDonateNow`s component`s first div for 3 pictures wrapper div ==================== */
-    #Donate-Top-Donate-Now > div:first-child
-    {
-        max-width: 100%;
-    }
+  /* ==================== Set Css rules for DonateTopDonateNow`s component`s first div for 3 pictures wrapper div ==================== */
+  #Donate-Top-Donate-Now > div:first-child {
+    max-width: 100%;
+  }
 
-   
-    #Donate-Top-Donate-Now > div:first-child > img 
-    {
-    
-        width: 67vw;
-        align-self: center;
-    }
+  #Donate-Top-Donate-Now > div:first-child > img {
+    width: 67vw;
+    align-self: center;
+  }
 
-    #Donate-Top-Donate-Now > div:last-child 
-    {
-        display: flex;
-        flex-direction: column;
-    }
+  #Donate-Top-Donate-Now > div:last-child {
+    display: flex;
+    flex-direction: column;
+  }
 
-    
-    #Donate-Top-Donate-Now > div:last-child > div:first-child 
-    {
-        border-radius: 1.875rem;
-        background: #FFF;
-        padding: 1.25rem 0.625rem;
-        gap: 3.125rem;
-        margin: 1rem 0rem;
-    }
+  #Donate-Top-Donate-Now > div:last-child > div:first-child {
+    border-radius: 1.875rem;
+    background: #fff;
+    padding: 1.25rem 0.625rem;
+    gap: 3.125rem;
+    margin: 1rem 0rem;
+  }
 
-    /* Set Css rules for DonateTopDonateNow`s component`s down part`s picture of sick little kid */
-    #Donate-Top-Donate-Now > div:last-child > div:first-child > img {
-        border-radius: 1.875rem;
-        aspect-ratio: 6/10;
-        width: 29dvw;
-        object-fit: cover;
-    }
+  /* Set Css rules for DonateTopDonateNow`s component`s down part`s picture of sick little kid */
+  #Donate-Top-Donate-Now > div:last-child > div:first-child > img {
+    border-radius: 1.875rem;
+    aspect-ratio: 6/10;
+    width: 29dvw;
+    object-fit: cover;
+  }
 
-    #Donate-Top-Donate-Now > div:last-child > div:first-child > div:nth-child(2) 
-    {
+  #Donate-Top-Donate-Now > div:last-child > div:first-child > div:nth-child(2) {
     min-width: 31dvw;
-    }
+  }
 
-   
-    
-    #Donate-Top-Donate-Now > div:last-child > div:first-child > div:nth-child(2) > button
-    {
-        height: 2dvw;
-        padding: 0.5rem 0.5rem 1rem 0.5rem;
-        width: 110px;
-        margin-left: -30px;
-    }
+  #Donate-Top-Donate-Now
+    > div:last-child
+    > div:first-child
+    > div:nth-child(2)
+    > button {
+    height: 2dvw;
+    padding: 0.5rem 0.5rem 1rem 0.5rem;
+    width: 110px;
+    margin-left: -30px;
+  }
 }
-
-
-
 
 /* ==================== Set Css Animations ==================== */
 
+@keyframes sldLeftRight {
+  from {
+    transform: translateX(-130%);
+    opacity: 0;
+  }
 
-
-
-@keyframes sldLeftRight 
-{
-    from 
-    {
-        transform: translateX(-130%);
-        opacity: 0;
-    }
-  
-    to 
-    {
-      transform: translateX(0);
-      opacity: 1;
-    }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
-
 @keyframes sldRightLeft {
-    from 
-    {
-        transform: translateX(130%);
-        opacity: 0;
-    }
-  
-    to 
-    {
-        transform: translateX(0);
-        opacity: 1;
-    }
+  from {
+    transform: translateX(130%);
+    opacity: 0;
   }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

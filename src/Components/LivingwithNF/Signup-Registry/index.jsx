@@ -12,7 +12,7 @@ function index({ openExternalLink }) {
           NF Registry: <span className="light-blue-font">Sign-Up</span>
         </h1>
 
-        <button className="nf-btn D-T-M-P-16" onClick={openExternalLink}>
+        <button className="nf-btn D-P-20" onClick={openExternalLink}>
           Sign-Up for Registry
         </button>
       </div>

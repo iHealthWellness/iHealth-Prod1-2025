@@ -41,7 +41,7 @@ function SurveyInformationCard() {
               />
             ))}
           </div>
-          <p className="D-T-M-P-16">{text}</p>
+          <p className="D-P-20">{text}</p>
           <div className="btn-container">
             <button
               className="D-T-M-P-B-16"
