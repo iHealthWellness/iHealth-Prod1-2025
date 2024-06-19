@@ -1,6 +1,7 @@
 .footer-container {
   width: 100%;
-  background-color: #fff;
+  background-color: #07235b;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,7 +31,7 @@
   align-items: center;
   gap: 2rem;
   padding-top: 2rem;
-  background-color: #fff;
+  background-color: #07235b;
 }
 
 .footer-address-block,
@@ -47,16 +48,16 @@
 .footer-subscribe-heading,
 .footer-follow-heading {
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 120%;
-  color: #07235b;
+  color: #fff;
 }
 
 .footer-address {
   font-size: 1rem;
   font-weight: 400;
   line-height: 120%;
-  color: #07235b;
+  color: #fff;
 }
 
 .footer-subscribe-block {
@@ -203,7 +204,7 @@
   }
 
   .footer-container {
-    background-color: #fff;
+    background-color: #07235b;
   }
 
   .footer-links-block {
@@ -226,7 +227,7 @@
 
 @media only screen and (min-width: 1260px) {
   .footer-container {
-    background-color: #fff;
+    background-color: #07235b;
   }
 
   .footer-top {
@@ -235,7 +236,8 @@
     flex-direction: row;
     justify-content: space-between;
     gap: 2rem;
-    background-color: #fff;
+    background-color: #07235b;
+
     padding: 2rem 0;
     align-items: flex-start;
   }
@@ -259,14 +261,14 @@
 
   .footer-address-heading {
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 400;
     line-height: 110%;
     white-space: nowrap;
   }
 
   .footer-address {
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 120%;
   }
 
@@ -287,7 +289,7 @@
   .footer-subscribe-btn {
     padding: 0.5rem 1.5rem;
     font-size: 1rem;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 120%;
   }
 

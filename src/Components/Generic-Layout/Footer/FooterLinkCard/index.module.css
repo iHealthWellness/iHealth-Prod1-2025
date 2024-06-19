@@ -4,7 +4,7 @@
   align-items: center;
   gap: 1rem;
   padding: 0 1rem 1rem;
-  color: #07235b;
+  color: #fff;
   white-space: nowrap;
 }
 
@@ -17,13 +17,13 @@
 
 .footerLinksCategory {
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 120%;
 }
 
 .footerLink {
   text-decoration: none;
-  color: #07235b;
+  color: #fff;
   font-size: 1rem;
   font-weight: 400;
   line-height: 120%;
