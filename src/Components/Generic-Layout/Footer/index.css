@@ -1,6 +1,7 @@
 .footer-container {
   width: 100%;
-  background-color: #fff;
+  background-color: #07235b;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,7 +31,7 @@
   align-items: center;
   gap: 2rem;
   padding-top: 2rem;
-  background-color: #fff;
+  background-color: #07235b;
 }
 
 .footer-address-block,
@@ -47,16 +48,16 @@
 .footer-subscribe-heading,
 .footer-follow-heading {
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 120%;
-  color: #07235b;
+  color: #fff;
 }
 
 .footer-address {
   font-size: 1rem;
   font-weight: 400;
   line-height: 120%;
-  color: #07235b;
+  color: #fff;
 }
 
 .footer-subscribe-block {
@@ -70,7 +71,7 @@
 }
 
 .footer-subscribe-bar form input {
-  margin-right: 0.5rem;
+  margin-right: 1rem;
 }
 
 .footer-subscribe-input {
@@ -111,7 +112,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
+  padding-bottom: 3rem;
 }
 
 .footer-terms-center {
@@ -128,8 +130,9 @@
 .footer-terms {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content:center ;
   align-items: center;
+  text-align: left;
   gap: 0.5rem;
 }
 
@@ -154,7 +157,7 @@
   }
 }
 
-@media only screen and (min-width: 275px) and (max-width: 590px) {
+@media only screen and (min-width: 275px) and (max-width: 635px) {
   .language-select-cont {
     padding-top: 2rem;
   }
@@ -203,19 +206,20 @@
   }
 
   .footer-container {
-    background-color: #fff;
+    background-color: #07235b;
   }
 
   .footer-links-block {
     grid-column: 1 / -1;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
 
   .footer-contact {
     grid-row: 2;
     width: auto;
     padding-top: 0;
+    align-items: baseline;
   }
 
   .sasika-quote {
@@ -225,7 +229,7 @@
 
 @media only screen and (min-width: 1260px) {
   .footer-container {
-    background-color: #fff;
+    background-color: #07235b;
   }
 
   .footer-top {
@@ -234,7 +238,8 @@
     flex-direction: row;
     justify-content: space-between;
     gap: 2rem;
-    background-color: #fff;
+    background-color: #07235b;
+
     padding: 2rem 0;
     align-items: flex-start;
   }
@@ -258,14 +263,14 @@
 
   .footer-address-heading {
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 400;
     line-height: 110%;
     white-space: nowrap;
   }
 
   .footer-address {
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 120%;
   }
 
@@ -286,7 +291,7 @@
   .footer-subscribe-btn {
     padding: 0.5rem 1.5rem;
     font-size: 1rem;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 120%;
   }
 
