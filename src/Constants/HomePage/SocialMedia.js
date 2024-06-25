@@ -7,7 +7,7 @@ import YoutubeIcon from "src/Assets/Icons/social-youtube.png";
 const SocialMedia = [
   {
     icon: FacebookIcon,
-    url: "https://www.facebook.com/groups/750458129820067/",
+    url: "https://www.facebook.com/iHealth360Hub",
   },
   {
     icon: LinkedinIcon,
