@@ -13,7 +13,10 @@ const section6 = () => {
       <header>
         <h3 className="D-H1-32">
           Participate in Research for Neurofibromatosis:
-          <span id="making-a-difference"> Making a Difference</span>
+          <span id="making-a-difference" className="D-H3-24">
+            {" "}
+            Making a Difference
+          </span>
         </h3>
       </header>
       <aside className="D-P-20">

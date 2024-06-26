@@ -13,6 +13,10 @@
   padding-bottom: 1rem;
 }
 
+.researchTitle h1 span {
+  color: #0d99ff;
+}
+
 .sectionContainer {
   display: grid;
   grid-template-columns: 1fr 1fr;

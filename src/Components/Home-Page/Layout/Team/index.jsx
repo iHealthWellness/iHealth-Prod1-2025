@@ -5,8 +5,10 @@ import iHealth360Logo from "src/Assets/Images/ihealth360.png";
 const Team = () => {
   return (
     <section id="Home-page-team-container" className="team-container">
+      <div></div>
       <h2 className="team-heading-h2 SN-D-Home-H2-32">
-        Join Your Community: <span>Stronger Together</span>
+        Join Your Community:{" "}
+        <span className="SN-D-Home-H3-24">Stronger Together</span>
       </h2>
 
       <h3 className="team-heading-h3 desktop SN-D-P-20">

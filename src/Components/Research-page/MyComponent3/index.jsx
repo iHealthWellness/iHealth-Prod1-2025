@@ -10,7 +10,10 @@ const MyComponent3 = ({ toggleAccordion, activeAccordion }) => {
     <>
       <div className={styles.researchTitle}>
         <h1 className="D-H3-24">
-          Stay Informed: Latest NF Research Updates and Insights
+          Stay Informed:{" "}
+          <span className="D-H1-32">
+            Latest NF Research Updates and Insights
+          </span>
         </h1>
         <article className={`${styles.slideInText} ${styles.sectionContainer}`}>
           <aside>

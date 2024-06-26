@@ -61,10 +61,6 @@
   font-weight: 400;
 }
 
-.mainSection header h3 span#making-a-difference {
-  font-size: inherit;
-}
-
 @media screen and (max-width: 1024px) {
   .mainSection header {
     font-size: 1.87rem;
