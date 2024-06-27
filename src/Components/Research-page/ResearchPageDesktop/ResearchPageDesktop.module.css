@@ -4,6 +4,7 @@
   grid-template-columns: 15% 1fr 15%;
   gap: 3rem;
   overflow: hidden;
+  padding-bottom: 3rem;
 }
 
 .researchPage > * {
