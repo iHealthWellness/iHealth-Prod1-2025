@@ -282,7 +282,11 @@ const Navbar = () => {
 
                 {/* Donate Link */}
                 <li className="nav-links-listitem">
-                  <NavLink to="/donate" className="nav-links nav-donate">
+                  <NavLink
+                    to="https://www.paypal.com/donate/?hosted_button_id=VE7E4C2UBA3EN"
+                    target="_blank"
+                    className="nav-links nav-donate"
+                  >
                     Donate
                   </NavLink>
                 </li>

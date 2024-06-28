@@ -32,10 +32,6 @@
   padding-bottom: 1rem;
 }
 
-.mainSection section header h3 {
-  padding-bottom: 1rem;
-}
-
 .mainSection section header h3,
 .titleStyle {
   color: var(--SN-Primary-Headings-07235B, #07235b);
@@ -47,8 +43,8 @@
 }
 
 .titleStyle {
-  font-size: 1.25rem;
-  font-weight: 500;
+  font-size: 1.5rem;
+  font-weight: 400;
 }
 
 .bluePattern {
@@ -66,7 +62,7 @@
 
 .bluePattern header {
   text-align: center;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .bluePattern p {
@@ -79,12 +75,13 @@
   color: rgba(133, 142, 173, 1);
   font-size: 1.25rem;
   font-weight: 400;
+  line-height: 150%;
 }
 
 @media screen and (max-width: 1024px) {
-  .titleStyle,
-  .hiddenContentStyle,
-  .visibleContentStyle,
+  .titleStyle {
+    font-size: 1.125rem;
+  }
   .mainSection section header p,
   .bluePattern p {
     font-size: 1rem;

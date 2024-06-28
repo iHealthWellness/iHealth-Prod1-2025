@@ -19,15 +19,15 @@
   }
 
   .titleStyle {
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 26px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 120%;
   }
   .visibleContentStyle,
   .hiddenContentStyle {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 143%;
   }
 
   .titleStyle,

@@ -54,7 +54,7 @@ div.store-nav-end {
 }
 .store-cart-icon {
   color: var(--light-gray-color);
-  font-weight: 600;
+  font-weight: 400;
   font-size: 1.3rem;
 }
 .store-cart-item-number {

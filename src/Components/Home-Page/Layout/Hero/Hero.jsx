@@ -47,7 +47,7 @@ const Hero = () => {
   return (
     <section className="hero-container">
       <section className="hero-survey-banner">
-        <p className="SN-D-T-M-P-16">
+        <p className="SN-D-P-20">
           You are OUR hero, and we would love to hear your NF story.{" "}
           <span className="take-survey-span">
             <a href="https://forms.gle/QAiHQcgtvqfjFtYe6" target="_blank">
@@ -75,15 +75,17 @@ const Hero = () => {
       </aside>
       <div className="hero-container-inner">
         <div className="hero-heading-container">
-          <h3 className="hero-heading-h3">
+          <h3 className="hero-heading-h3 SN-D-Home-H3-24">
             <HandshakeOutlinedIcon />
             Committed to success
           </h3>
-          <h1 className="hero-heading-h1">Live better. Be well.</h1>
-          <h2 className="hero-heading-h2">
+          <h1 className="hero-heading-h1 SN-D-Home-H1-48">
+            Live better. Be well.
+          </h1>
+          <h2 className="hero-heading-h2 SN-D-Home-H2-32">
             For Patients with Complex Diseases
           </h2>
-          <h4 className="hero-heading-h4">
+          <h4 className="hero-heading-h4 SN-D-P-20">
             Simplifying the Care of Complex Diseases for All
           </h4>
         </div>

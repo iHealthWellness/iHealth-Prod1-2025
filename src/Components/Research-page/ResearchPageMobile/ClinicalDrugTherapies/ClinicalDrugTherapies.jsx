@@ -6,8 +6,8 @@ function ClinicalDrugTherapies({ toggleAccordion, activeAccordion }) {
   return (
     <article id="clinical" className={styles.mainSection}>
       <header>
-        <h3 className="SN-M-H2-24">Clinical Drug Therapies</h3>
-        <h2 className="SN-M-P-16">
+        <h3 className="D-H2-30">Clinical Drug Therapies</h3>
+        <h2 className="D-P-20">
           Neurofibromatosis (NF) and its related symptoms are often managed
           using various clinical drug therapies. The following examples
           highlight some of the treatment options available:
@@ -30,7 +30,7 @@ function ClinicalDrugTherapies({ toggleAccordion, activeAccordion }) {
                 href="https://jamanetwork.com/journals/jama/article-abstract/2766145"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="SN-D-P-20"
+                className="D-P-20"
               >
                 Source:
                 https://jamanetwork.com/journals/jama/article-abstract/2766145
@@ -91,7 +91,7 @@ function ClinicalDrugTherapies({ toggleAccordion, activeAccordion }) {
                 href="https://cdmrp.health.mil/nfrp/clinical_trials/nf1"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="SN-D-P-20"
+                className="D-P-20"
               >
                 Source: https://cdmrp.health.mil/nfrp/clinical_trials/nf1
               </a>
@@ -145,7 +145,7 @@ function ClinicalDrugTherapies({ toggleAccordion, activeAccordion }) {
                 href="https://academic.oup.com/neuro-oncology/article/19/2/289/3038131"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="SN-D-P-20"
+                className="D-P-20"
               >
                 Source:
                 https://academic.oup.com/neuro-oncology/article/19/2/289/3038131

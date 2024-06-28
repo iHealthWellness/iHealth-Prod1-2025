@@ -14,11 +14,11 @@ const Terms = () => {
     <div id="Terms" className={styles.termsContainer}>
       <header>
         <img src={ihealth} alt="ihealth logo" />
-        <h1 className="SN-D-H2-36">iHealth and Wellness Foundation, Inc.</h1>
-        <h2 className="SN-T-H2-30">Terms of Use</h2>
-        <h2 className="SN-T-H2-30">Effective: May 23,2023</h2>
+        <h1 className="D-H1-32">iHealth and Wellness Foundation, Inc.</h1>
+        <h2 className="D-H2-30">Terms of Use</h2>
+        <h2 className="D-H2-30">Effective: May 23,2023</h2>
       </header>
-      <main className={`SN-D-H3-24 ${styles.mainTermsSection}`}>
+      <main className={`D-P-20 ${styles.mainTermsSection}`}>
         <p>
           Welcome to our website! We connect patients with complex diseases to
           high-quality medical and wellness providers and resources through an
@@ -160,8 +160,8 @@ const Terms = () => {
           />
         </section>
         <section>
-          <h2 className="SN-M-H2-24">LIMITATION OF LIABILITY</h2>
-          <p>
+          <h2 className="D-H3-24">LIMITATION OF LIABILITY</h2>
+          <p className="D-P-20">
             NEITHER iHEALTH AND WELLNESS (THE “ORGANIZATION”) NOR ANY OTHER
             PARTY (AND THE HEIRS, EXECUTORS AND ADMINISTRATORS OF SUCH PERSON)
             INVOLVED IN CREATING, PRODUCING, OR DELIVERING THE SERVICES WILL BE

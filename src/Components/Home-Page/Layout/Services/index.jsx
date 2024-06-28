@@ -33,7 +33,7 @@ const Services = () => {
 
   return (
     <section className="services-container">
-      <h2 className="services-heading">
+      <h2 className="services-heading SN-D-Home-H2-32">
         We Believe Patients Deserve Better Services
       </h2>
 

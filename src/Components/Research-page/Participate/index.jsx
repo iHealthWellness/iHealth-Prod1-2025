@@ -11,11 +11,15 @@ const section6 = () => {
       className={`${styles.slideInText} ${styles.mainSection}`}
     >
       <header>
-       <h3 className="SN-D-H2-36">
-    Participate in Research for Neurofibromatosis:<span id="making-a-difference" style={{ fontSize: '36px' }}> Making a Difference</span>
-      </h3>
+        <h3 className="D-H1-32">
+          Participate in Research for Neurofibromatosis:
+          <span id="making-a-difference" className="D-H3-24">
+            {" "}
+            Making a Difference
+          </span>
+        </h3>
       </header>
-      <aside className="SN-D-P-20">
+      <aside className="D-P-20">
         <p>
           Neurofibromatosis (NF) is a complex genetic disorder that affects
           thousands of individuals worldwide. If you or a loved one is affected
@@ -32,30 +36,30 @@ const section6 = () => {
         />
       </aside>
       <section>
-        <h3 className="SN-D-H3-24">
+        <h3 className="D-H3-24">
           Participating in NF research offers several benefits:
         </h3>
-        <p className="SN-D-P-20">
+        <p className="D-P-20">
           <span>1. Advancing Scientific Knowledge</span> By participating in
           research studies, you contribute to the growing body of scientific
           knowledge about NF. Researchers rely on the participation of
           individuals like you to gain insights into the causes, progression,
           and management of NF.
         </p>
-        <p className="SN-D-P-20">
+        <p className="D-P-20">
           <span>2. Improved Treatment Options</span> Your involvement in
           research can lead to the development of better treatment options for
           NF. Researchers and scientists are constantly working to identify new
           therapies, medications, and interventions that can enhance the quality
           of life for individuals with NF.
         </p>
-        <p className="SN-D-P-20">
+        <p className="D-P-20">
           <span>3. Supporting Future Generations</span> Your participation helps
           future generations affected by NF. The data and information gathered
           through research studies pave the way for improved understanding,
           earlier diagnosis, and more effective treatments.
         </p>
-        <p className="SN-D-P-20">
+        <p className="D-P-20">
           <span>4. Empowering the NF Community</span> Participating in research
           provides an opportunity to connect with others in the NF community.
           Through engagement with researchers, healthcare professionals, and

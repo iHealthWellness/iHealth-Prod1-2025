@@ -5,8 +5,8 @@ import CircleImages from "../CircleImages/index";
 function index({ openExternalLink, underConstruction }) {
   return (
     <div className="heading-container">
-      <h1 className="SN-D-H2-36">Living with Neurofibromatosis (NF)</h1>
-      <p className="nf-paragraph SN-D-P-20">
+      <h1 className="D-H1-32">Living with Neurofibromatosis (NF)</h1>
+      <p className="nf-paragraph D-P-20">
         A comprehensive web resource dedicated to providing support,
         information, and resources for individuals and families affected by
         neurofibromatosis (NF). It serves as a hub for those navigating the

@@ -96,7 +96,7 @@ const Provider = () => {
   return (
     <section id="Home-Page-provider-container" className="provider-container">
       <div className="provider-inner-container">
-        <h2 className="provider-heading">
+        <h2 className="provider-heading SN-D-Home-H3-24">
           <PersonSearchOutlinedIcon
             sx={{
               "@media (min-width: 480px)": {
@@ -151,6 +151,7 @@ const Provider = () => {
                 variant="text"
                 startIcon={<PinDropIcon style={{ marginBottom: "5px" }} />}
                 style={{ color: "#07235B" }}
+                className="SN-D-P-20"
                 sx={{
                   paddingTop: "9px",
                   "@media (max-width: 1023px)": {

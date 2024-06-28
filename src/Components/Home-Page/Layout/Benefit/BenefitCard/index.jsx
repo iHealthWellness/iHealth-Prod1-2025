@@ -60,17 +60,21 @@ const BenefitCard = ({ benefit }) => {
     <div className={`benefit-card`}>
       <div className="benefit-flipcard" ref={divRef}>
         <div>
-          <h3 className="benefit-card-heading SN-D-H2-36">{benefit.title}</h3>
+          <h3 className="benefit-card-heading SN-D-Home-H2-32">
+            {benefit.title}
+          </h3>
         </div>
         <div className="benefit-flipcard-inner">
           <div className="benefit-flipcard-front">
             <img className="benefit-img" src={benefit.image}></img>
           </div>
           <div className="benefit-flipcard-back">
-            <p className="benefit-flipcard-summary">{benefit.summary}</p>
-            <ol className="benefit-flipcard-list">
+            <p className="benefit-flipcard-summary SN-D-P-20">
+              {benefit.summary}
+            </p>
+            <ol className="benefit-flipcard-list SN-D-P-20">
               {benefit.details.map((detail) => (
-                <li className="benefit-flipcard-listitem" key={detail}>
+                <li className="SN-D-P-20" key={detail}>
                   {detail}
                 </li>
               ))}

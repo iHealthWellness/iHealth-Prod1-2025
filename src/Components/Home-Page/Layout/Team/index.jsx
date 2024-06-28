@@ -5,11 +5,13 @@ import iHealth360Logo from "src/Assets/Images/ihealth360.png";
 const Team = () => {
   return (
     <section id="Home-page-team-container" className="team-container">
-      <h2 className="team-heading-h2">
-        Join Your Community: <span>Stronger Together</span> 
+      <div></div>
+      <h2 className="team-heading-h2 SN-D-Home-H2-32">
+        Join Your Community:{" "}
+        <span className="SN-D-Home-H3-24">Stronger Together</span>
       </h2>
 
-      <h3 className="team-heading-h3 desktop">
+      <h3 className="team-heading-h3 desktop SN-D-P-20">
         Meet others who understand what it's like living with your condition. As
         a community member, you'll come together in a safe space to support,
         learn from, and inspire each other.

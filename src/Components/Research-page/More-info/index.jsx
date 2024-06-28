@@ -6,10 +6,10 @@ const section4 = () => {
 
   return (
     <div className={`${styles.slideInText} ${styles.mainSection}`}>
-      <header className="SN-T-H1-36">
+      <header className="D-H1-32">
         Here is more information about MEK protein
       </header>
-      <section className="SN-D-P-20">
+      <section className="D-P-20">
         <p>
           The MEK protein, also known as Mitogen-Activated Protein Kinase
           Kinase, is a key component of the mitogen-activated protein kinase

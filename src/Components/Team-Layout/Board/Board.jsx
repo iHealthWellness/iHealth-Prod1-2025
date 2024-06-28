@@ -141,8 +141,7 @@ const Board = () => {
     console.log("cicked card: " + teamData.executive[1]);
     setSelectedCard(teamData.executive[14]);
   };
-  
-  
+
   const handlePopupClose = () => {
     console.log("clicked close");
     setSelectedCard(null);
@@ -192,9 +191,9 @@ const Board = () => {
         {/* <div className={`teamboard-tab ${isVisible.divRef ? "slide-in" : ""}`}
                     ref={divRef}> */}
 
-        <h2 className="team-directors-header"> Board of Directors</h2>
+        <h2 className="team-directors-header D-H1-32"> Board of Directors</h2>
 
-        <h3 className="team-directors-tab">
+        <h3 className="team-directors-tab D-P-20">
           Our Board of Directors governs the Foundation's mission, policies,
           bylaws, budget, and fundraising initiatives, aligning with legal
           requirements and the purposes outlined in the Certificate of
@@ -212,7 +211,7 @@ const Board = () => {
           <img src={Image} alt="" />
 
           <div className="Name-tab">
-            <p>
+            <p className="D-P-20">
               Sasika Nanayakkara, PMP <br />
               Founder, CEO, CTO, Chair
             </p>
@@ -231,7 +230,7 @@ const Board = () => {
           <img src={Image1} alt="" />
 
           <div className="Name-tab">
-            <p>
+            <p className="D-P-20">
               Jeff Jacques, MD <br />
               Vice President
             </p>
@@ -252,7 +251,7 @@ const Board = () => {
           <img src={Image3} alt="" />
 
           <div className="Name-tab">
-            <p>
+            <p className="D-P-20">
               Joseph Karcich <br />
               Vice President
             </p>
@@ -266,7 +265,7 @@ const Board = () => {
           <img src={Image2} alt="" />
 
           <div className="Name-tab">
-            <p>
+            <p className="D-P-20">
               Matias Berisso <br />
               Treasurer and Secretary
             </p>
@@ -279,8 +278,10 @@ const Board = () => {
           <img src={Image10} alt="mark" />
 
           <div className="Name-tab">
-            <p>Mark Huntzinger <br />
-            Vice President </p>
+            <p className="D-P-20">
+              Mark Huntzinger <br />
+              Vice President{" "}
+            </p>
           </div>
           <button className="btn-board-tab">
             <img src={Image7} />
@@ -297,7 +298,7 @@ const Board = () => {
           <img src={Image2} alt="" />
 
           <div className="Name-tab">
-            <p>
+            <p className="D-P-20">
               Matias Berisso <br />
               Treasurer and Secretary
             </p>
@@ -312,9 +313,9 @@ const Board = () => {
         {/* <div className={`teamboard-tab ${isVisible.divRef ? "slide-in" : ""}`}
                     ref={divRef}> */}
 
-        <h2 className="team-directors-header">Advisory Council</h2>
+        <h2 className="team-directors-header D-H2-30">Advisory Council</h2>
 
-        <h3 className="team-directors-tab">
+        <h3 className="team-directors-tab D-P-20">
           The Advisory Committee for our health and wellness startup serves as a
           group of experienced advisors who provide valuable insights, guidance,
           and expertise. They contribute to strategic decision-making, offer
@@ -334,7 +335,7 @@ const Board = () => {
           <img src={Image5} alt="" />
 
           <div className="Name-tab">
-            <p>Marilyn Crawford</p>
+            <p className="D-P-20">Marilyn Crawford</p>
           </div>
           <button className="btn-board-tab">
             <img src={Image7} />
@@ -345,7 +346,7 @@ const Board = () => {
           <img src={Image4} alt="" />
 
           <div className="Name-tab">
-            <p>Marcella Sarti Souza, MD</p>
+            <p className="D-P-20">Marcella Sarti Souza, MD</p>
           </div>
           <button className="btn-board-tab">
             <img src={Image7} />
@@ -362,28 +363,23 @@ const Board = () => {
           <img src={Image6} alt="" />
 
           <div className="Name-tab">
-            <p>Alex Lizzappi</p>
+            <p className="D-P-20">Alex Lizzappi</p>
           </div>
           <button className="btn-board-tab">
             <img src={Image7} />
           </button>
         </div>
-
-
-
 
         <div className="board-image" onClick={handleCardClick12}>
           <img src={Image12} alt="oliver" />
 
           <div className="Name-tab">
-            <p>Natalie Aswad Boehm</p>
+            <p className="D-P-20">Natalie Aswad Boehm</p>
           </div>
           <button className="btn-board-tab">
             <img src={Image7} />
           </button>
         </div>
-
-
       </div>
       <div
         className={`board-directors-tab3 ${
@@ -395,7 +391,7 @@ const Board = () => {
           <img src={Image8b} alt="mala" />
 
           <div className="Name-tab">
-            <p>Olivia Begasse de Dhaem, MD</p>
+            <p className="D-P-20">Olivia Begasse de Dhaem, MD</p>
           </div>
           <button className="btn-board-tab">
             <img src={Image7} />
@@ -406,15 +402,12 @@ const Board = () => {
           <img src={Image13} alt="oliver" />
 
           <div className="Name-tab">
-            <p>Rebecca Brown, MD PhD</p>
+            <p className="D-P-20">Rebecca Brown, MD PhD</p>
           </div>
           <button className="btn-board-tab">
             <img src={Image7} />
           </button>
         </div>
-
-
-
       </div>
 
       <div
@@ -427,7 +420,7 @@ const Board = () => {
           <img src={Image10} alt="mark" />
 
           <div className="Name-tab">
-            <p>Mark Huntzinger </p>
+            <p className="D-P-20">Mark Huntzinger </p>
           </div>
           <button className="btn-board-tab">
             <img src={Image7} />
@@ -438,8 +431,8 @@ const Board = () => {
           <img src={Image8} alt="" />
 
           <div className="Name-tab">
-            {/*             <p>Christophe Foulon, CISSP, GSLC, AWS Security</p> */}
-            <p>Christophe Foulon, CISSP</p>
+            {/*             <p className="D-P-20">Christophe Foulon, CISSP, GSLC, AWS Security</p> */}
+            <p className="D-P-20">Christophe Foulon, CISSP</p>
           </div>
           <button className="btn-board-tab">
             <img src={Image7} />
@@ -449,21 +442,12 @@ const Board = () => {
           <img src={Image14} alt="oliver" />
 
           <div className="Name-tab">
-            <p>Oladimeji Ibitoye</p>
+            <p className="D-P-20">Oladimeji Ibitoye</p>
           </div>
           <button className="btn-board-tab">
             <img src={Image7} />
           </button>
         </div>
-
-
-        
-
-
-
-
-
-
       </div>
       <div
         className={`board-directors-tab3 ${
@@ -475,38 +459,34 @@ const Board = () => {
           <img src={Image10} alt="mark" />
 
           <div className="Name-tab">
-            <p>Mark Huntzinger </p>
+            <p className="D-P-20">Mark Huntzinger </p>
           </div>
           <button className="btn-board-tab">
             <img src={Image7} />
           </button>
         </div> */}
 
-<div className="board-image" onClick={handleCardClick11}>
+        <div className="board-image" onClick={handleCardClick11}>
           <img src={Image11} alt="oliver" />
 
           <div className="Name-tab">
-            <p>Michelle Waldgeir</p>
+            <p className="D-P-20">Michelle Waldgeir</p>
           </div>
           <button className="btn-board-tab">
             <img src={Image7} />
           </button>
         </div>
 
-<div className="board-image" onClick={handleCardClick9}>
+        <div className="board-image" onClick={handleCardClick9}>
           <img src={Image9} alt="dalia" />
 
           <div className="Name-tab">
-            <p>Dalia Heci, LLM</p>
+            <p className="D-P-20">Dalia Heci, LLM</p>
           </div>
           <button className="btn-board-tab">
             <img src={Image7} />
           </button>
         </div>
-
-
-
-        
       </div>
     </div>
   );

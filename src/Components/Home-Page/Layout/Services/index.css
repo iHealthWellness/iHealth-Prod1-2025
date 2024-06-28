@@ -8,9 +8,6 @@
 
 .services-heading {
   color: #062758;
-  font-size: 1.5rem;
-  font-weight: 600;
-  line-height: 110%;
   text-align: center;
   padding: 0 2.25rem;
 }
@@ -31,12 +28,6 @@
 }
 
 @media only screen and (min-width: 480px) and (max-width: 1024px) {
-  .services-heading {
-    font-size: 2.25rem;
-    font-weight: 700;
-    line-height: 120%;
-  }
-
   .services-inner {
     align-items: center;
   }
@@ -44,9 +35,6 @@
 
 @media only screen and (min-width: 1024px) {
   .services-heading {
-    font-size: 2.25rem;
-    font-weight: 700;
-    line-height: 120%;
     padding-bottom: 2rem;
   }
 

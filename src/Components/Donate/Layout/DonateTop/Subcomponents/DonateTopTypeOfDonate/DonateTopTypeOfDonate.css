@@ -51,9 +51,7 @@
 #Donate-Top-TypeOfDonate > div:first-child > div:first-child > h2 {
   color: #fff;
   font-family: Roboto;
-  font-size: 2.25rem;
   font-style: normal;
-  font-weight: 600;
   line-height: 110%;
   text-align: center;
 }
@@ -61,7 +59,6 @@
 #Donate-Top-TypeOfDonate > div:first-child > div:first-child > h2 > span {
   color: #0d99ff;
   font-family: Roboto;
-  font-size: 1.5rem;
   font-style: normal;
   font-weight: 400;
   line-height: 143%;
@@ -81,7 +78,6 @@
   /* flex: 1 0 50%; */
   color: #fff;
   font-family: Roboto;
-  font-size: 1.5rem;
   font-style: normal;
   font-weight: 400;
   line-height: 143%;
@@ -95,35 +91,29 @@
 #Donate-Top-TypeOfDonate > div:first-child > div:last-child > p {
     padding-left: 0;
     padding-right: 0;
-    font-size: 1.25rem;
   }
   #Donate-Top-TypeOfDonate > div:first-child > div:first-child > h2{
-    font-size: 1.875rem;
     padding: 0px;
     text-align: left;
   }
   #Donate-Steps-Wrapper > div:first-child > h3{
-    font-size: 1.875rem !important;
     padding: 0 0 0 1.25rem !important;
     text-align: left !important;
   
   }
   #Donate-Steps-Wrapper > div:first-child > h3 > span {
-    font-size: 1.5rem;
     color: #0d99ff;
     display: block !important;
     text-align: left !important;
   }
   #Donate-Steps-Wrapper > div:first-child > p{
-    font-size: 1.25rem !important;
     padding: 1rem 1.25rem !important;
     text-align: justify !important;
-    font-color: #fff;
+    color: #fff;
   }
 }
 
 #Donate-Steps-Wrapper > div:first-child > h3 >span {
-  font-size:1.5rem;
   color: #0d99ff;
   text-align: center;
   font-weight: 400;
@@ -167,7 +157,6 @@
   color: #000;
   text-align: center;
   font-family: Roboto;
-  font-size: 1rem;
   font-style: normal;
   font-weight: 700;
   line-height: 120%;
@@ -179,7 +168,6 @@
   color: #8b9094;
   text-align: center;
   font-family: Roboto;
-  font-size: 1.5rem;
   font-style: normal;
   font-weight: 400;
   line-height: 143%;
@@ -195,9 +183,7 @@
   color: #fff;
   text-align: center;
   font-family: Roboto;
-  font-size: 1rem;
   font-style: normal;
-  font-weight: 700;
   line-height: 120%; /* 1.2rem */
   margin-top: 1rem;
   cursor: pointer;
@@ -235,13 +221,6 @@
     max-width: 34dvw;
   }
 
-  #Donate-Top-TypeOfDonate > div:last-child > * > p:nth-child(2) {
-    font-size: 2.2dvw;
-  }
-
-  #Donate-Top-TypeOfDonate > div:last-child > * > p:nth-child(3) {
-    font-size: 2.5dvw;
-  }
 }
 
 @media only screen and (max-width: 479px) {
@@ -251,14 +230,6 @@
 
   #Donate-Top-TypeOfDonate > div:last-child > * {
     max-width: 100%;
-  }
-
-  #Donate-Top-TypeOfDonate > div:last-child > * > p:nth-child(2) {
-    font-size: 3.2dvw;
-  }
-
-  #Donate-Top-TypeOfDonate > div:last-child > * > p:nth-child(3) {
-    font-size: 3.5dvw;
   }
 
   #Donate-Top-Wrapper {

@@ -29,11 +29,11 @@ const InformationCard = ({ team }) => {
             alt={icon.alt}
           ></img>
         </div>
-        <h2 className="information-card-heading">{heading}</h2>
+        <h2 className="information-card-heading SN-D-Home-H3-24">{heading}</h2>
       </div>
       <ul className="information-card-list">
         {content.map((c) => (
-          <li className="information-card-listitem" key={c.text}>
+          <li className="information-card-listitem SN-D-P-20" key={c.text}>
             <span className="information-card-listitem-span">&#10004; </span>
             {heading.includes("Education") ? (
               <a href={c.path} onClick={(e) => handleOnClick(e, c.path)}>

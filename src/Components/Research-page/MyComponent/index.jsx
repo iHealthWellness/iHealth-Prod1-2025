@@ -89,8 +89,8 @@ const MyComponent = ({ toggleAccordion, activeAccordion }) => {
         />
       </section>
       <section className={styles.bluePattern}>
-        <header className="SN-D-H3-24">Do you know?</header>
-        <p className="SN-D-P-20">
+        <header className="D-H3-24">Do you know?</header>
+        <p className="D-P-20">
           These resources can serve as valuable tools for researchers and
           individuals interested in NF research. It's important to explore
           specific databases, funding opportunities, and networks relevant to

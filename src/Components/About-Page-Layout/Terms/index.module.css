@@ -54,7 +54,9 @@
 }
 
 .titleStyle {
-  font-weight: 700;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 120%;
   text-align: left;
   max-width: 90%;
 }
@@ -63,14 +65,34 @@
   .termsContainer header h1 {
     font-size: 30px;
   }
+  .titleStyle {
+    font-size: 1.125rem;
+  }
 }
 
 @media screen and (max-width: 480px) {
+  .termsContainer {
+    padding-block: 3rem;
+  }
+
+  .mainTermsSection {
+    gap: 1rem;
+  }
+
+  .mainTermsSection ul li {
+    padding-bottom: 1rem;
+  }
+
   .termsContainer header h2:last-child {
     font-size: 22px;
   }
 
   .termsAccordion .customAccordionSection aside {
     bottom: auto;
+  }
+
+  .titleStyle {
+    font-size: 1rem;
+    font-weight: 400;
   }
 }

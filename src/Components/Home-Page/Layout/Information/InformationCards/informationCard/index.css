@@ -52,12 +52,6 @@
   height: 100%;
 }
 
-.information-card-heading {
-  font-size: 1.5rem;
-  font-weight: 600;
-  line-height: 110%;
-}
-
 .information-card-list {
   list-style: none;
   padding: 2rem 1rem;
@@ -114,9 +108,6 @@
 
 .information-card-listitem {
   padding-bottom: 1rem;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 120%;
 }
 
 .information-card-container
@@ -144,18 +135,6 @@
 }
 
 @media only screen and (min-width: 480px) and (max-width: 1023px) {
-  .information-card-heading {
-    font-size: 1.875rem;
-    font-weight: 600;
-    line-height: 110%;
-  }
-
-  .information-card-listitem {
-    font-size: 1.5rem;
-    font-weight: 400;
-    line-height: 100%;
-  }
-
   .information-card-link {
     font-size: 1.5rem;
     font-weight: 400;
@@ -168,20 +147,8 @@
     flex: 1;
   }
 
-  .information-card-heading {
-    font-size: 1.5rem;
-    font-weight: 400;
-    line-height: 100%;
-  }
-
   .information-card-listitem-span {
     padding-right: 1rem;
-  }
-
-  .information-card-listitem {
-    font-size: 1.25rem;
-    font-weight: 400;
-    line-height: 120%;
   }
 
   .information-card-link {

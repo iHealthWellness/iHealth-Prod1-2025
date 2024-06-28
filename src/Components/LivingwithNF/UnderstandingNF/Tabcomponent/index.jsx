@@ -90,7 +90,7 @@ function index() {
               <Tab
                 sx={{
                   textTransform: "none",
-                  fontSize: "1.5rem",
+                  fontSize: "1.25rem",
                   fontWeight: "500",
                   padding: "1rem",
                 }}
@@ -100,7 +100,7 @@ function index() {
               <Tab
                 sx={{
                   textTransform: "none",
-                  fontSize: "1.5rem",
+                  fontSize: "1.25rem",
                   fontWeight: "500",
                 }}
                 label="NF2"
@@ -109,7 +109,7 @@ function index() {
               <Tab
                 sx={{
                   textTransform: "none",
-                  fontSize: "1.5rem",
+                  fontSize: "1.25rem",
                   fontWeight: "500",
                 }}
                 label="SWN"
@@ -120,8 +120,12 @@ function index() {
         </Box>
         <CustomTabPanel value={value} index={0}>
           <div className="tab-text">
-            <img loading="lazy" className="tab-image rotate-flip-horizontal headache-image" src={Headache} />
-            <div className="SN-D-P-20">
+            <img
+              loading="lazy"
+              className="tab-image rotate-flip-horizontal headache-image"
+              src={Headache}
+            />
+            <div className="D-P-20">
               NF1 is the most common type of neurofibromatosis, affecting about
               1 in 3,000 people worldwide. It is caused by mutations in the NF1
               gene and results in the growth of tumors on nerves throughout the
@@ -133,8 +137,12 @@ function index() {
         </CustomTabPanel>
         <CustomTabPanel value={value} index={1}>
           <div className="tab-text">
-            <img loading="lazy" className="tab-image headache-image" src={Lab} />
-            <div className="SN-D-P-20">
+            <img
+              loading="lazy"
+              className="tab-image headache-image"
+              src={Lab}
+            />
+            <div className="D-P-20">
               NF2 is rarer than NF1, occurring in approximately 1 in 25,000
               births. This type is characterized by the development of tumors on
               the auditory nerves, leading to hearing loss and balance issues.
@@ -146,8 +154,12 @@ function index() {
         </CustomTabPanel>
         <CustomTabPanel value={value} index={2}>
           <div className="tab-text">
-            <img loading="lazy" className="tab-image headache-image" src={Neuron} />
-            <div className="SN-D-P-20">
+            <img
+              loading="lazy"
+              className="tab-image headache-image"
+              src={Neuron}
+            />
+            <div className="D-P-20">
               Schwannomatosis (SWN) is the least common type of
               neurofibromatosis. Unlike NF1 and NF2, Schwannomatosis only
               involves the growth of schwannomas, which are tumors that develop

@@ -13,9 +13,6 @@
 }
 
 @media screen and (max-width: 479px) {
-  .understandingnf-heading > * {
-    font-size: 1rem;
-  }
   .understandingnf-heading {
     padding: 0;
   }

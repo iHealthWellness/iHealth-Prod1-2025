@@ -5,8 +5,8 @@ const ServicesCard = ({ service }) => {
     <div className="services-card">
       <img className="services-icon" src={service.icon} alt="" />
       <div className="services-hover">
-        <h3 className="services-card-heading">{service.title}</h3>
-        <p className="services-card-content">{service.content}</p>
+        <h3 className="services-card-heading SN-D-P-20">{service.title}</h3>
+        <p className="services-card-content SN-D-T-M-P-">{service.content}</p>
         {/* <a
           className="services-link"
           onClick={() => {

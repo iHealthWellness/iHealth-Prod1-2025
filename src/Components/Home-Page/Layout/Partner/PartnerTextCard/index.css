@@ -17,22 +17,13 @@
 
 .partner-text-heading {
   color: rgb(7, 35, 91);
-  font-size: 2.25rem;
-  font-weight: 600;
-  line-height: 110%;
 }
 
 .partner-text-subheading {
   color: rgb(0, 0, 0);
-  font-size: 1.25rem;
-  font-weight: 600;
-  line-height: 100%;
 }
 
 .partner-text {
-  font-size: 1.25rem;
-  font-weight: 400;
-  line-height: 120%;
   color: rgb(0, 0, 0);
   text-align: justify;
 }
@@ -68,24 +59,6 @@
     padding: 2rem 4rem;
     gap: 2rem;
   }
-
-  .partner-text-heading {
-    font-size: 2.25rem;
-    font-weight: 600;
-    line-height: 110%;
-  }
-
-  .partner-text-subheading {
-    font-size: 1.5rem;
-    font-weight: 600;
-    line-height: 110%;
-  }
-
-  .partner-text {
-    font-size: 1rem;
-    font-weight: 300;
-    line-height: 100%;
-  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -99,10 +72,6 @@
 }
 
 @media screen and (max-width: 480px) {
-  .partner-text-heading {
-    font-size: 1.5rem;
-  }
-
   .partner-link {
     margin: 2rem auto 2rem 0;
   }

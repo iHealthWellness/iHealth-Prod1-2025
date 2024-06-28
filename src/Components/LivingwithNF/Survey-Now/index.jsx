@@ -14,13 +14,15 @@ function index({ underConstruction }) {
   return (
     <div id="take-survey" className="survey-container">
       <div className="survey-content">
-        <h1 className="SN-D-H2-36 ">Survey Now: <span className='light-blue-font'>Clinical Trials</span></h1>
-        <p className="SN-D-P-20">
+        <h1 className="D-H2-30">
+          Survey Now: <span className="light-blue-font">Clinical Trials</span>
+        </h1>
+        <p className="D-P-20">
           Join us in shaping the future of medicine—take the survey and find
           your match in the world of clinical trials!
         </p>
         {/* navigate to "/nf-registry" */}
-        <button className="nf-btn SN-D-T-M-B-16" onClick={handleClick}>
+        <button className="nf-btn D-P-20" onClick={handleClick}>
           Take the survey!
         </button>
       </div>

@@ -21,8 +21,10 @@ const Community = () => {
 
   return (
     <section className="community-container">
-      <h2 className="community-heading">We give power to you, the patient</h2>
-      <p className="community-description">
+      <h2 className="community-heading SN-D-Home-H2-32">
+        We give power to you, the patient
+      </h2>
+      <p className="community-description SN-D-P-20">
         Find all the information and resources you need to make informed
         decisions about your health and live your best life. Choose your area of
         interest and take the next step in your wellness journey.
