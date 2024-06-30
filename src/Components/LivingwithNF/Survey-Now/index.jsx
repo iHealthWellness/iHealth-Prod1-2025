@@ -15,7 +15,8 @@ function index({ underConstruction }) {
     <div id="take-survey" className="survey-container">
       <div className="survey-content">
         <h1 className="D-H2-30">
-          Survey Now: <span className="light-blue-font">Clinical Trials</span>
+          Survey Now:{" "}
+          <span className="light-blue-font D-H3-24">Clinical Trials</span>
         </h1>
         <p className="D-P-20">
           Join us in shaping the future of medicine—take the survey and find
