@@ -128,7 +128,7 @@
 .footer-terms {
   display: flex;
   flex-direction: column;
-  justify-content:center ;
+  justify-content: center;
   align-items: center;
   text-align: left;
   gap: 0.5rem;
@@ -136,7 +136,7 @@
 
 .language-select-cont {
   position: absolute;
-  right: 1rem;
+  right: 4rem;
 }
 
 .sasika-quote img {
@@ -155,9 +155,16 @@
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .language-select-cont {
+    right: 2.5rem;
+  }
+}
+
 @media only screen and (min-width: 275px) and (max-width: 635px) {
   .language-select-cont {
     padding-top: 2rem;
+    right: 1rem;
   }
 
   .footer-links-block {
