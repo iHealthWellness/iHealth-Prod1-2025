@@ -14,7 +14,7 @@ function index({ underConstruction }) {
   return (
     <div id="take-survey" className="survey-container">
       <div className="survey-content">
-        <h1 className="D-H2-30">
+        <h1 className="D-H1-32">
           Survey Now:{" "}
           <span className="light-blue-font D-H3-24">Clinical Trials</span>
         </h1>
