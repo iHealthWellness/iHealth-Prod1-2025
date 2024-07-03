@@ -8,7 +8,7 @@ function index({ openExternalLink }) {
       className="animated-text signup-container nf-registery-signup"
     >
       <div className="enroll-content1">
-        <h1 className="signup-heading D-H2-30">
+        <h1 className="signup-heading D-H1-32">
           NF Registry: <span className="light-blue-font D-H3-24">Sign-Up</span>
         </h1>
 
