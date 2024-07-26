@@ -7,6 +7,10 @@ import HandshakeOutlinedIcon from "@mui/icons-material/HandshakeOutlined";
 import PersonSearchOutlinedIcon from "@mui/icons-material/PersonSearchOutlined";
 import { useEffect } from "react";
 
+// Import images
+import monthlyDonor from "src/Assets/Images/monthly-donnor-banner.png";
+import PayPalBanner from "src/Assets/Images/paypal-banner.png";
+
 const Hero = () => {
   const text =
     "We're a community-based 501c3 organization offering health-related programs free to patients!";
@@ -46,13 +50,19 @@ const Hero = () => {
   }, []);
   return (
     <section className="hero-container">
+      <aside className="second-banner">
+        <div className="blue-banner"></div>
+        <p>{letterElements}</p>
+        <div className="blue-banner"></div>
+      </aside>
       <section className="hero-survey-banner">
-        <p className="SN-D-P-20">
-          You are OUR hero, and we would love to hear your NF story.{" "}
+        <p className="SN-D-T-M-P-16">
+          If you got the strength to give, help those facing complex diseases
+          with insufficient care and resources.{" "}
           <span className="take-survey-span">
-            <a href="https://forms.gle/QAiHQcgtvqfjFtYe6" target="_blank">
-              Submit your Story.
-            </a>
+            {/* <a href="https://forms.gle/QAiHQcgtvqfjFtYe6" target="_blank"> */}
+            Open Camera, Scan Code, Give Now!
+            {/* </a> */}
           </span>
         </p>
         {/* <p className="SN-D-P-20">
@@ -67,12 +77,18 @@ const Hero = () => {
             Submit your Story.
           </span>
         </p> */}
+        <img
+          src={monthlyDonor}
+          alt="monthly donor banner"
+          className="monthly-donor"
+        />
+        <img
+          src={PayPalBanner}
+          alt="paypal banner QR code"
+          className="paypal-banner"
+        />
       </section>
-      <aside className="second-banner">
-        <div className="blue-banner"></div>
-        <p>{letterElements}</p>
-        <div className="blue-banner"></div>
-      </aside>
+
       <div className="hero-container-inner">
         <div className="hero-heading-container">
           <h3 className="hero-heading-h3 SN-D-Home-H3-24">
