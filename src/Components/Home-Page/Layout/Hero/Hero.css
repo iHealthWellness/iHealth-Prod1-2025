@@ -19,8 +19,7 @@
   margin-top: 40px;
 }
 
-.take-survey-span a {
-  text-decoration: none;
+.take-survey-span {
   cursor: pointer;
   color: rgba(3, 134, 208, 1);
   font-weight: 400;
@@ -57,17 +56,36 @@
 }
 
 .take-survey-span {
-  text-decoration: underline;
   cursor: pointer;
   color: rgba(3, 134, 208, 1);
-  font-weight: 700;
+  font-weight: 400;
 }
 
-.hero-survey-banner {
+.home-page .hero-container .hero-survey-banner {
+  position: relative;
   background-color: rgb(148, 212, 255);
   padding: 0.63rem 2rem;
   font-weight: bold;
   text-align: center;
+  border-bottom: 2px solid #07235b;
+  z-index: 1;
+  overflow: visible;
+}
+
+.monthly-donor,
+.paypal-banner {
+  position: absolute;
+  z-index: 3;
+}
+
+.monthly-donor {
+  top: 0;
+  left: 0;
+}
+
+.paypal-banner {
+  top: 0;
+  right: 0;
 }
 
 /* .hero-survey-banner p:nth-child(1) {
