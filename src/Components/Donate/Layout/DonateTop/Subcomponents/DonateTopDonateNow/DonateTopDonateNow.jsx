@@ -1,5 +1,6 @@
 //Import Libraries/Packages
 import React, { useState } from "react";
+import donateLink from "src/utils/DonateLink";
 
 //Import Styles
 import "./DonateTopDonateNow.css";
@@ -54,14 +55,7 @@ function DonateTopDonateNow() {
               <p id="donate-today" className="D-H1-32">
                 Donate Today!
               </p>
-              <button
-                onClick={() => {
-                  document.querySelector("#UnderConst-wrapper").style.display =
-                    "flex";
-                }}
-              >
-                Donate Online
-              </button>
+              <button onClick={donateLink}>Donate Online</button>
             </div>
           </div>
 
