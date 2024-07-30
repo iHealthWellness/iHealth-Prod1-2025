@@ -1,6 +1,6 @@
 //Import Libraries/Packages
 import React, { useState } from "react";
-import donateLink from "src/utils/DonateLink";
+import donateLink from "src/utils/donateLink.js";
 
 //Import Styles
 import "./DonateTopDonateNow.css";

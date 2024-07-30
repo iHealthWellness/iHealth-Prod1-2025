@@ -8,7 +8,7 @@ import "./DonateTopTypeOfDonate.css";
 import oneTO from "../../../../../../Assets/Icons/iconoir_user-love.png";
 import recurringO from "../../../../../../Assets/Icons/iconoir_donate.png";
 import ObvserverFunc from "src/Components/Donate/Utiility/SlideAnimationObserver/ObvserverFunc";
-import donateLink from "src/utils/DonateLink";
+import donateLink from "src/utils/donateLink.js";
 
 function DonateTopTypeOfDonate() {
   /* References for Html elements to be animated */
