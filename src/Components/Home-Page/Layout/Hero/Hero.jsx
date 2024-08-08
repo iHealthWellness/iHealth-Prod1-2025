@@ -52,37 +52,7 @@ const Hero = () => {
         <div className="blue-banner"></div>
       </aside>
       <section className="hero-survey-banner">
-        <p className="SN-D-T-M-P-16">
-          If you got the strength to give, help those facing complex diseases
-          with insufficient care and resources.{" "}
-          <span className="take-survey-span">
-            {/* <a href="https://forms.gle/QAiHQcgtvqfjFtYe6" target="_blank"> */}
-            Open Camera, Scan Code, Give Now!
-            {/* </a> */}
-          </span>
-        </p>
-        {/* <p className="SN-D-P-20">
-          You are OUR hero, and we would love to hear your NF story.{" "}
-          <span
-            className="take-survey-span"
-            onClick={() => {
-              document.querySelector("#UnderConst-wrapper").style.display =
-                "flex";
-            }}
-          >
-            Submit your Story.
-          </span>
-        </p> */}
-        <img
-          src={monthlyDonor}
-          alt="monthly donor banner"
-          className="monthly-donor"
-        />
-        <img
-          src={PayPalBanner}
-          alt="paypal banner QR code"
-          className="paypal-banner"
-        />
+        <FundraiserBanner />
       </section>
 
       <div className="hero-container-inner">
