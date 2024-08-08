@@ -17,6 +17,16 @@
   max-width: 100%;
 }
 
+@media screen and (max-width: 768px) {
+  .fundraiserContainer {
+    column-gap: 1rem;
+  }
+
+  .fundraiserContainer img {
+    align-self: stretch;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .greyText {
     display: none;
@@ -24,9 +34,5 @@
 
   .fundraiserContainer {
     column-gap: 0.5rem;
-  }
-
-  .fundraiserContainer img {
-    align-self: stretch;
   }
 }
