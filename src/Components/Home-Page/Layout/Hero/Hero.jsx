@@ -6,6 +6,7 @@ import HeroMobile from "src/Assets/Images/hero-5x.png";
 import HandshakeOutlinedIcon from "@mui/icons-material/HandshakeOutlined";
 import PersonSearchOutlinedIcon from "@mui/icons-material/PersonSearchOutlined";
 import { useEffect } from "react";
+import FundraiserBanner from "./SubComponents/FundraiserBanner/FundraiserBanner";
 
 const Hero = () => {
   const text =
