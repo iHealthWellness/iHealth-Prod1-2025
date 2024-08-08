@@ -8,6 +8,7 @@ import "./DonateTopTypeOfDonate.css";
 import oneTO from "../../../../../../Assets/Icons/iconoir_user-love.png";
 import recurringO from "../../../../../../Assets/Icons/iconoir_donate.png";
 import ObvserverFunc from "src/Components/Donate/Utiility/SlideAnimationObserver/ObvserverFunc";
+import donateLink from "src/utils/donateLink.js";
 
 function DonateTopTypeOfDonate() {
   /* References for Html elements to be animated */
@@ -56,14 +57,7 @@ function DonateTopTypeOfDonate() {
               Empowering Healing, One Gift at a Time – Donate for Patients,
               Transform Lives!
             </p>
-            <button
-              onClick={() => {
-                document.querySelector("#UnderConst-wrapper").style.display =
-                  "flex";
-              }}
-            >
-              Donate Now
-            </button>
+            <button onClick={donateLink}>Donate Now</button>
           </article>
           <article id="beforeanimationright" ref={rightArticle}>
             <img loading="lazy" src={recurringO} alt="recurring option icon" />
@@ -71,14 +65,7 @@ function DonateTopTypeOfDonate() {
             <p className="D-P-20">
               Corporate Caring, Empowering Patients – Together, We Heal!
             </p>
-            <button
-              onClick={() => {
-                document.querySelector("#UnderConst-wrapper").style.display =
-                  "flex";
-              }}
-            >
-              Donate Now
-            </button>
+            <button onClick={donateLink}>Donate Now</button>
           </article>
         </div>
       </div>
