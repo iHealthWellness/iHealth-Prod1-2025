@@ -1,0 +1,18 @@
+.fundraiserContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.greyText {
+  color: #858ead;
+}
+
+.blueText {
+  color: #22aaf4;
+  text-decoration: underline;
+}
+
+.fundraiserContainer img {
+  max-width: 100%;
+}
