@@ -8,11 +8,6 @@ import PersonSearchOutlinedIcon from "@mui/icons-material/PersonSearchOutlined";
 import { useEffect } from "react";
 import FundraiserBanner from "./SubComponents/FundraiserBanner/FundraiserBanner";
 
-// Import images
-import monthlyDonor from "src/Assets/Images/monthly-donnor-banner.png";
-import PayPalBanner from "src/Assets/Images/paypal-banner.png";
-import FundraiserBanner from "./SubComponents/FundraiserBanner/FundraiserBanner";
-
 const Hero = () => {
   const text =
     "We're a community-based 501c3 organization offering health-related programs free to patients!";

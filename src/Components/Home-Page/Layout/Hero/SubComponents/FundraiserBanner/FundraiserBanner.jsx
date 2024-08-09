@@ -19,7 +19,7 @@ function FundraiserBanner() {
       <header>
         <h2 className="SN-D-Home-H2-32">Make an impact Today!</h2>
         <p className={`SN-D-T-M-P-16 ${styles.greyText}`}>
-          If you got the strength to give, help those facing complex diseases
+          If you have the strength to give, help those facing complex diseases
           with insufficient care and resources:
         </p>
         <a
