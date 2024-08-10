@@ -6,6 +6,7 @@ import HeroMobile from "src/Assets/Images/hero-5x.png";
 import HandshakeOutlinedIcon from "@mui/icons-material/HandshakeOutlined";
 import PersonSearchOutlinedIcon from "@mui/icons-material/PersonSearchOutlined";
 import { useEffect } from "react";
+import FundraiserBanner from "./SubComponents/FundraiserBanner/FundraiserBanner";
 
 const Hero = () => {
   const text =
@@ -46,33 +47,15 @@ const Hero = () => {
   }, []);
   return (
     <section className="hero-container">
-      <section className="hero-survey-banner">
-        <p className="SN-D-P-20">
-          You are OUR hero, and we would love to hear your NF story.{" "}
-          <span className="take-survey-span">
-            <a href="https://forms.gle/QAiHQcgtvqfjFtYe6" target="_blank">
-              Submit your Story.
-            </a>
-          </span>
-        </p>
-        {/* <p className="SN-D-P-20">
-          You are OUR hero, and we would love to hear your NF story.{" "}
-          <span
-            className="take-survey-span"
-            onClick={() => {
-              document.querySelector("#UnderConst-wrapper").style.display =
-                "flex";
-            }}
-          >
-            Submit your Story.
-          </span>
-        </p> */}
-      </section>
       <aside className="second-banner">
         <div className="blue-banner"></div>
         <p>{letterElements}</p>
         <div className="blue-banner"></div>
       </aside>
+      <section className="hero-survey-banner">
+        <FundraiserBanner />
+      </section>
+
       <div className="hero-container-inner">
         <div className="hero-heading-container">
           <h3 className="hero-heading-h3 SN-D-Home-H3-24">

@@ -19,13 +19,6 @@
   margin-top: 40px;
 }
 
-.take-survey-span a {
-  text-decoration: none;
-  cursor: pointer;
-  color: rgba(3, 134, 208, 1);
-  font-weight: 400;
-}
-
 .hero-heading-h3 {
   color: #0d99ff;
   display: flex;
@@ -56,16 +49,8 @@
   display: block;
 }
 
-.take-survey-span {
-  text-decoration: underline;
-  cursor: pointer;
-  color: rgba(3, 134, 208, 1);
-  font-weight: 700;
-}
-
-.hero-survey-banner {
-  background-color: rgb(148, 212, 255);
-  padding: 0.63rem 2rem;
+.home-page .hero-container .hero-survey-banner {
+  background-color: #d1ecff;
   font-weight: bold;
   text-align: center;
 }
@@ -155,7 +140,6 @@
   .second-banner {
     justify-content: center;
     padding: 0.5rem;
-    margin-bottom: 1rem;
   }
 
   .second-banner p {
