@@ -1,7 +1,7 @@
 import FacebookIcon from "src/Assets/Icons/social-facebook.png";
 import LinkedinIcon from "src/Assets/Icons/social-linkedin.png";
 import TwitterIcon from "src/Assets/Icons/social-twitter.png";
-import InstagramIcon from "src/Assets/Icons/social-instagram.png";
+import InstagramIcon from "src/Assets/Icons/instagram-icon.png";
 import YoutubeIcon from "src/Assets/Icons/social-youtube.png";
 
 const SocialMedia = [
