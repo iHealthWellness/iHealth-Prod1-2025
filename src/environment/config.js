@@ -2,7 +2,7 @@
 const DEFAULT_API_VERSION = "v1";
 // Note: We are using the same URL for both base and production.
 // Update this if you plan to have different URLs for each.
-const DEFAULT_BASE_URL = "https://ihealth-dev.onrender.com";
+const DEFAULT_BASE_URL = "https://ihealth-dev-3u0i.onrender.com/";
 
 class Config {
   constructor() {
