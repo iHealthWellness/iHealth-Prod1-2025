@@ -1,0 +1,199 @@
+.benefit-container {
+  padding-block: 1.75rem 5rem;
+}
+
+.benefit-card {
+  width: 40%;
+}
+
+.benefit-flipcard {
+  width: 100%;
+  aspect-ratio: 1 / 0.8;
+}
+
+.benefit-flipcard-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.benefit-flipcard.flip .benefit-flipcard-inner {
+  transform: rotateY(180deg) !important;
+}
+
+.benefit-flipcard-front,
+.benefit-flipcard-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.benefit-flipcard-back {
+  backdrop-filter: blur(2px);
+  transform: rotateY(180deg);
+  padding: 1.5rem 1rem;
+  color: #07235b;
+}
+
+.benefit-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.benefit-card-heading {
+  background-color: rgb(154, 212, 255);
+  color: #07235b;
+  padding: 2rem;
+}
+
+.benefit-container-inner .benefit-card:nth-child(2) .benefit-card-heading {
+  background-color: rgb(148, 249, 210);
+}
+
+.benefit-flipcard-summary {
+  margin-top: -15px;
+}
+
+.benefit-flipcard-list {
+  padding: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .benefit-card {
+    width: 100%;
+  }
+
+  .benefit-container {
+    background-color: rgb(245, 245, 245);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .benefit-flipcard {
+    aspect-ratio: 1 / 1.4;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .benefit-flipcard {
+    aspect-ratio: 1 / 1.6;
+  }
+  .benefit-container {
+    padding-bottom: 2rem;
+    padding-top: 0;
+  }
+  .benefit-heading {
+    color: rgb(6, 39, 88);
+    font-size: 1.875;
+  }
+}
+
+/* .benefit-card {
+  width: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: transparent;
+}
+
+.benefit-benefit-flipcard {
+  background-color: transparent;
+  width: 100%;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.benefit-img {
+  width: 100%;
+  height: 100%;
+  vertical-align: top;
+  object-fit: cover;
+}
+
+.benefit-benefit-flipcard-inner {
+  width: 100%;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.benefit-benefit-flipcard.flip .benefit-benefit-flipcard-inner {
+  transform: rotateY(180deg) !important;
+}
+
+.benefit-benefit-flipcard-front,
+.benefit-benefit-flipcard-back {
+  position: absolute;
+  width: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+/* backface-visibility: hidden;
+}
+
+.benefit-benefit-flipcard-front {
+  height: 100%;
+  background-color: transparent;
+  color: black;
+}
+
+.benefit-benefit-flipcard-back {
+  height: 100%;
+  background: transparent;
+  border: 3px solid rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(2px);
+
+  transform: rotateY(180deg);
+  padding: 1.5rem 1rem;
+  color: #07235b;
+  font-weight: 400;
+}
+
+.benefit-detail-list {
+  padding: 2rem;
+}
+
+.benefit-title-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: #062758;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding: 2rem;
+} */
+
+/* @media only screen and (max-width: 575px) {
+  .benefit-card {
+    width: 320px;
+  }
+
+  .benefit-benefit-flipcard-inner {
+    height: 213px;
+  }
+
+  .benefit-benefit-flipcard-back {
+    padding: 0.5rem;
+    color: #07235b;
+    font-weight: 400;
+    font-size: 0.8rem;
+  }
+
+  .benefit-detail-list {
+    padding: 0 0.5rem;
+  }
+
+  .benefit-title-box {
+    width: 100%;
+    font-size: 1rem;
+    padding: 1rem;
+  }
+} */

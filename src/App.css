@@ -1,0 +1,291 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Language bar in the footer causes the whole page to move to the left. Setting it to 0 with !important fixes it. Contact David Tevzadze if you have any issues with this! */
+body {
+  overflow-x: hidden;
+  padding-right: 0 !important;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  font-size: 16px;
+  scroll-snap-type: y proximity;
+}
+
+.SN-M-H1-30 {
+  font-size: 1.875rem;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.SN-M-H2-24 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 110%;
+}
+
+#empowering-patients,
+#making-a-difference,
+#making-a-diff {
+  color: #0d99ff;
+}
+
+.SN-M-H3-20 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+.SN-M-P-16 {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 120%;
+  text-align: justify;
+}
+
+.SN-M-B-16 {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.SN-M-C-16 {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 110%;
+}
+
+.SN-T-H1-36 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.SN-T-H2-30 {
+  font-size: 1.875rem;
+  font-weight: 400;
+  line-height: 110%;
+}
+
+.SN-T-H3-24 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+.SN-D-T-M-P-20 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 110%;
+}
+
+.SN-D-H1-48 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.SN-D-H2-32 {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 110%;
+}
+
+.SN-D-H2-36 {
+  font-size: 2.25rem;
+  font-weight: 400;
+  line-height: 110%;
+}
+
+.SN-D-H3-24 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+.SN-D-P-20 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.SN-D-P-16 {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 110%;
+}
+
+.SN-D-B-16 {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.App {
+  scroll-behavior: smooth;
+}
+
+/* #region */
+
+.SN-D-Home-H1-48 {
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.SN-D-Home-H2-32 {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 110%;
+}
+
+.SN-D-Home-H3-24 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 143%;
+}
+
+.SN-D-P-20 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.SN-D-T-M-B-16 {
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 120%;
+}
+
+.SN-D-T-M-P-16 {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 143%;
+}
+
+@media screen and (max-width: 1024px) {
+  .SN-D-Home-H1-48 {
+    font-size: 2.25rem;
+    font-weight: 400;
+    line-height: 120%;
+  }
+
+  .SN-D-Home-H2-32 {
+    font-size: 1.875rem;
+    font-weight: 400;
+    line-height: 110%;
+  }
+
+  .SN-D-Home-H3-24 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 143%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .SN-D-Home-H1-48 {
+    font-size: 1.875rem;
+    font-weight: 400;
+    line-height: 120%;
+  }
+
+  .SN-D-Home-H2-32 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 110%;
+  }
+
+  .SN-D-Home-H3-24 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 143%;
+  }
+}
+
+/* #endregion */
+
+/* #region NOT HOME PAGE */
+
+.D-H1-32 {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.D-H2-30 {
+  font-size: 1.875rem;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.D-H3-24 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.D-P-20 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.D-T-M-P-16 {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 143%;
+}
+
+.D-T-M-P-B-16 {
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 120%;
+}
+
+@media screen and (max-width: 1024px) {
+  .D-H1-32 {
+    font-size: 1.875rem;
+  }
+
+  .D-H2-30 {
+    font-size: 1.5rem;
+  }
+
+  .D-H3-24 {
+    font-size: 1.125rem;
+  }
+
+  .D-T-M-P-B-16 {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .D-H1-32 {
+    font-size: 1.75rem;
+  }
+
+  .D-H2-30 {
+    font-size: 1.25rem;
+  }
+
+  .D-H3-24 {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .D-T-M-P-B-16 {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+}
+
+/* #endregion */

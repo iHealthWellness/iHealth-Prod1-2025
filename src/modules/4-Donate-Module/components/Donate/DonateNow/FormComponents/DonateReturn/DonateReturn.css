@@ -1,0 +1,68 @@
+.donate-return-cont{
+    max-width: 80%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1.75rem;
+}
+
+.donate-return-cont h2{
+    font-weight: 600;
+    font-size: 2.25rem;
+}
+
+.donate-return-cont p{
+    line-height: 23px;
+}
+
+.donate-return-cont span{
+    font-weight: 600;
+}
+
+.mod4{
+    position: relative;
+    max-width: 30%;
+    height: fit-content;
+    border-radius: 20px;
+    background-color: #F8FAFC;
+    border: 1px solid #07235B;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0rem;
+  }
+
+  .jct-holder2{   
+    position: absolute;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    z-index: 999;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+.logo-cont{
+    max-width: 35%;
+    max-height: 35%;
+}
+.logo-cont img{
+    position: relative;
+    width: 100%;
+}
+.modal4-close-btn{
+    position: absolute;
+    right: 5%;
+    top: 5%;
+}
+.modal4-close-btn button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}

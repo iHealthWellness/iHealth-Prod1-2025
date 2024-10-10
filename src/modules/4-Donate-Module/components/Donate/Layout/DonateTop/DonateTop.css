@@ -1,0 +1,13 @@
+#Donate-Top-Wrapper {
+  display: flex;
+  flex-direction: column;
+  /* margin-bottom: 5rem; */
+  place-items: center;
+  /* scroll-snap-align: start; */
+}
+
+@media only screen and (max-width: 479px) {
+  #Donate-Top-Wrapper {
+    margin-bottom: 0rem;
+  }
+}

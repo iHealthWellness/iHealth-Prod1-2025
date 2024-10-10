@@ -1,0 +1,131 @@
+.TeamPage-holder-tab {
+  overflow-x: hidden;
+}
+
+.page-holder {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1006px;
+}
+.teamboard-tab4 {
+  transform: translateX(50%);
+  transition: opacity 0.5s ease-in-out, transform 0.8s ease-in-out;
+}
+
+.grid-tab {
+  margin-top: 40px;
+  width: 100%;
+  max-width: 1006px; /* Adjust the max-width as needed */
+  display: grid;
+  grid-template-columns: 1fr; /* Single column for all screen sizes by default */
+  background-color: #dce8f2;
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+  white-space: nowrap;
+  /* display: none; */
+}
+
+/* Media query for screens larger than a certain width (e.g., 768px) */
+@media screen and (min-width: 768px) {
+  .grid-tab {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(180px, 1fr)
+    ); /* Responsive grid with variable column widths */
+    gap: 290px; /* Adjust the gap between elements */
+    overflow: auto; /* Add horizontal scroll for small screens if needed */
+  }
+}
+
+.gridd {
+  transform: translateX(50%);
+  transition: opacity 0.5s ease-in-out, transform 0.8s ease-in-out;
+}
+
+.gridd.slide-in,
+.teamboard-tab4.slide-in {
+  opacity: 1;
+  transform: translateX(0);
+}
+.board-image img {
+  width: 100%;
+}
+
+.bold-color-text {
+  color: #07235b;
+  font-family: Inter;
+  line-height: 36px;
+  letter-spacing: -0.019em;
+  text-align: center;
+}
+
+.grid-tab3 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: #dce8f2;
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: auto;
+  margin: 10px;
+  margin-left: -0.5px;
+}
+
+.grid-tab-texter {
+  font-family: Inter;
+  line-height: 36px;
+  letter-spacing: -0.019em;
+  text-align: center; /* Center the text */
+  color: #858ead;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Ensure all cards have the same height */
+}
+
+.content-tab p {
+  font-family: Roboto;
+  line-height: 34px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #07235b;
+  padding: 20px;
+  margin: 0;
+}
+
+.content-name {
+  background-color: white;
+  border-radius: 10px;
+  padding: 24px;
+  position: relative;
+  margin: 10px;
+}
+
+.content-name p {
+  font-family: Inter;
+  font-style: italic;
+  line-height: 36px;
+  letter-spacing: -0.019em;
+  text-align: left;
+  padding: 2px;
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .grid-tab3 {
+    grid-template-columns: repeat(3, 1fr); /* Ensure equal size for all cards */
+    justify-content: center; /* Center the cards horizontally */
+    overflow: hidden;
+  }
+
+  .content-name {
+    margin-right: 0;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (min-width: 468px) {
+}

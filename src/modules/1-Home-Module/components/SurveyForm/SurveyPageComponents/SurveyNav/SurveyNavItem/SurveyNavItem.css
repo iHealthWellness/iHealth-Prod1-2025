@@ -1,0 +1,36 @@
+.nav-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--SN-Hero-Light-Blue, #f0f7fd);
+  border-radius: 0.375rem;
+  padding: 0.9375rem 1.5rem;
+  color: var(--Neutral-300, #8d8c8e);
+  transition: all 0.5s ease;
+}
+
+.nav-item.active {
+  border-radius: 0.375rem;
+  outline: 0.3rem solid var(--SN-Primary-Headings-07235B, #07235b);
+  background-color: #fff;
+  color: var(--SN-Primary-Headings-07235B, #07235b);
+}
+
+.nav-item.checked {
+  background-color: var(--SN-Primary-Headings-07235B, #07235b);
+  color: var(--SN-Hero-Light-Blue, #f0f7fd);
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-item {
+    display: none;
+    padding: 0.5rem 1rem;
+  }
+  .nav-item.active {
+    text-align: center;
+    display: block;
+    min-width: 140px;
+    outline: 0;
+    border: 0.2rem solid var(--SN-Primary-Headings-07235B, #07235b);
+  }
+}

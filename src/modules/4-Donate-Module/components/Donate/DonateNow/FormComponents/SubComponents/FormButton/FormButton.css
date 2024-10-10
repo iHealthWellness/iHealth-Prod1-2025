@@ -1,0 +1,38 @@
+.modal-btn-cont{
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    /* padding: 25px; */
+  }
+
+  .modal-btn-cont button {
+    font-size: 1rem;
+    font-weight: 400;
+    padding: .75rem 6rem;
+    /* width: 80%; */
+    background: #0D99FF;
+    border-radius: 5px;
+    color: #ffffff;
+    border: none;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .modal-btn-cont button:hover {
+    background-color: #0d9affc7;
+  }
+
+  .modal-btn-cont :disabled{
+    filter: grayscale(100%);
+  }
+
+  @media only screen and (max-width: 300px) {
+  .modal-btn-cont button {
+    padding: .75rem 3rem;
+  }
+  }

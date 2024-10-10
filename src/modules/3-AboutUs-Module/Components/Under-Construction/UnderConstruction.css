@@ -1,0 +1,296 @@
+/* Set Css rules for wrapper section of all under construction elements */
+#UnderConst-wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #03284fcf;
+  z-index: 999;
+  top: 0;
+
+  display: flex;
+  place-content: center;
+  align-items: center;
+  display: none;
+}
+
+/* Set Css rules for main div of all under construction elements */
+#UnderConst-main {
+  width: 40vw;
+  height: 80%;
+  display: flex;
+  place-items: center;
+  justify-content: center;
+
+  --color: #03284f;
+  --radius: 72px;
+  --elevation: 20px;
+  --bevel: 12px;
+  --angle: 254deg;
+  --intensity: 20;
+  --diffusion: 10;
+
+  /*======= Computed Variables =======*/
+  --sin: calc(sin(var(--angle)));
+  --cos: calc(cos(var(--angle)));
+  --x-displacement: calc(-1 * var(--cos) * (var(--elevation) + 1px));
+  --y-displacement: calc(-1 * var(--sin) * (var(--elevation) + 1px));
+  --edge-opacity: calc(var(--intensity) * 0.006 - var(--diffusion) * 0.002);
+  --edge-blur: calc(var(--bevel) * 1.5);
+  --surface-contrast: calc(var(--intensity) * 0.01 - var(--diffusion) * 0.005);
+
+  /*======= Computed Properties =======*/
+  border-radius: var(--radius);
+  box-shadow: var(--x-displacement) var(--y-displacement)
+      calc(var(--diffusion) * 0.3px + (var(--elevation)))
+      calc(var(--elevation) / 2) rgba(0, 0, 0, calc(var(--intensity) * 0.006)),
+    0px 0px calc(var(--diffusion) * 1.4px)
+      rgba(255, 255, 255, calc(var(--intensity) * 0.004)),
+    inset calc(var(--bevel) * -1) 0 var(--edge-blur)
+      hsla(100, 0%, calc((var(--cos) + 1) * 50%), var(--edge-opacity)),
+    inset 0 var(--bevel) var(--edge-blur)
+      hsla(100, 0%, calc((-1 * var(--sin) + 1) * 50%), var(--edge-opacity)),
+    inset var(--bevel) 0 var(--edge-blur)
+      hsla(100, 0%, calc((-1 * var(--cos) + 1) * 50%), var(--edge-opacity)),
+    inset 0 calc(var(--bevel) * -1) var(--edge-blur)
+      hsla(100, 0%, calc((var(--sin) + 1) * 50%), var(--edge-opacity));
+  background: linear-gradient(
+      calc(var(--angle) + 90deg),
+      rgba(0, 0, 0, var(--surface-contrast)),
+      rgba(255, 255, 255, var(--surface-contrast))
+    ),
+    var(--color);
+
+  /*======== Static Properties ========*/
+  background-blend-mode: soft-light;
+
+  scale: 0;
+  animation: Appear-animation 1s cubic-bezier(0.68, 0.45, 0.27, 1.55) forwards 1;
+}
+
+@keyframes Appear-animation {
+  from {
+    scale: 0;
+  }
+  to {
+    scale: 1;
+  }
+}
+
+@keyframes Disappear-animation {
+  from {
+    scale: 1;
+  }
+  to {
+    scale: 0;
+  }
+}
+
+/* Set Css rules for circle div covers all sub elements */
+#UnderConst-circle {
+  position: relative;
+  height: 300px;
+  width: 300px;
+  border: 0.1px solid transparent;
+  border-radius: 50%;
+  box-shadow: 0px -9px 37.5px #93d1ff;
+
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 7px;
+}
+
+#UnderConst-circle:before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 117.18px;
+  height: 64.65px;
+  background: radial-gradient(
+    40.23% 44.78% at 50% 50%,
+    rgba(147, 216, 255, 0.4) 0%,
+    rgba(255, 255, 255, 0) 85.94%
+  );
+  transform: matrix(0.69, 0.52, -0.72, 0.69, 0, 0);
+}
+
+/* Set Css rules for all SN-M-P-16 elements*/
+#UnderConst-circle > p {
+  color: white;
+  z-index: 2;
+  margin: 0;
+  user-select: none;
+}
+
+/* Set Css rules for Under Construction text */
+#UnderConst-circle > p:nth-child(2) {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24.375px;
+  line-height: 33px;
+  text-align: center;
+}
+
+/* Set Css rules for Exciting Updates Coming... text */
+#UnderConst-circle > p:nth-child(3) {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13.125px;
+  line-height: 18px;
+  text-align: center;
+}
+
+/* Set Css rules for loading bar */
+#UnderConst-bar {
+  position: relative;
+  width: 150px;
+  height: 7px;
+  border-radius: 10px;
+  background: #031429;
+  z-index: 2;
+}
+
+#UnderConst-bar:after {
+  content: " ";
+  position: absolute;
+  width: 75%;
+  height: 100%;
+  background: #34a6ec;
+  left: 0;
+  border-radius: 10px;
+  box-shadow: 0 0 18px 1px rgba(210, 189, 255, 0.4);
+  animation: Loading-Animation 4s steps(20, jump-start) infinite;
+}
+
+@keyframes Loading-Animation {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 75%;
+    background: #97d1f5;
+  }
+}
+
+/* Set Css rules for the Close Button */
+#UnderConst-circle > button {
+  font-family: "Work Sans", sans-serif;
+  position: absolute;
+  bottom: 20px;
+  background: #0d99ff;
+  border-radius: 10px;
+  height: 45px;
+  width: 120px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: 0.4s;
+  user-select: none;
+}
+
+#UnderConst-circle > button:hover {
+  box-shadow: 0 0 18px 1px rgba(210, 189, 255, 0.4);
+}
+
+/* Set Css rules for the circle div to give the fading effect of circle */
+#UnderConst-innerCircle {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translate3d(-50%, 0, 0);
+  height: 150px;
+  width: 300px;
+  background: #03284f;
+  box-shadow: 17px 14px 30px 20px #03284f, -17px 14px 30px 20px #03284f;
+  z-index: 0;
+  top: 136px;
+  border-top-right-radius: 36%;
+  border-top-left-radius: 36%;
+}
+
+/* -------------------- Responsive Css Rules -------------------- */
+
+@media only screen and (max-width: 1400px) {
+  /* Set Css rules for main div of all under construction elements */
+  #UnderConst-main {
+    width: 55vw;
+    height: 60%;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  /* Set Css rules for main div of all under construction elements */
+  #UnderConst-main {
+    width: 80vw;
+    height: 60%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  /* Set Css rules for main div of all under construction elements */
+  #UnderConst-main {
+    width: 70vw;
+    height: 50%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  /* Set Css rules for main div of all under construction elements */
+  #UnderConst-main {
+    width: 60vw;
+    height: 35%;
+  }
+
+  /* Set Css rules for circle div covers all sub elements */
+  #UnderConst-circle {
+    height: 200px;
+    width: 200px;
+  }
+
+  /* Set Css rules for the circle div to give the fading effect of circle */
+  #UnderConst-innerCircle {
+    height: 45px;
+    width: 160px;
+  }
+
+  /* Set Css rules for Under Construction text */
+  #UnderConst-circle > p:nth-child(2) {
+    font-size: 3.5dvw;
+    line-height: 13px;
+  }
+
+  /* Set Css rules for Exciting Updates Coming... text */
+  #UnderConst-circle > p:nth-child(3) {
+    font-size: 2.3dvw;
+    line-height: 14px;
+  }
+
+  /* Set Css rules for loading bar */
+  #UnderConst-bar {
+    width: 110px;
+    height: 5px;
+  }
+
+  /* Set Css rules for the Close Button */
+  #UnderConst-circle > button {
+    bottom: 10px;
+    background: #0d99ff;
+    border-radius: 10px;
+    height: 35px;
+    width: 80px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  /* Set Css rules for main div of all under construction elements */
+  #UnderConst-main {
+    width: 90vw;
+    height: 35%;
+  }
+}

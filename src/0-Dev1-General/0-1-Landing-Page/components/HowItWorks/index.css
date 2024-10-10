@@ -1,0 +1,109 @@
+.how-it-works-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+/* This is just an example, adjust the max-width as needed for your design */
+@media screen and (max-width: 468px) {
+  .learn-more-card {
+    display: none;
+  }
+}
+
+.how-it-works-heading {
+  color: #062758;
+}
+
+
+.how-it-works-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+@media only screen and (min-width: 480px) and (max-width: 1024px) {
+  .how-it-works-heading {
+    padding: 5rem 0;
+  }
+
+  .how-it-works-cards {
+    display: grid;
+    /* max-width: 448px; */
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: start;
+    row-gap: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .how-it-works-container {
+    padding: 5rem 0;
+  }
+
+  .how-it-works-heading {
+    padding-bottom: 5rem;
+  }
+
+  .how-it-works-cards {
+    width: 90%;
+    max-width: 1216px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: start;
+    row-gap: 5rem;
+  }
+}
+
+.how-it-works-learn-more-box .how-it-works-button-label {
+  text-decoration: underline; /* gives the Learn More a visual cue that it's clickable */
+}
+
+.how-it-works-learn-more-box:hover .how-it-works-button-label {
+  color: #2947a9; /* change the color on hover for better UX */
+}
+
+/* .how-it-works-benefit-container {
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  padding: 8rem 0;
+} */
+
+/* @media only screen and (max-width: 767px) {
+  .how-it-works-cards-container {
+    width: 80%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+  }
+
+  .how-it-works-benefit-container {
+    max-width: 320px;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .how-it-works-cards-container {
+    width: 80%;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 3rem;
+  }
+
+  .how-it-works-benefit-container {
+    width: 80%;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    gap: 10rem;
+  }
+} */

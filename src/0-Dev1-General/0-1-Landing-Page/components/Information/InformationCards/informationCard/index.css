@@ -1,0 +1,159 @@
+.information-card {
+  display: grid;
+  grid-template-rows: 1fr 1.5fr 0.5fr;
+}
+
+.information-card-heading-block {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+  background-color: #062758;
+  color: #ffffff;
+  border: 2px solid #062758;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+}
+
+.information-card-container
+  .information-card:nth-child(2)
+  .information-card-heading-block
+  .information-card-heading {
+  color: #07235b;
+}
+
+.information-card-icon-box {
+  width: 50px;
+  height: 50px;
+  padding: 0.5rem;
+  border-radius: 50%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.information-card-listitem a {
+  color: black;
+  text-decoration: none; /* Removes the underline from the links. */
+  transition: color 0.3s; /* Smooth transition for color changes */
+}
+
+.information-card:hover .information-card-listitem a {
+  color: white; /* Changes color to white on hover */
+}
+
+/* Optionally, for hover effects to show it's clickable */
+.information-card-listitem a:hover {
+  text-decoration: underline; /* Adds an underline on individual link hover */
+}
+
+.information-card-icon {
+  width: 100%;
+  height: 100%;
+}
+
+.information-card-list {
+  list-style: none;
+  padding: 2rem 1rem;
+  border-left: 2px solid rgba(7, 35, 91, 0.24);
+  border-right: 2px solid rgba(7, 35, 91, 0.24);
+}
+
+/* update hover style */
+.information-card:hover .information-card-list {
+  background-color: rgba(6, 39, 88, 1);
+  color: #ffffff;
+}
+
+.information-card:hover .information-card-link-block {
+  background-color: rgba(6, 39, 88, 1);
+}
+
+.information-card:hover .information-card-link,
+.information-card:hover .information-card-listitem-span {
+  color: #fff;
+}
+
+.information-card-container
+  .information-card:nth-child(2):hover
+  .information-card-list,
+.information-card-container
+  .information-card:nth-child(2):hover
+  .information-card-link-block {
+  background-color: #94d4ff;
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
+  border-bottom: none;
+}
+
+.information-card-container
+  .information-card:nth-child(2):hover
+  .information-card-link {
+  color: rgba(0, 45, 153, 0.5);
+}
+
+.information-card-container
+  .information-card:nth-child(2):hover
+  .information-card-list
+  .information-card-listitem
+  a,
+.information-card-container
+  .information-card:nth-child(2):hover
+  .information-card-listitem-span,
+.information-card-container
+  .information-card:nth-child(2):hover
+  .information-card-link {
+  color: rgba(6, 39, 88, 1);
+}
+
+.information-card-listitem {
+  padding-bottom: 1rem;
+}
+
+.information-card-container
+  .information-card:nth-child(2):hover
+  .information-card-listitem-span,
+.information-card-listitem-span {
+  color: rgba(0, 45, 153, 0.5);
+}
+
+.information-card-link-block {
+  padding-left: 2rem;
+  border: 2px solid rgba(7, 35, 91, 0.24);
+  border-top: none;
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+}
+
+.information-card-link {
+  text-decoration: none;
+  color: #07235b;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 120%;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 480px) and (max-width: 1023px) {
+  .information-card-link {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 100%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .information-card {
+    flex: 1;
+  }
+
+  .information-card-listitem-span {
+    padding-right: 1rem;
+  }
+
+  .information-card-link {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 120%;
+  }
+}

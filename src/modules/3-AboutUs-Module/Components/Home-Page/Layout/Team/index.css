@@ -1,0 +1,246 @@
+/* mobile view */
+.team-container {
+  background: #f0f7fd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.team-heading-h2 {
+  width: 95%;
+  padding-bottom: 1rem;
+  color: #07235b;
+}
+
+.team-heading-h3.desktop {
+  display: none;
+}
+
+.team-bottom-block {
+  width: 100%;
+}
+
+.team-video {
+  width: 100%;
+  display: block;
+}
+
+.team-join-description {
+  font-size: 1rem;
+  line-height: 143%;
+  max-width: 313px;
+  text-align: center;
+}
+
+.team-join-card {
+  background: #fff;
+  color: #07235b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  border: 2px solid #07235b;
+}
+
+.team-join-card-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0px;
+  text-align: center;
+  border-radius: 1.5rem;
+}
+
+.team-join-slogan {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.team-join-btn {
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  background-color: #0d99ff;
+  color: #fff;
+  font-weight: 300;
+}
+
+.team-join-card-inner img {
+  width: 90%;
+}
+/*tablet view */
+@media only screen and (min-width: 480px) and (max-width: 1024px) {
+  .team-join-card {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    border: none;
+  }
+
+  .team-join-card-inner {
+    max-width: 390px;
+    padding: 3rem 2rem;
+    border: 2px solid #07235b;
+  }
+
+  .team-join-heading {
+    font-size: 1.875rem;
+    font-weight: 400;
+    line-height: 110%;
+  }
+
+  .team-join-slogan {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 120%;
+  }
+  .team-heading-h2 span {
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+  }
+
+  .team-join-slogan {
+    font-weight: 400;
+    line-height: 143%;
+    font-size: 1.5rem;
+  }
+
+  .team-join-btn {
+    padding: 0.5rem 5rem;
+    font-weight: 400;
+    line-height: 143%;
+    font-size: 1.5rem;
+  }
+
+  .team-join-description {
+    width: 80%;
+    max-width: 697px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 143%;
+    padding-bottom: 3rem;
+  }
+}
+/* desktop view*/
+@media only screen and (min-width: 1024px) {
+  .team-container {
+    padding: 5rem 0;
+    background-color: #ffffff;
+  }
+
+  .team-heading-h2,
+  .team-heading-h3 {
+    width: 90%;
+    max-width: 1216px;
+  }
+
+  .team-heading-h2 span {
+    color: #0d99ff;
+  }
+
+  .team-heading-h3 {
+    padding-bottom: 3rem;
+  }
+
+  .team-heading-h3.desktop {
+    display: block;
+    color: #07235b;
+  }
+
+  .team-bottom-block {
+    width: 90%;
+    max-width: 1216px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .team-video-card {
+    position: relative;
+  }
+
+  .team-video {
+    width: 80%;
+  }
+
+  .team-join-card {
+    max-width: 382px;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 0.5rem;
+    z-index: 4;
+    justify-content: center;
+  }
+
+  .team-join-card::before {
+    content: "";
+    background-color: #07235b;
+    width: 110%;
+    height: 90%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -1;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  .team-join-description,
+  .team-join-card-inner {
+    position: relative;
+    z-index: 1;
+    background-color: white;
+  }
+
+  .team-join-description {
+    display: none;
+  }
+
+  .team-join-card-inner {
+    border-radius: 6px;
+    padding: 3rem 0 5rem;
+    box-shadow: 4px 6px 4px 0 rgba(0, 0, 0, 0.5);
+  }
+
+  .team-join-heading {
+    font-size: 2.25rem;
+    font-weight: 400;
+    line-height: 110%;
+    text-align: center;
+  }
+
+  /* update line-height to 143% */
+  .team-join-slogan {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 143%;
+  }
+
+  .team-join-btn {
+    font-size: 1.25rem;
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .team-join-card-inner {
+    width: 80%;
+    border: 2px solid #07235b;
+    padding: 0 0 1rem 0;
+  }
+  .team-join-heading {
+    font-size: 1.5rem;
+  }
+  .team-join-card {
+    padding-top: 1rem;
+    border: none;
+  }
+  .team-join-card-inner img {
+    width: 60%;
+  }
+}

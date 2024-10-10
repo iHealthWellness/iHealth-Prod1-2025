@@ -1,0 +1,57 @@
+@keyframes slideInOut {
+  0% {
+    transform: translateX(0);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(50%);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slideInText {
+  opacity: 0; 
+  animation: slideInOut 0.8s ease-in-out forwards;  
+}
+/* .slideInText.active {
+  opacity: 1;
+  transform: translateX(0);
+} */
+
+.mainSection {
+  text-align: justify;
+}
+
+.mainSection header,
+.mainSection section h3 {
+  color: var(--SN-Primary-Headings-07235B, #07235b);
+}
+
+.mainSection header {
+  text-align: center;
+}
+
+.mainSection section {
+  display: grid;
+  gap: 1rem;
+}
+
+.mainSection section h3 {
+  padding-block: 2rem;
+}
+
+.mainSection section p,
+.mainSection section a {
+  color: rgba(133, 142, 173, 1);
+}
+
+@media screen and (max-width: 1024px) {
+  .mainSection section p,
+  .mainSection section a {
+    font-size: 1rem;
+  }
+}

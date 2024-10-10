@@ -1,0 +1,72 @@
+.slideInText {
+  opacity: 0;
+  transform: translateX(50%);
+  transition: opacity 0.5s ease-in-out, transform 0.8s ease-in-out;
+}
+.slideInText.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.segasContainer {
+  display: grid;
+  gap: 3rem;
+}
+
+.sectionContainer,
+.conclusionContainer,
+.alfaContainer {
+  display: grid;
+  gap: 2rem;
+  padding: 3rem 5rem;
+  text-align: justify;
+}
+
+.alfaContainer {
+  padding: 0;
+  text-align: left;
+}
+
+.sectionContainer {
+  background-image: url("src/Assets/Images/Research background.png");
+}
+
+.conclusionContainer {
+  background-image: url("src/Assets/Images/Blue-Pattern.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sectionContainer p,
+.alfaContainer p {
+  color: var(--SN-Primary-Headings-07235B, #07235b);
+}
+
+.sectionContainer a,
+.alfaContainer a {
+  color: rgba(133, 142, 173, 1);
+}
+
+.conclusionContainer {
+  color: #fff;
+}
+
+@media screen and (max-width: 1024px) {
+  .segasContainer {
+    gap: 1.5rem;
+  }
+
+  .sectionContainer,
+  .alfaContainer,
+  .conclusionContainer {
+    gap: 1rem;
+  }
+
+  .sectionContainer p,
+  .alfaContainer p,
+  .sectionContainer a,
+  .alfaContainer a,
+  .conclusionContainer p {
+    font-size: 1rem;
+  }
+}

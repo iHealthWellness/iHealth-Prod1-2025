@@ -1,0 +1,72 @@
+@keyframes slideInOut {
+  0% {
+    transform: translateX(0);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(50%);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slideInText {
+  opacity: 0;
+  animation: slideInOut 0.8s ease-in-out forwards;
+}
+
+.mainSection,
+.mainSection aside,
+.mainSection section {
+  display: grid;
+  gap: 2rem;
+}
+
+.mainSection aside {
+  grid-template-columns: 1fr 1fr;
+  text-align: justify;
+}
+
+.mainSection section {
+  gap: 1rem;
+}
+
+.mainSection aside img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.mainSection header,
+.mainSection aside,
+.mainSection section span {
+  color: var(--SN-Primary-Headings-07235B, #07235b);
+}
+
+.mainSection section span {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.mainSection section p {
+  color: rgba(133, 142, 173, 1);
+  text-align: justify;
+}
+
+.mainSection section span,
+.mainSection section h3 {
+  font-weight: 400;
+}
+
+@media screen and (max-width: 1024px) {
+  .mainSection header {
+    font-size: 1.87rem;
+  }
+  .mainSection aside,
+  .mainSection section p {
+    font-size: 1rem;
+  }
+}

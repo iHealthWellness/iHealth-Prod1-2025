@@ -1,0 +1,117 @@
+/* Heading container */
+.educationContainer {
+    max-width: 100%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Inner container */
+.educationContainerInner {
+    justify-content: center;
+    display: flex;
+    padding-bottom: 0;
+    width: 90%;
+}
+
+/* Heading text */
+.educationHeadingContainer {
+    padding: 3rem 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 20px;
+}
+
+.educationHeadingOne{
+    color: #c33418;
+    /* font-size: 1.6rem; */
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 100%;
+    text-align: left;
+}
+
+.educationHeadingTwo {
+    color: #07235b;
+    /* font-size: 2.0rem; */
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 110%;
+    text-align: left;
+}
+
+/* Image */
+.educationImageContainer {
+    display: flex;
+}
+
+.educationImg {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    padding: 0;
+    margin-top: 0;
+}
+
+/* Second container */
+.educationContainerSecondInner {
+    width: 100%;
+    background: white;
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.educationContentContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.paragraphContainer{
+    width: 100%;
+    text-align: justify;
+    font-size: 1.2rem;
+    padding: 2rem 10px 10px 10px;
+    justify-content: center;
+    margin: 10px;
+}
+
+.paragraphText{
+    line-height: 1.8;
+    font-size: 24px;
+}
+
+/* Responsive Design */
+/* Desktop First Design, all screen sizes smaller than or equal to 1024px */
+
+@media only screen and (max-width: 850px) {
+    .educationContainerInner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .educationHeadingContainer{
+        align-items: left;
+        flex-wrap: wrap;
+    }
+
+    .educationHeadingOne{
+        font-size: 1.8rem;
+    }
+    
+    .educationHeadingTwo{
+        font-size: 2.1rem;
+        white-space: normal;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    .educationImageContainer{
+        width: fit-content;
+        align-self: flex-end;
+    }
+}

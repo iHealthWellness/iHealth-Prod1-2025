@@ -1,0 +1,35 @@
+.progress-bar-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+}
+.progress-dot-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5rem;
+}
+.dot {
+    width: 15px;
+    height: 15px;
+    border: 1px solid #07235B;
+    border-radius: 50%;
+    content: '';
+}
+.dot::after{
+    content: '';
+    position: absolute;
+    margin-top: .35rem;
+    margin-left: .86rem;
+    width: calc(35.15%);
+    border: 1px solid #07235B;
+}
+.last-dot::after{
+    content: none; 
+}
+.dot.active {
+    border: 1px solid #07235B;
+    background-color: #07235B;
+}

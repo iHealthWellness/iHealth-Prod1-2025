@@ -1,0 +1,167 @@
+/* Dark background for the survey form with a blur effect */
+.MuiDialog-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: 99999;
+  backdrop-filter: blur(5px);
+}
+
+.MuiPaper-root {
+  width: 71.25rem;
+  height: 68.75rem;
+}
+
+.form-container {
+  align-items: center;
+  margin: 4rem 0;
+}
+
+.top-section {
+  text-align: center;
+  position: relative;
+}
+
+.top-section .progress-bar-section {
+  margin: 1rem 25%;
+}
+
+.survey-close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.nav-content-section {
+  display: grid;
+  grid-template-columns: 16rem 1fr;
+  gap: 4.8rem;
+  align-items: start;
+  position: relative;
+}
+
+.nav-content-section-review {
+  grid-template-columns: 1fr;
+}
+
+.form-content-section {
+  border-radius: 0.625rem;
+  outline: 2px solid var(--Neutral-100, #d9d9d9);
+  padding: 2.5rem 2.3rem 1.3rem 2.6rem;
+}
+
+.form-container .main-section {
+  margin-inline: 3rem;
+}
+
+.main-section .form-actions {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2.9rem;
+  gap: 1.7rem;
+}
+
+.form-actions > :first-child {
+  margin-right: auto;
+}
+
+.form-actions button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.not-finished.invisible {
+  visibility: hidden;
+}
+
+.radio-options-container label img {
+  padding-left: 0.5rem;
+}
+
+.form-content-section-footer {
+  position: absolute;
+  color: var(--SN-Primary-Headings-07235B, #07235b);
+  right: 1.5rem;
+  bottom: 1rem;
+}
+
+.form-content-section .SN-D-T-M-B-16 {
+  font-weight: 400;
+}
+
+.custom-dialog-congratulatory {
+  width: 100%;
+  height: 500px;
+}
+
+.MuiDialog-container > div {
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  .progress-bar-survey span,
+  .text-section,
+  .survey-form-user,
+  .form-content-section-footer {
+    display: none;
+  }
+
+  .form-container {
+    margin: 2rem 0;
+  }
+
+  .nav-content-section {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 3rem;
+  }
+  .form-container .main-section {
+    margin-inline: 0;
+  }
+
+  .nav-content-section {
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  .form-content-section {
+    padding-right: 0rem;
+    padding-left: 2rem;
+  }
+  .MuiPaper-root {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 605px) {
+  .form-content-section {
+    max-height: 650px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  .radio-options-container > div {
+    max-width: 300px;
+    margin-right: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main-section .form-actions {
+    gap: 1rem;
+  }
+  .main-section .MuiDialogActions-root > :not(:first-of-type) {
+    margin: 0;
+  }
+
+  .main-section .MuiDialogActions-root {
+    padding-block: 2rem 0;
+  }
+  .form-container .main-section .nav-content-section form {
+    gap: 1rem;
+  }
+  .form-content-section {
+    padding: 1.7rem 2.3rem 2.3rem 2.6rem;
+    max-height: 250px;
+  }
+}

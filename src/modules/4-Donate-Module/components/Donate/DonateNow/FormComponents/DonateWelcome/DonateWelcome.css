@@ -1,0 +1,160 @@
+#guest-cont{
+    min-width: 30vw;
+    min-height: 50vh;
+    width:50vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+}
+
+.mod3{
+    position: absolute;
+    /* top: 10%; */
+    max-height: 50vw;
+    width:30vw;
+    max-width: 90vw;
+    height: auto;
+    border-radius: 20px;
+    background-color: #F8FAFC;
+    border: 1px solid #07235B;
+    display: flex;
+    justify-content: center;
+  }
+
+.donate-welcome-close-btn{
+    position: absolute;
+    left: 93%;
+    top: 5%;
+}
+
+.donate-welcome-close-btn button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.donate-welcome-wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    gap: 1.5rem;
+    padding: 3rem 0rem;
+}
+
+.donate-welcome-wrap h1{
+    font-weight: 600;
+    font-size: 2.25rem;
+    max-width: 391px;
+}
+
+.donate-welcome-text{
+    display: flex;
+    justify-content: center;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.donate-welcome-text p{
+    position: relative;
+    padding: .5rem;
+    /* max-width: 80%; */
+    text-align: center;
+    line-height: 1.5rem;
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+.donate-welcome-btn-cont{
+    min-width: 75%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.donate-welcome-btn-cont button{
+    /* min-width: 8.25rem;
+    padding: .75rem 2.25rem; */
+    /* background: #0D99FF; */
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.donate-welcome-btn-cont button img{
+    max-height: 9rem;
+    max-width: 9rem;
+    min-height: 9rem;
+    min-width: 9rem;
+}
+
+.donate-welcome-bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.donate-welcome-or{
+    width: 75vw;
+    max-width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.donate-welcome-guest{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .25rem;
+    font-size: 20px;
+}
+
+.donate-welcome-guest button{
+    border: none;
+    background-color: transparent;
+    font-size: 1rem;
+    color: #0D99FF;
+    text-decoration: underline;
+    text-decoration-color: #0D99FF;
+    cursor: pointer;
+}
+
+.span-blue{
+    color: #0D99FF;
+}
+
+@media screen and (max-width: 290px) {
+
+    .donate-welcome-text p{
+        min-width: 95%;
+    }
+
+    .donate-welcome-btn-cont button{
+        min-width: 6rem;
+        padding: .75rem 1.25rem;
+    }
+}
+
+
+    /* GALAXY FOLD */
+    @media only screen and (max-width:280px) {
+        .mod2{
+            top: 0%;
+        }
+        .donate-welcome-wrap{
+            gap: 0rem;
+        }
+    }
+
+
+
+
+    

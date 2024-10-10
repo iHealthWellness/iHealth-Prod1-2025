@@ -1,0 +1,76 @@
+.main-changes-saved {
+  position: relative;
+}
+
+.main-changes-saved button {
+  transition: all 0.5s ease;
+}
+
+button.not-finished,
+button.submit-next-page {
+  text-align: center;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 0.6rem 1.25rem;
+  border-radius: 0.5rem;
+}
+
+button.not-finished {
+  border: 2px solid var(--SN-Primary-Headings-07235B, #07235b);
+  background: var(--Neutral-White, #fff);
+  color: var(--SN-Primary-Headings-07235B, #07235b);
+}
+
+button.submit-next-page {
+  background: var(--SN-Light-Blue, #0d99ff);
+  border: 2px solid transparent;
+  color: var(--Neutral-White, var(--Shade-White, #fff));
+}
+
+button.disabled {
+  background-color: var(--Neutral-200, #c2c7d6);
+}
+
+.grey-check {
+  color: rgb(141, 140, 142);
+  font-size: 1rem;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.changes-saved {
+  opacity: 0;
+  position: absolute;
+  display: flex;
+  left: -1.5rem;
+  gap: 0.3rem;
+  margin-top: 1rem;
+  visibility: hidden;
+  animation-name: fadeInOut;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.changes-saved.show {
+  visibility: visible;
+}
+
+@media screen and (max-width: 480px) {
+  button.not-finished,
+  button.submit-next-page {
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
+  }
+}

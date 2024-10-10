@@ -1,0 +1,113 @@
+* {
+  text-decoration: none;
+}
+
+.nav-dropdown-container {
+  display: flex;
+  z-index: 2;
+}
+
+.nav-dropdown-menu-button {
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.nav-dropdown-menu-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.nav-dropdown-links-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  list-style: none;
+  z-index: 2;
+  width: 165px;
+  font-size: 14px;
+}
+
+.nav-dropdown-links-listitem {
+  background-color: #07235b;
+  color: #ffff;
+}
+
+.nav-dropdown-links {
+  color: #ffff;
+  text-decoration: none;
+}
+.nav-links-nav-about-us {
+  text-decoration: none;
+  color: #ffff;
+}
+
+.nav-dropdown-links {
+  display: block;
+  padding: 12px 16px;
+  color: #ffff;
+  text-decoration: none;
+}
+
+.nav-dropdown-links-listitem a {
+  color: #fff;
+}
+
+.nav-dropdown-links-listitem.active .nav-dropdown-links {
+  color: #fff;
+}
+
+/* 
+======================================
+Additional CSS After Code Refactoring
+======================================
+*/
+.nav-dropdown-hidden {
+  display: none;
+}
+
+.nav-dropdown-contents {
+  position: absolute;
+  background-color: #07235b;
+  top: auto;
+  left: 100%;
+  min-width: 162px;
+  z-index: 1;
+  list-style: none;
+}
+
+.items {
+  display: block;
+  padding: 1rem 0.8rem;
+  color: #fff;
+}
+
+.items:hover {
+  background-color: #0d99ff;
+}
+
+.border {
+  display: block;
+  padding: 12px 16px;
+  text-decoration: underline 1.5px;
+}
+
+.border::after {
+  content: "  >";
+  font-size: 18px;
+}
+
+.nav-links-listitem {
+  background-color: transparent;
+  padding: 0;
+}
+
+@media only screen and (min-width: 1024px) {
+  .nav-dropdown-container {
+    display: none;
+  }
+}

@@ -1,0 +1,224 @@
+.outerBox {
+    width: 100%;
+    max-width: 100%;
+    font-family: 'Roboto', sans-serif;
+    border-width: 1px;
+    display: flex;
+    /* Main direction is vertical */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #DCE8F2;
+}
+
+/* Tabs for Audience */
+#mySegmentedControlContainer {
+    width: 100%;
+    max-width: 100%;
+    position: sticky;
+    top:0;
+    z-index: 100;
+    padding: 0 14rem;
+}
+
+@media screen and (max-width: 768px) {
+    #mySegmentedControlContainer {
+    padding: 0 12rem 0 8.5rem;
+    }
+}
+@media screen and (max-width: 1024px) {
+    #mySegmentedControlContainer {
+    padding: 0 12rem 0 8.5rem;
+    }
+}
+@media screen and (max-width: 480px) {
+    #mySegmentedControlContainer {
+    padding: 0 1.5rem;
+    }
+}
+
+.segmentedControl {
+    display: flex;
+    border-radius: 8px;
+    background-color: #DCE8F2;
+    border-radius: 60px;
+    border: 1px solid #A6A6A6;
+    position: sticky;
+    top: 0;
+    height: 70px;
+    width: 100%;
+    z-index: 1000;
+    padding: 4px;
+}
+
+.segment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    text-align: center;
+    padding: 12px;
+    cursor: pointer;
+    /* color: #acacac; */
+    color: #07235B;
+    transition: color 0.3s ease-in-out, border-bottom-color 0.3s ease-in-out; 
+    border-bottom: 3px solid transparent; 
+}
+
+.segment:hover {
+    transform: scale(1.2);
+}
+
+.segment.selected {
+    font-size: larger;
+    height: 60px;
+    margin: auto;
+    border-radius: 40px;
+    /* background-color: #676668; */
+    /* color: white;  */
+    transform: scale(1.0);
+    width: 50%;
+}
+
+.segmentedControl .segment.selected:nth-child(1){
+    background-color: #07235B;
+    color: white;
+}
+.segmentedControl .segment.selected:nth-child(2){
+    background-color: #9ad4ff;
+    color: #07235B;
+}
+
+.segmentedControl .segment.selected:nth-child(3){
+    background-color: #94f9d2;
+    color: #07235B;
+}
+
+.segmentedControl .segment.selected:nth-child(4) {
+    background-color: #F1B2C7;
+    color: #07235B;
+} 
+
+.h4Container {
+    color: #07235b;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+/* CSS for Displaying Cards */
+
+.innerBox{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    /* Positions items at (cross) vertical axis */
+    align-items: flex-start;
+    /* Aligns item itself */
+    align-self: center;
+    margin-top: 5px;
+}
+
+/* Card Section */
+.cardBox{
+    display: flex;
+    padding: 50px;
+    align-self: center;
+    justify-content: center;
+}
+
+.card {
+    display: grid;
+    /* grid-template-columns: repeat(2, minmax(200px, 1fr)); */
+    flex-basis: 30%;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    width: 325px;
+    height: 199px;
+    align-items: center;
+    
+}
+
+.listItem{
+    display: grid;
+    row-gap:20px;
+    column-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.row {margin: 0 -5px;}
+
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+}  
+
+
+.audienceBox{
+    color: white;
+    text-align: center;
+    border-radius: 15px;
+    width: 101px;
+    height: 27px;
+    color: #07235B;
+} 
+
+.subcategoryBox{
+    color: #07235B;
+    background-color: #ECECEC;
+    text-align: center;
+    border-radius: 15px;
+    width: 75px;
+    height: 22px;
+    padding: 1.5px 10.5px;
+}
+
+.subcategoryBox:first-child{
+    margin-right: 10px;
+}
+
+.cardLink{
+    color: black;
+}
+
+.focusBox{
+    color: #07235b;
+    text-align: center;
+    border-radius: 15px;
+    width: 75px;
+    height: 22px;
+} 
+
+/* Responsive Design */
+/* Max width - larger px at top, min width is opposite */
+@media only screen and (max-width: 1060px) {
+    .listItem{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width: 860px){
+    .innerBox{
+        flex-direction: column;
+    }
+    .cardBox{
+        padding: 0;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .segmentedControl {
+        height: 70px;
+        width: 100%;
+    }
+    .segment.selected{
+        width: 100%;
+    }
+}
+

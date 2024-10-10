@@ -1,0 +1,806 @@
+/* Font family style */
+.modal {
+  font-family: "Work Sans";
+  font-style: normal;
+}
+
+/* css styling for the close modal icon */
+
+.close {
+  display: flex;
+  flex-direction: row;
+  color: #a3aac2;
+  margin-left: 96%;
+  padding-top: 5px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+/* logo styling */
+.community__logo {
+  text-align: center;
+}
+
+.community__logo img {
+  height: 50px;
+}
+
+/* Modal popup styling */
+
+.jct-holder {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 999;
+  top: 0px;
+  padding: 20;
+  left: 0px;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.7);
+  place-content: center;
+  align-items: center;
+}
+
+.mod1 {
+  width: 700px;
+  border-radius: 20px;
+  background-color: #f8fafc;
+  border: 1px solid #07235b;
+}
+
+/* The bottom ellipse styling */
+.xxx {
+  /* width: 700px; */
+  height: 130px;
+}
+
+.xxx-img {
+  height: 127px;
+  width: 100%;
+  margin-top: -30px;
+  background-color: transparent;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.modal {
+  height: 260px;
+  background-color: #f8fafc;
+  border: none;
+}
+
+.Login_down {
+  background-color: #07235b;
+  height: 180px;
+  /* width: 100%; */
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-top: -170px;
+}
+
+/* css styling for the form header */
+
+.gdt-head {
+  text-align: center;
+}
+
+.gdt__p {
+  font-size: 15px;
+  color: #c33418;
+  font-weight: 400;
+}
+
+.gdt-head h1 {
+  color: #07235b;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.pxp1 {
+  text-align: center;
+  color: #0d99ff;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 0 17%;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.progressbar {
+  text-align: center;
+  width: 50%;
+  margin: auto;
+}
+
+.progressbar__img {
+  /* width: 80%; */
+  height: 17px;
+}
+
+.progressbar__img1 {
+  height: 17px;
+  margin: 10px 0;
+}
+
+/* FORM STYLING */
+
+.form__content {
+  margin: 5px 10% 0 10%;
+}
+
+.input {
+  position: relative;
+  margin-bottom: 13px;
+  /* width: 100vw; */
+}
+
+.input__textarea {
+  position: relative;
+}
+
+.input__field {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #e0e3eb;
+  border-radius: 4px;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.input__label {
+  position: absolute;
+  margin-top: 8px;
+  left: 10px;
+  font-size: 12px;
+  font-weight: 400;
+  /* color: #A3AAC2; */
+  color: #000000;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.input__labelx {
+  position: absolute;
+  margin-top: 8px;
+  left: 10px;
+  font-size: 12px;
+  font-weight: 400;
+  /* color: #A3AAC2; */
+  color: #000000;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.opt__gdt::after {
+  content: "*";
+  color: red;
+  font-size: 15px;
+}
+
+.input__labelx::after {
+  content: "*";
+  color: red;
+  font-size: 15px;
+}
+
+.input__label::after {
+  content: "*";
+  color: red;
+  font-size: 15px;
+}
+
+/* SET THE BACKGROUND COLOR OF THE INPUT FIELD ON INPUT OF A TEXT */
+
+.input-filled {
+  background-color: #ffffff;
+  /* color: #ffffff; */
+}
+
+.input__field:disabled {
+  background-color: #ffffff94;
+}
+
+.input:-internal-autofill-selected {
+  background-color: #0d99ff;
+}
+
+.textarea__field {
+  width: 100%;
+  height: 60px;
+  padding: 10px;
+  border: 1.5px solid #e0e3eb;
+  border-radius: 0px;
+  background-color: #ffffff;
+  resize: none;
+  cursor: pointer;
+}
+
+.textarea__label {
+  position: absolute;
+  margin-top: 5px;
+  left: 10px;
+  font-size: 12px;
+  font-weight: 400;
+  /* color: #A3AAC2; */
+  color: #000000;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.pxp2 {
+  color: #667299;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.pxp2::before {
+  content: "*";
+  color: red;
+  font-size: 15px;
+  /* color: rgba(237, 101, 101, 1); */
+}
+
+.btnx {
+  text-align: center;
+}
+
+.btnx button {
+  position: relative;
+  top: 80px;
+  font-size: 20px;
+  font-weight: 200;
+  padding: 5px 14px;
+  width: 252.84px;
+  background: #0d99ff;
+  border-radius: 20px;
+  color: #ffffff;
+  border: 1px solid #0d99ff;
+  z-index: 1;
+}
+
+.btnx button:hover {
+  background-color: #062758;
+  border: 1px solid #ffffff;
+}
+
+/* ON INPUT FIELD PLACEHOLDER IS SET TO DISPLAY OF NONE */
+
+.input__field:focus ~ .input__label,
+.input__field:not(:placeholder-shown) ~ .input__label {
+  z-index: -1;
+}
+
+.input__field:focus ~ .input__labelx,
+.input__field:not(:placeholder-shown) ~ .input__labelx {
+  z-index: -1;
+}
+
+.textarea__field:focus ~ .textarea__label,
+.textarea__field:not(:placeholder-shown) ~ .textarea__label {
+  z-index: -1;
+}
+
+.hidden-label {
+  display: none;
+}
+
+/* .input__label:is(:where(isSubmitted2)) {
+  display: none;
+} */
+
+/* CONDITION DROPDOWN STYLING */
+.custom-select {
+  color: #ffffff;
+}
+
+.select-selected img {
+  float: right;
+  margin: 6px 0;
+}
+
+.select-items {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  max-height: 150px;
+  width: 100%;
+  color: black;
+  font-size: 15px;
+  overflow-y: auto;
+  z-index: 2222;
+}
+
+/* .same-as-selected{
+  color: #0D99FF;
+}
+
+.same-as-selected1{
+  color: #062758;
+} */
+
+/* Highlight the dropdown options on hover */
+.select-items div:hover {
+  background-color: #0d99ff;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+/* Highlight the selected dropdown option*/
+.same-as-selected {
+  background-color: #e0e0e0;
+  color: #000000;
+}
+
+/* Track */
+.select-items::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Handle */
+.select-items::-webkit-scrollbar-thumb {
+  background-color: #07235b;
+  border-radius: 6px;
+}
+
+/* Track on hover
+.select-items::-webkit-scrollbar:hover {
+  width: 5px; 
+}
+
+Handle on hover
+.select-items::-webkit-scrollbar-thumb:hover {
+  background-color: #555; 
+}
+
+Button (up and down arrows)
+select::-webkit-scrollbar-button {
+  display: none; 
+} */
+
+/* input validation message styling */
+.error-msg {
+  position: absolute;
+  margin-top: -12px;
+  left: 3%;
+  color: red;
+  font-size: 12px;
+  transform: translate(-10%, -10%);
+}
+
+/* preloader displayed on form submission */
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 47%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  border: 10px solid #062758;
+  border-top: 10px solid #f1f1f1;
+  border-radius: 50%;
+  /* Animation for the spinning element */
+  animation: spin 1s linear infinite;
+  z-index: 100;
+}
+
+.loader1 {
+  position: absolute;
+  top: 5px;
+  left: 49%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  border: 2px solid #062758;
+  border-top: 2px solid #f1f1f1;
+  border-radius: 50%;
+  /* Animation for the spinning element */
+  animation: spin 1s linear infinite;
+  z-index: 100;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .xxx-img {
+    height: 137px;
+  }
+  .form__content {
+    margin: 5px 5% 0 5%;
+  }
+
+  .btnx button {
+    top: 87px;
+  }
+
+  .loader {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    border: 5px solid #062758;
+    border-top: 5px solid #f1f1f1;
+    border-radius: 50%;
+    /* Animation for the spinning element */
+    animation: spin 1s linear infinite;
+    z-index: 1;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  .mod1 {
+    margin: 0;
+    border-radius: 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .gdt__p1 {
+    margin-top: 20px;
+  }
+
+  .progressbar__img1 {
+    width: 50%;
+    height: 10px;
+    margin: 35px 0;
+  }
+
+  .close {
+    margin-left: 92%;
+  }
+
+  .modal {
+    clip-path: circle(170% at 50% -67%);
+  }
+
+  .Login_down {
+    height: 130px;
+    width: 100%;
+    margin-top: -130px;
+  }
+
+  .loader {
+    position: absolute;
+    top: 45%;
+    left: 35%;
+  }
+
+  .btnx button {
+    font-size: 14px;
+    width: 222.84px;
+  }
+}
+
+@media only screen and (min-width: 290px) and (max-width: 360px) {
+  .mod1 {
+    margin: 0;
+    border-radius: 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .modal {
+    clip-path: circle(137% at 50% -53%);
+  }
+
+  .Login_down {
+    height: 200px;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 370px) and (max-width: 380px) {
+  .mod1 {
+    margin: 0;
+    border-radius: 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .modal {
+    clip-path: circle(137% at 50% -53%);
+  }
+
+  .Login_down {
+    height: 200px;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 381px) and (max-width: 395px) {
+  .mod1 {
+    margin: 0;
+    border-radius: 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .Login_down {
+    height: 200px;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 395px) and (max-width: 415px) {
+  .mod1 {
+    margin: 0;
+    border-radius: 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .modal {
+    clip-path: circle(137% at 50% -58%);
+  }
+
+  .Login_down {
+    height: 200px;
+    width: 100%;
+  }
+}
+
+/* SURFACE PRO STYLING */
+
+@media only screen and (min-width: 520px) and (max-width: 590px) {
+  .mod1 {
+    margin: 0 0%;
+  }
+
+  .close {
+    margin-left: 92%;
+    font-size: 30px;
+  }
+
+  .modal {
+    clip-path: circle(114% at 50% -50%);
+  }
+
+  .Login_down {
+    height: 200px;
+    width: 100%;
+  }
+
+  .btnx button {
+    margin-top: 135px;
+  }
+}
+
+/* Mobile styling */
+
+/* Adjustments for smaller screens */
+@media (max-width: 767px) {
+  .mod1 {
+    width: 90vw;
+    margin: 30px 5%;
+    border-radius: 20px;
+  }
+
+  .close {
+    margin-left: 92%;
+  }
+
+  .gdt-head h1 {
+    font-size: 20px;
+  }
+
+  .pxp1 {
+    font-size: 12px;
+    padding: 0 10%;
+  }
+
+  .progressbar__img {
+    width: 50%;
+    height: 10px;
+    margin-bottom: 5px;
+  }
+
+  .progressbar__img1 {
+    width: 50%;
+    height: 10px;
+    margin: 10px 0;
+  }
+
+  .input__field,
+  .input__field1,
+  .textarea__field,
+  .textarea__field1 {
+    width: 100%;
+    padding: 8px;
+  }
+
+  .pxp2 {
+    font-size: 12px;
+  }
+
+  .error-msg {
+    left: 17.5%;
+    font-size: 10px;
+  }
+}
+
+/* MINI TABLET STYLING */
+
+@media only screen and (min-width: 768px) and (max-width: 810px) {
+  .mod1 {
+    width: 70vw;
+    margin: 30px 15%;
+  }
+
+  .modal {
+    clip-path: circle(108% at 50% -50%);
+  }
+
+  .Login_down {
+    height: 230px;
+    width: 100%;
+  }
+
+  .progressbar__img {
+    width: 50%;
+    height: 10px;
+    margin-bottom: 5px;
+  }
+
+  .progressbar__img1 {
+    width: 50%;
+    height: 10px;
+    margin: 10px 0;
+  }
+
+  .error-msg {
+    left: 23.5%;
+  }
+
+  .jct-holder {
+    top: 28px;
+  }
+
+  .xxx {
+    height: 160px;
+  }
+
+  .xxx img {
+    height: auto;
+  }
+
+  .btnx button {
+    top: 110px;
+  }
+
+  .close_img {
+    position: relative;
+    top: 130px;
+    left: 0;
+    height: 47px;
+  }
+}
+
+/* IPAD STYLING */
+
+@media only screen and (min-width: 810px) and (max-width: 830px) {
+  .mod1 {
+    width: 70vw;
+    margin: 30px 15%;
+  }
+
+  .modal {
+    clip-path: circle(100% at 50% -45%);
+  }
+
+  .Login_down {
+    height: 200px;
+    width: 100%;
+  }
+
+  .loader {
+    position: absolute;
+    top: 50%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    border: 6px solid #062758;
+    border-top: 6px solid #f1f1f1;
+    border-radius: 50%;
+    /* Animation for the spinning element */
+    animation: spin 1s linear infinite;
+    z-index: 1;
+  }
+}
+
+/* SURFACE PRO STYLING */
+
+@media only screen and (min-width: 820px) and (max-width: 912px) {
+  .mod1 {
+    width: 70vw;
+    margin: 30px 15%;
+  }
+
+  .close {
+    margin-left: 92%;
+    font-size: 30px;
+  }
+
+  .modal {
+    clip-path: circle(102% at 50% -52%);
+  }
+
+  .error-msg {
+    left: 23.5%;
+  }
+}
+
+/* NEST HUB SCREEN STYLING */
+
+@media only screen and (min-width: 1020px) and (max-width: 1024px) {
+  .mod1 {
+    width: 70vw;
+    margin: 5px 15%;
+  }
+
+  .close {
+    font-size: 40px;
+  }
+
+  .Login_down {
+    height: 200px;
+    width: 100%;
+  }
+
+  .btnx button {
+    width: 230px;
+    padding: 5px 14px;
+    /* margin-top: 140px; */
+  }
+}
+
+/* NEST HUB PRO SCREEN STYLING */
+
+/* @media only screen and (min-width: 1030px) and (max-width: 1280px) {
+
+  .mod1 {
+    margin: 0 14%;
+  }
+
+  .modal {
+    height: 700px;
+    clip-path: circle(95% at 50% -55%);
+    border: none;
+  }
+
+  .Login_down {
+    background-color: #07235B;
+    height: 220px;
+    margin-top: -500px;
+  }
+
+  .textarea__label {
+    left: 180px;
+  }
+
+  .pxp2 {
+    margin-top: 40px;
+  }
+} */
+
+/* MINI DESKTOP SCREEN STYLING */
+
+@media only screen and (min-width: 1028px) and (max-width: 1035px) {
+  /* input validation message styling */
+  .error-msg {
+    left: 24%;
+  }
+}

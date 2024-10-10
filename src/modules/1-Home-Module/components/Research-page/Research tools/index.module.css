@@ -1,0 +1,46 @@
+@keyframes slideInOut {
+  0% {
+    transform: translateX(0);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(50%);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slideInText {
+  opacity: 0; 
+  animation: slideInOut 0.8s ease-in-out forwards;  
+}
+
+.mainSection {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: var(--SN-Primary-Headings-07235B, #07235b);
+}
+
+.mainSection section {
+  text-align: justify;
+}
+
+.title {
+  text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .title h1 {
+    font-size: 2.25rem;
+  }
+  .title h2 {
+    font-size: 1.87rem;
+  }
+  .mainSection section {
+    font-size: 1rem;
+  }
+}

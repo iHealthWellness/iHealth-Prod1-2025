@@ -1,0 +1,20 @@
+/* update with for provider lookup inputs */
+
+
+
+@media only screen and (min-width: 1024px) {
+  .provider-autocomplete.Disease {
+    min-width: 220px;
+    max-width: 269px;
+  }
+
+  .provider-autocomplete.Specialty {
+    min-width: 132px;
+    max-width: 198px;
+  }
+
+  .provider-autocomplete.City {
+    min-width: 100px;
+    max-width: 139px;
+  }
+}
