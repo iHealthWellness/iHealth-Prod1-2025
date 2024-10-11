@@ -2,7 +2,7 @@
 const DEFAULT_API_VERSION = "v1";
 // Note: We are using the same URL for both base and production.
 // Update this if you plan to have different URLs for each.
-const DEFAULT_BASE_URL = "https://ihealth-dev-3u0i.onrender.com/";
+const DEFAULT_BASE_URL = "https://ihealth-dev-3u0i.onrender.com";
 
 class Config {
   constructor() {
@@ -27,7 +27,13 @@ class Config {
     }
     return value;
   }
-
+// Method to get the Stripe API key
+get stripeKey() {
+  const DEFAULT_STRIPE_KEY = this._get("VITE_STRIPE_PUBLISHABLE_KEY", "Default Value -- Stripe Key not retrived");
+  console.log(DEFAULT_STRIPE_KEY);
+  console.log(import.meta.env);
+  return this.getString("VITE_STRIPE_PUBLISHABLE_KEY", DEFAULT_STRIPE_KEY); 
+}
   // Lazy getters for environment variables
   // Note: BASE_URL and BASE_URL are the same in our current setup.
   get baseUrl() {
@@ -45,4 +51,5 @@ const config = new Config();
 export const {
   baseUrl: BASE_URL,
   apiVersion: API_VERSION,
+  stripeKey
 } = config;

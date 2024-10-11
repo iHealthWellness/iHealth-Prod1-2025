@@ -15,7 +15,7 @@ import mobileLogo from "../../../Assets/Brand/logo-nav-mobile.png";
 import NavDropdownButton from "./NavDropdown";
 import Login from "../UserAuthentication/Login/Login";
 import UnderConstruction from "src/Components/Under-Construction/UnderConstruction";
-import ToTopBtn from "src/Components/About-Page-Layout/TotopBtn";
+import ToTopBtn from "../TotopBtn/index.jsx";
 import useScrollToAnchor from "src/hooks/useScrollToAnchor";
 
 /* 

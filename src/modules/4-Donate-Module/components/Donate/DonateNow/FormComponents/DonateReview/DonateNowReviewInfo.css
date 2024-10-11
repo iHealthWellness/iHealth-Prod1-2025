@@ -1,0 +1,279 @@
+.donatereview-section-wrap{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 1rem;
+  }
+  
+  .donatereview-main-cont{
+    min-width: 30vw;
+    width: 90%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+    padding: 0rem 1.5rem;
+  }
+  
+  .donate-review-form-heading1{
+    color: #07235B;
+    margin-bottom: 1.5rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  
+  .donatereview-row{
+    width: 100%;
+    padding: .25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .donatereview-row-items{
+    display: flex;
+    gap: .5rem;
+    justify-content: space-between;
+    align-items: center;
+    color: #07235B;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  
+  .donatereview-row button{
+    min-width: 137px;
+    padding: .575rem 1.75rem;
+    border-radius: 5px;
+    background-color: transparent;
+    font-weight: 500;
+    border:2px solid #07235B;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .donate-review-wrap{
+    width: 100%;
+    display: flex;
+  }
+  
+  .donate-review-cont{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    max-width: 500px;
+  }
+  
+  .donate-review-item{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+  }
+  
+  .donate-review-item label{
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    padding: 0px 0px 5px 5px;
+  }
+  
+  .donate-review-item-input{
+    min-width: 15.5rem;
+    height: 3.25rem;
+    max-height: 3.25rem;
+    padding: 8px;
+    border: 1.2px solid #DBD5D5;
+    border-radius: 8px;
+    background-color: #ffffff;
+  }
+  
+  
+  
+  
+  @media only screen and (max-width: 350px) {
+    .donate-review-form-heading1 {
+      margin-bottom: 1.5rem;
+  }
+  .donatereview-main-cont {
+    margin-bottom: 3rem;
+    width: 100%;
+    padding: 0rem;
+  }
+    .donatereview-row{
+      flex-direction: column;
+      gap: .25rem;
+    }
+    .donatereview-row-items{
+      white-space: nowrap;
+      min-width: 200px;
+      gap: 0rem;
+    }
+    .donatereview-row button{
+      max-width: 100px;
+      padding: .5rem 2rem;
+    }
+    .donate-review-cont {
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      align-items: center;
+  }
+    .donate-review-item-input {
+      min-width: 140px;
+      max-width: 140px;
+  }
+  .donate-review-item {
+    width: auto;
+  }
+    
+    }
+  
+  
+  @media only screen and (min-width: 350px) and (max-width: 430px) {
+    .donate-review-form-heading1 {
+      margin-bottom: 1.5rem;
+  }
+  .donatereview-main-cont {
+    margin-bottom: 3rem;
+    width: 100%;
+    padding: 0rem;
+  }
+    .donatereview-row{
+      gap: 2rem;
+    }
+    .donatereview-row-items{
+      white-space: nowrap;
+      width: 170px;
+      gap: 0rem;
+    }
+    .donatereview-row button{
+      min-width: 80px;
+      max-width: 100px;
+      padding: .5rem .5rem;
+    }
+    .donate-review-cont {
+      justify-content: space-evenly;
+      gap: 1rem;
+  }
+    .donate-review-item-input {
+      min-width: 140px;
+      max-width: 140px;
+  }
+  }
+  
+  @media only screen and (min-width: 390px) and (max-width: 540px) {
+    .donate-review-form-heading1 {
+      margin-bottom: 1.5rem;
+  }
+  .donatereview-main-cont {
+    margin-bottom: 3rem;
+  }
+    .donatereview-row{
+      gap: 2rem;
+    }
+    .donatereview-row-items{
+      white-space: nowrap;
+      width: 170px;
+      gap: 0rem;
+    }
+    .donatereview-row button{
+      min-width: 80px;
+      max-width: 100px;
+      padding: .5rem .5rem;
+    }
+    .donate-review-cont {
+      justify-content: space-evenly;
+      gap: 1rem;
+  }
+    .donate-review-item-input {
+      min-width: 140px;
+      max-width: 140px;
+  }
+  }
+  
+  @media only screen and (min-width: 540px) and (max-width: 720px) {
+    .donate-review-form-heading1 {
+      margin-bottom: 1.5rem;
+  }
+  .donatereview-main-cont {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+    .donatereview-row{
+      gap: 2rem;
+    }
+    .donatereview-row-items{
+      white-space: nowrap;
+      width: 170px;
+      gap: 0rem;
+    }
+    .donatereview-row button{
+      min-width: 80px;
+      max-width: 100px;
+      padding: .5rem .5rem;
+    }
+    .donate-review-cont {
+      justify-content: space-evenly;
+      gap: 1rem;
+  }
+    .donate-review-item-input {
+      min-width: 140px;
+      max-width: 140px;
+  }
+  }
+  
+  @media only screen and (min-width: 720px) and (max-width: 810px) {
+    .mod2{
+      min-width: 600px;
+      min-height: 300px;
+      height: fit-content;
+      max-height: fit-content;
+    }
+    .donatereview-main-cont {
+      width: 90%;
+    }
+    .donate-review-item-input {
+      min-width: 200px;
+  }
+  
+  }
+  
+  
+  /* SURFACE PRO STYLING */
+  
+  @media only screen and (min-width: 820px) {
+    .mod2{
+      min-width: 600px;
+      min-height: 300px;
+      height: fit-content;
+      max-height: fit-content;
+    }
+    .donatereview-main-cont {
+      width: 90%;
+    }
+    .donate-review-item-input {
+      min-width: 200px;
+  }
+  }
+  
+  
+   @media only screen and (min-width: 1024px) {
+    .mod2{
+      min-width: 600px;
+    }
+    .donatereview-main-cont {
+      width: 90%;
+    }
+    .donate-review-item-input {
+      min-width: 200px;
+  }
+  
+  } 
+  

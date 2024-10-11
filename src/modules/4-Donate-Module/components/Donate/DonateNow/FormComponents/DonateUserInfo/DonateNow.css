@@ -1,0 +1,11 @@
+.donate-now-form-wrap{
+    padding: 0rem 1.5rem;
+  }
+  
+  @media only screen and (max-width: 290px) {
+  .donatenow-btn-wrap{
+    max-width: 200px;
+    overflow: hidden;
+    border-radius: 5px;
+  }
+  }

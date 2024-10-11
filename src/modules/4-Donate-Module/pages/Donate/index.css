@@ -1,0 +1,30 @@
+/* Css animation rules */
+@import url('src/modules/4-Donate-Module/components/Donate/Utiility/SlideAnimationObserver/ObvserverAnimationCssrules.css');
+/* Css animation rules */
+
+#Donate-Main-Container {
+  padding: 0 7rem;
+  background: #f2f2f4;
+  width: 100%;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  #Donate-Main-Container {
+    padding: 0 5rem;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media only screen and (max-width: 576px) {
+  #Donate-Main-Container {
+    padding: 0;
+  }
+}
+
+/* ============================================ Responsıve Css Rules ============================================ */
+/* @media only screen and (max-width: 950px) {
+  #Donate-Main-Container {
+    padding: 0 3rem;
+  }
+} */

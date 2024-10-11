@@ -1,62 +1,31 @@
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
-import {
-  BrowserRouter as Router,
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
-import { BrowserRouter as Switch, Route } from "react-router-dom";
-import Home from "./Pages/Home/index";
-import Services from "./Pages/Services/index.jsx";
-import Aboutus from "./Pages/About-us";
-import Research from "./Pages/Research/index";
-import Signin from "./Pages/Sigin-in/index";
-import Signup from "./Pages/Sign-up/index";
-import Donate from "./Pages/Donate/index";
+import Home from "./0-Dev1-General/0-1-Landing-Page/pages/index";
 import RootLayout from "./Pages/Root";
-import Other from "./Pages/Other/index";
-import Team from "./Pages/Our-Team";
-import Termsofuse from "./Pages/Terms-of-use";
-import ProviderList from "./Pages/ProviderList/ProviderList.jsx";
+import { getAllRoutes } from "./modules/combinedRoutes";
+import { useEffect, useState } from "react";
 
-import Jobs from "./Pages/Job-Openings/Jobs";
-import LivingwithNf from "./Pages/Living-with-NF/index"
-import EEOTest from "./Pages/Term-of-use-EEO-test-page/index"
-import SurveyForm from "./Pages/Survey/index";
-// import Other from "./Pages/Other/index";
+async function setupRouter() {
+  const moduleRoutes = await getAllRoutes();
 
-function App() {
   const router = createBrowserRouter([
     {
       path: "/",
       element: <RootLayout />,
-      children: [
-        { index: true, element: <Home /> },
-        { path: "/services", element: <Services /> },
-        { path: "/ProviderList", element: <ProviderList /> },
-        { path: "/about-us", element: <Aboutus /> },
-        { path: "/research", element: <Research /> },
-        { path: "/sign-in", element: <Signin /> },
-        { path: "/sign-up", element: <Signup /> },
-        { path: "/donate", element: <Donate /> },
-        { path: "/our-team", element: <Team /> },
-        { path: "/other", element: <Other /> },
-        { path: "/terms-of-use", element: <Termsofuse /> },
-        { path: "/eeotest", element: <EEOTest /> },
-        { path: "/job-openings", element: <Jobs/>},
-        { path: "/livingwith-nf", element: <LivingwithNf/>},
-        { path: "/nf-survey", element: <SurveyForm /> },
-        // { path: "*", element: <Other /> },
-      ],
+      children: [{ index: true, element: <Home /> }, ...moduleRoutes],
     },
   ]);
+  return router;
+}
 
-  return (
-    <>
-      <RouterProvider router={router} />
+function App() {
+  const [router, setRouter] = useState(null);
 
-      {/* https://stackoverflow.com/questions/74297769/how-to-navigate-to-sections-with-id-as-well-as-pages-in-react-router-dom */}
-    </>
-  );
+  useEffect(() => {
+    setupRouter().then(setRouter);
+  }, []);
+
+  return router ? <RouterProvider router={router} /> : <div>Loading...</div>;
 }
 
 export default App;

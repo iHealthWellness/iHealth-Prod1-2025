@@ -1,0 +1,1 @@
+Add your assets for service module here

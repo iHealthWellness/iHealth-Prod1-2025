@@ -1,0 +1,382 @@
+#donateNowSelectAmount{
+    width: fit-content;
+    padding: 0rem 2rem;
+  }
+  .mod2{
+    position: absolute;
+    top: 2%;
+    height: fit-content;
+    border-radius: 20px;
+    background-color: #F8FAFC;
+    border: 1px solid #07235B;
+    max-width: 90vw;
+  }
+  .input__fields8{
+    padding:  0rem 0rem 0rem 1rem;
+    border: 1px solid darkgray;
+    border-radius: 10px;
+    background-color: #ffffff;
+    max-width: 235px;
+    font-size: 1.15rem;
+    font-weight: 600;
+  }
+  
+  
+  .dropdown-contents11 {
+    max-width: 133px;
+    max-height: 54px;
+    font-weight: bold;
+    border: 1px solid darkgray;
+    padding: 12px 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.25rem;
+  }
+  .dropdown-contents12 {
+    width: 106px;
+    height: 54px;
+    font-size: 1.15rem;
+    font-weight: bold;
+    border: 1px solid darkgray;
+    padding: .5rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+  }
+  
+  .input__labels5{
+    font-size: 1rem;
+    font-weight: bold;
+    color: #8B9094;
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+  .input__labels6{
+      font-size: 1.15rem;
+      font-weight: bold;
+  }
+  
+  .donate-freq-input-cont{
+    text-align: center;
+    /* margin-top: 1.25rem; */
+  }
+  
+  .donate-freq-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:.75rem;
+  }
+  
+  .input__labelserrormsg8 {
+    position: absolute;
+    margin-top: 2px;
+    left: 40%;
+    font-size: 12px;
+    font-weight: normal;
+    color: red;
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+  
+  .links1{
+    font-size: 24px;
+    font-weight: bold;
+    display: inline-flex;
+    gap: 2rem;
+    margin-bottom: .25rem;
+  }
+  
+  .activeLink1{
+  color:#07235B;
+  cursor: pointer;
+  text-decoration: underline;
+  }
+  
+  .inActiveLink1{
+  color:#8B9094;
+  cursor: pointer;
+  text-decoration: none;
+  }
+  
+  .sublink1
+  {
+    display: flex;
+  }
+  .sublink1 button{
+    width: fit-content;
+    padding: .75rem 3.75rem;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+  }
+  .sublink1 :where(#lblOneTime) {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  
+  .sublink1 :where(#lblRecurring) {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  .activeSubLink1{
+  cursor: pointer;
+  background: #07235B;
+  color: white;
+  
+  }
+  .inActiveSubLink1{
+  cursor: pointer;
+  color:#8B9094;
+  }
+  
+  .progressbarDonateNow{
+  text-align: center;
+  margin: auto;
+  }
+  
+  
+  .mod1 {
+  width: 650px;
+  border-radius: 20px;
+  background-color: #F8FAFC;
+  border: 1px solid #07235B;
+  }
+  
+  .donatenow-form-heading1
+  {
+    width: 100%;
+    font-size:1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: .75rem;
+    /* margin: 1rem; */
+  }
+  
+  .donatenow-amount-radio-btn input[type="radio"] {
+    display: none;
+  }
+  
+  .donatenow-amount-radio-btn span{
+    min-width: 72px;
+    min-height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.15rem;
+    border: 1px solid darkgray;
+    padding: .75rem 1.25rem;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  :checked + span {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .removeCheckedStyle {
+    background-color: transparent;
+    color: initial;
+  }
+  
+  .donatenow-other-amount-input{
+    width: 100%;
+    display: inline-flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: .95rem;
+  }
+  
+  .errorMessage {
+  color: red;
+  position: relative;
+  font-size: 12px;
+  justify-content: start;
+  left: .5rem;
+  }
+  
+  .hide
+  {
+    display:none;
+  }
+  
+  .donatenow-inner-cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .75rem;
+    padding: 0rem 5rem;
+  }
+  
+  .donatenow-form-cont{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .donatenow-amount-radio-cont{
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+  }
+  
+  .donatenow-checkbox-cont{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.5rem;
+    align-items: center;
+  }
+  
+  .donatenow-checkbox-wrap{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+  }
+  
+  .transactionField-cont{
+    display: flex;
+    gap:.75rem;
+  }
+  
+  .transactionField-cont input[type="checkbox"] {
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 5px;
+  }
+  
+  .transactionField-cont input[type="checkbox"] :checked{
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 5px;
+  }
+  
+  .form-btn-cont{
+    padding: 3.5rem 0rem 0rem 0rem;
+  }
+  
+  
+  
+  @media only screen and (max-width:540px) {
+    .donatenow-inner-cont{
+      max-width: 80vw;
+      padding: 0rem 3rem;
+    }
+  
+    .sublink1 button{
+      white-space: nowrap;
+      padding: .5rem 2.75rem;
+      font-size: 18px;
+    }
+  
+    .donatenow-form-heading1{
+      margin-bottom: .25rem !important;
+    }
+  
+    .input__labels6{
+      white-space: nowrap;
+    }
+  
+    .donatenow-amount-radio-cont{
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      gap: 1rem;
+    }
+    .donatenow-amount-radio-btn span{
+      min-width: 160px;
+      min-height: 42px;
+      font-size: 18px;
+      padding: 15px 30px 15px 30px;
+  }
+  
+  .donatenow-other-amount-input{
+    max-width: 350px;
+    margin-top: .95rem;
+  }
+  
+  .input__fields8{
+    max-width: 215px;
+    font-size: 18px;
+  }
+  .input__labels5{
+    font-size: 14px;
+    width: 100%;
+  }
+  
+  }
+  
+  
+  @media only screen and (max-width:430px) {
+  
+    .links1{
+      font-size: 16px;
+    }
+  
+    .sublink1 button{
+      white-space: nowrap;
+      padding: .5rem 1.75rem;
+      font-size: 18px;
+    }
+  
+    .donatenow-form-heading1{
+      margin-bottom: .25rem !important;
+    }
+  
+    .input__labels6{
+      white-space: nowrap;
+      font-size: 16px;
+    }
+    
+    .dropdown-contents11{
+      max-width: 106px;
+      font-size: 20px;
+    }
+  
+    .donatenow-amount-radio-cont{
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+    .donatenow-amount-radio-btn span{
+      min-width: 132px;
+      min-height: 42px;
+      font-size: 18px;
+      padding: 15px 30px 15px 30px;
+  }
+  
+  .donatenow-other-amount-input{
+    max-width: 280px;
+    margin-top: .95rem;
+  }
+  
+  .input__fields8{
+    max-width: 179px;
+    font-size: 18px;
+  }
+  .input__labels5{
+    font-size: 14px;
+    width: 100%;
+  }
+  
+  }
+  
+  
+  
+  @media only screen and (max-width:390px) {
+  
+    .mod2{
+      top: 1% !important;
+    }
+  
+  }
+  
+  
+  /* 360x640 (small mobile)
+  1366x768 (average laptop)
+  1920x1080 (large desktop)
+  375x667 (average mobile)
+  1440x900 (average desktop)
+  720x1280 (large mobile) */
