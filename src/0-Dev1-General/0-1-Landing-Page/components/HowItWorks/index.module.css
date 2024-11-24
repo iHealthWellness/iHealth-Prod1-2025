@@ -1,54 +1,67 @@
-.how-it-works-container {
+.howItWorksContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 2rem;
+  padding: 2rem 2rem;
+  width: 100%;
 }
 
-/* This is just an example, adjust the max-width as needed for your design */
-@media screen and (max-width: 468px) {
+@media screen and (max-width: 620px) {
   .learn-more-card {
     display: none;
   }
 }
 
-.how-it-works-heading {
+.howItWorksHeading {
   color: #062758;
 }
 
 
-.how-it-works-cards {
+.howItWorksCards {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 1rem;
 }
 
-@media only screen and (min-width: 480px) and (max-width: 1024px) {
-  .how-it-works-heading {
+@media only screen and (max-width: 620px) {
+  .howItWorksCards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+   
+}
+
+
+
+@media only screen and (min-width: 620px) and (max-width: 1024px) {
+  .howItWorksHeading {
     padding: 5rem 0;
   }
 
-  .how-it-works-cards {
+  .howItWorksCards {
     display: grid;
     /* max-width: 448px; */
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     align-items: start;
-    row-gap: 2rem;
+    /* row-gap: 2rem; */
   }
 }
 
+
 @media only screen and (min-width: 1024px) {
-  .how-it-works-container {
+  .howItWorksContainer {
     padding: 5rem 0;
   }
 
-  .how-it-works-heading {
+  .howItWorksHeading {
     padding-bottom: 5rem;
   }
 
-  .how-it-works-cards {
+  .howItWorksCards {
     width: 90%;
     max-width: 1216px;
     display: grid;
@@ -75,7 +88,7 @@
 } */
 
 /* @media only screen and (max-width: 767px) {
-  .how-it-works-cards-container {
+  .howItWorksCards-container {
     width: 80%;
     max-width: 300px;
     display: flex;
@@ -93,7 +106,7 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-  .how-it-works-cards-container {
+  .howItWorksCards-container {
     width: 80%;
     grid-template-columns: repeat(2, 1fr);
     row-gap: 3rem;

@@ -1,6 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-
-import "./index.css";
+import styles from "./index.module.css";
 
 const PartnerTextCard = ({ partner }) => {
   const { heading, subheading, content, list } = partner;
@@ -24,23 +23,24 @@ const PartnerTextCard = ({ partner }) => {
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
   return (
     <div
-      className={`partner-text-card ${slideIn ? "slide-in" : ""}`}
+      className={`${styles["partner-text-card"]} ${slideIn ? styles["slide-in"] : ""}`}
       ref={slideInRef}
     >
-      <h3 className="partner-text-heading SN-D-Home-H2-32">{heading}</h3>
-      <h2 className="partner-text-subheading SN-D-Home-H3-24">{subheading}</h2>
+      <h3 className={`${styles["partner-text-heading"]} SN-D-Home-H2-32`}>{heading}</h3>
+      <h2 className={`${styles["partner-text-subheading"]} SN-D-Home-H3-24`}>{subheading}</h2>
       {content &&
         content.map((text) => (
-          <p key={text} className="partner-text SN-D-P-20">
+          <p key={text} className={`${styles["partner-text"]} SN-D-P-20`}>
             {text}
           </p>
         ))}
       {list &&
         list.map((item) => (
-          <p key={item} className="partner-text SN-D-P-20 partner-text-list">
-            <span className="partner-text SN-D-P-20 partner-text-span">
+          <p key={item} className={`${styles["partner-text"]} SN-D-P-20 ${styles["partner-text-list"]}`}>
+            <span className={`${styles["partner-text-span"]} SN-D-P-20`}>
               &#10004;{" "}
             </span>
             {item}
@@ -48,7 +48,7 @@ const PartnerTextCard = ({ partner }) => {
         ))}
 
       <a
-        className="partner-link partner-text"
+        className={`${styles["partner-link"]} ${styles["partner-text"]}`}
         onClick={() => {
           document.querySelector("#UnderConst-wrapper").style.display = "flex";
         }}

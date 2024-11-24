@@ -1,5 +1,5 @@
 import React from "react";
-import "./index.css";
+import styles from "./index.module.css";
 import step5Image from "src/Assets/Images/Learn-more.jpg";
 
 const underConstruction = () => {
@@ -9,12 +9,12 @@ const underConstruction = () => {
 const LearnMoreCard = ({ isVisible }) => {
   return (
     <div
-      className={`lmc-container make-invisible ${
-        isVisible ? "lmc-visible" : ""
+      className={`${styles.lmcContainer} ${styles.makeInvisible} ${
+        isVisible ? styles.lmcVisible : ""
       }`}
     >
-      <a onClick={underConstruction} className="lmc-button">
-        <img src={step5Image} alt="an image" />
+      <a onClick={underConstruction} className={styles.lmcButton}>
+        <img src={step5Image} alt="an image" className={styles.lmcImage} />
       </a>
     </div>
   );

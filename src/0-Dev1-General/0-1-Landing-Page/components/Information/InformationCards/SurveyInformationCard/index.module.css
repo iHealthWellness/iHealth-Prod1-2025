@@ -1,4 +1,4 @@
-.outer-card-container {
+.outerCardContainer {
   display: flex;
   justify-content: center;
   align-items: stretch;
@@ -7,7 +7,7 @@
   padding: 3.94rem 0 7rem 0;
 }
 
-.card-container {
+.cardContainer {
   width: 22.125rem;
   height: auto;
   box-shadow: 0px 4px 6px -4px rgba(0, 0, 0, 0.1),
@@ -20,7 +20,7 @@
   justify-content: space-between;
 }
 
-.card-container:hover {
+.cardContainer:hover {
   transform: scale(1.08);
 }
 
@@ -35,7 +35,7 @@
   }
 }
 
-.card-header {
+.cardHeader {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,33 +44,33 @@
   padding: 1.13rem 0 1.56rem 0;
 }
 
-.part-1,
-.part-2 {
+.part1,
+.part2 {
   color: var(--White, var(--Shade-White, #fff));
 }
 
-.part-1 {
+.part1 {
   padding-right: 0.6rem;
 }
 
-.images-container {
+.imagesContainer {
   text-align: center;
   padding: 1.19rem 0 1rem 0;
   width: 100%;
   object-fit: cover;
 }
 
-.content-section p {
+.contentSection p {
   padding: 0 1.87rem 0.69rem;
   color: var(--SN-Primary-Headings-07235B, #07235b);
 }
 
-.btn-container {
+.btnContainer {
   float: right;
 }
 
-.btn-container button {
-  display: flex; /* Makes the button an inline-level block container */
+.btnContainer button {
+  display: flex;
   justify-content: center;
   align-items: center;
   margin: 0.69rem 1.87rem 1.56rem 0;
@@ -80,12 +80,12 @@
   background: #fff;
 }
 
-.button-img {
+.buttonImg {
   padding-left: 0.66rem;
 }
 
 @media screen and (max-width: 1024px) {
-  .outer-card-container {
+  .outerCardContainer {
     justify-content: space-evenly;
     align-items: stretch;
     gap: 3rem;
@@ -93,7 +93,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .outer-card-container {
+  .outerCardContainer {
     gap: 1rem;
     padding-bottom: 3.8rem;
     padding-inline: 1rem;
@@ -101,14 +101,14 @@
 }
 
 @media screen and (max-width: 576px) {
-  .outer-card-container {
+  .outerCardContainer {
     flex-direction: column;
     align-items: center;
     gap: 2.5rem;
     margin-bottom: 3rem;
     padding-top: 0.5rem;
   }
-  .card-container {
+  .cardContainer {
     width: 90%;
   }
 }

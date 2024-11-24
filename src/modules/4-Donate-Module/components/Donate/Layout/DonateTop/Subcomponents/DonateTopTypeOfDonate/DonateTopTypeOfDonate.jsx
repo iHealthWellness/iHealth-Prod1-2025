@@ -46,6 +46,7 @@ function DonateTopTypeOfDonate()
             </div>
             <div>
                 <article id='beforeanimationleft' ref={leftArticle}>
+                <div id="individual-donation"></div>               
                     <img loading='lazy' src={oneTO} alt='one time option icon'/>
                     <p>Individual Donation</p>
                     <p>Empowering Healing, One Gift at a Time – Donate for Patients, Transform Lives!</p>
@@ -53,6 +54,7 @@ function DonateTopTypeOfDonate()
                     <button onClick={donateLink}>Donate Now</button>
                 </article>
                 <article id='beforeanimationright' ref={rightArticle}>
+                <div id="make-a-corporate-donation"></div>
                     <img loading='lazy' src={recurringO} alt='recurring option icon'/>
                     <p>Corporate Donation</p>
                     <p>Corporate Caring, Empowering Patients – Together, We Heal!</p>

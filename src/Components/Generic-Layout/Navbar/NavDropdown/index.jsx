@@ -1,15 +1,10 @@
-import { useState, useEffect, useRef } from "react";
-import { NavLink, useLocation } from "react-router-dom";
+import React, { useState, useEffect } from "react";
 import { HashLink } from "react-router-hash-link";
-import UnderConstruction from "src/Components/Under-Construction/UnderConstruction";
+import { useLocation, useNavigate } from "react-router-dom";
+import { ArrowLeftSharp, Close } from "@mui/icons-material";
 import dropdownIcon from "src/Assets/Icons/nav-dropdown.svg";
-import "./index.css";
+import styles from "./index.module.css";
 
-/* 
-  ===========================================================
-  This is the Navigation Bar for the Tablet and Mobile
-  ===========================================================
-  */
 const menuItems = [
   {
     title: "Home",
@@ -19,361 +14,163 @@ const menuItems = [
     title: "About Us",
     url: "/about-us",
     submenu: [
-      // {
-      //   title: "Corporate Info",
-      //   url: "/about-us/#Hero",
-      // },
-      {
-        title: "Our Team",
-        //url: "/about-us/#Team",
-        url: "/Our-Team/#",
-      },
-      {
-        title: "Financial Transparency",
-        url: "/about-us/#Finance",
-      },
-      {
-        title: "Terms Of Use",
-        url: "/about-us/#Terms",
-      },
-      {
-        title: "Volunteer from Anywhere",
-        url: "/job-openings",
-      },
+      { title: "About Us", url: "/about-us" },
+      { title: "Our Team", url: "/Our-Team" },
+      { title: "Financial Transparency", url: "/about-us/#Finance" },
+      { title: "Terms Of Use", url: "/about-us/#Terms" },
+      { title: "Volunteer from Anywhere", url: "/job-openings" },
     ],
   },
   {
     title: "Research",
     url: "/research",
     submenu: [
-      {
-        title: "Research Tools & Resources",
-        url: "/research/#tools",
-      },
-      {
-        title: "Clinical Drug Therapies",
-        url: "/research/#clinical",
-      },
-      {
-        title: "Participate in Research",
-        url: "/research/#participate",
-      },
+      { title: "Research", url: "/research" },
+      { title: "Research Tools & Resources", url: "/research/#tools" },
+      { title: "Clinical Drug Therapies", url: "/research/#clinical" },
+      { title: "Participate in Research", url: "/research/#participate" },
     ],
   },
-  // {
-  //   title: "Stories of Strength",
-  //   url: "/",
-  //   onClick: (event) => {
-  //     event.preventDefault();
-  //     document.querySelector("#UnderConst-wrapper").style.display = "flex";
-  //   },
-  // },
-
-  // {
-  //   title: "Stories of Strength",
-  //   url: "/services",
-
-  // },
-  //   submenu: [
-  //     {
-  //       title: "Share Your Story",
-  //       url: "/services/#",
-  //     },
-  //     {
-  //       title: "Create Your Blog",
-  //       url: "/services/#",
-  //     },
-  //     {
-  //       title: "Our Blogs",
-  //       url: "/services/#",
-  //     },
-  //     {
-  //       title: "Community Insights",
-  //       url: "/services/#",
-  //     },
-  //   ],
-
   {
     title: "Ways to Give",
     url: "/donate",
-    className: "ways-to-give",
     submenu: [
-      {
-        title: "Donate Online",
-        url: "/donate/#",
-      },
-      {
-        title: "Individual Donation",
-        url: "/donate/#Donate-Top-TypeOfDonate",
-      },
-      {
-        title: " Make a Corporate Donation",
-        url: "/donate/#Donate-Top-TypeOfDonate",
-      },
-      {
-        title: "Fundraise on Facebook",
-        url: "/donate/#Donate-Steps-Wrapper",
-      },
-      {
-        title: "Create Your Own Fundraiser",
-        url: "/donate/#Donate-Steps-Wrapper",
-      },
-      {
-        title: "Raise $500 in 10 days",
-        url: "/donate/#Donate10Days-Main-Container",
-      },
+      { title: "Donate Online", url: "/donate" },
+      { title: "Individual Donation", url: "/donate/#individual-donation" },
+      { title: "Make a Corporate Donation", url: "/donate/#make-a-corporate-donation" },
+      { title: "Fundraise on Facebook", url: "/donate/#fundraise-on-facebook" },
+      { title: "Create Your Own Fundraiser", url: "/donate/#create-your-own-fundraiser" },
+      { title: "Raise $500 in 10 days", url: "/donate/#Donate10Days-Main-Container" },
     ],
   },
 ];
 
-const MenuItems = ({
-  items,
-  menuId,
-  activeId,
-  setActiveId,
-  handleShowMenu,
-}) => {
-  const [showSubMenu, setSubMenu] = useState(false);
+const MenuItem = ({ item, onSubmenuOpen, onNavigate }) => {
+  const location = useLocation();
+  const navigate = useNavigate();
 
-  function handleMenu(menuId) {
-    menuId === activeId ? setSubMenu((show) => !show) : setSubMenu(true);
-    setActiveId(menuId);
-  }
+  const handleClick = (e) => {
+    e.preventDefault();
+    if (item.submenu) {
+      onSubmenuOpen(item);
+    } else {
+      const [path, hash] = item.url.split('#');
+      const isMainMenuItem = ['/', '/about-us', '/research', '/donate', '/job-openings'].includes(path);
+    
+      if (isMainMenuItem) {
+        navigate(path);
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      } else {
+        navigate(item.url);
+        if (hash) {
+          setTimeout(() => {
+            const element = document.getElementById(hash.slice(1));
+            if (element) {
+              const navbarHeight = 100;
+              const elementPosition = element.getBoundingClientRect().top;
+              const offsetPosition = elementPosition + window.pageYOffset - navbarHeight - 20;
+              
+              window.scrollTo({
+                top: offsetPosition,
+                behavior: "smooth"
+              });
+            }
+          }, 100);
+        }
+      }
+      onNavigate();
+    }
+  };
 
   return (
-    <li
-      className="nav-dropdown-links-listitem"
-      onClick={(e) => {
-        handleMenu(menuId);
-        if (items.onClick) {
-          items.onClick(e);
-        }
-      }}
-    >
-      <NavLink
-        to={items.url}
-        className={({ isActive }) =>
-          "nav-dropdown-links" + (isActive ? " nav-dropdown-links border" : "")
-        }
-      >
-        {items.title}
-      </NavLink>
-      {items.submenu && showSubMenu && activeId === menuId ? (
-        <div
-          className={
-            showSubMenu ? `nav-dropdown-contents` : `nav-dropdown-hidden`
-          }
-        >
-          {items.submenu.map((sub) => (
-            <HashLink
-              className="items"
-              to={sub.url}
-              key={sub.title}
-              onClick={handleShowMenu}
-            >
-              {sub.title}
-            </HashLink>
-          ))}
-        </div>
-      ) : null}
+    <li className={styles.navItem}>
+      <HashLink to={item.url} onClick={handleClick} className={styles.navLink}>
+        {item.title}
+        {item.submenu && <span className={styles.navArrow}>▶</span>}
+      </HashLink>
     </li>
   );
 };
 
 const NavDropdownButton = () => {
-  const [showMenu, setShowMenu] = useState(false);
-  const [activeId, setActiveId] = useState(0);
-
-  const menuRef = useRef(null);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [activeSubmenu, setActiveSubmenu] = useState(null);
+  const location = useLocation();
 
   useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (menuRef.current && !menuRef.current.contains(event.target)) {
-        setShowMenu(false);
-      }
-    };
+    const isMainRoute = ['/', '/about-us', '/research', '/donate'].includes(location.pathname);
+    if (isMainRoute) {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  }, [location.pathname]);
 
-    document.addEventListener("click", handleClickOutside);
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+    setActiveSubmenu(null);
+  };
 
-    return () => {
-      document.removeEventListener("click", handleClickOutside);
-    };
-  }, []);
+  const handleSubmenuOpen = (item) => {
+    setActiveSubmenu(item);
+  };
 
-  function handleShowMenu() {
-    setShowMenu((show) => !show);
-  }
+  const handleBackButton = () => {
+    setActiveSubmenu(null);
+  };
+
+  const handleNavigate = () => {
+    setIsMenuOpen(false);
+    setActiveSubmenu(null);
+  };
+
+  const renderMenu = (items) => (
+    <ul className={styles.navList}>
+      {items.map((item, index) => (
+        <MenuItem
+          key={index}
+          item={item}
+          onSubmenuOpen={handleSubmenuOpen}
+          onNavigate={handleNavigate}
+        />
+      ))}
+    </ul>
+  );
 
   return (
-    <div className="nav-dropdown-container" ref={menuRef}>
-      <button className="nav-dropdown-menu-button" onClick={handleShowMenu}>
-        <img
-          className="nav-dropdown-menu-icon"
-          src={dropdownIcon}
-          alt="dropdown icon"
-        ></img>
+    <div className={styles.dropdownContainer}>
+      <button className={styles.dropdownMenuButton} onClick={toggleMenu}>
+        <img className={styles.dropdownMenuIcon} src={dropdownIcon} alt="Menu" />
       </button>
-      {showMenu && (
-        <ul className="nav-dropdown-links-list">
-          {menuItems.map((menu, index) => (
-            <MenuItems
-              activeId={activeId}
-              setActiveId={setActiveId}
-              items={menu}
-              key={menu.title}
-              menuId={index}
-              handleShowMenu={handleShowMenu}
-            />
-          ))}
-        </ul>
+
+      {isMenuOpen && (
+        <nav className={`${styles.mobileNav} ${activeSubmenu ? styles.submenuActive : ''}`}>
+          <div className={styles.navHeader}>
+            <div className={styles.submenuHeaderContainer}>
+              {activeSubmenu && (
+                <button onClick={handleBackButton}>
+                  <ArrowLeftSharp />
+                </button>
+              )}
+              <h2>{activeSubmenu ? activeSubmenu.title : 'Menu'}</h2>
+            </div>
+            <button className={styles.closeButton} onClick={() => setIsMenuOpen(false)}>
+              <Close />
+            </button>
+          </div>
+
+          <div className={styles.menuContainer}>
+            <div className={styles.menuContent}>
+              {renderMenu(menuItems)}
+            </div>
+            {activeSubmenu && (
+              <div className={styles.submenuContent}>
+                {renderMenu(activeSubmenu.submenu)}
+              </div>
+            )}
+          </div>
+        </nav>
       )}
     </div>
   );
 };
 
 export default NavDropdownButton;
-
-// Old Codebase
-/*
-
-function classnames(...args) {
-  const classes = [];
-
-  args.forEach((arg) => {
-    if (typeof arg === "string") {
-      classes.push(arg);
-    } else if (typeof arg === "object" && arg !== null) {
-      for (const key in arg) {
-        if (arg.hasOwnProperty(key) && arg[key]) {
-          classes.push(key);
-        }
-      }
-    }
-  });
-
-  return classes.join(" ");
-}
-
-const [showMenu, setShowMenu] = useState(false);
-const [showdropdown, setShowdropdown] = useState(false);
-const [showService, setShowService] = useState(false);
-const [showResearch, setShowResearch] = useState(false);
-const location = useLocation();
-const currentPage = location.pathname;
-const openMenu = (e) => {
-  e.stopPropagation();
-  setShowMenu((prev) => !prev);
-};
-const closeMenu = () => {
-  setShowMenu(false);
-  setShowdropdown(false);
-  setShowService(false);
-  setShowResearch(false);
-  showResearch(false);
-};
-const toggleDropdown = () => {
-  setShowdropdown((prev) => !prev);
-};
-const toggleServiceDropdown = (e) => {
-  e.preventDefault();
-  setShowService((show) => !show);
-  setShowMenu(false);
-  setShowdropdown(false);
-  showResearch(false);
-};
-const toggleResearchDropdown = () => {
-  setShowResearch((show) => !show);
-};
-return (
-  <div className="nav-dropdown-container">
-    <button className="nav-dropdown-menu-button" onClick={openMenu}>
-      <img className="nav-dropdown-menu-icon" src={dropdownIcon}></img>
-    </button>
-    {showMenu && (
-      <ul className="nav-dropdown-links-list">
-        <li
-          className={`nav-dropdown-links-listitem ${
-            currentPage === "/" ? "active" : ""
-          }`}
-        >
-          <NavLink
-            to="/"
-            className="nav-dropdown-links nav-home"
-            onClick={closeMenu}
-          >
-            Home
-          </NavLink>
-        </li>
-        <li
-          className={`nav-dropdown-links-listitem ${
-            currentPage === "/services" ? "active" : ""
-          }`}
-        >
-          <NavLink
-            onClick={(e) => toggleServiceDropdown(e)}
-            to="/about-us"
-            className="nav-dropdown-links nav-services"
-          >
-            Services
-          </NavLink>
-          <div
-            className={classnames("nav-dropdown-content", {
-              block: showService,
-            })}
-          >
-            <a href="#Hero">Stories of Strength</a>
-            <a href="/our-team">Share Your Story</a>
-            <a href="#Finance">Create Your Blog</a>
-          </div>
-        </li>
-        <li
-          className={`nav-dropdown-links-listitem ${
-            currentPage === "/about-us" ? "active" : ""
-          }`}
-        >
-          <NavLink
-            onClick={toggleDropdown}
-            to="/about-us"
-            className="nav-links-nav-about-us"
-          >
-            About Us
-          </NavLink>
-          <div
-            className={classnames("nav-dropdown-content", {
-              block: showdropdown,
-            })}
-          >
-            <a href="#Hero">Corporate Info </a>
-            <a href="/our-team">Our Team </a>
-            <a href="#Finance">Financial Transparency </a>
-            <a href="#Terms">Terms Of Use</a>
-            <a href="">List Of Openings</a>
-          </div>
-        </li>
-        <li
-          className={`nav-dropdown-links-listitem ${
-            currentPage === "/research" ? "active" : ""
-          }`}
-        >
-          <NavLink
-            onClick={toggleResearchDropdown}
-            to="/about-us"
-            className="nav-dropdown-links nav-research"
-          >
-            Research
-          </NavLink>
-          <div
-            className={classnames("nav-dropdown-content", {
-              block: showResearch,
-            })}
-          >
-            <a href="#Hero">Research Tools & Resources</a>
-            <a href="#Hero">Clinical Drug Therapies</a>
-            <a href="#Hero">Participate in Research</a>
-          </div>
-        </li>
-      </ul>
-    )}
-  </div>
-);
-*/

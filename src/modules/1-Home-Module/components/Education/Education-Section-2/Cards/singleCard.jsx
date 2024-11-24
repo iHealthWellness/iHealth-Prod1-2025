@@ -1,4 +1,4 @@
-import styles from "./educationCards.module.css";
+import "./educationCards.css";
 
 function getColor(educationData) {
     switch(true) {
@@ -32,15 +32,15 @@ function Card(educationData) {
     };
 
     return (
-        <div className={styles.card}>
-            <div className={styles.audienceBox} style={audienceStyle}>
+        <div className="card">
+            <div className="audience-box" style={audienceStyle}>
                 <h3>{educationData.audience}</h3> 
             </div>
-            <div className={styles.box}>
-                <p>{educationData.subCategories.map((item) => (<span className={styles.subcategoryBox}>{item}</span>))}</p>
+            <div className="box">
+                <p>{educationData.subCategories.map((item) => (<span className="subcategory-box">{item}</span>))}</p>
             </div>
-            <p><a className={styles.cardLink} href={educationData.contentLink} target="_blank" rel="noopener noreferrer">{educationData.name}</a></p>
-            <div className={styles.focusBox} style={focusStyle}>
+            <p><a className="card-link" href={educationData.contentLink} target="_blank" rel="noopener noreferrer">{educationData.name}</a></p>
+            <div className="focus-box" style={focusStyle}>
                 <p>{educationData.focus}</p>
             </div>
             

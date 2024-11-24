@@ -1,0 +1,333 @@
+* {
+  text-decoration: none;
+}
+
+.navbarFiller {
+  height: 109px;
+  width: 100%;
+}
+
+.navContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  background: linear-gradient(90deg, rgba(7, 35, 91, 1) 0%, rgba(7, 35, 91, 1) 100%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 888;
+}
+
+.navInnerContainer {
+  display: flex;  
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: auto;
+  gap: 1rem;
+}
+
+.navLinksContainer {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navDropdown {
+  position: relative; 
+}
+
+.navDropdownContent {
+  display: none;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.navDropdown:hover .navDropdownContent {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+.navLogoBlock {
+  width: 60px;
+  height: 50px;
+}
+
+.navLogoImg {
+  width: 100%;
+  height: 100%;
+}
+
+.navLinksList {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 1rem;
+}
+
+.navLinksList.desktop {
+  display: none;
+}
+
+.navSignin {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.navSigninSpan {
+  display: none;
+  color: #fff;
+}
+
+/* Links */
+.navLinks {
+  color: white;
+}
+
+.navLinksListitem {
+  text-align: center;
+  padding: 8px 12px;
+}
+
+.navLinksListitem a {
+  padding: 12px 0;
+}
+
+.navLinksListitem:hover {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  background-color: #0d99ff;
+  padding: 8px 12px;
+}
+
+.actives {
+  border-bottom: 4px solid #fff;
+}
+
+/* Dropdown Menu */
+.navDropdown {
+  position: relative;
+}
+
+.navDropdownContent {
+  display: none;
+  margin-top: 10px;
+  position: absolute;
+  background-color: #07235b;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  min-width: 160px;
+  left: 0;
+  z-index: 1;
+  text-align: left;
+}
+
+.navSigninDropdownContent {
+  display: none;
+  position: absolute;
+  background-color: #f0f7fd;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  min-width: 145px;
+  left: 0;
+  z-index: 1;
+  overflow: hidden;
+  text-align: left;
+}
+
+.navDropdown:hover .navSigninDropdownContent {
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  display: block;
+}
+
+.navSigninDropdownContent a {
+  color: #07235b;
+  font-weight: 550;
+  font-size: 1.1rem;
+  text-decoration: none;
+  padding: 0.5rem 0.7rem;
+  display: block;
+}
+
+.navSigninDropdownContent a:hover {
+  background-color: #0d99ff;
+  color: #fff;
+}
+
+.navDropdownContentInner {
+  padding: 0.4rem;
+  display: flex;
+  align-items: center;
+}
+
+.navDropdownContentInnerText {
+  font-size: 1rem;
+  width: 200px;
+  color: #07235b;
+  font-weight: 550;
+}
+
+.navDropdownContentInnerText p {
+  font-size: 0.9rem;
+  width: 300px;
+  word-wrap: break-word;
+}
+
+.navDropdownContentInnerIcon {
+  padding: 0.1rem 0.3rem;
+  cursor: pointer;
+  color: #0D368A;
+}
+
+.navDropdownContent a {
+  color: #07235b;
+  text-decoration: none;
+  display: block;
+}
+
+.navDropdownContent a:hover {
+  background-color: #0d99ff;
+  color: #fff;
+}
+
+.navDropdownContent a:hover .navDropdownContentInnerText {
+  color: #fff;
+}
+
+.navDropdown:hover .navDropdownContent {
+  display: block;
+  overflow: hidden;
+}
+
+/* Donate Button */
+.navDonate {
+  padding: 0.5rem 1rem !important;
+  background-color: #0d99ff;
+  border: 2px solid #0d99ff;
+  color: #fff;
+  width: fit-content; 
+  font-weight: 550;
+  border-radius: 0.5rem; 
+  margin-top: -5px;
+}
+
+/* Donate Button hover */
+.navDonate:hover {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+@media (min-width: 1024px) {
+  .navInnerContainer {
+    width: 80%;
+    padding: 0.5rem 0;
+  }
+
+  .navCircleIcon {
+    margin-top: 5px;
+  }
+
+  .navLogoBlock {
+    width: fit-content;
+    height: fit-content;
+  }
+
+  .navLogoImg {
+    width: 90px;
+    height: auto;
+  }
+
+  .navLinksList.desktop {
+    display: flex;
+  }
+
+  .navLinks {
+    font-size: 1.1rem;
+    line-height: 120%;
+  }
+
+  .navSigninSpan {
+    display: inline-block;
+  }
+
+  .navDropdownContent {
+    display: none;
+    position: absolute;
+    background-color: #f0f7fd;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    min-width: 160px; 
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .navSigninDropdownContent {
+    min-width: 165px;
+  }
+
+  .navDropdown:hover .navDropdownContent {
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    display: block;
+  }
+
+  .navSigninDropdownContent a {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .navbarFiller {
+    height: 65px;
+    width: 100%;
+  }
+
+  .navContainer {
+    padding: 0.5rem 0.5rem;
+  }
+
+  .navDropdownContent {
+    top: auto;
+    left: -50px;
+  }
+  
+  .navSigninDropdownContent {
+    top: auto;
+    left: 12px;
+  }
+
+  .navSigninDropdownContent a {
+    font-size: 0.9rem;
+  }
+  
+  .navDropdownContent a {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navSignin {
+    margin-bottom: -10px;
+  }
+  
+  .navSigninDropdownContent {
+    margin-top: 10px;
+    left: 12px;
+  }
+
+  .navLinks {
+    font-size: 1.1rem;
+  }
+
+  .navSigninDropdownContent a {
+    font-size: 0.9rem;
+  }
+}

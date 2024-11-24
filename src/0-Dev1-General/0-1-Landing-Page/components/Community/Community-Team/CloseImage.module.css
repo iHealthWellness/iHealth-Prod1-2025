@@ -1,4 +1,4 @@
-.close-img{
+.closeImg{
     position: relative;
     top: 90px;
     left: 0;
@@ -7,7 +7,7 @@
 
 
 @media screen and (max-width: 760px) {
-    .close-img{
+    .closeImg{
         top: 100px;
         left: 0;
         height: 47px;
@@ -15,7 +15,7 @@
 }
 
 @media screen and (min-width: 761px) and (max-width: 768px) {
-    .close-img{
+    .closeImg{
         top: 130px;
         left: 0;
         height: 47px;

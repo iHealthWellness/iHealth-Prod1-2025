@@ -1,22 +1,20 @@
-.footer-container {
+.container {
   width: 100%;
   background-color: #07235b;
-
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* scroll-snap-align: start; */
 }
 
-.footer-subscribe-input::placeholder {
+.subscribeInput::placeholder {
   color: rgba(163, 170, 194, 1);
 }
 
-.footer-subscribe-btn {
+.subscribeBtn {
   letter-spacing: 1px;
 }
 
-.footer-top {
+.top {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
@@ -24,7 +22,7 @@
   padding: 2rem 0;
 }
 
-.footer-contact {
+.contact {
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -34,9 +32,9 @@
   background-color: #07235b;
 }
 
-.footer-address-block,
-.footer-subscribe-block,
-.footer-follow-block {
+.addressBlock,
+.subscribeBlock,
+.followBlock {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -44,44 +42,44 @@
   text-align: center;
 }
 
-.footer-address-heading,
-.footer-subscribe-heading,
-.footer-follow-heading {
+.addressHeading,
+.subscribeHeading,
+.followHeading {
   font-size: 1rem;
   font-weight: 400;
   line-height: 120%;
   color: #fff;
 }
 
-.footer-address {
+.address {
   font-size: 1rem;
   font-weight: 400;
   line-height: 120%;
   color: #fff;
 }
 
-.footer-subscribe-block {
+.subscribeBlock {
   text-align: center;
 }
 
-.footer-subscribe-bar {
+.subscribeBar {
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
 
-.footer-subscribe-bar form input {
+.subscribeBar form input {
   margin-right: 1rem;
 }
 
-.footer-subscribe-input {
+.subscribeInput {
   padding: 0.5rem;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.footer-subscribe-btn {
+.subscribeBtn {
   padding: 0.5rem;
   color: #fff;
   background-color: #0d99ff;
@@ -90,21 +88,22 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.footer-follow-icons {
+.followIcons {
   display: flex;
   gap: 1rem;
 }
 
-.footer-follow-link {
+.followLink {
   display: inline-block;
 }
-.footer-follow-icon {
+
+.followIcon {
   display: block;
   width: 40px;
   height: 40px;
 }
 
-.footer-bottom {
+.bottom {
   width: 100%;
   background-color: #07235b;
   color: #fff;
@@ -115,7 +114,7 @@
   padding-bottom: 3rem;
 }
 
-.footer-terms-center {
+.termsCenter {
   width: 90%;
   display: flex;
   flex-direction: column;
@@ -125,7 +124,7 @@
   text-align: center;
 }
 
-.footer-terms {
+.terms {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -134,69 +133,69 @@
   gap: 0.5rem;
 }
 
-.language-select-cont {
+.languageSelectCont {
   position: absolute;
   right: 4rem;
 }
 
-.sasika-quote img {
+.sasikaQuote img {
   width: 100%;
 }
 
 @media only screen and (width: 280px) and (height: 653px) {
-  .footer-terms {
+  .terms {
     justify-content: left;
     align-items: start;
     text-align: left;
   }
 
-  .language-select-cont {
+  .languageSelectCont {
     padding-top: 3rem;
   }
 }
 
 @media screen and (max-width: 1024px) {
-  .language-select-cont {
+  .languageSelectCont {
     right: 2.5rem;
   }
 }
 
 @media only screen and (min-width: 275px) and (max-width: 635px) {
-  .language-select-cont {
+  .languageSelectCont {
     padding-top: 2rem;
     right: 1rem;
   }
 
-  .footer-links-block {
+  .linksBlock {
     display: flex;
     flex-direction: column;
     gap: 2rem;
   }
 
-  .sasika-quote {
+  .sasikaQuote {
     padding-inline: 1rem;
   }
 
-  .footer-subscribe-bar {
+  .subscribeBar {
     display: block;
   }
 
-  .footer-subscribe-bar form {
+  .subscribeBar form {
     display: flex;
     justify-content: space-between;
   }
 
-  .footer-terms-center {
+  .termsCenter {
     width: 70%;
   }
 }
 
 @media only screen and (min-width: 590px) and (max-width: 1260px) {
-  .footer-terms-center {
+  .termsCenter {
     width: 85%;
   }
 
-  .footer-top {
+  .top {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: flex-start;
@@ -204,61 +203,60 @@
     padding: 2rem 3.5rem;
   }
 
-  .footer-address-block,
-  .footer-subscribe-block {
+  .addressBlock,
+  .subscribeBlock {
     text-align: left;
     align-items: flex-start;
   }
 
-  .footer-container {
+  .container {
     background-color: #07235b;
   }
 
-  .footer-links-block {
+  .linksBlock {
     grid-column: 1 / -1;
     display: flex;
     justify-content: space-between;
   }
 
-  .footer-contact {
+  .contact {
     grid-row: 2;
     width: auto;
     padding-top: 0;
     align-items: baseline;
   }
 
-  .sasika-quote {
+  .sasikaQuote {
     grid-row: 2;
   }
 }
 
 @media only screen and (min-width: 1260px) {
-  .footer-container {
+  .container {
     background-color: #07235b;
   }
 
-  .footer-top {
+  .top {
     width: 90%;
     max-width: 1216px;
     flex-direction: row;
     justify-content: space-between;
     gap: 2rem;
     background-color: #07235b;
-
     padding: 2rem 0;
     align-items: flex-start;
   }
 
-  .footer-contact {
+  .contact {
     flex-shrink: 1;
     width: auto;
     align-items: flex-start;
     padding: 0;
   }
 
-  .footer-address-block,
-  .footer-subscribe-block,
-  .footer-follow-block {
+  .addressBlock,
+  .subscribeBlock,
+  .followBlock {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -266,20 +264,20 @@
     text-align: left;
   }
 
-  .footer-address-heading {
+  .addressHeading {
     font-size: 1rem;
     font-weight: 400;
     line-height: 110%;
     white-space: nowrap;
   }
 
-  .footer-address {
+  .address {
     font-size: 1rem;
     font-weight: 400;
     line-height: 120%;
   }
 
-  .footer-links-block {
+  .linksBlock {
     flex-basis: 1;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -287,20 +285,20 @@
     padding-bottom: 1rem;
   }
 
-  .footer-subscribe-input {
+  .subscribeInput {
     font-size: 1rem;
     font-weight: 400;
     line-height: 110%;
   }
 
-  .footer-subscribe-btn {
+  .subscribeBtn {
     padding: 0.5rem 1.5rem;
     font-size: 1rem;
     font-weight: 400;
     line-height: 120%;
   }
 
-  .footer-follow-block {
+  .followBlock {
     flex-direction: row;
     align-items: center;
   }

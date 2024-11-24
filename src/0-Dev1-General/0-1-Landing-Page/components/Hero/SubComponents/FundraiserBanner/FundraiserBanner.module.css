@@ -2,6 +2,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #d1ecff;
+  text-align: center;
+}
+
+.fundraiserContainer header{
+   text-align: center;
 }
 
 .greyText {
@@ -16,6 +22,7 @@
 .fundraiserContainer img {
   max-width: 100%;
 }
+
 
 @media screen and (max-width: 768px) {
   .fundraiserContainer {

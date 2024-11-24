@@ -1,0 +1,158 @@
+.dropdownContainer {
+  position: relative;
+  z-index: 1000;
+}
+
+.dropdownMenuButton {
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.dropdownMenuIcon {
+  width: 24px;
+  height: 24px;
+}
+
+.menuContent.hidden,
+.submenuContent.hidden {
+  display: none;
+}
+
+.mobileNav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f0f7fd;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.mobileNav {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.navList {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.menuContainer {
+  position: relative;
+  width: 200%;
+  height: calc(100% - 54px);
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.menuContent,
+.submenuContent {
+  width: 50%;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.mobileNav.submenuActive .menuContainer {
+  transform: translateX(-50%);
+}
+
+.submenuHeaderContainer {
+  display: flex;
+  align-items: center;
+}
+
+.submenuHeaderContainer button {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdownMenuButton {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.navHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #061d4a;
+  color: white;
+}
+
+.navHeader h2 {
+  margin: 0;
+}
+
+.closeButton,
+.backButton {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.navList {
+  list-style-type: none;
+  padding: 20px;
+  margin: 0;
+}
+
+.navItem {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.navLink {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #061d4a;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.navItem:hover .navLink {
+  color: #fff;
+}
+
+.navItem:hover {
+  background-color: #0d99ff;
+  color: #fff;
+}
+
+.submenuHeaderContainer {
+  display: flex;
+  align-items: center;
+}
+
+.submenuHeaderContainer button {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+}
+
+.submenuHeaderIcon {
+  font-size: 0.9rem;
+}
+
+.navArrow {
+  font-size: 12px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .dropdownContainer {
+    display: none;
+  }
+}

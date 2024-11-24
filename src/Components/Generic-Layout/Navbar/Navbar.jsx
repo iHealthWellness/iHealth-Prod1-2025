@@ -1,199 +1,270 @@
-//Import Libraries/Packages
-import React from "react";
-import { NavLink, Link } from "react-router-dom";
+import React, { useState, useEffect, useRef } from "react";
+import { NavLink, Link, useLocation, useNavigate } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
-
-//Import Styles
-import "./Navbar.css";
+import styles from "./Navbar.module.css";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
-
-//Import Local files
 import desktopLogo from "../../../Assets/Brand/logo-nav-desktop.png";
 import mobileLogo from "../../../Assets/Brand/logo-nav-mobile.png";
-
-//Import Local Components
 import NavDropdownButton from "./NavDropdown";
 import Login from "../UserAuthentication/Login/Login";
 import UnderConstruction from "src/Components/Under-Construction/UnderConstruction";
 import ToTopBtn from "../TotopBtn/index.jsx";
 import useScrollToAnchor from "src/hooks/useScrollToAnchor";
+import { KeyboardArrowDown, Groups, Paid, Description, VolunteerActivism, Science, Medication, Biotech, OnlinePrediction, Person, CorporateFare, Facebook, CalendarMonth } from "@mui/icons-material";
+import ButtonsSearchDonate from "src/0-Dev1-General/0-1-Landing-Page/components/Provider/ButtonsSearchDonate";
+import { donateLinkUrl } from "src/environment/config";
 
-/* 
-  ===========================================================
-  This is the Navigation Bar for the Desktop 
-  ===========================================================
-  */
 
-/* NavLogo*/
 const NavLogo = () => {
+  const location = useLocation();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const handleLogoClick = (event) => {
+    if (location.pathname === "/") {
+      event.preventDefault();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+    setIsMenuOpen(false);
+  };
+
+  useEffect(() => {
+    if ( location.pathname === "/" || location.pathname === "/about-us" || location.pathname === "/research" || location.pathname === "/Our-Team" || location.pathname === "/donate" || location.pathname === "/job-openings") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  }, [location.pathname]);
+
   return (
-    <div className="nav-logo-block">
-      <NavLink className="nav-logo">
+    <div className={styles.navLogoBlock}>
+      <NavLink to="/" className={styles.navLogo} onClick={handleLogoClick}>
         <picture>
           <source media="(max-width: 1023px)" srcSet={mobileLogo} />
-          <img className="nav-logo-img" src={mobileLogo} alt="confidential" />
+          <img className={styles.navLogoImg} src={mobileLogo} alt="confidential" />
         </picture>
       </NavLink>
     </div>
   );
 };
 
-// MenuItems
-const MenuList = () => {
+const AdjustedHashLink = ({ to, children, ...props }) => {
+  const linkRef = useRef(null);
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const handleClick = (e) => {
+      e.preventDefault();
+      const [path, hash] = to.split('#');
+      const isCurrentPage = path === '' || path === location.pathname;
+
+      const scrollToElement = (elementId) => {
+        setTimeout(() => {
+          const element = document.getElementById(elementId);
+          if (element) {
+            const navbarHeight = 140;
+            const elementPosition = element.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - navbarHeight - 20;
+
+            // Check if we're already close to the target position
+            if (Math.abs(window.pageYOffset - offsetPosition) > 50) {
+              window.scrollTo({
+                top: offsetPosition,
+                behavior: "smooth"
+              });
+            }
+          }
+        }, 500); // Increased timeout to 500ms
+      };
+
+      if (isCurrentPage && hash) {
+        // Same page navigation
+        scrollToElement(hash);
+      } else {
+        // Different page navigation
+        navigate(to);
+        if (hash) {
+          let scrollAttempts = 0;
+          const maxAttempts = 10;
+
+          const scrollInterval = setInterval(() => {
+            scrollToElement(hash);
+            scrollAttempts++;
+
+            if (scrollAttempts >= maxAttempts) {
+              clearInterval(scrollInterval);
+            }
+          }, 200);
+
+          // Clear the interval after 5 seconds
+          setTimeout(() => {
+            clearInterval(scrollInterval);
+          }, 5000);
+        }
+      }
+    };
+
+    const link = linkRef.current;
+    if (link) {
+      link.addEventListener('click', handleClick);
+    }
+
+    return () => {
+      if (link) {
+        link.removeEventListener('click', handleClick);
+      }
+    };
+  }, [to, location, navigate]);
+
+  return <HashLink ref={linkRef} to={to} {...props}>{children}</HashLink>;
+};
+
+const MenuList = ({ setIsMenuOpen, closeSubMenu }) => {
+  const [submenuVisible, setSubmenuVisible] = useState(false);
+  const [activeMenu, setActiveMenu] = useState(null);
+
+  const handleLinkClick = (menu) => {
+    setActiveMenu(menu);
+    closeSubMenu();
+    setIsMenuOpen(false);
+  }
+
   const menuItems = [
-    {
-      title: "Home",
-      url: "/",
-      className: "nav-home",
-    },
     {
       title: "About Us",
       url: "/about-us",
-      className: "nav-about-us",
+      className: styles.navAboutUs,
       subMenu: [
-        // {
-        //   title: "Corporate Info",
-        //   url: "/about-us/#Hero",
-        // },
         {
           title: "Our Team",
-          //url: "/about-us/#Team",
-          url: "/Our-Team/#",
+          paragraph: "Meet the Dedicated Professionals behind our mission",
+          icon: <Groups />,
+          url: "/Our-Team",
         },
         {
           title: "Financial Transparency",
+          paragraph: "See how we allocate funds and maintain accountability",
+          icon: <Paid />,
           url: "/about-us/#Finance",
         },
         {
           title: "Terms Of Use",
+          paragraph: "Learn about the rules and guidelines for using",
+          icon: <Description />,
           url: "/about-us/#Terms",
         },
         {
           title: "Volunteer from Anywhere",
+          paragraph: "Join our cause remotely and make a difference globally",
+          icon: <VolunteerActivism />,
           url: "/job-openings",
         },
       ],
     },
-
     {
       title: "Research",
       url: "/research",
-      className: "nav-research",
+      className: styles.navResearch,
       subMenu: [
         {
           title: "Research Tools & Resources",
+          paragraph: "Access the latest tools and data for groundbreaking research",
+          icon: <Science />,
           url: "/research/#tools",
         },
         {
           title: "Clinical Drug Therapies",
+          paragraph: "Explore cutting-edge drug therapies in clinical trials",
+          icon: <Medication />,
           url: "/research/#clinical",
         },
         {
           title: "Participate in Research",
+          paragraph: "Contribute to innovative research by becoming a participant",
+          icon: <Biotech />,
           url: "/research/#participate",
         },
       ],
     },
-
-    // {
-
-    //   title: "Stories of Strength",
-    //   url: "/services",
-    //   className: "nav-services" ,
-
-    //   subMenu: [
-    //     {
-    //       title: "Share Your Story",
-    //       url: "/services/#",
-    //     },
-    //     {
-    //       title: "Create Your Blog",
-    //       url: "/services/#",
-    //     },
-    //     {
-    //       title: "Our Blogs",
-    //       url: "/services/#",
-    //     },
-    //     {
-    //       title: "Community Insights & Blogs",
-    //       url: "/services/#",
-    //     },
-    //   ],
-    // },
-
-    //BUG: STORIES OF STRENGHT COMMENTED BY DAVID T. 04/06/2024
-
-    // {
-    //   title: "Stories of Strength",
-    //   url: "/",
-    //   className: "nav-services",
-    // onClick: () => {
-    //   document.querySelector("#UnderConst-wrapper").style.display = "flex";
-    // }
-    // },
-
     {
       title: "Ways to Give",
       url: "/donate",
-      className: "ways-to-give",
+      className: styles.waysToGive,
       subMenu: [
         {
           title: "Donate Online",
-          url: "/donate/#",
+          paragraph: "Support our cause with a quick and easy online donation",
+          icon: <OnlinePrediction />,
+          url: "/donate",
         },
         {
           title: "Individual Donation",
-          url: "/donate/#Donate-Top-TypeOfDonate",
+          paragraph: "Make a personal contribution to support our mission",
+          icon: <Person />,
+          url: "/donate/#individual-donation",
         },
         {
-          title: " Make a Corporate Donation",
-          url: "/donate/#Donate-Top-TypeOfDonate",
+          title: "Make a Corporate Donation",
+          paragraph: "Help us by making a corporate donation to aid our cause",
+          icon: <CorporateFare />,
+          url: "/donate/#make-a-corporate-donation",
         },
         {
           title: "Fundraise on Facebook",
-          url: "/donate/#Donate-Steps-Wrapper",
+          paragraph: "Leverage social media to fundraise for our cause",
+          icon: <Facebook />,
+          url: "/donate/#fundraise-on-facebook",
         },
         {
           title: "Create Your Own Fundraiser",
-          url: "/donate/#Donate-Steps-Wrapper",
+          paragraph: "Start your own fundraising campaign to support us",
+          icon: <VolunteerActivism />,
+          url: "/donate/#create-your-own-fundraiser",
         },
         {
           title: "Raise $500 in 10 days",
+          paragraph: "Achieve fundraising goals quickly with our tips",
+          icon: <CalendarMonth />,
           url: "/donate/#Donate10Days-Main-Container",
         },
       ],
     },
-    // {
-    //   title: "Store",
-    //   url: "/store",
-    //   onClick: (event) => {
-    //     event.preventDefault();
-    //     document.querySelector("#UnderConst-wrapper").style.display = "flex";
-    //   },
-    // },
   ];
 
   return (
-    <ul className="nav-links-list desktop">
+    <ul className={`${styles.navLinksList} ${styles.desktop}`}>
       {menuItems.map((menu) => (
-        <li className="nav-links-listitem nav-dropdown" key={menu.title}>
+        <li
+          className={`${styles.navLinksListitem} ${styles.navDropdown}`}
+          key={menu.title}
+          onMouseEnter={() => setActiveMenu(menu.title)}
+          onMouseLeave={() => setActiveMenu(null)}
+        >
           <NavLink
             to={menu.url}
             className={({ isActive }) =>
-              `nav-links ${menu.className}` +
-              (isActive ? `nav-links actives ${menu.className}` : "")
+              `${styles.navLinks} ${menu.className}` +
+              (isActive ? ` ${styles.actives} ${menu.className}` : "")
             }
-            onClick={menu.onClick ? menu.onClick : null}
+            onClick={() => handleLinkClick(menu.title)}
           >
             {menu.title}
           </NavLink>
-
-          {menu.subMenu && (
-            <div className="nav-dropdown-content">
+          <KeyboardArrowDown
+            sx={{ marginBottom: "-7px", color: "white" }}
+            color="#fff"
+          />
+          {activeMenu === menu.title && menu.subMenu && (
+            <div className={styles.navDropdownContent}>
               {menu.subMenu.map((sub) => (
-                <HashLink to={sub.url} key={sub.title}>
-                  {sub.title}
-                </HashLink>
+                <AdjustedHashLink to={sub.url} key={sub.title} onClick={handleLinkClick}>
+                  <div className={styles.navDropdownContentInner}>
+                    <div className={styles.navDropdownContentInnerIcon}>
+                      {/* {sub.icon} */}
+                    </div>
+                    <div className={styles.navDropdownContentInnerText}>
+                      {sub.title}
+                    </div>
+                  </div>
+                </AdjustedHashLink>
               ))}
             </div>
           )}
@@ -203,33 +274,28 @@ const MenuList = () => {
   );
 };
 
-// SignUp & signIn
 const SignUpSignIn = () => {
   return (
-    <li className="nav-links-listitem nav-dropdown">
-      <NavLink className="nav-links nav-signin">
-        <AccountCircleIcon
-          className="circle-icon"
-          sx={{ fontSize: 32, marginLeft: 0 }}
-          sm={{ fontSize: 48 }}
-        />
-
+    <li className={styles.navDropdown}>
+      <NavLink className={`${styles.navLinks} ${styles.desktop} ${styles.navSignin}`}>
         <a
           onClick={() => {
-            document.querySelector("#UnderConst-wrapper").style.display =
-              "flex";
+            document.querySelector("#UnderConst-wrapper").style.display = "flex";
           }}
           href="#"
         >
-          <span className="nav-signin-span">Sign In or Sign Up</span>
         </a>
+        <div className={styles.navCircleIcon}>
+          <AccountCircleIcon
+            sx={{ fontSize: 32, marginLeft: 0 }}
+            sm={{ fontSize: 48 }}
+          />
+        </div>
       </NavLink>
-      <div className="nav-dropdown-content ">
-        {/* <a onClick={() => {document.querySelector("#Login-Main-Container").style.display = "flex";}} href="#"> */}
+      <div className={styles.navSigninDropdownContent}>
         <a
           onClick={() => {
-            document.querySelector("#UnderConst-wrapper").style.display =
-              "flex";
+            document.querySelector("#UnderConst-wrapper").style.display = "flex";
           }}
           href="#"
         >
@@ -237,8 +303,7 @@ const SignUpSignIn = () => {
         </a>
         <a
           onClick={() => {
-            document.querySelector("#UnderConst-wrapper").style.display =
-              "flex";
+            document.querySelector("#UnderConst-wrapper").style.display = "flex";
           }}
           href="#"
         >
@@ -247,8 +312,7 @@ const SignUpSignIn = () => {
         <a
           id="12"
           onClick={() => {
-            document.querySelector("#UnderConst-wrapper").style.display =
-              "flex";
+            document.querySelector("#UnderConst-wrapper").style.display = "flex";
           }}
           href="#"
         >
@@ -259,56 +323,74 @@ const SignUpSignIn = () => {
   );
 };
 
-// Main Component
 const Navbar = () => {
-  // Menu Lists
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [activeSubmenu, setActiveSubmenu] = useState(null);
+
+  const closeSubMenu = () => setActiveSubmenu(null);
+
   useScrollToAnchor();
+
+  const handleResize = () => {
+    if (window.innerWidth >= 1024) {
+      setIsMenuOpen(false);
+      setActiveSubmenu(null);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <>
-      <nav className="nav-container">
-        <div className="nav-inner-container">
-          <NavDropdownButton />
-          <div className="nav-links-container">
-            {/* NavLogo */}
-            <NavLogo />
+      <div className={styles.navbarFiller}>
+        <nav className={styles.navContainer}>
+          <NavDropdownButton
+            isOpen={isMenuOpen}
+            setIsOpen={setIsMenuOpen}
+            activeSubmenu={activeSubmenu}
+            setActiveSubmenu={setActiveSubmenu}
+          />
 
-            <div className="nav-links-block">
-              {/* Menu List*/}
-              <MenuList />
+          <div className={styles.navInnerContainer}>
+            <div className={styles.navLinksContainer}>
+              <NavLogo />
 
-              <ul className="nav-links-list">
-                {/* SignIn & Signup */}
-                <SignUpSignIn />
+              <div className={styles.navButtons}>
+                <ul className={styles.navLinksList}>
+                  <div className={styles.navLinksBlock}>
+                    <MenuList
+                      setIsMenuOpen={setIsMenuOpen}
+                      closeSubMenu={closeSubMenu}
+                    />
+                  </div>
 
-                {/* Donate Link */}
-                <li className="nav-links-listitem">
-                  <NavLink
-                    to="https://www.paypal.com/donate/?hosted_button_id=VE7E4C2UBA3EN"
-                    target="_blank"
-                    className="nav-links nav-donate"
-                  >
-                    Donate
-                  </NavLink>
-                </li>
-              </ul>
+                  <SignUpSignIn />
+                  <li className={styles.navButtonDonate}>
+                    <Link className={`${styles.navLinks} ${styles.navDonate}`} target="_blank" to={donateLinkUrl}>
+                      Donate
+                    </Link>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
 
-      {/* Login Component ** This component should be executed here So that from all components can be reachable !!! */}
-      <Login />
-
-      {/* Coming Soon/Under Construction Component ** This component should be executed here So that from all components can be reachable !!! */}
-      <UnderConstruction />
-
-      {/* This component for Go To top of the page button  */}
       <ToTopBtn />
+
+      <UnderConstruction />
+      <Login />
     </>
   );
 };
 
 export default Navbar;
+
+
 
 // Old codebase
 /*
@@ -316,16 +398,16 @@ const Navbar = () => {
   
   return (
     <>
-    <nav className="nav-container">
-      <div className="nav-inner-container">
+    <nav className="generic-nav-container">
+      <div className="generic-nav-inner-container">
         <NavDropdownButton />
-        <div className="nav-links-container">
-          <div className="nav-logo-block">
-            <NavLink to="/" className="nav-logo">
+        <div className="generic-nav-links-container">
+          <div className="generic-nav-logo-block">
+            <NavLink to="/" className="generic-nav-logo">
               <picture>
                 <source media="(max-width: 1023px)" srcSet={mobileLogo} />
                 <img
-                  className="nav-logo-img"
+                  className="generic-nav-logo-img"
                   src={desktopLogo}
                   alt="confidential"
                 />
@@ -333,21 +415,21 @@ const Navbar = () => {
             </NavLink>
           </div>
 
-          <div className="nav-links-block">
+          <div className="generic-nav-links-block">
             // Desktop 
 
-            <ul className="nav-links-list desktop">
-              <li className="nav-links-listitem">
-                <NavLink to="/" className="nav-links nav-home">
+            <ul className="generic-nav-links-list desktop">
+              <li className="generic-nav-links-listitem">
+                <NavLink to="/" className="generic-nav-links nav-home">
                   Home
                 </NavLink>
               </li>
 
-              <li className="nav-links-listitem nav-dropdown">
-                <NavLink to="/services" className="nav-links nav-services">
+              <li className="generic-nav-links-listitem nav-dropdown">
+                <NavLink to="/services" className="generic-nav-links nav-services">
                   Services
                 </NavLink>
-                <div className="nav-dropdown-content">
+                <div className="generic-nav-dropdown-content">
                   <a href="#">Stories of Strength</a>
                   <a href="#">Share Your Story</a>
                   <a href="#">Create Your Blog</a>
@@ -355,11 +437,11 @@ const Navbar = () => {
               </li>
 
               // about us 
-              <li className="nav-links-listitem nav-dropdown">
-                <NavLink to="/about-us" className="nav-links nav-about-us">
+              <li className="generic-nav-links-listitem nav-dropdown">
+                <NavLink to="/about-us" className="generic-nav-links nav-about-us">
                   About Us
                 </NavLink>
-                <div className="nav-dropdown-content">
+                <div className="generic-nav-dropdown-content">
                   <HashLink to={"/about-us/#Hero"} >Corporate  info</HashLink>
                   <HashLink to={"/our-team"}>Our Team </HashLink>
                   <HashLink to={"/about-us/#Finance"}>Financial Transparency </HashLink>
@@ -372,8 +454,8 @@ const Navbar = () => {
               </li>
 
               // Research 
-              <li className="nav-links-listitem nav-dropdown">
-                <NavLink to="/" className="nav-links nav-research">
+              <li className="generic-nav-links-listitem nav-dropdown">
+                <NavLink to="/" className="generic-nav-links nav-research">
                   Research
                 </NavLink>
                 <div className="research-dropdown">
@@ -385,10 +467,10 @@ const Navbar = () => {
               </ul>
 
             // Sign up & sign in 
-            <ul className="nav-links-list">
-              <li className="nav-links-listitem nav-dropdown">
+            <ul className="generic-nav-links-list">
+              <li className="generic-nav-links-listitem nav-dropdown">
                 <NavLink
-                  className="nav-links nav-signin"
+                  className="generic-nav-links nav-signin"
                   onClick={() => {
                     document.querySelector(
                       "#UnderConst-wrapper"
@@ -400,9 +482,9 @@ const Navbar = () => {
                     sx={{ fontSize: 32, marginLeft: 0 }}
                     sm={{ fontSize: 48 }}
                   />
-                  <span className="nav-signin-span">Sign up or Log In</span>
+                  <span className="generic-nav-signin-span">Sign up or Log In</span>
                 </NavLink>
-                <div className="nav-dropdown-content ">
+                <div className="generic-nav-dropdown-content ">
                   <a href="#" onClick={() => {document.querySelector("#Login-Main-Container").style.display = "flex";}} >Sign In</a>
                   <a href="#">Sign Up Now</a>
                   <a href="#">Donate as a Guest</a>
@@ -411,7 +493,7 @@ const Navbar = () => {
 
               // Donate Link
               <li>
-                <NavLink className="nav-links nav-donate ">Donate</NavLink>
+                <NavLink className="generic-nav-links nav-donate ">Donate</NavLink>
               </li>
             </ul>
           </div>
@@ -423,3 +505,5 @@ const Navbar = () => {
   );
 };
 */
+
+

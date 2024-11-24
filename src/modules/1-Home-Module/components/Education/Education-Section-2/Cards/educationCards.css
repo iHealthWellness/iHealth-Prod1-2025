@@ -1,4 +1,4 @@
-.outerBox {
+.outer-box {
     width: 100%;
     max-width: 100%;
     font-family: 'Roboto', sans-serif;
@@ -37,7 +37,7 @@
     }
 }
 
-.segmentedControl {
+.segmented-control {
     display: flex;
     border-radius: 8px;
     background-color: #DCE8F2;
@@ -48,14 +48,11 @@
     height: 70px;
     width: 100%;
     z-index: 1000;
-    padding: 4px;
 }
 
 .segment {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex: 1;
+    margin-top: 10px;
     text-align: center;
     padding: 12px;
     cursor: pointer;
@@ -80,26 +77,26 @@
     width: 50%;
 }
 
-.segmentedControl .segment.selected:nth-child(1){
+.segmented-control .segment.selected:nth-child(1){
     background-color: #07235B;
     color: white;
 }
-.segmentedControl .segment.selected:nth-child(2){
+.segmented-control .segment.selected:nth-child(2){
     background-color: #9ad4ff;
     color: #07235B;
 }
 
-.segmentedControl .segment.selected:nth-child(3){
+.segmented-control .segment.selected:nth-child(3){
     background-color: #94f9d2;
     color: #07235B;
 }
 
-.segmentedControl .segment.selected:nth-child(4) {
+.segmented-control .segment.selected:nth-child(4) {
     background-color: #F1B2C7;
     color: #07235B;
 } 
 
-.h4Container {
+.h4-container {
     color: #07235b;
     font-size: 1.5rem;
     font-weight: 700;
@@ -108,7 +105,7 @@
 
 /* CSS for Displaying Cards */
 
-.innerBox{
+.inner-box{
     display: flex;
     align-content: center;
     justify-content: center;
@@ -119,8 +116,18 @@
     margin-top: 5px;
 }
 
+/* Filter section */
+.filter-box{
+    display: flex;
+    padding: 50px;
+    max-width: 100%;
+    max-height: 100%;
+    top: 0;
+    position: sticky;
+}
+
 /* Card Section */
-.cardBox{
+.card-box{
     display: flex;
     padding: 50px;
     align-self: center;
@@ -138,11 +145,10 @@
     background-color: #FFFFFF;
     width: 325px;
     height: 199px;
-    align-items: center;
     
 }
 
-.listItem{
+.list-item{
     display: grid;
     row-gap:20px;
     column-gap: 20px;
@@ -159,7 +165,7 @@
 }  
 
 
-.audienceBox{
+.audience-box{
     color: white;
     text-align: center;
     border-radius: 15px;
@@ -168,7 +174,7 @@
     color: #07235B;
 } 
 
-.subcategoryBox{
+.subcategory-box{
     color: #07235B;
     background-color: #ECECEC;
     text-align: center;
@@ -178,15 +184,15 @@
     padding: 1.5px 10.5px;
 }
 
-.subcategoryBox:first-child{
+.subcategory-box:first-child{
     margin-right: 10px;
 }
 
-.cardLink{
+.card-link{
     color: black;
 }
 
-.focusBox{
+.focus-box{
     color: #07235b;
     text-align: center;
     border-radius: 15px;
@@ -197,23 +203,32 @@
 /* Responsive Design */
 /* Max width - larger px at top, min width is opposite */
 @media only screen and (max-width: 1060px) {
-    .listItem{
+    .filter-box{
+        padding-bottom: 5px;
+    }
+
+    .list-item{
         grid-template-columns: 1fr;
     }
 }
 
 @media only screen and (max-width: 860px){
-    .innerBox{
+    .inner-box{
         flex-direction: column;
     }
-    .cardBox{
+    .card-box{
         padding: 0;
+    }
+
+    .filter-box{
+        padding: 0;
+        margin-bottom: 50px;
     }
 }
 
 
 @media screen and (max-width: 768px) {
-    .segmentedControl {
+    .segmented-control {
         height: 70px;
         width: 100%;
     }

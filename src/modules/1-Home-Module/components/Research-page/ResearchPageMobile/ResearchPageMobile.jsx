@@ -14,8 +14,24 @@ function ResearchPageMobile() {
   const [activeAccordion, setActiveAccordion] = useState(null);
 
   const toggleAccordion = (accordionID) => {
-    setActiveAccordion(activeAccordion === accordionID ? null : accordionID);
+    const accordionElement = document.getElementById(accordionID);
+  
+    if (activeAccordion === accordionID) {
+      // If closing the accordion, scroll to its position
+      setTimeout(() => {
+        accordionElement?.scrollIntoView({
+          behavior: "smooth",
+          block: "center",
+        });
+      }, 0);
+      setActiveAccordion(null);
+    } else {
+      // Open the new accordion
+      setActiveAccordion(accordionID);
+    }
   };
+  
+  
   return (
     <div className={styles.researchContainer}>
       <HeroMobile />

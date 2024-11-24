@@ -19,7 +19,7 @@
     flex-direction: column;
     gap: 1rem;
     min-width: 53%;
-    animation: sldLeftRight  2s ease-in-out; 
+    animation: sldLeftRight  0.7s ease-in-out; 
 }
 
 
@@ -66,7 +66,7 @@
 {
     display: flex;
     flex-direction: row;
-    animation: sldRightLeft 2s ease-in-out;
+    animation: sldRightLeft 0.7s ease-in-out;
     
 }
 
@@ -94,7 +94,7 @@
 {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     place-content: center;
     gap: 3dvw;
     min-width: 15dvw;
@@ -123,6 +123,7 @@
     font-weight: 600;
     border-radius: 10px;
     cursor: pointer;
+    margin-left: 0;
 }
 
 
@@ -150,6 +151,12 @@
         padding: 0;
         gap: 0;
     }
+
+    /* #Donate-Top-Donate-Now > div:last-child > div:first-child > div:nth-child(2)
+    {
+    align-items: start;
+    } */
+
 
     /* ==================== Set Css rules for DonateTopDonateNow`s component`s first div for 3 pictures wrapper div ==================== */
     #Donate-Top-Donate-Now > div:first-child
@@ -210,7 +217,6 @@
         padding: 0.5rem 0.5rem 1rem 0.5rem;
         font-size: 1rem;
         width: 110px;
-        margin-left: -30px;
     }
 }
 

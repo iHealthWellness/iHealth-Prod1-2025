@@ -1,10 +1,10 @@
 import React from "react";
-import styles from "./index.module.css";
+import "./index.css";
 import Education from "src/modules/1-Home-Module/components/Education";
 
 const index = () =>{
     return(
-        <div className={styles.educationPage}>
+        <div className="education-page">
             <Education/>
         </div>
         

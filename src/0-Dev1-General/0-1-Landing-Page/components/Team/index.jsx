@@ -1,40 +1,40 @@
-import "./index.css";
+import styles from "./index.module.css"; 
 import joinVideo from "src/Assets/Images/Join2.mp4";
 import iHealth360Logo from "src/Assets/Images/ihealth360.png";
 
 const Team = () => {
   return (
-    <section id="Home-page-team-container" className="team-container">
+    <section id="Home-page-team-container" className={styles.teamContainer}>
       <div></div>
-      <h2 className="team-heading-h2 SN-D-Home-H2-32">
+      <h2 className={`${styles.teamHeadingH2} SN-D-Home-H2-32`}>
         Join Your Community:{" "}
-        <span className="SN-D-Home-H3-24">Stronger Together</span>
+        <span className={`SN-D-Home-H3-24`}>Stronger Together</span>
       </h2>
 
-      <h3 className="team-heading-h3 desktop SN-D-P-20">
+      <h3 className={`${styles.teamHeadingH3} ${styles.desktop} SN-D-P-20`}>
         Meet others who understand what it's like living with your condition. As
         a community member, you'll come together in a safe space to support,
         learn from, and inspire each other.
       </h3>
 
-      <div className="team-bottom-block">
-        <div className="team-video-card">
-          <video autoPlay muted loop playsInline className="team-video">
+      <div className={styles.teamBottomBlock}>
+        <div className={styles.teamVideoCard}>
+          <video autoPlay muted loop playsInline className={styles.teamVideo}>
             <source src={joinVideo} type="video/mp4" />
           </video>
         </div>
 
-        <div className="team-join-card">
-          <p className="team-join-description">
+        <div className={styles.teamJoinCard}>
+          <p className={styles.teamJoinDescription}>
             As a community member, you'll come together with others living with
             your condition to support each other, learn from each other, inspire
             each other, to feel a sense of fellowship, safety and belonging
             together.
           </p>
-          <div className="team-join-card-inner">
+          <div className={styles.teamJoinCardInner}>
             <img src={iHealth360Logo} alt="ihealth360 logo" />
             <a
-              className="team-join-btn"
+              className={styles.teamJoinBtn}
               onClick={() => {
                 document.querySelector("#UnderConst-wrapper").style.display =
                   "flex";

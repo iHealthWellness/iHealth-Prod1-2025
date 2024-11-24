@@ -1,9 +1,7 @@
 import { useState, useRef, useEffect } from "react";
-
 import OurServices from "src/Constants/HomePage/OurServices";
 import ServicesCard from "./ServicesCard";
-
-import "./index.css";
+import styles from "./index.module.css";
 
 const Services = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -32,13 +30,15 @@ const Services = () => {
   }, []);
 
   return (
-    <section className="services-container">
-      <h2 className="services-heading SN-D-Home-H2-32">
+    <section className={styles.servicesContainer}>
+      <h2 className={`${styles.servicesHeading} SN-D-Home-H2-32`}>
         We Believe Patients Deserve Better Services
       </h2>
 
       <div
-        className={`services-inner ${isVisible ? "slide-in" : ""}`}
+        className={`${styles.servicesInner} ${
+          isVisible ? styles.servicesInnerSlideIn : ""
+        }`}
         ref={divRef}
       >
         {OurServices.map((service, idx) => (

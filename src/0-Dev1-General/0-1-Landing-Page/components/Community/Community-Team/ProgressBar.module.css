@@ -1,33 +1,31 @@
-.progress-dot-bar {
+.progressDotBar {
   display: flex;
   justify-content: center;
-  /* align-items: center; */
 }
 
-.progress-bar-section {
+.progressBarSection {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 1.8rem 0 1rem 0;
 }
 
-.progress-bar-section .progress-dot-bar {
+.progressBarSection .progressDotBar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
   margin: 0 2rem;
-  /* TODO: Normalize the size of the progress bar */
   width: 800px;
 }
 
-.progress-bar-section .dot,
-.progress-bar-section .dot.active,
-.progress-bar-section .dot.done {
+.progressBarSection .dot,
+.progressBarSection .dot.active,
+.progressBarSection .dot.done {
   border: 2.4px solid var(--SN-Primary-Headings-07235B, #07235b);
 }
 
-.progress-bar-section .dot {
+.progressBarSection .dot {
   margin: 0;
   width: 1rem;
   height: 1rem;
@@ -35,11 +33,11 @@
   background-color: #fff;
 }
 
-.progress-bar-section .dot.checked {
+.progressBarSection .dot.checked {
   background-color: #abc5ec;
 }
 
-.progress-dot-bar::after {
+.progressDotBar::after {
   position: absolute;
   content: "";
   width: calc(100% - 8px);
@@ -49,16 +47,16 @@
   z-index: 1;
 }
 
-.progress-bar-section .dot.active {
+.progressBarSection .dot.active {
   background: var(--SN-Primary-Headings-07235B, #07235b);
 }
 
-.progress-bar-section .dot.done {
+.progressBarSection .dot.done {
   background: #abc5ec;
 }
 
-.progress-bar-section span,
-.top-section span {
+.progressBarSection span,
+.topSection span {
   color: var(--SN-Primary-Headings-07235B, #07235b);
 }
 
@@ -69,20 +67,18 @@
   background-color: #ccc;
   margin-right: 100px;
   margin-left: 100px;
-  /* justify-content: space-evenly; */
 }
 
 .dot.active {
-  background-color: #ff0000;
-  /* Use your desired active color */
+  background-color: #ff0000; /* Use your desired active color */
 }
 
 @media screen and (max-width: 480px) {
-  .progress-bar-section .dot {
+  .progressBarSection .dot {
     width: 0.62rem;
     height: 0.62rem;
   }
-  .progress-bar-section .progress-dot-bar {
+  .progressBarSection .progressDotBar {
     margin: 0;
   }
 }

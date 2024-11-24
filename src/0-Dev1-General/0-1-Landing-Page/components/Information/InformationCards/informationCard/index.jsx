@@ -1,5 +1,5 @@
 import { HashLink } from "react-router-hash-link";
-import "./index.css";
+import styles from "./index.module.css"; 
 
 const InformationCard = ({ team }) => {
   const { icon, heading, content, detailPath } = team;
@@ -10,31 +10,26 @@ const InformationCard = ({ team }) => {
       document.querySelector("#UnderConst-wrapper").style.display = "flex";
       return;
     }
-
-    // if (path && path.includes("#")) {
-    //   e.preventDefault();
-
-    //   // Directly set the window's location href to the desired URL.
-    //   window.location.href = path;
-    // }
   };
 
   return (
-    <div className="information-card">
-      <div className="information-card-heading-block">
-        <div className="information-card-icon-box">
+    <div className={styles.informationCard}>
+      <div className={styles.informationCardHeadingBlock}>
+        <div className={styles.informationCardIconBox}>
           <img
-            className="information-card-icon"
+            className={styles.informationCardIcon}
             src={icon.src}
             alt={icon.alt}
-          ></img>
+          />
         </div>
-        <h2 className="information-card-heading SN-D-Home-H3-24">{heading}</h2>
+        <h2 className={`${styles.informationCardHeading} SN-D-Home-H3-24`}>
+          {heading}
+        </h2>
       </div>
-      <ul className="information-card-list">
+      <ul className={styles.informationCardList}>
         {content.map((c) => (
-          <li className="information-card-listitem SN-D-P-20" key={c.text}>
-            <span className="information-card-listitem-span">&#10004; </span>
+          <li className={`${styles.informationCardListItem} SN-D-P-20`} key={c.text}>
+            <span className={styles.informationCardListItemSpan}>&#10004; </span>
             {heading.includes("Education") ? (
               <a href={c.path} onClick={(e) => handleOnClick(e, c.path)}>
                 {c.text}
@@ -47,9 +42,9 @@ const InformationCard = ({ team }) => {
           </li>
         ))}
       </ul>
-      <div className="information-card-link-block">
+      <div className={styles.informationCardLinkBlock}>
         <a
-          className="information-card-link"
+          className={styles.informationCardLink}
           href={detailPath}
           onClick={(e) => handleOnClick(e, detailPath)}
         >

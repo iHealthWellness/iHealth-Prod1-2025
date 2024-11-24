@@ -1,11 +1,11 @@
 import { useState } from "react";
-import "./index.css";
+import styles from "./index.module.css";
 
 const InformationTabs = () => {
   const [type, setType] = useState("NF1");
   const NFTypes = ["NF1", "NF2", "Schwannomatosis (NF3)", "ANY"];
   return (
-    <div className="information-tab-container">
+    <div className={styles.informationTabContainer}>
 
 {/* UPDATE 1.30 REMOVE NF TYPE BAR - COMMENTED OUT IN CASE IT IS TO BE USED IN FUTURE */}
       {/* <h2 className="information-tab-heading">

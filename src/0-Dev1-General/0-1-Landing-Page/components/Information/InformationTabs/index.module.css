@@ -1,15 +1,15 @@
-.information-tab-container {
+.informationTabContainer {
   background-color: #f6f8f7;
   padding: 1rem;
 }
 
-.information-tab-heading {
+.informationTabHeading {
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 110%;
 }
 
-.information-tabs {
+.informationTabs {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -17,7 +17,7 @@
   padding: 1rem;
 }
 
-.information-tab {
+.informationTab {
   padding: 1rem;
   border: none;
   border-radius: 1rem;
@@ -28,24 +28,24 @@
   cursor: pointer;
 }
 
-.information-tab.focus {
+.informationTab.focus {
   border: 1px solid #07235b;
   background: #07235b;
   color: #ffffff;
 }
 
 @media only screen and (min-width: 480px) and (max-width: 1023px) {
-  .information-tab-container {
+  .informationTabContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .information-tabs {
+  .informationTabs {
     max-width: 304px;
   }
 
-  .information-tab {
+  .informationTab {
     font-size: 1.25rem;
     font-weight: 400;
     line-height: 110%;
@@ -53,27 +53,27 @@
 }
 
 @media only screen and (min-width: 1024px) {
-  .information-tab-container {
+  .informationTabContainer {
     width: 90%;
     max-width: 1216px;
     padding: 0;
     background-color: transparent;
   }
 
-  .information-tab-heading {
+  .informationTabHeading {
     padding-bottom: 2rem;
     font-size: 2rem;
     font-weight: 400;
     line-height: 110%;
   }
 
-  .information-tabs {
+  .informationTabs {
     padding: 0;
     flex-direction: row;
     gap: 0;
   }
 
-  .information-tab {
+  .informationTab {
     flex-grow: 1;
     padding: 2rem 0;
     border-radius: 0;
@@ -83,11 +83,11 @@
     line-height: 100%;
   }
 
-  .information-tab.focus {
+  .informationTab.focus {
     position: relative;
   }
 
-  .information-tab.focus::after {
+  .informationTab.focus::after {
     content: "";
     position: absolute;
     width: 0;

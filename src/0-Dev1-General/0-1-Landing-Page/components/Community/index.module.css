@@ -1,5 +1,5 @@
 /* mobile view */
-.community-container {
+.communityContainer {
   background: #07235b;
   display: flex;
   flex-direction: column;
@@ -9,20 +9,20 @@
   padding: 2.5rem;
 }
 
-.community-heading {
+.communityHeading {
   width: 95%;
   text-align: center;
   color: #ffffff;
   padding-bottom: 2rem;
 }
 
-.community-container aside a {
+.communityContainer aside a {
   align-self: flex-start;
   width: 200px;
   height: 200px;
 }
 
-.community-description {
+.communityDescription {
   width: 95%;
   text-align: center;
   color: #dde8f0;
@@ -59,45 +59,45 @@
   color: #ffffff;
 }
 
-.community-container aside {
+.communityContainer aside {
   display: flex;
   align-items: center;
   gap: 3rem;
 }
-.community-container aside a {
+.communityContainer aside a {
   display: flex;
   align-items: center;
 }
 
-.community-container aside img,
-.community-container aside a img {
+.communityContainer aside img,
+.communityContainer aside a img {
   width: 200px;
   cursor: pointer;
 }
 
-.community-container aside img,
-.community-container aside a,
-.community-container aside a img {
+.communityContainer aside img,
+.communityContainer aside a,
+.communityContainer aside a img {
   object-fit: contain;
 }
 
 /* tablet view */
 @media only screen and (min-width: 480px) and (max-width: 1024px) {
-  .community-container aside {
+  .communityContainer aside {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
   }
 
-  .community-container aside a {
+  .communityContainer aside a {
     align-items: end;
   }
 
-  .community-container {
+  .communityContainer {
     padding: 2rem 2rem 3rem;
   }
 
-  .community-description {
+  .communityDescription {
     padding-bottom: 0;
   }
 
@@ -119,7 +119,7 @@
 }
 /* desktop view */
 @media only screen and (min-width: 1024px) {
-  .community-container {
+  .communityContainer {
     padding: 5rem 0;
   }
 
@@ -141,7 +141,7 @@
   }
 
   /* update line-height to 143px */
-  .community-description {
+  .communityDescription {
     width: 70%;
     max-width: 1004px;
   }
@@ -163,18 +163,18 @@
 }
 
 @media screen and (max-width: 480px) {
-  .community-container aside {
+  .communityContainer aside {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
   }
-  .community-container aside a {
+  .communityContainer aside a {
     align-items: end;
   }
-  .community-container {
+  .communityContainer {
     padding: 4rem 2rem;
   }
-  .community-description {
+  .communityDescription {
     padding-bottom: 0;
     text-align: justify;
   }

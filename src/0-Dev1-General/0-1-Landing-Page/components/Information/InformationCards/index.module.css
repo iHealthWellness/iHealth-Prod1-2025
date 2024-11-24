@@ -1,4 +1,4 @@
-.information-card-container {
+.informationCardContainer {
   padding: 1rem 2rem;
   background-color: #f6f8f7;
   display: flex;
@@ -7,7 +7,7 @@
 }
 
 @media only screen and (min-width: 1024px) {
-  .information-card-container {
+  .informationCardContainer {
     width: 90%;
     max-width: 1216px;
     flex-direction: row;

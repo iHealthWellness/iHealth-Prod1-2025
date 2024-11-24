@@ -1,10 +1,10 @@
 import Teams from "src/Constants/HomePage/Teams.js";
 import InformationCard from "./informationCard";
-import "./index.css";
+import styles from "./index.module.css";
 
 const InformationCards = () => {
   return (
-    <div className="information-card-container">
+    <div className={styles.informationCardContainer}>
       {Teams.map((team) => (
         <InformationCard team={team} key={team.heading} />
       ))}

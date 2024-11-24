@@ -1,4 +1,4 @@
-.lmc-container {
+.lmcContainer {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23,7 +23,7 @@
   background-position: center;
 }
 
-.lmc-button {
+.lmcButton {
   color: #fff;
   text-align: center;
   font-size: 1.5rem;
@@ -31,32 +31,28 @@
   line-height: 143%;
 }
 
-.lmc-button img {
+.lmcImage {
   width: 100%;
   border-radius: 1.5rem;
 }
 
-/* iPad Screen Sizes: 769px to 1024px */
-
-/* Small Screens (phones, etc.): Max width up to 768px */
-
-.lmc-container.lmc-visible {
+.lmcVisible {
   opacity: 1;
   transform: translateX(0);
 }
 
-.lmc-content-block {
+.lmcContentBlock {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.lmc-title {
+.lmcTitle {
   color: inherit;
   cursor: pointer;
 }
 
-.lmc-title a {
+.lmcTitle a {
   color: inherit;
   font-size: 1.5rem;
   font-weight: 400;
@@ -64,29 +60,29 @@
 }
 
 @media (min-width: 480px) and (max-width: 1024px) {
-  .lmc-container {
+  .lmcContainer {
     width: auto;
     height: auto;
     padding: 1rem;
     margin: 2rem auto 2rem 6rem;
   }
 
-  .how-it-works-cards .lmc-container {
+  .howItWorksCards .lmcContainer {
     display: none;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .how-it-works-container > .make-invisible {
+  .howItWorksContainer > .makeInvisible {
     display: none;
   }
-  .lmc-container {
+  .lmcContainer {
     display: none;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .how-it-works-container > .make-invisible {
+  .howItWorksContainer > .makeInvisible {
     display: none;
   }
 }

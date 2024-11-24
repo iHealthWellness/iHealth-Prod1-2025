@@ -1,31 +1,31 @@
-.information-header {
+.informationHeader {
   width: 100%;
   position: relative;
 }
 
-.information-header-heading-card {
+.informationHeaderHeadingCard {
   width: 100%;
   padding: 1rem;
   height: 15rem;
 }
 
-.nf-journey {
+.nfJourney {
   max-width: 80%;
   object-fit: cover;
 }
 
-.information-card-container
-  .information-card:nth-child(2)
-  .information-card-heading-block {
+.informationCardContainer
+  .informationCard:nth-child(2)
+  .informationCardHeadingBlock {
   background-color: #94d4ff;
   border: 2px solid #94d4ff;
 }
 
-.information-header-heading {
+.informationHeaderHeading {
   color: #ffffff;
 }
 
-.information-header-img {
+.informationHeaderImg {
   width: 18rem;
   aspect-ratio: 1 / 1;
   position: absolute;
@@ -36,28 +36,28 @@
 }
 
 @media only screen and (min-width: 480px) and (max-width: 1023px) {
-  .information-header {
+  .informationHeader {
     max-width: 512px;
   }
 
-  .information-header-heading-card {
+  .informationHeaderHeadingCard {
     aspect-ratio: 1 / 0.8;
     min-height: 500px;
     text-align: center;
   }
 
-  .information-header-heading-card-inner {
+  .informationHeaderHeadingCardInner {
     height: 100%;
   }
 }
 
 @media only screen and (min-width: 1024px) {
-  .information-header {
+  .informationHeader {
     max-width: 1216px;
     max-height: 320px;
   }
 
-  .information-header-heading-card {
+  .informationHeaderHeadingCard {
     width: 50%;
     left: 20%;
     max-width: 800px;
@@ -66,12 +66,12 @@
     z-index: 2;
   }
 
-  .information-header-heading-card-inner {
+  .informationHeaderHeadingCardInner {
     height: 100%;
     padding: 2rem;
   }
 
-  .information-header-img {
+  .informationHeaderImg {
     width: 40%;
     height: 90%;
     object-fit: cover;
@@ -83,19 +83,19 @@
 }
 
 @media screen and (max-width: 480px) {
-  .information-header-img {
+  .informationHeaderImg {
     width: 16.1rem;
-    top: 38%;
+    top: 40%;
   }
-  .information-tab-container {
+  .informationTabContainer {
     padding: 0px !important;
   }
 
-  .information-header-heading-card {
+  .informationHeaderHeadingCard {
     height: 30rem;
     text-align: center;
   }
-  .information-header-heading-card-inner {
+  .informationHeaderHeadingCardInner {
     border-radius: 5px;
   }
 }

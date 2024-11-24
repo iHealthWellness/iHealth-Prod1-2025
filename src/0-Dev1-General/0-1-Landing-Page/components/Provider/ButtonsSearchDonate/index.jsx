@@ -1,37 +1,35 @@
-//Import Libraries/Packages
-import React, { useState, useEffect } from "react";
+// Import Libraries/Packages
+import React from "react";
 import { Link } from "react-router-dom";
-import axios from "axios";
-
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
-//Import Styles
-import "./index.css";
+// Import Styles
+import styles from "./index.module.css"; // Updated import for CSS module
 
 function ButtonsSearchDonate() {
   return (
-    <div className="provider-btn-block">
+    <div className={styles.providerBtnBlock}>
       <button
         onClick={() => {
           document.querySelector("#UnderConst-wrapper").style.display = "flex";
         }}
-        className="provider-btn search"
+        className={`${styles.providerBtn} ${styles.search}`}
         type="submit"
       >
         Search
-        <SearchOutlinedIcon
+        {/* <SearchOutlinedIcon
           sx={{
             "@media (min-width: 1024px)": {
               display: "none",
             },
           }}
-        />
+        /> */}
       </button>
 
       {/* <Link
         onClick={() => {
           document.querySelector("#UnderConst-wrapper").style.display = "flex";
         }}
-        className="provider-btn donate"
+        className={`${styles.providerBtn} ${styles.donate}`}
       >
         Donate Now
       </Link> */}

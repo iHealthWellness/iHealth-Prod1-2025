@@ -1,0 +1,48 @@
+/* update with for provider lookup inputs */
+
+
+.genericProviderAutocomplete ::selection {
+     color: #07235B; 
+}
+
+.loader {
+  position: absolute;
+  top: 25%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  border: 5px solid #062758;
+  border-top: 5px solid #f1f1f1;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+ 
+
+@media only screen and (min-width: 1024px) {
+  .genericProviderAutocomplete.Disease {
+    min-width: 220px;
+    max-width: 269px;
+  }
+
+  .genericProviderAutocomplete.Specialty {
+    min-width: 132px;
+    max-width: 198px;
+  }
+
+  .genericProviderAutocomplete.City {
+    min-width: 100px;
+    max-width: 139px;
+  }
+}

@@ -1,7 +1,6 @@
-//Import Styles
-import "./Hero.css";
+import styles from "./Hero.module.css";
 
-//import local assets/files/components
+// Import local assets/files/components
 import HeroMobile from "src/Assets/Images/hero-5x.png";
 import HandshakeOutlinedIcon from "@mui/icons-material/HandshakeOutlined";
 import PersonSearchOutlinedIcon from "@mui/icons-material/PersonSearchOutlined";
@@ -13,7 +12,7 @@ const Hero = () => {
   const text =
     "We're a community-based 501c3 organization offering health-related programs free to patients!";
   const letterElements = text.split("").map((letter, index) => (
-    <span key={index} className="letter">
+    <span key={index} className={styles.letter}>
       {letter}
     </span>
   ));
@@ -26,14 +25,14 @@ const Hero = () => {
 
   useEffect(() => {
     const checkOverlap = () => {
-      const letters = document.querySelectorAll(".letter");
+      const letters = document.querySelectorAll(`.${styles.letter}`);
       letters.forEach((letter) => {
         const letterRect = letter.getBoundingClientRect();
         const leftDiv = document
-          .querySelector(".blue-banner:first-child")
+          .querySelector(`.${styles.blueBanner}:first-child`)
           .getBoundingClientRect();
         const rightDiv = document
-          .querySelector(".blue-banner:last-child")
+          .querySelector(`.${styles.blueBanner}:last-child`)
           .getBoundingClientRect();
 
         if (
@@ -49,45 +48,47 @@ const Hero = () => {
       });
     };
 
-    const interval = setInterval(checkOverlap, 50);
+    const interval = setInterval(checkOverlap, 5);
     return () => clearInterval(interval);
   }, []);
+
   return (
-    <section className="hero-container">
+    <section className={styles.heroContainer}>
       <Popup isOpen={opened} onClose={() => setOpened(false)} />
-        <div className="first-banner">
-            <p>
-              You are our hero, and we would love to hear your NF story, <a href="https://forms.gle/QAiHQcgtvqfjFtYe6">Submit your story.</a>
-            </p>
-        </div>
-      <aside className="second-banner">
-        <div className="blue-banner"></div>
+      <div className={styles.firstBanner}>
+        <p>
+          You are our hero, and we would love to hear your NF story,{" "}
+          <a href="https://forms.gle/QAiHQcgtvqfjFtYe6">Submit your story.</a>
+        </p>
+      </div>
+      <aside className={styles.secondBanner}>
+        <div className={styles.blueBanner}></div>
         <p>{letterElements}</p>
-        <div className="blue-banner"></div>
+        <div className={styles.blueBanner}></div>
       </aside>
-      <section className="hero-survey-banner">
+      <section className={styles.heroSurveyBanner}>
         <FundraiserBanner />
       </section>
 
-      <div className="hero-container-inner">
-        <div className="hero-heading-container">
-          <h3 className="hero-heading-h3 SN-D-Home-H3-24">
+      <div className={styles.heroContainerInner}>
+        <div className={styles.heroHeadingContainer}>
+          <h3 className={`${styles.heroHeadingH3} SN-D-Home-H3-24`}>
             <HandshakeOutlinedIcon />
             Committed to success
           </h3>
-          <h1 className="hero-heading-h1 SN-D-Home-H1-48">
+          <h1 className={`${styles.heroHeadingH1} SN-D-Home-H1-48`}>
             Live better. Be well.
           </h1>
-          <h2 className="hero-heading-h2 SN-D-Home-H2-32">
+          <h2 className={`${styles.heroHeadingH2} SN-D-Home-H2-32`}>
             For Patients with Complex Diseases
           </h2>
-          <h4 className="hero-heading-h4 SN-D-P-20">
+          <h4 className={`${styles.heroHeadingH4} SN-D-P-20`}>
             Simplifying the Care of Complex Diseases for All
           </h4>
         </div>
-        <div className="hero-image-container">
+        <div className={styles.heroImageContainer}>
           <img
-            className="hero-img"
+            className={styles.heroImg}
             src={HeroMobile}
             alt="Doctor with patients image for Hero section"
           />

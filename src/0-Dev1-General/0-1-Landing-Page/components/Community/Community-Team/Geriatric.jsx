@@ -1,4 +1,4 @@
-import "./GdtCancer.css";
+import styles from  "./GdtCancer.module.css";
 import React, { useEffect, useState, useRef } from "react";
 import axios from "axios";
 import communitylogo from "src/Assets/Images/logo1.svg";
@@ -226,191 +226,184 @@ const Geriatric = ({ closeModal }) => {
 	// }, []);
 
 	return (
-		<div className="jct-holder">
-			<div className="mod1">
-				{/* Close (X) button */}
-				<span className="close" onClick={closeModal}>
-					&times;
-				</span>
+		<div className={styles.jctHolder}>
+		<div className={styles.mod1}>
+			<span className={styles.close} onClick={closeModal}>
+				&times;
+			</span>
 
-				{/* COMMUNITY LOGO */}
-
-				<div className="community__logo">
-					<img src={communitylogo} alt="ihealth-logo" />
-				</div>
-
-				<div className="gdt-head">
-					<h1 id="modal__header">{headText1}</h1>
-					<p>{headText01}</p>
-				</div>
-				<p className="pxp1">{headText001}</p>
-				<div className="progressbar">{headText0001}</div>
-
-				{/* Geriatric input form section */}
-				<form onSubmit={handleSubmit1}>
-					<div className="modal">
-						{/* PRELOADER AFTER FORM IS SUBMITTED */}
-						{isLoading1 && <div className="loader"></div>}
-
-						<div className="form__content">
-							<div class="input">
-								<input
-									type="text"
-									id="name"
-									class="input__field"
-									placeholder=" "
-									name="name"
-									value={formData1.name}
-									onChange={handleChange1}
-									disabled={isSubmitted1}
-								/>
-								<label
-									for="yourName"
-									class={`input__label ${isSubmitted1 ? "hidden-label" : ""}`}
-								>
-									Your Name
-								</label>
-								{errors.name && (
-									<span className="error-msg">{errors.name}</span>
-								)}
-							</div>
-
-							<div class="input">
-								<input
-									type="email"
-									id="email"
-									class="input__field"
-									placeholder=" "
-									name="email"
-									value={formData1.email}
-									onChange={handleChange1}
-									disabled={isSubmitted1}
-								/>
-								<label
-									for="email"
-									class={`input__label ${isSubmitted1 ? "hidden-label" : ""}`}
-								>
-									Email
-								</label>
-								{errors.email && (
-									<span className="error-msg">{errors.email}</span>
-								)}
-							</div>
-
-							{/* CONDITION DROPDOWN SECTION */}
-							<div className="input__field input">
-								<div className="custom-select" ref={selectRef}>
-									<div
-										className={`select-selected ${
-											isOpen1 ? "select-arrow-active" : ""
-										}`}
-										onClick={toggleSelect1}
-										name="condition"
-										onChange={handleChange1}
-									>
-										<span
-											style={{
-												color: "#000000",
-												fontSize: "12px",
-												fontWeight: "400",
-											}}
-										>
-											{formData1.condition}
-										</span>
-										{formData1.condition === "Condition" && (
-											<span style={{ color: "red", marginLeft: "-5px" }}>
-												{" "}
-												*
-											</span>
-										)}
-										<span>
-											{LoadDisease && <div className="loader1"></div>}
-										</span>
-
-										<img src={droparrow} alt="dropdown-icon" />
-									</div>
-									{isOpen1 && (
-										<div className="select-items input__filed">
-											{DiseaseList1.map((item, index) => (
-												<div
-													key={item.id}
-													value={item.id}
-													onClick={() =>
-														handleDropdownChange1({
-															target: { name: "condition", value: item },
-														})
-													}
-													className={
-														item === formData1.condition
-															? "same-as-selected"
-															: "same-as-selected1"
-													}
-												>
-													{item}
-												</div>
-											))}
-										</div>
-									)}
-									{errors.condition && (
-										<span className="error-msg">{errors.condition}</span>
-									)}
-								</div>
-							</div>
-
-							{/* SHOW THIS IF OTHERS IS SELECTED */}
-							{showInputField1 && (
-								<div className="input">
-									<input
-										className="input__field"
-										type="text"
-										placeholder=""
-										name="otherCondition"
-										value={formData1.otherCondition}
-										onChange={handleChange1}
-										disabled={isSubmitted1}
-									/>
-									<label
-										class={`input__label ${isSubmitted1 ? "hidden-label" : ""}`}
-									>
-										Enter Condition
-									</label>
-								</div>
-							)}
-							{errors.otherCondition && (
-								<span className="error-msg">{errors.otherCondition}</span>
-							)}
-
-							<div className="input__textarea">
-								<textarea
-									class="textarea__field"
-									placeholder=" "
-									id="message"
-									name="message"
-									value={formData1.message}
-									onChange={handleChange1}
-									disabled={isSubmitted1}
-								/>
-
-								<label
-									for="message"
-									class={`textarea__label ${
-										isSubmitted1 ? "hidden-label" : ""
-									}`}
-								>
-									Message
-								</label>
-							</div>
-
-							<p className="pxp2">indicates a required field</p>
-						</div>
-					</div>
-					<div className="xxx btnx" id="closex">
-						{buttonText1}
-						<img className="xxx-img" src={buttom_curve} alt="ellipse" />
-					</div>
-				</form>
+			<div className={styles.communityLogo}>
+				<img src={communitylogo} alt="ihealth-logo" />
 			</div>
+
+			<div className={styles.gdtHead}>
+				<h1 id="modal__header">{headText1}</h1>
+				<p>{headText01}</p>
+			</div>
+			<p className={styles.pxp1}>{headText001}</p>
+			<div className={styles.progressbar}>{headText0001}</div>
+
+			<form onSubmit={handleSubmit1}>
+				<div className={styles.modal}>
+					{isLoading1 && <div className={styles.loader}></div>}
+
+					<div className={styles.formContent}>
+						<div className={styles.input}>
+							<input
+								type="text"
+								id="name"
+								className={styles.inputField}
+								placeholder=" "
+								name="name"
+								value={formData1.name}
+								onChange={handleChange1}
+								disabled={isSubmitted1}
+							/>
+							<label
+								htmlFor="yourName"
+								className={`${styles.inputLabel} ${isSubmitted1 ? styles.hiddenLabel : ""}`}
+							>
+								Your Name
+							</label>
+							{errors.name && (
+								<span className={styles.errorMsg}>{errors.name}</span>
+							)}
+						</div>
+
+						<div className={styles.input}>
+							<input
+								type="email"
+								id="email"
+								className={styles.inputField}
+								placeholder=" "
+								name="email"
+								value={formData1.email}
+								onChange={handleChange1}
+								disabled={isSubmitted1}
+							/>
+							<label
+								htmlFor="email"
+								className={`${styles.inputLabel} ${isSubmitted1 ? styles.hiddenLabel : ""}`}
+							>
+								Email
+							</label>
+							{errors.email && (
+								<span className={styles.errorMsg}>{errors.email}</span>
+							)}
+						</div>
+
+						<div className={`${styles.inputField} ${styles.input}`}>
+							<div className={styles.customSelect} ref={selectRef}>
+								<div
+									className={`${styles.selectSelected} ${
+										isOpen1 ? styles.selectArrowActive : ""
+									}`}
+									onClick={toggleSelect1}
+									name="condition"
+									onChange={handleChange1}
+								>
+									<span
+										style={{
+											color: "#000000",
+											fontSize: "12px",
+											fontWeight: "400",
+										}}
+									>
+										{formData1.condition}
+									</span>
+									{formData1.condition === "Condition" && (
+										<span style={{ color: "red", marginLeft: "-5px" }}>
+											{" "}
+											*
+										</span>
+									)}
+									<span>
+										{LoadDisease && <div className={styles.loader1}></div>}
+									</span>
+
+									<img src={droparrow} alt="dropdown-icon" />
+								</div>
+								{isOpen1 && (
+									<div className={`${styles.selectItems} ${styles.inputField}`}>
+										{DiseaseList1.map((item, index) => (
+											<div
+												key={item.id}
+												value={item.id}
+												onClick={() =>
+													handleDropdownChange1({
+														target: { name: "condition", value: item },
+													})
+												}
+												className={
+													item === formData1.condition
+														? styles.sameAsSelected
+														: styles.sameAsSelected1
+												}
+											>
+												{item}
+											</div>
+										))}
+									</div>
+								)}
+								{errors.condition && (
+									<span className={styles.errorMsg}>{errors.condition}</span>
+								)}
+							</div>
+						</div>
+
+						{showInputField1 && (
+							<div className={styles.input}>
+								<input
+									className={styles.inputField}
+									type="text"
+									placeholder=""
+									name="otherCondition"
+									value={formData1.otherCondition}
+									onChange={handleChange1}
+									disabled={isSubmitted1}
+								/>
+								<label
+									className={`${styles.inputLabel} ${isSubmitted1 ? styles.hiddenLabel : ""}`}
+								>
+									Enter Condition
+								</label>
+							</div>
+						)}
+						{errors.otherCondition && (
+							<span className={styles.errorMsg}>{errors.otherCondition}</span>
+						)}
+
+						<div className={styles.inputTextarea}>
+							<textarea
+								className={styles.textareaField}
+								placeholder=" "
+								id="message"
+								name="message"
+								value={formData1.message}
+								onChange={handleChange1}
+								disabled={isSubmitted1}
+							/>
+
+							<label
+								htmlFor="message"
+								className={`${styles.textareaLabel} ${
+									isSubmitted1 ? styles.hiddenLabel : ""
+								}`}
+							>
+								Message
+							</label>
+						</div>
+
+						<p className={styles.pxp2}>indicates a required field</p>
+					</div>
+				</div>
+				<div className={`${styles.xxx} ${styles.btnx}`} id="closex">
+					{buttonText1}
+					<img className={styles.xxxImg} src={buttom_curve} alt="ellipse" />
+				</div>
+			</form>
 		</div>
+	</div>
 	);
 };
 

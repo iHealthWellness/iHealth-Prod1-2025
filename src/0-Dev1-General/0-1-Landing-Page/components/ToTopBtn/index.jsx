@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 
-import "./index.css";
+import styles from "./index.module.css"; 
 
 const ToTopBtn = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -11,7 +11,7 @@ const ToTopBtn = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // show the button when the user has scrolled down
+  // Show the button when the user has scrolled down
   const handleScroll = () => {
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     setIsVisible(scrollTop > 0);
@@ -26,11 +26,11 @@ const ToTopBtn = () => {
 
   return (
     <button
-      className={`toTop-btn ${isVisible ? "visible" : ""}`}
+      className={`${styles.toTopBtn} ${isVisible ? styles.visible : ""}`} 
       onClick={handleClick}
     >
-      <ArrowUpwardIcon />
-      <p>TOP</p>
+      {/* <ArrowUpwardIcon /> */}
+      {/* <p>TOP</p> */}
     </button>
   );
 };
