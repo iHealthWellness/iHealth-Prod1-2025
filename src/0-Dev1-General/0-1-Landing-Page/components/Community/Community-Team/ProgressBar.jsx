@@ -1,15 +1,14 @@
 import React from "react";
-import "./ProgressBar.css"; // Import the CSS file for styling
+import styles from "./ProgressBar.module.css";
 
 const ProgressBar = ({ progress, totalSteps }) => {
   return (
-    <div className="progress-dot-bar">
+    <div className={styles.progressDotBar}>
       {/* Generate dots based on the total number of steps */}
-
       {Array.from({ length: totalSteps }, (_, index) => (
         <div
           key={index}
-          className={`dot ${index < progress ? "active" : ""}`}
+          className={`${styles.dot} ${index < progress ? styles.active : ""}`}
         />
       ))}
     </div>

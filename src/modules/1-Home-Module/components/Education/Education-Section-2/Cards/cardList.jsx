@@ -1,5 +1,5 @@
 import { educationData, Type, Categories } from "../../EducationCardData/educationData";
-import styles from "./educationCards.module.css";
+import "./educationCards.css"; 
 import Card from "./singleCard";
 import PageControl from "../Pagination/pageControl";
 import React, {useEffect, useState} from "react";
@@ -89,7 +89,7 @@ function CardList({tab, filter}) {
     ) 
     return (
         <div>
-            <div className={styles.listItem}>
+            <div className="list-item">
                 {
                     // When switch tabs need to reset current page to start index
                     // 2 equal signs vs 3 equal signs 

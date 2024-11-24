@@ -43,6 +43,7 @@ function DonateSteps()
             <div>
 
                 <article id='beforeanimationleft' ref={leftArticle}>
+                <div id="fundraise-on-facebook"></div>
                     <img loading='lazy' src={conceptWS} alt='man working laptop picture'/>
                     <div>
                         <p>Fundraise on Facebook</p>
@@ -60,6 +61,7 @@ function DonateSteps()
                 </article>
 
                 <article id='beforeanimationright' ref={rightArticle}>
+                <div id="create-your-own-fundraiser"></div>
                     <img loading='lazy' src={manWL} alt='concept with smartphone picture'/>
                     <div>
                         <p>Create your own Fundraiser</p>

@@ -1,4 +1,4 @@
-import "./GdtCancer.css";
+import "./GdtCancer.module.css";
 import React, { useEffect, useState, useRef } from "react";
 import axios from "axios";
 import communitylogo from "src/Assets/Images/logo1.svg";

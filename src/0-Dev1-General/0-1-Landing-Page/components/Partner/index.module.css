@@ -1,10 +1,10 @@
-/* mobile view */
-.partnership-img {
+.partnershipImg {
   display: none;
 }
 
-.partner-heading-block {
+.partnerHeadingBlock {
   width: 100%;
+  margin-top: 5rem;
   max-width: 1216px;
   background-image: url("src/Assets/Images/partner-background.jpg");
   background-size: cover;
@@ -12,28 +12,28 @@
   background-position: center center;
 }
 
-.partner-heading {
+.partnerHeading {
   color: #062758;
 }
 
-.partner-content-block {
+.partnerContentBlock {
   width: 100%;
   background-color: rgb(148, 249, 210);
 }
 
-.first-block {
+.firstBlock {
   background-color: rgb(148, 249, 210);
 }
 
-.second-block {
+.secondBlock {
   background-color: rgb(253, 189, 177);
 }
 
-.partner-content-block.tablet {
+.partnerContentBlock.tablet {
   display: none;
 }
 
-.partner-mobile-img {
+.partnerMobileImg {
   width: 100%;
   display: block;
 }
@@ -49,83 +49,69 @@
   }
 }
 
-.fade-in-section {
+.fadeInSection {
   animation: fadeIn 0.7s ease-in-out forwards;
   transform: translateX(100%);
 }
 
-.partner-heading-block aside {
+.partnerHeadingBlock aside {
   max-width: 40%;
   padding: 5rem 0 5rem 9rem;
   opacity: 0;
 }
 
-.partner-heading {
+.partnerHeading {
   color: #fff;
 }
 
-.partner-paragraph {
+.partnerParagraph {
   color: #fff;
   width: 90vw;
 }
-/* // add for mobile view */
-/* @media only screen and (min-width: 480px) {
-  .partner-paragraph {
-    font-size: 1.25rem;
-    width: 90vw;
-  }
-} */
+
 /* Tablet view */
 @media only screen and (min-width: 480px) {
-  .partner-heading-block aside {
+  .partnerHeadingBlock aside {
     max-width: 100%;
   }
-
-  .partner-content-block.mobile {
+  .partnerContentBlock.mobile {
     display: none;
   }
-
-  .partner-content-block.tablet {
+  .partnerContentBlock.tablet {
     display: block;
   }
 }
 
 /* Desktop view */
 @media only screen and (min-width: 1024px) {
-  .partner-heading-block {
+  .partnerHeadingBlock {
     margin-bottom: 1rem;
   }
-  .partner-paragraph {
+  .partnerParagraph {
     color: #fff;
     width: 100vw;
   }
-  .partner-container {
+  .partnerContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-
-  .partner-content-block.mobile {
+  .partnerContentBlock.mobile {
     display: none;
   }
-
-  .partner-content-block {
+  .partnerContentBlock {
     max-width: 1216px;
   }
-
-  .partner-content-block.desktop {
+  .partnerContentBlock.desktop {
     display: flex;
   }
-
-  .partner-content-block.desktop-reverse {
+  .partnerContentBlock.desktopReverse {
     flex-direction: row-reverse;
   }
-
-  .partnership-img {
+  .partnershipImg {
     display: block;
   }
-
-  .partnership-img {
+  .partnershipImg {
     width: 100%;
     height: 416px;
     object-fit: cover;
@@ -133,7 +119,7 @@
 }
 
 @media screen and (max-width: 480px) {
-  .partner-heading-block aside {
+  .partnerHeadingBlock aside {
     padding: 3rem 1rem;
     text-align: center;
     max-width: 100%;

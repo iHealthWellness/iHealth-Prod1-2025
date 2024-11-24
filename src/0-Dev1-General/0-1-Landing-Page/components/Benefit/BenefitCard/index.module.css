@@ -1,0 +1,332 @@
+.benefitContainer {
+  padding-block: 1.75rem 5rem;
+}
+
+.benefitCard {
+
+  width: 40%;
+  height: fit-content;
+}
+
+.benefitFlipcard {
+  height: auto;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.benefitFlipcardInner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.desktopFlip.flip .benefitFlipcardInner {
+  transform: rotateY(180deg);
+}
+
+.benefitFlipcardFront,
+.benefitFlipcardBack {
+  width: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+
+.benefitFlipcardFront {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;  
+  height: 100%;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media screen and (min-width: 1201px) {
+  .benefitFlipcardFront {
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    min-height: 500px;   
+  }
+  .desktopFlip.flip:hover .benefitFlipcardInner {
+    transform: rotateY(0deg);
+  }
+  
+  .benefitFlipcard {
+    height: 500px;
+  }
+
+}
+
+
+.benefitImg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; 
+}
+
+
+.benefitCardHeading {
+  background-color: rgb(154, 212, 255);
+  color: #07235b;
+  padding: 2rem;
+}
+
+.benefitCard:nth-child(2) .benefitCardHeading {
+  background-color: #94f9d2;
+}
+
+.benefitContainerInner :global(.benefitCard:nth-child(2)) .benefitCardHeading {
+  background-color: rgb(148, 249, 210);
+}
+
+.benefitFlipcardBack {
+  backdrop-filter: blur(2px);
+  transform: rotateY(180deg);
+  padding: 1.5rem 1rem;
+  color: #07235b;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+.benefitFlipcardFront {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;   
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.benefitFlipcardFront {
+  height: auto;
+}
+
+.benefitImg {
+  object-fit: contain;
+}
+
+.benefitFlipcardInner {
+  width: 100%;
+  height: fit-content;
+}
+
+
+.benefitFlipcardSummary {
+  margin-top: -15px;
+}
+
+.benefitFlipcardList {
+  padding: 1rem;
+}
+
+.mobileCarousel .benefitFlipcardInner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.mobileCarousel .benefitFlipcardFront,
+.mobileCarousel .benefitFlipcardBack {
+  flex: 0 0 100%;
+  position: relative;
+  transform: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .benefitCard {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+
+  .benefitFlipcard {
+    height: auto;
+  }
+
+  .benefitContainer {
+    background-color: rgb(245, 245, 245);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .benefitFlipcard {
+    /* aspect-ratio: 1 / 1.4; */
+  }
+
+  .benefitFlipcardFront {
+    height: auto;
+  }
+
+  .benefitImg {
+    object-fit: contain;
+  }
+
+  .benefitFlipcardInner {
+    width: 100%;
+    height: fit-content;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .benefitFlipcard {
+    /* aspect-ratio: 1 / 1.2; */
+  }
+  .benefitContainer {
+    padding-bottom: 2rem;
+    padding-top: 0;
+  }
+  .benefitHeading {
+    color: rgb(6, 39, 88);
+    font-size: 1.875rem;
+  }
+  .benefit-img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+  }
+
+  .benefitFlipcardBack{
+    margin-top: 20px;
+    padding: 0px 30px;
+    height: fit-content;
+  }
+}
+
+
+/* .benefitContainer {
+  padding-block: 1.75rem 5rem;
+}
+
+.benefitCard {
+  width: 40%;
+  height: fit-content;
+}
+
+.benefitFlipcard {
+  width: 100%;
+  aspect-ratio: 1 / 0.8;
+  position: relative;
+  overflow: hidden;
+}
+
+.benefitFlipcardInner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.desktopFlip.flip .benefitFlipcardInner {
+  transform: rotateY(180deg);
+}
+
+.benefitFlipcardFront,
+.benefitFlipcardBack {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.benefitFlipcardBack {
+  backdrop-filter: blur(2px);
+  transform: rotateY(180deg);
+  padding: 1.5rem 1rem;
+  color: #07235b;
+}
+
+.benefitImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.benefitCardHeading {
+  background-color: rgb(154, 212, 255);
+  color: #07235b;
+  padding: 2rem;
+}
+
+.benefitCard:nth-child(2) .benefitCardHeading {
+  background-color: #94f9d2;
+}
+
+.benefitContainerInner :global(.benefitCard:nth-child(2)) .benefitCardHeading {
+  background-color: rgb(148, 249, 210);
+}
+
+.benefitFlipcardSummary {
+  margin-top: -15px;
+}
+
+.benefitFlipcardList {
+  padding: 1rem;
+}
+
+.mobileCarousel .benefitFlipcardInner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.mobileCarousel .benefitFlipcardFront,
+.mobileCarousel .benefitFlipcardBack {
+  flex: 0 0 100%;
+  position: relative;
+  transform: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .benefitCard {
+    width: 100%;
+  }
+
+  .benefitContainer {
+    background-color: rgb(245, 245, 245);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .benefitFlipcard {
+    aspect-ratio: 1 / 1.4;
+  }
+
+  
+.benefitImg {
+  object-fit: contain;
+}
+
+
+  .benefitFlipcardInner {
+    width: 100%;
+    height: fit-content;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .benefitFlipcard {
+    aspect-ratio: 1 / 1.2;
+  }
+  .benefitContainer {
+    padding-bottom: 2rem;
+    padding-top: 0;
+  }
+  .benefitHeading {
+    color: rgb(6, 39, 88);
+    font-size: 1.875rem;
+  }
+  .benefit-img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+  }
+}
+ */

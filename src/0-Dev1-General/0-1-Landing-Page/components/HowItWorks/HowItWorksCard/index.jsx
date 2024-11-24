@@ -1,32 +1,32 @@
-import "./index.css";
+import styles from "./index.module.css";
 
 const HowItWorksCard = ({ icon, title, content, idx, isVisible }) => {
   const buttonStyles = (index) => {
-    return index % 2 === 0 ? "even" : "odd";
+    return index % 2 === 0 ? styles.even : styles.odd;
   };
 
   const renderCardContent = () => (
     <div
-      className={`how-it-works-card ${
-        isVisible ? "visible" : ""
+      className={`${styles.howItWorksCard} ${
+        isVisible ? styles.visible : ""
       } ${buttonStyles(idx)}`}
       key={title}
     >
-      <div className="how-it-works-content-block">
-        <h4 className="how-it-works-number">{idx}</h4>
-        <div className="how-it-works-icon">{icon}</div>
-        <div className={`how-it-works-button ${buttonStyles(idx)}`}>
+      <div className={styles.howItWorksContentBlock}>
+        <h4 className={styles.howItWorksNumber}>{idx}</h4>
+        <div className={styles.howItWorksIcon}>{icon}</div>
+        <div className={`${styles.howItWorksButton} ${buttonStyles(idx)}`}>
           {title === "Learn More" ? (
-            <h2 className="how-it-works-button-label SN-D-Home-H3-24">
+            <h2 className={`${styles.howItWorksButtonLabel} SN-D-Home-H3-24`}>
               <a href="#">{title}</a>
             </h2>
           ) : (
-            <h2 className="how-it-works-button-label SN-D-Home-H3-24">
+            <h2 className={`${styles.howItWorksButtonLabel} SN-D-Home-H3-24`}>
               {title}
             </h2>
           )}
         </div>
-        <p className={`how-it-works-content SN-D-P-20`}>{content}</p>
+        <p className={`${styles.howItWorksContent} SN-D-P-20`}>{content}</p>
       </div>
     </div>
   );

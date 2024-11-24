@@ -5,7 +5,7 @@ import HowItWorksCard from "./HowItWorksCard";
 import HowItWorksSteps from "src/Constants/HomePage/HowItWorks.js";
 import LearnMoreCard from "./LearnMoreCard";
 
-import "./index.css";
+import styles from "./index.module.css";
 
 const HowItWorks = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -33,11 +33,11 @@ const HowItWorks = () => {
     };
   }, []);
   return (
-    <section className="how-it-works-container">
-      <h2 className="how-it-works-heading SN-D-Home-H2-32">
+    <section className={styles.howItWorksContainer}>
+      <h2 className={`${styles.howItWorksHeading} SN-D-Home-H2-32`}>
         Getting Started is Easy
       </h2>
-      <div className="how-it-works-cards" ref={divRef}>
+      <div className={styles.howItWorksCards} ref={divRef}>
         {HowItWorksSteps.map((step, idx) => (
           <HowItWorksCard
             icon={<img src={step.image} alt="" width="32px" height="32px" />}
@@ -48,7 +48,7 @@ const HowItWorks = () => {
             isVisible={isVisible}
           />
         ))}
-        <LearnMoreCard className="desk-card" isVisible={isVisible} />
+        <LearnMoreCard className={styles.deskCard} isVisible={isVisible} />
       </div>
     </section>
   );
@@ -57,10 +57,10 @@ const HowItWorks = () => {
 export default HowItWorks;
 
 {
-  /* <div className="how-it-works-learn-more-box">
-<div className="how-it-works-button even">
+  /* <div className={styles["how-it-works-learn-more-box"]}>
+<div className={styles["how-it-works-button even"]}>
   <a
-    className="how-it-works-learn-more how-it-works-button-label"
+    className={styles["how-it-works-learn-more how-it-works-button-label"
     href="#"
   >
     Learn More &gt;

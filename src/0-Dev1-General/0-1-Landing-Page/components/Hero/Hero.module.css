@@ -1,17 +1,16 @@
-.hero-container {
+.heroContainer {
   background: #f0f7fd;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.hero-container-inner {
+.heroContainerInner {
   width: 90%;
-  /* padding: 2rem 0; */
   padding-bottom: 0;
 }
 
-.hero-heading-container {
+.heroHeadingContainer {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -19,65 +18,63 @@
   margin-top: 40px;
 }
 
-.hero-heading-h3 {
+.heroHeadingH3 {
   color: #0d99ff;
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  word-break: keep-all;
+  word-wrap: nowrap;
 }
 
-.hero-heading-h1 {
+.heroHeadingH1 {
   color: #07235b;
 }
 
-.hero-heading-h2 {
+.heroHeadingH2 {
   color: #c33418;
 }
 
-.hero-heading-h4 {
+.heroHeadingH4 {
   color: rgba(7, 35, 91, 0.61);
 }
 
-.hero-image-container {
+.heroImageContainer {
   width: 100%;
   display: flex;
   align-items: flex-end;
 }
 
-.hero-img {
+.heroImg {
   width: 100%;
   display: block;
 }
 
-.home-page .hero-container .hero-survey-banner {
+.homePage .heroContainer .heroSurveyBanner {
   background-color: #d1ecff;
   font-weight: bold;
   text-align: center;
 }
 
-/* .hero-survey-banner p:nth-child(1) {
-  padding-bottom: 1rem;
-} */
-
-.first-banner{
+.firstBanner {
   display: none;
-  background: #94D4FF;
+  background: #94d4ff;
   width: 100%;
   text-align: center;
   padding: 4px;
 }
 
-.first-banner a {
+.firstBanner a {
   text-decoration: underline;
   color: #0d99ff;
 }
 
-.provider-heading {
+.providerHeading {
   margin-top: auto;
   padding-bottom: 1rem;
 }
 
-.second-banner {
+.secondBanner {
   background-color: #07235b;
   width: 100%;
   text-align: center;
@@ -102,7 +99,7 @@
   }
 }
 
-.second-banner p {
+.secondBanner p {
   overflow: hidden;
   display: block;
   position: relative;
@@ -115,16 +112,17 @@
   line-height: 110%;
 }
 
-.second-banner > div:first-child {
+.secondBanner > div:first-child {
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
 }
-.second-banner > div:last-child {
+
+.secondBanner > div:last-child {
   border-top-left-radius: 1rem;
   border-bottom-left-radius: 1rem;
 }
 
-.blue-banner {
+.blueBanner {
   background-color: #d1ecff;
   width: 15%;
   height: 2rem;
@@ -147,97 +145,104 @@
     }
   }
 
-  .first-banner{
+  .firstBanner {
     display: block;
   }
-  .second-banner > div {
+  .secondBanner > div {
     display: none;
   }
 
-  .second-banner {
+  .secondBanner {
     justify-content: center;
     padding: 0.5rem;
+    color: #fff;
   }
 
-  .second-banner p {
+
+  .secondBanner p {
+    color: #fff;
     animation: slideText 18s linear infinite;
   }
 
-  .hero-survey-banner{
+  .heroSurveyBanner {
     display: none;
   }
 }
 
 @media only screen and (max-width: 480px) {
-  .second-banner p {
+  .secondBanner p {
     animation: slideText 15s linear infinite;
   }
-  .hero-survey-banner {
+  .heroSurveyBanner {
     font-size: 1rem;
   }
-  .hero-container-inner h2.provider-heading {
+  .heroContainerInner h2.providerHeading {
     display: none;
   }
-
-  
 }
 
 @media only screen and (min-width: 480px) and (max-width: 1024px) {
-  .hero-container-inner h2.provider-heading {
+  .heroContainerInner h2.providerHeading {
     display: none;
   }
 
-  .hero-survey-banner {
+  .heroSurveyBanner {
     font-size: 1.2rem;
   }
 
-  .hero-heading-h4 {
+  .heroHeadingH4 {
     font-size: 1rem;
     font-weight: 700;
     line-height: 120%;
     color: rgba(133, 142, 173, 1);
   }
 
-  .hero-container-inner {
+  .heroContainerInner {
     display: flex;
-    /* flex-direction: column; */
   }
 
-  .hero-image-container {
+  .heroImageContainer {
     width: fit-content;
     align-self: flex-end;
   }
 
-  .hero-img {
+  .heroImg {
     max-width: 480px;
   }
 }
 
 @media only screen and (min-width: 1024px) {
-  .hero-container-inner {
+  .heroContainerInner {
     display: flex;
     max-width: 1216px;
     justify-content: space-between;
   }
 
-  .hero-heading-container {
+  .heroHeadingContainer {
     width: 60%;
     justify-content: center;
     margin-top: 5rem;
   }
 
-  .hero-heading-h3 {
+  .heroHeadingH3 {
     color: #07235b;
     display: flex;
     align-items: center;
     gap: 0.5rem;
   }
 
-  .hero-heading-h4 {
+  .heroHeadingH4 {
     color: #07235b;
   }
 
-  .hero-image-container {
+  .heroImageContainer {
     width: 40%;
   }
+}
+
+.letter {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 110%;
+  transition: color 0.0s ; 
 }

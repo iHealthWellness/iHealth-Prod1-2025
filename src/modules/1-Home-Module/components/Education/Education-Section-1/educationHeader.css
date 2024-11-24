@@ -1,5 +1,5 @@
 /* Heading container */
-.educationContainer {
+.education-container {
     max-width: 100%;
     background: white;
     display: flex;
@@ -8,7 +8,7 @@
 }
 
 /* Inner container */
-.educationContainerInner {
+.education-container-inner {
     justify-content: center;
     display: flex;
     padding-bottom: 0;
@@ -16,7 +16,7 @@
 }
 
 /* Heading text */
-.educationHeadingContainer {
+.education-heading-container {
     padding: 3rem 0;
     width: 100%;
     display: flex;
@@ -25,7 +25,7 @@
     margin-top: 20px;
 }
 
-.educationHeadingOne{
+.education-heading-one{
     color: #c33418;
     /* font-size: 1.6rem; */
     font-size: 24px;
@@ -34,7 +34,7 @@
     text-align: left;
 }
 
-.educationHeadingTwo {
+.education-heading-two {
     color: #07235b;
     /* font-size: 2.0rem; */
     font-size: 36px;
@@ -44,11 +44,11 @@
 }
 
 /* Image */
-.educationImageContainer {
+.education-image-container {
     display: flex;
 }
 
-.educationImg {
+.education-img {
     width: 100%;
     max-width: 100%;
     height: auto;
@@ -57,21 +57,21 @@
 }
 
 /* Second container */
-.educationContainerSecondInner {
+.education-container-second-inner {
     width: 100%;
     background: white;
     display: inline-flex;
     flex-direction: row;
 }
 
-.educationContentContainer {
+.education-content-container {
     width: 100%;
     display: flex;
     flex-direction: row;
     gap: 1rem;
 }
 
-.paragraphContainer{
+.paragraph-container{
     width: 100%;
     text-align: justify;
     font-size: 1.2rem;
@@ -80,7 +80,7 @@
     margin: 10px;
 }
 
-.paragraphText{
+.paragraph-text{
     line-height: 1.8;
     font-size: 24px;
 }
@@ -89,28 +89,28 @@
 /* Desktop First Design, all screen sizes smaller than or equal to 1024px */
 
 @media only screen and (max-width: 850px) {
-    .educationContainerInner {
+    .education-container-inner {
         display: flex;
         flex-direction: column;
     }
 
-    .educationHeadingContainer{
+    .education-heading-container{
         align-items: left;
         flex-wrap: wrap;
     }
 
-    .educationHeadingOne{
+    .education-heading-one{
         font-size: 1.8rem;
     }
     
-    .educationHeadingTwo{
+    .education-heading-two{
         font-size: 2.1rem;
         white-space: normal;
         word-wrap: break-word;
         overflow-wrap: break-word;
     }
 
-    .educationImageContainer{
+    .education-image-container{
         width: fit-content;
         align-self: flex-end;
     }

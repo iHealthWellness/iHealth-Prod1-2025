@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
-
+import styles from "./index.module.css";
 import PartnerTextCard from "./PartnerTextCard";
-
 import Partners from "src/Constants/HomePage/Partners.js";
 
 import Baby from "src/Assets/Images/partner-baby.jpg";
@@ -13,7 +12,6 @@ import Female from "src/Assets/Images/partner-female.jpg";
 import Spa from "src/Assets/Images/partner-spa.jpg";
 import Partnership from "src/Assets/Images/partner-background.jpg";
 
-import "./index.css";
 import PartnerImageContainer from "./PartnerImageContainer";
 
 const Partner = () => {
@@ -38,39 +36,38 @@ const Partner = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   return (
-    <section id="Home-page-partner-container" className="partner-container">
+    <section id="Home-page-partner-container" className={styles.partnerContainer}>
       <div
         ref={slideInRef}
-        className={`partner-heading-block ${slideIn ? "fade-in-section" : ""}`}
+        className={`${styles.partnerHeadingBlock} ${slideIn ? styles.fadeInSection : ""}`}
       >
-        <aside ref={slideInRef} className={slideIn ? "fade-in-section" : ""}>
-          <h2 className="partner-heading SN-D-Home-H2-32">Partner with us</h2>
-          <p className="partner-paragraph SN-D-P-20">
+        <aside ref={slideInRef} className={slideIn ? styles.fadeInSection : ""}>
+          <h2 className={`${styles.partnerHeading} SN-D-Home-H2-32`}>Partner with us</h2>
+          <p className={`${styles.partnerParagraph} SN-D-P-20`}>
             We're building a home for the care of complex conditions
           </p>
         </aside>
       </div>
 
-      <div className="partner-content-block mobile">
-        <div className="partner-img-block"></div>
-
+      <div className={`${styles.partnerContentBlock} ${styles.mobile}`}>
+        <div className={styles.partnerImgBlock}></div>
         <PartnerTextCard partner={Partners[0]} />
       </div>
-      <div className="partner-content-block mobile second-block">
-        <div className="partner-img-block">
+      <div className={`${styles.partnerContentBlock} ${styles.mobile} ${styles.secondBlock}`}>
+        <div className={styles.partnerImgBlock}>
           <img
-            className="partner-mobile-img"
+            className={styles.partnerMobileImg}
             src={Female}
             alt="female image"
           ></img>
         </div>
         <PartnerTextCard partner={Partners[1]} />
       </div>
-      <div className="partner-content-block mobile">
-        <img className="partner-mobile-img" src={Heart} alt="heart"></img>
+      <div className={`${styles.partnerContentBlock} ${styles.mobile}`}>
+        <img className={styles.partnerMobileImg} src={Heart} alt="heart"></img>
       </div>
 
-      <div className="partner-content-block tablet desktop first-block">
+      <div className={`${styles.partnerContentBlock} ${styles.tablet} ${styles.desktop} ${styles.firstBlock}`}>
         <PartnerTextCard partner={Partners[0]} />
         <PartnerImageContainer
           leftImg={Female}
@@ -79,7 +76,7 @@ const Partner = () => {
         />
       </div>
 
-      <div className="partner-content-block tablet desktop desktop-reverse second-block">
+      <div className={`${styles.partnerContentBlock} ${styles.tablet} ${styles.desktop} ${styles.desktopReverse} ${styles.secondBlock}`}>
         <PartnerTextCard partner={Partners[1]} />
         <PartnerImageContainer
           leftImg={Heart}

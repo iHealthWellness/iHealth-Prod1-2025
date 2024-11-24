@@ -1,14 +1,18 @@
-import "./index.css";
+import styles from "./index.module.css";
 
 const ServicesCard = ({ service }) => {
   return (
-    <div className="services-card">
-      <img className="services-icon" src={service.icon} alt="" />
-      <div className="services-hover">
-        <h3 className="services-card-heading SN-D-P-20">{service.title}</h3>
-        <p className="services-card-content SN-D-T-M-P-">{service.content}</p>
+    <div className={styles.servicesCard}>
+      <img className={styles.servicesIcon} src={service.icon} alt="" />
+      <div className={styles.servicesHover}>
+        <h3 className={`${styles.servicesCardHeading} SN-D-P-20`}>
+          {service.title}
+        </h3>
+        <p className={`${styles.servicesCardContent} SN-D-T-M-P-`}>
+          {service.content}
+        </p>
         {/* <a
-          className="services-link"
+          className={styles.servicesLink}
           onClick={() => {
             document.querySelector("#UnderConst-wrapper").style.display =
               "flex";

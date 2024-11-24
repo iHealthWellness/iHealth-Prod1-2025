@@ -1,0 +1,156 @@
+.informationCard {
+  display: grid;
+  grid-template-rows: 1fr 1.5fr 0.5fr;
+}
+
+.informationCardHeadingBlock {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+  background-color: #062758;
+  color: #ffffff;
+  border: 2px solid #062758;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+}
+
+
+.informationCard:nth-child(2) .informationCardHeadingBlock {
+  background-color: #94d4ff;
+  border: none;
+}
+
+
+
+.informationCardContainer
+  .informationCard:nth-child(2)
+  .informationCardHeading {
+  color: #07235b;
+}
+
+.informationCardIconBox {
+  width: 50px;
+  height: 50px;
+  padding: 0.5rem;
+  border-radius: 50%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.informationCardListItem a {
+  color: black;
+  text-decoration: none; 
+  transition: color 0.3s; 
+}
+
+.informationCard:hover .informationCardListItem a {
+  color: white; 
+}
+
+
+.informationCardListItem a:hover {
+  text-decoration: underline; 
+}
+
+.informationCardIcon {
+  width: 100%;
+  height: 100%;
+}
+
+.informationCardList {
+  list-style: none;
+  padding: 2rem 1rem;
+  border-left: 2px solid rgba(7, 35, 91, 0.24);
+  border-right: 2px solid rgba(7, 35, 91, 0.24);
+}
+
+.informationCard:hover .informationCardList {
+  background-color: rgba(6, 39, 88, 1);
+  color: #ffffff;
+}
+
+.informationCard:hover .informationCardLinkBlock {
+  background-color: rgba(6, 39, 88, 1);
+}
+
+.informationCard:hover .informationCardLink,
+.informationCard:hover .informationCardListItemSpan {
+  color: #fff;
+}
+
+ .informationCard:nth-child(2):hover .informationCardList,
+.informationCard:nth-child(2):hover .informationCardLinkBlock {
+  background-color: #94d4ff; 
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
+  border-bottom: none;
+}
+
+ .informationCard:nth-child(2):hover .informationCardLink {
+  color: rgba(0, 45, 153, 0.5);
+}
+
+  .informationCard:nth-child(2):hover
+  .informationCardList
+  .informationCardListItem
+  a,
+  .informationCard:nth-child(2):hover
+  .informationCardListItemSpan,
+  .informationCard:nth-child(2):hover
+  .informationCardLink {
+  color: rgba(6, 39, 88, 1);
+}
+
+.informationCardListItem {
+  padding-bottom: 1rem;
+}
+
+  .informationCard:nth-child(2):hover
+  .informationCardListItemSpan,
+.informationCardListItemSpan {
+  color: rgba(0, 45, 153, 0.5);
+}
+
+.informationCardLinkBlock {
+  padding-left: 2rem;
+  border: 2px solid rgba(7, 35, 91, 0.24);
+  border-top: none;
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+}
+
+.informationCardLink {
+  text-decoration: none;
+  color: #07235b;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 120%;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 480px) and (max-width: 1023px) {
+  .informationCardLink {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 100%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .informationCard {
+    flex: 1;
+  }
+
+  .informationCardListItemSpan {
+    padding-right: 1rem;
+  }
+
+  .informationCardLink {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 120%;
+  }
+}

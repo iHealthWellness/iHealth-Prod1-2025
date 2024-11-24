@@ -5,11 +5,11 @@
 import "./index.css";
 
 //Import Local files/components etc...
-import { DonateContextProvider } from '../../components/Donate/DonateNow/DonateContext';
-import DonateController from '../../components/Donate/DonateNow/DonateController';
-import Donate10Days from '../../components/Donate/Layout/Donate10Days/Donate10Days';
-import DonateSteps from '../../components/Donate/Layout/DonateSteps/DonateSteps';
-import DonateTop from '../../components/Donate/Layout/DonateTop/DonateTop';
+import { DonateContextProvider } from 'src/modules/4-Donate-Module/components/Donate/DonateNow/DonateContext';
+import DonateController from 'src/modules/4-Donate-Module/components/Donate/DonateNow/DonateController';
+import Donate10Days from 'src/modules/4-Donate-Module/components/Donate/Layout/Donate10Days/Donate10Days';
+import DonateSteps from 'src/modules/4-Donate-Module/components/Donate/Layout/DonateSteps/DonateSteps';
+import DonateTop from 'src/modules/4-Donate-Module/components/Donate/Layout/DonateTop/DonateTop';
 
 
 

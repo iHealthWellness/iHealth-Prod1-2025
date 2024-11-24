@@ -1,24 +1,24 @@
-.information-container {
+.informationContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 5rem 0;
 }
 
-.information-divider {
+.informationDivider {
   width: 100%;
   height: 10rem;
   background-color: #f6f8f7;
 }
 
 @media only screen and (min-width: 480px) and (max-width: 1024px) {
-  .information-container {
+  .informationContainer {
     background-color: #f6f8f7;
   }
 }
 
 @media only screen and (min-width: 1024px) {
-  .information-divider {
+  .informationDivider {
     height: 25vh;
     background-color: #fff;
   }

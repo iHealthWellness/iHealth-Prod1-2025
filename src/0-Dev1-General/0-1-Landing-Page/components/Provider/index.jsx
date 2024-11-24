@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-
 import ButtonsSearchDonate from "./ButtonsSearchDonate";
 import ProviderAutocomplete from "./ProviderAutocomplete";
 import PersonSearchOutlinedIcon from "@mui/icons-material/PersonSearchOutlined";
@@ -7,15 +6,12 @@ import { Button } from "@mui/material";
 import PinDropIcon from "@mui/icons-material/PinDrop";
 import ProviderServices from "src/Services/provider";
 import { stateData } from "../../../../Constants/HomePage/StateData";
-
-import "./index.css";
-import ProviderCheckbox from "./ProviderCheckbox";
+import styles from './index.module.css';
 
 const Provider = () => {
   const [diseases, setDiseases] = useState([]);
   const [states, setStates] = useState([]);
   const [specialities, setSpecialities] = useState([]);
-
   const [diseaseValue, setDiseaseValue] = useState("");
   const [specialtyValue, setSpecialtyValue] = useState("");
   const [stateValue, setStateValue] = useState("");
@@ -37,9 +33,9 @@ const Provider = () => {
   useEffect(() => {
     const fetchProviders = async () => {
       const cache = {
-        diseases: localStorage.getItem("diseases"),
-        specialities: localStorage.getItem("specialities"),
-        states: localStorage.getItem("states"),
+        diseases: sessionStorage.getItem("diseases"),
+        specialities: sessionStorage.getItem("specialities"),
+        states: sessionStorage.getItem("states"),
       };
 
       if (cache.diseases && cache.specialities && cache.states) {
@@ -66,13 +62,9 @@ const Provider = () => {
           setStates(stateRes.data);
 
           // Cache the data
-          localStorage.setItem("diseases", JSON.stringify(diseaseRes.data));
-          localStorage.setItem(
-            "specialities",
-            JSON.stringify(specialtyRes.data)
-          );
-          // localStorage.setItem("states", JSON.stringify(stateRes.data));
-          localStorage.setItem("states", stateOptions);
+          sessionStorage.setItem("diseases", JSON.stringify(diseaseRes.data));
+          sessionStorage.setItem("specialities", JSON.stringify(specialtyRes.data));
+          sessionStorage.setItem("states", stateOptions);
         } catch (e) {
           console.log(e);
         } finally {
@@ -94,9 +86,9 @@ const Provider = () => {
   };
 
   return (
-    <section id="Home-Page-provider-container" className="provider-container">
-      <div className="provider-inner-container">
-        <h2 className="provider-heading SN-D-Home-H3-24">
+    <section id="Home-Page-provider-container" className={styles.providerContainer}>
+      <div className={styles.providerInnerContainer}>
+        <h2 className={`${styles.providerHeading} SN-D-Home-H3-24`}>
           <PersonSearchOutlinedIcon
             sx={{
               "@media (min-width: 480px)": {
@@ -109,49 +101,42 @@ const Provider = () => {
           />
           Search & Find a Medical or Wellness Provider
         </h2>
-        <form className="provider-form" onSubmit={handleSubmit}>
-          <div className="provider-form-inputs">
-            <div className="provider-form-field">
+        <form className={styles.providerForm} onSubmit={handleSubmit}>
+          <div className={styles.providerFormInputs}>
+            <div className={styles.providerFormField}>
               <ProviderAutocomplete
                 options={diseases}
                 label="Disease"
                 value={diseaseValue}
                 onInputChange={setDiseaseValue}
                 loading={isLoading}
+                paperWidth="100%"  
               />
-              {/* <ProviderCheckbox
-                label="Accepting New Patients"
-                value={acceptingNewPatients}
-                onCheckboxChange={setAcceptingNewPatients}
-              /> */}
             </div>
-            <div className="provider-form-field">
+            <div className={styles.providerFormField}>
               <ProviderAutocomplete
                 options={specialities}
                 label="Specialties"
                 value={specialtyValue}
                 onInputChange={setSpecialtyValue}
                 loading={isLoading}
+                paperWidth="100%" 
               />
-              {/* <ProviderCheckbox
-                label="Treats Children"
-                value={treatsChildren}
-                onCheckboxChange={setTreatsChildren}
-              /> */}
             </div>
-            <div className="provider-form-field">
+            <div className={styles.providerFormField}>
               <ProviderAutocomplete
                 options={states}
                 label="State"
                 value={stateValue}
                 onInputChange={setStateValue}
                 loading={isLoading}
+                paperWidth="100%"  
               />
               <Button
                 variant="text"
                 startIcon={<PinDropIcon style={{ marginBottom: "5px" }} />}
                 style={{ color: "#07235B" }}
-                className="SN-D-P-20"
+                className={`SN-D-P-20`}
                 sx={{
                   paddingTop: "9px",
                   "@media (max-width: 1023px)": {

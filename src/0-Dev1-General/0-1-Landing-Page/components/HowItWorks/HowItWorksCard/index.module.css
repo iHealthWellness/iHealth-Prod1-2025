@@ -1,4 +1,4 @@
-.how-it-works-card {
+.howItWorksCard {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -7,25 +7,25 @@
   transition: opacity 0.5s, transform 0.8s;
 }
 
-.how-it-works-card.visible {
+.howItWorksCard.visible {
   opacity: 1;
   transform: translateX(0);
 }
 
-.how-it-works-number {
+.howItWorksNumber {
   color: #e3e6ee;
   font-size: 14rem;
   font-weight: 800;
   line-height: 120%;
 }
 
-.how-it-works-content-block {
+.howItWorksContentBlock {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.how-it-works-button {
+.howItWorksButton {
   width: 18rem;
   height: 8rem;
   display: flex;
@@ -41,43 +41,44 @@
   text-align: center;
 }
 
-.how-it-works-button.even {
+.howItWorksButton.even {
   background: #07235b;
   color: #ffffff;
   transition: all 0.5s ease-in-out;
 }
 
-.how-it-works-content {
+.howItWorksContent {
   width: 14rem;
   color: #858ead;
   padding: 1rem 0;
 }
-.how-it-works-card-link {
+
+.howItWorksCardLink {
   text-decoration: none;
   color: inherit;
-  display: block; /* чтобы сделать всю карточку кликабельной */
+  display: block;
 }
 
-.how-it-works-button-label a {
+.howItWorksButtonLabel a {
   color: inherit;
   text-decoration: underline;
   cursor: pointer;
 }
 
-.how-it-works-learn-more-box {
+.howItWorksLearnMoreBox {
   display: none;
 }
 
-@media only screen and (min-width: 480px) and (max-width: 1023px) {
-  .how-it-works-card.even {
+@media only screen and (min-width: 620px) and (max-width: 1023px) {
+  .howItWorksCard.even {
     padding-top: 20rem;
   }
 
-  .how-it-works-content-block {
+  .howItWorksContentBlock {
     position: relative;
   }
 
-  .how-it-works-number {
+  .howItWorksNumber {
     margin: 0;
     position: absolute;
     right: 75%;
@@ -87,19 +88,30 @@
   }
 }
 
+@media only screen and (max-width: 620px) {
+
+  .howItWorksNumber{
+    font-size: 14rem;
+    font-weight: 800;
+    line-height: 100%;
+    margin-top: 20px;
+  }
+
+}
+
 @media only screen and (min-width: 1024px) {
-  .how-it-works-card {
+  .howItWorksCard {
     width: 80%;
     align-items: end;
   }
 
-  .how-it-works-content-block {
+  .howItWorksContentBlock {
     width: 80%;
     gap: 1rem;
     position: relative;
   }
 
-  .how-it-works-number {
+  .howItWorksNumber {
     margin: 0;
     position: absolute;
     right: 85%;
@@ -107,17 +119,18 @@
     z-index: -1;
   }
 
-  .how-it-works-learn-more-box {
+  .howItWorksLearnMoreBox {
     height: 100%;
     display: flex;
     align-items: center;
   }
 
-  .how-it-works-learn-more {
+  .howItWorksLearnMore {
     text-decoration: none;
     color: #ffffff;
   }
 }
+
 
 /* .how-it-works-card {
   width: 80%;

@@ -1,10 +1,10 @@
 import buttonclose from "src/Assets/Icons/closes.svg";
-import "./CloseImage.css";
+import styles from "./CloseImage.module.css";
 
 const CloseImage = () => {
 	return (
 		<div>
-			<img className="close-img" src={buttonclose} alt="close-button" />
+			<img className={styles.closeImg} src={buttonclose} alt="close-button" />
 		</div>
 	);
 };

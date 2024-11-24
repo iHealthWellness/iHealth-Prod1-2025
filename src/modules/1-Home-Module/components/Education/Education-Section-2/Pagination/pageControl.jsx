@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styles from "./pageControl.module.css";
+import './pageControl.css';
 
 
 function PageControl({ pages, currentPage, onPageChange }) {
@@ -21,13 +21,13 @@ function PageControl({ pages, currentPage, onPageChange }) {
     };
 
     return (
-        <div className={styles.pagination}>
+        <div className='pagination'>
             <button onClick={() => handlePrevPage()}>←</button>
             {pages.map((_, index) => (
             <button
                 //ID is good for key
                 key={index}
-                className={currentPage === index ? `${styles.active}` : ''}
+                className={currentPage === index ? 'active' : ''}
                 onClick={() => onPageChange(index)}
             >
                 {index+1}

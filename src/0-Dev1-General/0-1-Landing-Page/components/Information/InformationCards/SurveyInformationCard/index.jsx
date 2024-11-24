@@ -1,5 +1,5 @@
 import Trials from "src/Constants/SurveyForm/Trials";
-import "./index.css";
+import styles from "./index.module.css";
 
 function SurveyInformationCard() {
   const handleNavigate = (e, path) => {
@@ -24,32 +24,32 @@ function SurveyInformationCard() {
     } = trial;
 
     return (
-      <div key={index} className="card-container">
-        <h2 className="card-header">
-          <span className="D-H1-32 part-1 survey-today">{part1}</span>
-          <span className="D-H3-24 part-2">{part2}</span>
+      <div key={index} className={styles.cardContainer}>
+        <h2 className={styles.cardHeader}>
+          <span className={`${styles.dH1_32} ${styles.part1} ${styles.surveyToday}`}>{part1}</span>
+          <span className={styles.dH3_24}>{part2}</span>
         </h2>
-        <div className="content-section">
-          <div className="images-container">
+        <div className={styles.contentSection}>
+          <div className={styles.imagesContainer}>
             {images.map((img, imgIndex) => (
               <img
                 key={imgIndex}
                 src={img.src}
                 alt={img.alt}
                 loading="lazy"
-                className="centered-image"
+                className={styles.centeredImage}
               />
             ))}
           </div>
-          <p className="D-P-20">{text}</p>
-          <div className="btn-container">
+          <p className={styles.dP_20}>{text}</p>
+          <div className={styles.btnContainer}>
             <button
-              className="D-T-M-P-B-16"
+              className={styles.dTM_P_B_16}
               onClick={(e) => handleNavigate(e, path)}
             >
               {buttonText}
               {buttonIcon && (
-                <img src={buttonIcon} alt="" className="button-img" />
+                <img src={buttonIcon} alt="" className={styles.buttonImg} />
               )}
             </button>
           </div>
@@ -59,7 +59,7 @@ function SurveyInformationCard() {
   };
 
   return (
-    <div className="outer-card-container">
+    <div className={styles.outerCardContainer}>
       {Trials.map((trial, index) => renderTrial(trial, index))}
     </div>
   );

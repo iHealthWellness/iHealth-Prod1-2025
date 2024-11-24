@@ -1,20 +1,20 @@
 const DataPage = [
-    //{
+    // {
     // id: 1,
     // TeamName: "Copywriting",
     // Roles: "Content Writers, Copywriters, Technical Writers",
     // Names: [""],
-    //},
-    
+    // },
+
     {
         id: 1,
         TeamName: "Administration",
         // Roles: "HR, Recruiting, Research, Events",
         Names: [
-            "Amarachi Ibeh", 
-            "Anastasia Animwah", 
-            "Catherine Makhwala", 
-            "Samantha P Storgaard", 
+            "Amarachi Ibeh",
+            "Anastasia Animwah",
+            "Catherine Makhwala",
+            "Samantha P Storgaard",
             "Uche Agholor"
         ],
     },
@@ -46,21 +46,19 @@ const DataPage = [
             "Happy Emerame",
             "Jennifer Kim",
             "Krishna Motwani",
+            "Oluwafemi Nurudeen",
             "Tatiana Golitsyna",
             "Tetiana Zabolotna",
-            "Oluwafemi Adegbola Nurudeen",
-            // "Soledad Benitez",
             "Yoann Savigny"
         ],
     },
     {
         id: 5,
-        TeamName: "Development",
+        TeamName: "Engineers",
         // Roles: "Software Engineers, Full-Stack Developers, Backend Developers, Frontend Developers, DevOps Engineers, Mobile App Developers",
         Names: [
-            // "Abraham Igbajar",
             "Adegoke Bestman",
-            // "Amal Engulatov",
+            // "Abraham Igbajar",
             "Ayan Patel",
             "Bailong Chen",
             "Bauket Fabrice",
@@ -72,20 +70,17 @@ const DataPage = [
             "Gabriel Xavier",
             "Joel Kalema",
             // "Lucas Ho",
+            "Oladimeji Stephen Ibitoye",
             // "Patrick Post",
             // "Ryan Farekh",
             "Rodrigo Cipriano",
-            "Salmon Gowa",
-            "Shubhangi Saxena",
-            // "Taeseok Kang",
-            "Oladimeji Stephen Ibitoye",
-            // "Pratyusha Joginipally",
             "Ritu Goyal",
             "Rupaak Srinivas",
+            "Salmon Gowa",
+            "Shubhangi Saxena",
+            "Sushant Gupta",
             "Temitope Alabi",
             // "Ting Ting Lin",
-            "Sushant Gupta",
-            // "Varsha Gade",
             "Wahib Barqawi",
             // "William Fernandes",
             // "Yufei Wang"
@@ -113,8 +108,8 @@ const DataPage = [
         id: 9,
         TeamName: "Marketing and Public Relations",
         // Roles: "Marketing Managers, PR Specialists, Communications Managers",
-        Names: [ 
-            // "Lipi Chaudhari", 
+        Names: [
+            // "Lipi Chaudhari",
             "Samson Kayode Tuwa"
         ],
     },
@@ -139,9 +134,9 @@ const DataPage = [
         Names: [
             "Catherine Falardeau",
             // "Folake Fadare",
-            "Hana Javurkova",
             "ChInelo Nwajei",
             "Grettel Fonseca",
+            "Hana Javurkova",
             "Srujana Kethamukkala"
         ],
     },
@@ -151,16 +146,16 @@ const DataPage = [
         // Roles: "QA Engineers, Testers, Quality Assurance Specialists",
         Names: [
             "Adithya Arun",
-            "Kevser Bozoglu",
             "David Abolarin",
             "Derrick Owusu Ansah",
             "Emma Casarez",
             "Enrile B Fuentes",
             "Kirankumar Mudhol",
+            "Kevser Bozoglu",
+            "Olga Chirkova",
             "Pavel Glomozda",
-            "Sveta Seridinko",
             "Subhajit Mandal",
-            "Olga Chirkova"
+            "Sveta Seridinko"
         ],
     },
     {
@@ -170,10 +165,10 @@ const DataPage = [
         Names: ["Marcella Sarti Souza, MD"],
     },
     {
-     id: 14,
-     TeamName: "Social Media",
-    //  Roles: "Social Media Managers, Social Media Specialists, Community Managers",
-     Names: ["Satyam Kishore"],
+        id: 14,
+        TeamName: "Social Media",
+        //  Roles: "Social Media Managers, Social Media Specialists, Community Managers",
+        Names: ["Satyam Kishore"],
     },
 ];
 

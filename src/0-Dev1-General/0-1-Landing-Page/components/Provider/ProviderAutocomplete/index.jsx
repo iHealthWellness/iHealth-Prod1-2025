@@ -1,45 +1,101 @@
-import { Autocomplete, TextField } from "@mui/material";
+import { Autocomplete, TextField, Tooltip, IconButton, Paper } from "@mui/material";
 import ArrowDropDownCircleRoundedIcon from "@mui/icons-material/ArrowDropDownCircleRounded";
-import "./index.css";
+import ClearIcon from "@mui/icons-material/Clear";
+import CloseIcon from "@mui/icons-material/Close";
+import styles from "./index.module.css"; 
+
 const ProviderAutocomplete = ({
   options,
   label,
   value,
   onInputChange,
   loading,
+  paperWidth,
 }) => {
   return (
-    <div
-      className="provider-autocomplete-container"
-      style={{ position: "relative" }}
-    >
+    <div className={styles.genericProviderAutocompleteContainer} style={{ position: "relative" }}>
       <Autocomplete
-        className={`provider-autocomplete ${label}`}
+        className={`${styles.genericProviderAutocomplete} ${styles[label]}`}
         value={value}
         onChange={(event, newValue) => {
           onInputChange(newValue);
         }}
+        options={options}
+        PaperComponent={(props) => (
+          <Paper
+            {...props}
+            style={{
+              width: paperWidth,
+              backgroundColor: '#f0f7fd',
+              boxShadow: 'none',
+            }}
+          />
+        )}
+        componentsProps={{
+          clearIndicator: {
+            component: (props) => (
+              <Tooltip title="Clear" arrow>
+                <IconButton {...props}>
+                  <ClearIcon />
+                </IconButton>
+              </Tooltip>
+            ),
+          },
+          popupIndicator: {
+            component: (props) => (
+              <Tooltip title="Open" arrow>
+                <IconButton {...props}>
+                  <ArrowDropDownCircleRoundedIcon style={{ color: "#07235B" }} />
+                </IconButton>
+              </Tooltip>
+            ),
+          },
+          closeIndicator: {
+            component: (props) => (
+              <Tooltip title="Close" arrow>
+                <IconButton {...props}>
+                  <CloseIcon />
+                </IconButton>
+              </Tooltip>
+            ),
+          },
+        }}
+        renderInput={(params) => <TextField {...params} label={label} />}
+        renderOption={(props, option, { selected, inputValue }) => (
+          <li
+            {...props}
+            style={{
+              zIndex: 100,
+              color: selected ? '#0d99ff' : 'black',
+              backgroundColor: selected ? '#f0f7fd' : '#f0f7fd',
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.textDecoration = 'underline';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.textDecoration = 'none';
+            }}
+          > 
+            {option}
+          </li>
+        )}
         sx={{
           "& .MuiOutlinedInput-root": {
             borderRadius: "0.5rem",
             position: "relative",
           },
         }}
-        options={options}
-        renderInput={(params) => <TextField {...params} label={label} />}
-        popupIcon={
-          <ArrowDropDownCircleRoundedIcon style={{ color: "#07235B" }} />
-        }
       />
-      {loading && (
+       {loading && (
         <div
-          className="loader"
+          className={styles.loader}
           style={{
             position: "absolute",
             top: "25%",
             left: "40%",
             transform: "translate(-50%, -50%)",
             zIndex: 10,
+            borderRadius: '50%',
             width: "2rem",
             height: "2rem",
             border: "5px solid #062758",

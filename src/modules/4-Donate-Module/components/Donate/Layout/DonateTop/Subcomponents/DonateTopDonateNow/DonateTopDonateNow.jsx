@@ -1,7 +1,7 @@
 //Import Libraries/Packages
 import { useContext, useState } from 'react';
 import { DonateContext } from '../../../../DonateNow/DonateContext.jsx';
-import donateLink from "src/modules/4-Donate-Module/utils/donateLink.js";
+// import donateLink from "src/modules/4-Donate-Module/utils/donateLink.js";
 
 //Import Styles
 import "./DonateTopDonateNow.css";
@@ -17,6 +17,7 @@ import donateOM from "src/Assets/Images/Donate-old-man-s.png";
 //import DonateYSK from "src/Assets/Images/Donate-young-sick-kid.jpeg" big size
 import DonateYSK from "src/Assets/Images/Donate-young-sick-kid-s.jpg";
 import Twoimgs from './Subcomponents/Twoimgs';
+import { donateLinkUrl } from 'src/environment/config.js';
 
 
 
@@ -49,7 +50,7 @@ const { toggleModal } = useContext(DonateContext);
                         <p>Donate Today!</p>
                         {/* <button onClick={() => {document.querySelector("#UnderConst-wrapper").style.display ="flex";}} >Donate Online</button> */}
                         {/* <button onClick={() => toggleModal()} >Donate Online</button> */}
-                        <button onClick={donateLink}>Donate Online</button>
+                        <button onClick={() => window.open(donateLinkUrl, "_blank")}>Donate Online</button>
                     </div>
                 </div>
                 

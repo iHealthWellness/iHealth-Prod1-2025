@@ -1,8 +1,10 @@
 const donateLink = () => {
-  window.open(
-    "https://www.paypal.com/donate/?hosted_button_id=VE7E4C2UBA3EN",
-    "_blank"
-  );
+  const donateUrl = import.meta.env.VITE_DONATE_LINK_URL || "";  
+  if (donateUrl) {
+    window.open(donateUrl, "_blank");
+  } else {
+    console.error("Donate URL is not set.");
+  }
 };
 
 export default donateLink;

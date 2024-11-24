@@ -5,6 +5,8 @@ import qrBannerMobile from "src/Assets/Images/qr-banner-mobile.png";
 import handsBannerMobile from "src/Assets/Images/hands-banner-mobile.png";
 
 import useCheckWindowSize from "src/hooks/useCheckWindowSize";
+import { donateLinkUrl } from "src/environment/config";
+
 
 function FundraiserBanner() {
   const checkSize = useCheckWindowSize(768);
@@ -23,9 +25,10 @@ function FundraiserBanner() {
           with insufficient care and resources:
         </p>
         <a
-          href="https://www.paypal.com/donate/?hosted_button_id=VE7E4C2UBA3EN"
+          // href="https://www.paypal.com/donate/?hosted_button_id=VE7E4C2UBA3EN"
+          href={donateLinkUrl}
           target="_blank"
-        >
+        > 
           <p className={`SN-D-T-M-P-16 ${styles.blueText}`}>
             Open Camera, Scan Code, Give Now!
           </p>

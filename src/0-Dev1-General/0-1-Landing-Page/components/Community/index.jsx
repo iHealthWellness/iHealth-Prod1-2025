@@ -1,6 +1,5 @@
 import { useState } from "react";
-
-import "./index.css";
+import styles from "./index.module.css";
 import Geriatric from "./Community-Team/Geriatric";
 import Cancer from "./Community-Team/Cancer";
 import CancerCard from "src/Assets/Images/cancer-card.png";
@@ -20,18 +19,18 @@ const Community = () => {
   };
 
   return (
-    <section className="community-container">
-      <h2 className="community-heading SN-D-Home-H2-32">
+    <section className={styles.communityContainer}>
+      <h2 className={`${styles.communityHeading} SN-D-Home-H2-32`}>
         We give power to you, the patient
       </h2>
-      <p className="community-description SN-D-P-20">
+      <p className={`${styles.communityDescription} SN-D-P-20`}>
         Find all the information and resources you need to make informed
         decisions about your health and live your best life. Choose your area of
         interest and take the next step in your wellness journey.
       </p>
       <aside>
         <a href="#Information">
-          <img className="nf-first-image" src={NfCard} alt="nf card" />
+          <img className={styles.nfFirstImage} src={NfCard} alt="nf card" />
         </a>
         <img
           src={CancerCard}
