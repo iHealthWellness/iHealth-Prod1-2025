@@ -14,8 +14,10 @@ import Image11 from "../../../Assets/Images/Michelle.png";
 import Image12 from "../../../Assets/Images/Nathalie.png";
 import Image13 from "../../../Assets/Images/Rebacca.png";
 import Image14 from "../../../Assets/Images/Ola.png";
+import Image15 from "../../../Assets/Images/sean.png";
 import Image6 from "../../../Assets/Images/Card.png";
 import Image7 from "../../../Assets/Icons/plus.png";
+
 
 import teamData from "../../../Components/Team-Layout/DataPage/TeamData.jsx";
 
@@ -141,6 +143,10 @@ const Board = () => {
     console.log("cicked card: " + teamData.executive[1]);
     setSelectedCard(teamData.executive[14]);
   };
+  const handleCardClick15 = () => {
+    console.log("cicked card: " + teamData.executive[1]);
+    setSelectedCard(teamData.executive[15]);
+  };
 
   const handlePopupClose = () => {
     console.log("clicked close");
@@ -153,7 +159,7 @@ const Board = () => {
   };
 
   return (
-    <div className="board-text-tab">
+    <div className="board-text-tab" >
       {selectedCard && (
         <div className="popup-overlay" onClick={handlePopupClose}>
           <div className="popup-content">
@@ -187,11 +193,11 @@ const Board = () => {
           </div>
         </div>
       )}
-      <div id="Board" className="page-holder">
+      <div className="page-holder">
         {/* <div className={`teamboard-tab ${isVisible.divRef ? "slide-in" : ""}`}
                     ref={divRef}> */}
 
-        <h2 className="team-directors-header D-H1-32"> Board of Directors</h2>
+        <h2 id="Board" className="team-directors-header D-H1-32"> Board of Directors</h2>
 
         <h3 className="team-directors-tab D-P-20">
           Our Board of Directors governs the Foundation's mission, policies,
@@ -213,7 +219,6 @@ const Board = () => {
           <div className="Name-tab">
             <p className="D-P-20">
               Sasika Nanayakkara, PMP <br />
-              Founder, CEO, CTO, Chair
             </p>
           </div>
 
@@ -232,7 +237,6 @@ const Board = () => {
           <div className="Name-tab">
             <p className="D-P-20">
               Jeff Jacques, MD <br />
-              Vice President
             </p>
           </div>
           <button className="btn-board-tab">
@@ -252,8 +256,7 @@ const Board = () => {
 
           <div className="Name-tab">
             <p className="D-P-20">
-              Joseph Karcich <br />
-              Vice President
+            Joseph F. Karcich<br />
             </p>
           </div>
           <button className="btn-board-tab">
@@ -280,7 +283,7 @@ const Board = () => {
           <div className="Name-tab">
             <p className="D-P-20">
               Mark Huntzinger <br />
-              Vice President{" "}
+              {" "}
             </p>
           </div>
           <button className="btn-board-tab">
@@ -300,7 +303,7 @@ const Board = () => {
           <div className="Name-tab">
             <p className="D-P-20">
               Matias Berisso <br />
-              Treasurer and Secretary
+              
             </p>
           </div>
           <button className="btn-board-tab">
@@ -370,11 +373,12 @@ const Board = () => {
           </button>
         </div>
 
-        <div className="board-image" onClick={handleCardClick12}>
-          <img src={Image12} alt="oliver" />
+        <div className="board-image" onClick={handleCardClick15}>
+          <img src={Image15} alt="dalia" />
 
           <div className="Name-tab">
-            <p className="D-P-20">Natalie Aswad Boehm</p>
+            <p className="D-P-20">Sean T. Connolly
+            </p>
           </div>
           <button className="btn-board-tab">
             <img src={Image7} />
@@ -432,7 +436,8 @@ const Board = () => {
 
           <div className="Name-tab">
             {/*             <p className="D-P-20">Christophe Foulon, CISSP, GSLC, AWS Security</p> */}
-            <p className="D-P-20">Christophe Foulon, CISSP</p>
+            <p className="D-P-20">Christophe Foulon, CISSP, GSLC, AWS Security
+            </p>
           </div>
           <button className="btn-board-tab">
             <img src={Image7} />
@@ -481,12 +486,24 @@ const Board = () => {
           <img src={Image9} alt="dalia" />
 
           <div className="Name-tab">
-            <p className="D-P-20">Dalia Heci, LLM</p>
+            <p className="D-P-20">Dalia Heci, LLM, AML/CFT
+            </p>
           </div>
           <button className="btn-board-tab">
             <img src={Image7} />
           </button>
         </div>
+        
+      </div>
+      <div
+        className={`board-directors-tab3 ${
+          isVisible.divFiveRef ? "slide-in" : ""
+        } `}
+        ref={divFiveRef}
+      >
+
+
+        
       </div>
     </div>
   );
