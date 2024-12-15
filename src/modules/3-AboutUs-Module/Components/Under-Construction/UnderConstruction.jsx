@@ -31,9 +31,9 @@ function UnderConstruction()
               */}
 
               <button onClick={
-                          ()=>{document.querySelector('#UnderConst-main').style.animation = 'Disappear-animation 1s forwards 1' ;
-                              setTimeout(()=>{document.querySelector('#UnderConst-wrapper').style.display = "none";
-                              document.querySelector('#UnderConst-main').style.animation = 'Appear-animation 1s cubic-bezier(0.68, 0.45, 0.27, 1.55) forwards 1'},600)}}>Close</button>
+              ()=>{document.querySelector('#UnderConst-main').style.animation = 'Disappear-animation 1s forwards 1' ;
+              setTimeout(()=>{document.querySelector('#UnderConst-wrapper').style.display = "none";
+              document.querySelector('#UnderConst-main').style.animation = 'Appear-animation 1s cubic-bezier(0.68, 0.45, 0.27, 1.55) forwards 1'},600)}}>Close</button>
             </div>
           </div>
         </section>

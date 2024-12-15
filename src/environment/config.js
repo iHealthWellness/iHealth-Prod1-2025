@@ -32,8 +32,6 @@ class Config {
   // Method to get the Stripe API key
   get stripeKey() {
     const DEFAULT_STRIPE_KEY = this._get("VITE_STRIPE_PUBLISHABLE_KEY", "Default Value -- Stripe Key not retrived");
-    console.log(DEFAULT_STRIPE_KEY);
-    console.log(import.meta.env);
     return this.getString("VITE_STRIPE_PUBLISHABLE_KEY", DEFAULT_STRIPE_KEY);
   }
 

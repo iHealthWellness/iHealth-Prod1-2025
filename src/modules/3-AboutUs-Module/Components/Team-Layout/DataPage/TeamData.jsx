@@ -14,6 +14,7 @@ import Image11 from "../../../Assets/Images/Michelle.png";
 import Image12 from "../../../Assets/Images/Nathalie.png";
 import Image13 from "../../../Assets/Images/Rebacca.png";
 import Image14 from "../../../Assets/Images/Ola.png";
+import Image15 from "../../../Assets/Images/sean.png";
 
 const sasikaBio = `Sasika is the founder, Chief Executive Officer (CEO), and Chief Technology Officer (CTO) of iHealth and Wellness Foundation, Inc. --A former Wall Street technologist, she revolutionized enterprise-level web solutions at Prudential Financial, supporting Fixed Income Trading systems & Compliance systems, and PruFN.com with 20 million annual unique visitors. Now, she's disrupting healthcare technology. --At Aetna (a CVS Health Company), Sasika led the implementation of a powerful and interactive claims-driven Personal Health Record (PHR) system, serving 29.9 million individuals. This innovative solution provided members a comprehensive view of their health by integrating detailed, claims-driven information gathered across the health care spectrum - such as physician office, lab, diagnostic treatment and prescriptions. --Passionate about leveraging technology for better healthcare, Sasika established iHealth and Wellness Foundation, Inc. to improve the lives of individuals with complex diseases. Under her leadership, the foundation develops a platform that integrates with major Electronic Health Record (EHR) systems, while offering medical and wellness provider lookup, social networking, and patient advocacy services.--Sasika's contributions have earned her numerous awards in the tech industry and philanthropy, highlighting her dedication to improving lives through innovation. With a unique blend of expertise in technology and a deep understanding of the healthcare landscape, Sasika is dedicated to advancing medical and wellness care through disruptive and innovative solutions. Her visionary approach and commitment to improving lives make her a driving force behind the iHealth and Wellness Foundation's mission.--You'll often find Sasika indulging in her passions for hiking and cycling. Exploring new destinations and immersing herself in live music are also among her favorite pastimes.`;
 
@@ -153,6 +154,20 @@ Oladimeji's educational background includes a Bachelor of Science in Civil Engin
 
 
 `;
+const bio16 = ` 
+ 	
+ 	
+Sean brings over 30 years of expertise in marketing and advertising to his role at Castle Connolly Private Health Partners, LLC, where he has been a key team member since 2017. Before joining CCPHP, he served as EVP and Chief Marketing Officer at The Trust for Public Land, a leading national nonprofit focused on environmental conservation.
+--
+Sean’s corporate experience includes overseeing marketing for Best Buy’s $14 billion computing business as Senior Director of Marketing and leading transformative campaigns as VP of Marketing at XM Satellite Radio. At XM, he spearheaded a rebranding and marketing campaign that attracted millions of subscribers and was recognized as one of the best ad campaigns of 2006 (USA Today poll). He also developed strategic corporate partnerships with major brands like Starbucks, JetBlue, Avis, and United.
+--
+Earlier in his career, Sean spent over seven years at Intel Corporation, ultimately serving as Worldwide Advertising Director, where he directed iconic campaigns, including the “Blue Man Group” series and the global launch of Centrino wireless technology. His career foundation was built in advertising at top agencies like Grey and FCB, with roles across New York, Hong Kong, London, and San Francisco.
+A graduate of Colgate University, Sean now resides in Westchester, NY, with his daughter, twin sons, and their dog, Jake
+
+
+
+
+`;
 
 const teamData = {
   executive: [
@@ -266,6 +281,13 @@ const teamData = {
       extendedBio: bio15,
       image: Image14,
       link: "https://www.linkedin.com/in/lizzappi",
+    },
+    {
+      id: 16,
+      name: "Sean T. Connolly",
+      extendedBio: bio16,
+      image: Image15,
+      link: "",
     },
   ],
 };

@@ -11,29 +11,28 @@ const DataPage = [
         TeamName: "Administration",
         // Roles: "HR, Recruiting, Research, Events",
         Names: [
-            "Amarachi Ibeh",
-            "Anastasia Animwah",
-            "Catherine Makhwala",
-            "Samantha P Storgaard",
-            "Uche Agholor"
+            "Celia Arrecis ",
+            "Ekpere Abundance",
+            "Joseph Dogbey",
+            "Precious Ilenre"
         ],
     },
     {
         id: 2,
         TeamName: "Cybersecurity and Data Privacy",
-        // Roles: "Cybersecurity,Privacy,Data Privacy",
-        Names: ["Somya Narain", "Viswajit Srinivasan"],
+        // Roles: "Cybersecurity,Privacy,Data Privacy ",
+        Names: [, "Viswajit Srinivasan"],
+        
     },
     {
         id: 3,
         TeamName: "Data Analysis",
         // Roles: "Data Analysts, Clinical Trials",
         Names: [
+            "Adam Albaghali",
             "Chukwuemeka Francis",
             "Ebunoluwa Adejayan",
-            "Onidajo Wale-Olayitan",
-            "Sakshi Jain",
-            "Tommy Tan"
+            "Sandra Ann Thomes",
         ],
     },
     {
@@ -42,14 +41,15 @@ const DataPage = [
         // Roles: "UX/UI Designers, Interaction Designers, Visual Designers, Graphic Designers",
         Names: [
             // "Anna Chevalier",
-            "Divyanshi Rajauria",
             "Happy Emerame",
-            "Jennifer Kim",
+            "Emily Caro",
+            "Kiara Seong ",
             "Krishna Motwani",
             "Oluwafemi Nurudeen",
+            "Quinn Devlin",
             "Tatiana Golitsyna",
             "Tetiana Zabolotna",
-            "Yoann Savigny"
+            "Yoann Savigny",
         ],
     },
     {
@@ -58,32 +58,18 @@ const DataPage = [
         // Roles: "Software Engineers, Full-Stack Developers, Backend Developers, Frontend Developers, DevOps Engineers, Mobile App Developers",
         Names: [
             "Adegoke Bestman",
-            // "Abraham Igbajar",
-            "Ayan Patel",
-            "Bailong Chen",
+            "Amal Engulatov",
+            "Aman Goel",
             "Bauket Fabrice",
-            "Bhagyesh Chaudhari",
-            "Cagatay Ersoy",
-            // "David Tevzadze",
             "Fawaz Bailey",
-            // "Frank Ting",
-            "Gabriel Xavier",
-            "Joel Kalema",
-            // "Lucas Ho",
+            "Jad Salameh",
+            "Kevin Flut",
+            "Mohammed Poolwala",
             "Oladimeji Stephen Ibitoye",
-            // "Patrick Post",
-            // "Ryan Farekh",
-            "Rodrigo Cipriano",
             "Ritu Goyal",
-            "Rupaak Srinivas",
+            "Rodrigo Cipriano",
             "Salmon Gowa",
-            "Shubhangi Saxena",
-            "Sushant Gupta",
-            "Temitope Alabi",
-            // "Ting Ting Lin",
-            "Wahib Barqawi",
-            // "William Fernandes",
-            // "Yufei Wang"
+            "Wasif Khan",
         ],
     },
     {
@@ -96,7 +82,7 @@ const DataPage = [
         id: 7,
         TeamName: "Human Resources",
         // Roles: "HR Managers, HR Generalists, Talent Acquisition Specialists",
-        Names: ["Eliza Fiedler", "Onyinye Onor", "Shagun Vats", "Sylvia Ezechie"],
+        Names: ["Eliza Fiedler", "Samantha P Storgaard", "Srushti Chaudhari", "Sylvia Ezechie"],
     },
     {
         id: 8,
@@ -120,11 +106,7 @@ const DataPage = [
         Names: [
             "Amudha Ekambaram",
             "Hsuan Ouyang",
-            // "Jay S. Caldwell",
-            // "Judith Emenike",
-            // "Kathleen Davis",
             "Manopriya Krishnan",
-            "Prince Ihemegbulam"
         ],
     },
     {
@@ -133,11 +115,12 @@ const DataPage = [
         // Roles: "Project Managers, Scrum Masters, Agile Coaches",
         Names: [
             "Catherine Falardeau",
-            // "Folake Fadare",
-            "ChInelo Nwajei",
-            "Grettel Fonseca",
+            "David Chijioke",
+            "Douha Madkour",
             "Hana Javurkova",
-            "Srujana Kethamukkala"
+            "Samantha P Storgaard",
+            "Srujana Kethamukkala",
+            "Sylvia Ezechie"
         ],
     },
     {
@@ -146,16 +129,12 @@ const DataPage = [
         // Roles: "QA Engineers, Testers, Quality Assurance Specialists",
         Names: [
             "Adithya Arun",
-            "David Abolarin",
+            "Alla Shepelenko",
             "Derrick Owusu Ansah",
-            "Emma Casarez",
             "Enrile B Fuentes",
-            "Kirankumar Mudhol",
-            "Kevser Bozoglu",
             "Olga Chirkova",
-            "Pavel Glomozda",
-            "Subhajit Mandal",
-            "Sveta Seridinko"
+            "Priyanka Patil",
+            "Tatiana Valverde"
         ],
     },
     {
@@ -168,7 +147,7 @@ const DataPage = [
         id: 14,
         TeamName: "Social Media",
         //  Roles: "Social Media Managers, Social Media Specialists, Community Managers",
-        Names: ["Satyam Kishore"],
+        Names: ["Satyam Kishore", "Uche Agholor"],
     },
 ];
 
