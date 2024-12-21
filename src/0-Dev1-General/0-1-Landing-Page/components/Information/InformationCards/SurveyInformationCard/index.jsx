@@ -27,7 +27,7 @@ function SurveyInformationCard() {
       <div key={index} className={styles.cardContainer}>
         <h2 className={styles.cardHeader}>
           <span className={`${styles.dH1_32} ${styles.part1} ${styles.surveyToday}`}>{part1}</span>
-          <span className={styles.dH3_24}>{part2}</span>
+          <span  className={` ${styles.part2} ${styles.dH3_24} D-H3-24`}>{part2}</span>
         </h2>
         <div className={styles.contentSection}>
           <div className={styles.imagesContainer}>

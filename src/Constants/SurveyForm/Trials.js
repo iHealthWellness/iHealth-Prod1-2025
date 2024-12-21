@@ -7,7 +7,7 @@ const Trials = [
   {
     header: {
       part1: "50+",
-      part2: "Clinic Trials",
+      part2: "Clinical Trials",
     },
     text: "Over 50 clinical trials seek participants. Joining offers education, insights into conditions, and access to cutting-edge medical treatments. Be part of advancing healthcare today.",
     images: [
@@ -17,7 +17,7 @@ const Trials = [
       },
     ],
     path: "",
-    buttonText: "View clinic trials",
+    buttonText: "View clinical trials",
     buttonIcon: "",
   },
   {

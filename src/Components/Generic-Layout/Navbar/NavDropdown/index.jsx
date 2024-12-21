@@ -29,6 +29,7 @@ const menuItems = [
       { title: "Research Tools & Resources", url: "/research/#tools" },
       { title: "Clinical Drug Therapies", url: "/research/#clinical" },
       { title: "Participate in Research", url: "/research/#participate" },
+      { title: "How to get Involved", url: "/research/#howtogetinvolved" },
     ],
   },
   {
