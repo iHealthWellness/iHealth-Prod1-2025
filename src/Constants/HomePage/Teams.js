@@ -26,7 +26,7 @@ const Teams = [
       { text: "Understanding NF", path: "/livingwith-nf/#understand-nf" },
       {
         text: "Survey Now: Clinical Trials",
-        path: "/livingwith-nf/#take-survey",
+        path: "/nf-survey",
       },
       { text: "Sign-Up: NF Registry", path: "/livingwith-nf/#signup-reg" },
     ],

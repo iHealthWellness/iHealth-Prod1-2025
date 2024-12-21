@@ -28,7 +28,7 @@ const NavLogo = () => {
   };
 
   useEffect(() => {
-    if ( location.pathname === "/" || location.pathname === "/about-us" || location.pathname === "/research" || location.pathname === "/Our-Team" || location.pathname === "/donate" || location.pathname === "/job-openings") {
+    if ( location.pathname === "/" || location.pathname === "/about-us" || location.pathname === "/research" || location.pathname === "/Our-Team" || location.pathname === "/donate" || location.pathname === "/nf-survey" || location.pathname === "/job-openings") {
       window.scrollTo({ top: 0, behavior: "smooth" });
     }
   }, [location.pathname]);
@@ -72,7 +72,7 @@ const AdjustedHashLink = ({ to, children, ...props }) => {
               });
             }
           }
-        }, 500); // Increased timeout to 500ms
+        }, 100); 
       };
 
       if (isCurrentPage && hash) {
@@ -181,6 +181,12 @@ const MenuList = ({ setIsMenuOpen, closeSubMenu }) => {
           paragraph: "Contribute to innovative research by becoming a participant",
           icon: <Biotech />,
           url: "/research/#participate",
+        },
+        {
+          title: "How to get Involved",
+          paragraph: "Contribute to innovative research by becoming a participant",
+          icon: <Biotech />,
+          url: "/research/#howtogetinvolved",
         },
       ],
     },
