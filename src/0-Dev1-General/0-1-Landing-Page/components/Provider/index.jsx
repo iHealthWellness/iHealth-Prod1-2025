@@ -7,12 +7,15 @@ import PinDropIcon from "@mui/icons-material/PinDrop";
 import ProviderServices from "src/Services/provider";
 import { stateData } from "../../../../Constants/HomePage/StateData";
 import styles from './index.module.css';
+import { useNavigate } from "react-router-dom";
+import { BASE_URL } from "src/environment/config";
 
 const Provider = () => {
+  const navigate = useNavigate();
   const [diseases, setDiseases] = useState([]);
   const [states, setStates] = useState([]);
   const [specialities, setSpecialities] = useState([]);
-  const [diseaseValue, setDiseaseValue] = useState("");
+  const [diseaseValue, setDiseaseValue] = useState(null);
   const [specialtyValue, setSpecialtyValue] = useState("");
   const [stateValue, setStateValue] = useState("");
   const [acceptingNewPatients, setAcceptingNewPatients] = useState(false);
@@ -30,43 +33,75 @@ const Provider = () => {
     setIsLoading(loading);
   };
 
+  const sortDiseases = (diseases) => {
+    return diseases.sort((a, b) => {
+      if (a.name === "Neurofibromatosis") return -1;
+      if (b.name === "Neurofibromatosis") return 1;
+      if (a.name === "- Other - ") return 1;
+      if (b.name === "- Other - ") return -1;
+      return a.name.localeCompare(b.name);
+    });
+  };
+
   useEffect(() => {
     const fetchProviders = async () => {
       const cache = {
-        diseases: sessionStorage.getItem("diseases"),
+        newDiseases: sessionStorage.getItem("newDiseases"),
         specialities: sessionStorage.getItem("specialities"),
         states: sessionStorage.getItem("states"),
       };
 
-      if (cache.diseases && cache.specialities && cache.states) {
-        // Data is available in cache
-        setDiseases(JSON.parse(cache.diseases));
+      if (cache.newDiseases && cache.specialities && cache.states) {
+        console.log("Using cached data");
+        const processedDiseases = JSON.parse(cache.newDiseases);
+        setDiseases(processedDiseases);
         setSpecialities(JSON.parse(cache.specialities));
-        setStates(cache.states.split(","));
+        setStates(JSON.parse(cache.states));
       } else {
-        // Data needs to be fetched
+        console.log("Fetching new data");
         setIsLoading(true);
-        // Extract state names (full names) from stateData
-        const stateOptions = stateData.map(
-          (stateObj) => Object.values(stateObj)[0]
-        );
         try {
-          const [diseaseRes, specialtyRes, stateRes] = await Promise.all([
-            ProviderServices.handleGetAllDisease(),
+          const [newDiseaseRes, specialtyRes, stateRes] = await Promise.all([
+            ProviderServices.handleGetNewDisease(),
             ProviderServices.handleGetAllSpeciality(),
             ProviderServices.handleGetAllState(),
           ]);
 
-          setDiseases(diseaseRes.data);
+          console.log("New disease response:", newDiseaseRes);
+          console.log("Specialty response:", specialtyRes);
+          console.log("State response:", stateRes);
+
+          const newDiseaseData = newDiseaseRes.data;
+
+          if (newDiseaseData.status === 'success' && Array.isArray(newDiseaseData.data)) {
+            const processedDiseases = sortDiseases(
+              newDiseaseData.data.map(disease => ({
+                name: disease,
+                disabled: disease !== "Neurofibromatosis"
+              }))
+            );
+            // Ensure "- Other -" is always the last and unselectable
+            const otherIndex = processedDiseases.findIndex(d => d.name === "- Other -");
+            if (otherIndex !== -1) {
+              const otherDisease = processedDiseases.splice(otherIndex, 1)[0];
+              otherDisease.disabled = true;
+              processedDiseases.push(otherDisease);
+            }
+            setDiseases(processedDiseases);
+            // Update sessionStorage with sorted diseases
+            sessionStorage.setItem("newDiseases", JSON.stringify(processedDiseases));
+          } else {
+            console.error("New disease data is not in expected format:", newDiseaseData);
+          }
+
           setSpecialities(specialtyRes.data);
           setStates(stateRes.data);
 
-          // Cache the data
-          sessionStorage.setItem("diseases", JSON.stringify(diseaseRes.data));
           sessionStorage.setItem("specialities", JSON.stringify(specialtyRes.data));
-          sessionStorage.setItem("states", stateOptions);
+          sessionStorage.setItem("states", JSON.stringify(stateRes.data));
+
         } catch (e) {
-          console.log(e);
+          console.error('Error fetching provider data:', e);
         } finally {
           setIsLoading(false);
         }
@@ -78,12 +113,27 @@ const Provider = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(diseaseValue);
-    console.log(specialtyValue);
-    console.log(stateValue);
-    console.log(treatsChildren);
-    console.log(acceptingNewPatients);
+    const filters = {
+      disease: diseaseValue ? diseaseValue.name : "",
+      specialty: specialtyValue,
+      state: stateValue,
+    };
+
+    const queryParams = new URLSearchParams();
+    Object.entries(filters).forEach(([key, value]) => {
+      if (value) {
+        queryParams.append(key, value);
+      }
+    });
+
+    if (queryParams.toString()) {
+      navigate(`/providers?${queryParams.toString()}`);
+    }
   };
+
+  console.log("Rendering with diseases:", diseases);
+  console.log("Rendering with specialities:", specialities);
+  console.log("Rendering with states:", states);
 
   return (
     <section id="Home-Page-provider-container" className={styles.providerContainer}>
@@ -110,7 +160,9 @@ const Provider = () => {
                 value={diseaseValue}
                 onInputChange={setDiseaseValue}
                 loading={isLoading}
-                paperWidth="100%"  
+                paperWidth="100%"
+                getOptionLabel={(option) => option.name}
+                isOptionDisabled={(option) => option.disabled}
               />
             </div>
             <div className={styles.providerFormField}>
@@ -120,7 +172,8 @@ const Provider = () => {
                 value={specialtyValue}
                 onInputChange={setSpecialtyValue}
                 loading={isLoading}
-                paperWidth="100%" 
+                paperWidth="100%"
+                getOptionLabel={(option) => option}
               />
             </div>
             <div className={styles.providerFormField}>
@@ -130,7 +183,8 @@ const Provider = () => {
                 value={stateValue}
                 onInputChange={setStateValue}
                 loading={isLoading}
-                paperWidth="100%"  
+                paperWidth="100%"
+                getOptionLabel={(option) => option}
               />
               <Button
                 variant="text"
@@ -149,7 +203,7 @@ const Provider = () => {
               </Button>
             </div>
           </div>
-          <ButtonsSearchDonate />
+          <ButtonsSearchDonate onSubmit={handleSubmit} isDisabled={!diseaseValue && !specialtyValue && !stateValue} />
         </form>
       </div>
     </section>
@@ -157,3 +211,4 @@ const Provider = () => {
 };
 
 export default Provider;
+

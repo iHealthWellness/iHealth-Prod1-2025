@@ -5,7 +5,6 @@ import Home from "./0-Dev1-General/0-1-Landing-Page/pages/index";
 import RootLayout from "./Pages/Root";
 import { getAllRoutes } from "./modules/combinedRoutes";
 import { useMediaQuery } from "@mui/material";
-import Preloader from "./Components/Generic-Layout/preloader";
 
 // ScrollRestoration Component
 function ScrollRestoration() {
@@ -59,15 +58,18 @@ function ScrollRestoration() {
   return null;
 }
 
+// Hash Scroll Hook
 const useHashScroll = () => {
   const location = useLocation();
   const lastHash = useRef("");
-  const isMobile = useMediaQuery("(max-width: 760px)");
+  const isMobile = useMediaQuery("(max-width: 760px)"); 
 
   const scrollToElement = useCallback((hash) => {
     const element = document.getElementById(hash);
     if (element) {
-      const navbarHeight = isMobile ? 100 : 140;
+      
+      const navbarHeight = isMobile ? (100) : (140); 
+      
       const elementPosition = element.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - navbarHeight;
 
@@ -76,50 +78,23 @@ const useHashScroll = () => {
         behavior: "smooth",
       });
     }
-  }, [isMobile]);
-
-  // Add this line at the beginning of the hook
-  const lastScrollTime = useRef(0);
-
-  // Update lastScrollTime when scrollToElement is called
-  const updatedScrollToElement = useCallback((hash) => {
-    lastScrollTime.current = Date.now();
-    scrollToElement(hash);
-  }, [scrollToElement]);
+  }, []);
 
   useEffect(() => {
     if (location.hash) {
       const hash = location.hash.slice(1);
       lastHash.current = hash;
 
-      // Scroll once after a short delay
-      setTimeout(() => {
+      const scrollInterval = setInterval(() => {
         scrollToElement(hash);
       }, 100);
 
-      const handleScroll = (e) => {
-        if (Date.now() - lastScrollTime.current < 1000) {
-          e.preventDefault();
-          e.stopPropagation();
-        }
-      };
-
-      window.addEventListener('scroll', handleScroll, { passive: false });
-
-      const timeout = setTimeout(() => {
-        window.removeEventListener('scroll', handleScroll);
-      }, 100);
-
-      return () => {
-        window.removeEventListener('scroll', handleScroll);
-        clearTimeout(timeout);
-      };
+      setTimeout(() => {
+        clearInterval(scrollInterval);
+      }, 800);
     }
   }, [location, scrollToElement]);
-
-  return updatedScrollToElement;
 };
-
 
 // Combined Wrapper Component
 const ScrollWrapper = ({ children }) => {
@@ -151,26 +126,13 @@ async function setupRouter() {
 
 function App() {
   const [router, setRouter] = useState(null);
-  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-  
-    const preloadDelay = setTimeout(() => {
-      setLoading(false);
-    }, 1000);
-  
     setupRouter().then(setRouter);
-
-
-    return () => clearTimeout(preloadDelay);
   }, []);
 
-  if (loading || !router) {
-    return (
-      <div>
-        <Preloader />
-      </div>
-    );
+  if (!router) {
+    return <div>Loading...</div>;
   }
 
   return <RouterProvider router={router} />;
