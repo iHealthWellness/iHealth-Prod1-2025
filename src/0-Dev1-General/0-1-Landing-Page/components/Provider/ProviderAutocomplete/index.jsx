@@ -11,7 +11,17 @@ const ProviderAutocomplete = ({
   onInputChange,
   loading,
   paperWidth,
+  getOptionLabel,
+  isOptionDisabled
 }) => {
+  const defaultGetOptionLabel = (option) => {
+    if (typeof option === 'string') return option;
+    if (option && typeof option === 'object' && 'name' in option) return option.name;
+    return '';
+  };
+
+  const finalGetOptionLabel = getOptionLabel || defaultGetOptionLabel;
+
   return (
     <div className={styles.genericProviderAutocompleteContainer} style={{ position: "relative" }}>
       <Autocomplete
@@ -21,6 +31,10 @@ const ProviderAutocomplete = ({
           onInputChange(newValue);
         }}
         options={options}
+        getOptionLabel={finalGetOptionLabel}
+        isOptionEqualToValue={(option, value) => 
+          finalGetOptionLabel(option) === finalGetOptionLabel(value)
+        }
         PaperComponent={(props) => (
           <Paper
             {...props}
@@ -68,6 +82,8 @@ const ProviderAutocomplete = ({
               zIndex: 100,
               color: selected ? '#0d99ff' : 'black',
               backgroundColor: selected ? '#f0f7fd' : '#f0f7fd',
+              opacity: isOptionDisabled && isOptionDisabled(option) ? 0.5 : 1,
+              pointerEvents: isOptionDisabled && isOptionDisabled(option) ? 'none' : 'auto',
             }}
             onMouseEnter={(e) => {
               e.currentTarget.style.textDecoration = 'underline';
@@ -76,7 +92,7 @@ const ProviderAutocomplete = ({
               e.currentTarget.style.textDecoration = 'none';
             }}
           > 
-            {option}
+            {finalGetOptionLabel(option)}
           </li>
         )}
         sx={{
@@ -108,3 +124,4 @@ const ProviderAutocomplete = ({
 };
 
 export default ProviderAutocomplete;
+

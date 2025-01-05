@@ -24,7 +24,7 @@ const BenefitCard = ({ benefit }) => {
     if (isMobile) {
       const slideInterval = setInterval(() => {
         setCurrentSlide((prev) => (prev === 1 ? 0 : prev + 1));
-      }, 6000);
+      }, 45000);
 
       return () => {
         clearInterval(slideInterval);

@@ -7,6 +7,10 @@ const handleGetAllDisease = () => {
   );
 };
 
+const handleGetNewDisease = () => {
+  return axios.get(`${BASE_URL}/api/v1/diseases/list`);
+};
+
 const handleGetAllSpeciality = () => {
   return axios.get(
     `${BASE_URL}/api/v1/provider-data/available-data?type=speciality`
@@ -27,9 +31,11 @@ const handleGetAllState = () => {
 
 const ProviderServices = {
   handleGetAllDisease,
+  handleGetNewDisease,
   handleGetAllSpeciality,
   handleGetAllCity,
   handleGetAllState,
 };
 
 export default ProviderServices;
+
