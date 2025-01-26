@@ -3,7 +3,8 @@
 .preloader {
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
+  align-items: flex-end; /* SN >> Align content to the bottom */
   height: 100vh;
   background: linear-gradient(
     to right,
@@ -20,6 +21,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-end; /* SN>> Ensure the content is at the bottom */
+  margin-bottom: 15%; /* SN>> Optional: Add space above the bottom edge */
 }
 
 .preloaderNav {
@@ -72,7 +75,8 @@
   width: 100%;
   height: auto;
   animation: rotate 5s infinite linear;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
+  margin-bottom: 5px; /* <<SN>> Reduced margin to minimize space between logo and text */
   transform: scale(1.1);
 }
 
@@ -86,7 +90,9 @@
   font-size: 2.2rem;
   font-weight: 500;
   color: #fff;
-  margin-top: 20px;
+  /* margin-top: 20px; */
+  margin-top: 1%;
+  /* << SN>> Reduced margin to bring the text closer to the logo */
   text-align: center;
   font-family: "Dancing Script", serif;
   font-optical-sizing: auto;
@@ -119,7 +125,8 @@
     transform: scale(1.1);
   }
   50% {
-    transform: scale(1.59);
+    /* transform: scale(1.59); */
+    transform: scale(1.8); /* <<SN>> Increased from 1.59 to 1.8 for a bigger zoom */
   }
   100%{
     transform: scale(1.1);
