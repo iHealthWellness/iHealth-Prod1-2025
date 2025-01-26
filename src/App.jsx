@@ -5,6 +5,7 @@ import Home from "./0-Dev1-General/0-1-Landing-Page/pages/index";
 import RootLayout from "./Pages/Root";
 import { getAllRoutes } from "./modules/combinedRoutes";
 import { useMediaQuery } from "@mui/material";
+import Preloader from "./Components/Generic-Layout/preloader";
 
 // ScrollRestoration Component
 function ScrollRestoration() {
@@ -126,13 +127,27 @@ async function setupRouter() {
 
 function App() {
   const [router, setRouter] = useState(null);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setupRouter().then(setRouter);
+    const loadRouter = async () => {
+      const startTime = Date.now();
+      const loadedRouter = await setupRouter();
+      const elapsedTime = Date.now() - startTime;
+
+      const remainingTime = Math.max(2000 - elapsedTime, 0);
+      setTimeout(() => {
+        setRouter(loadedRouter);
+        setLoading(false);
+      }, remainingTime);
+    };
+
+    loadRouter();
   }, []);
 
+
   if (!router) {
-    return <div>Loading...</div>;
+    return <div><Preloader/></div>;
   }
 
   return <RouterProvider router={router} />;
