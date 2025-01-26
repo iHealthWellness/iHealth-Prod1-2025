@@ -3,8 +3,7 @@
 .preloader {
   display: flex;
   justify-content: center;
-  /* align-items: center; */
-  align-items: flex-end; /* SN >> Align content to the bottom */
+  align-items: center;
   height: 100vh;
   background: linear-gradient(
     to right,
@@ -14,15 +13,16 @@
     rgba(7, 35, 91, 0.81) 63%,
     rgba(7, 35, 91, 1) 100%
   );
-  animation: fade-in 0.2s ease-in-out;
+  /* animation: fade-in 0.2s ease-in-out; */
+  animation: fade-in 1s ease-in-out; /* <<SN>> Slowed down the fade-in animation */
 }
 
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-end; /* SN>> Ensure the content is at the bottom */
-  margin-bottom: 15%; /* SN>> Optional: Add space above the bottom edge */
+  justify-content: center;   /* <<SN>> Added */
+  height: 100vh;          /* <<SN>> Ensure container takes full height */
 }
 
 .preloaderNav {
@@ -74,9 +74,10 @@
   max-width: 200px;
   width: 100%;
   height: auto;
-  animation: rotate 5s infinite linear;
-  /* margin-bottom: 20px; */
-  margin-bottom: 5px; /* <<SN>> Reduced margin to minimize space between logo and text */
+  /* animation: rotate 2s infinite linear; */
+  animation: rotate 2.5s infinite linear; /* <<SN>> Slowed down the rotation animation */
+  margin-bottom: 2%;
+  margin-top: 10%; /*<<SN>> Added */
   transform: scale(1.1);
 }
 
@@ -91,8 +92,7 @@
   font-weight: 500;
   color: #fff;
   /* margin-top: 20px; */
-  margin-top: 1%;
-  /* << SN>> Reduced margin to bring the text closer to the logo */
+  margin-top: 3%; /* <<SN>> Reduced margin-top to bring text closer to the logo */
   text-align: center;
   font-family: "Dancing Script", serif;
   font-optical-sizing: auto;
@@ -125,8 +125,7 @@
     transform: scale(1.1);
   }
   50% {
-    /* transform: scale(1.59); */
-    transform: scale(1.8); /* <<SN>> Increased from 1.59 to 1.8 for a bigger zoom */
+    transform: scale(1.59);
   }
   100%{
     transform: scale(1.1);
