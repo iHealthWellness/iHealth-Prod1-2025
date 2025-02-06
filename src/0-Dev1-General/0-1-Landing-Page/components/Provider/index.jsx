@@ -44,35 +44,14 @@ const Provider = () => {
   };
 
   useEffect(() => {
-    const fetchProviders = async () => {
-      const cache = {
-        newDiseases: sessionStorage.getItem("newDiseases"),
-        specialities: sessionStorage.getItem("specialities"),
-        states: sessionStorage.getItem("states"),
-      };
-
-      if (cache.newDiseases && cache.specialities && cache.states) {
-        console.log("Using cached data");
-        const processedDiseases = JSON.parse(cache.newDiseases);
-        setDiseases(processedDiseases);
-        setSpecialities(JSON.parse(cache.specialities));
-        setStates(JSON.parse(cache.states));
+    const fetchDiseases = async () => {
+      const cachedDiseases = JSON.parse(sessionStorage.getItem("newDiseases"));
+      if (cachedDiseases && cachedDiseases.length>0) {
+        setDiseases(cachedDiseases);
       } else {
-        console.log("Fetching new data");
-        setIsLoading(true);
         try {
-          const [newDiseaseRes, specialtyRes, stateRes] = await Promise.all([
-            ProviderServices.handleGetNewDisease(),
-            ProviderServices.handleGetAllSpeciality(),
-            ProviderServices.handleGetAllState(),
-          ]);
-
-          console.log("New disease response:", newDiseaseRes);
-          console.log("Specialty response:", specialtyRes);
-          console.log("State response:", stateRes);
-
+          const newDiseaseRes = await ProviderServices.handleGetNewDisease();
           const newDiseaseData = newDiseaseRes.data;
-
           if (newDiseaseData.status === 'success' && Array.isArray(newDiseaseData.data)) {
             const processedDiseases = sortDiseases(
               newDiseaseData.data.map(disease => ({
@@ -80,7 +59,6 @@ const Provider = () => {
                 disabled: disease !== "Neurofibromatosis"
               }))
             );
-            // Ensure "- Other -" is always the last and unselectable
             const otherIndex = processedDiseases.findIndex(d => d.name === "- Other -");
             if (otherIndex !== -1) {
               const otherDisease = processedDiseases.splice(otherIndex, 1)[0];
@@ -88,27 +66,50 @@ const Provider = () => {
               processedDiseases.push(otherDisease);
             }
             setDiseases(processedDiseases);
-            // Update sessionStorage with sorted diseases
             sessionStorage.setItem("newDiseases", JSON.stringify(processedDiseases));
           } else {
             console.error("New disease data is not in expected format:", newDiseaseData);
           }
-
-          setSpecialities(specialtyRes.data);
-          setStates(stateRes.data);
-
-          sessionStorage.setItem("specialities", JSON.stringify(specialtyRes.data));
-          sessionStorage.setItem("states", JSON.stringify(stateRes.data));
-
         } catch (e) {
-          console.error('Error fetching provider data:', e);
-        } finally {
-          setIsLoading(false);
+          console.error('Error fetching diseases:', e);
         }
       }
     };
 
-    fetchProviders();
+    const fetchSpecialities = async () => {
+      const cachedSpecialities = JSON.parse(sessionStorage.getItem("specialities"));
+      if (cachedSpecialities && cachedSpecialities.length>0) {
+        setSpecialities(cachedSpecialities);
+      } else {
+        try {
+          const specialtyRes = await ProviderServices.handleGetAllSpeciality();
+          setSpecialities(specialtyRes.data);
+          sessionStorage.setItem("specialities", JSON.stringify(specialtyRes.data));
+        } catch (e) {
+          console.error('Error fetching specialities:', e);
+        }
+      }
+    };
+
+    const fetchStates = async () => {
+      const cachedStates = JSON.parse(sessionStorage.getItem("states"));
+      if (cachedStates && cachedStates.length>0) {
+        setStates(cachedStates);
+      } else {
+        try {
+          const stateRes = await ProviderServices.handleGetAllState();
+          setStates(stateRes.data);
+          sessionStorage.setItem("states", JSON.stringify(stateRes.data));
+        } catch (e) {
+          console.error('Error fetching states:', e);
+        }
+      }
+    };
+
+    setIsLoading(true);
+    Promise.all([fetchDiseases(), fetchSpecialities(), fetchStates()]).finally(() => {
+      setIsLoading(false);
+    });
   }, []);
 
   const handleSubmit = (e) => {
@@ -126,9 +127,9 @@ const Provider = () => {
       }
     });
 
-    if (queryParams.toString()) {
-      navigate(`/providers?${queryParams.toString()}`);
-    }
+    // if (queryParams.toString()) {
+    //   navigate(`/providers?${queryParams.toString()}`);
+    // }
   };
 
   console.log("Rendering with diseases:", diseases);
@@ -211,4 +212,3 @@ const Provider = () => {
 };
 
 export default Provider;
-

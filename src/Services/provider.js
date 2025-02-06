@@ -13,7 +13,7 @@ const handleGetNewDisease = () => {
 
 const handleGetAllSpeciality = () => {
   return axios.get(
-    `${BASE_URL}/api/v1/provider-data/available-data?type=speciality`
+    `${BASE_URL}/api/v1/provider-data/available-data?type=specialty`
   );
 };
 
