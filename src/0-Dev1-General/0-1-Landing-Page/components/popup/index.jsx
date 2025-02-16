@@ -4,6 +4,7 @@ import beAHero from "src/Assets/Images/be-a-hero.png";
 import popupLabel from "src/Assets/Images/popup-label.svg";
 import { donateLinkUrl } from "src/environment/config";
 import { useMediaQuery } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const Popup = () => {
 
@@ -47,11 +48,11 @@ const Popup = () => {
                         If you've got the strength to give, help those facing complex diseases with insufficient care and resources:
                     </p>
                   {isMobile ? 
-                   ( <a
-                    href='/donate'
+                   ( <Link
+                    to='/donate'
                     onClick={handleClose} 
                     // rel="noopener noreferrer"
-                    >  Click Here and Give Now! </a> )
+                    >  Click Here and Give Now! </Link> )
                     :
                   (  <a
                         href={donateLinkUrl}

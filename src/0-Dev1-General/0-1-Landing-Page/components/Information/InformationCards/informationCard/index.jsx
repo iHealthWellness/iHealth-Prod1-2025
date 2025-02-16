@@ -1,4 +1,4 @@
-import { HashLink } from "react-router-hash-link";
+import { Link} from "react-router-dom";
 import styles from "./index.module.css"; 
 
 const InformationCard = ({ team }) => {
@@ -35,21 +35,22 @@ const InformationCard = ({ team }) => {
                 {c.text}
               </a>
             ) : (
-              <HashLink smooth to={c.path}>
+              <Link smooth to={c.path}>
                 {c.text}
-              </HashLink>
+              </Link>
             )}
           </li>
         ))}
       </ul>
       <div className={styles.informationCardLinkBlock}>
-        <a
+        <Link
           className={styles.informationCardLink}
-          href={detailPath}
+          // href={detailPath}
+          to={detailPath}
           onClick={(e) => handleOnClick(e, detailPath)}
         >
           Learn More &gt;
-        </a>
+        </Link>
       </div>
     </div>
   );

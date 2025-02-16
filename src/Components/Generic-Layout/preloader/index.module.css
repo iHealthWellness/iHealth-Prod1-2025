@@ -13,16 +13,13 @@
     rgba(7, 35, 91, 0.81) 63%,
     rgba(7, 35, 91, 1) 100%
   );
-  /* animation: fade-in 0.2s ease-in-out; */
-  animation: fade-in 1s ease-in-out; /* <<SN>> Slowed down the fade-in animation */
+  animation: fade-in 0.9s ease-in-out;
 }
 
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;   /* <<SN>> Added */
-  height: 100vh;          /* <<SN>> Ensure container takes full height */
 }
 
 .preloaderNav {
@@ -71,14 +68,13 @@
 }
 
 .image {
+  margin-top: 80px;
   max-width: 200px;
   width: 100%;
   height: auto;
-  /* animation: rotate 2s infinite linear; */
-  animation: rotate 2.5s infinite linear; /* <<SN>> Slowed down the rotation animation */
-  margin-bottom: 2%;
-  margin-top: 10%; /*<<SN>> Added */
-  transform: scale(1.1);
+  animation: rotate 3s infinite linear;
+  margin-bottom: 5px;
+  transform: scale(1.0);
 }
 
 .imageTwo {
@@ -91,15 +87,14 @@
   font-size: 2.2rem;
   font-weight: 500;
   color: #fff;
-  /* margin-top: 20px; */
-  margin-top: 3%; /* <<SN>> Reduced margin-top to bring text closer to the logo */
+  margin-top: 20px;
   text-align: center;
   font-family: "Dancing Script", serif;
-  font-optical-sizing: auto;
-  /* animation: slide-in-bottom 1.2s infinite; */
+  font-optical-sizing: auto; 
   overflow: hidden;
   white-space: nowrap;
   transform: translateY(100%);  
+  /* animation: text-animation 3s infinite linear; */
 }
 
 @keyframes slide-in-bottom {
@@ -125,10 +120,22 @@
     transform: scale(1.1);
   }
   50% {
-    transform: scale(1.59);
+    transform: scale(1.7);
   }
   100%{
-    transform: scale(1.1);
+    transform: scale(1.9);
+  }
+}
+@keyframes text-animation {
+  0% {
+    margin-top: 1px;
+  }
+  50% {    
+    margin-top: 10px;
+    
+  }
+  100%{
+    margin-top: 15px;
   }
 }
 
