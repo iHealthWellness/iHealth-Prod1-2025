@@ -8,9 +8,9 @@ const MyComponent3 = ({ toggleAccordion, activeAccordion }) => {
 
   return (
     <>
-      <div className={styles.researchTitle}>
+      <div className={styles.researchTitle} id="howtogetinvolved">
         <h1 className="D-H1-32">
-          Stay Informed:{" "}
+        How to get involved:{" "}
           <span className="D-H3-24">
             Latest NF Research Updates and Insights
           </span>
@@ -103,5 +103,6 @@ const MyComponent3 = ({ toggleAccordion, activeAccordion }) => {
     </>
   );
 };
+
 
 export default MyComponent3;
