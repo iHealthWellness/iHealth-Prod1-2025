@@ -2,22 +2,22 @@ import React from 'react';
 import styles from './index.module.css';
 import { Link } from 'react-router-dom';
 import imageOne from '../../../../../src/Assets/Images/eventimageone.png';
-import imageTwo from '../../../../../src/Assets/Images/eventimageone.png';
+import imageTwo from '../../../../../src/Assets/Images/eventimagetwo.png';
 
 
 const EventCards = () => {
   const events = [
     {
       title: "Principles of Migraine Management",
-      date: "24TH Feb, 2025",
+      date: "25TH Feb, 2025",
       time: "1PM ET",
-      image: "../src/Assets/Images/eventimageone.png",
-      link: imageOne,
+      image: imageOne,
+      link: "https://forms.gle/CMLiLetqs2wh8D6H9",
     },
     {
       title: "Navigating NF with Confidence",
-      date: "26TH Feb, 2025",
-      time: "2PM ET",
+      date: "25TH March, 2025",
+      time: "5PM ET",
       image: imageTwo,
       link: "https://forms.gle/5rkUz7XsYUvvdRPL7",
     }, 
