@@ -6,6 +6,7 @@ import RootLayout from "./Pages/Root";
 import { getAllRoutes } from "./modules/combinedRoutes";
 import { useMediaQuery } from "@mui/material";
 import Preloader from "./Components/Generic-Layout/preloader";
+import LearnMore from "./0-Dev1-General/0-1-Landing-Page/pages/learnMore";
 
 // ScrollRestoration Component
 function ScrollRestoration() {
@@ -119,7 +120,11 @@ async function setupRouter() {
           <RootLayout />
         </ScrollWrapper>
       ),
-      children: [{ index: true, element: <Home /> }, ...moduleRoutes],
+      children: [
+        { index: true, element: <Home /> },
+        { path: "learnmore", element: <LearnMore /> },
+        ...moduleRoutes,
+      ],
     },
   ]);
   return router;

@@ -1,12 +1,13 @@
 import styles from "./Hero.module.css";
+import { Link } from "react-router-dom";
 
 // Import local assets/files/components
-import HeroMobile from "src/Assets/Images/hero-5x.png";
-import HandshakeOutlinedIcon from "@mui/icons-material/HandshakeOutlined";
-import PersonSearchOutlinedIcon from "@mui/icons-material/PersonSearchOutlined";
+import HeroMobile from "src/Assets/Images/hero-51x.png";
+import Diamond from "src/Assets/Images/Polygon4.png";
 import { useEffect, useState } from "react";
 import Popup from "../popup";
 import FundraiserBanner from "./SubComponents/FundraiserBanner/FundraiserBanner";
+
 
 const Hero = () => {
   const text =
@@ -14,6 +15,7 @@ const Hero = () => {
   const letterElements = text.split("").map((letter, index) => (
     <span key={index} className={styles.letter}>
       {letter}
+      <img src={Diamond} alt="diamond" />
     </span>
   ));
 
@@ -61,30 +63,32 @@ const Hero = () => {
           <a href="https://forms.gle/QAiHQcgtvqfjFtYe6">Submit your story.</a>
         </p>
       </div>
-      <aside className={styles.secondBanner}>
+      {/* <aside className={styles.secondBanner}>
         <div className={styles.blueBanner}></div>
         <p>{letterElements}</p>
         <div className={styles.blueBanner}></div>
-      </aside>
-      <section className={styles.heroSurveyBanner}>
+      </aside> */}
+      {/* <section className={styles.heroSurveyBanner}>
         <FundraiserBanner />
-      </section>
+      </section> */}
 
       <div className={styles.heroContainerInner}>
         <div className={styles.heroHeadingContainer}>
-          <h3 className={`${styles.heroHeadingH3} SN-D-Home-H3-24`}>
-            <HandshakeOutlinedIcon />
-            Committed to success
-          </h3>
           <h1 className={`${styles.heroHeadingH1} SN-D-Home-H1-48`}>
             Live better. Be well.
           </h1>
-          <h2 className={`${styles.heroHeadingH2} SN-D-Home-H2-32`}>
-            For Patients with Complex Diseases
-          </h2>
-          <h4 className={`${styles.heroHeadingH4} SN-D-P-20`}>
-            Simplifying the Care of Complex Diseases for All
+          <h4
+            className={`${styles.heroHeadingH4} SN-D-P-20`}
+            style={{ color: "#f0f7fd" }}
+          >
+            At iHealth and Wellness Foundation Inc, we believe that managing
+            complex conditions should be simpler for everyone.
           </h4>
+          <Link to="/learnmore">
+            <button className={`${styles.heroButton} SN-D-Button`}>
+              Learn More
+            </button>
+          </Link>
         </div>
         <div className={styles.heroImageContainer}>
           <img

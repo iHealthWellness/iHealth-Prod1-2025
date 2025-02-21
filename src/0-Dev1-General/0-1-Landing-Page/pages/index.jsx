@@ -15,19 +15,29 @@ import Information from "src/0-Dev1-General/0-1-Landing-Page/components/Informat
 import ToTopBtn from "src/0-Dev1-General/0-1-Landing-Page/components/ToTopBtn/index";
 
 import "./index.css";
+import EventCards from "../components/EventCards";
+import HomepageEmbeddedVideo from "../components/HomepageEmbedVideo";
+import Joincommunity from "../components/JoinCommunity";
+import WaitlistSection from "../components/WaitList";
 
 const index = () => {
   return (
     <div className="home-page">
+     <div className="home-page-container-top-gradient">
       <Hero />
       <Provider />
+      </div>
+      <EventCards/>
       <Community />
       <Team />
       <Services />
+      <HomepageEmbeddedVideo />
       <HowItWorks />
       <Benefit />
       <PartnerWithUs />
       <Information />
+      {/* <WaitlistSection/> */}
+      <Joincommunity/>
       <ToTopBtn />
     </div>
   );

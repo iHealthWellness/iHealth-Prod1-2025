@@ -9,6 +9,9 @@ import { stateData } from "../../../../Constants/HomePage/StateData";
 import styles from './index.module.css';
 import { useNavigate } from "react-router-dom";
 import { BASE_URL } from "src/environment/config";
+import qrBanner from "src/Assets/Images/qr-banner.png";
+import DonateNowButton from "./donateNowButton";
+
 
 const Provider = () => {
   const navigate = useNavigate();
@@ -29,6 +32,55 @@ const Provider = () => {
     );
   };
 
+  const text = "We're a community-based 501c3 organization offering health-related programs free to patients!";
+  const letterElements = text.split("").map((letter, index) => (
+    <span key={index} className={styles.letter}>
+      {letter}
+    </span>
+  ));
+
+
+
+  useEffect(() => {
+    const checkOverlap = () => {
+      const letters = document.querySelectorAll(`.${styles.letter}`);
+      letters.forEach((letter) => {
+        const letterRect = letter.getBoundingClientRect();
+        const leftDiv = document.querySelector(`.${styles.blueBanner}:first-child`).getBoundingClientRect();
+        const rightDiv = document.querySelector(`.${styles.blueBanner}:last-child`).getBoundingClientRect();
+        letter.style.color = "#E3E6EE";
+
+        //   (letterRect.right >= leftDiv.left && letterRect.left <= leftDiv.right) ||
+
+        //     (letterRect.right >= rightDiv.left && letterRect.left <= rightDiv.right)
+
+        //     ? "black"
+
+        //     : "white";
+
+        // letter.style.color =
+
+        //   (letterRect.right >= leftDiv.left && letterRect.left <= leftDiv.right) ||
+
+        //     (letterRect.right >= rightDiv.left && letterRect.left <= rightDiv.right)
+
+        //     ? "black"
+
+        //     : "white";
+
+      });
+
+    };
+
+
+
+    const interval = setInterval(checkOverlap, 5);
+
+    return () => clearInterval(interval);
+
+  }, []);
+
+
   const handleLoading = (loading) => {
     setIsLoading(loading);
   };
@@ -46,7 +98,7 @@ const Provider = () => {
   useEffect(() => {
     const fetchDiseases = async () => {
       const cachedDiseases = JSON.parse(sessionStorage.getItem("newDiseases"));
-      if (cachedDiseases && cachedDiseases.length>0) {
+      if (cachedDiseases && cachedDiseases.length > 0) {
         setDiseases(cachedDiseases);
       } else {
         try {
@@ -78,7 +130,7 @@ const Provider = () => {
 
     const fetchSpecialities = async () => {
       const cachedSpecialities = JSON.parse(sessionStorage.getItem("specialities"));
-      if (cachedSpecialities && cachedSpecialities.length>0) {
+      if (cachedSpecialities && cachedSpecialities.length > 0) {
         setSpecialities(cachedSpecialities);
       } else {
         try {
@@ -93,7 +145,7 @@ const Provider = () => {
 
     const fetchStates = async () => {
       const cachedStates = JSON.parse(sessionStorage.getItem("states"));
-      if (cachedStates && cachedStates.length>0) {
+      if (cachedStates && cachedStates.length > 0) {
         setStates(cachedStates);
       } else {
         try {
@@ -137,77 +189,91 @@ const Provider = () => {
   console.log("Rendering with states:", states);
 
   return (
-    <section id="Home-Page-provider-container" className={styles.providerContainer}>
-      <div className={styles.providerInnerContainer}>
-        <h2 className={`${styles.providerHeading} SN-D-Home-H3-24`}>
-          <PersonSearchOutlinedIcon
-            sx={{
-              "@media (min-width: 480px)": {
-                fontSize: "4rem",
-              },
-              "@media (min-width: 1024px)": {
-                fontSize: "2rem",
-              },
-            }}
-          />
-          Search & Find a Medical or Wellness Provider
-        </h2>
-        <form className={styles.providerForm} onSubmit={handleSubmit}>
-          <div className={styles.providerFormInputs}>
-            <div className={styles.providerFormField}>
-              <ProviderAutocomplete
-                options={diseases}
-                label="Disease"
-                value={diseaseValue}
-                onInputChange={setDiseaseValue}
-                loading={isLoading}
-                paperWidth="100%"
-                getOptionLabel={(option) => option.name}
-                isOptionDisabled={(option) => option.disabled}
-              />
+    <>
+      <section id="Home-Page-provider-container" className={styles.providerContainer}>
+        <div className={styles.providerInnerContainer}>
+          <h2 className={`${styles.providerHeading} SN-D-Home-H3-24`}>
+            <PersonSearchOutlinedIcon
+              sx={{
+                "@media (min-width: 480px)": {
+                  fontSize: "4rem",
+                },
+                "@media (min-width: 1024px)": {
+                  fontSize: "2rem",
+                },
+              }}
+            />
+            Thousands of providers in one place
+          </h2>
+          <form className={styles.providerForm} onSubmit={handleSubmit}>
+            <div className={styles.providerFormInputs}>
+              <div className={styles.providerFormField}>
+                <ProviderAutocomplete
+                  options={diseases}
+                  label="Disease"
+                  value={diseaseValue}
+                  onInputChange={setDiseaseValue}
+                  loading={isLoading}
+                  paperWidth="100%"
+                  getOptionLabel={(option) => option.name}
+                  isOptionDisabled={(option) => option.disabled}
+                />
+              </div>
+              <div className={styles.providerFormField}>
+                <ProviderAutocomplete
+                  options={specialities}
+                  label="Specialties"
+                  value={specialtyValue}
+                  onInputChange={setSpecialtyValue}
+                  loading={isLoading}
+                  paperWidth="100%"
+                  getOptionLabel={(option) => option}
+                />
+              </div>
+              <div className={styles.providerFormField}>
+                <ProviderAutocomplete
+                  options={states}
+                  label="State"
+                  value={stateValue}
+                  onInputChange={setStateValue}
+                  loading={isLoading}
+                  paperWidth="100%"
+                  getOptionLabel={(option) => option}
+                />
+                <Button
+                  variant="text"
+                  startIcon={<PinDropIcon style={{ marginBottom: "5px" }} />}
+                  style={{ color: "#07235B" }}
+                  className={`SN-D-P-20`}
+                  sx={{
+                    paddingTop: "9px",
+                    "@media (max-width: 1023px)": {
+                      display: "none",
+                    },
+                  }}
+                  onClick={GetLocationInfo}
+                >
+                  Use My Location
+                </Button>
+              </div>
             </div>
-            <div className={styles.providerFormField}>
-              <ProviderAutocomplete
-                options={specialities}
-                label="Specialties"
-                value={specialtyValue}
-                onInputChange={setSpecialtyValue}
-                loading={isLoading}
-                paperWidth="100%"
-                getOptionLabel={(option) => option}
-              />
-            </div>
-            <div className={styles.providerFormField}>
-              <ProviderAutocomplete
-                options={states}
-                label="State"
-                value={stateValue}
-                onInputChange={setStateValue}
-                loading={isLoading}
-                paperWidth="100%"
-                getOptionLabel={(option) => option}
-              />
-              <Button
-                variant="text"
-                startIcon={<PinDropIcon style={{ marginBottom: "5px" }} />}
-                style={{ color: "#07235B" }}
-                className={`SN-D-P-20`}
-                sx={{
-                  paddingTop: "9px",
-                  "@media (max-width: 1023px)": {
-                    display: "none",
-                  },
-                }}
-                onClick={GetLocationInfo}
-              >
-                Use My Location
-              </Button>
-            </div>
-          </div>
-          <ButtonsSearchDonate onSubmit={handleSubmit} isDisabled={!diseaseValue && !specialtyValue && !stateValue} />
-        </form>
-      </div>
-    </section>
+            <ButtonsSearchDonate onSubmit={handleSubmit} isDisabled={!diseaseValue && !specialtyValue && !stateValue} />
+            <DonateNowButton />
+          </form>
+        </div>
+      </section>
+      <section className={styles.qrSection}>
+        <div className={styles.qrContainer}>
+          <p>Open Camera, Scan Code, Give Now!</p>
+          <img src={qrBanner} alt="paypal qr code" />
+        </div>
+      </section>
+      <aside className={styles.secondBanner}>
+        <div className={styles.blueBanner}></div>
+        <p>{letterElements}</p>
+        <div className={styles.blueBanner}></div>
+      </aside>
+    </>
   );
 };
 

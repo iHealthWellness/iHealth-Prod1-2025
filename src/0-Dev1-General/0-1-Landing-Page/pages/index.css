@@ -2,3 +2,7 @@
   width: 100%;
   overflow-x: hidden;
 }
+
+.home-page-container-top-gradient{
+  background: linear-gradient(90deg, #092868 0%, rgba(7, 35, 91, 0.965586) 13.5%, rgba(7, 35, 91, 0.92) 30%, rgba(7, 35, 91, 0.81) 63.5%, rgba(7, 35, 91, 0.9967) 100%);
+}

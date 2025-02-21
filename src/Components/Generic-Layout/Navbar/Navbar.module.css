@@ -3,8 +3,9 @@
 }
 
 .navbarFiller {
-  height: 109px;
+  height: 86px;
   width: 100%;
+  background: linear-gradient(90deg, #07235B 0%, rgba(7, 35, 91, 0.965586) 13.5%, rgba(7, 35, 91, 0.92) 30%, rgba(7, 35, 91, 0.81) 63.5%, rgba(7, 35, 91, 0.9967) 100%);
 }
 
 .navContainer {
@@ -12,12 +13,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem 0;
-  background: linear-gradient(90deg, rgba(7, 35, 91, 1) 0%, rgba(7, 35, 91, 1) 100%);
-  position: fixed;
+  padding: 0;
+  position: fixed; 
   top: 0;
   left: 0;
   z-index: 888;
+}
+
+.navContainer.scrolled { 
+  background: linear-gradient(90deg, #07235B 0%, rgba(7, 35, 91, 1) 13.5%, rgba(7, 35, 91, 1) 30%, rgba(7, 35, 91, 1) 63.5%, rgba(7, 35, 91, 1) 100%);
 }
 
 .navInnerContainer {
@@ -29,11 +33,23 @@
   gap: 1rem;
 }
 
+.navLinksBlock{
+  margin-right: 50px;
+}
+
 .navLinksContainer {
   flex-grow: 1;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.navLinkSignUp:hover{
+  color: #ffffff85;
+}
+
+.navLinkSignUpIcon{
+  margin-bottom: -5px;
 }
 
 .navDropdown {
@@ -225,10 +241,29 @@
   border: 2px solid #fff;
 }
 
+/* Demo Button */
+.navDemo {
+  padding: 0.5rem 1rem !important;
+  background-color: #ffffff;
+  border: 2px solid #ffffff;
+  color: #07235B;
+  width: fit-content; 
+  font-weight: 550;
+  border-radius: 0.5rem; 
+  margin-top: -5px;
+}
+
+/* Demo Button hover */
+.navDemo:hover {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
 @media (min-width: 1024px) {
   .navInnerContainer {
     width: 80%;
-    padding: 0.5rem 0;
+    padding: 0.5rem 0 0.08rem;
   }
 
   .navCircleIcon {
@@ -314,6 +349,12 @@
 }
 
 @media (max-width: 480px) {
+
+  /* Demo Button */
+    .navDemo {
+      display: none;
+    }
+
   .navSignin {
     margin-bottom: -10px;
   }
