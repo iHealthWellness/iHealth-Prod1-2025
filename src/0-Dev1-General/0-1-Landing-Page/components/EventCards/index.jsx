@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from './index.module.css';
 import { Link } from 'react-router-dom';
-import imageOne from '../../../../../src/Assets/Images/eventimageone.png';
-import imageTwo from '../../../../../src/Assets/Images/eventimagetwo.png';
+import imageOne from '../../../../../src/Assets/Images/eventimageone.jpg';
+import imageTwo from '../../../../../src/Assets/Images/eventimagetwo.jpg';
 
 
 const EventCards = () => {
