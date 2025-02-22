@@ -1,0 +1,109 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #F8F8F8;
+  width:90%;
+  margin:0 auto;
+  padding: 4rem 0px;
+  border: 0.86px solid #EBEDF0;
+  border-radius: 10px;
+  margin-bottom: 4rem;
+}
+
+.layout {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.layout:nth-child(2) {
+  align-items: flex-start;
+}
+
+.layout img {
+  max-width: 100%;
+  height: auto;
+}
+
+.textContainer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-top: -20px;
+  align-items: center; 
+}
+
+.textContainer h2 {
+  color: #C33418;
+}
+
+.textContainer p {
+  line-height: 25px;
+  text-align: center;
+  color: #676668;
+}
+
+
+.messageContainer{
+  display: flex;
+  gap: 2px;
+  align-items: center;
+}
+
+.spanIcon{
+  margin-bottom: -14px;
+  margin-right: 5px;
+}
+
+  
+.input{
+  max-width: 350px;
+  width: 100%;
+  padding: 0.875rem 1rem;
+  border: 1px solid #e5e7eb;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #1a2b4d;
+  transition: border-color 0.2s ease;
+}
+ 
+
+.input:focus,
+.select:focus {
+  outline: none;
+  border-color: #0095ff;
+}
+
+.input::placeholder {
+  color: #9ca3af;
+}
+
+
+.joinButton {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #0D99FF;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.message {
+  margin-top: 10px;
+  color: #0D99FF;
+
+}
+
+.success {
+  color: #0D99FF;
+}
+
+.error {
+  color: red;
+}
+

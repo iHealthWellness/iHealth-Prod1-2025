@@ -6,6 +6,8 @@
   align-items: center;
 }
 
+
+
 .subscribeInput::placeholder {
   color: rgba(163, 170, 194, 1);
 }

@@ -43,7 +43,7 @@ const Footer = () => {
       })
       .catch((error) => {
         setLoading(false);
-        setSubscribeStatus("Error sending data");
+        setSubscribeStatus("Oops! Already subscribed!");
       });
   };
 

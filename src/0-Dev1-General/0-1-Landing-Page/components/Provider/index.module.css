@@ -1,7 +1,8 @@
 .providerContainer {
-  background: #f0f7fd;
+  /* background: linear-gradient(90deg, #092868 0%, rgba(7, 35, 91, 0.965586) 13.5%, rgba(7, 35, 91, 0.92) 30%, rgba(7, 35, 91, 0.81) 63.5%, rgba(7, 35, 91, 0.9967) 100%); */
   display: flex;
   justify-content: center;
+  margin-top: -10px;
 }
 
 .providerInnerContainer {
@@ -46,7 +47,7 @@
   width: 250px;
 }
 
-@media only screen and (min-width: 480px) and (max-width: 1024px) {
+@media only screen and (min-width: 480px) and (max-width: 1224px) {
   .providerHeading {
     flex-direction: row;
     justify-content: center;
@@ -70,9 +71,9 @@
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1224px) {
   .providerContainer {
-    padding-bottom: 3rem;
+    padding-bottom: 0rem;
   }
 
   .providerFormField {
@@ -129,10 +130,95 @@
   }
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1224px) {
   .providerFormField {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+
+.secondBanner {
+  background-color: #07235b;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@keyframes slideText {
+  0% {
+    transform: translateX(0);
+  }
+  35% {
+    transform: translateX(70vw);
+  }
+  35.01% {
+    transform: translateX(-70vw);
+  }
+  65%,
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.secondBanner p {
+  overflow: hidden;
+  display: block;
+  position: relative;
+  animation: slideText 26s linear infinite;
+}
+
+.letter {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 110%;
+  transition: color 0s;
+}
+
+.blueBanner {
+  width: 15%;
+  height: 3rem;
+}
+
+.qrSection {
+  /* background: linear-gradient(90deg, #092868 0%, rgba(7, 35, 91, 0.965586) 13.5%, rgba(7, 35, 91, 0.92) 30%, rgba(7, 35, 91, 0.81) 63.5%, rgba(7, 35, 91, 0.9967) 100%); */
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding: 0  0 0rem;
+}
+
+.qrContainer {
+  text-align: right;
+  padding: 1rem;
+  position: relative;
+  right: 50px; 
+}
+.qrContainer p {
+  color: rgba(179, 195, 223, 1); /* Change this to your preferred color */
+}
+
+
+@media only screen and (max-width: 1200px) {
+  .qrContainer {
+    right: 0; 
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+
+
+.qrSection {
+  justify-content: center;
+  align-items: center;
+}
+
+.qrContainer {
+  text-align: center;
+}
+
 }

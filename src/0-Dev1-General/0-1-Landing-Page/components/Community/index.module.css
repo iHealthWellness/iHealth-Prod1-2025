@@ -1,6 +1,6 @@
 /* mobile view */
 .communityContainer {
-  background: #07235b;
+  background: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,7 +12,7 @@
 .communityHeading {
   width: 95%;
   text-align: center;
-  color: #ffffff;
+  color: #07235b;
   padding-bottom: 2rem;
 }
 
@@ -25,7 +25,7 @@
 .communityDescription {
   width: 95%;
   text-align: center;
-  color: #dde8f0;
+  color: #07235b;
   padding-bottom: 2rem;
 }
 

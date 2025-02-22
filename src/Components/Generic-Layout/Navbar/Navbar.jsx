@@ -10,7 +10,7 @@ import Login from "../UserAuthentication/Login/Login";
 import UnderConstruction from "src/Components/Under-Construction/UnderConstruction";
 import ToTopBtn from "../TotopBtn/index.jsx";
 import useScrollToAnchor from "src/hooks/useScrollToAnchor";
-import { KeyboardArrowDown, Groups, Paid, Description, VolunteerActivism, Science, Medication, Biotech, OnlinePrediction, Person, CorporateFare, Facebook, CalendarMonth } from "@mui/icons-material";
+import { KeyboardArrowDown, Groups, Paid, Description, VolunteerActivism, Science, Medication, Biotech, OnlinePrediction, Person, CorporateFare, Facebook, CalendarMonth, ArrowRight, ArrowRightAltOutlined } from "@mui/icons-material";
 import ButtonsSearchDonate from "src/0-Dev1-General/0-1-Landing-Page/components/Provider/ButtonsSearchDonate";
 import { donateLinkUrl } from "src/environment/config";
 
@@ -329,9 +329,11 @@ const SignUpSignIn = () => {
   );
 };
 
+
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSubmenu, setActiveSubmenu] = useState(null);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const closeSubMenu = () => setActiveSubmenu(null);
 
@@ -344,15 +346,29 @@ const Navbar = () => {
     }
   };
 
+  // Add scroll handler
+  const handleScroll = () => {
+    const scrollPosition = window.scrollY;
+    setIsScrolled(scrollPosition > 10);
+  };
+
   useEffect(() => {
     window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
+    window.addEventListener("scroll", handleScroll);
+    
+    // Initial check for scroll position
+    handleScroll();
+    
+    return () => {
+      window.removeEventListener("resize", handleResize);
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
   return (
     <>
       <div className={styles.navbarFiller}>
-        <nav className={styles.navContainer}>
+        <nav className={`${styles.navContainer} ${isScrolled ? styles.scrolled : ''}`}>
           <NavDropdownButton
             isOpen={isMenuOpen}
             setIsOpen={setIsMenuOpen}
@@ -373,10 +389,27 @@ const Navbar = () => {
                     />
                   </div>
 
-                  <SignUpSignIn />
-                  <li className={styles.navButtonDonate}>
+                  {/* <SignUpSignIn /> */}
+                  {/* <li className={styles.navButtonDonate}>
                     <Link className={`${styles.navLinks} ${styles.navDonate}`} target="_blank" to={donateLinkUrl}>
                       Donate
+                    </Link>
+                  </li> */}
+                   <li className={styles.navButtonDemo}>
+                    <Link className={`${styles.navLinks} ${styles.navDemo}`}
+                     onClick={() => {
+                      document.querySelector("#UnderConst-wrapper").style.display = "flex";
+                    }}>
+                     Request Demo
+                    </Link>
+                  </li>
+
+                  <li className={styles.navLinkSignUp}>
+                    <Link className={`${styles.navLinks} ${styles.navSignup}`}
+                     onClick={() => {
+                      document.querySelector("#UnderConst-wrapper").style.display = "flex";
+                    }}>
+                      Sign Up <ArrowRightAltOutlined className={styles.navLinkSignUpIcon} /> 
                     </Link>
                   </li>
                 </ul>
@@ -387,7 +420,6 @@ const Navbar = () => {
       </div>
 
       <ToTopBtn />
-
       <UnderConstruction />
       <Login />
     </>
@@ -395,7 +427,6 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
 
 
 // Old codebase
