@@ -1,13 +1,26 @@
 .container {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  background-color: #F8F8F8;
-  width:90%;
-  margin:0 auto;
+  background-color: #f8f8f8;
+  width: 90%;
+  margin: 0 auto;
   padding: 4rem 0px;
-  border: 0.86px solid #EBEDF0;
+  border: 0.86px solid #ebedf0;
   border-radius: 10px;
   margin-bottom: 4rem;
+}
+
+@media screen and (max-width: 760px) {
+  .container {
+    flex-direction: column;
+    padding: 2rem 0px;
+    background-color: #fff;
+    border-color: #fff !important;
+  }
+  .textContainer {
+    margin: 20px 0 !important;
+  }
 }
 
 .layout {
@@ -33,11 +46,11 @@
   flex-direction: column;
   gap: 32px;
   margin-top: -20px;
-  align-items: center; 
+  align-items: center;
 }
 
 .textContainer h2 {
-  color: #C33418;
+  color: #c33418;
 }
 
 .textContainer p {
@@ -46,20 +59,18 @@
   color: #676668;
 }
 
-
-.messageContainer{
+.messageContainer {
   display: flex;
   gap: 2px;
   align-items: center;
 }
 
-.spanIcon{
+.spanIcon {
   margin-bottom: -14px;
   margin-right: 5px;
 }
 
-  
-.input{
+.input {
   max-width: 350px;
   width: 100%;
   padding: 0.875rem 1rem;
@@ -70,7 +81,6 @@
   color: #1a2b4d;
   transition: border-color 0.2s ease;
 }
- 
 
 .input:focus,
 .select:focus {
@@ -82,11 +92,10 @@
   color: #9ca3af;
 }
 
-
 .joinButton {
   margin-top: 10px;
   padding: 10px 15px;
-  background-color: #0D99FF;
+  background-color: #0d99ff;
   color: white;
   border: none;
   border-radius: 6px;
@@ -95,15 +104,16 @@
 
 .message {
   margin-top: 10px;
-  color: #0D99FF;
-
+  color: #0d99ff;
 }
 
 .success {
-  color: #0D99FF;
+  color: #0d99ff;
 }
 
 .error {
   color: red;
 }
-
+.form {
+  width: 100%;
+}
