@@ -260,6 +260,14 @@
   border: 2px solid #fff;
 }
 
+@media screen and (max-width: 1055px) and (min-width: 1004px) {
+  .navInnerContainer {
+    width:95%;
+    padding: 0.5rem 0 0.08rem;
+  }
+}
+
+
 @media (min-width: 1024px) {
   .navInnerContainer {
     width: 80%;

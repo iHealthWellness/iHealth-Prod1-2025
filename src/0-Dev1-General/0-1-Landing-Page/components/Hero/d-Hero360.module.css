@@ -1,0 +1,97 @@
+.heroContainer {
+  background:  linear-gradient(90deg, #07235B 0%, rgba(7, 35, 91, 0.965586) 13.5%, rgba(7, 35, 91, 0.92) 30%, rgba(7, 35, 91, 0.81) 63.5%, rgba(7, 35, 91, 0.9967) 100%);
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Switched flex direction to row so image is on the left and text on the right */
+.heroContainerInner {
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ align-items: center;
+ width: 83%;
+ max-width: 1216px;
+ text-align: start;
+ margin: 0 auto;
+}
+
+.heroNav{
+  display: flex;
+  text-align: start;
+  margin-left: 0;
+  width: 100%;
+  max-width: 1216px;
+  padding: 30px 0;
+}
+
+.heroNav a{
+  color: #fff;
+  text-align: start; 
+}
+ .heroNav a:hover {
+  color: #ffffffbe;
+  text-decoration: underline;
+  text-align: start; 
+}
+
+.heroNav a.disabled{
+  color: #ffffff9c;
+  text-decoration: none;
+  cursor:default;
+}
+
+.heroNav span{
+  color: #fff;
+  text-align: start; 
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.heroHeadingH1 {
+ font-size: 48px;
+}
+.heroHeadingH4 {
+ font-size: 20px;
+}
+
+.heroHeadingContainer {
+ width: 45%;
+ display: flex;
+ flex-direction: column;
+ gap: 20px;
+ margin-bottom: 50px;
+ text-align: left;
+}
+.heroHeadingH1 {
+  font-size: 40px;
+ }
+ .heroHeadingH4 {
+  font-size: 18px;
+ }
+.heroHeadingH1,
+.heroHeadingH4 {
+ color: #fff;
+}
+
+.heroImageContainer {
+ width: 45%;
+ display: flex;
+}
+
+.heroImg {
+ max-width: 130%;
+ height: 450px;
+ margin-left: 3rem;
+}
+
+@media only screen and (min-width: 1024px) {
+ .heroContainerInner {
+   max-width: 1216px;
+ }
+
+ .heroHeadingContainer {
+   margin-top: 4rem;
+ }
+}
