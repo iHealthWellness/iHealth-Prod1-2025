@@ -20,10 +20,10 @@
 .heroNav{
   display: flex;
   text-align: start;
-  margin-left: 0;
+  margin-left: 0px;
   width: 100%;
   max-width: 1216px;
-  padding: 30px 0;
+  padding: 30px;
 }
 
 .heroNav a{
@@ -94,4 +94,166 @@
  .heroHeadingContainer {
    margin-top: 4rem;
  }
+}
+
+
+
+@media(max-width: 1280px) {
+
+  .heroContainerInner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 95%;
+    /* max-width: 1216px; */
+    text-align: start;
+    margin: 0 auto;
+   }
+   
+   .heroNav{
+     display: flex;
+     text-align: start;
+     margin-left: 40px;
+     width: 100%;
+     max-width: 1216px;
+     padding: 50px 0;
+   }
+   
+   .heroNav a{
+     color: #fff;
+     text-align: start; 
+   }
+    .heroNav a:hover {
+     color: #ffffffbe;
+     text-decoration: underline;
+     text-align: start; 
+   }
+   
+   .heroNav a.disabled{
+     color: #ffffff9c;
+     text-decoration: none;
+     cursor:default;
+   }
+   
+   .heroNav span{
+     color: #fff;
+     text-align: start; 
+     margin-right: 1rem;
+     margin-left: 1rem;
+   }
+   
+   .heroHeadingH1 {
+    font-size: 48px;
+   }
+   .heroHeadingH4 {
+    font-size: 20px;
+   }
+   
+   .heroHeadingContainer {
+    width: 95%; 
+   }
+   .heroHeadingH1 {
+     font-size: 40px;
+    }
+    .heroHeadingH4 {
+     font-size: 18px;
+    }
+   .heroHeadingH1,
+   .heroHeadingH4 {
+    color: #fff;
+   }
+   
+   .heroImageContainer {
+    width: 100%;
+    display: flex;
+   }
+   
+   .heroImg {
+    max-width: 100%;
+    height: auto;
+    margin-left: 0rem;
+   }
+    
+}
+
+
+
+
+
+@media(max-width: 768px) {
+
+  .heroContainerInner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 98%;
+    /* max-width: 1216px; */
+    text-align: start;
+    margin: 0 auto;
+   }
+   
+   .heroNav{
+     display: flex;
+     text-align: start;
+     margin-left: 40px;
+     width: 100%;
+     max-width: 1216px;
+     padding: 50px 0;
+   }
+   
+   .heroNav a{
+     color: #fff;
+     text-align: start; 
+   }
+    .heroNav a:hover {
+     color: #ffffffbe;
+     text-decoration: underline;
+     text-align: start; 
+   }
+   
+   .heroNav a.disabled{
+     color: #ffffff9c;
+     text-decoration: none;
+     cursor:default;
+   }
+   
+   .heroNav span{
+     color: #fff;
+     text-align: start; 
+     margin-right: 1rem;
+     margin-left: 1rem;
+   }
+   
+   .heroHeadingH1 {
+    font-size: 48px;
+   }
+   .heroHeadingH4 {
+    font-size: 20px;
+   }
+   
+   .heroHeadingContainer {
+    width: 95%; 
+   }
+   .heroHeadingH1 {
+     font-size: 40px;
+    }
+    .heroHeadingH4 {
+     font-size: 18px;
+    }
+   .heroHeadingH1,
+   .heroHeadingH4 {
+    color: #fff;
+   }
+   
+   .heroImageContainer {
+    width: 100%;
+    display: flex;
+   }
+   
+   .heroImg {
+    max-width: 100%;
+    height: auto;
+    margin-left: 0rem;
+   }
+    
 }
