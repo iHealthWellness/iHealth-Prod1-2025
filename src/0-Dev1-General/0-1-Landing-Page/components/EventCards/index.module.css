@@ -59,6 +59,19 @@
   z-index: 2;
 }
 
+.pastEventsHeader{
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #ffdca8;
+  color: #00234b;
+  padding: 5px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  border-bottom-left-radius: 10px;
+  z-index: 2; 
+}
+
 .membershipInfo {
   position: absolute;
   bottom: 5px;
