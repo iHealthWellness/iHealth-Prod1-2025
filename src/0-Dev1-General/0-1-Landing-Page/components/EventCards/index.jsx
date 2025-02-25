@@ -8,19 +8,22 @@ import imageTwo from '../../../../../src/Assets/Images/eventimagetwo.jpg';
 const EventCards = () => {
   const events = [
     {
-      title: "Principles of Migraine Management",
-      date: "25TH Feb, 2025",
-      time: "1PM ET",
-      image: imageOne,
-      link: "https://forms.gle/CMLiLetqs2wh8D6H9",
-    },
-    {
       title: "Navigating NF with Confidence",
       date: "25TH March, 2025",
       time: "5PM ET",
       image: imageTwo,
       link: "https://forms.gle/5rkUz7XsYUvvdRPL7",
+      status: "UPCOMING",
     }, 
+    {
+      title: "Principles of Migraine Management",
+      date: "25TH Feb, 2025",
+      time: "1PM ET",
+      image: imageOne,
+      link: "https://forms.gle/CMLiLetqs2wh8D6H9",
+      status: "PAST",
+    },
+ 
   ];
 
   return (
@@ -31,7 +34,11 @@ const EventCards = () => {
             <div className={styles.cardContent}>
               <div className={styles.imageContainer}>
                 <img src={event.image || "/placeholder.svg"} alt="" className={styles.eventBackground} />
-                <div className={styles.upcomingEventsHeader}>UPCOMING EVENTS</div>
+                {event.status === "UPCOMING" &&
+                <div className={styles.upcomingEventsHeader}>{event.status} EVENTS</div>}
+                {/* <div className={`${event.status === "upcoming" ? styles.upcomingEventsHeader : styles.pastEventsHeader}`}>
+                  {event.status} EVENTS
+                </div> */}
               </div>
               <div className={styles.eventInfo}>
                 <h3 className={styles.eventTitle}>{event.title}</h3>
