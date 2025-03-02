@@ -19,6 +19,7 @@ import EventCards from "../components/EventCards";
 import HomepageEmbeddedVideo from "../components/HomepageEmbedVideo";
 import Joincommunity from "../components/JoinCommunity";
 import WaitlistSection from "../components/WaitList";
+import YouTubePlaylist from "../components/yotubePlaylists";
 
 const index = () => {
   return (
@@ -32,6 +33,7 @@ const index = () => {
       <Team />
       <Services />
       <HomepageEmbeddedVideo />
+      {/* <YouTubePlaylist/> */}
       <HowItWorks />
       <Benefit />
       <PartnerWithUs />

@@ -151,7 +151,7 @@
   font-size: 12px;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1255px) {
   .dropdownContainer {
     display: none;
   }

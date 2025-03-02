@@ -1,0 +1,97 @@
+.playlistContainer {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .playlistTitle {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    color: #333;
+  }
+  
+  .videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+  }
+  
+  .youtubeFrame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  
+  
+
+
+
+/* 
+  .playlistsContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .playlistsTitle {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .playlistsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .playlistItem {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .playlistItem:hover {
+    transform: scale(1.05);
+  }
+  
+  .playlistThumbnail {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .playlistTitle {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    color: #333;
+  }
+  
+  .loadMoreButton {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 20px;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .loadMoreButton:hover {
+    background-color: #0052a3;
+  }
+  
+   */
