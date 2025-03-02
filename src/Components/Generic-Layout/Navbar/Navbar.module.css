@@ -69,10 +69,10 @@
   visibility: visible;
 }
 
-.navLogoBlock {
+/* .navLogoBlock {
   width: 60px;
   height: 50px;
-}
+} */
 
 .navLogoImg {
   width: 100%;
@@ -259,8 +259,10 @@
   color: #fff;
   border: 2px solid #fff;
 }
+ 
 
-@media screen and (max-width: 1055px) and (min-width: 1004px) {
+
+@media screen and (max-width: 1255px) and (min-width: 1004px) {
   .navInnerContainer {
     width:95%;
     padding: 0.5rem 0 0.08rem;
@@ -268,10 +270,10 @@
 }
 
 
-@media (min-width: 1024px) {
+@media (min-width: 1255px) {
   .navInnerContainer {
     width: 80%;
-    padding: 0.5rem 0 0.08rem;
+    padding: 0.5rem 0 0.98rem;
   }
 
   .navCircleIcon {
@@ -283,10 +285,14 @@
     height: fit-content;
   }
 
-  .navLogoImg {
-    width: 90px;
+  /* .mobileLogo{
+    display: none;
+  } */
+
+  /* .navLogoImg {
+    width: 250px;
     height: auto;
-  }
+  } */
 
   .navLinksList.desktop {
     display: flex;
@@ -327,7 +333,7 @@
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1055px) {
   .navbarFiller {
     height: 65px;
     width: 100%;
@@ -342,6 +348,11 @@
     left: -50px;
   }
   
+  /* .desktopLogo{
+    display: none;
+  } */
+
+
   .navSigninDropdownContent {
     top: auto;
     left: 12px;
@@ -353,6 +364,29 @@
   
   .navDropdownContent a {
     font-size: 13px;
+  }
+}
+
+@media (min-width: 1055px) {
+  .mobileLogo{
+    display: none;
+  }
+
+  .navLogoImg {
+    width: 250px;
+    height: auto;
+  }
+}
+
+
+@media (max-width: 1055px) {
+  .desktopLogo{
+    display: none;
+  }
+
+  .navLogoImg {
+    width: 60px;
+    height: auto;
   }
 }
 

@@ -38,7 +38,11 @@ const NavLogo = () => {
       <NavLink to="/" className={styles.navLogo} onClick={handleLogoClick}>
         <picture>
           <source media="(max-width: 1023px)" srcSet={mobileLogo} />
-          <img className={styles.navLogoImg} src={mobileLogo} alt="confidential" />
+          <img className={`${styles.navLogoImg} ${styles.mobileLogo}`} src={mobileLogo} alt="confidential" />
+        </picture>
+        <picture>
+          <source media="(min-width: 1024px)" srcSet={desktopLogo} />
+          <img className={`${styles.navLogoImg} ${styles.desktopLogo}`} src={desktopLogo} alt="confidential" />
         </picture>
       </NavLink>
     </div>

@@ -43,7 +43,7 @@
   height: 100%;
   object-fit: fill;
   object-position: center;
-  filter: brightness(0.7) saturate(1.2);
+  /* filter: brightness(0.7) saturate(1.2); */
 }
 
 .upcomingEventsHeader {
@@ -56,29 +56,6 @@
   font-size: 14px;
   font-weight: bold;
   border-bottom-left-radius: 10px;
-  z-index: 2;
-}
-
-.pastEventsHeader{
-  position: absolute;
-  top: 0;
-  right: 0;
-  background-color: #ffdca8;
-  color: #00234b;
-  padding: 5px 10px;
-  font-size: 14px;
-  font-weight: bold;
-  border-bottom-left-radius: 10px;
-  z-index: 2; 
-}
-
-.membershipInfo {
-  position: absolute;
-  bottom: 5px;
-  left: 5px;
-  color: white;
-  font-size: 12px;
-  max-width: 90%;
   z-index: 2;
 }
 
@@ -100,7 +77,6 @@
 
 .eventDateTime {
   display: flex;
-  /* justify-content: space-between; */
   color: #00234b;
   gap: 5px;
   font-size: 1.1rem;
@@ -119,51 +95,52 @@
   transition: background-color 0.3s ease;
   margin-bottom: 10px;
   align-self: flex-start;
+  text-decoration: none;
 }
 
 .registerBtn:hover {
   background-color: #0077cc;
 }
 
-.speakersSection {
+/* Modal styles */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
   display: flex;
-  flex-wrap: wrap;
-  gap: 5px;
-  margin-bottom: 10px;
-}
-
-.speakerProfile {
-  display: flex;
+  justify-content: center;
   align-items: center;
-  background-color: #f0f0f0;
-  padding: 3px;
-  border-radius: 10px;
+  z-index: 1000;
 }
 
-.speakerImage {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  margin-right: 5px;
+.modalContent {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+  width: 90%;
+  max-width: 1200px;
+  height: 80vh;
 }
 
-.speakerInfo {
-  font-size: 10px;
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
 }
 
-.speakerName {
-  font-weight: bold;
-  color: #00234b;
-}
-
-.speakerTitle {
-  color: #555;
-}
-
-.fullDate {
-  color: #00234b;
-  font-size: 12px;
-  margin-top: auto;
+.pdfFrame {
+  width: 97%;
+  height: 100%;
+  border: none;
 }
 
 @media (max-width: 1024px) {
@@ -182,25 +159,20 @@
   }
 }
 
-
-
 @media (max-width: 480px) {
-
   .eventCard {
     margin-bottom: 40px;
   }
+  .modalContent { 
+    height: 60vh;
+  }
 
-.imageContainer {
-  position: relative;
-  height: 250px;
-  overflow: hidden;
+  .imageContainer {
+    height: 250px;
+  }
+
+  .eventBackground {
+    width: 99%;
+  }
 }
 
-.eventBackground {
-  width: 99%;
-  height: 100%;
-  object-fit:fill;
-  filter: brightness(0.7) saturate(1.2);
-}
-
-}

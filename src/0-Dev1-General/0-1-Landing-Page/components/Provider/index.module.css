@@ -168,14 +168,24 @@
   overflow: hidden;
   display: block;
   position: relative;
+  white-space: nowrap; 
+  word-break: keep-all;
   animation: slideText 26s linear infinite;
 }
 
 .letter {
   font-size: 1rem;
+  white-space: nowrap; 
+  word-break: keep-all;
   font-weight: 400;
   line-height: 110%;
   transition: color 0s;
+}
+
+.letter p{
+  white-space: nowrap; 
+  word-break: keep-all;
+
 }
 
 .blueBanner {
