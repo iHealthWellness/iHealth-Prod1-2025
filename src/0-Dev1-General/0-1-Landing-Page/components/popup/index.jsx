@@ -6,14 +6,63 @@ import { donateLinkUrl } from "src/environment/config";
 import { useMediaQuery } from "@mui/material";
 import { Link } from "react-router-dom";
 
+
+
+const ExitConfirmationModal = ({ isOpen, onClose, onConfirm, link }) => {
+  if (!isOpen) return null
+
+  return (
+    <div className={styles.modalOverlay}>
+      <div className={styles.confirmationModal}>
+        {/* <h3>You are about to leave the website. Do you want to continue?</h3> */}
+        <p>You are about to leave the website. Do you want to continue?</p>
+        <div className={styles.modalButtons}>
+          <button className={styles.confirmButton} onClick={() => onConfirm(link)}>
+            Continue
+          </button>
+          <button className={styles.cancelButton} onClick={onClose}>
+            Cancel
+          </button>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+
+
 const Popup = () => {
 
-    const isMobile = useMediaQuery("(max-width: 480px)"); 
+      const isMobile = useMediaQuery("(max-width: 480px)"); 
+      const [exitModalOpen, setExitModalOpen] = useState(false)
+      const [selectedLink, setSelectedLink] = useState("")
+      const [isOpen, setIsOpen] = useState(() => {
+            const popupShown = window.sessionStorage.getItem('popupShown');
+            return popupShown !== 'true'; 
+        });
     
-    const [isOpen, setIsOpen] = useState(() => {
-        const popupShown = window.sessionStorage.getItem('popupShown');
-        return popupShown !== 'true'; 
-    });
+      
+     const link = donateLinkUrl;
+      
+      const handleLinkClick = (e, link) => {
+        e.preventDefault()
+        setSelectedLink(link)
+        setExitModalOpen(true)
+      }
+    
+      const handleConfirmExit = (link) => {
+        setExitModalOpen(false)
+        window.open(link, '_blank')
+        window.sessionStorage.setItem('popupShown', 'true');
+        setIsOpen(false);
+      }
+
+      const cancelExit = () => {
+        setExitModalOpen(false);
+        window.sessionStorage.setItem('popupShown', 'true');
+        setIsOpen(false);
+      }
+    
     
     const handleClose = () => {
         window.sessionStorage.setItem('popupShown', 'true');
@@ -56,7 +105,8 @@ const Popup = () => {
                     :
                   (  <a
                         href={donateLinkUrl}
-                        onClick={handleClose}
+                        // onClick={handleClose}
+                        onClick={(e) => handleLinkClick(e, link)}
                         target="_blank"
                         rel="noopener noreferrer"
                     >  Click Here and Give Now!</a>)
@@ -65,6 +115,12 @@ const Popup = () => {
                 </div>
                 <img className={styles.label} src={popupLabel} alt="Label" />
             </div>
+            <ExitConfirmationModal 
+                isOpen={exitModalOpen}
+                onClose={cancelExit}
+                onConfirm={handleConfirmExit}
+                link={selectedLink}
+            />
         </div>
     );
 };
