@@ -1,19 +1,62 @@
 
 // Import Libraries/Packages
-import React from "react";
+import React, { useState } from "react";
 import { Link, Navigate } from "react-router-dom";
 import { donateLinkUrl } from "src/environment/config";
 
 // Import Styles
 import styles from "./index.module.css"; 
 
-function DonateNowButton() {
+const ExitConfirmationModal = ({ isOpen, onClose, onConfirm, link }) => {
+  if (!isOpen) return null
+
   return (
+    <div className={styles.modalOverlay}>
+      <div className={styles.confirmationModal}>
+        {/* <h3>You are about to leave the website. Do you want to continue?</h3> */}
+        <p>You are about to leave the website. Do you want to continue?</p>
+        <div className={styles.modalButtons}>
+          <button className={styles.confirmButton} onClick={() => onConfirm(link)}>
+            Continue
+          </button>
+          <button className={styles.cancelButton} onClick={onClose}>
+            Cancel
+          </button>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+
+function DonateNowButton() {
+
+  
+    const [exitModalOpen, setExitModalOpen] = useState(false)
+    const [selectedLink, setSelectedLink] = useState("")
+  
+    const link = donateLinkUrl;
+  
+  const handleLinkClick = (e, link) => {
+    e.preventDefault()
+    setSelectedLink(link)
+    setExitModalOpen(true)
+  }
+
+  const handleConfirmExit = (link) => {
+    window.open(link, '_blank')
+    setExitModalOpen(false)
+  }
+
+
+  return (
+    <>
     <div className={styles.providerBtnBlock}>
       <Link
-        to={donateLinkUrl}
+        to={link}
         className={`${styles.providerBtn} ${styles.search}`} 
         target="_blank"
+        onClick={(e) => handleLinkClick(e, link)}
       >
         Donate Now
         {/* <SearchOutlinedIcon
@@ -34,6 +77,13 @@ function DonateNowButton() {
         Donate Now
       </Link> */}
     </div>
+    <ExitConfirmationModal 
+        isOpen={exitModalOpen}
+        onClose={() => setExitModalOpen(false)}
+        onConfirm={handleConfirmExit}
+        link={selectedLink}
+      />
+    </>
   );
 }
 

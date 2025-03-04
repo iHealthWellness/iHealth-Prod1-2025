@@ -13,12 +13,13 @@ import qrBanner from "src/Assets/Images/qr-banner.png";
 import DonateNowButton from "./donateNowButton";
 
 
+
 const Provider = () => {
   const navigate = useNavigate();
   const [diseases, setDiseases] = useState([]);
   const [states, setStates] = useState([]);
   const [specialities, setSpecialities] = useState([]);
-  const [diseaseValue, setDiseaseValue] = useState(null);
+  const [diseaseValue, setDiseaseValue] = useState({ name: "Neurofibromatosis", disabled: false });
   const [specialtyValue, setSpecialtyValue] = useState("");
   const [stateValue, setStateValue] = useState("");
   const [acceptingNewPatients, setAcceptingNewPatients] = useState(false);
@@ -38,7 +39,6 @@ const Provider = () => {
       {letter}
     </span>
   ));
-
 
 
   useEffect(() => {
@@ -100,6 +100,10 @@ const Provider = () => {
       const cachedDiseases = JSON.parse(sessionStorage.getItem("newDiseases"));
       if (cachedDiseases && cachedDiseases.length > 0) {
         setDiseases(cachedDiseases);
+        const neurofibromatosis = cachedDiseases.find(d => d.name === "Neurofibromatosis");
+        if (neurofibromatosis) {
+          setDiseaseValue(neurofibromatosis);
+        }
       } else {
         try {
           const newDiseaseRes = await ProviderServices.handleGetNewDisease();
@@ -118,6 +122,10 @@ const Provider = () => {
               processedDiseases.push(otherDisease);
             }
             setDiseases(processedDiseases);
+            const neurofibromatosis = processedDiseases.find(d => d.name === "Neurofibromatosis");
+            if (neurofibromatosis) {
+              setDiseaseValue(neurofibromatosis);
+            }
             sessionStorage.setItem("newDiseases", JSON.stringify(processedDiseases));
           } else {
             console.error("New disease data is not in expected format:", newDiseaseData);
