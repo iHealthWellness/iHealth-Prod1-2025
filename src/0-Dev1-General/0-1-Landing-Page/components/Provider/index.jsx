@@ -18,8 +18,8 @@ const Provider = () => {
   const navigate = useNavigate();
   const [diseases, setDiseases] = useState([]);
   const [states, setStates] = useState([]);
-  const [specialities, setSpecialities] = useState([]);
-  const [diseaseValue, setDiseaseValue] = useState({ name: "Neurofibromatosis", disabled: false });
+  const [specialties, setSpecialties] = useState([]);
+  const [diseaseValue, setDiseaseValue] = useState(null);
   const [specialtyValue, setSpecialtyValue] = useState("");
   const [stateValue, setStateValue] = useState("");
   const [acceptingNewPatients, setAcceptingNewPatients] = useState(false);
@@ -136,17 +136,17 @@ const Provider = () => {
       }
     };
 
-    const fetchSpecialities = async () => {
-      const cachedSpecialities = JSON.parse(sessionStorage.getItem("specialities"));
-      if (cachedSpecialities && cachedSpecialities.length > 0) {
-        setSpecialities(cachedSpecialities);
+    const fetchSpecialties = async () => {
+      const cachedSpecialties = JSON.parse(sessionStorage.getItem("specialties"));
+      if (cachedSpecialties && cachedSpecialties.length > 0) {
+        setSpecialties(cachedSpecialties);
       } else {
         try {
-          const specialtyRes = await ProviderServices.handleGetAllSpeciality();
-          setSpecialities(specialtyRes.data);
-          sessionStorage.setItem("specialities", JSON.stringify(specialtyRes.data));
+          const specialtyRes = await ProviderServices.handleGetAllSpecialty();
+          setSpecialties(specialtyRes.data);
+          sessionStorage.setItem("specialties", JSON.stringify(specialtyRes.data));
         } catch (e) {
-          console.error('Error fetching specialities:', e);
+          console.error('Error fetching specialties:', e);
         }
       }
     };
@@ -167,7 +167,7 @@ const Provider = () => {
     };
 
     setIsLoading(true);
-    Promise.all([fetchDiseases(), fetchSpecialities(), fetchStates()]).finally(() => {
+    Promise.all([fetchDiseases(), fetchSpecialties(), fetchStates()]).finally(() => {
       setIsLoading(false);
     });
   }, []);
@@ -193,7 +193,7 @@ const Provider = () => {
   };
 
   console.log("Rendering with diseases:", diseases);
-  console.log("Rendering with specialities:", specialities);
+  console.log("Rendering with specialties:", specialties);
   console.log("Rendering with states:", states);
 
   return (
@@ -229,7 +229,7 @@ const Provider = () => {
               </div>
               <div className={styles.providerFormField}>
                 <ProviderAutocomplete
-                  options={specialities}
+                  options={specialties}
                   label="Specialties"
                   value={specialtyValue}
                   onInputChange={setSpecialtyValue}

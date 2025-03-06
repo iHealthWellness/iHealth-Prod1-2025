@@ -15,6 +15,7 @@
 .dropdownMenuIcon {
   width: 24px;
   height: 24px;
+  margin-left: 6px;
 }
 
 .menuContent.hidden,

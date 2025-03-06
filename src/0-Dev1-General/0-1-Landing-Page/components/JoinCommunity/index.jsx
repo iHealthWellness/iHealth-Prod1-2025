@@ -39,7 +39,7 @@ const Joincommunity = () => {
         if (response.status === 201) {
           setSubmittedEmails((prev) => new Set(prev).add(email));
           setMessage({ text: 'Successfully submitted!', type: 'success' });
-          alert("Thanks for joining the waitlist!");
+          alert("Thanks for Subscribing !");
         } else {
           setMessage({ text: 'Oops! Form not submitted', type: 'error' });
         }

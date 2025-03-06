@@ -11,7 +11,7 @@ const handleGetNewDisease = () => {
   return axios.get(`${BASE_URL}/api/v1/diseases/list`);
 };
 
-const handleGetAllSpeciality = () => {
+const handleGetAllSpecialty = () => {
   return axios.get(
     `${BASE_URL}/api/v1/provider-data/available-data?type=specialty`
   );
@@ -32,7 +32,7 @@ const handleGetAllState = () => {
 const ProviderServices = {
   handleGetAllDisease,
   handleGetNewDisease,
-  handleGetAllSpeciality,
+  handleGetAllSpecialty,
   handleGetAllCity,
   handleGetAllState,
 };
