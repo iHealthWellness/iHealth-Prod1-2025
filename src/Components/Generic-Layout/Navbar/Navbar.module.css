@@ -397,7 +397,11 @@
       display: none;
     }
 
-  .navSignin {
+    .navDonate {
+      display: none;
+    }
+
+    .navSignin {
     margin-bottom: -10px;
   }
   

@@ -256,7 +256,9 @@ const Provider = () => {
                   sx={{
                     paddingTop: "9px",
                     "@media (max-width: 1023px)": {
-                      display: "none",
+                      // display: "none",
+                      marginLeft: "auto",
+                      textAlign: "end",
                     },
                   }}
                   onClick={GetLocationInfo}
@@ -266,7 +268,7 @@ const Provider = () => {
               </div>
             </div>
             <ButtonsSearchDonate onSubmit={handleSubmit} isDisabled={!diseaseValue && !specialtyValue && !stateValue} />
-            <DonateNowButton />
+            {/* <DonateNowButton /> */}
           </form>
         </div>
       </section>

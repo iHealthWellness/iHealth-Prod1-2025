@@ -1,5 +1,5 @@
-import { HashLink } from "react-router-hash-link";
 import styles from "./index.module.css";
+import { Link } from "react-router-dom";
 
 const FooterLinkCard = ({ linkCard }) => {
   const { category, links } = linkCard;
@@ -11,23 +11,23 @@ const FooterLinkCard = ({ linkCard }) => {
         {links.map((link) => {
           if (link.title == "Volunteer") {
             return (
-              <a
+              <Link
                 className={`SN-D-T-M-P-16 ${styles.footerLink}`}
                 key={link.title}
-                href="/job-openings"
+                to="/job-openings"
               >
                 {link.title}
-              </a>
+              </Link>
             );
           }
           return (
-            <HashLink
+            <Link
               className={`SN-D-T-M-P-16 ${styles.footerLink}`}
               to={link.path}
               key={`footer-links-${link.title}`}
             >
               {link.title}
-            </HashLink>
+            </Link>
           );
         })}
       </div>
