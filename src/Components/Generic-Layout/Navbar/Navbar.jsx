@@ -13,6 +13,7 @@ import useScrollToAnchor from "src/hooks/useScrollToAnchor";
 import { KeyboardArrowDown, Groups, Paid, Description, VolunteerActivism, Science, Medication, Biotech, OnlinePrediction, Person, CorporateFare, Facebook, CalendarMonth, ArrowRight, ArrowRightAltOutlined } from "@mui/icons-material";
 import ButtonsSearchDonate from "src/0-Dev1-General/0-1-Landing-Page/components/Provider/ButtonsSearchDonate";
 import { donateLinkUrl } from "src/environment/config";
+import DonateNowButton from "src/0-Dev1-General/0-1-Landing-Page/components/Provider/donateNowButton";
 
 
 const NavLogo = () => {
@@ -399,14 +400,15 @@ const Navbar = () => {
                       Donate
                     </Link>
                   </li> */}
-                   <li className={styles.navButtonDemo}>
+                   {/* <li className={styles.navButtonDemo}>
                     <Link className={`${styles.navLinks} ${styles.navDemo}`}
                      onClick={() => {
                       document.querySelector("#UnderConst-wrapper").style.display = "flex";
                     }}>
                      Request Demo
                     </Link>
-                  </li>
+                  </li> */}
+                  <DonateNowButton/>
 
                   <li className={styles.navLinkSignUp}>
                     <Link className={`${styles.navLinks} ${styles.navSignup}`}
