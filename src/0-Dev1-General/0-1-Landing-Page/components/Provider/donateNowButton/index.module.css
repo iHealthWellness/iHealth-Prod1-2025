@@ -19,6 +19,8 @@
   border-radius: 0.5rem;
   color: #ffffff;
   text-decoration: none;
+  white-space: nowrap; 
+  word-break: keep-all;
   cursor: pointer;
 }
 
@@ -91,6 +93,34 @@
   
   .providerBtn {
     width: 100%;
+  }
+}
+ 
+
+
+@media only screen and (max-width: 480px) {
+  
+  .providerBtn{
+    display: none;
+  }
+
+  .providerBtn.mobile { 
+    white-space: nowrap; 
+    word-break: keep-all;
+    width: 100%;
+    height: fit-content;
+    align-items: center;
+    font-size: 0.9rem;
+    padding: 5px 15px;    
+    display: block;
+  }
+}
+
+
+@media only screen and (min-width: 480px) {
+  
+  .providerBtn.mobile { 
+    display: none;
   }
 }
 

@@ -54,11 +54,27 @@ function DonateNowButton() {
     <div className={styles.providerBtnBlock}>
       <Link
         to={link}
-        className={`${styles.providerBtn} ${styles.search}`} 
+        className={`${styles.providerBtn}  ${styles.search}`} 
         target="_blank"
         onClick={(e) => handleLinkClick(e, link)}
       >
         Donate Now
+        {/* <SearchOutlinedIcon
+          sx={{
+            "@media (min-width: 1024px)": {
+              display: "none",
+            },
+          }}
+        /> */}
+      </Link>
+
+      <Link
+        to={link}
+        className={`${styles.providerBtn} ${styles.mobile} ${styles.search}`} 
+        target="_blank"
+        onClick={(e) => handleLinkClick(e, link)}
+      >
+        Donate
         {/* <SearchOutlinedIcon
           sx={{
             "@media (min-width: 1024px)": {

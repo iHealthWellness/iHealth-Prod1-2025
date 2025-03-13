@@ -411,10 +411,38 @@
   }
 
   .navLinks {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
   }
 
   .navSigninDropdownContent a {
     font-size: 0.9rem;
   }
 }
+
+
+@media only screen and (max-width: 480px) {
+  
+  .navLinkSignUp{ 
+    white-space: nowrap; 
+    word-break: keep-all;
+    font-size: 0.9rem;
+    margin-top: -5px;
+  }
+
+  .navLinkSignUp  .navSignUp{  
+    font-size: 0.9rem;
+  }
+
+  .navLinksBlock{
+    margin-right: 0px;
+  }
+
+  .navLinksList { 
+    gap: 0rem;
+    align-items: center;
+  }
+
+}
+
+
+

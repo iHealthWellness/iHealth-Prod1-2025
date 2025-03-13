@@ -21,7 +21,7 @@ const FooterLink = [
     links: [
       {
         title: "Ways to Give",
-        path: "/donate/#top",
+        path: "/donate",
       },
       {
         title: "Fundraise",
