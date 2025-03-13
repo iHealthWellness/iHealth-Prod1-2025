@@ -34,7 +34,7 @@
 }
 
 .navLinksBlock{
-  margin-right: 50px;
+  margin-right: 10px;
 }
 
 .navLinksContainer {
@@ -83,7 +83,7 @@
   display: flex;
   align-items: center;
   list-style: none;
-  gap: 1rem;
+  gap: 0.1rem;
 }
 
 .navLinksList.desktop {
@@ -262,19 +262,24 @@
  
 
 
-@media screen and (max-width: 1255px) and (min-width: 1004px) {
+@media screen and (min-width: 911px) and (max-width: 1304px) {
   .navInnerContainer {
-    width:95%;
+    width:98%;
     padding: 0.5rem 0 0.08rem;
   }
 }
 
 
-@media (min-width: 1255px) {
+@media (min-width: 1304px) {
   .navInnerContainer {
     width: 80%;
     padding: 0.5rem 0 0.98rem;
   }
+}
+
+
+@media (min-width: 911px) {
+ 
 
   .navCircleIcon {
     margin-top: 5px;
@@ -333,7 +338,7 @@
   }
 }
 
-@media (max-width: 1055px) {
+@media (max-width: 911px) {
   .navbarFiller {
     height: 65px;
     width: 100%;
@@ -367,7 +372,7 @@
   }
 }
 
-@media (min-width: 1055px) {
+@media (min-width: 911px) {
   .mobileLogo{
     display: none;
   }
@@ -379,13 +384,14 @@
 }
 
 
-@media (max-width: 1055px) {
+@media (max-width: 911px) {
   .desktopLogo{
     display: none;
   }
 
   .navLogoImg {
-    width: 60px;
+    margin-left: 5px;
+    width: 65px;
     height: auto;
   }
 }

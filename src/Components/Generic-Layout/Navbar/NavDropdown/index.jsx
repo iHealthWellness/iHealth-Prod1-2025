@@ -85,10 +85,10 @@ const MenuItem = ({ item, onSubmenuOpen, onNavigate }) => {
 
   return (
     <li className={styles.navItem}>
-      <HashLink to={item.url} onClick={handleClick} className={styles.navLink}>
+      <Link to={item.url} onClick={handleClick} className={styles.navLink}>
         {item.title}
         {item.submenu && <span className={styles.navArrow}>▶</span>}
-      </HashLink>
+      </Link>
     </li>
   );
 };
