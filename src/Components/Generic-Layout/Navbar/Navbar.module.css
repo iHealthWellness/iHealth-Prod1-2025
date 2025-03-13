@@ -418,3 +418,24 @@
     font-size: 0.9rem;
   }
 }
+
+
+@media only screen and (max-width: 480px) {
+  
+  .navLinkSignUp{ 
+    white-space: nowrap; 
+    word-break: keep-all;
+  }
+
+  
+    .navLinksBlock{
+      margin-right: 0px;
+    }
+
+  .navLinksList { 
+    gap: 0rem;
+  }
+}
+
+
+
