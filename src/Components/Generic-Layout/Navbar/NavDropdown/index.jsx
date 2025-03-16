@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { HashLink } from "react-router-hash-link";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate, Link } from "react-router-dom";
 import { ArrowLeftSharp, Close } from "@mui/icons-material";
 import dropdownIcon from "src/Assets/Icons/nav-dropdown.svg";
 import styles from "./index.module.css";
