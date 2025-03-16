@@ -104,7 +104,7 @@ const EventCards = () => {
             <div className={styles.cardContent}>
               <div className={styles.imageContainer}>
                 {renderMedia(event)}
-                <div className={styles.upcomingEventsHeader}>{event.status}</div>
+                {/* <div className={styles.upcomingEventsHeader}>{event.status}</div> */}
               </div>
               <div className={styles.eventInfo}>
                 <h3 className={styles.eventTitle}>{event.title}</h3>

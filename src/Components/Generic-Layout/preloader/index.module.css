@@ -204,4 +204,9 @@
     font-size: 0.9rem; 
   }
 
+  
+  .container p {
+    font-size: 1.3rem;  
+  }
+
 }
