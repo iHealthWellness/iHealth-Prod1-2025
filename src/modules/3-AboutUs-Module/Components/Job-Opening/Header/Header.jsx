@@ -8,7 +8,7 @@ import plusIcon from "src/Assets/Icons/plus-circle.png";
 import minusIcon from "src/Assets/Icons/minus-circle.png";
 import closeIcon from "src/Assets/Images/close-button-2.png";
 import logo from "src/Assets/Images/logo1.svg";
-import FraudAlertModal from "../../Fraud-alert-Modal";
+import FraudAlertModal from "../Fraud-alert-Modal";
 const sections = [
   "Equal Opportunity",
   "Non-Discrimination and Inclusivity",

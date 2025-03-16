@@ -241,13 +241,13 @@ const teamData = {
       image: Image9,
       link: "https://www.linkedin.com/in/lizzappi",
     },
-    {
-      id: 11,
-      name: "Mark Huntzinger",
-      extendedBio: bio11,
-      image: Image10,
-      link: "https://www.linkedin.com/in/lizzappi",
-    },
+    // {
+    //   id: 11,
+    //   name: "Mark Huntzinger",
+    //   extendedBio: bio11,
+    //   image: Image10,
+    //   link: "https://www.linkedin.com/in/lizzappi",
+    // },
 
     
     {
