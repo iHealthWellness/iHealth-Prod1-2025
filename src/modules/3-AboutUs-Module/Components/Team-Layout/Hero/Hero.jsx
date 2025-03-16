@@ -3,6 +3,7 @@ import { useState, useRef, useEffect } from "react";
 // import image from "/src/Assets/Images/Titles.png";
 import image2 from "../../../Assets/Images/teamwork.png";
 import "./Hero.css";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   const divRef = useRef(null);
@@ -54,9 +55,9 @@ const Hero = () => {
 
       <div className="tab-holder-tab">
         <div class="team-banner">
-          <a href="/job-openings" class="team-link D-H3-24">
+          <Link to="/job-openings" class="team-link D-H3-24">
             Join Our Team
-          </a>
+          </Link>
         </div>
 
         <div className="text-tab-tab">
