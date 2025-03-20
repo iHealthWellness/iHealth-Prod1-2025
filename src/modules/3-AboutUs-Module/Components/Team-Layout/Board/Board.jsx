@@ -107,12 +107,12 @@ const Board = () => {
       image: Image4,
       handleClick: () => handleCardClick(6),
     },
-    {
-      name: "Alex Lizzappi",
-      bio: "Bio for Alex Lizzappi",
-      image: Image6,
-      handleClick: () => handleCardClick(5),
-    },
+    // {
+    //   name: "Alex Lizzappi",
+    //   bio: "Bio for Alex Lizzappi",
+    //   image: Image6,
+    //   handleClick: () => handleCardClick(5),
+    // },
     {
       name: "Sean T. Connolly",
       bio: "Bio for Sean T. Connolly",
@@ -162,7 +162,7 @@ const Board = () => {
   useEffect(() => {
     const checkZoom = () => {
       const zoomLevel = window.devicePixelRatio;
-      setIsZoomActive(zoomLevel > 1.5);
+      setIsZoomActive(zoomLevel > 1.2);
       console.log("Zoom level:", zoomLevel);
     };
 

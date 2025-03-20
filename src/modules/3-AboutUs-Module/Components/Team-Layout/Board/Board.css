@@ -437,6 +437,7 @@
   font-size: 2.4rem;
   font-weight: 700;
   text-align: center; 
+  color: #31373d;
 }
 
 .popup-linkedin {
@@ -456,23 +457,20 @@
 .team-modal-bio {
   flex-grow: 1;
   overflow-y: scroll;
+  color: #818181;
   height: 40vh;
   padding-right: 1rem;
+}
+
+.team-modal-bio a {
+  color: #31373d;
 }
 
 .team-modal-bio.zoom-active{
   height: fit-content;
   overflow: visible;
 }
-
-
-@media (max-resolution: 96dpi) {
-  team-modal-bio {
-    background-color: blueviolet;
-    color: #07235b;
-    font-size: 40px;
-  }
-}
+ 
 
 
 .team-modal-bio div {

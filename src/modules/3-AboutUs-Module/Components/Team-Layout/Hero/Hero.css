@@ -177,13 +177,22 @@
 
 .team-highlight-tab h3 {
     width: 1006px;
-    height: 306px;
+    height: fit-content;
     margin-top: 10px;
     font-family: Roboto;
     line-height: 34px;
     letter-spacing: 0em;
     text-align: justify;
     color: #07235B;
+}
+
+.team-highlight-tab button{
+    color: white;
+    padding: 0px 5px;
+    background-color: #0d99ff;
+    border-radius: 50%;
+    font-size: 1.1rem;
+    border:none;
 }
 
 .text-team.slide-in,

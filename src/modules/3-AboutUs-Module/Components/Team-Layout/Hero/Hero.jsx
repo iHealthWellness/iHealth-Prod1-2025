@@ -1,24 +1,39 @@
 import { useState, useRef, useEffect } from "react";
-
-// import image from "/src/Assets/Images/Titles.png";
 import image2 from "../../../Assets/Images/teamwork.png";
 import "./Hero.css";
 import { Link } from "react-router-dom";
+import { BsPlus } from "react-icons/bs";
+import { PiMinus } from "react-icons/pi";
 
 const Hero = () => {
   const divRef = useRef(null);
   const divTwoRef = useRef(null);
-
   const [isVisible, setIsVisible] = useState({
     divRef: false,
     divTwoRef: false,
   });
+
+  // State to track if full text is shown
+  const [showFullText, setShowFullText] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768); // Detect screen width
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
       applyVisibleEffect(divRef, "divRef");
       applyVisibleEffect(divTwoRef, "divTwoRef");
     };
+
     const applyVisibleEffect = (div, key) => {
       if (div.current) {
         const rect = div.current.getBoundingClientRect();
@@ -45,6 +60,17 @@ const Hero = () => {
     };
   }, []);
 
+  // Full text
+  const fullText = `Our organization deeply appreciates the unwavering dedication of our Volunteers, Advisors, and Board Members. 
+    Their selfless contributions are indispensable in helping us fulfill our mission. Without their support, we would not be able 
+    to make a difference and shape a better future for patients with complex diseases.
+
+    Together, we are committed to bringing about positive change and improving the lives of those we serve. 
+    We are grateful for their contributions and the collective impact we can achieve together.`;
+
+  // Truncated text for mobile (first 90 characters)
+  const truncatedText = fullText.slice(0, 90) + "...";
+
   return (
     <section id="HeroPager" className="Hero-page-tab">
       <div className="container">
@@ -54,33 +80,28 @@ const Hero = () => {
       </div>
 
       <div className="tab-holder-tab">
-        <div class="team-banner">
-          <Link to="/job-openings" class="team-link D-H3-24">
+        <div className="team-banner">
+          <Link to="/job-openings" className="team-link D-H3-24">
             Join Our Team
           </Link>
         </div>
 
         <div className="text-tab-tab">
-          {/* <img className="text-tab-image" src={image} /> */}
           <h2 className={`text-team D-H3-24 ${isVisible.divRef}`} ref={divRef}>
             Our team comprises dedicated individuals who bring diverse expertise
-            and a shared commitment to our mission.{" "}
+            and a shared commitment to our mission.
           </h2>
         </div>
 
         <div className="text-tab-tab">
-          <div className="team-highlight-tab ">
-            <h3 className={`team-highlight D-P-20`} ref={divTwoRef}>
-              Our organization deeply appreciates the unwavering dedication of
-              our Volunteers, Advisors, and Board Members. Their selfless
-              contributions are indispensable in helping us fulfill our mission.
-              Without their support, we would not be able to make a difference
-              and shape a better future for patients with complex diseases.
-              <br />
-              <br />
-              Together, we are committed to bringing about positive change and
-              improving the lives of those we serve. We are grateful for their
-              contributions and the collective impact we can achieve together.
+          <div className="team-highlight-tab">
+            <h3 className="team-highlight D-P-20" ref={divTwoRef}>
+              {isMobile ? (showFullText ? fullText : truncatedText) : fullText}        
+              {isMobile && (
+              <button className="see-more-btn" onClick={() => setShowFullText(!showFullText)}>
+                {showFullText ? "-" : "+"}
+              </button>
+            )}
             </h3>
           </div>
         </div>
