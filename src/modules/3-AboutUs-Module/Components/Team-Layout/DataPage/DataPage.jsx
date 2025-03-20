@@ -1,17 +1,10 @@
 const DataPage = [
-  // {
-  // id: 1,
-  // TeamName: "Copywriting",
-  // Roles: "Content Writers, Copywriters, Technical Writers",
-  // Names: [""],
-  // },
-
   {
     id: 1,
     TeamName: "Administration",
     // Roles: "HR, Recruiting, Research, Events",
     Names: [
-      "Celia Arrecis ",
+      // "Celia Arrecis ",
       "Ebunoluwa Adebimpe",
       "Precious llenre",
       "Precious Nkeiruka Uzoma",
@@ -20,17 +13,24 @@ const DataPage = [
   },
   {
     id: 2,
+    TeamName: "Copywriting",
+    // Roles: "Content Writers, Copywriters, Technical Writers",
+    Names: ["Kythera Contreras"],
+  },
+
+  {
+    id: 3,
     TeamName: "Cybersecurity and Data Privacy",
     // Roles: "Cybersecurity,Privacy,Data Privacy ",
     Names: [, "Viswajit Srinivasan"],
   },
   {
-    id: 3,
+    id: 4,
     TeamName: "Data Analysis",
     // Roles: "Data Analysts, Clinical Trials",
     Names: [
       "Adam Albaghali",
-      "Adelina Rama",
+      // "Adelina Rama",
       "Chukwuemeka Francis",
       "Ebunoluwa Adejayan",
       "Habeeb Sulaimon",
@@ -40,36 +40,41 @@ const DataPage = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     TeamName: "Design",
     // Roles: "UX/UI Designers, Interaction Designers, Visual Designers, Graphic Designers",
     Names: [
       // "Anna Chevalier",
+      "Elisa D",
       "Derrick Ugiagbe",
-      "Happy Emerame",
+      // "Happy Emerame",
       "Quinn Devlin",
-      "Tatiana Golitsyna",
+      "Ronald Anthony",
+      // "Tatiana Golitsyna",
       "Tetiana Zabolotna",
       "Wilson Barrios",
     ],
   },
   {
-    id: 5,
+    id: 6,
     TeamName: "Engineers",
     // Roles: "Software Engineers, Full-Stack Developers, Backend Developers, Frontend Developers, DevOps Engineers, Mobile App Developers",
     Names: [
-      "Adegoke Bestman",
+      // "Adegoke Bestman",
       "Alfred Ayi-Bonte",
       "Amal Engulatov",
       "Aman Goel",
+      "Ayodele John",
       "Bauket Fabrice",
-      "David Walton",
+      // "David Walton",
       "Emmanuella Agubuzo",
       "Fawaz Bailey",
       "Isacc Wren",
       "Joe Gallagher",
-      "Josue Abraham Cabrales Ramirez",
+      // "Josue Abraham Cabrales Ramirez",
       "Kevin Fluth",
+      "Prenav Sathianathan",
+      "Ojasvi Jagtap",
       "Oladimeji Stephen Ibitoye",
       "Olaolu Adigun",
       "Padmini Katekar",
@@ -79,23 +84,27 @@ const DataPage = [
       "Rodrigo Cipriano",
       "Salmon Gowa",
       "Samuel Kingsford Amoah",
-      "Stanley Samuel Arikpo",
+      // "Stanley Samuel Arikpo",
+      "Sahil Nitinbhai Bhuva",
+      "Simarjeet Kaur",
+      "Wenjie Werder",
     ],
   },
   {
-    id: 6,
+    id: 7,
     TeamName: "Financial Management",
     // Roles: "Financial Specialists, Financial Analysts",
     Names: [
       "Ayebapreye Kari",
+      "Isabel Friedenzohn",
       "Jimmy Fraggos",
-      "Keairra A. Adams",
+      // "Keairra A. Adams",
       "Kwena Lovedonia Moyaha",
       "Matías Berisso",
     ],
   },
   {
-    id: 7,
+    id: 8,
     TeamName: "Human Resources",
     // Roles: "HR Managers, HR Generalists, Talent Acquisition Specialists",
     Names: [
@@ -106,13 +115,13 @@ const DataPage = [
     ],
   },
   {
-    id: 8,
+    id: 9,
     TeamName: "Legal and Compliance",
     // Roles: "General Counsel, Compliance Officer, Legal Counsel, Regulatory Affairs Manager, Risk and Compliance Analyst, Privacy Officer, Ethics Officer, Contract Manager, Intellectual Property (IP) Manager, Compliance Training Specialist",
     Names: ["Dalia Hechi"],
   },
   {
-    id: 9,
+    id: 10,
     TeamName: "Marketing and Public Relations",
     // Roles: "Marketing Managers, PR Specialists, Communications Managers",
     Names: [
@@ -122,13 +131,13 @@ const DataPage = [
     ],
   },
   {
-    id: 10,
+    id: 11,
     TeamName: "Product Management",
     // Roles: "Product Managers, Product Owners",
     Names: ["Amudha Ekambaram", "Hsuan Ouyang", "Ify Oshilim"],
   },
   {
-    id: 11,
+    id: 12,
     TeamName: "Project Management",
     // Roles: "Project Managers, Scrum Masters, Agile Coaches",
     Names: [
@@ -145,7 +154,7 @@ const DataPage = [
     ],
   },
   {
-    id: 12,
+    id: 13,
     TeamName: "Quality Assurance",
     // Roles: "QA Engineers, Testers, Quality Assurance Specialists",
     Names: [
@@ -163,16 +172,20 @@ const DataPage = [
     ],
   },
   {
-    id: 13,
+    id: 14,
     TeamName: "Research and Innovation",
     // Roles: "Research Scientists, Innovation Strategists, R&D Specialists",
     Names: ["Isaac Oommen", "Marcella Sarti Souza, MD"],
   },
   {
-    id: 14,
+    id: 15,
     TeamName: "Social Media",
     //  Roles: "Social Media Managers, Social Media Specialists, Community Managers",
-    Names: ["Nwoke Oluebube Chioma", "Satyam Kishore", "Uche Agholor"],
+    Names: [
+      "Nwoke Oluebube Chioma",
+      //  "Satyam Kishore",
+      "Uche Agholor",
+    ],
   },
 ];
 
