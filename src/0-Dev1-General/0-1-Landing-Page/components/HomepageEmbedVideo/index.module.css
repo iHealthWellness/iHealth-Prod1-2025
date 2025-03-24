@@ -1,7 +1,7 @@
 .videoContainer {
     width: 100%;
     max-width: 960px;
-    margin: 50px auto;
+    margin: 7.5rem auto;
     display: flex;
     flex-direction: column;
 }
@@ -102,6 +102,15 @@
         padding: 20px 40px;
         display: flex;
         flex-direction: column;
+    }
+    
+}
+
+
+
+@media (max-width: 480px) {
+    .videoContainer {
+        margin-top: 6rem;
     }
     
 }

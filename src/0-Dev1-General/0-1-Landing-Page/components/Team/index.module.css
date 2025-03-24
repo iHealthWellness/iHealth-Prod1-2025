@@ -135,7 +135,7 @@
 /* desktop view */
 @media only screen and (min-width: 1024px) {
   .teamContainer {
-    padding: 5rem 0;
+    padding: 4rem 0;
     background-color: #ffffff;
   }
 
@@ -235,6 +235,11 @@
 }
 
 @media screen and (max-width: 480px) {
+
+  .teamContainer{
+    padding-top: 6rem;
+  }
+
   .teamJoinCardInner {
     width: 80%;
     border: 2px solid #07235b;

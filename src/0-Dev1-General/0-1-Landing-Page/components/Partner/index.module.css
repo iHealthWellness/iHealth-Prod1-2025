@@ -4,7 +4,7 @@
 
 .partnerHeadingBlock {
   width: 100%;
-  margin-top: 5rem;
+  margin-top: 2.5rem;
   max-width: 1216px;
   background-image: url("src/Assets/Images/partner-background.jpg");
   background-size: cover;
@@ -119,6 +119,11 @@
 }
 
 @media screen and (max-width: 480px) {
+
+  .partnerHeadingBlock{
+    margin-top: 5rem;
+  }
+
   .partnerHeadingBlock aside {
     padding: 3rem 1rem;
     text-align: center;

@@ -8,7 +8,7 @@
 .heroButton {
  background-color: #0d99ff;
  color: #f0f7fd;
- width: 210px;
+ min-width: 150px;
  padding: 15px 5px;
  border: 2px solid #0d99ff;
  border-radius: 5px;
@@ -25,6 +25,31 @@
  border: 2px solid #fff;
  color: white;
 }
+
+
+
+
+.requestDemoButton {
+  background-color: transparent;
+  border-color: #ffffff;
+  color: #f0f7fd;
+  min-width: 150px;
+  padding: 15px 5px;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  font-size: 1rem;
+  text-align: center; 
+  border-radius: 2px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+ }
+ 
+ .requestDemoButton:hover {
+  background-color:#0d99ff;
+  border: 2px solid #0d99ff;
+  color: white;
+ }
 
 /* Switched flex direction to row so image is on the left and text on the right */
 .heroContainerInner {
@@ -127,6 +152,11 @@
  height: 2rem;
 }
 
+.heroButtonsFlex{
+  display: flex;
+  gap: 1rem;
+}
+
 @media only screen and (max-width: 1024px) {
 
   .heroContainerInner {
@@ -144,6 +174,8 @@
     height: 300px;
     margin-left: 3rem;
    }
+
+   
    
    .heroHeadingContainer{
     width: 49%;
@@ -250,4 +282,85 @@
  .heroHeadingContainer {
    margin-top: 5rem;
  }
+
+ 
 }
+
+
+
+@media (max-width: 650px) and (min-width: 578px) {
+
+  
+  .heroButtonsFlex{
+    gap: 4px;
+  }
+
+ .heroButton {
+   min-width: 120px;
+  }
+  
+  
+  .requestDemoButton {
+    min-width: 120px;
+   }
+  }
+  
+
+  
+@media (max-width: 578px) and (min-width: 480px) {
+
+  
+ .heroButton {
+   max-width: 250px;
+   min-width: 180px;
+   width: 100%;
+  }
+  
+  
+  .requestDemoButton {
+    max-width: 250px;
+    min-width: 180px;
+    width: 100%;
+
+   }
+  }
+
+
+  @media (max-width: 481px) {
+
+    .heroButtonsFlex{
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+    }
+  
+    .heroButton {
+      max-width: 100%;
+      min-width: 0px;
+      width: 100%;
+     }
+     
+     
+     .requestDemoButton {
+       max-width: 100%;
+      min-width: 0px;
+       width: 100%;
+   
+      }
+     }
+  
+
+
+@media only screen and (min-width: 1324px) {
+
+  
+ .heroButton {
+   min-width: 210px;
+  }
+  
+  
+  .requestDemoButton {
+    min-width: 210px;
+   }
+ }
+ 
