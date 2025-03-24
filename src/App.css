@@ -1,13 +1,17 @@
+@import url('https://fonts.cdnfonts.com/css/newssector-amplitude');
+@import url('https://fonts.cdnfonts.com/css/helvetica-255');
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Amplitude', Arial, 'Helvetica', sans-serif;
 }
 
 /* Language bar in the footer causes the whole page to move to the left. Setting it to 0 with !important fixes it. Contact David Tevzadze if you have any issues with this! */
 body {
   overflow-x: hidden;
+  font-family: 'Amplitude', Arial, 'Helvetica', sans-serif;
   padding-right: 0 !important;
 }
 
@@ -16,6 +20,18 @@ html {
   overflow-x: hidden;
   font-size: 16px;
   scroll-snap-type: y proximity;
+}
+
+
+
+
+h1, h2, h3 {
+  font-family: 'Amplitude', Arial, 'Helvetica', sans-serif;
+  
+}
+
+p, span, h4, h5 {
+  font-family: 'Amplitude', Arial, 'Helvetica', sans-serif;
 }
 
 .SN-M-H1-30 {
