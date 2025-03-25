@@ -29,7 +29,7 @@ const NavLogo = () => {
   };
 
   useEffect(() => {
-    if ( location.pathname === "/" || location.pathname === "/about-us" || location.pathname === "/research" || location.pathname === "/Our-Team" || location.pathname === "/donate" || location.pathname === "/nf-survey" || location.pathname === "/job-openings") {
+    if ( location.pathname === "/" || location.pathname === "/about-us" || location.pathname === "/research" || location.pathname === "/Our-Team" || location.pathname === "/donate" || location.pathname === "/nf-survey" || location.pathname === "/job-openings" || location.pathname === "/livingwith-nf") {
       window.scrollTo({ top: 0, behavior: "smooth" });
     }
   }, [location.pathname]);
