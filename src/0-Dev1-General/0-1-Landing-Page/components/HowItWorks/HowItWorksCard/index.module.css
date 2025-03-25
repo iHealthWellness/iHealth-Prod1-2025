@@ -14,7 +14,7 @@
 
 .howItWorksNumber {
   color: #e3e6ee;
-  font-size: 14rem;
+  font-size: 10rem;
   font-weight: 800;
   line-height: 120%;
 }
@@ -84,14 +84,14 @@
     right: 75%;
     top: -8.5rem;
     z-index: -1;
-    font-size: 12rem;
+    font-size: 8rem;
   }
 }
 
 @media only screen and (max-width: 620px) {
 
   .howItWorksNumber{
-    font-size: 14rem;
+    font-size: 10rem;
     font-weight: 800;
     line-height: 100%;
     margin-top: 20px;

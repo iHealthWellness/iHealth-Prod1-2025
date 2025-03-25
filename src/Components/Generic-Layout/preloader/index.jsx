@@ -33,7 +33,7 @@ const Preloader = () => {
           alt="Loading logo"
           className={styles.image}
         />
-        <p>Unifying Care So All Can Live Well</p>
+        <p>Unifying Care So All Can Live Well⠀⠀</p>
       </div>
     </div>
   );

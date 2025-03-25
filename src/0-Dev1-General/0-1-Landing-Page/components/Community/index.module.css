@@ -120,7 +120,7 @@
 /* desktop view */
 @media only screen and (min-width: 1024px) {
   .communityContainer {
-    padding: 5rem 0;
+    padding: 1.2rem 0;
   }
 
   .community-teams-text h2 {
@@ -172,7 +172,8 @@
     align-items: end;
   }
   .communityContainer {
-    padding: 4rem 2rem;
+    padding: 0rem 2rem;
+    margin-top: -19px;
   }
   .communityDescription {
     padding-bottom: 0;

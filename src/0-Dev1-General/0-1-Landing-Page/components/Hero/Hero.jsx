@@ -84,11 +84,21 @@ const Hero = () => {
             At iHealth and Wellness Foundation Inc, we believe that managing
             complex conditions should be simpler for everyone.
           </h4>
+          <div  className={styles.heroButtonsFlex}>
           <Link to="/learnmore">
             <button className={`${styles.heroButton} SN-D-Button`}>
               Learn More
             </button>
           </Link>
+          <Link  
+          onClick={() => {
+            document.querySelector("#UnderConst-wrapper").style.display = "flex";
+          }}>
+            <button className={`${styles.requestDemoButton} SN-D-Button`}>
+              Request Demo
+            </button>
+          </Link>
+          </div>
         </div>
         <div className={styles.heroImageContainer}>
           <img
