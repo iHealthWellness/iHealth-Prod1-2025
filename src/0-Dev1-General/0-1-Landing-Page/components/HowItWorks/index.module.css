@@ -35,6 +35,14 @@
 }
 
 
+@media screen and (max-width: 480px) {
+  
+.howItWorksContainer {
+  margin-top: 4rem;
+}
+
+  
+}
 
 @media only screen and (min-width: 620px) and (max-width: 1024px) {
   .howItWorksHeading {
@@ -50,6 +58,8 @@
     /* row-gap: 2rem; */
   }
 }
+
+
 
 
 @media only screen and (min-width: 1024px) {
@@ -79,8 +89,12 @@
 .how-it-works-learn-more-box:hover .how-it-works-button-label {
   color: #2947a9; /* change the color on hover for better UX */
 }
-
-
+ 
+@media only screen and (min-width: 620px) and (max-width: 1024px) {
+  .howItWorksContainer {
+    padding-top: rem;
+  }
+} 
 
 @media only screen and (min-width: 1024px) {
   .howItWorksContainer {

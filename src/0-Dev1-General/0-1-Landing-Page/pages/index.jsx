@@ -18,8 +18,8 @@ import "./index.css";
 import EventCards from "../components/EventCards";
 import HomepageEmbeddedVideo from "../components/HomepageEmbedVideo";
 import Joincommunity from "../components/JoinCommunity";
-import WaitlistSection from "../components/WaitList";
-import YouTubePlaylist from "../components/yotubePlaylists";
+// import WaitlistSection from "../components/WaitList";
+// import YouTubePlaylist from "../components/yotubePlaylists";
 
 const index = () => {
   return (

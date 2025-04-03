@@ -1,7 +1,7 @@
 .container {
   width: 100%;
   max-width: 1200px;
-  margin: 70px auto 50px auto;
+  margin: 65px auto -35px auto;
   padding: 40px;
   justify-content: center;
 }
@@ -16,7 +16,7 @@
 
 .eventCard {
   width: 100%;
-  max-width: 500px;
+  max-width: 550px;
   margin: 0 auto;
   height: fit-content;
   position: relative;
@@ -145,8 +145,14 @@
 
 @media (max-width: 1024px) {
   .eventsWrapper {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
+
+  .container {
+    margin: 70px auto -30px auto;
+  }
+  
+
 }
 
 @media (max-width: 768px) {
@@ -159,7 +165,7 @@
   }
 }
 
-@media (max-width: 1065px) and (min-width: 960px) {
+@media (max-width: 1151px) and (min-width: 991px) {
 
   .eventTitle{
 
@@ -171,8 +177,14 @@
 
 
   @media (max-width: 480px) {
+    .container {
+      margin: 70px auto -80px auto;
+    }
   .eventCard {
     margin-bottom: 40px;
+  }
+  .eventsWrapper{
+    gap: 10px;
   }
   .modalContent { 
     height: 60vh;
@@ -185,6 +197,14 @@
   .eventBackground {
     width: 99%;
   }
+
+  .eventTitle{
+    font-size: 1.1rem;
+  }
+  .eventDateTime{
+    font-size: 0.9rem;
+  }
+
 }
 
 

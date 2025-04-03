@@ -28,12 +28,30 @@
 }
 
 @media only screen and (min-width: 480px) and (max-width: 1024px) {
+ 
+  .servicesContainer {
+    padding-top: 6.8rem;
+  }
+
   .servicesInner {
     align-items: center;
   }
 }
 
+@media only screen and (max-width: 480px) {
+  .servicesContainer {
+    padding-top: 6.7rem;
+  }
+
+
+}
+
+
 @media only screen and (min-width: 1024px) {
+ 
+  .servicesContainer {
+    padding-top: 4.5rem;
+  }
   .servicesHeading {
     padding-bottom: 2rem;
   }

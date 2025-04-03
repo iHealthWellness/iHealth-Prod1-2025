@@ -3,9 +3,9 @@
 import { useState } from "react"
 import { Link } from "react-router-dom"
 import styles from "./index.module.css"
-import imageTwo from "../../../../../src/Assets/Images/eventimagetwo.jpg"
-import imageOne from "../../../../../src/Assets/Images/February2025NEWLETTERIMAGE.jpg"
-import newsletterPDF from "../../../../../src/Assets/files/march2025newsletter.pdf"
+import imageTwo from "../../../../../src/Assets/Images/facts-about-nf-post.jpg"
+import imageOne from "../../../../../src/Assets/Images/march-new-event.png"
+import newsletterPDF from "../../../../../src/Assets/files/march-newsletter.pdf"
 
 const PDFModal = ({ isOpen, onClose, pdfUrl }) => {
   if (!isOpen) return null
@@ -51,23 +51,23 @@ const EventCards = () => {
 
   const events = [
     {
-      title: "Event : Navigating NF with  Confidence",
-      date: "25TH March, 2025",
-      time: "5PM ET",
-      image: imageTwo,
-      link: "https://forms.gle/5rkUz7XsYUvvdRPL7",
-      status: "UPCOMING EVENT",
-    },
-    {
-      title: "Newsletter:  Navigating NF with Confidence",
-      date: "February, 2025",
-      time: "VOL. 9",
+      title: "Monthly Newsletter",
+      date: "Last Updated | March 31st, 2025",
+      time: "",
       image: newsletterPDF,
       link: newsletterPDF,
       // link: "https://lnkd.in/gpWRY_Yi",
       status: "NEWSLETTER",
     },
-  ]
+    {
+      title: "Playlist: Facts About Neurofibromatosis (NF)",
+      date: "Last Updated | March 31st, 2025",
+      // time: "5PM ET",
+      image: imageTwo,
+      link: "https://www.youtube.com/playlist?list=PLWRClAjMOjXgo6m6vrypqWbwwCcVb1NEu",
+      status: "PLAYLIST",
+    },
+   ]
 
   const handleLinkClick = (e, link) => {
     e.preventDefault()
@@ -104,12 +104,12 @@ const EventCards = () => {
             <div className={styles.cardContent}>
               <div className={styles.imageContainer}>
                 {renderMedia(event)}
-                {/* <div className={styles.upcomingEventsHeader}>{event.status}</div> */}
+                {/* <div className={`${styles.upcomingEventsHeader}`}>{event.status}</div> */}
               </div>
               <div className={styles.eventInfo}>
                 <h3 className={styles.eventTitle}>{event.title}</h3>
                 <p className={styles.eventDateTime}>
-                  <span className={styles.eventDate}>{event.date}</span> |
+                  <span className={styles.eventDate}>{event.date}</span> 
                   <span className={styles.eventTime}>{event.time}</span>
                 </p>
                 {event.status === "NEWSLETTER" ? (
@@ -128,7 +128,7 @@ const EventCards = () => {
                     className={styles.registerBtn}
                     onClick={(e) => handleLinkClick(e, event.link)}
                   >
-                    Register Now
+                    View Playlist
                   </Link>
                 )}
               </div>
