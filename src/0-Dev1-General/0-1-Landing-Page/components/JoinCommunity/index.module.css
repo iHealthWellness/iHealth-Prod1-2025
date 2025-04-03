@@ -11,11 +11,33 @@
   margin-bottom: 4rem;
 }
 
+@media only screen and (min-width: 480px) and (max-width: 1024px) {
+  .container {
+    margin-bottom: 6rem;
+  }
+
+}
+
 @media screen and (max-width: 760px) {
   .container {
     flex-direction: column;
     padding: 2rem 0px;
-    background-color: #fff;
+  margin-top: 8rem;
+  background-color: #fff;
+    border-color: #fff !important;
+  }
+  .textContainer {
+    margin: 20px 0 !important;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  .container {
+    flex-direction: column;
+    padding: 2rem 0px;
+  margin-top: -1rem;
+  background-color: #fff;
     border-color: #fff !important;
   }
   .textContainer {

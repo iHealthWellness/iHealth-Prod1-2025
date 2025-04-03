@@ -18,8 +18,9 @@
     max-width: 590px;
     margin: auto;
     display: flex;
+    margin-top: 3.2rem;
     flex-direction: column;
-    gap: 2rem;
+    /* gap: 2rem; */
   }
 
   .benefit-heading {
@@ -38,5 +39,17 @@
 
   .benefit-heading {
     display: none;
+  }
+}
+
+
+
+
+
+
+@media only screen and (max-width: 480px){
+
+  .benefit-heading {
+    margin-top: 1rem;
   }
 }

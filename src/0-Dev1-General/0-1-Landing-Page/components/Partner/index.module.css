@@ -84,6 +84,9 @@
 
 /* Desktop view */
 @media only screen and (min-width: 1024px) {
+  .partnerContainer{
+    margin-top: -1rem;
+  }
   .partnerHeadingBlock {
     margin-bottom: 1rem;
   }
@@ -118,10 +121,18 @@
   }
 }
 
+
+@media only screen and (min-width: 480px) and (max-width: 1024px) {
+
+  .partnerHeadingBlock{
+    margin-top: 6.6rem;
+  }
+}
+
 @media screen and (max-width: 480px) {
 
   .partnerHeadingBlock{
-    margin-top: 5rem;
+    margin-top: 7rem;
   }
 
   .partnerHeadingBlock aside {

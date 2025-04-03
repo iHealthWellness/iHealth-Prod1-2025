@@ -107,6 +107,13 @@
 }
 
 
+@media only screen and (min-width: 480px) and (max-width: 1024px) {
+    .videoContainer {
+    margin-top: 6.3rem;
+    margin-bottom: -1rem;
+    }
+  }
+
 
 @media (max-width: 480px) {
     .videoContainer {
@@ -114,3 +121,13 @@
     }
     
 }
+
+
+
+@media (min-width: 1024px) {
+
+    .videoContainer {
+        margin-top: 7rem;
+        margin-bottom: 4.5rem;
+    }
+    }

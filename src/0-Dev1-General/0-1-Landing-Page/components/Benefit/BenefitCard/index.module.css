@@ -142,7 +142,7 @@
 
 @media screen and (max-width: 1024px) {
   .benefitCard {
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
     width: 100%;
   }
 
@@ -154,6 +154,25 @@
     background-color: rgb(245, 245, 245);
   }
 }
+
+
+@media only screen and (min-width: 1024px) and (max-width: 1201px) {
+  .benefitFlipcardFront {
+    background-size: cover;
+    background-position: center;
+    height: 560px;
+    min-height: 560px;   
+  }
+  .desktopFlip.flip:hover .benefitFlipcardInner {
+    transform: rotateY(0deg);
+  }
+  
+  .benefitFlipcard {
+    height: 560px;
+  }
+  
+}
+
 
 @media screen and (max-width: 768px) {
   .benefitFlipcard {

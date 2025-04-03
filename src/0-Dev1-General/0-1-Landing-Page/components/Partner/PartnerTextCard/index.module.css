@@ -21,6 +21,7 @@
 
 .partner-text-subheading {
   color: rgb(0, 0, 0);
+  font-weight: 500;
 }
 
 .partner-text {
@@ -75,4 +76,9 @@
   .partner-link {
     margin: 2rem auto 2rem 0;
   }
+  
+.partner-text-subheading {
+  color: rgb(0, 0, 0);
+  font-weight: 550;
+}
 }
