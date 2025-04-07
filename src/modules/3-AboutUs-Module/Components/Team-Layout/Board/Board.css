@@ -369,40 +369,31 @@
   position: relative;
   width: 95%;
   max-width: 800px;
-  max-height: 97vh;
+  max-height: 90vh; /* Slightly reduced from 97vh to ensure it fits better */
   display: flex;
   flex-direction: column;
   overflow: hidden;
+}
+
+.popup-content.zoom-height-active{
+  height: auto;
+  max-height: 90vh;
+  overflow-y: auto;
+  background-color: white; /* Changed from red to white */
+  max-width: 800px;
 }
 
 .popup-content-inner {
   display: flex;
   flex-direction: column;
   height: 100%;
+  overflow-y: visible;
 }
 
 .popup-content-inner.zoom-active{
-  overflow-y: scroll;
-  height: 100vh;
-}
-
-
-.popup-content-inner.zoom-active::-webkit-scrollbar {
-  width: 10px;
-}
-
-.popup-content-inner.zoom-active::-webkit-scrollbar-track {
-  background: #ffffff;
-  border-radius: 5px;
-}
-
-.popup-content-inner.zoom-active::-webkit-scrollbar-thumb {
-  background: #818181;
-  border-radius: 10px;
-}
-
-.popup-content-inner.zoom-active::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  overflow-y: auto;
+  height: auto;
+  max-height: 90vh;
 }
 
 .close-btn {
@@ -456,22 +447,30 @@
 
 .team-modal-bio {
   flex-grow: 1;
-  overflow-y: scroll;
+  overflow-y: auto;
   color: #818181;
-  height: 40vh;
+  height: auto;
+  max-height: 40vh;
   padding-right: 1rem;
+  padding-bottom: 2rem; /* Added padding at the bottom to ensure text isn't cut off */
+}
+
+.team-modal-bio.zoom-height-active{
+  height: auto;
+  max-height: none;
+  overflow-y: visible;
+}
+
+.team-modal-bio.zoom-active{
+  height: auto;
+  max-height: none;
+  overflow-y: visible;
+  padding-bottom: 2rem;
 }
 
 .team-modal-bio a {
   color: #31373d;
 }
-
-.team-modal-bio.zoom-active{
-  height: fit-content;
-  overflow: visible;
-}
- 
-
 
 .team-modal-bio div {
   margin-bottom: 1rem;
@@ -500,6 +499,7 @@
   .popup-content {
     width: 95%;
     padding: 1.5rem;
+    max-height: 85vh;
   }
 
   .popup-name {
@@ -507,6 +507,28 @@
   }
 
   .team-modal-bio {
-    max-height: calc(90vh - 550px);
+    max-height: 40vh;
+  }
+  
+  .team-modal-bio.zoom-height-active,
+  .team-modal-bio.zoom-active {
+    max-height: none;
+  }
+}
+
+/* Add specific handling for small heights */
+@media (max-height: 800px) {
+  .popup-content {
+    max-height: 85vh;
+  }
+  
+  .team-modal-bio {
+    max-height: 30vh;
+  }
+  
+  .popup-content.zoom-height-active,
+  .team-modal-bio.zoom-height-active {
+    height: auto;
+    max-height: none;
   }
 }
