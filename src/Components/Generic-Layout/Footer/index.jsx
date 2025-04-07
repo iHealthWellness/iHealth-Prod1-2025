@@ -119,7 +119,7 @@ const Footer = () => {
               STAY INFORMED:
             </p>
             <div className={styles.subscribeBar}>
-              <form onSubmit={handleSubmit}>
+              <form onSubmit={handleSubmit} className={styles.subscriptionForm}>
                 <input
                   className={styles.subscribeInput}
                   placeholder="Your email here"

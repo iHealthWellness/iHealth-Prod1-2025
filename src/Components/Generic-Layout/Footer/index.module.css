@@ -7,7 +7,6 @@
 }
 
 
-
 .subscribeInput::placeholder {
   color: rgba(163, 170, 194, 1);
 }
@@ -236,6 +235,10 @@
 @media only screen and (min-width: 1260px) {
   .container {
     background-color: #07235b;
+  }  
+
+  .subscriptionForm{
+    display: flex;
   }
 
   .top {

@@ -60,7 +60,7 @@ const EventCards = () => {
       status: "NEWSLETTER",
     },
     {
-      title: "Playlist: Facts About Neurofibromatosis (NF)",
+      title: "Facts About Neurofibromatosis (NF)",
       date: "Last Updated | March 31st, 2025",
       // time: "5PM ET",
       image: imageTwo,
