@@ -49,6 +49,11 @@ const Footer = () => {
     setEmail(e.target.value);
   };
 
+  const isEmailValid = (email) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
@@ -126,7 +131,11 @@ const Footer = () => {
                   value={email}
                   onChange={handleEmailChange}
                 />
-                <button className={styles.subscribeBtn} type="submit">
+                <button
+                  className={styles.subscribeBtn}
+                  type="submit"
+                  disabled={!email || !isEmailValid(email)}
+                >
                   {loading ? "Loading..." : subscribeStatus || "Subscribe"}
                 </button>
               </form>
