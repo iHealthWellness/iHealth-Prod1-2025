@@ -17,7 +17,7 @@ const Datascience = () => {
     <div className="layerOne-tab">
       <div>
         <div className="flex-tab">
-          <h3 className="Text-header" onClick={toggleDatasci}>
+          <h3 className="Text-header SN-D-H3-24" onClick={toggleDatasci}>
             DATA SCIENCE
           </h3>
           <BntTab
@@ -29,12 +29,12 @@ const Datascience = () => {
           {datasciVisible && (
             <div className="grid">
               <Link
-                className="grid-title link-text"
+                className="grid-title link-text SN-D-T-M-P-16"
                 to="https://app.dover.io/apply/2d71c19b-3348-4bae-bbc2-a5ea3d500bc7/be17bf3c-1d49-4188-8f1b-93ae51e11e68/?rs=15190316"
               >
                 Web Scraping Focus Data Engineer
               </Link>
-              <h2 className="grid-text">Remote</h2>
+              <h2 className="grid-text SN-D-T-M-P-16">Remote</h2>
             </div>
           )}
           <hr />

@@ -60,6 +60,7 @@ const AccordionSection = ({
           className={`${titleStyle} ${
             buttonColor === "grey" ? styles.applyPadding : ""
           }`}
+          style={{ color: "black" }}
         >
           {title}
           {buttonColor === "grey" && title ? (

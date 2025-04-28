@@ -39,9 +39,9 @@ const FraudAlertModal = () => {
               />
               <div className={styles.header}>
               <img className={styles.logo} src={logo} alt="" />
-                <h2 className={styles.foundationName}>Disclaimer and Fraud Alert</h2>
+                <h2 className={`${styles.foundationName} SN-D-H2-32`}>Disclaimer and Fraud Alert</h2>
               </div>
-              <div className={styles.mainParagraph}>
+              <div className={`${styles.mainParagraph} SN-D-T-M-P-16`}>
                 <p>
                   At iHealth and Wellness, we are deeply committed to transparency and integrity in our recruitment process. Please note that all current opportunities within our organization are volunteer roles.
                 </p>
@@ -51,31 +51,31 @@ const FraudAlertModal = () => {
               </div>
               <div className={styles.sectionsContainer}>
                 <div className={styles.section}>
-                  <h2 className={styles.sectionTitle}>Fraud Warning</h2>
-                  <p className={styles.sectionContent}>
+                  <h2 className={`${styles.sectionTitle} SN-D-T-M-B-16`}>Fraud Warning</h2>
+                  <p className={`${styles.sectionContent} SN-D-T-M-P-16`}>
                     Beware of fraudulent activities where bad actors may impersonate iHealth and Wellness using fake domain names or email addresses. All official recruitment communications will come from <a href="mailto:hr-recruiting@ihealthwellness.org">hr-recruiting@ihealthwellness.org</a>.
                   </p>
                 </div>
                 <div className={styles.section}>
-                  <h3 className={styles.sectionTitle}>To protect yourself:</h3>
-                  <ul className={styles.sectionContent}>
+                  <h3 className={`${styles.sectionTitle} SN-D-T-M-B-16`}>To protect yourself:</h3>
+                  <ul className={`${styles.sectionContent} SN-D-T-M-P-16`}>
                     <li>Ensure all emails are sent from <a href="mailto:hr-recruiting@ihealthwellness.org">hr-recruiting@ihealthwellness.org</a>.</li>
                     <li>Verify the authenticity of emails and job postings.</li>
                     <li>Remember, we will never request payment, banking information, or sensitive personal details as part of the application process.</li>
                   </ul>
                 </div>
                 <div className={styles.section}>
-                  <p className={styles.sectionContent}>
+                  <p className={`${styles.sectionContent} SN-D-T-M-P-16`}>
                     If you come across suspicious communications or have concerns, please contact us immediately at <a href="mailto:hr-recruiting@ihealthwellness.org">hr-recruiting@ihealthwellness.org</a>.
                   </p>
                 </div>
-                <p className={styles.sectionContent}>
+                <p className={`${styles.sectionContent} SN-D-T-M-P-16`}>
                 Thank you for helping us maintain a safe and trustworthy recruitment process.
               </p>
               </div>
               
               <button
-                className={styles.closeButton}
+                className={`${styles.closeButton} SN-D-T-M-B-16`}
                 onClick={closeModal}
               >
                 Close

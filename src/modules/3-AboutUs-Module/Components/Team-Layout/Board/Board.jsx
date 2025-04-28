@@ -204,14 +204,14 @@ const Board = () => {
           />
           <div className="popup-image-container">
             <img src={selectedCard.image} className="popup-img" />
-          <h1 className="popup-name">{selectedCard.name}</h1>
+            <h1 className="popup-name SN-D-H1-40">{selectedCard.name}</h1>
           </div>
           <div className="popup-linkedin" onClick={handleDivClick}></div>
           <hr className="grey-line"></hr>
           <div className={`team-modal-bio ${isZoomModalHeightActive ? "zoom-height-active" : ""} ${isZoomActive ? "zoom-active" : ""}`}>
             {selectedCard.extendedBio.split("--").map((bioChunk, index) => (
               <div key={index}>
-                <a>{bioChunk}</a>
+                <a className="SN-D-T-M-P-16">{bioChunk}</a>
                 <br />
               </div>
             ))}
@@ -221,10 +221,10 @@ const Board = () => {
     </div>
   )}
   <div className="page-holder">
-    <h2 id="Board" className="team-directors-header D-H1-32">
+    <h2 id="Board" className="team-directors-header SN-D-H1-40">
       Board of Directors
     </h2>
-    <h3 className="team-directors-tab D-P-20">
+    <h3 className="team-directors-tab SN-D-P-22">
       Our Board of Directors governs the Foundation's mission, policies,
       bylaws, budget, and fundraising initiatives, aligning with legal
       requirements and the purposes outlined in the Certificate of
@@ -244,7 +244,7 @@ const Board = () => {
         <div className="board-image" onClick={member.handleClick}>
           <img src={member.image} alt={member.name} />
           <div className="Name-tab">
-            <p className="D-P-20">{member.name}</p>
+            <p className="SN-D-P-22">{member.name}</p>
           </div>
           <button className="btn-board-tab">
             <img src={Image7} />
@@ -255,8 +255,8 @@ const Board = () => {
   </div>
 
   <div id="Advisory" className="page-holder">
-    <h2 className="team-directors-header D-H2-30">Advisory Council</h2>
-    <h3 className="team-directors-tab D-P-20">
+    <h2 className="team-directors-header SN-D-H2-32">Advisory Council</h2>
+    <h3 className="team-directors-tab SN-D-P-22">
       The Advisory Committee for our health and wellness startup serves as a
       group of experienced advisors who provide valuable insights, guidance,
       and expertise. They contribute to strategic decision-making, offer
@@ -278,7 +278,7 @@ const Board = () => {
         <div className="board-image" onClick={member.handleClick}>
           <img src={member.image} alt={member.name} />
           <div className="Name-tab">
-            <p className="D-P-20">{member.name}</p>
+            <p className="SN-D-P-22">{member.name}</p>
           </div>
           <button className="btn-board-tab">
             <img src={Image7} />

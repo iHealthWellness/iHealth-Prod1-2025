@@ -31,7 +31,7 @@
   }
   /* styles.css */
   .modal > h1 + h2 + h3 + p {
-    font-family: "Roboto";
+    /* font-family: "Roboto"; */
   }
   .closeIcon {
     display: flex;
@@ -86,19 +86,19 @@
     margin-block: 0 12px;
   }
   .foundationName + .subheader {
-    font-size: 2.25rem;
+    /* font-size: 2.25rem; */
   }
   .date {
     /* Your date styling here */
     color: #000000;
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     margin-block: 0 1.75rem;
   }
   .mainParagraph {
     margin-top: 20px;
     margin-bottom: 20px;
-    font-size: 1rem;
-    font-weight: 400px;
+    /* font-size: 1rem; */
+    /* font-weight: 400px; */
     text-align: justify;
   }
   .mainParagraph > p:nth-child(1) {
@@ -126,8 +126,8 @@
   .sectionTitle {
     /* Your section title styling */
     display: inline;
-    font-weight: 700;
-    font-size: 1rem;
+    /* font-weight: 700; */
+    /* font-size: 1rem; */
   }
   
   .toggleButton {
@@ -191,8 +191,8 @@
     background-color: #0d99ff;
     border: none;
     color: #fff;
-    font-weight: 400;
-    font-size: 1.25rem;
+    /* font-weight: 400; */
+    /* font-size: 1.25rem; */
     text-align: center;
     align-items: center;
     margin: auto 0;
@@ -236,19 +236,19 @@
       width: 18px;
     }
     .foundationName {
-      font-size: 1.25em;
+      /* font-size: 1.25em; */
       text-align: center;
     }
     .subheader {
-      font-size: 1em;
+      /* font-size: 1em; */
     }
     .foundationName + .subheader {
-      font-size: 1.125em;
+      /* font-size: 1.125em; */
       text-align: center;
     }
   
     .date {
-      font-size: 1em;
+      /* font-size: 1em; */
     }
   }
   

@@ -14,7 +14,7 @@ const TermsPopup = () => {
         </div>
 
         <div className="terms-button-close terms-bottom-curve">
-          <button>Close</button>
+          <button className="SN-D-T-M-B-16">Close</button>
         </div>
         <div className="terms-bottom"></div>
       </div>

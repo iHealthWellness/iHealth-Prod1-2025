@@ -15,7 +15,7 @@ const Hero = () => {
 
   // State to track if full text is shown
   const [showFullText, setShowFullText] = useState(false);
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768); // Detect screen width
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
   useEffect(() => {
     const handleResize = () => {
@@ -81,13 +81,13 @@ const Hero = () => {
 
       <div className="tab-holder-tab">
         <div className="team-banner">
-          <Link to="/job-openings" className="team-link D-H3-24">
+          <Link to="/job-openings" className="team-link SN-D-H3-24">
             Join Our Team
           </Link>
         </div>
 
         <div className="text-tab-tab">
-          <h2 className={`text-team D-H3-24 ${isVisible.divRef}`} ref={divRef}>
+          <h2 className={`text-team SN-D-H3-24 ${isVisible.divRef}`} ref={divRef}>
             Our team comprises dedicated individuals who bring diverse expertise
             and a shared commitment to our mission.
           </h2>
@@ -95,10 +95,10 @@ const Hero = () => {
 
         <div className="text-tab-tab">
           <div className="team-highlight-tab">
-            <h3 className="team-highlight D-P-20" ref={divTwoRef}>
+            <h3 className="team-highlight SN-D-P-22" ref={divTwoRef}>
               {isMobile ? (showFullText ? fullText : truncatedText) : fullText}        
               {isMobile && (
-              <button className="see-more-btn" onClick={() => setShowFullText(!showFullText)}>
+              <button className="see-more-btn SN-D-T-M-B-16" onClick={() => setShowFullText(!showFullText)}>
                 {showFullText ? "-" : "+"}
               </button>
             )}

@@ -52,8 +52,8 @@ const TeamMember = () => {
           className={`teamboard-tab4 ${isVisible.divRef ? "slide-in" : ""}`}
           ref={divRef}
         >
-          <h2 className="team-directors-header D-H2-30">Foundation Staff</h2>
-          <h3 className="team-directors-tab D-P-20">
+          <h2 className="team-directors-header SN-D-H2-32">Foundation Staff</h2>
+          <h3 className="team-directors-tab SN-D-P-22">
             Our team comprises dedicated individuals who bring diverse expertise
             and a shared commitment to our mission. Our organization deeply
             appreciates the unwavering dedication of our volunteers, advisors,
@@ -79,11 +79,11 @@ const TeamMember = () => {
 
             return (
               <div className="grid-tab3">
-                <div className="grid-tab-texter D-P-20">{TeamName}</div>
+                <div className="grid-tab-texter SN-D-P-22">{TeamName}</div>
                 <div className="content-tab">
-                  <p>{Roles}</p>
+                  <p className="SN-D-T-M-P-16">{Roles}</p>
                 </div>
-                <div className="content-name D-P-20">
+                <div className="content-name SN-D-P-22">
                   {Names.map((name) => {
                     return <p key={name}>{name}</p>;
                   })}
