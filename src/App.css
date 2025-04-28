@@ -18,20 +18,26 @@ body {
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
-  font-size: 16px;
+  font-size: 16px; /* Base font size for rem calculation */
   scroll-snap-type: y proximity;
 }
 
-
-
-
 h1, h2, h3 {
   font-family: 'Amplitude', Arial, 'Helvetica', sans-serif;
-  
+  /* Removed default line heights, handled by specific classes */
 }
 
 p, span, h4, h5 {
   font-family: 'Amplitude', Arial, 'Helvetica', sans-serif;
+  /* Removed default line heights, handled by specific classes */
+}
+
+/* Commenting out old general typography styles */
+/*
+#empowering-patients,
+#making-a-difference,
+#making-a-diff {
+  color: #0d99ff;
 }
 
 .SN-M-H1-30 {
@@ -44,12 +50,6 @@ p, span, h4, h5 {
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 110%;
-}
-
-#empowering-patients,
-#making-a-difference,
-#making-a-diff {
-  color: #0d99ff;
 }
 
 .SN-M-H3-20 {
@@ -142,166 +142,193 @@ p, span, h4, h5 {
   font-weight: 700;
   line-height: 120%;
 }
+*/
 
 .App {
   scroll-behavior: smooth;
 }
 
-/* #region */
 
-.SN-D-Home-H1-48 {
-  font-size: 3rem;
-  font-weight: 400;
+
+/* Desktop Styles */
+.SN-D-Home-H1-56 {
+  font-size: 3.5rem; /* 56px */
+  font-weight: 500; /* Regular */
+  line-height: 120%;
+}
+
+.SN-D-Home-H1-40 {
+  font-size: 2.5rem; /* 40px */
+  font-weight: 500; /* Regular */
   line-height: 120%;
 }
 
 .SN-D-Home-H2-32 {
-  font-size: 2rem;
-  font-weight: 400;
+  font-size: 2rem; /* 32px */
+  font-weight: 500; /* Regular */
   line-height: 110%;
 }
 
 .SN-D-Home-H3-24 {
-  font-size: 1.5rem;
-  font-weight: 400;
-  line-height: 143%;
+  font-size: 1.5rem; /* 24px */
+  font-weight: 500; /* Regular */
+  line-height: 143%; /* Kept from previous H3 */
 }
 
-.SN-D-P-20 {
-  font-size: 1.25rem;
-  font-weight: 400;
-  line-height: 150%;
+.SN-D-Home-H3-24-light {
+  font-size: 1.5rem; /* 24px */
+  font-weight: 400; /* Regular */
+  line-height: 143%; /* Kept from previous H3 */
 }
 
-.SN-D-T-M-B-16 {
-  font-size: 1rem;
-  font-weight: bold;
+.SN-D-Home-P-22 {
+  font-size: 1.375rem; /* 22px */
+  font-weight: 500; /* Regular */
+  line-height: 150%; /* Kept from previous P-20 */
+}
+
+.SN-D-T-M-Home-B-16 {
+  font-size: 1rem; /* 16px */
+  font-weight: 600; /* Bold */
+  line-height: 120%;
+  text-transform: uppercase; /* UPPERCASE */
+}
+
+.SN-D-T-M-Home-li-16 {
+  font-size: 1rem; /* 16px */
+  font-weight: 600; /* Bold */
   line-height: 120%;
 }
 
-.SN-D-T-M-P-16 {
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 143%;
+.SN-D-T-M-Home-P-16 {
+  font-size: 1rem; /* 16px */
+  font-weight: 500; /* Regular */
+  line-height: 143%; /* Kept from previous P-16 */
 }
 
+.SN-D-T-M-Home-P-14 {
+  font-size: 0.875rem; /* 14px */
+  font-weight: 500; /* Regular */
+  line-height: 143%; /* Assuming similar line height */
+}
+
+/* Tablet Styles */
 @media screen and (max-width: 1024px) {
-  .SN-D-Home-H1-48 {
-    font-size: 2.25rem;
-    font-weight: 400;
-    line-height: 120%;
+  /* Apply SN-T-Home styles to corresponding SN-D-Home classes */
+  .SN-D-Home-H1-56,
+  .SN-D-Home-H1-40 { /* SN-T-Home-H1-40 */
+    font-size: 2.5rem; /* 40px */
   }
 
-  .SN-D-Home-H2-32 {
-    font-size: 1.875rem;
-    font-weight: 400;
-    line-height: 110%;
+  .SN-D-Home-H2-32 { /* SN-T-Home-H2-32 */
+    font-size: 2rem; /* 32px */
   }
 
-  .SN-D-Home-H3-24 {
-    font-size: 1.5rem;
-    font-weight: 400;
-    line-height: 143%;
+  .SN-D-Home-H3-24 { /* SN-T-Home-H3-24 */
+    font-size: 1.5rem; /* 24px */
   }
+
+  /* D-T-M styles remain the same unless overridden */
 }
 
+/* Mobile Styles */
 @media screen and (max-width: 480px) {
-  .SN-D-Home-H1-48 {
-    font-size: 1.875rem;
-    font-weight: 400;
-    line-height: 120%;
+   /* Apply SN-M-Home styles to corresponding SN-D-Home classes */
+  .SN-D-Home-H1-56,
+  .SN-D-Home-H1-40 { /* SN-M-Home-H1-32 */
+    font-size: 2rem; /* 32px */
   }
 
-  .SN-D-Home-H2-32 {
-    font-size: 1.5rem;
-    font-weight: 400;
-    line-height: 110%;
+  .SN-D-Home-H2-32 { /* SN-M-Home-H2-28 */
+    font-size: 1.75rem; /* 28px */
   }
 
-  .SN-D-Home-H3-24 {
-    font-size: 1.25rem;
-    font-weight: 400;
-    line-height: 143%;
+  .SN-D-Home-H3-24 { /* SN-M-Home-H3-22 */
+    font-size: 1.375rem; /* 22px */
   }
+
+  /* D-T-M styles remain the same unless overridden */
 }
 
 /* #endregion */
 
-/* #region NOT HOME PAGE */
 
-.D-H1-32 {
-  font-size: 2rem;
-  font-weight: 400;
+/* #region Non Homepage Typography */
+
+/* Desktop Styles */
+.SN-D-H1-40 {
+  font-size: 2.5rem; /* 40px */
+  font-weight: 500; /* Regular */
   line-height: 120%;
 }
 
-.D-H2-30 {
-  font-size: 1.875rem;
-  font-weight: 400;
+.SN-D-H2-32 {
+  font-size: 2rem; /* 32px */
+  font-weight: 500; /* Regular */
   line-height: 120%;
 }
 
-.D-H3-24 {
-  font-size: 1.5rem;
-  font-weight: 400;
+.SN-D-H3-24 {
+  font-size: 1.5rem; /* 24px */
+  font-weight: 500; /* Regular */
   line-height: 120%;
 }
 
-.D-P-20 {
-  font-size: 1.25rem;
-  font-weight: 400;
+.SN-D-P-22 {
+  font-size: 1.375rem; /* 22px */
+  font-weight: 500; /* Regular */
   line-height: 150%;
 }
 
-.D-T-M-P-16 {
-  font-size: 1rem;
-  font-weight: 400;
+.SN-D-T-M-B-16 {
+  font-size: 1rem; /* 16px */
+  font-weight: 600; /* Bold */
+  line-height: 120%;
+  text-transform: uppercase; /* UPPERCASE */
+}
+
+.SN-D-T-M-P-16 {
+  font-size: 1rem; /* 16px */
+  font-weight: 500; /* Regular */
   line-height: 143%;
 }
 
-.D-T-M-P-B-16 {
-  font-size: 1rem;
-  font-weight: bold;
-  line-height: 120%;
+.SN-D-T-M-P-14 {
+  font-size: 0.875rem; /* 14px */
+  font-weight: 500; /* Regular */
+  line-height: 143%; /* Assuming similar line height */
 }
 
+/* Tablet Styles */
 @media screen and (max-width: 1024px) {
-  .D-H1-32 {
-    font-size: 1.875rem;
+  /* Apply SN-T styles to corresponding SN-D classes */
+  /* .SN-D-H1-40 remains 2.5rem unless specified */
+
+  .SN-D-H2-32 { /* SN-T-H2-32 */
+    font-size: 2rem; /* 32px */
   }
 
-  .D-H2-30 {
-    font-size: 1.5rem;
+  .SN-D-H3-24 { /* SN-T-H3-24 */
+    font-size: 1.5rem; /* 24px */
   }
 
-  .D-H3-24 {
-    font-size: 1.125rem;
-  }
-
-  .D-T-M-P-B-16 {
-    font-size: 1rem;
-    font-weight: 400;
-  }
+  /* D-T-M styles remain the same unless overridden */
 }
 
+/* Mobile Styles */
 @media screen and (max-width: 480px) {
-  .D-H1-32 {
-    font-size: 1.75rem;
+  /* Apply SN-M styles to corresponding SN-D classes */
+  /* .SN-D-H1-40 remains 2.5rem unless specified */
+
+  .SN-D-H2-32 { /* SN-M-H2-28 */
+    font-size: 1.75rem; /* 28px */
   }
 
-  .D-H2-30 {
-    font-size: 1.25rem;
+  .SN-D-H3-24 { /* SN-M-H3-22 */
+    font-size: 1.375rem; /* 22px */
   }
 
-  .D-H3-24 {
-    font-size: 1rem;
-    font-weight: 400;
-  }
-
-  .D-T-M-P-B-16 {
-    font-size: 1rem;
-    font-weight: 400;
-  }
+   /* D-T-M styles remain the same unless overridden */
 }
 
 /* #endregion */

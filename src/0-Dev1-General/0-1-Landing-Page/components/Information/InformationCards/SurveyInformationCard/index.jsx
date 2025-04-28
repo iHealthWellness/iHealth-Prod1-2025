@@ -26,8 +26,8 @@ function SurveyInformationCard() {
     return (
       <div key={index} className={styles.cardContainer}>
         <h2 className={styles.cardHeader}>
-          <span className={`${styles.dH1_32} ${styles.part1} ${styles.surveyToday}`}>{part1}</span>
-          <span  className={` ${styles.part2} ${styles.dH3_24} D-H3-24`}>{part2}</span>
+          <span className={`${styles.dH1_32} ${styles.part1} ${styles.surveyToday} SN-D-Home-H1-40`}>{part1}</span>
+          <span  className={` ${styles.part2} ${styles.dH3_24} SN-D-Home-H3-24`}>{part2}</span>
         </h2>
         <div className={styles.contentSection}>
           <div className={styles.imagesContainer}>
@@ -41,10 +41,10 @@ function SurveyInformationCard() {
               />
             ))}
           </div>
-          <p className={styles.dP_20}>{text}</p>
+          <p className={`${styles.dP_20} SN-D-Home-P-22`}>{text}</p>
           <div className={styles.btnContainer}>
             <button
-              className={styles.dTM_P_B_16}
+              className={`${styles.dTM_P_B_16} SN-D-T-M-Home-B-16`}
               onClick={(e) => handleNavigate(e, path)}
             >
               {buttonText}

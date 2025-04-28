@@ -251,12 +251,10 @@ const Provider = () => {
                 <Button
                   variant="text"
                   startIcon={<PinDropIcon style={{ marginBottom: "5px" }} />}
-                  style={{ color: "#07235B" }}
-                  className={`SN-D-P-20`}
+                  className={`SN-D-T-M-Home-B-16`}
                   sx={{
                     paddingTop: "9px",
                     "@media (max-width: 1023px)": {
-                      // display: "none",
                       marginLeft: "auto",
                       textAlign: "end",
                     },
@@ -274,13 +272,13 @@ const Provider = () => {
       </section>
       <section className={styles.qrSection}>
         <div className={styles.qrContainer}>
-          <p>Open Camera, Scan Code, Give Now!</p>
+          <p className="SN-D-T-M-Home-P-14">Open Camera, Scan Code, Give Now!</p>
           <img src={qrBanner} alt="paypal qr code" />
         </div>
       </section>
       <aside className={styles.secondBanner}>
         <div className={styles.blueBanner}></div>
-        <p>{letterElements}</p>
+        <p className="SN-D-T-M-Home-P-14">{letterElements}</p>
         <div className={styles.blueBanner}></div>
       </aside>
     </>

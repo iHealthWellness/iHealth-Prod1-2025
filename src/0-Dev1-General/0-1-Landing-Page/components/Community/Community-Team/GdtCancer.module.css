@@ -1,8 +1,8 @@
 /* Font family style */
-.modal {
+/* .modal {
   font-family: "Work Sans";
   font-style: normal;
-}
+} */
 
 /* css styling for the close modal icon */
 
@@ -12,7 +12,6 @@
   color: #a3aac2;
   margin-left: 96%;
   padding-top: 5px;
-  font-size: 25px;
   cursor: pointer;
 }
 
@@ -85,15 +84,11 @@
 }
 
 .gdt__p {
-  font-size: 15px;
   color: #c33418;
-  font-weight: 400;
 }
 
 .gdt-head h1 {
   color: #07235b;
-  font-size: 24px;
-  font-weight: 400;
 }
 
 .pxp1 {
@@ -102,9 +97,7 @@
   margin-top: 5px;
   margin-bottom: 5px;
   padding: 0 17%;
-  font-size: 12px;
   font-style: normal;
-  font-weight: 400;
 }
 
 .progressbar {
@@ -152,9 +145,6 @@
   position: absolute;
   margin-top: 8px;
   left: 10px;
-  font-size: 12px;
-  font-weight: 400;
-  /* color: #A3AAC2; */
   color: #000000;
   pointer-events: none;
   transition: all 0.3s ease;
@@ -164,30 +154,18 @@
   position: absolute;
   margin-top: 8px;
   left: 10px;
-  font-size: 12px;
-  font-weight: 400;
-  /* color: #A3AAC2; */
   color: #000000;
   pointer-events: none;
   transition: all 0.3s ease;
 }
 
 .opt__gdt::after {
-  content: "*";
-  color: red;
-  font-size: 15px;
 }
 
 .input__labelx::after {
-  content: "*";
-  color: red;
-  font-size: 15px;
 }
 
 .input__label::after {
-  content: "*";
-  color: red;
-  font-size: 15px;
 }
 
 /* SET THE BACKGROUND COLOR OF THE INPUT FIELD ON INPUT OF A TEXT */
@@ -220,9 +198,6 @@
   position: absolute;
   margin-top: 5px;
   left: 10px;
-  font-size: 12px;
-  font-weight: 400;
-  /* color: #A3AAC2; */
   color: #000000;
   pointer-events: none;
   transition: all 0.3s ease;
@@ -231,15 +206,10 @@
 .pxp2 {
   color: #667299;
   text-align: center;
-  font-size: 14px;
   margin-top: 5px;
 }
 
 .pxp2::before {
-  content: "*";
-  color: red;
-  font-size: 15px;
-  /* color: rgba(237, 101, 101, 1); */
 }
 
 .btnx {
@@ -249,8 +219,6 @@
 .btnx button {
   position: relative;
   top: 80px;
-  font-size: 20px;
-  font-weight: 200;
   padding: 5px 14px;
   width: 252.84px;
   background: #0d99ff;
@@ -308,7 +276,6 @@
   max-height: 150px;
   width: 100%;
   color: black;
-  font-size: 15px;
   overflow-y: auto;
   z-index: 2222;
 }
@@ -366,7 +333,6 @@ select::-webkit-scrollbar-button {
   margin-top: -12px;
   left: 3%;
   color: red;
-  font-size: 12px;
   transform: translate(-10%, -10%);
 }
 
@@ -561,7 +527,6 @@ select::-webkit-scrollbar-button {
 
   .close {
     margin-left: 92%;
-    font-size: 30px;
   }
 
   .modal {
@@ -593,12 +558,9 @@ select::-webkit-scrollbar-button {
   }
 
   .gdt-head h1 {
-    font-size: 20px;
   }
 
   .pxp1 {
-    font-size: 12px;
-    padding: 0 10%;
   }
 
   .progressbar__img {
@@ -622,12 +584,10 @@ select::-webkit-scrollbar-button {
   }
 
   .pxp2 {
-    font-size: 12px;
   }
 
   .error-msg {
     left: 17.5%;
-    font-size: 10px;
   }
 }
 
@@ -731,7 +691,6 @@ select::-webkit-scrollbar-button {
 
   .close {
     margin-left: 92%;
-    font-size: 30px;
   }
 
   .modal {
@@ -752,7 +711,6 @@ select::-webkit-scrollbar-button {
   }
 
   .close {
-    font-size: 40px;
   }
 
   .Login_down {

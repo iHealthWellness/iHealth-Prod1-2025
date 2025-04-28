@@ -13,7 +13,7 @@ const PDFModal = ({ isOpen, onClose, pdfUrl }) => {
   return (
     <div className={styles.modalOverlay}>
       <div className={styles.modalContent}>
-        <button className={styles.closeButton} onClick={onClose}>
+        <button className={`${styles.closeButton} SN-D-T-M-P-14`} onClick={onClose}>
           ×
         </button>
         <iframe src={pdfUrl} className={styles.pdfFrame} title="Newsletter PDF" allowFullScreen />
@@ -29,12 +29,12 @@ const ExitConfirmationModal = ({ isOpen, onClose, onConfirm, link }) => {
     <div className={styles.modalOverlay}>
       <div className={styles.confirmationModal}>
         {/* <h3>You are about to leave the website. Do you want to continue?</h3> */}
-        <p>You are about to leave the website. Do you want to continue?</p>
+        <p className="SN-D-T-M-P-16">You are about to leave the website. Do you want to continue?</p>
         <div className={styles.modalButtons}>
-          <button className={styles.confirmButton} onClick={() => onConfirm(link)}>
+          <button className={`${styles.confirmButton} SN-D-T-M-B-16`} onClick={() => onConfirm(link)}>
             Continue
           </button>
-          <button className={styles.cancelButton} onClick={onClose}>
+          <button className={`${styles.cancelButton} SN-D-T-M-B-16`} onClick={onClose}>
             Cancel
           </button>
         </div>
@@ -107,8 +107,8 @@ const EventCards = () => {
                 {/* <div className={`${styles.upcomingEventsHeader}`}>{event.status}</div> */}
               </div>
               <div className={styles.eventInfo}>
-                <h3 className={styles.eventTitle}>{event.title}</h3>
-                <p className={styles.eventDateTime}>
+                <h3 className={`${styles.eventTitle} SN-D-Home-H3-24`}>{event.title}</h3>
+                <p className={`${styles.eventDateTime} SN-D-T-M-Home-P-14`}>
                   <span className={styles.eventDate}>{event.date}</span> 
                   <span className={styles.eventTime}>{event.time}</span>
                 </p>
@@ -116,7 +116,7 @@ const EventCards = () => {
                   <Link 
                     to={event.link} 
                     target="_blank" 
-                    className={styles.registerBtn}
+                    className={`${styles.registerBtn} SN-D-T-M-Home-B-16`}
                     onClick={(e) => handleLinkClick(e, event.link)}
                   >
                     View Newsletter
@@ -125,7 +125,7 @@ const EventCards = () => {
                   <Link 
                     to={event.link} 
                     target="_blank" 
-                    className={styles.registerBtn}
+                    className={`${styles.registerBtn} SN-D-T-M-Home-B-16`}
                     onClick={(e) => handleLinkClick(e, event.link)}
                   >
                     View Playlist

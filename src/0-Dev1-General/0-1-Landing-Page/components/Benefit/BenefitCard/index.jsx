@@ -104,12 +104,12 @@ const BenefitCard = ({ benefit }) => {
           >
           </div>
           <div className={styles.benefitFlipcardBack}>
-            <p className={`${styles.benefitFlipcardSummary} SN-D-P-20`}>
+            <p className={`${styles.benefitFlipcardSummary} SN-D-Home-P-22`}>
               {benefit.summary}
             </p>
-            <ol className={`${styles.benefitFlipcardList} SN-D-P-20`}>
+            <ol className={`${styles.benefitFlipcardList} SN-D-Home-P-22`}>
               {benefit.details.map((detail, index) => (
-                <li className="SN-D-P-20" key={index}>
+                <li className="SN-D-Home-P-22" key={index}>
                   {detail}
                 </li>
               ))}

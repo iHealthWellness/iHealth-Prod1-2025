@@ -10,7 +10,7 @@
   height: 42px;
   margin-left: auto;
   margin-right: auto;
-  font-size: 1rem;
+  /* font-size: 1rem; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -112,7 +112,7 @@
     width: 100%;
     height: fit-content;
     align-items: center;
-    font-size: 0.9rem;
+    /* font-size: 0.9rem; */
     padding: 5px 15px;    
     display: block;
   }
@@ -159,13 +159,13 @@
 .confirmationModal h3 {
   color: #00234b;
   margin-bottom: 15px;
-  font-size: 1.4rem;
+  /* font-size: 1.4rem; */
 }
 
 .confirmationModal p {
   color: #4b586a;
   margin-bottom: 25px;
-  font-size: 1.2rem;
+  /* font-size: 1.2rem; */
 }
 
 .modalButtons {
@@ -179,8 +179,8 @@
   color: white;
   border: none;
   padding: 10px 25px;
-  font-size: 1rem;
-  font-weight: bold;
+  /* font-size: 1rem; */
+  /* font-weight: bold; */
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -195,8 +195,8 @@
   color: #333;
   border: none;
   padding: 10px 25px;
-  font-size: 1rem;
-  font-weight: bold;
+  /* font-size: 1rem; */
+  /* font-weight: bold; */
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;

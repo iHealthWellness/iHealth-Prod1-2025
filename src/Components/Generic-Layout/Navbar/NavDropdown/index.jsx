@@ -83,8 +83,8 @@ const MenuItem = ({ item, onSubmenuOpen, onNavigate }) => {
   };
 
   return (
-    <li className={styles.navItem}>
-      <Link to={item.url} onClick={handleClick} className={styles.navLink}>
+    <li className={`${styles.navItem} SN-D-T-M-Home-li-16`}>
+      <Link to={item.url} onClick={handleClick} className={`${styles.navLink} SN-D-T-M-Home-li-16`}>
         {item.title}
         {item.submenu && <span className={styles.navArrow}>▶</span>}
       </Link>
@@ -150,7 +150,7 @@ const NavDropdownButton = () => {
                   <ArrowLeftSharp />
                 </button>
               )}
-              <h2>{activeSubmenu ? activeSubmenu.title : 'Menu'}</h2>
+              <h2 className="SN-D-T-M-B-16">{activeSubmenu ? activeSubmenu.title : 'Menu'}</h2>
             </div>
             <button className={styles.closeButton} onClick={() => setIsMenuOpen(false)}>
               <Close />

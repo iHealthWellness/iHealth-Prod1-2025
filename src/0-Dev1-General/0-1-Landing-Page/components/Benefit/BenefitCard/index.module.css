@@ -50,15 +50,15 @@
   .benefitFlipcardFront {
     background-size: cover;
     background-position: center;
-    height: 500px;
-    min-height: 500px;   
+    height: 670px;
+    min-height: 670px;   
   }
   .desktopFlip.flip:hover .benefitFlipcardInner {
     transform: rotateY(0deg);
   }
   
   .benefitFlipcard {
-    height: 500px;
+    height: 670px;
   }
 
 }
@@ -160,15 +160,15 @@
   .benefitFlipcardFront {
     background-size: cover;
     background-position: center;
-    height: 560px;
-    min-height: 560px;   
+    height: 680px;
+    min-height: 680px;   
   }
   .desktopFlip.flip:hover .benefitFlipcardInner {
     transform: rotateY(0deg);
   }
   
   .benefitFlipcard {
-    height: 560px;
+    height: 680px;
   }
   
 }
@@ -203,7 +203,7 @@
   }
   .benefitHeading {
     color: rgb(6, 39, 88);
-    font-size: 1.875rem;
+    /* font-size: 1.875rem; */
   }
   .benefit-img {
     width: 100%;

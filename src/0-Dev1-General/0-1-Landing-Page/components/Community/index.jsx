@@ -23,7 +23,7 @@ const Community = () => {
       <h2 className={`${styles.communityHeading} SN-D-Home-H2-32`}>
         We give power to you, the patient
       </h2>
-      <p className={`${styles.communityDescription} SN-D-P-20`}>
+      <p className={`${styles.communityDescription} SN-D-Home-P-22`}>
         Find all the information and resources you need to make informed
         decisions about your health and live your best life. Choose your area of
         interest and take the next step in your wellness journey.

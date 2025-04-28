@@ -1,0 +1,133 @@
+.videoContainer {
+    width: 100%;
+    max-width: 960px;
+    margin: 7.5rem auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px; 
+    height: 0;
+    overflow: hidden;
+    background: #000;
+}
+
+.iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.controlsBar {
+    background: #7CC1E4;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    margin-top: -1px;  
+}
+
+.playButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #07235B;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.timeDisplay {
+    color: #07235B;
+    font-size: 14px;
+    min-width: 45px;
+}
+
+.progressBarContainer {
+    flex-grow: 1;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+.progressBar {
+    height: 100%;
+    background: #07235B;
+    border-radius: 2px;
+    transition: width 0.1s linear;
+}
+
+.controlsRight {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.controlButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #07235B;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.controlButton:hover,
+.playButton:hover {
+    opacity: 0.8;
+}
+
+
+
+
+@media (max-width: 1068px) {
+    .videoContainer {
+        width: 100%;
+        max-width: 960px;
+        margin: 50px auto;
+        padding: 20px 40px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+
+@media only screen and (min-width: 480px) and (max-width: 1024px) {
+    .videoContainer {
+    margin-top: 6.3rem;
+    margin-bottom: -1rem;
+    }
+  }
+
+
+@media (max-width: 480px) {
+    .videoContainer {
+        margin-top: 6rem;
+    }
+    
+}
+
+
+
+@media (min-width: 1024px) {
+
+    .videoContainer {
+        margin-top: 7rem;
+        margin-bottom: 4.5rem;
+    }
+    }

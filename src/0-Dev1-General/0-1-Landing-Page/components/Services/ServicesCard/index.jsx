@@ -5,10 +5,10 @@ const ServicesCard = ({ service }) => {
     <div className={styles.servicesCard}>
       <img className={styles.servicesIcon} src={service.icon} alt="" />
       <div className={styles.servicesHover}>
-        <h3 className={`${styles.servicesCardHeading} SN-D-P-20`}>
+        <h3 className={`${styles.servicesCardHeading} SN-D-Home-H3-24`}>
           {service.title}
         </h3>
-        <p className={`${styles.servicesCardContent} SN-D-T-M-P-`}>
+        <p className={`${styles.servicesCardContent} SN-D-T-M-Home-P-16`}>
           {service.content}
         </p>
         {/* <a

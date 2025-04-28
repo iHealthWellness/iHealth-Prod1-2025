@@ -7,7 +7,7 @@ import styles from "./index.module.css";
 const Benefit = () => {
   return (
     <section className={styles["benefit-container"]}>
-      <h2 className={`${styles["benefit-heading"]} SN-M-H2-24`}>
+      <h2 className={`${styles["benefit-heading"]} SN-D-Home-H2-32`}>
         Patient and Provider Benefits
       </h2>
       <div className={styles["benefit-container-inner"]}>

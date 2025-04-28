@@ -70,8 +70,6 @@
 
 .eventTitle {
   color: #00234b;
-  font-size: 1.4rem;
-  font-weight: bold;
   margin-bottom: 10px;
 }
 
@@ -79,7 +77,6 @@
   display: flex;
   color: #00234b;
   gap: 5px;
-  font-size: 1.1rem;
   margin-bottom: 10px;
 }
 
@@ -88,8 +85,6 @@
   color: white;
   border: none;
   padding: 8px 15px;
-  font-size: 15px;
-  font-weight: bold;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -130,7 +125,6 @@
   position: absolute;
   top: 10px;
   right: 10px;
-  font-size: 2rem;
   background: none;
   border: none;
   cursor: pointer;
@@ -199,10 +193,8 @@
   }
 
   .eventTitle{
-    font-size: 1.1rem;
   }
   .eventDateTime{
-    font-size: 0.9rem;
   }
 
 }
@@ -228,7 +220,6 @@
 .confirmationModal p {
   color: #4b586a;
   margin-bottom: 25px;
-  font-size: 1.2rem;
 }
 
 .modalButtons {
@@ -242,8 +233,6 @@
   color: white;
   border: none;
   padding: 10px 25px;
-  font-size: 1rem;
-  font-weight: bold;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -258,8 +247,6 @@
   color: #333;
   border: none;
   padding: 10px 25px;
-  font-size: 1rem;
-  font-weight: bold;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;

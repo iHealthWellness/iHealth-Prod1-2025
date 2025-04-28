@@ -51,14 +51,11 @@
 }
 
 .PopupContent h1 {
-  font-size: 2rem;
   margin-bottom: 8px;
-  font-weight: 400;
 }
 
 .PopupContent p {
   margin-top: 20px;
-  font-size: 1rem;
   margin-bottom: 16px;
   color: #858ead;
 }
@@ -66,7 +63,6 @@
 .PopupContent a {
   color: #4a9eff;
   text-decoration: underline;
-  font-size: 18px;
   margin-bottom: 20px;
 }
 
@@ -81,7 +77,6 @@
   height: 28px;
   width: 28px;
   color: #808080;
-  font-weight: 700;
   margin-top: 10px;
   margin-right: 10px;
 }
@@ -128,20 +123,15 @@
   }
   
   .PopupContent h1 {
-    font-size: 30px;
     margin-bottom: 8px;
-    font-weight: 400;
   }
   
   .PopupContent p {
-    font-size: 16px;
     margin-bottom: 16px;
     color: #858ead;
   }
   
   .PopupContent a {
-    color: #4a9eff;
-    text-decoration: underline;
     margin-bottom: 16px;
   }
   
@@ -156,7 +146,6 @@
     height: 28px;
     width: 28px;
     color: #808080;
-    font-weight: 700;    
     margin-top: 5px;
     margin-right: 5px;
   }
@@ -229,13 +218,11 @@
 .confirmationModal h3 {
   color: #00234b;
   margin-bottom: 15px;
-  font-size: 1.4rem;
 }
 
 .confirmationModal p {
   color: #4b586a;
   margin-bottom: 25px;
-  font-size: 1.2rem;
 }
 
 .modalButtons {
@@ -249,8 +236,6 @@
   color: white;
   border: none;
   padding: 10px 25px;
-  font-size: 1rem;
-  font-weight: bold;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -265,8 +250,6 @@
   color: #333;
   border: none;
   padding: 10px 25px;
-  font-size: 1rem;
-  font-weight: bold;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;

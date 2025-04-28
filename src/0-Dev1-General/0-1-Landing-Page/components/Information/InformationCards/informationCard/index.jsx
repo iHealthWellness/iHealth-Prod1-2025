@@ -28,8 +28,8 @@ const InformationCard = ({ team }) => {
       </div>
       <ul className={styles.informationCardList}>
         {content.map((c) => (
-          <li className={`${styles.informationCardListItem} SN-D-P-20`} key={c.text}>
-            <span className={styles.informationCardListItemSpan}>&#10004; </span>
+          <li className={`${styles.informationCardListItem} SN-D-Home-P-22`} key={c.text}>
+            <span className={`${styles.informationCardListItemSpan} SN-D-Home-P-22`}>&#10004; </span>
             {heading.includes("Education") ? (
               <a href={c.path} onClick={(e) => handleOnClick(e, c.path)}>
                 {c.text}
@@ -44,7 +44,7 @@ const InformationCard = ({ team }) => {
       </ul>
       <div className={styles.informationCardLinkBlock}>
         <Link
-          className={styles.informationCardLink}
+          className={`${styles.informationCardLink} SN-D-T-M-Home-B-16`}
           // href={detailPath}
           to={detailPath}
           onClick={(e) => handleOnClick(e, detailPath)}

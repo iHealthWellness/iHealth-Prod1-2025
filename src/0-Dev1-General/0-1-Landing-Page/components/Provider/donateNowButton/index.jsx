@@ -1,4 +1,3 @@
-
 // Import Libraries/Packages
 import React, { useState } from "react";
 import { Link, Navigate } from "react-router-dom";
@@ -14,12 +13,12 @@ const ExitConfirmationModal = ({ isOpen, onClose, onConfirm, link }) => {
     <div className={styles.modalOverlay}>
       <div className={styles.confirmationModal}>
         {/* <h3>You are about to leave the website. Do you want to continue?</h3> */}
-        <p>You are about to leave the website. Do you want to continue?</p>
+        <p className="SN-D-T-M-P-16">You are about to leave the website. Do you want to continue?</p>
         <div className={styles.modalButtons}>
-          <button className={styles.confirmButton} onClick={() => onConfirm(link)}>
+          <button className={`${styles.confirmButton} SN-D-T-M-B-16`} onClick={() => onConfirm(link)}>
             Continue
           </button>
-          <button className={styles.cancelButton} onClick={onClose}>
+          <button className={`${styles.cancelButton} SN-D-T-M-B-16`} onClick={onClose}>
             Cancel
           </button>
         </div>
@@ -54,7 +53,7 @@ function DonateNowButton() {
     <div className={styles.providerBtnBlock}>
       <Link
         to={link}
-        className={`${styles.providerBtn}  ${styles.search}`} 
+        className={`${styles.providerBtn}  ${styles.search} SN-D-T-M-B-16`} 
         target="_blank"
         onClick={(e) => handleLinkClick(e, link)}
       >
@@ -70,7 +69,7 @@ function DonateNowButton() {
 
       <Link
         to={link}
-        className={`${styles.providerBtn} ${styles.mobile} ${styles.search}`} 
+        className={`${styles.providerBtn} ${styles.mobile} ${styles.search} SN-D-T-M-B-16`} 
         target="_blank"
         onClick={(e) => handleLinkClick(e, link)}
       >

@@ -14,9 +14,9 @@
 
 .howItWorksNumber {
   color: #e3e6ee;
-  font-size: 10rem;
-  font-weight: 800;
-  line-height: 120%;
+  /* font-size: 10rem; <-- Removed */
+  /* font-weight: 800; <-- Removed */
+  /* line-height: 120%; <-- Removed */
 }
 
 .howItWorksContentBlock {
@@ -84,16 +84,16 @@
     right: 75%;
     top: -8.5rem;
     z-index: -1;
-    font-size: 8rem;
+    /* font-size: 8rem; <-- Removed */
   }
 }
 
 @media only screen and (max-width: 620px) {
 
   .howItWorksNumber{
-    font-size: 10rem;
-    font-weight: 800;
-    line-height: 100%;
+    /* font-size: 10rem; <-- Removed */
+    /* font-weight: 800; <-- Removed */
+    /* line-height: 100%; <-- Removed */
     margin-top: 20px;
   }
 

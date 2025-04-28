@@ -43,7 +43,7 @@ const Partner = () => {
       >
         <aside ref={slideInRef} className={slideIn ? styles.fadeInSection : ""}>
           <h2 className={`${styles.partnerHeading} SN-D-Home-H2-32`}>Partner with us</h2>
-          <p className={`${styles.partnerParagraph} SN-D-P-20`}>
+          <p className={`${styles.partnerParagraph} SN-D-Home-P-22`}>
             We're building a home for the care of complex conditions
           </p>
         </aside>
