@@ -26,9 +26,6 @@
 .lmcButton {
   color: #fff;
   text-align: center;
-  font-size: 1.5rem;
-  font-weight: 400;
-  line-height: 143%;
 }
 
 .lmcImage {
@@ -54,9 +51,6 @@
 
 .lmcTitle a {
   color: inherit;
-  font-size: 1.5rem;
-  font-weight: 400;
-  line-height: 110%;
 }
 
 @media (min-width: 480px) and (max-width: 1024px) {

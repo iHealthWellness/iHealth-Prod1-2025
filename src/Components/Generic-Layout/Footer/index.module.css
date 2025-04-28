@@ -46,16 +46,10 @@
 .addressHeading,
 .subscribeHeading,
 .followHeading {
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 120%;
   color: #fff;
 }
 
 .address {
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 120%;
   color: #fff;
 }
 
@@ -270,16 +264,10 @@
   }
 
   .addressHeading {
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 110%;
     white-space: nowrap;
   }
 
   .address {
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 120%;
   }
 
   .linksBlock {
@@ -291,16 +279,10 @@
   }
 
   .subscribeInput {
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 110%;
   }
 
   .subscribeBtn {
     padding: 0.5rem 1.5rem;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 120%;
   }
 
   .followBlock {
@@ -340,13 +322,11 @@
 .confirmationModal h3 {
   color: #00234b;
   margin-bottom: 15px;
-  font-size: 1.4rem;
 }
 
 .confirmationModal p {
   color: #4b586a;
   margin-bottom: 25px;
-  font-size: 1.2rem;
 }
 
 .modalButtons {

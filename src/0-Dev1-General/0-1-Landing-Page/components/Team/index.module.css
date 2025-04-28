@@ -28,8 +28,6 @@
 }
 
 .teamJoinDescription {
-  font-size: 1rem;
-  line-height: 143%;
   max-width: 313px;
   text-align: center;
 }
@@ -55,9 +53,6 @@
 }
 
 .teamJoinSlogan {
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 120%;
 }
 
 .teamJoinBtn {
@@ -66,7 +61,6 @@
   cursor: pointer;
   background-color: #0d99ff;
   color: #fff;
-  font-weight: 300;
 }
 
 .teamJoinCardInner img {
@@ -93,9 +87,6 @@
   }
 
   .teamJoinHeading {
-    font-size: 1.875rem;
-    font-weight: 400;
-    line-height: 110%;
   }
 
   .teamHeadingH3{
@@ -103,37 +94,21 @@
   }
 
   .teamJoinSlogan {
-    font-size: 1rem;
-    font-weight: 700;
-    line-height: 120%;
   }
 
   .teamHeadingH2 span {
-    font-size: inherit;
-    font-weight: inherit;
-    line-height: inherit;
   }
 
   .teamJoinSlogan {
-    font-weight: 400;
-    line-height: 143%;
-    font-size: 1.5rem;
   }
 
   .teamJoinBtn {
-    padding: 0.5rem 5rem;
-    font-weight: 400;
-    line-height: 143%;
-    font-size: 1.5rem;
   }
 
   .teamJoinDescription {
     width: 80%;
     padding-top: 20px;
     max-width: 697px;
-    font-size: 1.5rem;
-    font-weight: 400;
-    line-height: 143%;
     padding-bottom: 3rem;
   }
 }
@@ -221,21 +196,13 @@
   }
 
   .teamJoinHeading {
-    font-size: 2.25rem;
-    font-weight: 400;
-    line-height: 110%;
     text-align: center;
   }
 
-  /* update line-height to 143% */
   .teamJoinSlogan {
-    font-size: 1.5rem;
-    font-weight: 400;
-    line-height: 143%;
   }
 
   .teamJoinBtn {
-    font-size: 1.25rem;
     padding: 1rem 1.5rem;
     border-radius: 0.5rem;
   }
@@ -257,12 +224,10 @@
   }
   .teamHeadingH2 {
     padding: 10px 10px;
-    font-size: 1.9rem;
     display: block;
   }
   .teamHeadingH2 span {
     color: #0d99ff;
-    font-size: 1.5rem;
   }
 
   .teamHeadingH3{

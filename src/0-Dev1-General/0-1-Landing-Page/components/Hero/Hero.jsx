@@ -58,7 +58,7 @@ const Hero = () => {
     <section className={styles.heroContainer}>
       <Popup isOpen={opened} onClose={() => setOpened(false)} />
       <div className={styles.firstBanner}>
-        <p>
+        <p className="SN-D-T-M-Home-P-14">
           You are our hero, and we would love to hear your NF story,{" "}
           <a href="https://forms.gle/QAiHQcgtvqfjFtYe6">Submit your story.</a>
         </p>
@@ -74,19 +74,18 @@ const Hero = () => {
 
       <div className={styles.heroContainerInner}>
         <div className={styles.heroHeadingContainer}>
-          <h1 className={`${styles.heroHeadingH1} SN-D-Home-H1-48`}>
+          <h1 className={`${styles.heroHeadingH1} SN-D-Home-H1-56`}>
             Live better. Be well.
           </h1>
           <h4
-            className={`${styles.heroHeadingH4} SN-D-P-20`}
-            style={{ color: "#f0f7fd" }}
+            className={`${styles.heroHeadingH4} SN-D-Home-P-22`}
           >
             At iHealth and Wellness Foundation Inc, we believe that managing
             complex conditions should be simpler for everyone.
           </h4>
           <div  className={styles.heroButtonsFlex}>
           <Link to="/learnmore">
-            <button className={`${styles.heroButton} SN-D-Button`}>
+            <button className={`${styles.heroButton} SN-D-T-M-Home-B-16`}>
               Learn More
             </button>
           </Link>
@@ -94,7 +93,7 @@ const Hero = () => {
           onClick={() => {
             document.querySelector("#UnderConst-wrapper").style.display = "flex";
           }}>
-            <button className={`${styles.requestDemoButton} SN-D-Button`}>
+            <button className={`${styles.requestDemoButton} SN-D-T-M-Home-B-16`}>
               Request Demo
             </button>
           </Link>

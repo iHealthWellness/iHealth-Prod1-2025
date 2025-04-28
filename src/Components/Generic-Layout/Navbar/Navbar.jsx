@@ -252,7 +252,7 @@ const MenuList = ({ setIsMenuOpen, closeSubMenu }) => {
           <NavLink
             to={menu.url}
             className={({ isActive }) =>
-              `${styles.navLinks} ${menu.className}` +
+              `${styles.navLinks} ${menu.className} SN-D-T-M-Home-li-16` +
               (isActive ? ` ${styles.actives} ${menu.className}` : "")
             }
             onClick={() => handleLinkClick(menu.title)}
@@ -266,7 +266,7 @@ const MenuList = ({ setIsMenuOpen, closeSubMenu }) => {
           {activeMenu === menu.title && menu.subMenu && (
             <div className={styles.navDropdownContent}>
               {menu.subMenu.map((sub) => (
-                <AdjustedHashLink to={sub.url} key={sub.title} onClick={handleLinkClick}>
+                <AdjustedHashLink to={sub.url} key={sub.title} onClick={handleLinkClick} className="SN-D-T-M-Home-li-16">
                   <div className={styles.navDropdownContentInner}>
                     <div className={styles.navDropdownContentInnerIcon}>
                       {/* {sub.icon} */}
@@ -411,7 +411,7 @@ const Navbar = () => {
                   <DonateNowButton/>
 
                   <li className={styles.navLinkSignUp}>
-                    <Link className={`${styles.navLinks} ${styles.navSignup}`}
+                    <Link className={`${styles.navLinks} ${styles.navSignup} SN-D-T-M-Home-li-16`}
                      onClick={() => {
                       document.querySelector("#UnderConst-wrapper").style.display = "flex";
                     }}>

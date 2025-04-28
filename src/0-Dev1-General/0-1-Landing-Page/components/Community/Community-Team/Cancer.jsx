@@ -101,7 +101,7 @@ const Cancer = ({ closeModal }) => {
 	);
 
 	const [buttonText2, setbuttonText2] = useState(
-		<button id="" type="submit">
+		<button id="" type="submit" className="SN-D-T-M-B-16">
 			submit
 		</button>
 	);
@@ -214,7 +214,7 @@ const Cancer = ({ closeModal }) => {
 	return (
 		<div className="jct-holder">
 			<div className="mod1">
-				<span className="close" onClick={closeModal}>
+				<span className="close SN-D-T-M-P-14" onClick={closeModal}>
 					&times;
 				</span>
 
@@ -225,10 +225,10 @@ const Cancer = ({ closeModal }) => {
 				</div>
 
 				<div className="gdt-head">
-					<h1 id="modal__header">{headText2}</h1>
-					<p>{headText02}</p>
+					<h1 id="modal__header" className="SN-D-H1-40">{headText2}</h1>
+					<p className="SN-D-T-M-P-14">{headText02}</p>
 				</div>
-				<p className="pxp1">{headText002}</p>
+				<p className="pxp1 SN-D-T-M-P-16">{headText002}</p>
 				<div className="progressbar">{headText0002}</div>
 
 				{/* Geriatric input form section */}
@@ -251,12 +251,12 @@ const Cancer = ({ closeModal }) => {
 								/>
 								<label
 									for="yourName"
-									class={`input__label ${isSubmitted2 ? "hidden-label" : ""}`}
+									class={`input__label SN-D-T-M-P-14 ${isSubmitted2 ? "hidden-label" : ""}`}
 								>
 									Your Name
 								</label>
 								{errors2.name && (
-									<span className="error-msg">{errors2.name}</span>
+									<span className="error-msg SN-D-T-M-P-14">{errors2.name}</span>
 								)}
 							</div>
 
@@ -273,12 +273,12 @@ const Cancer = ({ closeModal }) => {
 								/>
 								<label
 									for="email"
-									class={`input__label ${isSubmitted2 ? "hidden-label" : ""}`}
+									class={`input__label SN-D-T-M-P-14 ${isSubmitted2 ? "hidden-label" : ""}`}
 								>
 									Email
 								</label>
 								{errors2.email && (
-									<span className="error-msg">{errors2.email}</span>
+									<span className="error-msg SN-D-T-M-P-14">{errors2.email}</span>
 								)}
 							</div>
 
@@ -294,16 +294,11 @@ const Cancer = ({ closeModal }) => {
 										onChange={handleChange2}
 										disabled={isSubmitted2}
 									>
-										<span style={{ color: "#000000", fontSize: "12px" }}>
+										<span className="SN-D-T-M-P-14">
 											{formData2.condition}
 										</span>
 										{formData2.condition === "Condition" && (
-											<span
-												style={{
-													color: "red",
-													marginLeft: "-5px",
-												}}
-											>
+											<span className="SN-D-T-M-P-14">
 												{" "}
 												*
 											</span>
@@ -326,11 +321,7 @@ const Cancer = ({ closeModal }) => {
 															target: { name: "condition", value: item },
 														})
 													}
-													className={
-														item === formData2.condition
-															? "same-as-selected"
-															: "same-as-selected1"
-													}
+													className={item === formData2.condition ? "same-as-selected SN-D-T-M-P-14" : "same-as-selected1 SN-D-T-M-P-14"}
 													disabled={isSubmitted2}
 												>
 													{item}
@@ -339,7 +330,7 @@ const Cancer = ({ closeModal }) => {
 										</div>
 									)}
 									{errors2.condition && (
-										<span className="error-msg">{errors2.condition}</span>
+										<span className="error-msg SN-D-T-M-P-14">{errors2.condition}</span>
 									)}
 								</div>
 							</div>
@@ -357,14 +348,14 @@ const Cancer = ({ closeModal }) => {
 										disabled={isSubmitted2}
 									/>
 									<label
-										class={`input__label ${isSubmitted2 ? "hidden-label" : ""}`}
+										class={`input__label SN-D-T-M-P-14 ${isSubmitted2 ? "hidden-label" : ""}`}
 									>
 										Enter Condition
 									</label>
 								</div>
 							)}
 							{errors2.otherCondition && (
-								<span className="error-msg">{errors2.otherCondition}</span>
+								<span className="error-msg SN-D-T-M-P-14">{errors2.otherCondition}</span>
 							)}
 
 							<div className="input__textarea">
@@ -380,15 +371,13 @@ const Cancer = ({ closeModal }) => {
 
 								<label
 									for="message"
-									class={`textarea__label ${
-										isSubmitted2 ? "hidden-label" : ""
-									}`}
+									class={`textarea__label SN-D-T-M-P-14 ${isSubmitted2 ? "hidden-label" : ""}`}
 								>
 									Message
 								</label>
 							</div>
 
-							<p className="pxp2">indicates a required field</p>
+							<p className="pxp2 SN-D-T-M-P-14">indicates a required field</p>
 						</div>
 					</div>
 					<div className="xxx btnx" id="closex">

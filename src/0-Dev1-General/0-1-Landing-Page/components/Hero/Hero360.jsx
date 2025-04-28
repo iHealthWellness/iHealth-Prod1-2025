@@ -10,18 +10,17 @@ const Hero360 = () => {
   return (
     <section className={styles.heroContainer}>
       <nav className={styles.heroNav}>
-        <Link to="/">Home</Link>
-        <span>/</span>
-        <Link className={styles.disabled} to="" aria-disabled="true">Learn More</Link>
+        <Link to="/" className="SN-D-T-M-P-14">Home</Link>
+        <span className="SN-D-T-M-P-14">/</span>
+        <Link className={`${styles.disabled} SN-D-T-M-P-14`} to="" aria-disabled="true">Learn More</Link>
       </nav>
       <div className={styles.heroContainerInner}>
         <div className={styles.heroHeadingContainer}>
-          <h1 className={`${styles.heroHeadingH1} SN-D-Home-H1-48`}>
+          <h1 className={`${styles.heroHeadingH1} SN-D-H1-40`}>
           Welcome to iHealth360 Hub
           </h1>
           <h4
-            className={`${styles.heroHeadingH4} SN-D-P-20`}
-            style={{ color: "#f0f7fd" }}
+            className={`${styles.heroHeadingH4} SN-D-P-22`}
           >
             Your all-in-one destination for managing complex health conditions. Explore our personalized services designed to enhance your healthcare journey.
           </h4>

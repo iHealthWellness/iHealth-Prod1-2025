@@ -76,7 +76,6 @@
 }
 
 .textContainer p {
-  line-height: 25px;
   text-align: center;
   color: #676668;
 }
@@ -105,7 +104,6 @@
   border: 1px solid #e5e7eb;
   text-align: center;
   border-radius: 5px;
-  font-size: 1rem;
   color: #1a2b4d;
   transition: border-color 0.2s ease;
 }

@@ -17,12 +17,12 @@ const ExitConfirmationModal = ({ isOpen, onClose, onConfirm, link }) => {
     <div className={styles.modalOverlay}>
       <div className={styles.confirmationModal}>
         {/* <h3>You are about to leave the website. Do you want to continue?</h3> */}
-        <p>You are about to leave the website. Do you want to continue?</p>
+        <p className="SN-D-T-M-P-16">You are about to leave the website. Do you want to continue?</p>
         <div className={styles.modalButtons}>
-          <button className={styles.confirmButton} onClick={() => onConfirm(link)}>
+          <button className={`${styles.confirmButton} SN-D-T-M-B-16`} onClick={() => onConfirm(link)}>
             Continue
           </button>
-          <button className={styles.cancelButton} onClick={onClose}>
+          <button className={`${styles.cancelButton} SN-D-T-M-B-16`} onClick={onClose}>
             Cancel
           </button>
         </div>
@@ -132,7 +132,7 @@ const Footer = () => {
                   onChange={handleEmailChange}
                 />
                 <button
-                  className={styles.subscribeBtn}
+                  className={`${styles.subscribeBtn} SN-D-T-M-B-16`}
                   type="submit"
                   disabled={!email || !isEmailValid(email)}
                 >
@@ -178,8 +178,8 @@ const Footer = () => {
         </div>
       </div>
       <div className={styles.bottom}>
-        <div className={`${styles.termsCenter} SN-M-P-16`}>
-          <p className={styles.terms}>
+        <div className={`${styles.termsCenter}`}>
+          <p className={`${styles.terms} SN-D-T-M-P-14`}>
             @2023 iHealth and Wellness Foundation, Inc. All rights reserved.
             iHealth and Wellness Foundation is a 501(c)(3) Nonprofit
             Organization. EIN: 93-1567099

@@ -12,7 +12,7 @@
  padding: 15px 5px;
  border: 2px solid #0d99ff;
  border-radius: 5px;
- font-size: 1rem;
+ /* font-size: 1rem; */
  text-align: center; 
  border-radius: 2px;
  cursor: pointer;
@@ -37,7 +37,7 @@
   padding: 15px 5px;
   border: 2px solid #ffffff;
   border-radius: 5px;
-  font-size: 1rem;
+  /* font-size: 1rem; */
   text-align: center; 
   border-radius: 2px;
   cursor: pointer;
@@ -62,12 +62,12 @@
  margin: 0 auto;
  padding: 0;
 }
-.heroHeadingH1 {
- font-size: 2.5rem;
-}
-.heroHeadingH4 {
- font-size: 1.1rem;
-}
+/* .heroHeadingH1 { <-- Removed entire rule block */
+/* font-size: 2.5rem; */
+/* } */
+/* .heroHeadingH4 { <-- Removed entire rule block */
+/* font-size: 1.1rem; */
+/* } */
 
 .heroHeadingContainer {
  width: 40%;

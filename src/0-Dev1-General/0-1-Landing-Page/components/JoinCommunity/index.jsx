@@ -60,8 +60,8 @@ const Joincommunity = () => {
       </div>
       <div className={styles.layout}>
         <div className={styles.textContainer}>
-          <h2 className="SN-D-H2-36">Join our community</h2>
-          <p className="SN-D-T-M-P-20">
+          <h2 className="SN-D-Home-H2-32">Join our community</h2>
+          <p className="SN-D-T-M-Home-P-16">
             Explore how we can support your journey toward better health, and join our community of individuals committed to simplifying the care of complex conditions.</p>
             <form onSubmit={handleSubmit} className={styles.form}>
             <div className={styles.formCol}>
@@ -80,13 +80,13 @@ const Joincommunity = () => {
               <div className={styles.messageContainer}>
               <span className={styles.spanIcon}> 
               {message.type === 'success' ? <CheckCircle/> : <BsXCircle/>}</span>
-              <p className={`${styles.message} ${message.type === 'success' ? styles.success : styles.error}`}>
+              <p className={`${styles.message} ${message.type === 'success' ? styles.success : styles.error} SN-D-T-M-P-14`}>
                 {message.text}
               </p>
               </div>
             )}
 
-            <button  type="submit" disabled={isLoading} className={`${styles.joinButton} SN-D-T-M-P-20`}>
+            <button  type="submit" disabled={isLoading} className={`${styles.joinButton} SN-D-T-M-Home-B-16`}>
               {isLoading ? 'Submitting...' : 'Join Now'}
               </button> 
               </form>

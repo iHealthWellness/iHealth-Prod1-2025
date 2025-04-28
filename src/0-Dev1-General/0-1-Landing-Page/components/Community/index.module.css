@@ -107,13 +107,11 @@
   }
 
   .community-team-btn {
-    font-size: 1.5rem;
     font-weight: 400;
     line-height: 143%;
   }
 
   .coming-soon-p {
-    font-size: 1rem;
     line-height: 120%;
     font-weight: 400;
   }
@@ -125,23 +123,18 @@
   }
 
   .community-teams-text h2 {
-    font-family: Roboto;
-    font-size: 36px;
     font-weight: 400;
     line-height: 43px;
     letter-spacing: 0em;
     text-align: left;
   }
   .community-teams-text h4 {
-    font-family: Roboto;
-    font-size: 24px;
     font-weight: 400;
     line-height: 43px;
     letter-spacing: 0em;
     text-align: left;
   }
 
-  /* update line-height to 143px */
   .communityDescription {
     width: 70%;
     max-width: 1004px;
@@ -157,7 +150,6 @@
   }
 
   .community-team-btn {
-    font-size: 1.5rem;
     font-weight: 400;
     line-height: 100%;
   }
@@ -188,11 +180,9 @@
 
   .team-heading-h2 > span {
     color: #0d99ff;
-    font-size: 1.5rem !important;
   }
 
   .team-heading-h2 {
-    font-size: 1.875rem !important;
     padding-left: 1.45rem;
   }
 }

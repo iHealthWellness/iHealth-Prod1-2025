@@ -15,12 +15,12 @@ const ExitConfirmationModal = ({ isOpen, onClose, onConfirm, link }) => {
     <div className={styles.modalOverlay}>
       <div className={styles.confirmationModal}>
         {/* <h3>You are about to leave the website. Do you want to continue?</h3> */}
-        <p>You are about to leave the website. Do you want to continue?</p>
+        <p className="SN-D-T-M-P-16">You are about to leave the website. Do you want to continue?</p>
         <div className={styles.modalButtons}>
-          <button className={styles.confirmButton} onClick={() => onConfirm(link)}>
+          <button className={`${styles.confirmButton} SN-D-T-M-B-16`} onClick={() => onConfirm(link)}>
             Continue
           </button>
-          <button className={styles.cancelButton} onClick={onClose}>
+          <button className={`${styles.cancelButton} SN-D-T-M-B-16`} onClick={onClose}>
             Cancel
           </button>
         </div>
@@ -92,19 +92,21 @@ const Popup = () => {
                     </svg>
                 </button>
                 <div className={styles.PopupContent}>
-                    <h1>Make an Impact Today!</h1>
-                    <p>
+                    <h1 className="SN-D-H1-40">Make an Impact Today!</h1>
+                    <p className="SN-D-T-M-P-16">
                         If you've got the strength to give, help those facing complex diseases with insufficient care and resources:
                     </p>
                   {isMobile ? 
                    ( <Link
                     to='/donate'
+                    className="SN-D-T-M-P-16"
                     onClick={handleClose} 
                     // rel="noopener noreferrer"
                     >  Click Here and Give Now! </Link> )
                     :
                   (  <a
                         href={donateLinkUrl}
+                        className="SN-D-T-M-P-16"
                         // onClick={handleClose}
                         onClick={(e) => handleLinkClick(e, link)}
                         target="_blank"

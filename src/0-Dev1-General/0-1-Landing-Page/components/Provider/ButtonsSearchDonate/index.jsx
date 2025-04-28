@@ -1,4 +1,3 @@
-
 // Import Libraries/Packages
 import React from "react";
 import { Link } from "react-router-dom";
@@ -13,7 +12,7 @@ function ButtonsSearchDonate() {
         onClick={() => {
           document.querySelector("#UnderConst-wrapper").style.display = "flex";
         }}
-        className={`${styles.providerBtn} ${styles.search}`}
+        className={`${styles.providerBtn} ${styles.search} SN-D-T-M-B-16`}
         type="submit"
       >
         Search
