@@ -17,7 +17,7 @@ const Design = () => {
     <div className="layerOne-tab">
       <div>
         <div className="flex-tab">
-          <h3 className="Text-header" onClick={toggleDesign}>
+          <h3 className="Text-header SN-D-H3-24" onClick={toggleDesign}>
             DESIGN
           </h3>
           <BntTab
@@ -30,12 +30,12 @@ const Design = () => {
           {designVisible && (
             <div className="grid">
               <Link
-                className="grid-title link-text"
+                className="grid-title link-text SN-D-T-M-P-16"
                 to="https://app.dover.io/apply/2d71c19b-3348-4bae-bbc2-a5ea3d500bc7/2d41006d-e9d3-4df5-8c03-e45b7e2cc703/?rs=15190316"
               >
                 UX Researcher
               </Link>
-              <h2 className="grid-text">Remote</h2>
+              <h2 className="grid-text SN-D-T-M-P-16">Remote</h2>
             </div>
           )}
 
@@ -45,12 +45,12 @@ const Design = () => {
           {designVisible && (
             <div className="grid">
               <Link
-                className="grid-title link-text"
+                className="grid-title link-text SN-D-T-M-P-16"
                 to="https://app.dover.io/apply/2d71c19b-3348-4bae-bbc2-a5ea3d500bc7/34411dfd-56a2-4f48-b68d-4a3120346bf3/?rs=15190316"
               >
                 UX/UI Designer
               </Link>
-              <h2 className="grid-text">Remote</h2>
+              <h2 className="grid-text SN-D-T-M-P-16">Remote</h2>
             </div>
           )}
           {designVisible && <hr />}

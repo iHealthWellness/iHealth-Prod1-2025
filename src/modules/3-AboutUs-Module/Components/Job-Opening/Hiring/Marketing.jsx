@@ -18,7 +18,7 @@ const Marketing = () => {
       <div className="layerTwo-tab">
         <div>
           <div className="flex-tab">
-            <h3 className="Text-header" onClick={toggleMarket}>
+            <h3 className="Text-header SN-D-H3-24" onClick={toggleMarket}>
               MARKETING & PUBLIC RELATION{" "}
             </h3>
             <BntTab
@@ -30,12 +30,12 @@ const Marketing = () => {
             {marketVisible && (
               <div className="grid">
                 <Link
-                  className="grid-title link-text"
+                  className="grid-title link-text SN-D-T-M-P-16"
                   to="https://app.dover.io/apply/2d71c19b-3348-4bae-bbc2-a5ea3d500bc7/d7c640ff-badf-4212-b017-c41b2e2372f1/?rs=15190316"
                 >
                   Graphic Design: Social Media Content Development
                 </Link>
-                <h2 className="grid-text">Remote</h2>
+                <h2 className="grid-text SN-D-T-M-P-16">Remote</h2>
               </div>
             )}
             {marketVisible && <hr />}
@@ -44,12 +44,12 @@ const Marketing = () => {
             {marketVisible && (
               <div className="grid">
                 <Link
-                  className="grid-title link-text"
+                  className="grid-title link-text SN-D-T-M-P-16"
                   to="https://app.dover.io/apply/2d71c19b-3348-4bae-bbc2-a5ea3d500bc7/65f96ca1-3e64-4171-b4c2-c5f982df66e0/?rs=15190316"
                 >
                   Marketing and Outreach
                 </Link>
-                <h2 className="grid-text">Remote</h2>
+                <h2 className="grid-text SN-D-T-M-P-16">Remote</h2>
               </div>
             )}
 
@@ -60,12 +60,12 @@ const Marketing = () => {
             {marketVisible && (
               <div className="grid">
                 <Link
-                  className="grid-title link-text"
+                  className="grid-title link-text SN-D-T-M-P-16"
                   to="https://app.dover.io/apply/2d71c19b-3348-4bae-bbc2-a5ea3d500bc7/81ab6de5-5b21-4629-98a6-58c98ee81140/?rs=15190316"
                 >
                   Marketing Specialist
                 </Link>
-                <h2 className="grid-text">Remote</h2>
+                <h2 className="grid-text SN-D-T-M-P-16">Remote</h2>
               </div>
             )}
             {marketVisible && <hr />}
@@ -75,12 +75,12 @@ const Marketing = () => {
             {marketVisible && (
               <div className="grid">
                 <Link
-                  className="grid-title link-text"
+                  className="grid-title link-text SN-D-T-M-P-16"
                   to="https://app.dover.io/apply/2d71c19b-3348-4bae-bbc2-a5ea3d500bc7/81ab6de5-5b21-4629-98a6-58c98ee81140/?rs=15190316"
                 >
                   Marketing Strategy Consultant
                 </Link>
-                <h2 className="grid-text">Remote</h2>
+                <h2 className="grid-text SN-D-T-M-P-16">Remote</h2>
               </div>
             )}
 
@@ -91,12 +91,12 @@ const Marketing = () => {
             {marketVisible && (
               <div className="grid">
                 <Link
-                  className="grid-title link-text"
+                  className="grid-title link-text SN-D-T-M-P-16"
                   to="https://app.dover.io/apply/2d71c19b-3348-4bae-bbc2-a5ea3d500bc7/b6b37f2c-ee36-4b1e-9d68-cdaaa9e90de0/?rs=15190316"
                 >
                   Social Media and Community Specialist
                 </Link>
-                <h2 className="grid-text">Remote</h2>
+                <h2 className="grid-text SN-D-T-M-P-16">Remote</h2>
               </div>
             )}
 
@@ -106,12 +106,12 @@ const Marketing = () => {
             {marketVisible && (
               <div className="grid">
                 <Link
-                  className="grid-title link-text"
+                  className="grid-title link-text SN-D-T-M-P-16"
                   to="https://app.dover.io/apply/2d71c19b-3348-4bae-bbc2-a5ea3d500bc7/eae90aa0-293c-4489-9e7c-c918cff6791d/?rs=15190316"
                 >
                   TikTok Content Development
                 </Link>
-                <h2 className="grid-text">Remote</h2>
+                <h2 className="grid-text SN-D-T-M-P-16">Remote</h2>
               </div>
             )}
 

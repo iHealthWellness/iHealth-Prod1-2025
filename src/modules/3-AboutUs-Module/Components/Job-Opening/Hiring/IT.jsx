@@ -17,7 +17,7 @@ const It = () => {
     <div className="layerTwo-tab">
       <div>
         <div className="flex-tab">
-          <h3 className="Text-header" onClick={toggleIt}>
+          <h3 className="Text-header SN-D-H3-24" onClick={toggleIt}>
             IT INFRASTRUCTURE
           </h3>
           <BntTab icon={itVisible ? minusbtn : plusbtn} onClick={toggleIt} />
@@ -27,12 +27,12 @@ const It = () => {
           {itVisible && (
             <div className="grid">
               <Link
-                className="grid-title link-text"
+                className="grid-title link-text SN-D-T-M-P-16"
                 to="https://app.dover.io/apply/2d71c19b-3348-4bae-bbc2-a5ea3d500bc7/ba904f04-004c-4d66-b9a3-5dddfb993e5a/?rs=15190316"
               >
                 Salesforce Architect (Cloud Health Implementation Expert)
               </Link>
-              <h2 className="grid-text">Remote</h2>
+              <h2 className="grid-text SN-D-T-M-P-16">Remote</h2>
             </div>
           )}
 

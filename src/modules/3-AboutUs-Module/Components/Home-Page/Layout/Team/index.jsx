@@ -11,7 +11,7 @@ const Team = () => {
         <span className="SN-D-Home-H3-24">Stronger Together</span>
       </h2>
 
-      <h3 className="team-heading-h3 desktop SN-D-P-20">
+      <h3 className="team-heading-h3 desktop SN-D-Home-P-22">
         Meet others who understand what it's like living with your condition. As
         a community member, you'll come together in a safe space to support,
         learn from, and inspire each other.
@@ -25,7 +25,7 @@ const Team = () => {
         </div>
 
         <div className="team-join-card">
-          <p className="team-join-description">
+          <p className="team-join-description SN-D-Home-P-22">
             As a community member, you'll come together with others living with
             your condition to support each other, learn from each other, inspire
             each other, to feel a sense of fellowship, safety and belonging
@@ -34,7 +34,7 @@ const Team = () => {
           <div className="team-join-card-inner">
             <img src={iHealth360Logo} alt="ihealth360 logo" />
             <a
-              className="team-join-btn"
+              className="team-join-btn SN-D-T-M-Home-B-16"
               onClick={() => {
                 document.querySelector("#UnderConst-wrapper").style.display =
                   "flex";

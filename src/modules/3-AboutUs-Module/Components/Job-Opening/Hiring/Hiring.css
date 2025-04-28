@@ -36,29 +36,29 @@
   cursor: pointer;
   width: 100%;
   color: var(--SN-Primary-Headings-07235B, #07235b);
-  font-family: Roboto;
-  font-size: 1.25rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 143%;
+  /* font-family: Roboto; */
+  /* font-size: 1.25rem; */
+  /* font-style: normal; */
+  /* font-weight: 400; */
+  /* line-height: 143%; */
 }
 .grid-title {
   width: 50%;
   color: var(--SN-Primary-Headings-07235B, #07235b);
-  font-family: Roboto;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 110%;
+  /* font-family: Roboto; */
+  /* font-size: 20px; */
+  /* font-style: normal; */
+  /* font-weight: 400; */
+  /* line-height: 110%; */
 }
 .grid-text {
   width: 35%;
   color: var(--SN-Primary-Headings-07235B, #07235b);
-  font-family: Roboto;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 110%;
+  /* font-family: Roboto; */
+  /* font-size: 20px; */
+  /* font-style: normal; */
+  /* font-weight: 400; */
+  /* line-height: 110%; */
 }
 .job-body {
   margin-top: 20px;
@@ -89,11 +89,11 @@
   .Text-header {
     width: 100%;
     color: var(--SN-Primary-Headings-07235B, #07235b);
-    font-family: Roboto;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 143%;
+    /* font-family: Roboto; */
+    /* font-size: 24px; */
+    /* font-style: normal; */
+    /* font-weight: 400; */
+    /* line-height: 143%; */
   }
   .flex {
     flex-direction: column;
@@ -106,20 +106,20 @@
   .grid-title {
     width: 40%;
     color: var(--SN-Primary-Headings-07235B, #07235b);
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 110%;
+    /* font-family: Roboto; */
+    /* font-size: 16px; */
+    /* font-style: normal; */
+    /* font-weight: 700; */
+    /* line-height: 110%; */
   }
   .grid-text {
     width: 40%;
     color: var(--SN-Primary-Headings-07235B, #07235b);
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 120%;
+    /* font-family: Roboto; */
+    /* font-size: 16px; */
+    /* font-style: normal; */
+    /* font-weight: 700; */
+    /* line-height: 120%; */
     margin-left: auto;
   }
   .flex {
@@ -146,11 +146,11 @@
   .Text-header {
     width: 100%;
     color: var(--SN-Primary-Headings-07235B, #07235b);
-    font-family: Roboto;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 143%;
+    /* font-family: Roboto; */
+    /* font-size: 24px; */
+    /* font-style: normal; */
+    /* font-weight: 400; */
+    /* line-height: 143%; */
   }
   .grid {
     display: grid;
@@ -161,20 +161,20 @@
   .grid-title {
     width: 50%;
     color: var(--SN-Primary-Headings-07235B, #07235b);
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 110%;
+    /* font-family: Roboto; */
+    /* font-size: 16px; */
+    /* font-style: normal; */
+    /* font-weight: 700; */
+    /* line-height: 110%; */
   }
   .grid-text {
     width: 30%;
     color: var(--SN-Primary-Headings-07235B, #07235b);
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 110%;
+    /* font-family: Roboto; */
+    /* font-size: 16px; */
+    /* font-style: normal; */
+    /* font-weight: 700; */
+    /* line-height: 110%; */
   }
   .flex {
     padding: 20px;

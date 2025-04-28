@@ -51,6 +51,7 @@
 }
 
 .statementContainer section article aside h2 {
+  color: black;
   text-align: center;
   padding-bottom: 1rem;
 }
@@ -60,8 +61,9 @@
 }
 
 .statementContainer section article aside > p,
-.statementContainer section article > p,
-.statementContainer section article aside h2 {
+.statementContainer section article > p
+/* .statementContainer section article aside h2  */
+{
   color: #07235b;
 }
 
@@ -90,6 +92,7 @@
 .hoverEffect {
   padding: 1rem;
 }
+
 
 aside.hoverEffect:hover,
 aside.hoverEffect:hover h2,
