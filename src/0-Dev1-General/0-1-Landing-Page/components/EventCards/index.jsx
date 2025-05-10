@@ -3,9 +3,12 @@
 import { useState } from "react"
 import { Link } from "react-router-dom"
 import styles from "./index.module.css"
-import imageTwo from "../../../../../src/Assets/Images/facts-about-nf-post.jpg"
-import imageOne from "../../../../../src/Assets/Images/march-new-event.png"
-import newsletterPDF from "../../../../../src/Assets/files/march-newsletter.pdf"
+import imageTwo from "../../../../../src/Assets/Images/facts-about-nf-post3.jpg"
+import juneEvent from "../../../../../src/Assets/Images/JuneEvent.jpg";
+import monthlyHighlightImage from "../../../../../src/Assets/Images/Highlights.jpg";
+import aprilnewsletterPDF from "../../../../../src/Assets/files/april-newsletter.pdf";
+import NFVideo from "../../../../../src/Assets/files/SN-PediatricNF.mp4";
+import React, { useRef } from "react";
 
 const PDFModal = ({ isOpen, onClose, pdfUrl }) => {
   if (!isOpen) return null
@@ -51,13 +54,23 @@ const EventCards = () => {
 
   const events = [
     {
-      title: "Monthly Newsletter",
-      date: "Last Updated | March 31st, 2025",
+      title: "Upcoming Event",
+      date: "Last Updated | May 9th, 2025",
       time: "",
-      image: newsletterPDF,
-      link: newsletterPDF,
+      image: juneEvent,
+      link: "https://forms.gle/PCyG7eARaMKoXfyy9",
+      newsletterimg: juneEvent,
       // link: "https://lnkd.in/gpWRY_Yi",
       status: "NEWSLETTER",
+    },
+    {
+      title: "Monthly Highlights",
+      date: "Last Updated | April 29, 2025",
+      time: "",
+      newsletterimg: monthlyHighlightImage,
+      link: aprilnewsletterPDF,
+      // link: "https://lnkd.in/gpWRY_Yi",
+      status: "VIDEO",
     },
     {
       title: "Facts About Neurofibromatosis (NF)",
@@ -67,34 +80,59 @@ const EventCards = () => {
       link: "https://www.youtube.com/playlist?list=PLWRClAjMOjXgo6m6vrypqWbwwCcVb1NEu",
       status: "PLAYLIST",
     },
-   ]
+  ]
 
-  const handleLinkClick = (e, link) => {
-    e.preventDefault()
-    setSelectedLink(link)
-    setExitModalOpen(true)
+
+const handleLinkClick = (e, link) => {
+  e.preventDefault()
+  setSelectedLink(link)
+  setExitModalOpen(true)
+}
+
+const handleConfirmExit = (link) => {
+  window.open(link, '_blank')
+  setExitModalOpen(false)
+}
+const videoRef = useRef(null);
+  const [showVideo, setShowVideo] = useState(false);
+  const handlePlay = () => {
+    setShowVideo(true);
+    setTimeout(() => {
+      videoRef.current?.play();
+    }, 100);
+  };
+const renderMedia = (event) => {
+  if (event.status === "NEWSLETTER") {
+    return (
+      <Link to={event.link} target="_blank" onClick={(e) => handleLinkClick(e, event.link)}>
+        <img src={event.newsletterimg || "/placeholder.svg"} alt={event.title} className={styles.eventBackground} />
+      </Link>
+    )
   }
-
-  const handleConfirmExit = (link) => {
-    window.open(link, '_blank')
-    setExitModalOpen(false)
+  else if (event.status === "VIDEO") {
+    return (
+      !showVideo ? (
+        <img
+          src={event.newsletterimg}
+          alt={event.title} className={styles.eventBackground}
+          onClick={handlePlay}
+        />
+      ) : (
+        <video ref={videoRef} width="400" controls>
+          <source src={NFVideo} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      ))
   }
-
-  const renderMedia = (event) => {
-    if (event.status === "NEWSLETTER") {
-      return (
-        <Link to={event.link} target="_blank" onClick={(e) => handleLinkClick(e, event.link)}>
-          <img src={imageOne || "/placeholder.svg"} alt={event.title} className={styles.eventBackground} />
-        </Link>
-      )
-    } else {  
+  else {
       return (
         <Link to={event.link} target="_blank" onClick={(e) => handleLinkClick(e, event.link)}>
           <img src={event.image || "/placeholder.svg"} alt={event.title} className={styles.eventBackground} />
         </Link>
       )
-    }
   }
+
+}
 
   return (
     <div className={styles.container}>
@@ -104,32 +142,42 @@ const EventCards = () => {
             <div className={styles.cardContent}>
               <div className={styles.imageContainer}>
                 {renderMedia(event)}
+
                 {/* <div className={`${styles.upcomingEventsHeader}`}>{event.status}</div> */}
               </div>
               <div className={styles.eventInfo}>
                 <h3 className={`${styles.eventTitle} SN-D-Home-H3-24`}>{event.title}</h3>
                 <p className={`${styles.eventDateTime} SN-D-T-M-Home-P-14`}>
-                  <span className={styles.eventDate}>{event.date}</span> 
+                  <span className={styles.eventDate}>{event.date}</span>
                   <span className={styles.eventTime}>{event.time}</span>
                 </p>
                 {event.status === "NEWSLETTER" ? (
-                  <Link 
-                    to={event.link} 
-                    target="_blank" 
+                  <Link
+                    to={event.link}
+                    target="_blank"
+                    className={`${styles.registerBtn} SN-D-T-M-Home-B-16`}
+                    onClick={(e) => handleLinkClick(e, event.link)}
+                  >
+                    Register Here
+                  </Link>
+                ) : event.status === "VIDEO" ? (
+                  <Link
+                    to={event.link}
+                    target="_blank"
                     className={`${styles.registerBtn} SN-D-T-M-Home-B-16`}
                     onClick={(e) => handleLinkClick(e, event.link)}
                   >
                     View Newsletter
                   </Link>
                 ) : (
-                  <Link 
-                    to={event.link} 
-                    target="_blank" 
-                    className={`${styles.registerBtn} SN-D-T-M-Home-B-16`}
-                    onClick={(e) => handleLinkClick(e, event.link)}
-                  >
-                    View Playlist
-                  </Link>
+                  <Link
+                  to={event.link}
+                  target="_blank"
+                  className={`${styles.registerBtn} SN-D-T-M-Home-B-16`}
+                  onClick={(e) => handleLinkClick(e, event.link)}
+                >
+                  View Playlist
+                </Link>
                 )}
               </div>
             </div>
@@ -137,7 +185,7 @@ const EventCards = () => {
         ))}
       </div>
       <PDFModal isOpen={modalOpen} onClose={() => setModalOpen(false)} pdfUrl={selectedPdf} />
-      <ExitConfirmationModal 
+      <ExitConfirmationModal
         isOpen={exitModalOpen}
         onClose={() => setExitModalOpen(false)}
         onConfirm={handleConfirmExit}
@@ -216,13 +264,13 @@ export default EventCards
 
 //   const renderMedia = (event) => {
 //     if (event.status === "NEWSLETTER") {
-//       return <img src={imageOne || "/placeholder.svg"} 
+//       return <img src={imageOne || "/placeholder.svg"}
 //       onClick={() => {
 //         setSelectedPdf(event.image)
 //         setModalOpen(true)
-//       }} 
+//       }}
 //       alt={event.title} className={styles.eventBackground} />
-//     } else {  
+//     } else {
 //       return <Link to={event.link} target="_blank">
 //      <img src={event.image || "/placeholder.svg"} alt={event.title} className={styles.eventBackground} /> </Link>
 //     }
@@ -270,4 +318,3 @@ export default EventCards
 // }
 
 // export default EventCards
-

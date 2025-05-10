@@ -8,8 +8,8 @@
 
 .eventsWrapper {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 60px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
   justify-content: center;
   margin: 0 auto;
 }
@@ -18,7 +18,7 @@
   width: 100%;
   max-width: 550px;
   margin: 0 auto;
-  height: fit-content;
+  /* height: fit-content; */
   position: relative;
   border-radius: 20px;
   overflow: hidden;
@@ -34,14 +34,14 @@
 
 .imageContainer {
   position: relative;
-  height: 500px;
+  /* height: 500px; */
   overflow: hidden;
 }
 
 .eventBackground {
   width: 100%;
   height: 100%;
-  object-fit: fill;
+  object-fit: contain;
   object-position: center;
   /* filter: brightness(0.7) saturate(1.2); */
 }
@@ -60,7 +60,7 @@
 }
 
 .eventInfo {
-  height: 60%;
+  /* height: 60%; */
   padding: 15px;
   position: relative;
   background: linear-gradient(135deg, white 85%, transparent 85%);
@@ -159,12 +159,12 @@
   }
 }
 
-@media (max-width: 1151px) and (min-width: 991px) {
-/* 
-  .eventTitle{
+@media (min-width: 991px) {
 
-    height: 80px;
-  } */
+  .eventCard:nth-of-type(1) .eventTitle,
+  .eventCard:nth-of-type(2) .eventTitle{
+    margin-bottom: 40px;
+  }
 
 
 }
@@ -190,11 +190,6 @@
 
   .eventBackground {
     width: 99%;
-  }
-
-  .eventTitle{
-  }
-  .eventDateTime{
   }
 
 }
