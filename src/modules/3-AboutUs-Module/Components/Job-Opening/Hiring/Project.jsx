@@ -17,7 +17,7 @@ const Project = () => {
     <div className="layerTwo-tab">
       <div>
         <div className="flex-tab">
-          <h3 className="Text-header SN-D-H3-24" onClick={toggleProject}>
+          <h3 className="Text-header" onClick={toggleProject}>
             PROJECT MANAGEMENT
           </h3>
           <BntTab
@@ -29,12 +29,12 @@ const Project = () => {
           {projectVisible && (
             <div className="grid">
               <Link
-                className="grid-title link-text SN-D-T-M-P-16"
+                className="grid-title link-text"
                 to="https://app.dover.io/apply/2d71c19b-3348-4bae-bbc2-a5ea3d500bc7/6986802d-d30e-44da-8736-e78fbf8c516a/?rs=15190316"
               >
                 Parliamentary Procedure Specialist
               </Link>
-              <h2 className="grid-text SN-D-T-M-P-16">Remote</h2>
+              <h2 className="grid-text">Remote</h2>
             </div>
           )}
 
@@ -45,12 +45,12 @@ const Project = () => {
           {projectVisible && (
             <div className="grid">
               <Link
-                className="grid-title link-text SN-D-T-M-P-16"
+                className="grid-title link-text"
                 to="https://app.dover.io/apply/2d71c19b-3348-4bae-bbc2-a5ea3d500bc7/6f62d88d-203b-4752-9625-f0fdbf00b3b6/?rs=15190316"
               >
                 Project/ Agile Delivery Associate
               </Link>
-              <h2 className="grid-text SN-D-T-M-P-16">Remote</h2>
+              <h2 className="grid-text">Remote</h2>
             </div>
           )}
 

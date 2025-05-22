@@ -49,26 +49,25 @@
   text-align: justify;
 }
 
-
-
 .mainTermsSection ul li {
   padding-bottom: 2rem;
 }
 
 .titleStyle {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 120%;
   text-align: left;
   max-width: 90%;
 }
 
 @media screen and (max-width: 1024px) {
-  /* Comment out font-size override for h1 */
-  /* .termsContainer header h1 {
+  .termsContainer header h1 {
     font-size: 30px;
-  } */
-  /* Comment out font-size override for .titleStyle */
-  /* .titleStyle {
+  }
+  .titleStyle {
     font-size: 1.125rem;
-  } */
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -84,18 +83,16 @@
     padding-bottom: 1rem;
   }
 
-  /* Comment out font-size override for h2:last-child */
-  /* .termsContainer header h2:last-child {
+  .termsContainer header h2:last-child {
     font-size: 22px;
-  } */
+  }
 
   .termsAccordion .customAccordionSection aside {
     bottom: auto;
   }
 
-  /* Comment out font-size and font-weight override for .titleStyle */
-  /* .titleStyle {
+  .titleStyle {
     font-size: 1rem;
     font-weight: 400;
-  } */
+  }
 }

@@ -16,7 +16,7 @@ const Copywriter = () => {
     <div className="layerTwo-tab">
       <div>
         <div className="flex-tab">
-          <h3 className="Text-header SN-D-H3-24" onClick={toggleCopywriting}>
+          <h3 className="Text-header" onClick={toggleCopywriting}>
             COPYWRITING
           </h3>
           <BntTab
@@ -28,12 +28,12 @@ const Copywriter = () => {
           {copywritingVisible && (
             <div className="grid">
               <Link
-                className="grid-title link-text SN-D-T-M-P-16"
+                className="grid-title link-text"
                 to="https://app.dover.io/apply/2d71c19b-3348-4bae-bbc2-a5ea3d500bc7/94bee10b-1688-4b31-a4ab-fa31169f8a58/?rs=15190316"
               >
                 Copywriter
               </Link>
-              <h2 className="grid-text SN-D-T-M-P-16">Remote</h2>
+              <h2 className="grid-text">Remote</h2>
             </div>
           )}
 

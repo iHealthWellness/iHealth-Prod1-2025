@@ -55,9 +55,9 @@
 
 .bold-color-text {
   color: #07235b;
-  /* font-family: Inter; */
-  /* line-height: 36px; */
-  /* letter-spacing: -0.019em; */
+  font-family: Inter;
+  line-height: 36px;
+  letter-spacing: -0.019em;
   text-align: center;
 }
 
@@ -75,9 +75,9 @@
 }
 
 .grid-tab-texter {
-  /* font-family: Inter; */
-  /* line-height: 36px; */
-  /* letter-spacing: -0.019em; */
+  font-family: Inter;
+  line-height: 36px;
+  letter-spacing: -0.019em;
   text-align: center; /* Center the text */
   color: #858ead;
   display: flex;
@@ -87,9 +87,9 @@
 }
 
 .content-tab p {
-  /* font-family: Roboto; */
-  /* line-height: 34px; */
-  /* letter-spacing: 0em; */
+  font-family: Roboto;
+  line-height: 34px;
+  letter-spacing: 0em;
   text-align: left;
   color: #07235b;
   padding: 20px;
@@ -105,10 +105,10 @@
 }
 
 .content-name p {
-  /* font-family: Inter; */
-  /* font-style: italic; */
-  /* line-height: 36px; */
-  /* letter-spacing: -0.019em; */
+  font-family: Inter;
+  font-style: italic;
+  line-height: 36px;
+  letter-spacing: -0.019em;
   text-align: left;
   padding: 2px;
   margin: 0;

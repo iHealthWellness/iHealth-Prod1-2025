@@ -30,7 +30,7 @@ const ToTopBtn = () => {
             onClick={handleClick}
         >
             <ArrowUpwardIcon />
-            <p className="SN-D-T-M-P-16">TOP</p>
+            <p>TOP</p>
         </button>
     );
 };

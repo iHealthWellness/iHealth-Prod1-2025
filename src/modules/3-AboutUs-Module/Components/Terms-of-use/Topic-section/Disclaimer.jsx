@@ -13,7 +13,7 @@ const Disclaimer = () => {
   return (
     <div id="disclaimer">
       <div className="expand-div">
-        <h3 className="header31 SN-D-H3-24" onClick={handleToggle22}>
+        <h3 className="header31" onClick={handleToggle22}>
           Disclaimer
         </h3>
 
@@ -28,7 +28,7 @@ const Disclaimer = () => {
 
       {isExpanded22 && (
         <div>
-          <p className="SN-D-T-M-P-16">
+          <p>
             The information provided on this website is for informational purposes 
             only and is not intended to be a substitute for professional medical advice,
             diagnosis, or treatment.

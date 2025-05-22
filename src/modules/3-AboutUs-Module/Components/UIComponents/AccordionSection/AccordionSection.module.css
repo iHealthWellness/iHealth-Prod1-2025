@@ -71,10 +71,6 @@ header.applyPadding {
   display: none;
 }
 
-.titleStyle {
-  color: black;
-}
-
 .accordionSection header {
   display: flex;
   align-items: center;
