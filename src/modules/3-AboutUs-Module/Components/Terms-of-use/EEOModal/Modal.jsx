@@ -54,7 +54,7 @@ function App() {
   /*EEO Inner content logic*/
   return (
     <>
-        <button className={`${styles.buttonEEO} SN-D-T-M-B-16`} onClick={toggleModal}>Equal Opportunity Policy</button>
+        <button className={styles.buttonEEO} onClick={toggleModal}>Equal Opportunity Policy</button>
         {isModalOpen && (
           <div className={`${styles.jctHolder} ${isModalOpen ? styles.containerModalopen : ''}`}>
 
@@ -63,13 +63,13 @@ function App() {
             <img className={stylesEEOContent.closeIcon} src={closeIcon} onClick={toggleModal} alt=""/>
           <div className={stylesEEOContent.header}>
             <img className={styles.logo} src={logo} alt="" />
-            <h1 className={`${stylesEEOContent.foundationName} SN-D-H1-40`}>
+            <h1 className={stylesEEOContent.foundationName}>
               iHealth and Wellness Foundation, Inc.
             </h1>
-            <h2 className={`${stylesEEOContent.subheader} SN-D-H2-32`}>Equal Opportunity Policy</h2>
-            <p className={`${stylesEEOContent.date} SN-D-T-M-P-16`}>Effective: May 23, 2023</p>
+            <h2 className={stylesEEOContent.subheader}>Equal Opportunity Policy</h2>
+            <p className={stylesEEOContent.date}>Effective: May 23, 2023</p>
           </div>
-          <div className={`${stylesEEOContent.mainParagraph} SN-D-T-M-P-16`}>
+          <div className={stylesEEOContent.mainParagraph}>
             <p>
               This EEO Policy applies to all volunteers and participants involved
               with iHealth and Wellness Foundation, Inc.
@@ -88,7 +88,7 @@ function App() {
           {sections.map((section) => (
             <div key={section} className={stylesEEOContent.section}>
               <div className={stylesEEOContent.sectionTitleContainer}>
-              <h3 className={`${stylesEEOContent.sectionTitle} SN-D-T-M-B-16`}>{section}</h3>
+              <h3 className={stylesEEOContent.sectionTitle}>{section}</h3>
               <button
                 className={stylesEEOContent.toggleButton}
                 onClick={() => toggleSection(section)}
@@ -100,14 +100,14 @@ function App() {
               </button>
               </div>
               {openSections[section] && (
-                <p className={`${stylesEEOContent.sectionContent} SN-D-T-M-P-16`}>
+                <p className={stylesEEOContent.sectionContent}>
                   {sectionsParagraph[section]}
                 </p>
               )}
             </div>
           ))}
           </div>
-          <button className={`${stylesEEOContent.closeButton} SN-D-T-M-B-16`}  onClick={toggleModal}>Close</button>
+          <button className={stylesEEOContent.closeButton}  onClick={toggleModal}>Close</button>
         </div>
             {/*EEO Inner content logic*/}
           </div>

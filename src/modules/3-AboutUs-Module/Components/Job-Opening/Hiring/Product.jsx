@@ -18,7 +18,7 @@ const Product = () => {
     <div className="layerOne-tab">
       <div>
         <div className="flex-tab">
-          <h3 className="Text-header SN-D-H3-24" onClick={toggleProduct}>
+          <h3 className="Text-header" onClick={toggleProduct}>
             PRODUCT MANAGEMENT
           </h3>
           <BntTab
@@ -31,12 +31,12 @@ const Product = () => {
           {productVisible && (
             <div className="grid">
               <Link
-                className="grid-title link-text SN-D-T-M-P-16"
+                className="grid-title link-text"
                 to="https://app.dover.io/apply/2d71c19b-3348-4bae-bbc2-a5ea3d500bc7/a4f3ecff-56fa-4078-940f-019f8d1721be/?rs=15190316"
               >
                 Pro Bono Generalist
               </Link>
-              <h2 className="grid-text SN-D-T-M-P-16">Remote</h2>
+              <h2 className="grid-text">Remote</h2>
             </div>
           )}
 
@@ -47,12 +47,12 @@ const Product = () => {
           {productVisible && (
             <div className="grid">
               <Link
-                className="grid-title link-text SN-D-T-M-P-16"
+                className="grid-title link-text"
                 to="https://app.dover.io/apply/2d71c19b-3348-4bae-bbc2-a5ea3d500bc7/dfa1ec30-29dd-4ec6-b56a-7af25fc83675/?rs=15190316"
               >
                 Product Specialist/Associate
               </Link>
-              <h2 className="grid-text SN-D-T-M-P-16">Remote</h2>
+              <h2 className="grid-text">Remote</h2>
             </div>
           )}
           {productVisible && <hr />}

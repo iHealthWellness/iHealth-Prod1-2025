@@ -18,7 +18,7 @@ const Cybersecurity = () => {
     <div className="layerTwo-tab">
       <div>
         <div className="flex-tab">
-          <h3 className="Text-header SN-D-H3-24" onClick={toggleCybesecurity}>
+          <h3 className="Text-header" onClick={toggleCybesecurity}>
             CYBERSECURITY AND DATA PRIVACY
           </h3>
           <BntTab
@@ -30,12 +30,12 @@ const Cybersecurity = () => {
           {cybersecurityVisible && (
             <div className="grid">
               <Link
-                className="grid-title link-text SN-D-T-M-P-16"
+                className="grid-title link-text"
                 to="https://app.dover.io/apply/2d71c19b-3348-4bae-bbc2-a5ea3d500bc7/e4f4eb1d-21f0-443b-a6b0-c9654f1d95e5/?rs=15190316"
               >
                 Data Privacy and Security Specialist
               </Link>
-              <h2 className="grid-text SN-D-T-M-P-16">Remote</h2>
+              <h2 className="grid-text">Remote</h2>
             </div>
           )}
 

@@ -71,9 +71,9 @@ const Header = () => {
 
       <div className="openings-titles container">
         <div className="headings">
-          <h2 className="openings-title-h2 SN-D-H2-32">Volunteer From Anywhere</h2>
-          <h1 className="openings-title-h1 SN-D-H1-40">Career Opportunities</h1>
-          <h3 className="openings-title-h3 SN-D-T-M-P-16" onClick={toggleModal}>
+          <h2 className="openings-title-h2" >Volunteer From Anywhere</h2>
+          <h1 className="openings-title-h1" >Career Opportunities</h1>
+          <h3 className="openings-title-h3" onClick={toggleModal}>
             Equal Employment Opportunity (EEO) Policy
           </h3>
           {isModalOpen && (
@@ -96,17 +96,17 @@ const Header = () => {
                   />
                   <div className={styles.header}>
                     <img className={styles.logo} src={logo} alt="" />
-                    <h1 className={`${styles.foundationName} SN-D-H1-40`}>
+                    <h1 className={styles.foundationName}>
                       iHealth and Wellness Foundation, Inc.
                     </h1>
-                    <h2 className={`${styles.subheader} SN-D-H2-32`}>
+                    <h2 className={styles.subheader}>
                       Equal Opportunity Policy
                     </h2>
-                    <p className={`${styles.date} SN-D-T-M-P-16`}>
+                    <p className={styles.date}>
                       Effective: May 23, 2023
                     </p>
                   </div>
-                  <div className={`${styles.mainParagraph} SN-D-T-M-P-16`}>
+                  <div className={styles.mainParagraph}>
                     <p>
                       This EEO Policy applies to all volunteers and participants
                       involved with iHealth and Wellness Foundation, Inc.
@@ -126,7 +126,7 @@ const Header = () => {
                     {sections.map((section) => (
                       <div key={section} className={styles.section}>
                         <div className={styles.sectionTitleContainer}>
-                          <h3 className={`${styles.sectionTitle} SN-D-T-M-B-16`}>
+                          <h3 className={styles.sectionTitle}>
                             {section}
                           </h3>
                           <button
@@ -140,7 +140,7 @@ const Header = () => {
                           </button>
                         </div>
                         {openSections[section] && (
-                          <p className={`${styles.sectionContent} SN-D-T-M-P-16`}>
+                          <p className={styles.sectionContent}>
                             {sectionsParagraph[section]}
                           </p>
                         )}
@@ -148,7 +148,7 @@ const Header = () => {
                     ))}
                   </div>
                   <button
-                    className={`${styles.closeButton} SN-D-T-M-B-16`}
+                    className={styles.closeButton}
                     onClick={toggleModal}
                   >
                     Close

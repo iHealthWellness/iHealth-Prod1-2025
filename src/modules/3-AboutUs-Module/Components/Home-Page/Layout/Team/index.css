@@ -27,8 +27,8 @@
 }
 
 .team-join-description {
-  /* font-size: 1rem; */
-  /* line-height: 143%; */
+  font-size: 1rem;
+  line-height: 143%;
   max-width: 313px;
   text-align: center;
 }
@@ -54,9 +54,9 @@
 }
 
 .team-join-slogan {
-  /* font-size: 1rem; */
-  /* font-weight: 400; */
-  /* line-height: 120%; */
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 120%;
 }
 
 .team-join-btn {
@@ -65,7 +65,7 @@
   cursor: pointer;
   background-color: #0d99ff;
   color: #fff;
-  /* font-weight: 300; */
+  font-weight: 300;
 }
 
 .team-join-card-inner img {
@@ -87,15 +87,15 @@
   }
 
   .team-join-heading {
-    /* font-size: 1.875rem; */
-    /* font-weight: 400; */
-    /* line-height: 110%; */
+    font-size: 1.875rem;
+    font-weight: 400;
+    line-height: 110%;
   }
 
   .team-join-slogan {
-    /* font-size: 1rem; */
-    /* font-weight: 700; */
-    /* line-height: 120%; */
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 120%;
   }
   .team-heading-h2 span {
     font-size: inherit;
@@ -104,24 +104,24 @@
   }
 
   .team-join-slogan {
-    /* font-weight: 400; */
-    /* line-height: 143%; */
-    /* font-size: 1.5rem; */
+    font-weight: 400;
+    line-height: 143%;
+    font-size: 1.5rem;
   }
 
   .team-join-btn {
     padding: 0.5rem 5rem;
-    /* font-weight: 400; */
-    /* line-height: 143%; */
-    /* font-size: 1.5rem; */
+    font-weight: 400;
+    line-height: 143%;
+    font-size: 1.5rem;
   }
 
   .team-join-description {
     width: 80%;
     max-width: 697px;
-    /* font-size: 1.5rem; */
-    /* font-weight: 400; */
-    /* line-height: 143%; */
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 143%;
     padding-bottom: 3rem;
   }
 }
@@ -207,21 +207,21 @@
   }
 
   .team-join-heading {
-    /* font-size: 2.25rem; */
-    /* font-weight: 400; */
-    /* line-height: 110%; */
+    font-size: 2.25rem;
+    font-weight: 400;
+    line-height: 110%;
     text-align: center;
   }
 
   /* update line-height to 143% */
   .team-join-slogan {
-    /* font-size: 1.5rem; */
-    /* font-weight: 400; */
-    /* line-height: 143%; */
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 143%;
   }
 
   .team-join-btn {
-    /* font-size: 1.25rem; */
+    font-size: 1.25rem;
     padding: 1rem 1.5rem;
     border-radius: 0.5rem;
   }
@@ -234,7 +234,7 @@
     padding: 0 0 1rem 0;
   }
   .team-join-heading {
-    /* font-size: 1.5rem; */
+    font-size: 1.5rem;
   }
   .team-join-card {
     padding-top: 1rem;

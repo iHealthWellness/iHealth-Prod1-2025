@@ -114,12 +114,12 @@ const DataPage = [
       "Sylvia Ezechie",
     ],
   },
-  {
-    id: 9,
-    TeamName: "Legal and Compliance",
-    // Roles: "General Counsel, Compliance Officer, Legal Counsel, Regulatory Affairs Manager, Risk and Compliance Analyst, Privacy Officer, Ethics Officer, Contract Manager, Intellectual Property (IP) Manager, Compliance Training Specialist",
-    Names: ["Dalia Hechi"],
-  },
+  // {
+  //   id: 9,
+  //   TeamName: "Legal and Compliance",
+  //   // Roles: "General Counsel, Compliance Officer, Legal Counsel, Regulatory Affairs Manager, Risk and Compliance Analyst, Privacy Officer, Ethics Officer, Contract Manager, Intellectual Property (IP) Manager, Compliance Training Specialist",
+  //   Names: ["Dalia Hechi"],
+  // },
   {
     id: 10,
     TeamName: "Marketing and Public Relations",

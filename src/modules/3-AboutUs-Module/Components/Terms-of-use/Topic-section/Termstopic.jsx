@@ -59,15 +59,15 @@ const Termstopic = () => {
 
       <div>
         <div className="terms3">
-          <h3 className="SN-D-H2-32">iHealth and Wellness Foundation, Inc.</h3>
+          <h3>iHealth and Wellness Foundation, Inc.</h3>
 
-          <h4 className="SN-D-H3-24">Terms of Use</h4>
+          <h4>Terms of Use</h4>
 
-          <p className="SN-D-T-M-P-16">Effective: May 23, 2023</p>
+          <p>Effective: May 23, 2023</p>
         </div>
 
         <div className="terms4">
-          <p className="SN-D-P-22">
+          <p>
             Welcome to our website!  We connect patients with complex 
             diseases to high-quality medical and wellness providers and
             resources through an integrated platform, empowering patients
@@ -81,9 +81,9 @@ const Termstopic = () => {
             <br />
           </p>
 
-          <ul className="SN-D-T-M-P-16">
+          <ul>
             <li>
-              <span className="SN-D-T-M-B-16">Content:</span> All content provided on this website is for
+              <span>Content:</span> All content provided on this website is for
               informational purposes only. We do not provide medical advice,
               diagnosis, or treatment. You should always consult your healthcare
               provider before making any healthcare decisions. We make no
@@ -95,7 +95,7 @@ const Termstopic = () => {
             </li>
             <br />
             <li>
-              <span className="SN-D-T-M-B-16">Use of Information:</span>
+              <span>Use of Information:</span>
               The information on this website is intended to be used as a
               resource to connect patients with complex diseases and health and
               wellness providers. Any information obtained through this website
@@ -121,7 +121,7 @@ const Termstopic = () => {
           {/* Correction of Site Errors section */}
 
           <div className="expand-div">
-            <h3 className="header32 SN-D-H3-24" onClick={handleToggle33}>
+            <h3 className="header32" onClick={handleToggle33}>
               Correction of Site Errors
             </h3>
 
@@ -136,7 +136,7 @@ const Termstopic = () => {
 
           {isExpanded33 && (
             <div>
-              <p className="SN-D-T-M-P-16">
+              <p>
                 The information on the Site may contain typographical errors or
                 inaccuracies. We reserve the right to update any information we
                 see fit at any time without prior notice. Please note that such
@@ -151,7 +151,7 @@ const Termstopic = () => {
 
           {/* Indemnity section */}
           <div className="expand-div">
-            <h3 className="header33 SN-D-H3-24" onClick={handleToggle44}>
+            <h3 className="header33" onClick={handleToggle44}>
               Indemnity
             </h3>
 
@@ -166,9 +166,9 @@ const Termstopic = () => {
 
           {isExpanded44 && (
             <div>
-              <p className="SN-D-T-M-P-16">
+              <p>
                 You agree to indemnify and hold iHealth and Wellness Foundation,
-                Inc., (the "Organization" and its officers, directors, agents,
+                Inc., (the “Organization” and its officers, directors, agents,
                 subsidiaries, joint ventures, and employees) harmless from any
                 claim or demand, as well as losses, expenses, damages and costs,
                 resulting from any violation of these Terms or your use of the
@@ -180,7 +180,7 @@ const Termstopic = () => {
 
           {/* Termination section */}
           <div className="expand-div">
-            <h3 className="header34 SN-D-H3-24" onClick={handleToggle55}>
+            <h3 className="header34" onClick={handleToggle55}>
               Termination
             </h3>
 
@@ -195,7 +195,7 @@ const Termstopic = () => {
 
           {isExpanded55 && (
             <div>
-              <p className="SN-D-T-M-P-16">
+              <p>
                 We may terminate your access to and use of the Services, at our
                 sole discretion, at any time and without notice to you.
               </p>
@@ -206,7 +206,7 @@ const Termstopic = () => {
           {/* Third Party Links section */}
 
           <div className="expand-div">
-            <h3 className="header35 SN-D-H3-24" onClick={handleToggle66}>
+            <h3 className="header35" onClick={handleToggle66}>
               Third Party Links
             </h3>
 
@@ -220,7 +220,7 @@ const Termstopic = () => {
           </div>
           {isExpanded66 && (
             <div>
-              <p className="SN-D-T-M-P-16">
+              <p>
                 The Services may contain links to third-party websites or
                 resources. We provide these links only as a convenience and are
                 not responsible for the content, products or services on or
@@ -235,7 +235,7 @@ const Termstopic = () => {
 
           {/* Use of Services */}
           <div className="expand-div">
-            <h3 className="header36 SN-D-H3-24" onClick={handleToggle77}>
+            <h3 className="header36" onClick={handleToggle77}>
               Use of Services
             </h3>
 
@@ -249,12 +249,14 @@ const Termstopic = () => {
           </div>
           {isExpanded77 && (
             <div>
-              <p className="SN-D-T-M-P-16">
-                You agree that you won't do any of the following things:
+              <p>
+                You agree that you won’t do any of the following things:
                 <br />
                 <br />
                 Use, display, mirror, or frame the Services, or any individual
-                element within the Services, iHealth and Wellness ("Organization")'s name, any iHealth and Wellness ("Organization") trademark, logo, or other proprietary
+                element within the Services, iHealth and Wellness (the
+                “Organization”)’s name, any iHealth and Wellness (the
+                “Organization”) trademark, logo, or other proprietary
                 information (including through the use of meta tags or the
                 like), or the layout and design of any page or form contained on
                 a page, without our express written consent;
@@ -265,7 +267,7 @@ const Termstopic = () => {
                 software, tool, agent, device or mechanism (including spiders,
                 robots, crawlers, data mining tools or the like) other than the
                 software and/or search agents provided by iHealth and Wellness
-                ("Organization") or other generally available third-party
+                (the “Organization”) or other generally available third-party
                 web browsers;
                 <br />
                 <br />
@@ -298,7 +300,7 @@ const Termstopic = () => {
                 any other third party or individual to do anything listed above.
                 <br />
                 <br />
-                Although we're not obligated to monitor access to or use of the
+                Although we’re not obligated to monitor access to or use of the
                 Services or Content or to review or edit any Content, we have
                 the right to do so for the purpose of operating the Services, to
                 ensure compliance with these Terms, and to comply with
@@ -318,10 +320,10 @@ const Termstopic = () => {
 
           {/* LIMITATION OF LIABILITY section */}
           <div className="header3a">
-            <h3 className="SN-D-H3-24">LIMITATION OF LIABILITY</h3>
+            <h3>LIMITATION OF LIABILITY</h3>
 
-            <p className="SN-D-T-M-P-16">
-              iHEALTH AND WELLNESS (THE "ORGANIZATION") NOR ANY OTHER PARTY (AND
+            <p>
+              iHEALTH AND WELLNESS (THE “ORGANIZATION”) NOR ANY OTHER PARTY (AND
               THE HEIRS, EXECUTORS AND ADMINISTRATORS OF SUCH PERSON) INVOLVED
               IN CREATING, PRODUCING, OR DELIVERING THE SERVICES WILL BE LIABLE
               FOR ANY INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES,
@@ -331,7 +333,7 @@ const Termstopic = () => {
               TERMS OR FROM THE USE OF OR INABILITY TO USE THE SERVICES, WHETHER
               BASED ON WARRANTY, CONTRACT, TORT (INCLUDING NEGLIGENCE), PRODUCT
               LIABILITY OR ANY OTHER LEGAL THEORY, AND WHETHER OR NOT iHEALTH
-              AND WELLNESS (THE "ORGANIZATION") HAS BEEN INFORMED OF THE
+              AND WELLNESS (THE “ORGANIZATION”) HAS BEEN INFORMED OF THE
               POSSIBILITY OF SUCH DAMAGE, EVEN IF A LIMITED REMEDY SET FORTH
               HEREIN IS FOUND TO HAVE FAILED OF ITS ESSENTIAL PURPOSE. SOME
               JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR LIMITATION OF
@@ -339,26 +341,26 @@ const Termstopic = () => {
               LIMITATION MAY NOT APPLY TO YOU.
               <br />
               <br />
-              IN NO EVENT WILL iHEALTH AND WELLNESS (THE "ORGANIZATION")'S TOTAL
+              IN NO EVENT WILL iHEALTH AND WELLNESS (THE “ORGANIZATION”)’S TOTAL
               LIABILITY ARISING OUT OF OR IN CONNECTION WITH THESE TERMS OR FROM
               THE USE OF OR INABILITY TO USE THE SERVICES OR CONTENT EXCEED THE
-              AMOUNTS YOU HAVE PAID TO iHEALTH AND WELLNESS (THE "ORGANIZATION")
+              AMOUNTS YOU HAVE PAID TO iHEALTH AND WELLNESS (THE “ORGANIZATION”)
               FOR USE OF THE SERVICES OR CONTENT OR ONE HUNDRED DOLLARS ($100),
               IF YOU HAVE NOT HAD ANY PAYMENT OBLIGATIONS TO iHEALTH AND
-              WELLNESS (THE "ORGANIZATION"), AS APPLICABLE. 
+              WELLNESS (THE “ORGANIZATION”), AS APPLICABLE. 
               <br />
               <br />
               THE EXCLUSIONS AND
               LIMITATIONS OF DAMAGES SET FORTH ABOVE ARE FUNDAMENTAL ELEMENTS OF
               THE BASIS OF THE BARGAIN BETWEEN iHEALTH AND WELLNESS (THE
-              "ORGANIZATION") AND YOU.
+              “ORGANIZATION”) AND YOU.
             </p>
           </div>
 
           {/* Binding Individual Arbitration section */}
 
           <div className="expand-div">
-            <h3 className="header37 SN-D-H3-24" onClick={handleToggle88}>
+            <h3 className="header37" onClick={handleToggle88}>
               Binding Individual Arbitration
             </h3>
 
@@ -372,14 +374,14 @@ const Termstopic = () => {
           </div>
           {isExpanded88 && (
             <div>
-              <p className="SN-D-T-M-P-16">
-                You and iHealth and Wellness (the "Organization") agree that any
+              <p>
+                You and iHealth and Wellness (the “Organization”) agree that any
                 and all Disputes, except those that are resolved informally or
                 brought in a small claims court, will be arbitrated by a neutral
                 arbitrator who has the power to award the same individual
-                damages and individual relief that a court can. "Disputes" are
+                damages and individual relief that a court can. “Disputes” are
                 defined as any claim, controversy, or dispute between you and
-                iHealth and Wellness (the "Organization"), its processors,
+                iHealth and Wellness (the “Organization”), its processors,
                 suppliers or licensors (or their respective affiliates, agents,
                 directors or employees), whether based on past, present, or
                 future events, including any claims relating in any way to these
@@ -391,7 +393,7 @@ const Termstopic = () => {
                 ACTIONS, AND CONSOLIDATION WITH OTHER ARBITRATIONS ARE NOT
                 PERMITTED. YOU WAIVE ANY RIGHT TO HAVE YOUR CASE DECIDED BY A
                 JURY AND YOU WAIVE ANY RIGHT TO PARTICIPATE IN A CLASS ACTION
-                AGAINST iHEALTH AND WELLNESS (THE "ORGANIZATION").
+                AGAINST iHEALTH AND WELLNESS (THE “ORGANIZATION”).
                 <br />
                 <br />
                 If any provision of this arbitration agreement is found
@@ -399,9 +401,9 @@ const Termstopic = () => {
                 the remaining arbitration terms will be enforced (but in no case
                 will there be a class or representative arbitration). Before an
                 arbitration is commenced, you or iHealth and Wellness (the
-                "Organization") must first send to the other party a written
-                Notice ("Notice"). Any Notice to iHealth and Wellness (the
-                "Organization") should be sent by email to
+                “Organization”) must first send to the other party a written
+                Notice (“Notice”). Any Notice to iHealth and Wellness (the
+                “Organization”) should be sent by email to
                 legal-team@ihealthwellness.one AND certified mail to: iHealth and
                 Wellness Foundation, Inc. - C/O Karcich. 2744 Hylan Blvd, Suite #175, 
                 Staten Island, NY 10306, United States Any Notice sent to you will be sent to the address
@@ -415,11 +417,11 @@ const Termstopic = () => {
                 able to resolve the Dispute by informal negotiation or, as
                 provided below, in a small claims court, all Disputes will be
                 resolved finally and exclusively by binding individual
-                arbitration with a single arbitrator (the "Arbitrator")
+                arbitration with a single arbitrator (the “Arbitrator”)
                 administered by the American Arbitration Association
                 (https://www.adr.org) according to this Section and the Consumer
                 Arbitration Rules through the Procedures for the Resolution of
-                Disputes through Document Submission (the "AAA Rules"),
+                Disputes through Document Submission (the “AAA Rules”),
                 including Rule D-3(b), except you and iHealth and Wellness
                 Foundation, Inc. will have the right to file early or summary
                 dispositive motions and so long as the claim is arbitrable under

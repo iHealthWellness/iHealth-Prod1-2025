@@ -14,11 +14,11 @@ const Terms = () => {
     <div id="Terms" className={styles.termsContainer}>
       <header>
         <img src={ihealth} alt="ihealth logo" />
-        <h1 className="SN-D-H2-32">iHealth and Wellness Foundation, Inc.</h1>
-        <h2 className="SN-D-H3-24">Terms of Use</h2>
-        <h2 className="SN-D-T-M-P-16">Effective: May 23,2023</h2>
+        <h1 className="D-H1-32">iHealth and Wellness Foundation, Inc.</h1>
+        <h2 className="D-H2-30">Terms of Use</h2>
+        <h2 className="D-H2-30">Effective: May 23,2023</h2>
       </header>
-      <main className={`SN-D-P-22 ${styles.mainTermsSection}`}>
+      <main className={`D-P-20 ${styles.mainTermsSection}`}>
         <p>
           Welcome to our website! We connect patients with complex diseases to
           high-quality medical and wellness providers and resources through an
@@ -122,7 +122,7 @@ const Terms = () => {
           <AccordionSection
             title="Indemnity"
             hiddenContent={{
-              p1: "You agree to indemnify and hold iHealth and Wellness Foundation, Inc., (the \"Organization\" and its officers, directors, agents, subsidiaries, joint ventures, and employees) harmless from any claim or demand, as well as losses, expenses, damages and costs, resulting from any violation of these Terms or your use of the Services (including negligent or wrongful conduct).",
+              p1: "You agree to indemnify and hold iHealth and Wellness Foundation, Inc., (the “Organization” and its officers, directors, agents, subsidiaries, joint ventures, and employees) harmless from any claim or demand, as well as losses, expenses, damages and costs, resulting from any violation of these Terms or your use of the Services (including negligent or wrongful conduct).",
             }}
             buttonColor="blue"
             className={{
@@ -135,7 +135,7 @@ const Terms = () => {
           <AccordionSection
             title="Use of Service"
             hiddenContent={{
-              p1: "You agree that you won't do any of the following things: Use, display, mirror, or frame the Services, or any individual element within the Services, iHealth and Wellness (the \"Organization\")'s name, any iHealth and Wellness (the \"Organization\") trademark, logo, or other proprietary information (including through the use of meta tags or the like), or the layout and design of any page or form contained on a page, without our express written consent; Attempt to access or search the Services or Content or download Content from the Services through the use of any engine, software, tool, agent, device or mechanism (including spiders, robots, crawlers, data mining tools or the like) other than the software and/or search agents provided by iHealth and Wellness (the \"Organization\") or other generally available third-party web browsers; Send any unsolicited or unauthorized advertising, promotional materials, email, junk mail, spam, chain letters or other form of solicitation. Use the Services or Content, or any portion thereof, for any commercial purpose or for the benefit of any third party or in any manner not permitted by these Terms; Attempt to interfere in any way with the Services or the networks or network security hosting the Services, or attempt to use the Services to gain unauthorized access to any other computer system. Collect or store any personally identifiable information from the Services from other users of the Services without their express permission; Impersonate or misrepresent your affiliation with any person or entity; Violate any applicable law or regulation; or Encourage or enable any other third party or individual to do anything listed above. Although we're not obligated to monitor access to or use of the Services or Content or to review or edit any Content, we have the right to do so for the purpose of operating the Services, to ensure compliance with these Terms, and to comply with applicable law or other legal requirements. We reserve the right, but are not obligated, to remove or disable access to any Content, at any time and without notice, including, but not limited to, if we, at our sole discretion, consider any Content to be objectionable or in violation of these Terms. We have the right to investigate violations of these Terms or conduct that affects the Services. We may also consult and cooperate with law enforcement authorities to prosecute users who violate the law.",
+              p1: "You agree that you won't do any of the following things: Use, display, mirror, or frame the Services, or any individual element within the Services, iHealth and Wellness (the “Organization”)'s name, any iHealth and Wellness (the “Organization”) trademark, logo, or other proprietary information (including through the use of meta tags or the like), or the layout and design of any page or form contained on a page, without our express written consent; Attempt to access or search the Services or Content or download Content from the Services through the use of any engine, software, tool, agent, device or mechanism (including spiders, robots, crawlers, data mining tools or the like) other than the software and/or search agents provided by iHealth and Wellness (the “Organization”) or other generally available third-party web browsers; Send any unsolicited or unauthorized advertising, promotional materials, email, junk mail, spam, chain letters or other form of solicitation. Use the Services or Content, or any portion thereof, for any commercial purpose or for the benefit of any third party or in any manner not permitted by these Terms; Attempt to interfere in any way with the Services or the networks or network security hosting the Services, or attempt to use the Services to gain unauthorized access to any other computer system. Collect or store any personally identifiable information from the Services from other users of the Services without their express permission; Impersonate or misrepresent your affiliation with any person or entity; Violate any applicable law or regulation; or Encourage or enable any other third party or individual to do anything listed above. Although we're not obligated to monitor access to or use of the Services or Content or to review or edit any Content, we have the right to do so for the purpose of operating the Services, to ensure compliance with these Terms, and to comply with applicable law or other legal requirements. We reserve the right, but are not obligated, to remove or disable access to any Content, at any time and without notice, including, but not limited to, if we, at our sole discretion, consider any Content to be objectionable or in violation of these Terms. We have the right to investigate violations of these Terms or conduct that affects the Services. We may also consult and cooperate with law enforcement authorities to prosecute users who violate the law.",
             }}
             buttonColor="blue"
             className={{
@@ -148,7 +148,7 @@ const Terms = () => {
           <AccordionSection
             title="Binding Individual Arbitration"
             hiddenContent={{
-              p1: "You and iHealth and Wellness (the \"Organization\") agree that any and all Disputes, except those that are resolved informally or brought in a small claims court, will be arbitrated by a neutral arbitrator who has the power to award the same individual damages and individual relief that a court can. \"Disputes\" are defined as any claim, controversy, or dispute between you and iHealth and Wellness (the \"Organization\"), its processors, suppliers or licensors (or their respective affiliates, agents, directors or employees), whether based on past, present, or future events, including any claims relating in any way to these Terms or the Services, or any other aspect of our relationship. ANY ARBITRATION UNDER THESE TERMS WILL ONLY BE ON AN INDIVIDUAL BASIS; CLASS ARBITRATIONS, CLASS ACTIONS, REPRESENTATIVE ACTIONS, AND CONSOLIDATION WITH OTHER ARBITRATIONS ARE NOT PERMITTED. YOU WAIVE ANY RIGHT TO HAVE YOUR CASE DECIDED BY A JURY AND YOU WAIVE ANY RIGHT TO PARTICIPATE IN A CLASS ACTION AGAINST iHEALTH AND WELLNESS (THE \"ORGANIZATION\"). If any provision of this arbitration agreement is found unenforceable, the unenforceable provision will be severed, and the remaining arbitration terms will be enforced (but in no case will there be a class or representative arbitration). Before an arbitration is commenced, you or iHealth and Wellness Foundation, Inc. must first send to the other party a written Notice (\"Notice\"). Any Notice to iHealth and Wellness Foundation, Inc. should be sent by email to legal-team@ihealthwellness.org AND certified mail to: iHealth and Wellness Foundation, Inc. - 2744 Hylan Blvd, Suite #175 (C/O Karcich), Staten Island, NY 10306, United States. Any Notice sent to you will be sent to the address on file for your account. The Notice must: (i) include your name and account number; (ii) describe the nature and basis of the Dispute; and (iii) set forth the specific relief sought. Both parties agree that they will attempt to resolve a dispute through an informal negotiation within thirty (30) days from the date the Notice is sent. After that thirty (30) day period and not before, either party may commence arbitration. If we are not able to resolve the Dispute by informal negotiation or, as provided below, in a small claims court, all Disputes will be resolved finally and exclusively by binding individual arbitration with a single arbitrator (the \"Arbitrator\") administered by the American Arbitration Association (https://www.adr.org) according to this Section and the Consumer Arbitration Rules through the Procedures for the Resolution of Disputes through Document Submission (the \"AAA Rules\"), including Rule D-3(b), except you and iHealth and Wellness Foundation, Inc. will have the right to file early or summary dispositive motions and so long as the claim is arbitrable under the AAA Rules. The Arbitrator shall be responsible for determining all threshold arbitrability issues, including issues relating to whether these Terms (or any aspect thereof) are enforceable, unconscionable or illusory and any defense to arbitration, including waiver, delay, laches, or estoppel. Subject to applicable jurisdictional requirements, you may elect to pursue your claim in your local small-claims court rather than through arbitration so long as your matter remains in small claims court and proceeds only on an individual (non-class or non-representative) basis.",
+              p1: "You and iHealth and Wellness (the “Organization”) agree that any and all Disputes, except those that are resolved informally or brought in a small claims court, will be arbitrated by a neutral arbitrator who has the power to award the same individual damages and individual relief that a court can. “Disputes” are defined as any claim, controversy, or dispute between you and iHealth and Wellness (the “Organization”), its processors, suppliers or licensors (or their respective affiliates, agents, directors or employees), whether based on past, present, or future events, including any claims relating in any way to these Terms or the Services, or any other aspect of our relationship. ANY ARBITRATION UNDER THESE TERMS WILL ONLY BE ON AN INDIVIDUAL BASIS; CLASS ARBITRATIONS, CLASS ACTIONS, REPRESENTATIVE ACTIONS, AND CONSOLIDATION WITH OTHER ARBITRATIONS ARE NOT PERMITTED. YOU WAIVE ANY RIGHT TO HAVE YOUR CASE DECIDED BY A JURY AND YOU WAIVE ANY RIGHT TO PARTICIPATE IN A CLASS ACTION AGAINST iHEALTH AND WELLNESS (THE “ORGANIZATION”). If any provision of this arbitration agreement is found unenforceable, the unenforceable provision will be severed, and the remaining arbitration terms will be enforced (but in no case will there be a class or representative arbitration). Before an arbitration is commenced, you or iHealth and Wellness (the “Organization”) must first send to the other party a written Notice (“Notice”). Any Notice to iHealth and Wellness (the “Organization”) should be sent by email to legal-team@ihealthwellness.org AND certified mail to: iHealth and Wellness Foundation, Inc. - 2744 Hylan Blvd, Suite #175 (C/O Karcich), Staten Island, NY 10306, United States. Any Notice sent to you will be sent to the address on file for your account. The Notice must: (i) include your name and account number; (ii) describe the nature and basis of the Dispute; and (iii) set forth the specific relief sought. Both parties agree that they will attempt to resolve a dispute through an informal negotiation within thirty (30) days from the date the Notice is sent. After that thirty (30) day period and not before, either party may commence arbitration. If we are not able to resolve the Dispute by informal negotiation or, as provided below, in a small claims court, all Disputes will be resolved finally and exclusively by binding individual arbitration with a single arbitrator (the “Arbitrator”) administered by the American Arbitration Association (https://www.adr.org) according to this Section and the Consumer Arbitration Rules through the Procedures for the Resolution of Disputes through Document Submission (the “AAA Rules”), including Rule D-3(b), except you and iHealth and Wellness Foundation, Inc. will have the right to file early or summary dispositive motions and so long as the claim is arbitrable under the AAA Rules. The Arbitrator shall be responsible for determining all threshold arbitrability issues, including issues relating to whether these Terms (or any aspect thereof) are enforceable, unconscionable or illusory and any defense to arbitration, including waiver, delay, laches, or estoppel. Subject to applicable jurisdictional requirements, you may elect to pursue your claim in your local small-claims court rather than through arbitration so long as your matter remains in small claims court and proceeds only on an individual (non-class or non-representative) basis.",
             }}
             buttonColor="blue"
             className={{
@@ -158,11 +158,11 @@ const Terms = () => {
             isExpanded={activeAccordion === "BINDING"}
             onToggle={() => toggleAccordion("BINDING")}
           />
-        {/* </section> */}
-        {/* <section> */}
-          <h2 className="SN-D-H3-24" style={{color:"black"}}>LIMITATION OF LIABILITY</h2>
-          <p className="SN-D-P-22">
-            NEITHER iHEALTH AND WELLNESS (THE \"ORGANIZATION\") NOR ANY OTHER
+        </section>
+        <section>
+          <h2 className="D-H3-24">LIMITATION OF LIABILITY</h2>
+          <p className="D-P-20">
+            NEITHER iHEALTH AND WELLNESS (THE “ORGANIZATION”) NOR ANY OTHER
             PARTY (AND THE HEIRS, EXECUTORS AND ADMINISTRATORS OF SUCH PERSON)
             INVOLVED IN CREATING, PRODUCING, OR DELIVERING THE SERVICES WILL BE
             LIABLE FOR ANY INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
@@ -172,20 +172,20 @@ const Terms = () => {
             OR FROM THE USE OF OR INABILITY TO USE THE SERVICES, WHETHER BASED
             ON WARRANTY, CONTRACT, TORT (INCLUDING NEGLIGENCE), PRODUCT
             LIABILITY OR ANY OTHER LEGAL THEORY, AND WHETHER OR NOT iHEALTH AND
-            WELLNESS (THE \"Organization\") HAS BEEN INFORMED OF THE POSSIBILITY
+            WELLNESS (THE “ORGANIZATION”) HAS BEEN INFORMED OF THE POSSIBILITY
             OF SUCH DAMAGE, EVEN IF A LIMITED REMEDY SET FORTH HEREIN IS FOUND
             TO HAVE FAILED OF ITS ESSENTIAL PURPOSE. SOME JURISDICTIONS DO NOT
             ALLOW THE EXCLUSION OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR
             INCIDENTAL DAMAGES, SO THE ABOVE LIMITATION MAY NOT APPLY TO YOU. IN
-            NO EVENT WILL iHEALTH AND WELLNESS (THE \"Organization\")'S TOTAL
+            NO EVENT WILL iHEALTH AND WELLNESS (THE “ORGANIZATION”)'S TOTAL
             LIABILITY ARISING OUT OF OR IN CONNECTION WITH THESE TERMS OR FROM
             THE USE OF OR INABILITY TO USE THE SERVICES OR CONTENT EXCEED THE
-            AMOUNTS YOU HAVE PAID TO iHEALTH AND WELLNESS (THE \"Organization\")
+            AMOUNTS YOU HAVE PAID TO iHEALTH AND WELLNESS (THE “ORGANIZATION”)
             FOR USE OF THE SERVICES OR CONTENT OR ONE HUNDRED DOLLARS ($100), IF
             YOU HAVE NOT HAD ANY PAYMENT OBLIGATIONS TO iHEALTH AND WELLNESS
-            (THE \"Organization\"), AS APPLICABLE. THE EXCLUSIONS AND LIMITATIONS
+            (THE “ORGANIZATION”), AS APPLICABLE. THE EXCLUSIONS AND LIMITATIONS
             OF DAMAGES SET FORTH ABOVE ARE FUNDAMENTAL ELEMENTS OF THE BASIS OF
-            THE BARGAIN BETWEEN iHEALTH AND WELLNESS (THE \"Organization\") AND
+            THE BARGAIN BETWEEN iHEALTH AND WELLNESS (THE “ORGANIZATION”) AND
             YOU.
           </p>
         </section>

@@ -14,7 +14,7 @@ const Privacy = () => {
   return (
     <div id="privacy-policy">
       <div className="expand-div">
-        <h3 className="header30 SN-D-H3-24" onClick={handleToggle11}>
+        <h3 className="header30" onClick={handleToggle11}>
           Privacy Policy
         </h3>
         {/* expand and collapse icon */}
@@ -28,7 +28,7 @@ const Privacy = () => {
 
       {isExpanded11 && (
         <div>
-          <p className="SN-D-T-M-P-16">
+          <p>
             Protecting your privacy is important to us.
             This Privacy Policy outlines how we collect, use, and protect your
             personal information when you use our website. By using our website,
