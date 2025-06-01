@@ -32,123 +32,250 @@ p, span, h4, h5 {
   /* Removed default line heights, handled by specific classes */
 }
 
-/* Commenting out old general typography styles */
-/*
-#empowering-patients,
-#making-a-difference,
-#making-a-diff {
-  color: #0d99ff;
-}
+:root {
+  /* Brand Color Definitions */
+  --SN-Color-Blue-Primary: #07235b;
+  --SN-Color-Blue-Primary-Transparent: rgba(7, 35, 91, 0.5);
+  --SN-Color-Blue-Primary-Lighter: #00477b;
+  --SN-Color-Blue-Secondary-Medium: #0386d0;
+  --SN-Color-Blue-Patients: #9ad4ff;
+  --SN-Color-Blue-Light: #0d99ff;
+  --SN-Color-Blue-Light-Transparent: rgba(13, 153, 255, 0.5);
+  --SN-Color-Blue-Lighter: #dce8f2;
+  --SN-Color-Blue-Hero-Light: #f0f7fd;
+  --SN-Color-Grey-Body-Text: #858ead;
+  --SN-Color-Grey-Letters: #e3e6ee;
+  --SN-Color-Grey-Letters-Darker: #666666;
+  --SN-Color-Grey-Lightest: #f8fafc;
+  --SN-Color-Grey-Text-Placeholder: #8b9094;
+  --SN-Color-Grey-Text-Background: #f6f8f7;
+  --SN-Color-White: #ffffff;
+  --SN-Color-Black: #000000;
+  --SN-Color-Green-Providers: #c9ffea;
+  --SN-Color-Orange-System: #ffb5b2;
+  --SN-Color-Red-Orange: #c33418;
 
-.SN-M-H1-30 {
-  font-size: 1.875rem;
-  font-weight: 700;
-  line-height: 120%;
-}
+  /* Typography */
+  /* Font Sizes */
+  --SN-font-size-14: 0.875rem;  /* 14px */
+  --SN-font-size-16: 1rem;      /* 16px */
+  --SN-font-size-22: 1.375rem;  /* 22px */
+  --SN-font-size-24: 1.5rem;    /* 24px */
+  --SN-font-size-28: 1.75rem;   /* 28px */
+  --SN-font-size-32: 2rem;      /* 32px */
+  --SN-font-size-40: 2.5rem;    /* 40px */
+  --SN-font-size-56: 3.5rem;    /* 56px */
 
-.SN-M-H2-24 {
-  font-size: 1.5rem;
-  font-weight: 400;
-  line-height: 110%;
-}
+  /* Font Weights */
+  --SN-font-weight-regular: 400;
+  --SN-font-weight-bold: 700;
 
-.SN-M-H3-20 {
-  font-size: 1.25rem;
-  font-weight: 400;
-  line-height: 100%;
+  /* Line Heights */
+  --SN-line-height-100: 100%;
+  --SN-line-height-110: 110%;
+  --SN-line-height-114: 114%;
+  --SN-line-height-120: 120%;
+  --SN-line-height-133: 133.3%;
+  --SN-line-height-143: 143%;
+  --SN-line-height-150: 150%;
 }
-
-.SN-M-P-16 {
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 120%;
-  text-align: justify;
-}
-
-.SN-M-B-16 {
-  font-size: 1rem;
-  font-weight: 700;
-  line-height: 120%;
-}
-
-.SN-M-C-16 {
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 110%;
-}
-
-.SN-T-H1-36 {
-  font-size: 2.25rem;
-  font-weight: 700;
-  line-height: 120%;
-}
-
-.SN-T-H2-30 {
-  font-size: 1.875rem;
-  font-weight: 400;
-  line-height: 110%;
-}
-
-.SN-T-H3-24 {
-  font-size: 1.5rem;
-  font-weight: 400;
-  line-height: 100%;
-}
-
-.SN-D-T-M-P-20 {
-  font-size: 1.25rem;
-  font-weight: 400;
-  line-height: 110%;
-}
-
-.SN-D-H1-48 {
-  font-size: 3rem;
-  font-weight: 700;
-  line-height: 120%;
-}
-
-.SN-D-H2-32 {
-  font-size: 2rem;
-  font-weight: 400;
-  line-height: 110%;
-}
-
-.SN-D-H2-36 {
-  font-size: 2.25rem;
-  font-weight: 400;
-  line-height: 110%;
-}
-
-.SN-D-H3-24 {
-  font-size: 1.5rem;
-  font-weight: 400;
-  line-height: 100%;
-}
-
-.SN-D-P-20 {
-  font-size: 1.25rem;
-  font-weight: 400;
-  line-height: 120%;
-}
-
-.SN-D-P-16 {
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 110%;
-}
-
-.SN-D-B-16 {
-  font-size: 1rem;
-  font-weight: 700;
-  line-height: 120%;
-}
-*/
 
 .App {
   scroll-behavior: smooth;
 }
 
+/* Exceptions */
+#empowering-patients,
+#making-a-difference,
+#making-a-diff {
+  color: var(--SN-Color-Blue-Light);
+}
 
+/* Typography
+ * New Naming Convention
+ * Base Typography Classes */
+
+/* Headings */
+.SN-H1 {
+  font-size: var(--SN-font-size-40);
+  font-weight: var(--SN-font-weight-regular);
+  line-height: var(--SN-line-height-120);
+}
+
+.SN-H2 {
+  font-size: var(--SN-font-size-32);
+  font-weight: var(--SN-font-weight-regular);
+  line-height: var(--SN-line-height-110);
+}
+
+.SN-H3 {
+  font-size: var(--SN-font-size-24);
+  font-weight: var(--SN-font-weight-regular);
+  line-height: var(--SN-line-height-133);
+}
+
+.SN-H4 {
+  font-size: var(--SN-font-size-22);
+  font-weight: var(--SN-font-weight-regular);
+  line-height: var(--SN-line-height-110);
+}
+
+/* Paragraphs */
+.SN-P-Big {
+  font-size: var(--SN-font-size-22);
+  font-weight: var(--SN-font-weight-regular);
+  line-height: var(--SN-line-height-150);
+}
+
+.SN-P {
+  font-size: var(--SN-font-size-16);
+  font-weight: var(--SN-font-weight-regular);
+  line-height: var(--SN-line-height-143);
+}
+
+.SN-P-Small {
+  font-size: var(--SN-font-size-14);
+  font-weight: var(--SN-font-weight-regular);
+  line-height: var(--SN-line-height-143);
+}
+
+/* Caption & Button */
+.SN-Caption {
+  font-size: var(--SN-font-size-14);
+  font-weight: var(--SN-font-weight-bold);
+  line-height: var(--SN-line-height-120);
+}
+
+.SN-Button {
+  font-size: var(--SN-font-size-14);
+  font-weight: var(--SN-font-weight-bold);
+  line-height: var(--SN-line-height-120);
+  text-transform: uppercase;
+}
+
+/* Modifier Classes (Home Variants) */
+
+.SN-H1.home {
+  font-size: var(--SN-font-size-56);
+  line-height: var(--SN-line-height-114);
+}
+
+.SN-H2.home {
+  font-size: var(--SN-font-size-40);
+  line-height: var(--SN-line-height-120);
+}
+
+.SN-H3.home {
+  font-size: var(--SN-font-size-32);
+  line-height: var(--SN-line-height-110);
+}
+
+.SN-H4.home {
+  font-size: var(--SN-font-size-24);
+  line-height: var(--SN-line-height-133);
+}
+
+/* Optional: Modifiers for paragraphs if needed */
+.SN-P.home,
+.SN-P-Big.home,
+.SN-P-Small.home {
+  /* Keep same size/line-height unless overridden */
+}
+
+/* Responsive Overrides */
+
+/* Tablet: max-width 1024px */
+@media screen and (max-width: 1024px) {
+  .SN-H1 {
+    font-size: var(--SN-font-size-40);
+    line-height: var(--SN-line-height-110);
+  }
+
+  .SN-H2 {
+    font-size: var(--SN-font-size-32);
+    line-height: var(--SN-line-height-110);
+  }
+
+  .SN-H3 {
+    font-size: var(--SN-font-size-24);
+    line-height: var(--SN-line-height-143);
+  }
+
+  .SN-H4 {
+    font-size: var(--SN-font-size-24);
+    line-height: var(--SN-line-height-110);
+  }
+
+  .SN-H1.home {
+    font-size: var(--SN-font-size-40);
+    line-height: var(--SN-line-height-120);
+  }
+
+  .SN-H2.home {
+    font-size: var(--SN-font-size-32);
+    line-height: var(--SN-line-height-110);
+  }
+
+  .SN-H3.home {
+    font-size: var(--SN-font-size-24);
+    line-height: var(--SN-line-height-143);
+  }
+
+  .SN-H4.home {
+    font-size: var(--SN-font-size-24);
+    line-height: var(--SN-line-height-110);
+  }
+}
+
+/* Mobile: max-width 480px */
+@media screen and (max-width: 480px) {
+  .SN-H1 {
+    font-size: var(--SN-font-size-28);
+    line-height: var(--SN-line-height-110);
+  }
+
+  .SN-H2 {
+    font-size: var(--SN-font-size-22);
+    line-height: var(--SN-line-height-100);
+  }
+
+  .SN-H3 {
+    font-size: var(--SN-font-size-22);
+    line-height: var(--SN-line-height-133);
+  }
+
+  .SN-H4 {
+    font-size: var(--SN-font-size-22);
+    line-height: var(--SN-line-height-110);
+  }
+
+  .SN-H1.home {
+    font-size: var(--SN-font-size-32);
+    line-height: var(--SN-line-height-120);
+  }
+
+  .SN-H2.home {
+    font-size: var(--SN-font-size-28);
+    line-height: var(--SN-line-height-110);
+  }
+
+  .SN-H3.home {
+    font-size: var(--SN-font-size-22);
+    line-height: var(--SN-line-height-100);
+  }
+
+  .SN-H4.home {
+    font-size: var(--SN-font-size-22);
+    line-height: var(--SN-line-height-110);
+  }
+}
+
+/* ======================================= */
+/* ======================================= */
+/* Old Naming Convention */
+ /* Depreciated and to be phased out */
+
+/* #region */
 
 /* Desktop Styles */
 .SN-D-Home-H1-56 {
