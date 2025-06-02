@@ -5,8 +5,8 @@ import { Link } from "react-router-dom"
 import styles from "./index.module.css"
 import imageTwo from "../../../../../src/Assets/Images/facts-about-nf-post3.jpg"
 import juneEvent from "../../../../../src/Assets/Images/JuneEvent.jpg";
-import monthlyHighlightImage from "../../../../../src/Assets/Images/Highlights.jpg";
-import aprilnewsletterPDF from "../../../../../src/Assets/files/april-newsletter.pdf";
+import monthlyHighlightImage from "../../../../../src/Assets/Images/mayHighlights.png";
+import maynewsletterPDF from "../../../../../src/Assets/files/may-newsletter.pdf";
 import NFVideo from "../../../../../src/Assets/files/SN-PediatricNF.mp4";
 import React, { useRef } from "react";
 
@@ -65,10 +65,10 @@ const EventCards = () => {
     },
     {
       title: "Monthly Highlights",
-      date: "Last Updated | April 29, 2025",
+      date: "Last Updated | May 31, 2025",
       time: "",
       newsletterimg: monthlyHighlightImage,
-      link: aprilnewsletterPDF,
+      link: maynewsletterPDF,
       // link: "https://lnkd.in/gpWRY_Yi",
       status: "VIDEO",
     },
