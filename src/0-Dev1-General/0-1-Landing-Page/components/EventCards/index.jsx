@@ -62,6 +62,7 @@ const EventCards = () => {
       newsletterimg: juneEvent,
       // link: "https://lnkd.in/gpWRY_Yi",
       status: "NEWSLETTER",
+      btnText: "Register Here",
     },
     {
       title: "Monthly Highlights",
@@ -70,7 +71,8 @@ const EventCards = () => {
       newsletterimg: monthlyHighlightImage,
       link: maynewsletterPDF,
       // link: "https://lnkd.in/gpWRY_Yi",
-      status: "VIDEO",
+      status: "NEWSLETTER",
+      btnText: "View Newsletter",
     },
     {
       title: "Facts About Neurofibromatosis (NF)",
@@ -79,6 +81,7 @@ const EventCards = () => {
       image: imageTwo,
       link: "https://www.youtube.com/playlist?list=PLWRClAjMOjXgo6m6vrypqWbwwCcVb1NEu",
       status: "PLAYLIST",
+      btnText: "View Playlist",
     },
   ]
 
@@ -158,7 +161,7 @@ const renderMedia = (event) => {
                     className={`${styles.registerBtn} SN-D-T-M-Home-B-16`}
                     onClick={(e) => handleLinkClick(e, event.link)}
                   >
-                    Register Here
+                    {event.btnText}
                   </Link>
                 ) : event.status === "VIDEO" ? (
                   <Link
@@ -167,7 +170,7 @@ const renderMedia = (event) => {
                     className={`${styles.registerBtn} SN-D-T-M-Home-B-16`}
                     onClick={(e) => handleLinkClick(e, event.link)}
                   >
-                    View Newsletter
+                    {event.btnText}
                   </Link>
                 ) : (
                   <Link
@@ -176,7 +179,7 @@ const renderMedia = (event) => {
                   className={`${styles.registerBtn} SN-D-T-M-Home-B-16`}
                   onClick={(e) => handleLinkClick(e, event.link)}
                 >
-                  View Playlist
+                  {event.btnText}
                 </Link>
                 )}
               </div>
