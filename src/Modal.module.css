@@ -1,0 +1,164 @@
+.modalContent {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  /* overflow-y: auto;
+  overflow-x: hidden; */
+  border-radius: 12px;
+  border: none;
+  background: var(--SN-Color-White);
+  box-shadow: 0px 0.25rem 1.4375rem 0px rgba(0, 0, 0, 0.25);
+  outline: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0;
+  width: 73.9rem;
+  font-size: 1rem;
+  max-height: 95vh;
+}
+
+.modalCloseButton {
+  display: flex;
+  justify-content: end;
+  cursor: pointer;
+  /* margin-top: 1.25rem; */
+  position: sticky;
+  img{
+    width:30px;
+    height:30px;
+  }
+}
+
+/*Changes by Aman*/
+.container {
+  display: flex;
+  width: 100%;
+  max-height: 95vh;
+}
+
+.leftContainer {
+  background-color: var(--SN-Color-Blue-Primary);
+  width: 47.4%;
+}
+
+.rightContainer {
+  width: 52.6%;
+  padding: 10px;
+}
+
+.subheader {
+  color: var(--SN-Color-Blue-Primary);
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.actionBtn {
+  /* position: relative;
+  top: -6rem; */
+  height: 2.8125rem;
+  width: 100%;
+  border-radius: 0.3125rem;
+  border: none;
+  background: var(--SN-Color-Blue-Light);
+  box-shadow: 0rem 0rem 0.25rem 0rem rgba(0, 0, 0, 0.25);
+  color: var(--SN-Color-White);
+  text-align: center;
+  cursor: pointer;
+  align-self: center;
+}
+
+.buttonWithError {
+  pointer-events: none;
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+/* common CSS for all the modals*/
+
+.bottomButtonActionNavContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* media query for tablets*/
+@media (min-width: 480px) and (max-width: 912px) {
+  .modalContent {
+    width: 48rem;
+  }
+  .leftContainer {
+    width: 32.9%;
+  }
+  .rightContainer {
+    width: 67.1%;
+  }
+}
+@media only screen and (max-width: 1194px) and (min-width: 834px) {
+  .modalContent {
+    width: 52rem;
+  }
+  .leftContainer {
+    width: 40%;
+  }
+  .rightContainer {
+    width: 60%;
+  }
+}
+
+/* Media query for Mobile screens */
+@media (max-width: 43.75rem) {
+  .modalContent {
+    width: 375px;
+    padding: 0;
+  }
+  .leftContainer {
+    display: none;
+  }
+  /* .container {
+    height: 700px;
+  } */
+  .rightContainer {
+    width: 100%;
+  }
+
+  .modalCloseButton {
+    margin-right: 0;
+  }
+}
+@media (max-width: 415px) {
+  .modalContent {
+    width: 360px;
+    padding: 0;
+  }
+  .modalCloseButton {
+    margin-right: 0;
+  }
+}
+@media (max-width: 360px) {
+  .modalContent {
+    width: 315px;
+    padding: 0;
+  }
+  .modalCloseButton {
+    margin-right: 0;
+  }
+}
+@media (max-width: 20rem) {
+  .modalCloseButton {
+    margin-right: 0;
+  }
+
+  .bottomButtonActionNavContainer {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .closeEmailContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
