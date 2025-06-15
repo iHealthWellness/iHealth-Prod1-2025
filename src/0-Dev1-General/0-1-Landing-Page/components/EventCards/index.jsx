@@ -53,17 +53,17 @@ const EventCards = () => {
   const [selectedLink, setSelectedLink] = useState("")
 
   const events = [
-    {
-      title: "Upcoming Event",
-      date: "Last Updated | May 9th, 2025",
-      time: "",
-      image: juneEvent,
-      link: "https://forms.gle/PCyG7eARaMKoXfyy9",
-      newsletterimg: juneEvent,
-      // link: "https://lnkd.in/gpWRY_Yi",
-      status: "NEWSLETTER",
-      btnText: "Register Here",
-    },
+    // {
+    //   title: "Upcoming Event",
+    //   date: "Last Updated | May 9th, 2025",
+    //   time: "",
+    //   image: juneEvent,
+    //   link: "https://forms.gle/PCyG7eARaMKoXfyy9",
+    //   newsletterimg: juneEvent,
+    //   // link: "https://lnkd.in/gpWRY_Yi",
+    //   status: "NEWSLETTER",
+    //   btnText: "Register Here",
+    // },
     {
       title: "Monthly Highlights",
       date: "Last Updated | May 31, 2025",
