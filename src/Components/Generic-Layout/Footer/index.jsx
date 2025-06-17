@@ -8,6 +8,7 @@ import SocialMedia from "src/Constants/HomePage/SocialMedia.js";
 import FooterLink from "src/Constants/FooterLink.js";
 import LanguageBar from "./LanguageBar/LanguageBar";
 import SasikaQuote from "src/Assets/Images/sasika-quote.png";
+import SealsCard from "./SealsCard";
 
 
 const ExitConfirmationModal = ({ isOpen, onClose, onConfirm, link }) => {
@@ -110,6 +111,7 @@ const Footer = () => {
   return (
     <footer className={styles.container}>
       <div className={styles.top}>
+        <SealsCard />
         <div className={styles.contact}>
           <div className={styles.addressBlock}>
             <p className={`${styles.addressHeading} SN-D-T-M-B-16`}>
@@ -175,12 +177,13 @@ const Footer = () => {
         </div>
         <div className={styles.sasikaQuote}>
           <img src={SasikaQuote} alt="quote from CEO/CTO" />
+          <SealsCard hideOnMobile={true}/>
         </div>
       </div>
       <div className={styles.bottom}>
         <div className={`${styles.termsCenter}`}>
           <p className={`${styles.terms} SN-D-T-M-P-14`}>
-            @2023 iHealth and Wellness Foundation, Inc. All rights reserved.
+            @{new Date().getFullYear()} iHealth and Wellness Foundation, Inc. All rights reserved.
             iHealth and Wellness Foundation is a 501(c)(3) Nonprofit
             Organization. EIN: 93-1567099
           </p>
