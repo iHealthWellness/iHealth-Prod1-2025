@@ -123,6 +123,8 @@ async function setupRouter() {
       children: [
         { index: true, element: <Home /> },
         { path: "learnmore", element: <LearnMore /> },
+                { path: "/cancer-hub", element: <Home /> },
+        { path: "/geriatric-hub", element: <Home /> },
         ...moduleRoutes,
       ],
     },

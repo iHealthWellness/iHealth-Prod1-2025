@@ -2,7 +2,8 @@
 const DEFAULT_API_VERSION = "v1";
 // Note: We are using the same URL for both base and production.
 // Update this if you plan to have different URLs for each.
-const DEFAULT_BASE_URL = "https://dev1-general-oct.onrender.com";
+
+const DEFAULT_BASE_URL = "https://api-phase1-qa-sept.onrender.com";
 const DEFAULT_DONATE_LINK_URL = "";
 
 class Config {

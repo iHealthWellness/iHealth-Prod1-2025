@@ -1,20 +1,29 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import styles from "./index.module.css";
-import Geriatric from "./Community-Team/Geriatric";
-import Cancer from "./Community-Team/Cancer";
+import DiseaseFeedbackModal from "src/modules/1-Home-Module/components/Diseases/DiseaseFeedbackModal";
 import CancerCard from "src/Assets/Images/cancer-card.png";
 import GeriatricCard from "src/Assets/Images/geriatric-card.png";
 import NfCard from "src/Assets/Images/nf-card.png";
 
 const Community = () => {
   const [openModal, setOpenModal] = useState(null);
+  const location = useLocation();
+
+  useEffect(() => {
+    // Check URL path and open appropriate modal
+    if (location.pathname === "/cancer-hub") {
+      setOpenModal("Cancer");
+    } else if (location.pathname === "/geriatric-hub") {
+      setOpenModal("Geriatric");
+    }
+  }, [location.pathname]);
 
   const handleOpenModal = (modalName) => {
     setOpenModal(modalName);
   };
 
   const closeModal = () => {
-    setOpenModal(null);
     setOpenModal(null);
   };
 
@@ -43,57 +52,8 @@ const Community = () => {
           // onClick={() => handleOpenModal("Geriatric")}
         />
       </aside>
-
-      {/* <div className="community-teams">
-        <button
-          onClick={() => {
-            setTeam("NF TEAM");
-            document
-              .querySelector(".information-container")
-              .scrollIntoView({ behavior: "smooth" });
-            console.log(document.querySelector(".information-container"));
-          }}
-          className={
-            team === "NF TEAM"
-              ? "community-team-btn focus"
-              : "community-team-btn"
-          }
-        >
-          Neurofibromatosis (NF) HUB
-        </button>
-        <button
-          // onClick={() => {
-          //   setTeam("Geriatric Disease Team");
-          //   document.querySelector("#UnderConst-wrapper").style.display =
-          //     "flex";
-          // }}
-          onClick={toggleModal}
-          className={
-            team === "Geriatric Disease Team"
-              ? "community-team-btn focus"
-              : "community-team-btn"
-          }
-        >
-          Geriatric Disease Hub <p className="coming-soon-p">(Coming soon)</p>
-        </button>
-        <button
-          // onClick={() => {
-          //   setTeam("Cancer Team");
-          //   document.querySelector("#UnderConst-wrapper").style.display =
-          //     "flex";
-          // }}
-          onClick={toggleModal1}
-          className={
-            team === "Cancer Team"
-              ? "community-team-btn focus"
-              : "community-team-btn"
-          }
-        >
-          Cancer Hub <p className="coming-soon-p">(Coming soon)</p>
-        </button>
-      </div> */}
-      {openModal === "Geriatric" && <Geriatric closeModal={closeModal} />}
-      {openModal === "Cancer" && <Cancer closeModal={closeModal} />}
+      {openModal === "Geriatric" && <DiseaseFeedbackModal closeModal={closeModal} diseaseType="geriatric"  />}
+      {openModal === "Cancer" && <DiseaseFeedbackModal closeModal={closeModal} diseaseType="cancer"  />}
     </section>
   );
 };
