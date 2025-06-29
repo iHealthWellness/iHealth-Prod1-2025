@@ -7,7 +7,7 @@ import DialogContent from "@mui/material/DialogContent";
 import "./SurveyForm.css";
 import closeButtonX from "src/Assets/Icons/close-button-x.svg";
 import logo1 from "src/Assets/Images/logo1.svg";
-import ProgressBar from "src/0-Dev1-General/0-1-Landing-Page/components/Community/Community-Team/ProgressBar.jsx";
+import ProgressBar from "./SurveyPageComponents/ProgressBar/ProgressBar.jsx";
 import SurveyNav from "./SurveyPageComponents/SurveyNav/SurveyNav.jsx";
 import PageOne from "./SurveyPageComponents/PageOne.jsx";
 import PageTwo from "./SurveyPageComponents/PageTwo.jsx";

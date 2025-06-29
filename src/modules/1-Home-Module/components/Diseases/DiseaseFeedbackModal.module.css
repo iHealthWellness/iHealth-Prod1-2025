@@ -1,0 +1,459 @@
+/* Utility Classes */
+.relative {
+  position: relative;
+}
+
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.leftRightPadding {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+/* Modal Content */
+
+.contentWithScrolling {
+  overflow-y: auto;
+  height: calc(100% - 121px);
+  max-height: calc(95vh - 48px);
+}
+
+.contentText {
+  text-align: center;
+  color: var(--SN-Color-Grey-Body-Text);
+  margin: 10px 10px 30px 10px;
+  padding: 0 2.2rem;
+  font-style: normal;
+}
+
+.progressbar {
+  text-align: center;
+  width: 59%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+
+  img {
+    width: 75%;
+    margin: 10px;
+  }
+}
+
+.headWrapper{
+  text-align: center;
+  p {
+    color: var(--SN-Color-Blue-Secondary-Medium);
+  }
+}
+
+.backButton{
+  position: absolute;
+  left: 35px;
+  height: 100%;
+  width: 45px;
+  cursor: pointer;
+}
+
+/* FORM STYLING */
+
+/* clear this out, not sure why it's set */
+:focus-visible {
+  outline: none;
+}
+
+::placeholder {
+  color: var(--SN-Color-Grey-Text-Placeholder);
+}
+
+.formContent {
+  margin: 5px 10% 0 10%;
+  display: block;
+
+  input {
+    border-radius: 5px;
+    width: 100%;
+    padding: 6px;
+    color: var(--SN-Color-Grey-Letters-Darker);
+  }
+
+  textarea {
+    border-radius: 5px;
+    padding: 6px;
+    width: 100%;
+    height: 80px;
+    background-color: var(--SN-Color-White);
+    color: var(--SN-Color-Grey-Letters-Darker);
+    resize: none;
+    cursor: pointer;
+  }
+}
+
+.inputGroup {
+  padding-bottom: 1rem;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+  :focus-visible {
+    border-radius: 5px;
+    border-color: var(--SN-Color-Blue-Light-Transparent);
+    box-shadow: 0px 4px 10px 0px #0000001c;
+  }
+}
+
+.textAreaChars{
+  float: right;
+  color: var(--SN-Color-Grey-Body-Text);
+  font-size: 14px;
+}
+
+.requiredDesc {
+  color: var(--SN-Color-Blue-Secondary-Medium);
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+
+/* CONDITION DROPDOWN STYLING */
+
+/* .conditionStar { */
+  /* position: absolute; */
+  /* left: 107px; */
+  /* top: 0.5rem; */
+  /* color: var(--SN-Color-Red-Orange); */
+  /* [> display: flex; <] */
+  /* [> align-items: center; <] */
+  /* height: 100%; */
+/* } */
+
+/* .conditionStarName { */
+  /* position: absolute; */
+  /* left: 77px; */
+  /* top: 0.5rem; */
+  /* color: var(--SN-Color-Red-Orange); */
+  /* [> display: flex; <] */
+  /* [> align-items: center; <] */
+  /* height: 100%; */
+/* } */
+
+/* .conditionStarEmail { */
+  /* position: absolute; */
+  /* left: 42px; */
+  /* top: 0.45rem; */
+  /* color: var(--SN-Color-Red-Orange); */
+  /* [> display: flex; <] */
+  /* [> align-items: center; <] */
+  /* height: 100%; */
+/* } */
+
+/* .conditionStarOtherCond { */
+  /* position: absolute; */
+  /* left: 127px; */
+  /* top: 0.5rem; */
+  /* color: var(--SN-Color-Red-Orange); */
+  /* [> display: flex; <] */
+  /* [> align-items: center; <] */
+  /* height: 100%; */
+/* } */
+
+.conditionDropdown {
+  background-color: var(--SN-Color-White);
+  padding: 6px;
+  width: 100%;
+  border: unset;
+}
+
+.conditionDropdownTextEmpty {
+  color: var(--SN-Color-Grey-Text-Placeholder);
+}
+
+.conditionDropdownTextSelected {
+  color: var(--SN-Color-Grey-Letters-Darker);
+}
+
+.conditionOptionOne{
+  display: none;
+}
+
+.customSelect {
+  color: var(--SN-Color-White);
+}
+
+/* .selectItems { */
+  /* position: absolute; */
+  /* top: 0; */
+  /* left: 0; */
+  /* background-color: var(--SN-Color-White); */
+  /* max-height: 150px; */
+  /* width: 100%; */
+  /* [> color: var(--SN-Color-Black); <] */
+  /* color: var(--SN-Color-Blue-Primary); */
+  /* font-size: 15px; */
+  /* overflow-y: auto; */
+  /* z-index: 2222; */
+/* } */
+
+.conditionMenu {
+  border-radius: 5px;
+  :focus-within {
+    border-color: var(--SN-Color-Blue-Light-Transparent);
+    box-shadow: 0px 4px 10px 0px #0000001c;
+  }
+}
+
+/* .conditionMenuOpen { */
+  /* border-color: var(--SN-Color-Blue-Light); */
+/* } */
+
+/* Dropdown arrow styling */
+/* .conditionArrowClosed { */
+  /* appearance: none; */
+  /* -webkit-appearance: none; */
+  /* -moz-appearance: none; */
+  /* background-color: var(--SN-Color-White); */
+  /* border: 1px solid var(--SN-Color-Grey-Letters); */
+  /* border-radius: 5px; */
+  /* width: 100%; */
+  /* cursor: pointer; */
+  
+  /* [> Custom arrow using background image <] */
+  /* background-image: url('src/Assets/Icons/dropdown-arrow-closed.svg'); */
+  /* background-repeat: no-repeat; */
+  /* background-position: right 10px center; */
+  /* background-size: 16px; */
+/* } */
+
+/* .conditionArrowOpen { */
+  /* appearance: none; */
+  /* -webkit-appearance: none; */
+  /* -moz-appearance: none; */
+  /* outline: none; */
+  /* border-color: var(--SN-Color-Blue-Light) !important; */
+  
+  /* background-image: url('src/Assets/Icons/dropdown-arrow-open.svg'); */
+  /* background-repeat: no-repeat; */
+  /* background-position: right 10px center; */
+  /* background-size: 16px; */
+/* } */
+
+select:focus {
+  border-radius: 5px;
+}
+
+/* Highlight the dropdown options on hover */
+/* .selectItems div:hover { */
+  /* background-color: var(--SN-Color-Blue-Light); */
+  /* cursor: pointer; */
+  /* color: var(--SN-Color-White); */
+/* } */
+
+/* Highlight the selected dropdown option*/
+/* .sameAsSelected { */
+  /* background-color: var(--SN-Color-Grey-Letters); */
+  /* color: var(--SN-Color-Black); */
+/* } */
+
+/* Track */
+/* .selectItems::-webkit-scrollbar { */
+  /* width: 5px; */
+/* } */
+
+/* Handle */
+/* .selectItems::-webkit-scrollbar-thumb { */
+  /* background-color: var(--SN-Color-Blue-Primary); */
+  /* border-radius: 5px; */
+/* } */
+
+/* input validation message styling */
+.errorMsg {
+  display: flex;
+  color: var(--SN-Color-Black);
+  margin-top: 5px;
+  img {
+    width: 0.7rem;
+    height: auto;
+    margin-right: 4px;
+  }
+}
+
+.fieldBorder {
+  border-radius: 5px;
+  border: 1px solid var(--SN-Color-Grey-Letters);
+}
+
+/* preloader displayed on form submission */
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loader {
+  position: absolute;
+  top: 5px;
+  left: 49%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--SN-Color-Blue-Primary);
+  border-top: 2px solid var(--SN-Color-Grey-Text-Background);
+  border-radius: 50%;
+  /* Animation for the spinning element */
+  animation: spin 1s linear infinite;
+  z-index: 100;
+}
+
+/* Review Table */
+.reviewTableWrapper{
+  color: var(--SN-Color-Black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 44vh;
+}
+
+.reviewTable{
+  min-width: 75%;
+  max-width: 85%;
+  table-layout: fixed;
+  word-wrap: break-word;
+  word-break: break-word;
+  padding-bottom: 1rem;
+}
+
+.reviewTable td{
+  padding: 1rem 0;
+  vertical-align: top;
+}
+
+.reviewTable td:first-of-type{
+  width: 45%;
+  padding-right: 10px;
+  color: var(--SN-Color-Blue-Primary);
+  text-align: right;
+}
+
+.reviewTable td:last-of-type{
+  width: 65%;
+  color: var(--SN-Color-Grey-Letters-Darker);
+  text-align: left;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+}
+
+.reviewTable tr:last-of-type td:last-of-type {
+  height: auto;
+}
+
+/* Confirmation Pop-up */
+
+.confirmationPopupMinSize {
+  min-height: 55vh;
+}
+
+.confirmationPopupOverlay {
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0 12px 12px 0;
+  background-color: rgba(0, 0, 0, 0.70);
+
+  @supports (-webkit-appearance: none) {
+    width: calc(100% + 1px);
+  }
+}
+
+.confirmationPopup {
+  background-color: var(--SN-Color-White);
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  padding: 0;
+  width: 70%;
+  max-width: 380px;
+  color: var(--SN-Color-Blue-Primary);
+  margin-top: 25px;
+
+  p {
+    margin-bottom: 24px;
+  }
+}
+
+.confirmationPopupContent {
+  padding: 32px 24px;
+  text-align: center;
+}
+
+.confirmationCheckmark {
+  position: absolute;
+  top: -25px;
+  left: calc(50% - 25px);
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.checkCircle {
+  width: 50px;
+  height: 50px;
+  background-color: var(--SN-Color-Blue-Light);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--SN-Color-White);
+}
+
+.confirmationButton {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: var(--SN-Color-Blue-Light);
+  color: var(--SN-Color-White);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+/* Tablet Styles */
+@media screen and (max-width: 1024px) {
+/* @media screen and (min-width: 769px) and (max-width: 1024px) { */
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 480px) {
+/* @media screen and (min-width: 481px) and (max-width: 768px) { */
+  .confirmationPopupOverlay {
+    border-radius: 12px;
+  }
+  .reviewTable{
+    max-width: 100%;
+  }
+
+  .progressbar {
+    width: 100%;
+    padding: 0 3rem;
+  }
+  
+  .progressbarImg {
+    width: 100%;
+  }
+  
+  .actionButton button {
+    width: 230px;
+    padding: 5px 14px;
+  }
+}
