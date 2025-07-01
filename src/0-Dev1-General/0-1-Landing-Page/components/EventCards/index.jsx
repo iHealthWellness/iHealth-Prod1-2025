@@ -5,8 +5,10 @@ import { Link } from "react-router-dom"
 import styles from "./index.module.css"
 import imageTwo from "../../../../../src/Assets/Images/facts-about-nf-post3.jpg"
 import juneEvent from "../../../../../src/Assets/Images/JuneEvent.jpg";
-import monthlyHighlightImage from "../../../../../src/Assets/Images/mayHighlights.png";
-import maynewsletterPDF from "../../../../../src/Assets/files/may-newsletter.pdf";
+import monthlyHighlightImage from "../../../../../src/Assets/Images/Monthly- iHealth-Newsletter-Banner-LinkedIn (3.3 x 3 in).jpg";
+import ihealth360hubimage from "../../../../../src/Assets/Images/2web- ihealth Hub-Based Healthcare Model (3.3 x 3 in).png";
+import ihealth360hubfile from "../../../../../src/Assets/files/iHealth-Hub-Based-Healthcare-Model.pdf";
+import maynewsletterPDF from "../../../../../src/Assets/files/June 2025 Newsletter.pdf";
 import NFVideo from "../../../../../src/Assets/files/SN-PediatricNF.mp4";
 import React, { useRef } from "react";
 
@@ -66,17 +68,36 @@ const EventCards = () => {
     // },
     {
       title: "Monthly Highlights",
-      date: "Last Updated | May 31, 2025",
+      date: "Last Updated | June 28, 2025",
       time: "",
       newsletterimg: monthlyHighlightImage,
       link: maynewsletterPDF,
-      // link: "https://lnkd.in/gpWRY_Yi",
+      // link: "https://drive.google.com/file/d/1Q-jt7iZKBva_kKzkAnkLIVeX24EcU2gA/view?usp=sharing",
       status: "NEWSLETTER",
       btnText: "View Newsletter",
     },
+    // {
+    //   title: "iHealth360 Hub: Financial and Clinical Benefits",
+    //   date: "Last Updated | July 1, 2025",
+    //   // time: "",
+    //   newsletterimg: ihealth360hubimage,
+    //   link: ihealth360hubfile,
+    //   // link: "https://lnkd.in/gpWRY_Yi",
+    //   status: "PLAYLIST",
+    //   btnText: "View iHealth360 Hub Model",
+    // },
+    {
+      title: "iHealth360 Hub: Financial and Clinical Benefits",
+      date: "Last Updated | July 1, 2025",
+      // time: "5PM ET",
+      image: ihealth360hubimage,
+      link: ihealth360hubfile,
+      status: "PLAYLIST",
+      btnText: "View iHealth360 Hub Model",
+    },
     {
       title: "Facts About Neurofibromatosis (NF)",
-      date: "Last Updated | March 31st, 2025",
+      date: "Last Updated | March 31, 2025",
       // time: "5PM ET",
       image: imageTwo,
       link: "https://www.youtube.com/playlist?list=PLWRClAjMOjXgo6m6vrypqWbwwCcVb1NEu",
