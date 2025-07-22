@@ -1,3 +1,921 @@
+/* Seprate left and right Event , cover SLide  */
+
+.fullContainer{
+  background-color: var(--SN-Color-Blue-Hero-Light);
+  width: 100%;
+}
+
+.sectionContainer {
+  display: flex;
+  max-width: 1200px;
+  margin: 65px auto;
+  padding: 40px;
+  /* background-color: var(--SN-Color-Blue-Hero-Light); */
+  gap: 32px;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.mobileeventHeader {
+  display: block;
+}
+
+.desktopeventHeader {
+  display: none;
+}
+
+@media (min-width: 1025px) {
+  .mobileeventHeader {
+    display: none;
+  }
+  
+  .desktopeventHeader {
+    display: block;
+  }
+}
+.leftContainer {
+  flex: 0 0 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rightContainer {
+  flex: 0 0 55%;
+  min-width: 60%;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.mainImage {
+  width: 100%;
+  height:450px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+.mainImage:hover {
+  transform: scale(1.02);
+}
+
+
+.rightContainer{
+  color: #07235b;
+}
+
+.noImagePlaceholder {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4b586a;
+  font-size: 22px;
+  font-weight: 500;
+  background: #f0f4fa;
+}
+
+@media (max-width: 1024px) {
+  .noImagePlaceholder {
+    height: 400px;
+  }
+}
+@media (max-width: 600px) {
+  .noImagePlaceholder {
+    height: 300px;
+  }
+}
+
+
+.eventCard {
+  width: 300px;
+  height: 250px;
+  background-color: #fff;
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  transition-timing-function: ease-in-out;
+  margin: 0 16px;
+  opacity: 0.85;
+  /* background-color: var(--SN-Color-Blue-Hero-Light); */
+  outline: none;
+}
+
+
+.eventCard:hover {
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+  background-color: #07235b ;
+  color: #fff;
+}
+
+
+
+.eventFiller{
+  height: 30px;
+}
+
+.eventTitle {
+  color: var(--SN-Color-Blue-Dark);
+  margin-bottom: 12px;
+}
+
+.eventDescription {
+  margin-bottom: 18px;
+  /* color: #4b586a; */
+  line-height: 1.5;
+  flex: 1 1 auto;
+}
+.registerBtn {
+  background-color: #0095ff;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: flex-start;
+  text-decoration: none;
+  font-weight: 500;
+}
+.registerBtn:hover {
+  background-color: #0077cc;
+}
+.slick-dots li button:before {
+  color: #0095ff !important;
+  opacity: 1 !important;
+}
+
+
+.slick-dots li.slick-active button:before {
+  color: #0095ff !important;
+  opacity: 1 !important;
+  font-size: 12px;
+}
+
+.activeCard {
+  opacity: 1 !important;
+  transform: scale(1.03);
+  transition: all 0.3s ease;
+}
+
+.slick-slider {
+  min-height: 350px !important;
+}
+
+.slick-list {
+  min-height: 350px !important;
+  padding-top: 24px !important;
+  padding-bottom: 24px !important;
+}
+
+.slick-track {
+  min-height: 350px !important;
+  padding-top: 24px !important;
+  padding-bottom: 24px !important;
+}
+
+.carouselControls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  width: 100%;
+  background: none;
+}
+
+.arrowBtn {
+  padding: 8px;
+  border-radius: 50%;
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, transform 0.2s;
+  cursor: pointer;
+}
+.arrowBtn:hover {
+  background: rgba(0, 149, 255, 0.1);
+  transform: scale(1.1);
+}
+
+.dotsList {
+  display: flex;
+  align-items: center;
+  margin: 0 8px;
+  padding: 0;
+  list-style: none;
+  gap: 8px;
+}
+
+.slick-dots {
+  position: static;
+  display: none !important;
+}
+
+@media (max-width: 1024px) {
+  .sectionContainer {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .leftContainer, .rightContainer {
+    width: 100%;
+    flex: 1 1 100%;
+    justify-content: center;
+  }
+  .leftContainer {
+    width: 100%;
+  }
+  .mainImage {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+  }
+  .eventCard {
+    width: 90%;
+    max-width: 340px;
+    height: auto;
+    min-height: 240px;
+    padding: 20px 10px;
+  }
+  .slick-list, .slick-track {
+    min-height: 280px !important;
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
+  }
+}
+@media (max-width: 600px) {
+  .mainImage {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+  }
+  .leftContainer {
+    width: 100%;
+  }
+  .eventCard {
+    width: 90%;
+    max-width: 90vw;
+    min-height: 220px;
+    padding: 15px 10px;
+    margin-bottom: 12px;
+  }
+  .slick-list, .slick-track {
+    min-height: 220px !important;
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+  }
+  .carouselControls {
+    gap: 12px;
+  }
+  .arrowBtn {
+    padding: 4px;
+  }
+  .dotsList {
+    gap: 4px;
+  }
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+
+.confirmationModal {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  position: relative;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.confirmationModal h3 {
+  color: #00234b;
+  margin-bottom: 15px;
+}
+
+.confirmationModal p {
+  color: #4b586a;
+  margin-bottom: 25px;
+}
+
+.modalButtons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.confirmButton {
+  background-color: #0095ff;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.confirmButton:hover {
+  background-color: #0077cc;
+}
+
+.cancelButton {
+  background-color: #e0e0e0;
+  color: #333;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cancelButton:hover {
+  background-color: #d0d0d0;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: -85px;
+  display: flex !important;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+
+}
+
+.carouselControls {
+  margin-top: 48px;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.carouselControls button {
+  padding: 8px;
+  background-color: red;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.carouselControls button:hover {
+  background-color: rgba(0, 149, 255, 0.1);
+  transform: scale(1.1);
+}
+
+.carouselControls svg {
+  width: 32px;
+  height: 32px;
+}
+
+
+.slick-slider .slick-track, .slick-slider .slick-list {
+  height: 600px !important;
+  min-height: 600px !important;
+}
+
+.eventCard:hover .eventIcon, .eventCard:hover .eventLink, .eventCard:hover .arrowLeft {
+  color: var(--SN-Color-Blue-Hero-Light);
+}
+
+.eventIcon {
+  font-size: 2.2rem;
+  color: #0095ff;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.customControlBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  width: 100%;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid #0095ff;
+  background: transparent;
+  transition: background 0.2s, border 0.2s;
+  cursor: pointer;
+  outline: none;
+  display: inline-block;
+}
+
+.activeDot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #0095ff;
+  border: 2px solid #0095ff;
+  transition: background 0.2s, border 0.2s;
+  cursor: pointer;
+  outline: none;
+  display: inline-block;
+}
+
+.slick-dots {
+  display: none !important;
+}
+
+.eventLink {
+  color: #0095ff;
+  font-weight: 500;
+  text-transform: uppercase;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: color 0.2s;
+  display: inline-block;
+}
+.eventLink:hover {
+  color: #0077cc;
+  text-decoration: underline;
+}
+
+.eventLink:hover ~ .arrowLeft{
+  margin-left: 15px;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+
+
+.arrowLeft{
+  margin-bottom: -5px;
+  color: #0095ff;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-in-out;
+  margin-left: 5px;
+
+}
+
+.eventLinkContainer{
+  display: flex;
+  align-items: end;
+  height: 40px;
+}
+
+
+/* Seprate left and right Event , cover SLide  */
+
+
+
+
+
+
+
+
+
+/* Event + cover SLide  */
+
+/* .container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 65px auto -35px auto;
+  padding: 40px;
+  justify-content: center;
+}
+
+.cardsWrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  height: 600px;
+  align-items: center;
+}
+
+.cardsContainer {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  touch-action: pan-y;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 0px;
+}
+
+.cardsTrack {
+  display: flex;
+  transition: transform 0.5s;
+  will-change: transform;
+}
+
+.cardWrapper {
+  flex-shrink: 0;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.eventCard {
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(.4,1.5,.5,1);
+  cursor: pointer;
+  transform: scale(0.93);
+  opacity: 0.85;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--SN-Color-Blue-Hero-Light);
+  width: 100%;
+  max-width: 550px;
+  margin: 0 auto;
+  position: relative;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.cardActive {
+  transform: scale(1.06);
+  opacity: 1;
+  z-index: 2;
+}
+
+.cardInactive {
+  filter: blur(0px);
+  
+}
+
+.cardActive:hover {
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.imageContainer {
+  position: relative;
+  height: 60%;
+  overflow: hidden;
+}
+
+.eventBackground {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: none;
+}
+
+.eventCard:hover .eventBackground,
+.cardActive:hover .eventBackground {
+}
+
+.eventInfo {
+  padding: 15px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.eventHeader {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+  color: var(--SN-Color-Blue-Primary);
+}
+
+.eventIcon {
+  color: #0095ff;
+  font-size: 20px;
+}
+
+.eventTitle {
+  margin: 0;
+  line-height: 1.3;
+  flex: 1;
+}
+
+.eventDescription {
+  margin-bottom: 15px;
+  line-height: 1.4;
+  flex: 1;
+}
+
+.registerBtn {
+  background-color: #0095ff;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: auto;
+  align-self: flex-start;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.registerBtn:hover {
+  background-color: #0077cc;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 24px;
+  gap: 10px;
+}
+
+.dotsRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: -50px;
+  margin-bottom: 0;
+  position: relative;
+}
+
+.dots {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin: 0 16px 0 16px;
+  position: relative;
+  top: -6px;
+  right: 0;
+}
+
+.arrowButton {
+  background: rgba(255,255,255,0.9);
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+  color: #0077cc;
+  margin-top: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+
+.arrowIcon {
+  font-size: 20px;
+}
+
+.dots {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin: 0 16px 0 16px;
+  position: relative;
+  top: -6px;
+  right: 0;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #d0d0d0;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dot:hover {
+  background-color: #0095ff;
+}
+
+.dotActive {
+  background-color: #0095ff;
+  transform: scale(1.2);
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+  width: 90%;
+  max-width: 1200px;
+  height: 80vh;
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.pdfFrame {
+  width: 97%;
+  height: 100%;
+  border: none;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    margin: 70px auto -30px auto;
+  }
+  .arrowButton {
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
+  }
+  .dotsRow {
+    margin-top: -40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cardsWrapper{
+    height: 700px;
+  }
+  .cardsContainer{
+    height: 700px;
+  }
+  .dotsRow {
+    margin-top: -20px;
+  }
+}
+
+@media (max-width: 578px) {
+ 
+  .dotsRow {
+    margin-top: -60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    margin: 40px auto -40px auto;
+    padding: 5px;
+    width: 80%;
+  }
+  .cardsWrapper, .cardsContainer {
+    height: 570px;
+    padding-top: 0;
+  }
+  .arrowButton {
+    width: 28px;
+    height: 28px;
+    font-size: 14px;
+  }
+  .dotsRow {
+    margin-top: -18px;
+  }
+}
+
+.confirmationModal {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  position: relative;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.confirmationModal h3 {
+  color: #00234b;
+  margin-bottom: 15px;
+}
+
+.confirmationModal p {
+  color: #4b586a;
+  margin-bottom: 25px;
+}
+
+.modalButtons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.confirmButton {
+  background-color: #0095ff;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.confirmButton:hover {
+  background-color: #0077cc;
+}
+
+.cancelButton {
+  background-color: #e0e0e0;
+  color: #333;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cancelButton:hover {
+  background-color: #d0d0d0;
+}
+
+
+.eventLink {
+  color: #0095ff;
+  font-weight: 500;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: color 0.2s;
+  display: inline-block;
+}
+.eventLink:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.eventLink:hover ~ .arrowLeft{
+  margin-left: 15px;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+
+
+.arrowLeft{
+  margin-bottom: -5px;
+  color: #0095ff;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-in-out;
+  margin-left: 5px;
+
+}
+
+.eventLinkContainer{
+  display: flex;
+  align-items: end;
+  height: 40px;
+} */
+
+/* Event + cover SLide  */
+
+
+
+
+
+
+
+
+/* Three Card Event Card style */
+
+/* 
 .container {
   width: 100%;
   max-width: 1200px;
@@ -18,7 +936,6 @@
   width: 100%;
   max-width: 550px;
   margin: 0 auto;
-  /* height: fit-content; */
   position: relative;
   border-radius: 20px;
   overflow: hidden;
@@ -34,7 +951,6 @@
 
 .imageContainer {
   position: relative;
-  /* height: 500px; */
   overflow: hidden;
 }
 
@@ -43,7 +959,6 @@
   height: 100%;
   object-fit: contain;
   object-position: center;
-  /* filter: brightness(0.7) saturate(1.2); */
 }
 
 .upcomingEventsHeader {
@@ -60,7 +975,6 @@
 }
 
 .eventInfo {
-  /* height: 60%; */
   padding: 15px;
   position: relative;
   background: linear-gradient(135deg, white 85%, transparent 85%);
@@ -97,7 +1011,6 @@
   background-color: #0077cc;
 }
 
-/* Modal styles */
 .modalOverlay {
   position: fixed;
   top: 0;
@@ -162,7 +1075,6 @@
 @media (min-width: 991px) {
 
   .eventCard:nth-of-type(1) .eventTitle{
-  /* .eventCard:nth-of-type(2) .eventTitle{ */
     margin-bottom: 40px;
   }
 
@@ -249,5 +1161,270 @@
 
 .cancelButton:hover {
   background-color: #d0d0d0;
+} */
+
+
+
+/* Three Card Event Card  style */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Initial  Event Card */
+
+/* 
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 65px auto -35px auto;
+  padding: 40px;
+  justify-content: center;
 }
+
+.eventsWrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 35px;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.eventCard {
+  width: 100%;
+  max-width: 550px;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.imageContainer {
+  position: relative;
+  overflow: hidden;
+}
+
+.eventBackground {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.upcomingEventsHeader {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #a8d5ff;
+  color: #00234b;
+  padding: 5px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  border-bottom-left-radius: 10px;
+  z-index: 2;
+}
+
+.eventInfo {
+  padding: 15px;
+  position: relative;
+  background: linear-gradient(135deg, white 85%, transparent 85%);
+  display: flex;
+  flex-direction: column;
+}
+
+.eventTitle {
+  color: #00234b;
+  margin-bottom: 10px;
+}
+
+.eventDateTime {
+  display: flex;
+  color: #00234b;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.registerBtn {
+  background-color: #0095ff;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 10px;
+  align-self: flex-start;
+  text-decoration: none;
+}
+
+.registerBtn:hover {
+  background-color: #0077cc;
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+  width: 90%;
+  max-width: 1200px;
+  height: 80vh;
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.pdfFrame {
+  width: 97%;
+  height: 100%;
+  border: none;
+}
+
+@media (max-width: 1024px) {
+  .eventsWrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .container {
+    margin: 70px auto -30px auto;
+  }
+  
+
+}
+
+@media (max-width: 768px) {
+  .eventsWrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .eventCard {
+    max-width: 100%;
+  }
+}
+
+
+
+  @media (max-width: 480px) {
+    .container {
+      margin: 70px auto -80px auto;
+    }
+  .eventCard {
+    margin-bottom: 40px;
+  }
+  .eventsWrapper{
+    gap: 10px;
+  }
+  .modalContent { 
+    height: 60vh;
+  }
+
+  .imageContainer {
+    height: 250px;
+  }
+
+  .eventBackground {
+    width: 99%;
+  }
+
+}
+
+
+
+.confirmationModal {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  position: relative;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.confirmationModal h3 {
+  color: #00234b;
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+}
+
+.confirmationModal p {
+  color: #4b586a;
+  margin-bottom: 25px;
+}
+
+.modalButtons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.confirmButton {
+  background-color: #0095ff;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.confirmButton:hover {
+  background-color: #0077cc;
+}
+
+.cancelButton {
+  background-color: #e0e0e0;
+  color: #333;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cancelButton:hover {
+  background-color: #d0d0d0;
+} */
+
+
+
+/* Initial  Event Card */
+
+
+
 
