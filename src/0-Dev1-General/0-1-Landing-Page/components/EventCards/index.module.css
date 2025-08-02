@@ -1,4 +1,4 @@
-/* Seprate left and right Event , cover SLide  */
+/* Seprate left and right Event wih only button and image , cover SLide   */
 
 .fullContainer{
   background-color: var(--SN-Color-Blue-Hero-Light);
@@ -11,6 +11,611 @@
   margin: 65px auto;
   padding: 40px;
   /* background-color: var(--SN-Color-Blue-Hero-Light); */
+  gap: 32px;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.eventHeader{
+  margin-top: 5px;
+}
+
+.mobileeventHeader {
+  display: block;
+}
+
+.desktopeventHeader {
+  display: none;
+}
+
+@media (min-width: 1025px) {
+  .mobileeventHeader {
+    display: none;
+  }
+  
+  .desktopeventHeader {
+    display: block;
+  }
+}
+
+.leftContainer {
+  flex: 0 0 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rightContainer {
+  flex: 0 0 55%;
+  min-width: 55%;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.mainImage {
+  width: 100%;
+  height: 460px;
+  width: 100%;
+  object-fit: cover;
+
+  object-position: center;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.mainImage:hover {
+  transform: scale(1.02);
+}
+
+.rightContainer{
+  color: #07235b;
+}
+
+.noImagePlaceholder {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4b586a;
+  font-size: 22px;
+  font-weight: 500;
+  background: #f0f4fa;
+}
+
+@media (max-width: 1024px) {
+  .noImagePlaceholder {
+    height: 400px;
+  }
+}
+
+@media (max-width: 600px) {
+  .noImagePlaceholder {
+    height: 300px;
+  }
+}
+
+.eventCard {
+  width: 280px;
+  height: 260px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  transition-timing-function: ease-in-out;
+  margin: 0 16px;
+  opacity: 0.85;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  outline: none;
+  position: relative;
+  cursor: pointer;
+}
+
+.cardBackgroundImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 1;
+}
+
+.eventCard:hover {
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+  opacity: 1;
+  transform: scale(1.02);
+}
+
+.eventFiller{
+  height: 30px;
+}
+
+  .cardOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%,rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.9) 100%); */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    z-index: 2;
+    transition: all 0.3s ease;
+  }
+
+.eventCard:hover .cardOverlay {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(0, 0, 0, 0.7) 50%,
+    rgba(0, 0, 0, 0.9) 100%
+  );
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.cardHoverContent {
+  opacity: 0;
+  transform: translateY(20px);
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 15px;
+}
+
+.eventCard:hover .cardHoverContent {
+  opacity: 1;
+  transform: translateY(0);
+  max-height: 200px;
+}
+
+.eventTitle {
+  color: #fff;
+  margin-bottom: 0;
+  font-size: 18px;
+  line-height: 1.3;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.eventDescription {
+  margin-bottom: 18px;
+  line-height: 1.5;
+  color: #fff;
+  font-size: 14px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.registerBtn {
+  background-color: #0095ff;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: flex-start;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.registerBtn:hover {
+  background-color: #0077cc;
+}
+
+.slick-dots li button:before {
+  color: #0095ff !important;
+  opacity: 1 !important;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #0095ff !important;
+  opacity: 1 !important;
+  font-size: 12px;
+}
+
+.activeCard {
+  opacity: 1 !important;
+  transform: scale(1.03);
+  transition: all 0.3s ease;
+}
+
+.slick-slider {
+  min-height: 380px !important;
+}
+
+.slick-list {
+  min-height: 380px !important;
+  padding-top: 24px !important;
+  padding-bottom: 24px !important;
+}
+
+.slick-track {
+  min-height: 380px !important;
+  padding-top: 24px !important;
+  padding-bottom: 24px !important;
+}
+
+.carouselControls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  width: 100%;
+  background: none;
+}
+
+.arrowBtn {
+  padding: 8px;
+  border-radius: 50%;
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, transform 0.2s;
+  cursor: pointer;
+}
+
+.arrowBtn:hover {
+  background: #07235b36;
+  transform: scale(1.1);
+}
+
+.dotsList {
+  display: flex;
+  align-items: center;
+  margin: 0 8px;
+  padding: 0;
+  list-style: none;
+  gap: 8px;
+}
+
+.slick-dots {
+  position: static;
+  display: none !important;
+}
+
+@media (max-width: 1024px) {
+  .sectionContainer {
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .leftContainer, .rightContainer {
+    width: 100%;
+    flex: 1 1 100%;
+    justify-content: center;
+  }
+  
+  .leftContainer {
+    width: 100%;
+  }
+  
+  .mainImage {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .eventCard {
+    width: 90%;
+    max-width: 340px;
+    height: 300px;
+    padding: 0;
+  }
+  
+  .cardOverlay {
+    padding: 20px;
+  }
+  
+  .slick-list, .slick-track {
+    min-height: 300px !important;
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .mainImage {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .leftContainer {
+    width: 100%;
+    display: none;
+  }
+  
+  .eventCard {
+    width: 90%;
+    max-width: 90vw;
+    height: 280px;
+    padding: 0;
+    margin-bottom: 12px;
+  }
+  
+  .cardOverlay {
+    padding: 16px;
+  }
+  
+  .slick-list, .slick-track {
+    min-height: 280px !important;
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+  }
+  
+  .carouselControls {
+    gap: 12px;
+  }
+  
+  .arrowBtn {
+    padding: 4px;
+  }
+  
+  .dotsList {
+    gap: 4px;
+  }
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.confirmationModal {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  position: relative;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.confirmationModal h3 {
+  color: #00234b;
+  margin-bottom: 15px;
+}
+
+.confirmationModal p {
+  color: #4b586a;
+  margin-bottom: 25px;
+}
+
+.modalButtons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.confirmButton {
+  background-color: #0095ff;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.confirmButton:hover {
+  background-color: #0077cc;
+}
+
+.cancelButton {
+  background-color: #e0e0e0;
+  color: #333;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cancelButton:hover {
+  background-color: #d0d0d0;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: -85px;
+  display: flex !important;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.carouselControls {
+  margin-top: 48px;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.carouselControls button {
+  padding: 8px;
+  background-color: red;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.carouselControls button:hover {
+  background-color: #07235b36;
+  transform: scale(1.1);
+}
+
+.carouselControls svg {
+  width: 32px;
+  height: 32px;
+}
+
+.slick-slider .slick-track, .slick-slider .slick-list {
+  height: 600px !important;
+  min-height: 600px !important;
+}
+
+.eventCard:hover .eventIcon {
+  color: var(--SN-Color-Blue-Hero-Light);
+}
+
+.eventIcon {
+  font-size: 2.2rem;
+  color: #fff;
+  margin-bottom: 0;
+  display: block;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.customControlBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  width: 100%;
+  margin-top: -20px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  /* border: 2px solid #0095ff; */
+  border: 2px solid #07235b;
+  background: transparent;
+  transition: background 0.2s, border 0.2s;
+  cursor: pointer;
+  outline: none;
+  display: inline-block;
+}
+
+.activeDot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  /* background: #0095ff; */
+  background: #07235b;
+  /* border: 2px solid #0095ff; */
+  border: 2px solid #07235b;
+  transition: background 0.2s, border 0.2s;
+  cursor: pointer;
+  outline: none;
+  display: inline-block;
+}
+
+.slick-dots {
+  display: none !important;
+}
+
+.eventLink {
+  color: #00234b;
+  /* text-transform: uppercase; */
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: inline-block;
+  /* font-size: 0.9rem; */
+  /* text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); */
+}
+
+.eventLink:hover {
+  color: #00234b;
+  /* text-decoration: underline; */
+}
+
+.eventLink:hover ~ .arrowLeft{
+  margin-left: 10px;
+  color: #00234b;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+
+.arrowLeft{
+  margin-bottom: -5px;
+  color: #00234b77;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-in-out;
+  margin-left: 1px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.eventLinkContainer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 30px;
+  padding: 10px;
+  background-color: #f0f7fd;
+  width: 100%;
+  color: #00234b;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: auto;
+}
+
+/* Seprate left and right Event wih only button and image , cover SLide  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Seprate left and right Event , cover SLide  */
+
+/* .fullContainer{
+  background-color: var(--SN-Color-Blue-Hero-Light);
+  width: 100%;
+}
+
+.sectionContainer {
+  display: flex;
+  max-width: 1200px;
+  margin: 65px auto;
+  padding: 40px;
   gap: 32px;
   align-items: center;
   box-sizing: border-box;
@@ -100,7 +705,6 @@
   transition-timing-function: ease-in-out;
   margin: 0 16px;
   opacity: 0.85;
-  /* background-color: var(--SN-Color-Blue-Hero-Light); */
   outline: none;
 }
 
@@ -125,7 +729,6 @@
 
 .eventDescription {
   margin-bottom: 18px;
-  /* color: #4b586a; */
   line-height: 1.5;
   flex: 1 1 auto;
 }
@@ -479,7 +1082,7 @@
   display: flex;
   align-items: end;
   height: 40px;
-}
+} */
 
 
 /* Seprate left and right Event , cover SLide  */
@@ -1424,7 +2027,3 @@
 
 
 /* Initial  Event Card */
-
-
-
-
