@@ -1,6 +1,8 @@
 import { useState } from "react";
 
-import SurveyInformationCard from "src/0-Dev1-General/0-1-Landing-Page/components/Information/InformationCards/SurveyInformationCard/index.jsx";
+// Moved
+// import SurveyInformationCard from "src/0-Dev1-General/0-1-Landing-Page/components/Information/InformationCards/SurveyInformationCard/index.jsx";
+import SurveyInformationCard from "src/modules/1-Home-Module/components/LivingwithNF/SurveyInformationCard/index.jsx";
 import SurveyForm from "src/modules/1-Home-Module/components/SurveyForm/SurveyForm.jsx";
 import surveyVideo from "src/Assets/Images/survey-video.mp4";
 import GreyCards from "src/Components/UIComponents/GreyCards/GreyCards.jsx";
