@@ -1,7 +1,17 @@
 import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import styles from "./index.module.css";
-import DiseaseFeedbackModal from "src/modules/1-Home-Module/components/Diseases/DiseaseFeedbackModal";
+
+// Made this fail gracefully
+// import DiseaseFeedbackModal from "src/modules/1-Home-Module/components/Diseases/DiseaseFeedbackModal";
+let DiseaseFeedbackModal;
+try {
+  const mod = await import("src/modules/1-Home-Module/components/Diseases/DiseaseFeedbackModal");
+  DiseaseFeedbackModal = mod.default;
+} catch (e) {
+  console.warn('1-Home-Module failed to load:', e);
+}
+
 import CancerCard from "src/Assets/Images/cancer-card.png";
 import GeriatricCard from "src/Assets/Images/geriatric-card.png";
 import NfCard from "src/Assets/Images/nf-card.png";
@@ -52,8 +62,8 @@ const Community = () => {
           onClick={() => handleOpenModal("Geriatric")}
         />
       </aside>
-      {openModal === "Geriatric" && <DiseaseFeedbackModal closeModal={closeModal} diseaseType="geriatric"  />}
-      {openModal === "Cancer" && <DiseaseFeedbackModal closeModal={closeModal} diseaseType="cancer"  />}
+      {openModal === "Geriatric" && DiseaseFeedbackModal && <DiseaseFeedbackModal closeModal={closeModal} diseaseType="geriatric"  />}
+      {openModal === "Cancer" && DiseaseFeedbackModal && <DiseaseFeedbackModal closeModal={closeModal} diseaseType="cancer"  />}
     </section>
   );
 };
