@@ -19,7 +19,7 @@ dist-ssr/
 # Dotenv environment variable files
 .env
 .env.test
-.env.development
+# .env.development
 .env.production
 
 # Editor directories and files
