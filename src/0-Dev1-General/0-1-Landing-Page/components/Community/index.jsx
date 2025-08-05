@@ -2,22 +2,13 @@ import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import styles from "./index.module.css";
 
-// Made this fail gracefully
-// import DiseaseFeedbackModal from "src/modules/1-Home-Module/components/Diseases/DiseaseFeedbackModal";
-let DiseaseFeedbackModal;
-try {
-  const mod = await import("src/modules/1-Home-Module/components/Diseases/DiseaseFeedbackModal");
-  DiseaseFeedbackModal = mod.default;
-} catch (e) {
-  console.warn('1-Home-Module failed to load:', e);
-}
-
 import CancerCard from "src/Assets/Images/cancer-card.png";
 import GeriatricCard from "src/Assets/Images/geriatric-card.png";
 import NfCard from "src/Assets/Images/nf-card.png";
 
 const Community = () => {
   const [openModal, setOpenModal] = useState(null);
+  const [DiseaseFeedbackModal, setDiseaseFeedbackModal] = useState(null);
   const location = useLocation();
 
   useEffect(() => {
@@ -28,6 +19,20 @@ const Community = () => {
       setOpenModal("Geriatric");
     }
   }, [location.pathname]);
+
+  useEffect(() => {
+    // Load DiseaseFeedbackModal dynamically when needed
+    if (
+      (openModal === "Geriatric" || openModal === "Cancer") &&
+      !DiseaseFeedbackModal
+    ) {
+      import("src/modules/1-Home-Module/components/Diseases/DiseaseFeedbackModal")
+        .then((mod) => setDiseaseFeedbackModal(() => mod.default))
+        .catch((e) =>
+          console.warn("1-Home-Module failed to load DiseaseFeedbackModal:", e)
+        );
+    }
+  }, [openModal, DiseaseFeedbackModal]);
 
   const handleOpenModal = (modalName) => {
     setOpenModal(modalName);
@@ -62,8 +67,18 @@ const Community = () => {
           onClick={() => handleOpenModal("Geriatric")}
         />
       </aside>
-      {openModal === "Geriatric" && DiseaseFeedbackModal && <DiseaseFeedbackModal closeModal={closeModal} diseaseType="geriatric"  />}
-      {openModal === "Cancer" && DiseaseFeedbackModal && <DiseaseFeedbackModal closeModal={closeModal} diseaseType="cancer"  />}
+      {openModal === "Geriatric" && DiseaseFeedbackModal && (
+        <DiseaseFeedbackModal
+          closeModal={closeModal}
+          diseaseType="geriatric"
+        />
+      )}
+      {openModal === "Cancer" && DiseaseFeedbackModal && (
+        <DiseaseFeedbackModal
+          closeModal={closeModal}
+          diseaseType="cancer"
+        />
+      )}
     </section>
   );
 };
