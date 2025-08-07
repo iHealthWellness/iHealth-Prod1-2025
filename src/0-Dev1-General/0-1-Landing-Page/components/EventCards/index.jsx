@@ -195,7 +195,6 @@ const EventCards = () => {
         settings: {
           slidesToShow: 1,
           centerMode: false,
-          centerPadding: '15%',
         },
       },
     ],
@@ -233,7 +232,7 @@ const EventCards = () => {
             {...sliderSettings}
           >
             {events.map((event, idx) => (
-              <div key={idx}>
+              <div className={styles.mobileAligment} key={idx}>
                 <div className={styles.eventFiller}></div>
                 <a
                   href={event.link}

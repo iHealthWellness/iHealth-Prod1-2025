@@ -293,6 +293,14 @@
   display: none !important;
 }
 
+@media (max-width: 1161px) and (min-width: 1025px) {
+ .eventCard{
+  width: 240px;
+  height: 220px;
+ }
+}
+
+
 @media (max-width: 1024px) {
   .sectionContainer {
     flex-direction: column;
@@ -318,7 +326,7 @@
   }
   
   .eventCard {
-    width: 90%;
+    width: 340px;
     max-width: 340px;
     height: 300px;
     padding: 0;
@@ -345,12 +353,23 @@
   
   .leftContainer {
     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    text-align: center;
     display: none;
   }
   
+  .mobileAligment{
+    text-align: center;
+  }
+
   .eventCard {
-    width: 90%;
-    max-width: 90vw;
+    width: 300px;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: start;
     height: 280px;
     padding: 0;
     margin-bottom: 12px;
@@ -377,6 +396,25 @@
   .dotsList {
     gap: 4px;
   }
+}
+
+@media (max-width: 350px) {
+
+  .eventFiller:nth-child(1){
+    height: 1px;
+  }
+
+  .eventCard {
+    width: 250px;
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: start;
+    height: 220px;
+    padding: 0;
+    margin-bottom: 12px;
+  }
+
 }
 
 .modalOverlay {
