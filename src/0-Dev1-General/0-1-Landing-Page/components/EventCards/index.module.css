@@ -1,4 +1,4 @@
-/* Seprate left and right Event wih only button and image , cover SLide   */
+npm /* Seprate left and right Event wih only button and image , cover SLide   */
 
 .fullContainer{
   background-color: var(--SN-Color-Blue-Hero-Light);
@@ -322,7 +322,6 @@
     height: 400px;
     object-fit: cover;
     object-position: center;
-    display: none;
   }
   
   .eventCard {
@@ -416,6 +415,27 @@
   }
 
 }
+
+
+@media (max-width: 330px) {
+
+  .eventFiller:nth-child(1){
+    height: 1px;
+  }
+
+  .eventCard {
+    width: 200px;
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: start;
+    height: 190px;
+    padding: 0;
+    margin-bottom: 12px;
+  }
+
+}
+
 
 .modalOverlay {
   position: fixed;
@@ -585,7 +605,7 @@
   border: none;
   padding: 0;
   cursor: pointer;
-  /* display: inline-block; */
+  display: inline-block;
   /* font-size: 0.9rem; */
   /* text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); */
 }
